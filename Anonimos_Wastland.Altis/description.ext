@@ -24,8 +24,8 @@ class Header
 	maxPlayers=146; // 144 players, 2 headless client
 };
 
-author="HardCore - Core by A3Wasteland.com";
-onLoadName = "HardCore A3Wasteland Altis"; // it would be great if you could keep "A3" in the name, like "ABC A3Wasteland" instead of "ABC Wasteland" :)
+author="anonymous  - Core by A3Wasteland.com";
+onLoadName = "anonymous  A3Wasteland Altis"; // it would be great if you could keep "A3" in the name, like "ABC A3Wasteland" instead of "ABC Wasteland" :)
 onLoadMission = "DS: discord.gg/jZ2mT9N CORE MISSION: a3wasteland.com";
 overviewText = "Discord: discord.gg/jZ2mT9N";
 overviewTextLocked = "Discord: discord.gg/jZ2mT9N";

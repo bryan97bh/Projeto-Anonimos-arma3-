@@ -185,7 +185,7 @@ player createDiaryRecord ["credits",
 [
 "Credits",
 "
-<br/><font size='16' color='#BBBBBB'>Modified by HardCore:</font>
+<br/><font size='16' color='#BBBBBB'>Modified by anonymous:</font>
 <br/>	* Staynex
 <br/>	* wiking.at
 <br/>

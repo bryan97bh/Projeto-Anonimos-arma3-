@@ -220,7 +220,7 @@ ZGO_StatusEnabled = true;
 			parseText
 			format
 			["
-				<t size='1'shadow='1' shadowColor='#000000' color='%1'>[EU]HardCore #%2 Wasteland %3 | FPS: %4</t>
+				<t size='1'shadow='1' shadowColor='#000000' color='%1'>[BR]anonymous #%2 Wasteland %3 | FPS: %4</t>
 				",
 						_colourDefault,
 						_serverNr,
