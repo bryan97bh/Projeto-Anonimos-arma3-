@@ -37,6 +37,10 @@ if (_uid call isAdmin) then
 	        deleteVehicle _vehicle;
 			player commandChat "Vehicle Deleted";
 			["VehicleMgmt_DeleteVehicle", format ["%1 (ownerUID=%2)", _vehClass, _vehOwner]] call notifyAdminMenu;
+			
+			CCGLogger = ["AdminLog", format["Deleted Vehicle [%1 (ownerUID=%2 / AdminName=%3 / Admin=%4)]", _vehClass, _vehOwner, name player, getPlayerUID player]];
+			publicVariableServer "CCGLogger";
+
 	    };
 	}forEach _allVehicles;
 

@@ -18,18 +18,33 @@ if ([_uid, 3] call isAdmin) then {
 	_displayAdmin = uiNamespace getVariable "AdminMenu";
 	_adminSelect = _displayAdmin displayCtrl adminMenu_option;
 
-	_panelOptions = ["Player Management",
-					"Vehicle Management",
-					"Map Markers Log",
-					"Group Leader Markers",
-					"Spectator Cam",
-					"Teleport",
-					"Teleport player to me",
-					"Teleport me to player",
-	                "Money",
-	                "Debug Menu",
-					"Object Search",
-	                "Toggle God-mode"
+	_panelOptions = ["Target Player Menu (Spectate/Unlock/TP/Kick/kill/Remove Cash)",
+					"Map Markers Log (This only works when in game)",
+					"Toggle Vehicle Markers",
+					"Toggle Map ESP",
+					"Toggle ESP",
+					"Toggle God-mode",
+					"Toggle Vehicle God-mode",
+					"Toggle Invisible-mode",
+					"Map Teleport",
+	                "Unlock all Objects 60m around you",
+	                "Delete all Unlocked Objects 60m around you",
+	                "Relock all Objects 60m around you",
+	                "Add 10k Money to self",
+	                "Vehicle Management (Check/delete hacked vehicles)",
+	                "Object Search",
+	                "Heal Self",
+	                "Delete Cursor Target",
+	                "Repair Cursor Target",
+	                "Artillery Strike on map target",
+	                "Toggle Rocket Bullets",
+	                "Load Gun Store Menu",
+	                "Load Gen Store Menu",
+	                "Load ATM Menu",
+	                "Toggle AI ESP",
+	                "Toggle Terrain Height",
+	                "BIS FreeRoam Cam (Pres ESCAPE to exit!! Do NOT press F1)",
+	                "Unlimited Ammo"                
 	];
 
 	{

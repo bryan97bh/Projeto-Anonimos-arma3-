@@ -22,9 +22,6 @@ if ([_uid, 2] call isAdmin) then {
 					"Vehicle Management",
 					"Map Markers Log",
 					"Group Leader Markers"
-					"Spectator Cam",
-					"Teleport"
-					
 	];
 
 	{

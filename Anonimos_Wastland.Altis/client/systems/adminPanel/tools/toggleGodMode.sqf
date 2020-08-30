@@ -27,13 +27,17 @@ if ((getPlayerUID player) call isAdmin) then
 		(findDisplay 27911) closeDisplay 0; // ReviveGUI_IDD
 
 		hint "You are now invulnerable";
-		if (!isNil "notifyAdminMenu") then { ["godmode", "On"] call notifyAdminMenu };
+		if (!isNil "notifyAdminMenu") then { ["GodMode", "On"] call notifyAdminMenu };
+		CCGLogger = ["AdminLog", format["Turned GodMode Mode on [%1 (%2)]", name player, getPlayerUID player]];
+		publicVariableServer "CCGLogger";
 	}
 	else
 	{
 		player allowDamage true;
 		player setVariable ["isAdminInvulnerable", false, true];
 		hint "You are no longer invulnerable";
-		if (!isNil "notifyAdminMenu") then { ["godmode", "Off"] call notifyAdminMenu };
+		if (!isNil "notifyAdminMenu") then { ["GodMode", "Off"] call notifyAdminMenu };
+		CCGLogger = ["AdminLog", format["Turned GodMode Mode Off [%1 (%2)]", name player, getPlayerUID player]];
+		publicVariableServer "CCGLogger";
 	};
 };

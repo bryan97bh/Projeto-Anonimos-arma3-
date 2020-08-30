@@ -15,7 +15,7 @@
 #define OBJECT_SEARCH_ACTION_CLEAR_MAP 2
 
 // Limit to 1000m to stop this being crazy laggy
-#define OBJECT_SEARCH_RADIUS 25000
+#define OBJECT_SEARCH_RADIUS 1000
 
 disableSerialization;
 
@@ -92,6 +92,9 @@ if (_uid call isAdmin) then
 			_dir = [player, _objPos] call BIS_fnc_dirTo;
 			player setDir _dir;
 			player globalChat "Teleported to your object";
+
+			CCGLogger = ["AdminLog", format["Teleported to Object [%1 (%2)]", name player, getPlayerUID player]];
+			publicVariableServer "CCGLogger";
 		};
 		case OBJECT_SEARCH_ACTION_CLEAR_MAP:
 		{
