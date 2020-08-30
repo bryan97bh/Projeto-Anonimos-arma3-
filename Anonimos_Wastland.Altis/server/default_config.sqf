@@ -16,9 +16,9 @@ A3W_disableUavFeed = 1;            // Force disable UAV PIP feed to prevent ther
 A3W_disableBuiltInThermal = 1;     // Display a black screen if the player tries to use thermal vision built-in a handheld weapon like Titan launcher (0 = no, 1 = yes)
 
 // Time settings
-A3W_startHour = 12;                // In-game hour at mission start (0 to 23) - time is saved and restored between server restarts if A3W_timeSaving = 1
-A3W_timeMultiplierDay = 1.0;       // Sets the speed of time between 5 AM and 8 PM (for example, 6.0 means 6 hours in-game will pass in 1 real hour)
-A3W_timeMultiplierNight = 1.0;     // Sets the speed of time between 8 PM and 5 AM
+A3W_startHour = 6;                // In-game hour at mission start (0 to 23) - time is saved and restored between server restarts if A3W_timeSaving = 1
+A3W_timeMultiplierDay = 6.0;       // Sets the speed of time between 5 AM and 8 PM (for example, 6.0 means 6 hours in-game will pass in 1 real hour)
+A3W_timeMultiplierNight = 10.0;     // Sets the speed of time between 8 PM and 5 AM
 A3W_moonLight = 1;                 // Moon light during night (0 = no, 1 = yes)
 
 // Player settings
@@ -170,18 +170,21 @@ A3W_territoryAllowed = [0,1,2,3,4,5,6,7,8,9]; // Territory Allowed (0:KAVALA,1:A
 
 // Mission settings
 A3W_serverMissions = 1;            // Enable server missions (0 = no, 1 = yes)
-A3W_missionsDifficulty = 0;        // Missions difficulty (0 = normal, 1 = hard)
+A3W_missionsDifficulty = 1;        // Missions difficulty (0 = normal, 1 = hard)
 A3W_missionFarAiDrawLines = 1;     // Draw small red lines on the map from mission markers to individual units & vehicles which are further away than 75m from the objective (0 = no, 1 = yes)
-A3W_missionsQuantity = 7;          // Number of missions running at the same time (0 to 6)
+A3W_missionsQuantity = 6;          // Number of missions running at the same time (0 to 6)
 A3W_heliPatrolMissions = 1;        // Enable missions involving flying helicopters piloted by AI (0 = no, 1 = yes)
 A3W_underWaterMissions = 1;        // Enable underwater missions which require diving gear (0 = no, 1 = yes)
+//-----------------------------------------------------------------------------------------------------------------------------//
 A3W_mainMissionDelay = 1*60;      // Time in seconds between Main Missions
 A3W_mainMissionTimeout = 10*60;    // Time in seconds that a Main Mission will run for, unless completed
+
 A3W_sideMissionDelay = 1*60;       // Time in seconds between Side Missions
 A3W_sideMissionTimeout = 10*60;    // Time in seconds that a Side Mission will run for, unless completed
+
 A3W_moneyMissionDelay = 1*60;     // Time in seconds between Money Missions
 A3W_moneyMissionTimeout = 10*60;   // Time in seconds that a Money Mission will run for, unless completed
-
+//-----------------------------------------------------------------------------------------------------------------------------//
 A3W_hackedMissionDlSize = 165072;	// File size in Kilobytles (~1Mbps dl Rate)
 A3W_hackedMissionPercentage = 0.005; // Percentage to come out of bankaccounts
 A3W_hackedMissionExtraFixMoney = 30000;	// Fix extra money for successfully download
