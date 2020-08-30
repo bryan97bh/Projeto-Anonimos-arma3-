@@ -69,7 +69,7 @@ A3W_vehiclePurchaseCooldown = 60;  // Number of seconds to wait before allowing 
 
 // ATM settings
 A3W_atmEnabled = 1;                // Enable ATM system (0 = no, 1 = yes)
-A3W_atmMaxBalance = 3000000;       // Maximum amount of money that can be stored in a bank account (don't go over 16777216 as numbers start losing accuracy)
+A3W_atmMaxBalance = 1000000;       // Maximum amount of money that can be stored in a bank account (don't go over 16777216 as numbers start losing accuracy)
 A3W_atmTransferFee = 5;            // Fee in percent charged to players for money transfers to other players (0 to 50)
 A3W_atmTransferAllTeams = 0;       // Allow money transfers between players of all teams/sides (0 = same team only, 1 = all teams)
 A3W_atmEditorPlacedOnly = 0;       // Only allow access via ATMs placed from the mission editor (0 = all ATMs from towns & editor allowed, 1 = ATMs from editor only) Note: Stratis has no town ATMs, only editor ones.
@@ -107,8 +107,8 @@ A3W_mineSaving = 1;                // Save player-placed proximity mines between
 A3W_mineLifetime = 2*24;           // Maximum lifetime in hours for saved mines across server restarts (0 = no time limit)
 A3W_privateStorage = 1;            // Enable persistent private storage locations across the map (0 = no, 1 = yes)
 A3W_privateParking = 1;            // If vehicleSaving = 1 and savingMethod = "extdb" or "sock", enable persistent private parking locations across the map (0 = no, 1 = yes)
-A3W_privateParkingLimit = 2;       // Maximum amount of vehicles allowed in private parking (0 = no limit)
-A3W_privateParkingCost = 1000;     // Cost to retrieve an individual vehicle from private parking
+A3W_privateParkingLimit = 4;       // Maximum amount of vehicles allowed in private parking (0 = no limit)
+A3W_privateParkingCost = 2000;     // Cost to retrieve an individual vehicle from private parking
 A3W_vehicleLocking = 1;            // Enable vehicle locking and lockpicking (0 = no, 1 = yes)
 
 // iniDB settings
@@ -175,12 +175,12 @@ A3W_missionFarAiDrawLines = 1;     // Draw small red lines on the map from missi
 A3W_missionsQuantity = 7;          // Number of missions running at the same time (0 to 6)
 A3W_heliPatrolMissions = 1;        // Enable missions involving flying helicopters piloted by AI (0 = no, 1 = yes)
 A3W_underWaterMissions = 1;        // Enable underwater missions which require diving gear (0 = no, 1 = yes)
-A3W_mainMissionDelay = 10*60;      // Time in seconds between Main Missions
-A3W_mainMissionTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
-A3W_sideMissionDelay = 5*60;       // Time in seconds between Side Missions
-A3W_sideMissionTimeout = 45*60;    // Time in seconds that a Side Mission will run for, unless completed
-A3W_moneyMissionDelay = 15*60;     // Time in seconds between Money Missions
-A3W_moneyMissionTimeout = 60*60;   // Time in seconds that a Money Mission will run for, unless completed
+A3W_mainMissionDelay = 1*60;      // Time in seconds between Main Missions
+A3W_mainMissionTimeout = 10*60;    // Time in seconds that a Main Mission will run for, unless completed
+A3W_sideMissionDelay = 1*60;       // Time in seconds between Side Missions
+A3W_sideMissionTimeout = 10*60;    // Time in seconds that a Side Mission will run for, unless completed
+A3W_moneyMissionDelay = 1*60;     // Time in seconds between Money Missions
+A3W_moneyMissionTimeout = 10*60;   // Time in seconds that a Money Mission will run for, unless completed
 
 A3W_hackedMissionDlSize = 165072;	// File size in Kilobytles (~1Mbps dl Rate)
 A3W_hackedMissionPercentage = 0.005; // Percentage to come out of bankaccounts
