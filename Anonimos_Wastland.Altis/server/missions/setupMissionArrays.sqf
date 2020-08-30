@@ -5,10 +5,9 @@
 //	@file Author: AgentRev
 
 if (!isServer) exitWith {};
-
+// Mission filename, weight
 MainMissions =
 [
-	// Mission filename, weight
 	["mission_ArmedDiversquad", 0.2],
 	["mission_Coastal_Convoy", 0.7],
 	["mission_Convoy", 1],
@@ -43,7 +42,7 @@ MoneyMissions =
     ["mission_Roadblock", 1],
     ["mission_Terror", 1],
 	["mission_SunkenTreasure", 0.1],
-	["mission_HackLaptop", 1]	
+	["mission_HackLaptop", 0.1]	
 ];
 
 MissionSpawnMarkers = (allMapMarkers select {["Mission_", _x] call fn_startsWith}) apply {[_x, false]};
