@@ -15,7 +15,7 @@ MainMissions =
 	["mission_HostileHeliFormation", 0.5],
     ["mission_HostileJetFormation", 0.5],
 	["mission_APC", 0.7],
-	//["mission_MBT", 1],
+	["mission_MBT", 1],
 	["mission_LightArmVeh", 1],
 	["mission_ArmedHeli", 1],
     ["mission_AbandonedJet", 0.4],
@@ -42,8 +42,8 @@ MoneyMissions =
     ["mission_HostageRescue", 1],
     ["mission_Roadblock", 1],
     ["mission_Terror", 1],
-	["mission_SunkenTreasure", 0.1]
-	//["mission_HackLaptop", 0.1]	
+	["mission_SunkenTreasure", 0.1],
+	["mission_HackLaptop", 1]	
 ];
 
 MissionSpawnMarkers = (allMapMarkers select {["Mission_", _x] call fn_startsWith}) apply {[_x, false]};
