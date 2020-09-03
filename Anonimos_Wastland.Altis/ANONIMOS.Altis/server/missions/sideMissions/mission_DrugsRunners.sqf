@@ -11,7 +11,7 @@ private ["_convoyVeh", "_veh1", "_veh2", "_createVehicle", "_vehicles", "_leader
 
 _setupVars =
 {
-	_missionType = "Drug Runners";
+	_missionType = "TRAFICANTES";
 	_locationsArray = nil;
 };
 
@@ -103,7 +103,7 @@ _setupObjects =
 	_missionPicture = getText (configFile >> "CfgVehicles" >> _veh1 >> "picture");
 	_vehicleName = getText (configFile >> "CfgVehicles" >> _veh1 >> "displayName");
 
-	_missionHintText = format ["Rumors say, a <t color='%2'>%1</t> transporting lots of <t color='%2'>drugs</t>. Stop this car and kill them!", _vehicleName, sideMissionColor];
+	_missionHintText = format ["Rumores dizem que <t color='%2'>%1</t>um veiculo <t color='%2'>drogas</t>. pegue elas e faça dinheiro!", _vehicleName, sideMissionColor];
 
 	_numWaypoints = count waypoints _aiGroup;
 };

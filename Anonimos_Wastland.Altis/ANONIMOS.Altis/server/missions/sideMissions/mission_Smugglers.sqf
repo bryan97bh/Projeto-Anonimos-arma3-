@@ -11,7 +11,7 @@ private ["_positions", "_smugglerVeh", "_vehicle1", "_vehicle2", "_boxes1", "_cu
 
 _setupVars =
 {
-	_missionType = "Weapon Smugglers";
+	_missionType = "CONTRABANDO DE ARMAS";
 
 	_locationsArray = MissionSpawnMarkers;
 };
@@ -50,7 +50,7 @@ _setupObjects =
 	
 	_missionPicture = getText (configFile >> "CfgVehicles" >> _smugglerVeh >> "picture");
 	
-	_missionHintText = format ["A group of weapon smugglers have been spotted. Stop the weapon deal and take their weapons.", sideMissionColor];
+	_missionHintText = format ["um grupo de contrabandistas foi avistado nessa posição marcada no mapa!", sideMissionColor];
 };
 	
 _waitUntilMarkerPos = nil;
@@ -122,7 +122,7 @@ _successExec =
 	};
     */
 	
-	_successHintMessage = format ["The smugglers are dead, the weapons are yours!"];
+	_successHintMessage = format ["O grupo contrabandistas foi morto!!"];
 };
 
 _this call sideMissionProcessor;

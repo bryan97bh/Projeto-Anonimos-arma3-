@@ -24,7 +24,7 @@ _setupVars =
 	while {_vehicleClass isEqualType []} do { _vehicleClass = selectRandom _vehicleClass };
 	if (_vehicleClass find "/" != -1) then { _vehicleClass = _vehicleClass splitString "/" };
 
-	_missionType = "Main Battle Tank";
+	_missionType = "CAVALARIA BLINDADA";
 	_locationsArray = MissionSpawnMarkers;
 
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };

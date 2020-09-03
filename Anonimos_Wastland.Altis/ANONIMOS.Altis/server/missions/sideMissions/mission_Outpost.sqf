@@ -13,7 +13,7 @@ private ["_nbUnits", "_outpost", "_objects"];
 
 _setupVars =
 {
-	_missionType = "Enemy Outpost";
+	_missionType = "POSTO AVANÇADO INIMIGO";
 	_locationsArray = MissionSpawnMarkers;
 	_nbUnits = AI_GROUP_MEDIUM;
 };
@@ -31,7 +31,7 @@ _setupObjects =
 	[_aiGroup, _missionPos, _nbUnits, 5] call createCustomGroup;
 	_aiGroup setCombatMode "Red";
 
-	_missionHintText = format ["An armed <t color='%1'>outpost</t> containing weapon crates has been spotted near the marker, go capture it!", sideMissionColor]
+	_missionHintText = format ["Um armado <t color='%1'>posto avançado</t> contendo caixas de armas, foi espotado na marcação. Limpe a área e colete as caixas!", sideMissionColor]
 };
 
 _waitUntilMarkerPos = nil;
@@ -50,7 +50,7 @@ _successExec =
 	{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach _objects;
 	[_locationsArray, _missionLocation, _objects] call setLocationObjects;
 
-	_successHintMessage = "The outpost has been captured, good work.";
+	_successHintMessage = "O posto avançado foi capturado, bom trabalho.";
 };
 
 _this call sideMissionProcessor;

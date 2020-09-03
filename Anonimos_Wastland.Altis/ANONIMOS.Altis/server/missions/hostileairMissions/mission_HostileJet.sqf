@@ -11,7 +11,7 @@ private ["_vehicleClass", "_vehicle", "_createVehicle", "_leader", "_waypoint", 
 
 _setupVars =
 {
-	_missionType = "CÉU EM CHAMAS";
+	_missionType = "JATO HOSTIL";
 	_locationsArray = nil; // locations are generated on the fly from towns
 };
 

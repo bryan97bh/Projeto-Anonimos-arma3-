@@ -13,7 +13,7 @@ private ["_nbUnits", "_wreckPos", "_wreck", "_box1", "_box2"];
 
 _setupVars =
 {
-	_missionType = "Aircraft Wreck 1";
+	_missionType = "AERONAVE CAÍDA";
 	_locationsArray = [ForestMissionMarkers, MissionSpawnMarkers] select (ForestMissionMarkers isEqualTo []);
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
 };
@@ -42,7 +42,7 @@ _setupObjects =
 	_aiGroup setCombatMode "Red";
 
 	_missionPicture = getText (configFile >> "CfgVehicles" >> typeOf _wreck >> "picture");
-	_missionHintText = "A helicopter has come down under enemy fire!";
+	_missionHintText = "Um helicóptero foi avariado e sua tripulação está no local guarnecendo a aeronave!";
 };
 
 _waitUntilMarkerPos = nil;
@@ -61,7 +61,7 @@ _successExec =
 	{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2];
 	deleteVehicle _wreck;
 
-	_successHintMessage = "The airwreck supplies have been collected, well done.";
+	_successHintMessage = "Os suprimentos que carregava a aeronave foram coletados com sucesso!";
 };
 
 _this call sideMissionProcessor;

@@ -11,7 +11,7 @@ private [ "_box1", "_barGate", "_bunker1", "_bunker2", "_obj1", "_obj2", "_drop_
 
 _setupVars =
 {
-	_missionType = "Roadblock";
+	_missionType = "BLOQUEIO NA ESTRADA";
 	_locationsArray = RoadblockMissionMarkers;
 };
 
@@ -47,7 +47,7 @@ _setupObjects =
 	
 	_aiGroup setCombatMode "Red";
     	
-	_missionHintText = format ["Law enforcement has set up a <t color='%1'>Roadblock</t> and is stopping all vehicles!", moneyMissionColor]
+	_missionHintText = format ["A polícia fez um <t color='%1'>bloqueio na estrada</t> eles estao parando todos os veiculos!", moneyMissionColor]
 };
 
 _waitUntilMarkerPos = nil;
@@ -87,7 +87,7 @@ _successExec =
 		_cash1 setVariable ["owner", "world", true];
 	};
   
-	_successHintMessage = format ["The roadblock has been captured. The money is yours"];
+	_successHintMessage = format ["Estrada livre novamente!Bom trabalho!"];
 };
 
 _this call moneyMissionProcessor;

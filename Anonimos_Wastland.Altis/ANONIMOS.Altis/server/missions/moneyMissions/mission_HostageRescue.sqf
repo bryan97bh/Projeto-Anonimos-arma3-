@@ -11,7 +11,7 @@ private ["_positions", "_camonet", "_hostage", "_obj1", "_obj3", "_obj4", "_vehi
 
 _setupVars =
 {
-	_missionType = "Hostage Rescue";
+	_missionType = "RESGATE AO REFÉM";
 	_locationsArray = MissionSpawnMarkers;
 };
 
@@ -58,7 +58,7 @@ _setupObjects =
 	_aiGroup setBehaviour "COMBAT";	
 	
 	_vehicleName = "Hostage";
-	_missionHintText = format ["<br/>Mercenary soldiers have captured a merchant and claim ransom. <br/> Free the merchant, he will pay for this", _vehicleName, moneyMissionColor];
+	_missionHintText = format ["<br/>Mate os sequestradores e salve o refem e ganhe uma recompença.", _vehicleName, moneyMissionColor];
 };
 
 _waitUntilMarkerPos = nil;
@@ -70,7 +70,7 @@ _failedExec =
 	// Mission failed
 	
 	{ deleteVehicle _x } forEach [_camonet, _obj1, _obj3, _obj4, _hostage, _chair];
-	_failedHintMessage = format ["The merchant is dead! What the hell have you not understood? Have you saved one Ghillie Suit at least?!"];
+	_failedHintMessage = format ["O refém está morto voce fracassou"];
 };
 
 _successExec =
@@ -90,7 +90,7 @@ _successExec =
 	};
 	
 	
-	_successHintMessage = format ["Well done! The mercenary soldiers are dead and the merchant alive. He pays for this."];
+	_successHintMessage = format ["Bom trabalho"];
 };
 
 _this call moneyMissionProcessor;

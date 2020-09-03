@@ -11,7 +11,7 @@ private ["_planeChoices", "_convoyVeh", "_veh1", "_veh2", "_createVehicle", "_ve
 
 _setupVars =
 {
-	_missionType = "Hostile Jets";
+	_missionType = "JATOS HOSTIS";
 	_locationsArray = nil; // locations are generated on the fly from towns
 };
 
@@ -150,7 +150,7 @@ _setupObjects =
 	_vehicleName = getText (configFile >> "CfgVehicles" >> _veh1 >> "displayName");
 	_vehicleName2 = getText (configFile >> "CfgVehicles" >> _veh2 >> "displayName");
 
-	_missionHintText = format ["A formation of Jets containing two <t color='%3'>%1</t> are patrolling the island. Destroy them and recover their cargo!", _vehicleName, _vehicleName2, mainMissionColor];
+	_missionHintText = format ["Uma formação de jatos contendo dois <t color='%3'>%1</t> estão patrulhando a ilha. Destrua-os e recupere sua carga!", _vehicleName, _vehicleName2, mainMissionColor];
 
 	_numWaypoints = count waypoints _aiGroup;
 };
@@ -183,7 +183,7 @@ _successExec =
 	
 	{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2];
 
-	_successHintMessage = "The sky is clear again, the enemy jet patrol was taken out! Ammo crates have fallen near the wreck.";
+	_successHintMessage = "O céu está limpo novamente, a patrulha do jato inimigo foi abatida! As caixas de suprimento caíram perto dos destroços.";
 };
 
 _this call hostileairMissionsProcessor;

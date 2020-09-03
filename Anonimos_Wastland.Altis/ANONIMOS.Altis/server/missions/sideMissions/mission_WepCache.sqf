@@ -2,7 +2,7 @@
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Version: 1.0
-//	@file Name: mission_WepCache.sqf
+//	@file Name: misssion_WepCache.sqf
 //	@file Author: [404] Deadbeat, [404] Costlyy, AgentRev
 //	@file Created: 08/12/2012 15:19
 
@@ -13,7 +13,7 @@ private ["_nbUnits", "_box1", "_box2"];
 
 _setupVars =
 {
-	_missionType = "Aircraft Wreck 2";
+	_missionType = "AERONAVE CAÍDA 2";
 	_locationsArray = [ForestMissionMarkers, MissionSpawnMarkers] select (ForestMissionMarkers isEqualTo []);
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
 };
@@ -36,7 +36,7 @@ _setupObjects =
 	[_aiGroup, _missionPos, _nbUnits] call createCustomGroup;
 	_aiGroup setCombatMode "Red";
 
-	_missionHintText = "A weapon cache has been spotted near the marker.";
+	_missionHintText = "Um helicóptero foi avariado e sua tripulação está no local guarnecendo a aeronave!";
 };
 
 _waitUntilMarkerPos = nil;
@@ -54,7 +54,7 @@ _successExec =
 	// Mission completed
 	{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2];
 
-	_successHintMessage = "The airwreck supplies have been collected, well done.";
+	_successHintMessage = "Os suprimentos que carregava a aeronave foram coletados com sucesso!";
 };
 
 _this call sideMissionProcessor;

@@ -13,7 +13,7 @@ private ["_nbUnits", "_vehicleClass", "_vehicle"];
 
 _setupVars =
 {
-	_missionType = "Supply Truck";
+	_missionType = "CAMINHÃO DE SUPRIMENTO";
 	_locationsArray = MissionSpawnMarkers;
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
 };
@@ -49,7 +49,7 @@ _setupObjects =
 	_missionPicture = getText (configFile >> "CfgVehicles" >> _vehicleClass >> "picture");
 	_vehicleName = getText (configFile >> "CfgVehicles" >> _vehicleClass >> "displayName");
 
-	_missionHintText = format ["A <t color='%2'>%1</t> has been immobilized, go get it for your team.", _vehicleName, sideMissionColor];
+	_missionHintText = format ["Um <t color='%2'>%1</t> foi danificado. Vá pegar para seu time", _vehicleName, sideMissionColor];
 };
 
 _waitUntilMarkerPos = nil;
@@ -67,7 +67,7 @@ _successExec =
 	// Mission completed
 	[_vehicle, 1] call A3W_fnc_setLockState; // Unlock
 
-	_successHintMessage = "The truck has been captured, well done.";
+	_successHintMessage = "O caminhão de suprimentos foi capturado, bom trabalho.";
 };
 
 _this call sideMissionProcessor;

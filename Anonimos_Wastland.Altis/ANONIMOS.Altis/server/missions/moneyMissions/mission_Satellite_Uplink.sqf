@@ -15,7 +15,7 @@ private ["_positions", "_bunker", "_laptop", "_table", "_bunkerPos", "_connected
 
 _setupVars =
 {
-	_missionType = "Satellite Uplink";
+	_missionType = "satélite de reconhecimento";
 	_locationsArray = SatelliteMissionMarkers
 };
 
@@ -52,7 +52,7 @@ _setupObjects =
 	_connectedLaptop setVariable [ "Done", false, true ];
 	
 	_vehicleName = "Laptop";
-	_missionHintText = format ["A <t color='%2'>reconnaissance satellite</t> was ordered over the area because of the recent heavy fighting. We located a terminal you could use to hack the satellite and use it's capabilities.", _vehicleName, moneyMissionColor];
+	_missionHintText = format ["Um <t color='%2'>satélite de reconhecimento</t> foi encomendado sobre a área por causa dos recentes combates pesados. Localizamos um terminal que você pode usar para invadir o satélite e usá-lo.", _vehicleName, moneyMissionColor];
 };
 
 _waitUntilMarkerPos = nil;
@@ -79,7 +79,7 @@ _successExec =
 	RemoveLaptopHandler = _connectedLaptop;
 	publicVariable "RemoveLaptopHandler";
 	{ deleteVehicle _x } forEach [_bunker,  _laptop, _table];
-	_successHintMessage = format ["The reconnaissance satellite is hacked. Well done!"];
+	_successHintMessage = format ["O satélite de reconhecimento está hackeado, muito bem!"];
 };
 
 _this call moneyMissionProcessor;
