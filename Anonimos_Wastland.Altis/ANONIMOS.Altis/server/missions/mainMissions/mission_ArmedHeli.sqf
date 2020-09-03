@@ -25,7 +25,7 @@ _setupVars =
 		"B_Heli_Transport_03_F"                                     // Huron Green - Armed
 	];
 
-	_missionType = "Armed Helicopter";
+	_missionType = "HELICÓPTERO GUARNECIDO";
 	_locationsArray = MissionSpawnMarkers;
 
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };

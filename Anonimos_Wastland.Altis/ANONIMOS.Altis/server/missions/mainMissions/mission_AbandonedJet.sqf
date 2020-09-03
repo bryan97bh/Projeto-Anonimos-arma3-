@@ -32,7 +32,7 @@ _setupVars =
         //"C_Plane_Civil_01_F"
 	] call BIS_fnc_selectRandom;
 
-	_missionType = "Abandoned Jet";
+	_missionType = "AERONAVE ABANDONADA";
 	_locationsArray = MissionSpawnMarkers;
 
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };

@@ -28,7 +28,7 @@ _setupVars =
                     "B_Heli_Transport_03_unarmed_F"
                     ] call BIS_fnc_selectRandom;
 
-	_missionType = "Supply Helicopter";
+	_missionType = "HELICÓPTERO DE SUPORTE";
 	_locationsArray = MissionSpawnMarkers;
 
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
