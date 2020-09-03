@@ -20,7 +20,7 @@ private ["_soldierTypes", "_uniformTypes", "_vestTypes", "_weaponTypes", "_group
 _soldierTypes = ["C_man_polo_1_F", "C_man_polo_2_F", "C_man_polo_3_F", "C_man_polo_4_F", "C_man_polo_5_F", "C_man_polo_6_F"];
 _uniformTypes = ["U_I_CombatUniform_tshirt", "U_I_CombatUniform_shortsleeve" ,"U_B_CombatUniform_mcam_tshirt", "U_C_WorkerCoveralls"];
 _vestTypes = ["V_PlateCarrier1_rgr", "V_HarnessOGL_gry", "V_TacVestIR_blk", "V_Chestrig_oli", "V_HarnessO_brn", "V_TacVest_brn", "V_Chestrig_khk", "V_TacVest_camo"];
-_weaponTypes = ["srifle_EBR_ARCO_pointer_F","LMG_Mk200_MRCO_F","arifle_Katiba_GL_ARCO_pointer_F","arifle_MX_SW_Hamr_pointer_F"];
+_weaponTypes = ["arifle_Katiba_F","arifle_CTARS_blk_F","srifle_DMR_07_blk_F","arifle_Katiba_GL_F"];
 
 _group = _this select 0;
 _position = _this select 1;

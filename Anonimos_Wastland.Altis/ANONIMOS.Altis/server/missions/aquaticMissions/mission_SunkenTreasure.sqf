@@ -14,7 +14,7 @@ private ["_cashObjects", "_cash", "_cashPos", "_box1", "_boxPos", "_vehicleClass
 
 _setupVars =
 {
-	_missionType = "TESOURO À VISTA";
+	_missionType = "BAU DO TESOURO";
 	_locationsArray = SunkenMissionMarkers;
 };
 
@@ -79,7 +79,7 @@ _successExec =
 
 	// Give the rewards
 	{
-		_x setVariable ["cmoney", 3000, true];
+		_x setVariable ["cmoney", 5000, true];
 		_x setVariable ["owner", "world", true];
 		_x setVariable ["persistent", false, true];
 	} forEach _cashObjects;

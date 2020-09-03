@@ -15,7 +15,7 @@ private ["_positions", "_bunker", "_laptop", "_table", "_bunkerPos", "_connected
 
 _setupVars =
 {
-	_missionType = "satélite de reconhecimento";
+	_missionType = "SATÉLITE DE RECONHECIMENTO";
 	_locationsArray = SatelliteMissionMarkers
 };
 
