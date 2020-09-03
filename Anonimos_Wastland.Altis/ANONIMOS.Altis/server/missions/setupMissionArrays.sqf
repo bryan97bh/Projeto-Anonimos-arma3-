@@ -22,11 +22,9 @@ SideMissions =
 	["mission_MiniConvoy", 1],            //ESCOLTA ARMADA
     ["mission_DrugsRunners", 1],          //TRAFICANTES
     ["mission_Smugglers", 1],             //CONTRABANDO DE ARMAS
-	//["mission_SunkenSupplies", 0.2],      //#manter destivado 
 	["mission_TownInvasion", 1],          //CIDADE INVADIDA
 	["mission_AirWreck", 1],              //AERONAVE CAÍDA
 	["mission_WepCache", 1],              //AERONAVE CAÍDA 2
-	["mission_Outpost", 1],               //POSTO AVANÇADO INIMIGO
 	["mission_Truck", 1]                  //CAMINHÃO DE SUPRIMENTO
 ];
 
@@ -35,15 +33,13 @@ MoneyMissions =
 	["mission_MoneyShipment", 1],           //ESCOLTA DE DINHEIRO
     ["mission_HostageRescue", 1],           //RESGATE AO REFÉM
     ["mission_Roadblock", 1],               //BLOQUEIO NA ESTRADA
-    ["mission_Terror", 1],                  //CIDADE TOMADA
-	//["mission_SunkenTreasure", 0.1],        //#manter destivado 
+    ["mission_Terror", 1],                  //CIDADE TOMADA 
 	["mission_HackLaptop", 1]	            //Hackers
 ];
 
 PrincipalMissions =
 [
-	//["mission_ArmedDiversquad", 0.2],        //#manter destivado 
-	//["mission_Coastal_Convoy", 0.7],         //#manter destivado 
+	["mission_Outpost", 1],                  //POSTO AVANÇADO INIMIGO
 	["mission_Convoy", 1]                    //COMBOIO SUSPEITO
 	//["mission_HostileHeliFormation", 0.5],   //#manter destivado 
     //["mission_HostileJetFormation", 0.5]     //#manter destivado 
