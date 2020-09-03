@@ -26,9 +26,9 @@ class Header
 
 author="Anônimos-by A3Wasteland.com";
 onLoadName = "Anônimos A3Wasteland Altis"; // it would be great if you could keep "A3" in the name, like "ABC A3Wasteland" instead of "ABC Wasteland" :)
-onLoadMission = "DS: discord.gg/Rs2xFHC a3wasteland.com";
-overviewText = "Discord: discord.gg/Rs2xFHC";
-overviewTextLocked = "Discord: discord.gg/Rs2xFHC";
+onLoadMission = "DS: https://invite.gg/anonimos";
+overviewText = "Discord: https://invite.gg/anonimos";
+overviewTextLocked = "Discord: https://invite.gg/anonimos";
 overviewPicture = "mapConfig\loading.jpg";
 loadScreen = "mapConfig\loading.jpg";
 briefing = 0; // if 0, skip Continue button
