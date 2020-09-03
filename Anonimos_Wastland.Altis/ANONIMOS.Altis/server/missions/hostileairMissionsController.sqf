@@ -5,7 +5,7 @@
 //	@file Author: AgentRev
 
 #define MISSION_CTRL_PVAR_LIST hostileairMissions
-#define MISSION_CTRL_TYPE_NAME "objetivos aéreo"
+#define MISSION_CTRL_TYPE_NAME "Aéreo"
 #define MISSION_CTRL_FOLDER "hostileairMissions"
 #define MISSION_CTRL_DELAY (["A3W_hostileairMissionDelay", 1*60] call getPublicVar)
 #define MISSION_CTRL_COLOR_DEFINE hostileairMissionColor

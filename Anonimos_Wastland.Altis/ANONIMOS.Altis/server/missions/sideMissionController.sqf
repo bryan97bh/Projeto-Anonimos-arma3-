@@ -5,7 +5,7 @@
 //	@file Author: AgentRev
 
 #define MISSION_CTRL_PVAR_LIST SideMissions
-#define MISSION_CTRL_TYPE_NAME "Side"
+#define MISSION_CTRL_TYPE_NAME "Colateral"
 #define MISSION_CTRL_FOLDER "sideMissions"
 #define MISSION_CTRL_DELAY (["A3W_sideMissionDelay", 1*60] call getPublicVar)
 #define MISSION_CTRL_COLOR_DEFINE sideMissionColor

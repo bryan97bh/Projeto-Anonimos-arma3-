@@ -4,7 +4,7 @@
 //	@file Name: moneyMissionProcessor.sqf
 //	@file Author: AgentRev
 
-#define MISSION_PROC_TYPE_NAME "Money"
+#define MISSION_PROC_TYPE_NAME "Dinheiro"
 #define MISSION_PROC_TIMEOUT (["A3W_moneyMissionTimeout", 10*60] call getPublicVar)
 #define MISSION_PROC_COLOR_DEFINE moneyMissionColor
 

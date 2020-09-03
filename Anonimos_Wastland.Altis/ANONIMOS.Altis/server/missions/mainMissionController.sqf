@@ -5,7 +5,7 @@
 //	@file Author: AgentRev
 
 #define MISSION_CTRL_PVAR_LIST MainMissions
-#define MISSION_CTRL_TYPE_NAME "Maquinas de guerra"
+#define MISSION_CTRL_TYPE_NAME "Máquinas de guerra"
 #define MISSION_CTRL_FOLDER "mainMissions"
 #define MISSION_CTRL_DELAY (["A3W_mainMissionDelay", 1*60] call getPublicVar)
 #define MISSION_CTRL_COLOR_DEFINE mainMissionColor

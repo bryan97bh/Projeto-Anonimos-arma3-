@@ -4,7 +4,7 @@
 //	@file Name: mainMissionProcessor.sqf
 //	@file Author: AgentRev
 
-#define MISSION_PROC_TYPE_NAME "Maquinas de guerra"
+#define MISSION_PROC_TYPE_NAME "Máquinas de guerra"
 #define MISSION_PROC_TIMEOUT (["A3W_mainMissionTimeout", 10*60] call getPublicVar)
 #define MISSION_PROC_COLOR_DEFINE mainMissionColor
 

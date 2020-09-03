@@ -5,7 +5,7 @@
 //	@file Author: AgentRev
 
 #define MISSION_CTRL_PVAR_LIST MoneyMissions
-#define MISSION_CTRL_TYPE_NAME "Money"
+#define MISSION_CTRL_TYPE_NAME "Dinheiro"
 #define MISSION_CTRL_FOLDER "moneyMissions"
 #define MISSION_CTRL_DELAY (["A3W_moneyMissionDelay", 1*60] call getPublicVar)
 #define MISSION_CTRL_COLOR_DEFINE moneyMissionColor
