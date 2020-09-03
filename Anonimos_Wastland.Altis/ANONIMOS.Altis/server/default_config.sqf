@@ -175,7 +175,7 @@ A3W_missionFarAiDrawLines = 1;     // Draw small red lines on the map from missi
 A3W_missionsQuantity = 6;          // Number of missions running at the same time (0 to 6)
 A3W_heliPatrolMissions = 1;        // Enable missions involving flying helicopters piloted by AI (0 = no, 1 = yes)
 A3W_underWaterMissions = 1;        // Enable underwater missions which require diving gear (0 = no, 1 = yes)
-//-----------------------------------------------------------------------------------------------------------------------------//
+//##############################################################################################################################//
 A3W_mainMissionDelay = 1*60;      // Time in seconds between Main Missions
 A3W_mainMissionTimeout = 10*60;    // Time in seconds that a Main Mission will run for, unless completed
 
@@ -190,7 +190,10 @@ A3W_principalMissionsTimeout = 10*60;    // Time in seconds that a Main Mission 
 
 A3W_hostileairMissionDelay = 1*60;      // Time in seconds between Main Missions
 A3W_hostileairMissionTimeout = 10*60;    // Time in seconds that a Main Mission will run for, unless completed
-//-----------------------------------------------------------------------------------------------------------------------------//
+
+A3W_aquaticMissionDelay = 1*60;      // Time in seconds between Main Missions
+A3W_aquaticMissionTimeout = 10*60;    // Time in seconds that a Main Mission will run for, unless completed
+//###############################################################################################################################//
 A3W_hackedMissionDlSize = 165072;	// File size in Kilobytles (~1Mbps dl Rate)
 A3W_hackedMissionPercentage = 0.005; // Percentage to come out of bankaccounts
 A3W_hackedMissionExtraFixMoney = 30000;	// Fix extra money for successfully download

@@ -1,28 +1,28 @@
 // ******************************************************************************************
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
-//	@file Name: setupMissionArrays.sqfs
+//	@file Name: setupMissionArrays.sqfss
 //	@file Author: AgentRev principal -- principalMissions
 
 if (!isServer) exitWith {};
 // Mission filename, weight 
 MainMissions =
 [
-	["mission_APC", 0.7],
+	["mission_APC", 1],
 	["mission_MBT", 1],
 	["mission_LightArmVeh", 1],
 	["mission_ArmedHeli", 1],
-    ["mission_AbandonedJet", 0.4],
+    ["mission_AbandonedJet", 1],
 	["mission_CivHeli", 1]
 ];
 
 SideMissions =
 [
-	["mission_HostileHelicopter", 0.5],
+	//["mission_HostileHelicopter", 0.5],
 	["mission_MiniConvoy", 1],
     ["mission_DrugsRunners", 1],
     ["mission_Smugglers", 1],
-	["mission_SunkenSupplies", 0.2],
+	//["mission_SunkenSupplies", 0.2],
 	["mission_TownInvasion", 2],
 	["mission_AirWreck", 1],
 	["mission_WepCache", 0.5],
@@ -36,17 +36,17 @@ MoneyMissions =
     ["mission_HostageRescue", 1],
     ["mission_Roadblock", 1],
     ["mission_Terror", 1],
-	["mission_SunkenTreasure", 0.1],
+	//["mission_SunkenTreasure", 0.1],
 	["mission_HackLaptop", 0.1]	
 ];
 
 PrincipalMissions =
 [
-	["mission_ArmedDiversquad", 0.2],
-	["mission_Coastal_Convoy", 0.7],
-	["mission_Convoy", 1],
-	["mission_HostileHeliFormation", 0.5],
-    ["mission_HostileJetFormation", 0.5]
+	//["mission_ArmedDiversquad", 0.2],
+	//["mission_Coastal_Convoy", 0.7],
+	["mission_Convoy", 1]
+	//["mission_HostileHeliFormation", 0.5],
+    //["mission_HostileJetFormation", 0.5]
 ];
 
 hostileairMissions =
@@ -57,6 +57,15 @@ hostileairMissions =
     ["mission_HostileJet", 0.5],
 	["mission_HostileVTOL", 0.5],
 	["mission_SmugglerPlane", 0.8]
+];
+
+aquaticMissions =
+[
+	["mission_ArmedDiversquad", 0.7],
+	["mission_Coastal_Convoy", 0.5],
+	["mission_Jaws", 0.6],
+	["mission_SunkenSupplies", 0.6],
+	["mission_SunkenTreasure", 0.5]
 ];
 
 MissionSpawnMarkers = (allMapMarkers select {["Mission_", _x] call fn_startsWith}) apply {[_x, false]};
@@ -95,3 +104,4 @@ MoneyMissions = [MoneyMissions, [["A3W_underWaterMissions", ["mission_SunkenTrea
 { _x set [2, false] } forEach MoneyMissions;
 { _x set [2, false] } forEach PrincipalMissions;
 { _x set [2, false] } forEach hostileairMissions;
+{ _x set [2, false] } forEach aquaticMissions;
