@@ -29,8 +29,8 @@ onLoadName = "Anônimos A3Wasteland Altis"; // it would be great if you could ke
 onLoadMission = "DS: discord.gg/Rs2xFHC a3wasteland.com";
 overviewText = "Discord: discord.gg/Rs2xFHC";
 overviewTextLocked = "Discord: discord.gg/Rs2xFHC";
-overviewPicture = "mapConfig\Loading.jpg";
-loadScreen = "mapConfig\Loading.jpg";
+overviewPicture = "mapConfig\loading.jpg";
+loadScreen = "mapConfig\loading.jpg";
 briefing = 0; // if 0, skip Continue button
 
 #include "debugFlag.hpp"
