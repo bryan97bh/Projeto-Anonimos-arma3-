@@ -93,4 +93,4 @@ _successExec =
 	_successHintMessage = format ["Well done! The mercenary soldiers are dead and the merchant alive. He pays for this."];
 };
 
-_this call moneyMissionProcessor;
+_this call sideMissionProcessor;

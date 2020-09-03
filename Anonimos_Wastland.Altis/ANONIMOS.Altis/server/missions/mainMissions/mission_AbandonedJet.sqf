@@ -27,7 +27,7 @@ _setupVars =
         "B_T_VTOL_01_infantry_F",
         "B_T_VTOL_01_infantry_F",
 		"B_T_VTOL_01_vehicle_F",
-        "B_T_VTOL_01_vehicle_F"
+        "B_T_VTOL_01_vehicle_F",
         //"C_Plane_Civil_01_racing_F",
         //"C_Plane_Civil_01_F"
 	] call BIS_fnc_selectRandom;

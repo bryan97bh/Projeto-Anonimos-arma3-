@@ -1,7 +1,7 @@
 // ******************************************************************************************
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
-//	@file Name: masterController.sqfs
+//	@file Name: masterController.sqf
 //	@file Author: AgentRev
 
 _ctrlTypes =
@@ -10,8 +10,7 @@ _ctrlTypes =
 	"moneyMission",
 	"sideMission",
 	"principalMission",
-	"hostileairMissions",
-	"aquaticMissions"
+	"hostileairMissions"
 ];
 
 _ctrlQuantity = (["A3W_missionsQuantity", 6] call getPublicVar) max 0 min 6;

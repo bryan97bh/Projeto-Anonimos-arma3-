@@ -90,4 +90,4 @@ _successExec =
 	_successHintMessage = format ["The roadblock has been captured. The money is yours"];
 };
 
-_this call moneyMissionProcessor;
+_this call sideMissionProcessor;
