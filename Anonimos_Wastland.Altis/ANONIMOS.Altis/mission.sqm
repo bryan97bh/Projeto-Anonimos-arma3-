@@ -218,8 +218,8 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="anonymous  A3Wasteland Altis Hive";
-		overviewText="anonymous  Wasteland Altis Core developed by A3Wasteland.com";
+		briefingName="Anônimos  A3Wasteland Altis Hive";
+		overviewText="Anônimos  Wasteland Altis Core developed by A3Wasteland.com";
 		resistanceWest=0;
 		timeOfChanges=3e+038;
 		startWeather=0;
