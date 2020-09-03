@@ -19,14 +19,14 @@ MainMissions =
 SideMissions =
 [
 	//["mission_HostileHelicopter", 0.5],//manter destivado 
-	//["mission_MiniConvoy", 1],
-    //["mission_DrugsRunners", 1],
+	["mission_MiniConvoy", 1],
+    ["mission_DrugsRunners", 1],
     ["mission_Smugglers", 1],
 	//["mission_SunkenSupplies", 0.2],//manter destivado 
-	//["mission_TownInvasion", 2],
-	//["mission_AirWreck", 1],
-	//["mission_WepCache", 1],
-	//["mission_Outpost", 1],
+	["mission_TownInvasion", 2],
+	["mission_AirWreck", 1],
+	["mission_WepCache", 1],
+	["mission_Outpost", 1],
 	["mission_Truck", 1]
 ];
 
@@ -35,7 +35,7 @@ MoneyMissions =
 	["mission_MoneyShipment", 1],
     ["mission_HostageRescue", 1],
     ["mission_Roadblock", 1],
-    //["mission_Terror", 1],
+    ["mission_Terror", 1],
 	//["mission_SunkenTreasure", 0.1],//manter destivado 
 	["mission_HackLaptop", 1]	
 ];
@@ -51,22 +51,22 @@ PrincipalMissions =
 
 hostileairMissions =
 [
-	//["mission_FalconPatrol", 0.9],
-    ["mission_HostileHelicopter", 0.7],
-    //["mission_HostileHeliFormation", 0.6],
-    ["mission_HostileJet", 0.5],
-	["mission_HostileJetFormation", 0.5],
-	["mission_HostileVTOL", 0.5]
-	//["mission_SmugglerPlane", 0.8]
+	//["mission_FalconPatrol", 1], 
+    ["mission_HostileHelicopter", 1],
+    ["mission_HostileHeliFormation", 1],
+    ["mission_HostileJet", 1],
+	["mission_HostileJetFormation", 1]
+	//["mission_HostileVTOL", 1],
+	//["mission_SmugglerPlane", 1]
 ];
 
 aquaticMissions =
 [
-	["mission_ArmedDiversquad", 0.7],
-	["mission_Coastal_Convoy", 0.5],
-	["mission_Jaws", 0.6],
-	["mission_SunkenSupplies", 0.6],
-	["mission_SunkenTreasure", 0.5]
+	["mission_ArmedDiversquad", 1],
+	["mission_Coastal_Convoy", 1],
+	["mission_Jaws", 1],
+	["mission_SunkenSupplies", 1],
+	["mission_SunkenTreasure", 1]
 ];
 
 MissionSpawnMarkers = (allMapMarkers select {["Mission_", _x] call fn_startsWith}) apply {[_x, false]};
