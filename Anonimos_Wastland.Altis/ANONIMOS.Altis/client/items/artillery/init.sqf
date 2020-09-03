@@ -20,6 +20,6 @@ private _take = [_path, "takeFromCrate.sqf"] call mf_compile;
 mf_items_artillery_canTakeFromCrate = [_path, "canTakeFromCrate.sqf"] call mf_compile;
 mf_items_artillery_checkCooldown = [_path, "checkCooldown.sqf"] call mf_compile;
 
-private _label = format ["<img image='%1'/> Take Artillery Strike from crate", _icon];
+private _label = format ["<img image='%1'/> Pegar Apoio de Fogo de Artilharia", _icon];
 private _action = [_label, _take, [], 5.05, false, false, "", "call mf_items_artillery_canTakeFromCrate == ''"];
 ["artillery-takeFromCrate", _action] call mf_player_actions_set;

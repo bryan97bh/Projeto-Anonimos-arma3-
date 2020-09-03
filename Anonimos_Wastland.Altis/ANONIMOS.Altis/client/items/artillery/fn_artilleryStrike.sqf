@@ -27,7 +27,7 @@ if (isServer && isNil "_success") then // server process
 
 	if (_pos isEqualTypeArray [0,0,0] && (isNil "_artiLastUse" || {diag_tickTime - _artiLastUse >= _cooldown})) then
 	{
-		diag_log format ["artilleryStrike - %1", [_UID, _player, name _player, side group _player, owner _player, remoteExecutedOwner, _pos, mapGridPosition _pos]];
+		diag_log format ["Fogo de Artilharia - %1", [_UID, _player, name _player, side group _player, owner _player, remoteExecutedOwner, _pos, mapGridPosition _pos]];
 
 		[
 			_player,
@@ -67,11 +67,11 @@ else // client post-process
 {
 	if (_success) then
 	{
-		["Strike successfully initiated.", 5] call a3w_actions_notify;
+		["Comando enviado a central de tiro com sucesso.", 5] call a3w_actions_notify;
 	}
 	else
 	{
 		["artillery", 1] call mf_inventory_add;
-		["Error initiating strike.\n Please try again. ", 5] call a3w_actions_notify;
+		["Erro ao iniciar disparo.\n Por favor tente novamente. ", 5] call a3w_actions_notify;
 	};
 };

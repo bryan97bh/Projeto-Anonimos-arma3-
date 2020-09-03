@@ -29,7 +29,7 @@
 	</Package>
 	<Package name="TeamLock">
 		<Key ID="STR_WL_Punish_Teamkiller">
-			<English>You have been punished for teamkilling twice during this server session. Your inventory has been wiped, and you are now locked to the Independent side.</English>
+			<English>Você foi punido por matar a equipe duas vezes durante esta sessão do servidor. Seu inventário foi limpo e agora você está bloqueado para o lado Independente.</English>
 		</Key>
 		<Key ID="STR_WL_Loading_Teamkiller">
 			<English>You are restricted to the Independent side, due to having 2+ teamkills during this server session AND/OR more than 10 Teamkills.</English>
@@ -43,16 +43,16 @@
 	</Package>
 	<Package name="WelcomeMessage">
 		<Key ID="STR_WL_WelcomeToWasteland">
-			<English>&lt;t color='#FF8000' size='2.5' &gt;AJ Wasteland Altis &lt;/t&gt;</English>
+			<English>&lt;t color='#FF8000' size='2.5' &gt;Servidor Anônimos &lt;/t&gt;</English>
 		</Key>
 		<Key ID="STR_WL_YouAreInTeam">
-			<English>&lt;t color='#FFFFFF' size='1' &gt;* You are on &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt; %3 &lt; /t &gt;&lt; /t &gt; team. &lt;br/&gt;&lt;t color='#FFFFFF' size='1' &gt;* &lt;t color="#FF1111"&gt;ATTACKING or STEALING&lt;/t&gt;&lt;t color='#FFFFFF' size='1' &gt; from other &lt;t color="%2"&gt; %4 &lt; /t &gt;&lt;t color='#FFFFFF' size='1' &gt; players is &lt;t color="#FF1111"&gt;BANNABLE&lt;/t&gt;&lt;br/&gt;&lt;t color='#FFFFFF' size='1' &gt;* Punish Teamkillers to move to Indie. 10+ Teamkills = Permanently Indie (Automated) </English>
+			<English>&lt;t color='#FFFFFF' size='1' &gt;* Você está no time &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt; %3 &lt; /t &gt;&lt; /t &gt; team. &lt;br/&gt;&lt;t color='#FFFFFF' size='1' &gt;* &lt;t color="#FF1111"&gt;ATTACKING or STEALING&lt;/t&gt;&lt;t color='#FFFFFF' size='1' &gt; from other &lt;t color="%2"&gt; %4 &lt; /t &gt;&lt;t color='#FFFFFF' size='1' &gt; players is &lt;t color="#FF1111"&gt;BANNABLE&lt;/t&gt;&lt;br/&gt;&lt;t color='#FFFFFF' size='1' &gt;* Punish Teamkillers to move to Indie. 10+ Teamkills = Permanently Indie (Automated) </English>
 		</Key>
 		<Key ID="STR_WL_YouAreInFFA">
-			<English>&lt;t color='#FFFFFF' size='1' &gt;* You are in &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt; team.&lt;br/&gt;* You are &lt;t color="#00aa00"&gt;FREE TO ATTACK ANYONE&lt;/t&gt;&lt;br/&gt;&lt;/t&gt;</English>
+			<English>&lt;t color='#FFFFFF' size='1' &gt;* Você está no &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt; team.&lt;br/&gt;* Você é &lt;t color="#00aa00"&gt;Livre para matar qualquer um&lt;/t&gt;&lt;br/&gt;&lt;/t&gt;</English>
 		</Key>
 		<Key ID="STR_WL_MapMoreInfo">
-			<English>&lt;t color='#FFFFFF' size='1' &gt;Conquest: Capture and Maintain Flags. &lt;br/&gt;Press the Windows key to toggle player names&lt;br/&gt;Press END to put in Ear Plugs&lt;br/&gt; &lt;/t&gt;</English>
+			<English>&lt;t color='#FFFFFF' size='1' &gt;Conquest: Capture e mantenha as bandeiras para ganhar dinheiro. &lt;br/&gt;Precione a tecla windows para ver o nome dos jogadores&lt;br/&gt;Precione END para colocar os tampões de ouvido&lt;br/&gt; &lt;/t&gt;</English>
 		</Key>
 	</Package>
 	<Package name="TeamKillWarningMessage">
@@ -105,7 +105,7 @@
 	</Package>
 	<Package name="Dialogs">
 		<Key ID="STR_WL_dialog_TeamkillText">
-			<English>You have been teamkilled by %2 player %1&lt;br/&gt;&lt;br/&gt;If this was an accident, forgive him, otherwise they should explain their actions.&lt;br/&gt;&lt;br/&gt;If the player does not apologize, punish him.</English>
+			<English>Você foi morto pelo %2 jogador %1&lt;br/&gt;&lt;br/&gt;If this was an accident, forgive him, otherwise they should explain their actions.&lt;br/&gt;&lt;br/&gt;If the player does not apologize, punish him.</English>
 		</Key>
 	</Package>
 	<Package name="ATM_Menu">
@@ -113,33 +113,33 @@
 			<Original>Bank Account Management</Original>
 		</Key>
 		<Key ID="STR_ATM_Withdraw">
-			<Original>Withdraw</Original>
+			<Original>Retirar</Original>
 		</Key>
 		<Key ID="STR_ATM_Deposit">
-			<Original>Deposit</Original>
+			<Original>Depositar</Original>
 		</Key>
 		<Key ID="STR_ATM_Transfer">
-			<Original>Transfer</Original>
+			<Original>Transferir</Original>
 		</Key>
 		<Key ID="STR_ATM_Close">
-			<Original>Close</Original>
+			<Original>Fechar</Original>
 		</Key>
 	</Package>
 	<Package name="Errors">
 		<Key ID="STR_WL_Errors_InProgress">
-			<English>You are already performing another action!</English>
+			<English>Você já está executando outra ação!</English>
 		</Key>
 		<Key ID="STR_WL_Errors_InVehicle">
 			<English>You are currently busy!</English>
 		</Key>
 		<Key ID="STR_WL_Errors_BeaconActive">
-			<English>You already have an active spawn beacon!</English>
+			<English>Você já tem um BEACON ATIVO!</English>
 		</Key>
 		<Key ID="STR_WL_Errors_BeaconInVehicle">
-			<English>You cannot enter a vehicle while placing a spawn beacon!</English>
+			<English>Você não pode entrar no veiculo enquanto coloca um Spawn Beacon!</English>
 		</Key>
 		<Key ID="STR_WL_Errors_BeaconTooMany">
-			<English>You cannot take more spawn beacons!</English>
+			<English>Você não pode mais colocar Spawn Beacons!</English>
 		</Key>
 	</Package>
 </Project>

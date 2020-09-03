@@ -137,7 +137,7 @@ _setupObjects =
 	//_aiGroup setBehaviour "COMBAT";	
 	
 	_vehicleName = "Laptop";
-	_missionHintText = format ["<t color='%2'>Hackers</t> are using a laptop to hack your bank accounts. Hacking the laptop successfully will steal cash from each on-line players bank accounts! Plus extra money from the bank", _vehicleName, moneyMissionColor];
+	_missionHintText = format ["<t color='%2'>Hackers</t> está usando um laptop para invadir suas contas bancárias. Hackear o laptop com sucesso roubará dinheiro das contas bancárias de cada jogador on-line! Mais dinheiro extra do banco", _vehicleName, moneyMissionColor];
 };
 
 _waitUntilMarkerPos = nil;
@@ -165,7 +165,7 @@ _successExec =
 	publicVariable "RemoveLaptopHandler";
 	{ deleteVehicle _x } forEach [_laptop,_table,_laptop2,_table2,_laptop3,_table3,_laptop4,_table4 ];
 	{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_obj, _obj2, _obj3, _obj4 ];
-	_successHintMessage = format ["The laptop is hacked. Well done!"];
+	_successHintMessage = format ["O laptop está hackeado. muito Bem!"];
 };
 
 _this call moneyMissionProcessor;

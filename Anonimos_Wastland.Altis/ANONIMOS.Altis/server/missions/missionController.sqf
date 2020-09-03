@@ -17,7 +17,7 @@ if (_controllerNum > 1) then
 	_controllerSuffix = format [" %1", _controllerNum];
 };
 
-diag_log format ["WASTELAND SERVER - Started %1 Mission%2 Controller", MISSION_CTRL_TYPE_NAME, _controllerSuffix];
+diag_log format ["Servidor Anônimos Brasil - Started %1 Mission%2 Controller", MISSION_CTRL_TYPE_NAME, _controllerSuffix];
 
 _missionsFolder = MISSION_CTRL_FOLDER;
 [MISSION_CTRL_PVAR_LIST, MISSION_CTRL_FOLDER] call attemptCompileMissions;
@@ -46,14 +46,14 @@ while {true} do
 
 	[MISSION_CTRL_PVAR_LIST, _nextMission, true] call setMissionState;
 
-	diag_log format ["WASTELAND SERVER - %1 Mission%2 waiting to run: %3", MISSION_CTRL_TYPE_NAME, _controllerSuffix, _nextMission];
+	diag_log format ["Servidor Anônimos Brasil - %1 Missão%2 aguardando para rodar: %3", MISSION_CTRL_TYPE_NAME, _controllerSuffix, _nextMission];
 
 	[
 		format
 		[
-			"<t color='%1' shadow='2' size='1.75'>%2 Objective%3</t><br/>" +
+			"<t color='%1' shadow='2' size='1.75'>%2 Objetivo%3</t><br/>" +
 			"<t color='%1'>------------------------------</t><br/>" +
-			"<t color='%4' size='1.0'>Starting in %5 minutes</t>",
+			"<t color='%4' size='1.0'>Começando em %5 minutos</t>",
 			MISSION_CTRL_COLOR_DEFINE,
 			MISSION_CTRL_TYPE_NAME,
 			_controllerSuffix,

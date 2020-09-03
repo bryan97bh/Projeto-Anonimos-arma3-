@@ -19,7 +19,7 @@ _aiGroup = grpNull;
 
 if (!isNil "_setupVars") then { call _setupVars };
 
-diag_log format ["WASTELAND SERVER - %1 Mission%2 started: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
+diag_log format ["Servidor Anônimos Brasil - %1 Missão%2 começou: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
 
 _missionTimeout = MISSION_PROC_TIMEOUT;
 
@@ -52,7 +52,7 @@ _aiGroup setVariable ["A3W_missionMarkerName", _marker, true];
 if (isNil "_missionPicture") then { _missionPicture = "" };
 
 [
-	format ["%1 Objective", MISSION_PROC_TYPE_NAME],
+	format ["%1 Objetivo", MISSION_PROC_TYPE_NAME],
 	_missionType,
 	_missionPicture,
 	_missionHintText,
@@ -60,7 +60,7 @@ if (isNil "_missionPicture") then { _missionPicture = "" };
 ]
 call missionHint;
 
-diag_log format ["WASTELAND SERVER - %1 Mission%2 waiting to be finished: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
+diag_log format ["Servidor Anônimos Brasil - %1 Missão%2 esperando para ser finalizada: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
 
 _failed = false;
 _complete = false;
@@ -138,15 +138,15 @@ if (_failed) then
 	};
 
 	[
-		"Objective Failed",
+		"Objetivo Falhou",
 		_missionType,
 		_missionPicture,
-		if (!isNil "_failedHintMessage") then { _failedHintMessage } else { "Better luck next time!" },
+		if (!isNil "_failedHintMessage") then { _failedHintMessage } else { "Mais sorte da próxima vez!" },
 		failMissionColor
 	]
 	call missionHint;
 
-	diag_log format ["WASTELAND SERVER - %1 Mission%2 failed: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
+	diag_log format ["Servidor Anônimos Brasil - %1 Missão%2 falhou: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
 }
 else
 {
@@ -202,7 +202,7 @@ else
 	};
 
 	[
-		"Objective Complete",
+		"Objetivo Finalizado",
 		_missionType,
 		_missionPicture,
 		_successHintMessage,
@@ -210,7 +210,7 @@ else
 	]
 	call missionHint;
 
-	diag_log format ["WASTELAND SERVER - %1 Mission%2 complete: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
+	diag_log format ["Servidor Anônimos Brasil - %1 Missão%2 finalizada: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
 };
 
 deleteGroup _aiGroup;

@@ -176,7 +176,7 @@ player createDiaryRecord ["changelog",
 [
 "v1.2b",
 "
-<br/>Check our Discord https://invite.gg/anonimos for more information!
+<br/>Conheça nosso DISCORD https://invite.gg/anonimos para mais informações e dicas!
 "
 ]];
 
