@@ -189,7 +189,7 @@ A3W_principalMissionsDelay = 1*60;      // Time in seconds between Main Missions
 A3W_principalMissionsTimeout = 16*60;    // Time in seconds that a Main Mission will run for, unless completed
 
 A3W_hostileairMissionDelay = 1*60;      // Time in seconds between Main Missions
-A3W_hostileairMissionTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
+A3W_hostileairMissionTimeout = 30*60;    // Time in seconds that a Main Mission will run for, unless completed
 
 A3W_aquaticMissionDelay = 1*60;      // Time in seconds between Main Missions
 A3W_aquaticMissionTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
