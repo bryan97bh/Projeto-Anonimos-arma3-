@@ -86,11 +86,10 @@ _baseMoney = ["A3W_startingMoney", 100] call getPublicVar;
 //AJ-EDIT: Avoid playing if server is not ready (Baseobjects and co)
 if (isNil "A3W_AllowClientToEnterGame") then
 {
-	player groupChat "Calculating a^n + b^n = c^n for n>2"; //little math humor easteregg - to troubleshoot if we get stuck here
 	waitUntil {!isNil "A3W_AllowClientToEnterGame"}; //With sleep at the end to avoid base objects bugusing during object positioning after restart
-	uisleep ((["A3W_ClientSpawnDelayAfterRestart", 60*1] call getPublicVar)/10); //To avoid base objects bugusing during object positioning after restart
+	//uisleep ((["A3W_ClientSpawnDelayAfterRestart", 60*1] call getPublicVar)/10); //To avoid base objects bugusing during object positioning after restart
+	UiSleep 10;
 	9999 cutRsc ["loadingscreen","BLACK"];    
-    player groupChat "Done - 3987^12 + 4365^12 = 4472^12";
 };
 
 
