@@ -14,19 +14,17 @@ _setupVars =
 	_vehicleClass =
 	[
 		["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardAA"],
-        ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardAA"],
-        ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardAA"],
-        ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardCAS"],
-        ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardCAS"],
+        //["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardAA"],
+        //["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardAA"],
+        //["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardCAS"],
+        //["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardCAS"],
         ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardCAS"],
         "I_Plane_Fighter_04_F",
         "B_Plane_Fighter_01_F",
-        "B_Plane_Fighter_01_Stealth_F",
         "O_Plane_Fighter_02_F",
-        "O_Plane_Fighter_02_Stealth_F",
+        "B_Plane_CAS_01_dynamicLoadout_F",
+        "O_Plane_CAS_02_dynamicLoadout_F",
         "B_T_VTOL_01_infantry_F",
-        "B_T_VTOL_01_infantry_F",
-		"B_T_VTOL_01_vehicle_F",
         "B_T_VTOL_01_vehicle_F"
         //"C_Plane_Civil_01_racing_F",
         //"C_Plane_Civil_01_F"
