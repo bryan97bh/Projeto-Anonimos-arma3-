@@ -109,9 +109,9 @@ while {true} do
 /*	_hudServerTextbox = _ui displayCtrl hud_server_idc;
 	
 	//BEGIN AJ
-	//_serverString = format ["<t color='#A0FFFFFF'>Server: [EU] HardCore #1 Wasteland Altis</t>"];
-    _serverString = format ["<t color='#A0FFFFFF'>[EU]HardCore #%1 Wasteland %2</t>", call A3W_extdb_ServerID, worldName];
-	_serverString = format ["%1<br/><t color='#A0FFFFFF'>Discord: discord.gg/jZ2mT9N</t><br/><t color='#A0FFFFFF'>Facebook: @HardCoreWasteland</t>",_serverString];
+	//_serverString = format ["<t color='#A0FFFFFF'>Server: [EU] Anônimos #1 Wasteland Altis</t>"];
+    _serverString = format ["<t color='#A0FFFFFF'>[EU]Anônimos #%1 Wasteland %2</t>", call A3W_extdb_ServerID, worldName];
+	_serverString = format ["%1<br/><t color='#A0FFFFFF'>Discord: discord.gg/jZ2mT9N</t><br/><t color='#A0FFFFFF'>Facebook: @AnônimosWasteland</t>",_serverString];
 	_hudServerTextbox ctrlSetStructuredText parseText _serverString;
 	_hudServerTextbox ctrlCommit 0;
 	//END AJ
@@ -183,7 +183,7 @@ while {true} do
 
 	if (isStreamFriendlyUIEnabled) then
 	{
-		_tempString = format ["<t color='#CCCCCCCC'>HardCore A3Wasteland %1</t>", getText (configFile >> "CfgWorlds" >> worldName >> "description")];
+		_tempString = format ["<t color='#CCCCCCCC'>Anônimos A3Wasteland %1</t>", getText (configFile >> "CfgWorlds" >> worldName >> "description")];
 		_yOffset = _yOffset + 0.08;
 	}
 	else

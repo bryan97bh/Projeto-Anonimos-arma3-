@@ -176,7 +176,7 @@ ZGO_StatusEnabled = true;
 
 			/*
 							<t shadow='1' shadowColor='#000000' color='%9'><img size='1.0'  shadowColor='#000000' image='addons\statusbar\icons\compass.paa' color='%9'/> %11</t>
-				<t size='1'shadow='1' shadowColor='#000000' color='%9'>[EU]HardCore #%17 Wasteland %10</t>
+				<t size='1'shadow='1' shadowColor='#000000' color='%9'>[EU]Anônimos #%17 Wasteland %10</t>
 				<t shadow='1' shadowColor='#000000' color='%9'>FPS: %7</t>	
 			*/
 			//display the information

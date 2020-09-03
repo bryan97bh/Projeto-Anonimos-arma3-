@@ -52,13 +52,13 @@ _text = "
 <br />
 <t align='left'><t size='1.2'><t shadow= 1 shadowColor='#000000'>Get in contact with us:</t><br />
 <br />
-<t align='left'><img size='1.7' shadow = 0 image='addons\infopage\discord.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'>   https://discord.gg/jZ2mT9N</t><br />
-<t align='left'><img size='1.6' shadow = 0 image='addons\infopage\fb.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'>    anonymous</t><br />
+<t align='left'><img size='1.7' shadow = 0 image='addons\infopage\discord.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'>   https://discord.gg/Rs2xFHC</t><br />
+<t align='left'><img size='1.6' shadow = 0 image='addons\infopage\fb.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'>    Anônimos</t><br />
 <t align='center'><img size='7' shadow = 0 image='mapConfig\Loading.jpg'/></t>
 <br />";
 
 hint parseText format ["
 <t align='center'>Welcome %2</t><br />
-<t align='center'><t shadow= 1 shadowColor='#000000'><t size='1.2'><t color='#eda92a'>anonymous A3W %3</t>%1
+<t align='center'><t shadow= 1 shadowColor='#000000'><t size='1.2'><t color='#eda92a'>Anônimos A3W %3</t>%1
 <br /><t align='center'>Holding 3 Territories for 10 Mins = $%4</t>
 ",_text, name player, worldname,(_moneyAmount *3)];

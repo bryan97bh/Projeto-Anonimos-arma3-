@@ -34,7 +34,7 @@ class TOParmaInfoD
 		class TAInfoTitle: RscText
 		{
 			idc = 10032;
-			text = "HardCore Information";
+			text = "Anônimos Information";
 			colorBackground[] = {0,0,0,1};
 			x = "0 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			y = "0 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
@@ -60,7 +60,7 @@ class TOParmaInfoD
 			idc = TOParmaInfo_General_Info_BG;
 			type = CT_STRUCTURED_TEXT;
 			size = 0.030;
-			text = "Facebook: @HardCoreWasteland Discord: discord.gg/jZ2mT9N";
+			text = "Facebook: @AnônimosWasteland Discord: discord.gg/Rs2xFHC";
 			x = "0 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			y = "1.1 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			w = "30 * (((safezoneW / safezoneH) min 1.2) / 40)";

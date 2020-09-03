@@ -24,13 +24,13 @@ class Header
 	maxPlayers=146; // 144 players, 2 headless client
 };
 
-author="anonymous  - Core by A3Wasteland.com";
-onLoadName = "anonymous  A3Wasteland Altis"; // it would be great if you could keep "A3" in the name, like "ABC A3Wasteland" instead of "ABC Wasteland" :)
-onLoadMission = "DS: discord.gg/jZ2mT9N CORE MISSION: a3wasteland.com";
-overviewText = "Discord: discord.gg/jZ2mT9N";
-overviewTextLocked = "Discord: discord.gg/jZ2mT9N";
-overviewPicture = "mapConfig\loading.jpg";
-loadScreen = "mapConfig\loading.jpg";
+author="Anônimos-by A3Wasteland.com";
+onLoadName = "Anônimos A3Wasteland Altis"; // it would be great if you could keep "A3" in the name, like "ABC A3Wasteland" instead of "ABC Wasteland" :)
+onLoadMission = "DS: discord.gg/Rs2xFHC a3wasteland.com";
+overviewText = "Discord: discord.gg/Rs2xFHC";
+overviewTextLocked = "Discord: discord.gg/Rs2xFHC";
+overviewPicture = "mapConfig\Loading.jpg";
+loadScreen = "mapConfig\Loading.jpg";
 briefing = 0; // if 0, skip Continue button
 
 #include "debugFlag.hpp"

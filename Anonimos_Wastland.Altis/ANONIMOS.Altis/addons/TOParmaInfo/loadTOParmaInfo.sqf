@@ -17,7 +17,7 @@ _serverInfoString = format ["<t color='#A0FFFFFF'>anonymous #%1 Wasteland %2</t>
 _serverInfoText ctrlSetStructuredText parseText _serverInfoString;
 
 _generalInfoText = _display displayCtrl TOParmaInfo_General_Info_BG;
-_generalInfoString = "Discord: discord.gg/jZ2mT9N";
+_generalInfoString = "Discord: discord.gg/Rs2xFHC";
 _generalInfoText ctrlSetStructuredText parseText _generalInfoString;
 
 
