@@ -2,9 +2,9 @@ scriptName "fn_aj_c_limitAttachedScope";
 /*--------------------------------------------------------------------
 	file: limitAttachedScope.sqf
 	============================
-	Author: Hatchet Harry <info@armajunkies.de>
-	Modified by: wiking.at
-	Description: Checks if a limited scope is being used and detaches it.
+	Author: Anônimos
+	Modified by: Anônimos
+	Description: Verifica se um escopo limitado está sendo usado e o desanexa.
 	Parameter(s):
 	Returns:
 --------------------------------------------------------------------*/

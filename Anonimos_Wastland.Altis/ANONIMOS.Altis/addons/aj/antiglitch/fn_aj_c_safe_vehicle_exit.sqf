@@ -1,6 +1,4 @@
 // @file Name: fn_aj_c_safe_vehicle_exit.sqf
-// @file Author:  wiking.at
-// @file Author: www.armajunkies.de
 // check if player tries to bug through wall by exiting vehicle near it
 
 

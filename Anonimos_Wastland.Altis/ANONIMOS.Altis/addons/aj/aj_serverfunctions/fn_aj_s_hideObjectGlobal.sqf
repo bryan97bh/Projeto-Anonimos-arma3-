@@ -1,7 +1,7 @@
 scriptName "fn_aj_s_hideObjectGlobal";
 // @file Name: fn_aj_s_hideObjectGlobal.sqf
-// @file Author:  wiking.at
-// @file Author: www.armajunkies.de
+// @file Author:  Anônimos
+// @file Author: www.Anônimos.de
 
 if (isServer) then 
 	{
@@ -16,5 +16,5 @@ if (isServer) then
     if (isNil "_right" || {typeName _right != typeName false}) exitWith {};  					//exit if _right is not bool
 
     _left hideObjectGlobal _right;
-//	diag_log "hideobjectglobal was run";
+//	diag_log "hideobjectglobal foi executado";
 	};

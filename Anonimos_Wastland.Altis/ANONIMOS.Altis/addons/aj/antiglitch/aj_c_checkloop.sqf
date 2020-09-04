@@ -1,5 +1,5 @@
 // @file Name: aj_c_checkloop.sqf
-// @file Author:  wiking.at
+// @file Author:  Anônimos
 // @file Author: DevSouza
 // various anti glitch checks
 

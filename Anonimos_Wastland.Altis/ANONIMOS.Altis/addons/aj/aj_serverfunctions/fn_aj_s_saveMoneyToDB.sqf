@@ -1,17 +1,12 @@
 scriptName "fnc_aj_s_saveMoneyToDB";
 /*--------------------------------------------------------------------
-	-------------------- Armajunkies Wasteland -----------------------
+	-------------------- Anônimos Wasteland -----------------------
 	------------------------------------------------------------------
 
 	- This Wasteland Version is a completely new code build. -
 	- Please do not just copy and paste this code, there could be server dependencies -
 
-
-	file: fnc_aj_s_saveMoneyToDB.sqf
-	path: /E/Arma3Dev/BitBucket/ArmajunkiesWasteland/ArmajunkiesWasteland.altis/AJ/aj_serverfunctions/fnc_aj_s_saveMoneyToDB.sqf
-	================================
-	Author: Hatchet Harry <orga@armajunkies.de>
-	Modified by:
+	Modified by: Anônimos Wasteland 
 	Description: Saves Player Money to DB
 	Parameter(s):
 	Returns:

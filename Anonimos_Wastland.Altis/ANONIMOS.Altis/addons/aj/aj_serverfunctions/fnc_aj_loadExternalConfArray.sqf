@@ -1,11 +1,4 @@
 /*
-
-    _                          _             _    _                _
-   / \   _ __ _ __ ___   __ _ (_)_   _ _ __ | | _(_) ___  ___   __| | ___
-  / _ \ | '__| '_ ` _ \ / _` || | | | | '_ \| |/ / |/ _ \/ __| / _` |/ _ \
- / ___ \| |  | | | | | | (_| || | |_| | | | |   <| |  __/\__ \| (_| |  __/
-/_/   \_\_|  |_| |_| |_|\__,_|/ |\__,_|_| |_|_|\_\_|\___||___(_)__,_|\___|
-                            |__/
 Name: fnc_aj_loadExternalConfArray.sqf
 Description:
 	Läd ein externes Array und macht es zur serverseitigen globalen Variable
