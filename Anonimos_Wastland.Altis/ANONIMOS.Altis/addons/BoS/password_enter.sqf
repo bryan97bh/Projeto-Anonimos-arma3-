@@ -1,5 +1,5 @@
 // ******************************************************************************************
-// * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 	BadVolt 	*
+// * This project is licensed under the GNU Affero GPL v3. Copyright ï¿½ 2014 	BadVolt 	*
 // ******************************************************************************************
 //	@file Version: 1.0
 //	@file Name: password_enter.sqf
@@ -12,7 +12,7 @@ _object = cursorTarget;
 
 OutputText = nil;
 InputText = "";
-ClearText = "Enter Keycode";
+ClearText = "Entre com CÃ³digo";
 
 createDialog "AF_Keypad";
 
@@ -20,9 +20,9 @@ waitUntil {!(isNil "OutputText")};
 
 if (OutputText == _object getVariable ["password", ""]) then {
 	execVM "addons\BoS\BoS_coownerMenu.sqf";	
-	//[format ["Doors opened for %1 seconds ",DURATION], 5] call mf_notify_client;	
+	//[format ["Portas abertas por %1 segundos ",DURATION], 5] call mf_notify_client;	
 }else{
-	["Wrong PIN!", 5] call mf_notify_client;	
+	["Senha errada!", 5] call mf_notify_client;	
 };
 
 OutputText = nil;

@@ -13,7 +13,7 @@
 
 // Check if mutex lock is active.
 if (mutexScriptInProgress) exitWith {
-	titleText ["You are already performing another action.", "PLAIN DOWN", 0.5];
+	titleText ["Você já está executando outra ação.", "PLAIN DOWN", 0.5];
 };
 
 mutexScriptInProgress = true;
@@ -68,51 +68,51 @@ _resupplyThread = [_vehicle, _unit] spawn
 			if (doCancelAction) exitWith
 			{
 				doCancelAction = false;
-				_abortText = "Cancelled by player.";
+				_abortText = "Cancelado por jogador.";
 			};
 
 			if (!alive player) exitWith
 			{
-				_abortText = "You have been killed.";
+				_abortText = "Você foi morto.";
 			};
 
 			// Abort if vehicle is no longer local, otherwise commands won't do anything
 			_checkCondition = {!local _vehicle};
 			if (call _checkCondition) exitWith
 			{
-				_pauseText = "Take back control of the vehicle.";
-				_abortText = "Another player took control of the vehicle.";
+				_pauseText = "Retome o controle do veículo.";
+				_abortText = "Outro jogador assumiu o controle do veículo.";
 			};
 
 			// Abort if vehicle is destroyed
 			_checkCondition = {!alive _vehicle};
 			if (call _checkCondition) exitWith
 			{
-				_abortText = "The vehicle has been destroyed.";
+				_abortText = "O veículo foi destruído.";
 			};
 
 			// Abort if no resupply vehicle in proximity
 			_checkCondition = {{alive _x && {_x getVariable ["A3W_resupplyTruck", false]}} count (_vehicle nearEntities ["AllVehicles", RESUPPLY_TRUCK_DISTANCE]) == 0};
 			if (call _checkCondition) exitWith
 			{
-				_pauseText = "Move closer to a resupply vehicle.";
-				_abortText = "Too far from resupply vehicle.";
+				_pauseText = "Aproxime-se de um veículo de reabastecimento.";
+				_abortText = "Muito longe do veículo de reabastecimento.";
 			};
 
 			// Abort if player gets out of vehicle
 			_checkCondition = {vehicle _unit != _vehicle};
 			if (!_isUAV && !_isStaticWep && _checkCondition) exitWith
 			{
-				_pauseText = "Get back in the vehicle.";
-				_abortText = "You are not in the vehicle.";
+				_pauseText = "Volte no veículo.";
+				_abortText = "Você não está no veículo.";
 			};
 
 			// Abort if someone gets in the gunner seat
 			_checkCondition = {alive gunner _vehicle};
 			if (!_isUAV && _checkCondition) exitWith
 			{
-				_pauseText = "The gunner seat must be empty.";
-				_abortText = "Someone is in the gunner seat.";
+				_pauseText = "O assento do atirador deve estar vazio.";
+				_abortText = "Alguém está no banco do atirador.";
 			};
 		};
 
@@ -123,7 +123,7 @@ _resupplyThread = [_vehicle, _unit] spawn
 			for [{_i = RESUPPLY_TIMEOUT}, {_i > 0 && _checkCondition && !doCancelAction}, {_i = _i - 1}] do
 			{
 				_vehicle setVariable ["A3W_resupplyTruckTimeout", true];
-				titleText [format ["%1\n%2", _pauseText, format ["Resupply sequence timeout in %1", _i]], "PLAIN DOWN", 0.5];
+				titleText [format ["%1\n%2", _pauseText, format ["Reabasteça no tempo limite da sequência em %1", _i]], "PLAIN DOWN", 0.5];
 				sleep 1;
 			};
 
@@ -137,13 +137,13 @@ _resupplyThread = [_vehicle, _unit] spawn
 
 			if (doCancelAction) then
 			{
-				_abortText = "Cancelled by player.";
+				_abortText = "Cancelado pelo jogador.";
 			};
 		};
 
 		if (_abortText != "") then
 		{
-			titleText [format ["%1\n%2", _abortText, "Resupply sequence aborted"], "PLAIN DOWN", 0.5];
+			titleText [format ["%1\n%2", _abortText, "Sequência de reabastecimento abortada"], "PLAIN DOWN", 0.5];
 			breakTo "resupplyTruckThread";
 		};
 	};
@@ -153,7 +153,7 @@ _resupplyThread = [_vehicle, _unit] spawn
 	{
 		if (player getVariable ["cmoney",0] < _price) then
 		{
-			_text = format ["%1\n%2", format ["Not enough money, you need $%1 to resupply %2", _price, _vehName], "Resupply sequence aborted"];
+			_text = format ["%1\n%2", format ["Dinheiro insuficiente, você precisa de $%1 para reabastecer %2", _price, _vehName], "Resupply sequence aborted"];
 			[_text, 10] call mf_notify_client;
 			breakTo "resupplyTruckThread";
 		};
@@ -163,7 +163,7 @@ _resupplyThread = [_vehicle, _unit] spawn
 	{
 		if (_isStaticWep) then
 		{
-			_text = format ["%1\n%2", "Resupply sequence started", "Please get out of the static weapon."];
+			_text = format ["%1\n%2", "Sequência de reabastecimento iniciada", "Por favor, saia da arma estática."];
 			titleText [_text, "PLAIN DOWN", 0.5];
 			sleep 5;
 
@@ -189,7 +189,7 @@ _resupplyThread = [_vehicle, _unit] spawn
 
 		if (player getVariable ["cmoney",0] >= _price) then
 		{
-			_msg = format ["%1<br/><br/>%2", format ["It will cost you $%1 to resupply %2.", _price, _vehName], "Do you want to proceed?"];
+			_msg = format ["%1<br/><br/>%2", format ["Custará $%1 para reabastecer %2.", _price, _vehName], "Você quer prosseguir?"];
 
 			if !([_msg, "Resupply Vehicle", true, true] call BIS_fnc_guiMessage) then
 			{
@@ -203,7 +203,7 @@ _resupplyThread = [_vehicle, _unit] spawn
 		//start resupply here
 		//player setVariable ["cmoney", (player getVariable ["cmoney",0]) - _price, true];
 		[player, -_price] call A3W_fnc_setCMoney;
-		_text = format ["%1\n%2", format ["You paid $%1 to resupply %2.", _price, _vehName], "Please stand by..."];
+		_text = format ["%1\n%2", format ["Você pagou $%1 para reabastecer %2.", _price, _vehName], "Por favor espere..."];
 		[_text, 10] call mf_notify_client;
 		[] spawn fn_savePlayerData;
 
@@ -256,7 +256,7 @@ _resupplyThread = [_vehicle, _unit] spawn
 
 					_magName = getText (configFile >> "CfgMagazines" >> _mag >> "displayName");
 
-					_text = format ["Reloading %1...", [_vehName, _magName] select (_magName != "")];
+					_text = format ["Recarregando %1...", [_vehName, _magName] select (_magName != "")];
 					_text call _titleText;
 
 					sleep (REARM_TIME_SLICE / 2);
@@ -296,7 +296,7 @@ _resupplyThread = [_vehicle, _unit] spawn
 
 					/*call _checkAbortConditions;
 
-					_text = format ["Reloading %1...", getText (_magCfg >> "displayName")];
+					_text = format ["Recarregando %1...", getText (_magCfg >> "displayName")];
 					_text call _titleText;
 
 					sleep (REARM_TIME_SLICE / 2);
@@ -318,7 +318,7 @@ _resupplyThread = [_vehicle, _unit] spawn
 			private "_i";
 			for "_i" from 1 to REARM_TIME_SLICE do
 			{
-				"Reloading..." call _titleText;
+				"Recarregando..." call _titleText;
 				sleep 1;
 				call _checkAbortConditions;
 			};
@@ -346,7 +346,7 @@ _resupplyThread = [_vehicle, _unit] spawn
 
 					call _checkAbortConditions;
 
-					"Repairing..." call _titleText;
+					"Reparando..." call _titleText;
 					sleep (_repairSlice / 2);
 					call _checkAbortConditions;
 
@@ -374,7 +374,7 @@ _resupplyThread = [_vehicle, _unit] spawn
 		{
 			call _checkAbortConditions;
 
-			"Repairing..." call _titleText;
+			"Reparando..." call _titleText;
 			sleep 1;
 
 			call _checkAbortConditions;
@@ -403,7 +403,7 @@ _resupplyThread = [_vehicle, _unit] spawn
 
 				call _checkAbortConditions;
 
-				"Refueling..." call _titleText;
+				"Reabastecendo..." call _titleText;
 				sleep (REFUEL_TIME_SLICE / 2);
 				call _checkAbortConditions;
 
@@ -412,7 +412,7 @@ _resupplyThread = [_vehicle, _unit] spawn
 			};
 		};
 
-		titleText ["Your vehicle is ready.", "PLAIN DOWN", 0.5];
+		titleText ["Seu veículo está pronto.", "PLAIN DOWN", 0.5];
 	};
 };
 

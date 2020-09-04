@@ -25,20 +25,20 @@ BoS_open =
 		case (_uid == _owner):
 		{
 			execVM "addons\BoS\BoS_ownerMenu.sqf";
-			hint "Welcome Owner";
+			hint "Bem-vindo Proprietário";
 		};
 		case (_uid != _owner):
 		{
 			execVM "addons\BoS\password_enter.sqf";
-			hint "Welcome";
+			hint "Bem vindo";
 		};
 	/*	case (isNil _uid || isNull _uid):
 		{
-			hint "You need to lock the object first!";
+			hint "Você precisa travar esse objeto primeiro!";
 		};*/
 		default
 		{
-		hint "An unknown error occurred. This could be because your Base Locker is not locked."
+		hint "Ocorreu um erro desconhecido. Isso pode ocorrer porque o seu TravaBase não está bloqueado."
 		};
 	};
 };
@@ -47,8 +47,8 @@ BoS_Actions =
 {
 	{ [player, _x] call fn_addManagedAction } forEach
 	[
-		["<t color='#FFE496'><img image='client\icons\keypad.paa'/> Open Base Menu</t>", BoS_open, [cursorTarget], -97, false, false, "", PLAYER_CONDITION + " && " + ITEM_CONDITION + " && " + OBJECT_CONDITION],
-		["<t color='#FFE496'><img image='client\icons\take.paa'/> Hack Base</t>", "addons\BoS\BoS_hackBase.sqf", [cursorTarget], -97, false, false, "", PLAYER_CONDITION + " && " + ITEM_CONDITION + " && " + OBJECT_CONDITION + " && " + NONOWNED_CONDITION]
+		["<t color='#FFE496'><img image='client\icons\keypad.paa'/> Abrir Menu TravaBase</t>", BoS_open, [cursorTarget], -97, false, false, "", PLAYER_CONDITION + " && " + ITEM_CONDITION + " && " + OBJECT_CONDITION],
+		["<t color='#FFE496'><img image='client\icons\take.paa'/> Roubar Base</t>", "addons\BoS\BoS_hackBase.sqf", [cursorTarget], -97, false, false, "", PLAYER_CONDITION + " && " + ITEM_CONDITION + " && " + OBJECT_CONDITION + " && " + NONOWNED_CONDITION]
 	];
 };
 

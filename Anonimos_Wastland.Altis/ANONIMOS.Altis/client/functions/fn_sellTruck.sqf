@@ -24,7 +24,7 @@ _vehicle = vehicle _unit;
 //check if caller is not in vehicle
 if (driver _vehicle != _unit) exitWith
 {
-	["You must be in the driver seat to sell a vehicle.", 5] call mf_notify_client;
+	["Você deve estar no banco do motorista para vender um veículo.", 5] call mf_notify_client;
 	mutexScriptInProgress = false;
 };
 
@@ -39,28 +39,28 @@ _price = 100; // price = 100 for vehicles not found in vehicle store.
 	};
 } forEach (call allVehStoreVehicles);
 
-_text = format ["Stop engine in 10s to sell vehicle. $%1 for this vehicle. This will take some time.\nYou can always abort by getting out of the vehicle.", _price];
+_text = format ["Pare o motor em 10s para vender o veículo. $%1 para este veículo. Isso levará algum tempo. \ NVocê sempre pode abortar ao sair do veículo.", _price];
 [_text, 5] call mf_notify_client;
 
 uiSleep 10;
 
 if (isEngineOn _vehicle) exitWith
 {
-	["Engine still running. Service CANCELLED!", 5] call mf_notify_client;
+	["Motor ainda em funcionamento. Serviço CANCELADO!", 5] call mf_notify_client;
 	mutexScriptInProgress = false;
 };
 
 if (!local _vehicle) then
 {
 	_crew = crew _vehicle;
-	_text = format ["Selling vehicle aborted by %1", if (count _crew > 0 && !isStreamFriendlyUIEnabled) then { name (_crew select 0) } else { "another player" }];
+	_text = format ["Venda de veículo abortado por %1", if (count _crew > 0 && !isStreamFriendlyUIEnabled) then { name (_crew select 0) } else { "another player" }];
 	[_text, 5] call mf_notify_client;
 	mutexScriptInProgress = false;
 };
 
 if (_vehicle distance _truck > SELL_TRUCK_DISTANCE || vehicle _unit != _vehicle) then
 {
-	if (_started) then { ["Vehicle resupply aborted", 5] call mf_notify_client };
+	if (_started) then { ["Abastecimento de veículo abortado", 5] call mf_notify_client };
 	mutexScriptInProgress = false;
 };
 
@@ -69,15 +69,15 @@ if (!isNil "_price") then
 	player setVariable["cmoney",(player getVariable "cmoney")+_price,true];
 	player setVariable["timesync",(player getVariable "timesync")+(_price * 3),true];
 	[] call fn_savePlayerData;
-	["Dismantling will take about 1 minute.", 10] call mf_notify_client;
+	["A desmontagem levará cerca de 1 minuto.", 10] call mf_notify_client;
 	_vehCfg = configFile >> "CfgVehicles" >> _vehClass;
 	_vehName = getText (_vehCfg >> "displayName");
 	_vehicle setFuel 0;
 	_vehicle setVelocity [0,0,0];
-	_text = format ["Selling %1 for $%2. Removing Engine, emptying fluids, and removing ammo.", _vehName, _price];
+	_text = format ["Vendendo %1 por $%2. Remoção do mecanismo, esvaziamento de fluidos e remoção de munição.", _vehName, _price];
 	[_text, 5] call mf_notify_client;
 	sleep 5;
-	["Chopping up vehicle.", 5] call mf_notify_client;
+	["Cortando o veículo.", 5] call mf_notify_client;
 	_vehicle animate ["HideBackpacks", 1];
 	sleep 1;
 	_vehicle animate ["HideBumper1", 1];
@@ -92,12 +92,12 @@ if (!isNil "_price") then
 	sleep 1;
 	deleteVehicle _vehicle;
 
-	_text = format ["%1 has been chopped.", _vehName];
+	_text = format ["%1 foi picado.", _vehName];
 	[_text, 10] call mf_notify_client;
 	mutexScriptInProgress = false;
 }
 else
 {
-	["Unknown Error", 10] call mf_notify_client;
+	["Erro desconhecido", 10] call mf_notify_client;
 	mutexScriptInProgress = false;
 };

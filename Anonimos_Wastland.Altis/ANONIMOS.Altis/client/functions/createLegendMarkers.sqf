@@ -6,21 +6,21 @@
 
 _markers =
 [
-	["Legend:", "EmptyIcon", "ColorWhite", [1,1]],
+	["Legenda:", "EmptyIcon", "ColorWhite", [1,1]],
 
 	["GS - General Store", "mil_dot", "ColorBlue", [1,1]],
-	["VS - Vehicle Store", "mil_dot", "ColorOrange", [1,1]]
+	["VS - Loja de Véiculos | Aeronaves | Embarcações", "mil_dot", "ColorOrange", [1,1]]
 ];
 
 
 if (["A3W_privateParking"] call isConfigOn) then
 {
-	_markers pushBack ["Parking", "mil_dot", "ColorCIV", [1,1]];
+	_markers pushBack ["Garagem Virtual", "mil_dot", "ColorCIV", [1,1]];
 };
 
 if (["A3W_privateStorage"] call isConfigOn) then
 {
-	_markers pushBack ["Storage", "mil_dot", "ColorUNKNOWN", [1,1]];
+	_markers pushBack ["Armário Virtual", "mil_dot", "ColorUNKNOWN", [1,1]];
 };
 
 _mapSize = worldSize;

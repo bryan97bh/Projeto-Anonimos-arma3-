@@ -19,7 +19,7 @@ if (!isNil "_doors") then
 		}
 		else
 		{
-		["The door and the opener have to be locked by the same player", 5] call mf_notify_client;
+		["A porta e o painel devem ser trancados pelo mesmo jogador", 5] call mf_notify_client;
 		};	
 	} forEach _doors;
 //cursortarget setObjectTextureGlobal [0, "#(argb,8,8,3)color(0,0,0,0.0,co)"];
@@ -27,5 +27,5 @@ if (!isNil "_doors") then
 } 
 else 
 {
-	["No locked door found", 5] call mf_notify_client;
+	["Nenhuma porta trancada encontrada", 5] call mf_notify_client;
 };

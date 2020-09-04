@@ -13,7 +13,7 @@
 // Check if mutex lock is active.
 if (mutexScriptInProgress) exitWith
 {
-	["You are already performing another action.", 5] call mf_notify_client;
+	["Você já está executando outra ação.", 5] call mf_notify_client;
 };
 
 private ["_vehicle", "_vehClass", "_checks", "_firstCheck", "_time", "_money", "_success"];
@@ -33,18 +33,18 @@ _checks =
 	switch (true) do
 	{
 		case (!alive player): { _text = "" };
-		case (vehicle player != player): { _text = "Action failed! You can't do this in a vehicle" };
-		case (player distance _object > (sizeOf typeOf _object / 3) max 2): { _text = "Action failed! You are too far away from the object" };
+		case (vehicle player != player): { _text = "Ação: falhou! Você não pode fazer isso em um veículo" };
+		case (player distance _object > (sizeOf typeOf _object / 3) max 2): { _text = "Ação: falhou! Você está muito longe do objeto" };
 
-		case (isNull _object): { _text = "The object no longer exists" };
-		case (alive _object || {alive _x} count crew _object > 0): { _text = "Action failed! You are not allowed to salvage this object" };
-		case (!isNull (_object getVariable ["R3F_LOG_est_deplace_par", objNull])): { _text = "Action failed! Somebody moved the object" };
-		case (!isNull (_object getVariable ["R3F_LOG_est_transporte_par", objNull])): { _text = "Action failed! Somebody loaded or towed the object" };
-		case (doCancelAction): { doCancelAction = false; _text = "Salvaging cancelled" };
+		case (isNull _object): { _text = "O objeto não existe mais" };
+		case (alive _object || {alive _x} count crew _object > 0): { _text = "Ação: falhou! Você não tem permissão para salvar este objeto" };
+		case (!isNull (_object getVariable ["R3F_LOG_est_deplace_par", objNull])): { _text = "Ação: falhou! Alguém moveu o objeto" };
+		case (!isNull (_object getVariable ["R3F_LOG_est_transporte_par", objNull])): { _text = "Ação: falhou! Alguém carregou ou rebocou o objeto" };
+		case (doCancelAction): { doCancelAction = false; _text = "Recuperação de destroços cancelada" };
 		default
 		{
 			_failed = false;
-			_text = format ["Salvaging %1%2 complete", floor (_progress * 100), "%"];
+			_text = format ["Recuperando destroços %1%2 completo", floor (_progress * 100), "%"];
 		};
 	};
 
@@ -132,5 +132,5 @@ if (_success) then
 	deleteVehicle _vehicle;
 	//player setVariable ["cmoney", (player getVariable ["cmoney", 0]) + _money, true];
 	[player, _money] call A3W_fnc_setCMoney;
-	[format ["You have obtained $%1 from salvaging", [_money] call fn_numbersText], 5] call mf_notify_client;
+	[format ["Você obteve $%1 pela recuperação de destroços", [_money] call fn_numbersText], 5] call mf_notify_client;
 };
