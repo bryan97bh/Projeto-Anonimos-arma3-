@@ -20,7 +20,7 @@ player addEventHandler ["GetOutMan", {_this spawn fnc_safe_vehicle_exit;}];
 				 (_secondarycontainer isKindof 'ReammoBox_F') 
 				  
 			) exitWith {
-				["Move the crate away to loot the body.", 5] call mf_notify_client;
+				["Afaste a caixa para saquear o corpo.", 5] call mf_notify_client;
 				  true   //close inventory   
 			};
 			false // ok - do nothing
@@ -60,7 +60,7 @@ While {true} do {
 							_wallgames = 0;	
 						};
 						_wallgames = _wallgames + 1;
-						_msg = 'NO GLITCHING';
+						_msg = 'SEM GLITCHING';
 						hint _msg;
 						1 cutText [format ['%1',_msg],'WHITE IN'];
 						systemChat _msg;

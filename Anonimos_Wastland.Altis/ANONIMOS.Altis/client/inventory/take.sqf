@@ -49,7 +49,7 @@ if not(isNull _obj) then {
 			sleep 0.25;
 			deleteVehicle _obj;
 			[_id,1] call mf_inventory_add;
-			titleText [format ['You have picked up "%1"', (_id call mf_inventory_get) select NAME], "PLAIN DOWN", 0.5];
+			titleText [format ['Você pegou "%1"', (_id call mf_inventory_get) select NAME], "PLAIN DOWN", 0.5];
 		};
 	};
 

@@ -27,7 +27,7 @@ if (isServer && isNil "_success") then // server process
 
 	if (_pos isEqualTypeArray [0,0,0] && (isNil "_artiLastUse" || {diag_tickTime - _artiLastUse >= _cooldown})) then
 	{
-		diag_log format ["Fogo de Artilharia - %1", [_UID, _player, name _player, side group _player, owner _player, remoteExecutedOwner, _pos, mapGridPosition _pos]];
+		diag_log format ["Suporte de Artilharia - %1", [_UID, _player, name _player, side group _player, owner _player, remoteExecutedOwner, _pos, mapGridPosition _pos]];
 
 		[
 			_player,

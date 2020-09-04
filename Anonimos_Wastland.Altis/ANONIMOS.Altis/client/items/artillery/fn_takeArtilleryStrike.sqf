@@ -11,7 +11,7 @@ if (!alive _player || !isRemoteExecuted) exitWith {};
 if (_granted) then // client post-process
 {
 	["artillery", 1] call mf_inventory_add;
-	["You have picked up an Artillery Strike.\n You can use it from the Player Menu. ", 5] call a3w_actions_notify;
+	["Você pegou um Suporte de Artilharia.\n Você pode usar ele acessando o Menu do Jogador. ", 5] call a3w_actions_notify;
 }
 else // server process
 {

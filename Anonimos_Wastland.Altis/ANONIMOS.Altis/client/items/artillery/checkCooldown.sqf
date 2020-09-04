@@ -21,7 +21,7 @@ if (!isNil "_artiLastUse") then
 		private _mins = floor ((_remainder - _hours) * 60);
 		private _secs = floor ((_remainder - _hours - (_mins / 60)) * 3600);
 
-		_error = format ["You must wait %1h %2m %3s before using the Artillery Strike again.", _hours, _mins, _secs];
+		_error = format ["Você deve esperar %1h %2m %3s para poder usar usar novamente o Suporte de Artilharia.", _hours, _mins, _secs];
 		[_error, "Error"] spawn BIS_fnc_guiMessage;
 		playSound "FD_CP_Not_Clear_F";
 	};

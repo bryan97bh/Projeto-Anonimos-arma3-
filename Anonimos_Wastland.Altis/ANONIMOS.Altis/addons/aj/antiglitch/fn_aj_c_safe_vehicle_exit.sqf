@@ -1,5 +1,7 @@
 // @file Name: fn_aj_c_safe_vehicle_exit.sqf
-// check if player tries to bug through wall by exiting vehicle near it
+// @file Author:  Anônimos
+// @file Author: www.Anônimos.de
+// verifique se o jogador tenta atravessar a parede saindo do veículo próximo a ela.
 
 
 private["_player", "_position", "_vehicle", "_player_Pos","_vehicle_Pos", "_blocked"];
@@ -26,7 +28,7 @@ if (_blocked && _in_rad_1_5 && (_vehicle iskindof "AllVehicles") && !(_vehicle i
            
     publicVariableServer format["!GLITCH Wall/Car - VehiclePos: %1 @%2 - veh %3", _vehicle_Pos, mapgridposition _player, typeof _vehicle];
 
-    _msg = "Move away from objects to get out of car.";
+    _msg = "Afaste-se dos objetos para sair do carro.";
     hint _msg;
     1 cutText [format ['%1',_msg],'WHITE IN'];
     systemChat _msg;

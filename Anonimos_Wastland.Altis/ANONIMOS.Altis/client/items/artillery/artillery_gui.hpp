@@ -52,7 +52,7 @@ class A3W_artilleryMenu
 		class ArtiMenu_TopText : w_RscTextCenter
 		{
 			idc = -1;
-			text = "Artillery Strike";
+			text = "Suporte de Artilharia";
 			sizeEx = 0.06 * TEXT_SCALE;
 
 			w = ArtiMenu_BG_W;
@@ -75,7 +75,7 @@ class A3W_artilleryMenu
 		/*class ArtiMenu_MapLabel : w_RscText
 		{
 			idc = -1;
-			text = "Select target";
+			text = "Selecione o Alvo";
 			sizeEx = ArtiMenu_Label_TEXTSIZE;
 
 			#define ArtiMenu_MapLabel_W ArtiMenu_Main_W
@@ -113,7 +113,7 @@ class A3W_artilleryMenu
 		class ArtiMenu_CloseButton : w_RscButton
 		{
 			idc = 2;
-			text = "Cancel";
+			text = "Cancelar";
 			//action = "closeDialog 0"; // not needed if idc = 2
 
 			#define ArtiMenu_CloseButton_X ArtiMenu_BottomButton_X
@@ -127,7 +127,7 @@ class A3W_artilleryMenu
 		class ArtiMenu_ConfirmButton : w_RscButton
 		{
 			idc = A3W_artilleryMenu_ConfirmButton_IDC;
-			text = "Confirm";
+			text = "Confirmar";
 			action = "call compile preprocessFileLineNumbers 'client\items\artillery\artilleryConfirm.sqf'";
 
 			// red
@@ -146,7 +146,7 @@ class A3W_artilleryMenu
 		class ArtiMenu_MapLabel : w_RscStructuredText
 		{
 			idc = A3W_artilleryMenu_MapLabel_IDC;
-			text = "Select target"; 
+			text = "Selecione o Alvo"; 
 			size = ArtiMenu_Label_TEXTSIZE;
 
 			#define ArtiMenu_MapLabel_W (ArtiMenu_ConfirmButton_X - (ArtiMenu_CloseButton_X + ArtiMenu_Button_W))

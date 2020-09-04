@@ -8,12 +8,12 @@
 // Check if mutex lock is active.
 if (mutexScriptInProgress) exitWith
 {
-	player globalChat "You are already performing another action.";
+	player globalChat "Você já está executando outra ação.";
 };
 
 if (vehicle player != player) exitWith
 {
-	titleText ["You can't remove ruins while in a vehicle", "PLAIN DOWN", 0.5];
+	titleText ["Você não pode remover ruínas enquanto estiver em um veículo", "PLAIN DOWN", 0.5];
 };
 
 mutexScriptInProgress = true;
@@ -29,7 +29,7 @@ if (count _ruinsObjects > 0) then
 
 if (isNil "_ruinsObj" || {player distance _ruinsObj > PICK_DISTANCE}) exitWith
 {
-	titleText ["You are too far to remove the ruins.", "PLAIN DOWN", 0.5];
+	titleText ["Você está muito longe para remover as ruínas.", "PLAIN DOWN", 0.5];
 	mutexScriptInProgress = false;
 };
 

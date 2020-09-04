@@ -3,8 +3,8 @@
 // ******************************************************************************************
 //	@file Name: canTakeFromCrate.sqf
 
-#define ERR_IN_VEHICLE "Can't do that while in a vehicle"
-#define ERR_TOO_FAR "You are too far away"
+#define ERR_IN_VEHICLE "Não é possível fazer isso enquanto estiver em um veículo"
+#define ERR_TOO_FAR "Você está muito longe"
 
 _crate = call mf_items_cratemoney_nearest;
 private _error = "failed";

@@ -4,7 +4,7 @@ scriptName "fn_aj_c_reloadsmokescreen";
 // Reload Smokescreen
 
 _playerMoney = player getVariable ["cmoney", 0];
-_smokeprice = 100;
+_smokeprice = 5000;
 
 if (_playerMoney >= _smokeprice ) then
 {
@@ -18,7 +18,7 @@ if (_playerMoney >= _smokeprice ) then
  } 
 else
 {
-	["You can't reload the smokescreen.", 5] call mf_notify_client;
+	["Você não pode recarregar seu lançador de granadas defensivas.", 5] call mf_notify_client;
 	playSound "FD_CP_Not_Clear_F";
 };
 

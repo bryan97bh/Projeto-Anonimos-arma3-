@@ -32,7 +32,7 @@ _price 			= (_selectionArray select _selectionNumber) select 2;
 
 /////// Let's spawn us  an AI helo to carry the cargo /////////////////////////////////////////////////
 
- _heliType = "B_Heli_Transport_03_unarmed_F";
+ _heliType = "B_T_VTOL_01_vehicle_F";
  _center = createCenter civilian;
 _grp = createGroup civilian;
 if(isNil("_grp2"))then{_grp2 = createGroup civilian;}else{_grp2 = _grp2;};
@@ -161,7 +161,7 @@ _playerMoney = _player getVariable ["bmoney", 0];
 			{ _x setDamage 1; } forEach units _grp;
 			_heli setDamage 1;
 			_object setDamage 1;
-			diag_log format ["Apoc's Airdrop Assistance - Player Account Too Low, Drop Aborted. %1. Bank:$%2. Cost: $%3", _player, _playerMoney, _price];  //A little log love to mark the Scallywag who tried to cheat the valiant pilot
+			diag_log format ["Suporte Aéreo Anônimo - Sem dinheiro suficiente no banco. Suporte aéreo abortado!. %1. Bank:$%2. Cost: $%3", _player, _playerMoney, _price];  //A little log love to mark the Scallywag who tried to cheat the valiant pilot
 			};  //Thought you'd be tricky and not pay, eh?
 
 //Server Style Money handling
@@ -172,7 +172,7 @@ _player setVariable ["bmoney", _newBalance, true];
 
 //  Now on to the fun stuff:
 
-diag_log format ["Apoc's Airdrop Assistance - Object at %1, Detach Up Next", position _object];  //A little log love to confirm the location of this new creature
+diag_log format ["Suporte Aéreo Anônimo - Objeto em %1, Soltando próximo", position _object];  //A little log love to confirm the location of this new creature
 playSound3D ["a3\sounds_f\air\sfx\SL_rope_break.wss",_heli,false,getPosASL _heli,3,1,500];
 detach _object;  //WHEEEEEEEEEEEEE
 _objectPosDrop = position _object;
@@ -209,7 +209,7 @@ playSound3D ["a3\sounds_f\sfx\radio\ambient_radio22.wss",_player,false,getPosASL
 		{
 			{ deleteVehicle _x; } forEach units _grp;
 			deleteVehicle _heli;
-			diag_log "AIRDROP SYSTEM - Deleted Heli after Drop";
+			diag_log "Suporte Aéreo Anônimo - Helicóptero deletado após suporte";
 		};
 	};
 

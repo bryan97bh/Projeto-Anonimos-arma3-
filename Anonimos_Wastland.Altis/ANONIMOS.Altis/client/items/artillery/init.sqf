@@ -9,7 +9,7 @@ private _icon = "client\icons\tablet.paa";
 
 [
 	"artillery",
-	"Artillery Strike",
+	"Suporte de Artilharia",
 	[_path, "artilleryMenu.sqf"] call mf_compile,
 	"Land_Tablet_02_F",
 	_icon,

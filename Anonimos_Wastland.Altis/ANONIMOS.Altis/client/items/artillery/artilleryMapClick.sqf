@@ -45,7 +45,7 @@ A3W_artilleryMenu_targetPos = _pos;
 if (_tooClose) then
 {
 	_confirmBtn ctrlEnable false;
-	_labelCtrl ctrlSetStructuredText parseText "<t color='#FF0000'> Error: Too close to store </t>";
+	_labelCtrl ctrlSetStructuredText parseText "<t color='#FF0000'> Erro: Muito perto da loja </t>";
 	A3W_artilleryMenu_drawEllipse = [_pos, _ellipseRadius, _ellipseRadius, 0, [1,1,1,1], "#(argb,8,8,3)color(1,0,0,0.5)"];
 }
 else
@@ -53,12 +53,12 @@ else
 	if (_friendlies) then
 	{
 		A3W_artilleryMenu_drawEllipse = [_pos, _ellipseRadius, _ellipseRadius, 0, [1,1,1,1], "#(argb,8,8,3)color(1,1,0,0.5)"];
-		_labelCtrl ctrlSetStructuredText parseText "<t color='#FFFF00'> Warning: Friendlies in area </t>";
+		_labelCtrl ctrlSetStructuredText parseText "<t color='#FFFF00'> Cuidado: amigos na área de alcance dos fogos! </t>";
 	}
 	else
 	{
 		A3W_artilleryMenu_drawEllipse = [_pos, _ellipseRadius, _ellipseRadius, 0, [1,1,1,1], "#(argb,8,8,3)color(0,1,0,0.5)"];
-		_labelCtrl ctrlSetStructuredText parseText "<t color='#00FF00'> Ready to fire </t>";
+		_labelCtrl ctrlSetStructuredText parseText "<t color='#00FF00'> Pronto para disparar! </t>";
 	};
 
 	_confirmBtn ctrlEnable true;

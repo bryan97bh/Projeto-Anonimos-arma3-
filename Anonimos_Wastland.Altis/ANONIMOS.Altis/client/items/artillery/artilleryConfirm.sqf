@@ -17,16 +17,16 @@
 		_pos = A3W_artilleryMenu_targetPos;
 		if (isNil "_pos") exitWith {};
 
-		_msg = format ["You are about to fire %1 artillery shells at Grid %2.<br/><br/>The strike will take about 30 seconds to begin, with an average rate of 1 shell every 2 seconds.<br/><br/>Your Artillery Strike item will be consumed. <br/><br/>Do you want to proceed?", A3W_artilleryMenu_shellCount, mapGridPosition _pos];
+		_msg = format ["Você está prestes a disparar %1 fogos de artilharia na malha %2.<br/><br/>O ataque levará cerca de 30 segundos para começar, com uma taxa média de 1 disparo a cada 2 segundos.<br/><br/>Seu item de Apoio de Artilharia será usado. <br/><br/>Você quer prosseguir?", A3W_artilleryMenu_shellCount, mapGridPosition _pos];
 
-		if !([_msg, "Confirm", true, true] call BIS_fnc_guiMessage) exitWith {};
+		if !([_msg, "Confirmar", true, true] call BIS_fnc_guiMessage) exitWith {};
 		if (call mf_items_artillery_checkCooldown != "") exitWith {};
 
 		if (!isServer) then { missionNamespace setVariable ["A3W_artilleryLastUse_" + getPlayerUID player, diag_tickTime + (["A3W_serverTickTimeDiff", 0] call getPublicVar)] };
 		["artillery", 1] call mf_inventory_remove;
 
 		[player, _pos] remoteExecCall ["A3W_fnc_artilleryStrike", 2];
-		["Strike request sent...", 5] call a3w_actions_notify;
+		["Solicitação de apoio enviada...", 5] call a3w_actions_notify;
 		playSound "Orange_Access_FM";
 
 		waitUntil {closeDialog 0; !dialog};
