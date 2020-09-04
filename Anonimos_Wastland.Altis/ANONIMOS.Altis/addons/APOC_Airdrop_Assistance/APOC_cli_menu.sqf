@@ -6,15 +6,15 @@
 AirdropMenu = 
 [
 	["Airdrop",true],
-			["Vehicles", [2], "#USER:VehicleMenu", -5, [["expression", ""]], "1", "1"],
-			["Supplies", [3], "#USER:SupplyMenu", -5, [["expression", ""]], "1", "1"],
-			["Cancel Airdrop", [4], "", -3, [["expression", ""]], "1", "1"]
+			["Veículos", [2], "#USER:VehicleMenu", -5, [["expression", ""]], "1", "1"],
+			["Suprimentos", [3], "#USER:SupplyMenu", -5, [["expression", ""]], "1", "1"],
+			["Cancelar Apoio Aéreo", [4], "", -3, [["expression", ""]], "1", "1"]
 ];
 //////////////////////////////////////////////////////
 //Setting up the Vehicle Menu ///////////////////////
 /////////////////////////////////////////////////////
 VehicleMenu = [];
-_startVehMenu = ["Vehicles",true];
+_startVehMenu = ["Veículos",true];
 VehicleMenu pushback _startVehMenu;
 
 _i=0;
@@ -35,7 +35,7 @@ VehicleMenu pushback _optionVehMenu;
 _i=_i+1;
 }forEach APOC_AA_VehOptions;
 
-_endVehMenu = ["Cancel Airdrop", [_i+2], "", -3, [["expression", ""]], "1", "1"];
+_endVehMenu = ["Cancelar Apoio Aéreo", [_i+2], "", -3, [["expression", ""]], "1", "1"];
 VehicleMenu pushback _endVehMenu;
 ///////////////////////////////////////////////////////
 
@@ -43,7 +43,7 @@ VehicleMenu pushback _endVehMenu;
 //Setting up the Supply Menu ////////////////////////
 /////////////////////////////////////////////////////
 SupplyMenu = [];
-_startSupMenu = ["Supplies",true];
+_startSupMenu = ["Suprimentos",true];
 SupplyMenu pushback _startSupMenu;
 
 _i=0;
@@ -64,7 +64,7 @@ SupplyMenu pushback _optionSupMenu;
 _i=_i+1;
 }forEach APOC_AA_SupOptions;
 
-_endSupMenu = ["Cancel Airdrop", [_i+2], "", -3, [["expression", ""]], "1", "1"];
+_endSupMenu = ["Cancelar Apoio Aéreo", [_i+2], "", -3, [["expression", ""]], "1", "1"];
 SupplyMenu pushback _endSupMenu;
 ///////////////////////////////////////////////////////
 

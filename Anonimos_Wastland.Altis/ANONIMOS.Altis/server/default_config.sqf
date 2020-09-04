@@ -16,7 +16,7 @@ A3W_disableUavFeed = 1;            // Force disable UAV PIP feed to prevent ther
 A3W_disableBuiltInThermal = 1;     // Display a black screen if the player tries to use thermal vision built-in a handheld weapon like Titan launcher (0 = no, 1 = yes)
 
 // Time settings
-A3W_startHour = 6;                // In-game hour at mission start (0 to 23) - time is saved and restored between server restarts if A3W_timeSaving = 1
+A3W_startHour = 5;                // In-game hour at mission start (0 to 23) - time is saved and restored between server restarts if A3W_timeSaving = 1
 A3W_timeMultiplierDay = 6.0;       // Sets the speed of time between 5 AM and 8 PM (for example, 6.0 means 6 hours in-game will pass in 1 real hour)
 A3W_timeMultiplierNight = 10.0;     // Sets the speed of time between 8 PM and 5 AM
 A3W_moonLight = 1;                 // Moon light during night (0 = no, 1 = yes)
@@ -47,10 +47,10 @@ A3W_donatorEnabled = 0;				// Enable/Disable Donator Features
 A3W_customUniformEnabled = 1;		// Enable/Disable Custom Uniforms
 A3W_tkAutoSwitchEnabled = 0;			// Enable/Disable Switch for team killers
 A3W_maxLockonDistance = 1000; 	// Max Lockon Distance with Missle
-APOC_coolDownTimer = 900;		// APOC Air Drop Cool Down Time
+APOC_coolDownTimer = 300;		// APOC Air Drop Cool Down Time
 BoS_coolDownTimer = 600;           // Baselocker hacking timer
 Safe_coolDownTimer = 600;          // Safe hacking timer
-A3W_maxSpawnBeacons = 2;		   // Maxmimum number of spawn beacons (0 = disabled)
+A3W_maxSpawnBeacons = 1;		   // Maxmimum number of spawn beacons (0 = disabled)
 
 // Antihack settings
 A3W_antiHackUnitCheck = 1;         // Detect players who spawn unauthorized AI units (0 = no, 1 = yes) - disable if you have custom unit scripts/mods like AI recruitment or ALiVE
@@ -107,8 +107,8 @@ A3W_mineSaving = 1;                // Save player-placed proximity mines between
 A3W_mineLifetime = 2*24;           // Maximum lifetime in hours for saved mines across server restarts (0 = no time limit)
 A3W_privateStorage = 1;            // Enable persistent private storage locations across the map (0 = no, 1 = yes)
 A3W_privateParking = 1;            // If vehicleSaving = 1 and savingMethod = "extdb" or "sock", enable persistent private parking locations across the map (0 = no, 1 = yes)
-A3W_privateParkingLimit = 3;       // Maximum amount of vehicles allowed in private parking (0 = no limit)
-A3W_privateParkingCost = 2000;     // Cost to retrieve an individual vehicle from private parking
+A3W_privateParkingLimit = 2;       // Maximum amount of vehicles allowed in private parking (0 = no limit)
+A3W_privateParkingCost = 5000;     // Cost to retrieve an individual vehicle from private parking
 A3W_vehicleLocking = 1;            // Enable vehicle locking and lockpicking (0 = no, 1 = yes)
 
 // iniDB settings
@@ -145,7 +145,7 @@ A3W_hcObjSavingID = 1;             // ID of the headless client in charge of obj
 // Server spawn settings
 A3W_serverSpawning = 1;            // Vehicle, object, and loot spawning (0 = no, 1 = yes)
 A3W_vehicleSpawning = 1;           // If serverSpawning = 1, spawn vehicles in towns (0 = no, 1 = yes)
-A3W_vehicleQuantity = 200;         // Approximate number of land vehicles to be spawned in towns
+A3W_vehicleQuantity = 150;         // Approximate number of land vehicles to be spawned in towns
 A3W_boatSpawning = 1;              // If serverSpawning = 1, spawn boats at marked areas near coasts (0 = no, 1 = yes)
 A3W_heliSpawning = 1;              // If serverSpawning = 1, spawn helicopters in some towns and airfields (0 = no, 1 = yes)
 A3W_planeSpawning = 0;             // If serverSpawning = 1, spawn planes at some airfields (0 = no, 1 = yes)
@@ -163,10 +163,10 @@ A3W_vehicleLoot = 2;               // Level of loot added to vehicles (0 = none,
 // Territory settings
 A3W_territoryCaptureTime = 3*60;   // Time in seconds needed to capture a territory
 A3W_territoryPayroll = 1;          // Periodically reward sides and indie groups based on how many territories they own (0 = no, 1 = yes)
-A3W_territoryWarningIcons = 0;     // Show exclamation marks on map for friendly territories where enemies are present (0 = no, 1 = yes)
+A3W_territoryWarningIcons = 1;     // Show exclamation marks on map for friendly territories where enemies are present (0 = no, 1 = yes)
 A3W_payrollInterval = 10*60;       // Delay in seconds between each payroll
 A3W_payrollAmount = 400;           // Amount of money rewarded per territory on each payroll
-A3W_territoryAllowed = [0,1,2,3,4,5,6,7,8,9]; // Territory Allowed (0:KAVALA,1:ALTISAIR,2:PYRGOS,3:SELANKANO,4:KORE,5:ZAROS,6:DOCKS,7:GHOST,8:ABDERA,9:PANOCHORI)
+A3W_territoryAllowed = [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120]; //Territory Allowed
 
 // Mission settings
 A3W_serverMissions = 1;            // Enable server missions (0 = no, 1 = yes)
@@ -195,7 +195,7 @@ A3W_aquaticMissionDelay = 1*60;      // Time in seconds between Main Missions
 A3W_aquaticMissionTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
 //###############################################################################################################################//
 A3W_hackedMissionDlSize = 165072;	// File size in Kilobytles (~1Mbps dl Rate)
-A3W_hackedMissionPercentage = 0.005; // Percentage to come out of bankaccounts
+A3W_hackedMissionPercentage = 0.05; // Percentage to come out of bankaccounts
 A3W_hackedMissionExtraFixMoney = 30000;	// Fix extra money for successfully download
 
 //Settings concerning Thermal Vision

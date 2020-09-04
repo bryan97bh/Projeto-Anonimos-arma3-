@@ -127,10 +127,6 @@ vehicleAddition =
 [
 	"muzzle_snds_L", // 9mm
 	"muzzle_snds_M", // 5.56mm
-	"muzzle_snds_570", // 5.7mm
-	"muzzle_snds_H", // 6.5mm
-	"muzzle_snds_H_MG", // 6.5mm LMG
-	"muzzle_snds_B", // 7.62mm
 	"muzzle_snds_acp", // .45 ACP
 	"optic_Arco",
 	"optic_SOS",
