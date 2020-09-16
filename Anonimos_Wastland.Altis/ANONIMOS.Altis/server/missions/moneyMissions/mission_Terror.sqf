@@ -12,7 +12,7 @@ private ["_vehicle","_createVehicle","_veh1","_convoyVeh","_explosive","_explosi
 _setupVars =
 {
     //Originally this mission called "ISIS incursion", but to avoid political problems #Staynex changed to "TERROR incursion"
-	_missionType = "CIDADE TOMADA";
+	_missionType = "INVASÃO REBELDE";
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
 
 	// settings for this mission
@@ -88,7 +88,7 @@ _setupObjects =
 	
 	_aiGroup setCombatMode "Red";
 	
-	_missionHintText = format ["Os hostis assumiram o controle <br/><t size='1.25' color='%1'>%2</t><br/><br/>Parece haver <t color='%1'>%3 inimigos</t> escondidos dentro ou em cima de edifícios. Livre-se de todos e leve os suprimentos!", sideMissionColor, _townName, _nbUnits];
+	_missionHintText = format ["Os rebeldes assumiram o controle <br/><t size='1.25' color='%1'>%2</t><br/><br/>Parece haver <t color='%1'>%3 inimigos</t> escondidos dentro ou em cima de edifícios. Livre-se de todos e leve os suprimentos!", sideMissionColor, _townName, _nbUnits];
 };
 
 _waitUntilMarkerPos = nil;

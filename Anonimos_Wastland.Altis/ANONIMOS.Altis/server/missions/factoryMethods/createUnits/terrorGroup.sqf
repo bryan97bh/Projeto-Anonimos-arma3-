@@ -43,47 +43,47 @@ for "_i" from 1 to _nbUnits do
 		case (_i % 3 == 0):
 		{
 			_unit addVest "V_TacVest_brn";
-			_unit forceAddUniform "U_BG_Guerilla1_1";
+			_unit forceAddUniform "U_I_C_Soldier_Bandit_3_F";
 			_unit addMagazines ["SmokeShell", 2];
-			for "_i" from 1 to 3 do {_unit addItemToUniform "30Rnd_556x45_Stanag";};
-			for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_556x45_Stanag";};
+			for "_i" from 1 to 3 do {_unit addItemToUniform "30rnd_762x39_AK12_Arid_Mag_F";};
+			for "_i" from 1 to 3 do {_unit addItemToVest "30rnd_762x39_AK12_Arid_Mag_F";};
 			_unit addItemToVest "HandGrenade";
-			_unit addHeadgear "H_Shemag_olive";
-			_unit addGoggles "G_Lady_Blue";
+			_unit addHeadgear "H_HelmetB_black";
+			_unit addGoggles "G_Bandanna_tan";
 			_unit addMagazine "1Rnd_HE_Grenade_shell";
-			_unit addWeapon "arifle_SPAR_01_GL_snd_F";
+			_unit addWeapon "arifle_AK12_GL_arid_F";
 			_unit addMagazine "1Rnd_HE_Grenade_shell";
 			_unit addMagazine "1Rnd_HE_Grenade_shell";
 		};
 		// RPG-7 every 7 units, starting from second one
 		case ((_i + 5) % 7 == 0):
 		{
-			_unit addVest "V_HarnessO_brn";
-			_unit forceAddUniform "U_I_C_Soldier_Bandit_2_F";
-			_unit addBackpack "B_AssaultPack_ocamo";
+			_unit addVest "V_TacVest_brn";
+			_unit forceAddUniform "U_I_C_Soldier_Para_4_F";
+			_unit addBackpack "B_FieldPack_cbr";
 			for "_i" from 1 to 2 do {_unit addItemToUniform "30Rnd_762x39_Mag_Green_F";};
 			for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_762x39_Mag_Green_F";};
 			for "_i" from 1 to 4 do {_unit addItemToBackpack "RPG7_F";};
 			_unit addMagazines ["SmokeShell", 2];
-			_unit addHeadgear "H_ShemagOpen_tan";
-			_unit addGoggles "G_Bandanna_tan";
+			_unit addHeadgear "H_ShemagOpen_khk";
+			//_unit addGoggles "G_Bandanna_tan";
 			_unit addWeapon "arifle_AKM_F";
 			_unit addWeapon "launch_RPG7_F";
 		};
 		// AA every 6 units
 		case (_i % 7 == 0):
 		{
-			_unit addVest "V_Chestrig_oli";
+			_unit addVest "V_TacChestrig_cbr_F";
 			_unit forceAddUniform "U_I_C_Soldier_Para_1_F";
-			_unit addBackpack "B_TacticalPack_oli";
+			_unit addBackpack "B_Kitbag_tan";
 			for "_i" from 1 to 2 do {_unit addItemToUniform "30Rnd_762x39_Mag_Green_F";};
 			for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_762x39_Mag_Green_F";};
 			for "_i" from 1 to 2 do {_unit addItemToBackpack "Titan_AA";};
 			_unit addMagazines ["SmokeShell", 2];
-			_unit addHeadgear "H_Bandanna_camo";
-			_unit addGoggles "G_Squares_Tinted";
+			_unit addHeadgear "H_Booniehat_khk";
+			_unit addGoggles "G_Aviator";
 			_unit addWeapon "arifle_AKM_F";
-			_unit addWeapon "launch_O_Titan_ghex_F";
+			_unit addWeapon "launch_B_Titan_F";
 		};
 		// Rifleman
 		default
@@ -91,26 +91,26 @@ for "_i" from 1 to _nbUnits do
 
 			if (_unit == leader _group) then
 			{			
-			_unit addVest "V_Chestrig_oli";
-			_unit forceAddUniform "U_I_C_Soldier_Camo_F";
-			_unit addBackpack "B_AssaultPack_khk";
+			_unit addVest "V_Chestrig_khk";
+			_unit forceAddUniform "U_I_C_Soldier_Para_3_F";
+			_unit addBackpack "B_LegStrapBag_coyote_F";
 			for "_i" from 1 to 2 do {_unit addItemToUniform "30Rnd_762x39_Mag_Green_F";};
 			for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_762x39_Mag_Green_F";};
 			_unit addMagazines ["SmokeShellYellow", 1];
-			_unit addHeadgear "H_Booniehat_khk";
-			_unit addGoggles "G_Aviator";
+			_unit addHeadgear "H_HelmetB";
+			_unit addGoggles "G_Bandanna_tan";
 			_unit addWeapon "arifle_AKM_F";
 
 			}
 			else
 			{
-			_unit addVest "V_HarnessO_brn";
-			_unit forceAddUniform "U_C_HunterBody_grn";
+			_unit addVest "V_BandollierB_cbr";
+			_unit forceAddUniform "U_I_C_Soldier_Para_5_F";
 			for "_i" from 1 to 2 do {_unit addItemToUniform "30Rnd_545x39_Mag_F";};
 			for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_545x39_Mag_F";};
 			_unit addMagazines ["SmokeShell", 1];
-			_unit addHeadgear "H_Bandanna_cbr";
-			_unit addGoggles "G_Bandanna_khk";
+			//_unit addHeadgear "H_HelmetB";
+			_unit addGoggles "G_Balaclava_oli";
 			_unit addWeapon "arifle_AKS_F";
 			};
 		};
