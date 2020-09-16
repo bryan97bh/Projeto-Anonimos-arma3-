@@ -69,7 +69,7 @@ class gunshopd
 		class DialogTitleText: w_RscTextCenter
 		{
 			idc = -1;
-			text = "Gun Store";
+			text = "Loja de Armas";
 			sizeEx = 0.06 * TEXT_SCALE;
 
 			x = GunStoreMainBG_X;
@@ -139,7 +139,7 @@ class gunshopd
 		class WeaponFilterText: w_RscStructuredTextLeft
 		{
 			idc = gunshop_WeaponFilterText_IDC;
-			text = "Weapon filter:";
+			text = "Filtro de Armas:";
 			size = 0.04 * TEXT_SCALE;
 
 			#define GunStore_WeaponFilterText_H (0.02 * Y_SCALE)
@@ -167,7 +167,7 @@ class gunshopd
 		{
 			idc = -1;
 			action = "[0] execVM 'client\systems\gunStore\buyGuns.sqf'";
-			text = "Buy";
+			text = "COMPRAR";
 			sizeEx = GunStoreButton_textSize;
 
 			x = GunStoreMainBG_X + (0.334 * SZ_SCALE);
@@ -180,7 +180,7 @@ class gunshopd
 		{
 			idc = gunshop_but_butammo;
 			action = "[0] execVM 'client\systems\gunStore\buyAmmo.sqf'";
-			text = "Buy";
+			text = "COMPRAR";
 			sizeEx = GunStoreButton_textSize;
 
 			x = GunStoreMainBG_X + (0.6233 * SZ_SCALE);
@@ -193,7 +193,7 @@ class gunshopd
 		{
 			idc = -1;
 			action = "[0] call populateGunStore";
-			text = "Handguns";
+			text = "Pistolas";
 			sizeEx = GunStoreButton_textSize;
 
 			x = GunStoreMainBG_X + (0.0167 * SZ_SCALE);
@@ -206,7 +206,7 @@ class gunshopd
 		{
 			idc = -1;
 			action = "[1] call populateGunStore";
-			text = "SMGs";
+			text = "SubMetralhadoras";
 			sizeEx = GunStoreButton_textSize;
 
 			x = GunStoreMainBG_X + (0.0167 * SZ_SCALE);
@@ -219,7 +219,7 @@ class gunshopd
 		{
 			idc = -1;
 			action = "[2] call populateGunStore";
-			text = "Rifles";
+			text = "Fuzis";
 			sizeEx = GunStoreButton_textSize;
 
 			x = GunStoreMainBG_X + (0.0167 * SZ_SCALE);
@@ -232,7 +232,7 @@ class gunshopd
 		{
 			idc = -1;
 			action = "[3] call populateGunStore";
-			text = "LMGs";
+			text = "Metralhadoras";
 			sizeEx = GunStoreButton_textSize;
 
 			x = GunStoreMainBG_X + (0.0167 * SZ_SCALE);
@@ -245,7 +245,7 @@ class gunshopd
 		{
 			idc = -1;
 			action = "[5] call populateGunStore";
-			text = "Launchers";
+			text = "Lançadores";
 			sizeEx = GunStoreButton_textSize;
 
 			x = GunStoreMainBG_X + (0.0167 * SZ_SCALE);
@@ -258,7 +258,7 @@ class gunshopd
 		{
 			idc = -1;
 			action = "[6] call populateGunStore";
-			text = "Ordnance";
+			text = "Explosivos";
 			sizeEx = GunStoreButton_textSize;
 
 			x = GunStoreMainBG_X + (0.0167 * SZ_SCALE);
@@ -271,7 +271,7 @@ class gunshopd
 		{
 			idc = -1;
 			action = "[7] call populateGunStore";
-			text = "Accessories";
+			text = "Acessórios";
 			sizeEx = GunStoreButton_textSize;
 
 			x = GunStoreMainBG_X + (0.0167 * SZ_SCALE);
@@ -285,7 +285,7 @@ class gunshopd
 		{
 			idc = -1;
 			action = "[8] call populateGunStore";
-			text = "Armament";
+			text = "Estáticas";
 			sizeEx = GunStoreButton_textSize;
 
 			x = GunStoreMainBG_X + (0.0167 * SZ_SCALE);
@@ -298,7 +298,7 @@ class gunshopd
 		{
 			idc = -1;
 			action = "[] execVM 'client\systems\selling\sellWeapon.sqf'";
-			text = "Sell Weapon";
+			text = "Vender Arma";
 			sizeEx = GunStoreButton_textSize;
 
 			x = GunStoreMainBG_X + (0.23 * SZ_SCALE);
@@ -311,7 +311,7 @@ class gunshopd
 		{
 			idc = -1;
 			action = "[] execVM 'client\systems\selling\sellUniform.sqf'";
-			text = "Sell Uniform";
+			text = "Vender Uniforme";
 			sizeEx = GunStoreButton_textSize;
 
 			x = GunStoreMainBG_X + ((0.604 - 0.25) * SZ_SCALE);
@@ -324,7 +324,7 @@ class gunshopd
 		{
 			idc = -1;
 			action = "[] execVM 'client\systems\selling\sellVest.sqf'";
-			text = "Sell Vest";
+			text = "Vender Colete";
 			sizeEx = GunStoreButton_textSize;
 
 			x = GunStoreMainBG_X + (0.478 * SZ_SCALE);
@@ -337,7 +337,7 @@ class gunshopd
 		{
 			idc = -1;
 			action = "[] execVM 'client\systems\selling\sellBackpack.sqf'";
-			text = "Sell Backpack";
+			text = "Vender Mochila";
 			sizeEx = GunStoreButton_textSize;
 
 			x = GunStoreMainBG_X + (0.602 * SZ_SCALE);
@@ -350,7 +350,7 @@ class gunshopd
 		{
 			idc = -1;
 			action = "closeDialog 0";
-			text = "Cancel";
+			text = "Cancelar";
 			sizeEx = GunStoreButton_textSize;
 
 			x = GunStoreMainBG_X + (0.0167 * SZ_SCALE);

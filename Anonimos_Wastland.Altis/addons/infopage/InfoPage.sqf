@@ -42,23 +42,23 @@ if (side player in [BLUFOR,OPFOR] ) then
 _text = "
 <br />
 <br />
-<t align='left'><t size='1.2'><t shadow= 1 shadowColor='#000000'>Keyboard Shortcuts:</t><br />
+<t align='left'><t size='1.2'><t shadow= 1 shadowColor='#000000'>Atalhos do Teclado:</t><br />
 <br />
-<t align='left'><img size='1.8' shadow = 0 image='addons\infopage\windows.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'>  Player Names</t><br />
-<t align='left'><img size='1.8' shadow = 0 image='addons\infopage\end.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'>  Insert/Remove Earplugs</t><br />
-<t align='left'><img size='1.8' shadow = 0 image='addons\infopage\v.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'>  Open/Cut Parachute</t><br />
-<t align='left'><img size='1.8' shadow = 0 image='addons\infopage\del.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'>  Emergency Eject</t><br />
+<t align='left'><img size='1.8' shadow = 0 image='addons\infopage\windows.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'>  Nome dos Jogadores</t><br />
+<t align='left'><img size='1.8' shadow = 0 image='addons\infopage\end.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'>  Inserir/Remover Abafador</t><br />
+<t align='left'><img size='1.8' shadow = 0 image='addons\infopage\v.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'>  Abrir/Cortar Paraquedas</t><br />
+<t align='left'><img size='1.8' shadow = 0 image='addons\infopage\del.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'>  Ejeção de Emergência</t><br />
 <br />
 <br />
-<t align='left'><t size='1.2'><t shadow= 1 shadowColor='#000000'>Get in contact with us:</t><br />
+<t align='left'><t size='1.2'><t shadow= 1 shadowColor='#000000'>Entre em contato conosco pelo:</t><br />
 <br />
 <t align='left'><img size='1.7' shadow = 0 image='addons\infopage\discord.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'>   https://invite.gg/anonimos</t><br />
-<t align='left'><img size='1.6' shadow = 0 image='addons\infopage\fb.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'>    Anônimos</t><br />
+<t align='left'><img size='1.6' shadow = 0 image='addons\infopage\fb.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'>    Em desenvolvimento</t><br />
 <t align='center'><img size='7' shadow = 0 image='mapConfig\Loading.jpg'/></t>
 <br />";
 
 hint parseText format ["
 <t align='center'>Welcome %2</t><br />
-<t align='center'><t shadow= 1 shadowColor='#000000'><t size='1.2'><t color='#eda92a'>Anônimos A3W %3</t>%1
-<br /><t align='center'>Holding 3 Territories for 10 Mins = $%4</t>
+<t align='center'><t shadow= 1 shadowColor='#000000'><t size='1.2'><t color='#eda92a'>Anônimos Brasil %3</t>%1
+<br /><t align='center'>Segurando 3 Territórios por 10 Mins = $%4</t>
 ",_text, name player, worldname,(_moneyAmount *3)];

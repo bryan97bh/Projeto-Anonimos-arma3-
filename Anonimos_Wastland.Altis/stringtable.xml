@@ -21,10 +21,10 @@
 			<English>OPFOR</English>
 		</Key>
 		<Key ID="STR_WL_Gen_TeamGUER">
-			<English>Independent</English>
+			<English>Independente</English>
 		</Key>
 		<Key ID="STR_WL_Gen_TeamGUER_2">
-			<English>Independent</English>
+			<English>Independente</English>
 		</Key>
 	</Package>
 	<Package name="TeamLock">
@@ -32,85 +32,86 @@
 			<English>Você foi punido por matar a equipe duas vezes durante esta sessão do servidor. Seu inventário foi limpo e agora você está bloqueado para o lado Independente.</English>
 		</Key>
 		<Key ID="STR_WL_Loading_Teamkiller">
-			<English>You are restricted to the Independent side, due to having 2+ teamkills during this server session AND/OR more than 10 Teamkills.</English>
+			<English>Você está restrito ao lado Independente, devido a ter mais de 2 habilidades em equipe durante esta sessão do servidor E / ou mais de 10 habilidades em equipe.</English>
 		</Key>
 		<Key ID="STR_WL_Loading_Teamswitched">
-			<English>You have played as %1 for too long and cannot switch to the other team. You can still play as Independent. (ADMIN WILL NOT MOVE YOU)</English>
+			<English>Você jogou como %1 por muito tempo e não pode mudar para o outro time. Você ainda pode jogar como Independente. (ADMIN NÃO O MOVERÁ)</English>
 		</Key>
 		<Key ID="STR_WL_Loading_GlobalVoice">
-			<English>You have been kicked too many times for using voice. You can join another server or wait until server restart.</English>
+			<English>Você foi expulso muitas vezes por usar a voz. Você pode ingressar em outro servidor ou aguardar a reinicialização do servidor...</English>
 		</Key>
 	</Package>
 	<Package name="WelcomeMessage">
 		<Key ID="STR_WL_WelcomeToWasteland">
-			<English>&lt;t color='#FF8000' size='2.5' &gt;Servidor Anônimos &lt;/t&gt;</English>
+			<English>&lt;t color='#FF8000' size='2.5' &gt;Servidor Anônimos Brasil Wasteland &lt;/t&gt;</English>
 		</Key>
 		<Key ID="STR_WL_YouAreInTeam">
-			<English>&lt;t color='#FFFFFF' size='1' &gt;* Você está no time &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt; %3 &lt; /t &gt;&lt; /t &gt; team. &lt;br/&gt;&lt;t color='#FFFFFF' size='1' &gt;* &lt;t color="#FF1111"&gt;ATTACKING or STEALING&lt;/t&gt;&lt;t color='#FFFFFF' size='1' &gt; from other &lt;t color="%2"&gt; %4 &lt; /t &gt;&lt;t color='#FFFFFF' size='1' &gt; players is &lt;t color="#FF1111"&gt;BANNABLE&lt;/t&gt;&lt;br/&gt;&lt;t color='#FFFFFF' size='1' &gt;* Punish Teamkillers to move to Indie. 10+ Teamkills = Permanently Indie (Automated) </English>
+			<English>&lt;t color='#FFFFFF' size='1' &gt;* Você está de &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt; %3 &lt; /t &gt;&lt; /t &gt; time. &lt;br/&gt;&lt;t color='#FFFFFF' size='1' &gt;* &lt;t color="#FF1111"&gt;Atacar ou Roubar&lt;/t&gt;&lt;t color='#FFFFFF' size='1' &gt; de outros &lt;t color="%2"&gt; %4 &lt; /t &gt;&lt;t color='#FFFFFF' size='1' &gt; jogadores é &lt;t color="#FF1111"&gt;Punivel&lt;/t&gt;&lt;br/&gt;&lt;t color='#FFFFFF' size='1' &gt;* Punir fogo amigo para se mudar mover ele como Indepndente. +10 Fogo amigo = Independente Permanentemente (Automático) </English>
 		</Key>
 		<Key ID="STR_WL_YouAreInFFA">
-			<English>&lt;t color='#FFFFFF' size='1' &gt;* Você está no &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt; team.&lt;br/&gt;* Você é &lt;t color="#00aa00"&gt;Livre para matar qualquer um&lt;/t&gt;&lt;br/&gt;&lt;/t&gt;</English>
+			<English>&lt;t color='#FFFFFF' size='1' &gt;* Você está de &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt; team.&lt;br/&gt;* Você é &lt;t color="#00aa00"&gt;Livre para matar qualquer um&lt;/t&gt;&lt;br/&gt;&lt;/t&gt;</English>
 		</Key>
 		<Key ID="STR_WL_MapMoreInfo">
-			<English>&lt;t color='#FFFFFF' size='1' &gt;Conquest: Capture e mantenha as bandeiras para ganhar dinheiro. &lt;br/&gt;Precione a tecla windows para ver o nome dos jogadores&lt;br/&gt;Precione END para colocar os tampões de ouvido&lt;br/&gt; &lt;/t&gt;</English>
+			<English>&lt;t color='#FFFFFF' size='1' &gt;Dica para dinheiro fácil: Capture e mantenha as bandeiras! &lt;br/&gt;Precione a tecla WINDOWS para ver o nome dos jogadores&lt;br/&gt;Precione END para colocar os ABAFADORES de ouvido&lt;br/&gt; &lt;/t&gt;</English>
 		</Key>
 	</Package>
 	<Package name="TeamKillWarningMessage">
 		<Key ID="STR_TK_MESSAGE">
-			<English>&lt;t size='2' color='#ff0000'&gt;Team killing is frowned upon!&lt;/t&gt;&lt;br/&gt;If this was a mistake then you must explain yourself and say sorry, otherwise they will mark you as teamkiller and you will get kicked.</English>
+			<English>&lt;t size='2' color='#ff0000'&gt;Matar alidos BLUFOR não é permitido!&lt;/t&gt;&lt;br/&gt;Se isso foi sem intenção, você deve se explicar e pedir desculpas, caso contrário, eles o maracaram como um assassino de equipe e você será expulso do servidor.</English>
 		</Key>
 	</Package>
 	<Package name="Diary">
 		<Key ID="STR_WL_Diary_RulesContent">
-			<English>&lt;br/&gt;    1. Keep bad language to a minimum. If you have a problem with another player, take it to direct.&lt;br/&gt;    2. NO VOIP IN GLOBAL. Use the channels or Discord!.&lt;br/&gt;3. Do not exploit R3F or any other add-ons or you will be banned.&lt;br/&gt;4. Using or spamming with loud\long custom sound commands will cause punishment up to permanent ban</English>
+			<English>&lt;br/&gt;    1. Procure jogar em GRUPO, chame seus amigos! Sua chance de vitória será maior! &lt;br/&gt;    2. Cuidado ao usar o canal GLOBAL. Use the canais do Discord!.&lt;br/&gt;3. Não explore falhas no jogo e suas adições, você será banido! &lt;br/&gt;4. O uso ou envio de spam com comandos de som personalizados altos e longos causará punição até o banimento permanente</English>
 		</Key>
 	</Package>
 	<Package name="ShopDescriptions">
 		<Key ID="STR_WL_ShopDescriptions_Water">
-			<English>Greece is a hot place! Drink plenty!</English>
+			<English>A Grécia é um lugar quente! Bebe-se muito!</English>
 		</Key>
 		<Key ID="STR_WL_ShopDescriptions_Camo">
-			<English>An improvised roof, 4 sticks and a blanket!</English>
+			<English>Um telhado improvisado, 4 varas e um cobertor!</English>
 		</Key>
 		<Key ID="STR_WL_ShopDescriptions_CanFood">
-			<English>The Greek wastelands may get you hungry!</English>
+			<English>Os terrenos baldios gregos podem deixá-lo com fome!</English>
 		</Key>
 		<Key ID="STR_WL_ShopDescriptions_RepairKit">
-			<English>With this kit, you won't need an engineer!</English>
+			<English>Com este kit, você não precisará de um engenheiro!</English>
 		</Key>
 		<Key ID="STR_WL_ShopDescriptions_MedKit">
-			<English>With this kit, you won't need a medic!</English>
+			<English>Com este kit, você não precisará de um médico!</English>
 		</Key>
 		<Key ID="STR_WL_ShopDescriptions_fuelFull">
-			<English>25 litres of pure unleaded fuel!</English>
+			<English>25 litros de combustível puro!</English>
 		</Key>
 		<Key ID="STR_WL_ShopDescriptions_fuelEmpty">
-			<English>Empty fuel can. You can refill it!</English>
+			<English>Galão de combustível vazio. Você pode enche-lo novamente!</English>
 		</Key>
 		<Key ID="STR_WL_ShopDescriptions_spawnBeacon">
-			<English>Choose your spawn location. Disclaimer: This product does not guarantee safe delivery of goods.</English>
+			<English>Escolha o seu local de nascimento. Isenção de responsabilidade: Este produto não garante a entrega segura de mercadorias.</English>
 		</Key>
 		<Key ID="STR_WL_ShopDescriptions_SyphonHose">
-			<English>Go forth and steal fuel from vehicles!</English>
+			<English>Vá em frente e roube combustível de veículos!</English>
 		</Key>
 		<Key ID="STR_WL_ShopDescriptions_Energy_Drink">
-			<English>Allows you to sprint continuously for 5 minutes.</English>
+			<English>Permite que você corra continuamente por 5 minutos.</English>
 		</Key>
 		<Key ID="STR_WL_ShopDescriptions_Warchest">
-			<English>A safe to store your team's money.</English>
+			<English>Um cofre para guardar o dinheiro da sua equipe.</English>
 		</Key>
 		<Key ID="STR_WL_ShopDescriptions_Pinlock">
-+            <English>This programming tool is a once use only and non removable device to add a pincode to an owned vehicle. By using this your friends can also lock and unlock your vehicle!</English>
++            <English>Esta ferramenta de programação é um dispositivo único e não removível para uso único para adicionar uma SENHA a um veículo de sua propriedade. Ao usar isso, seus amigos também podem bloquear e desbloquear seu veículo!
+</English>
 +       </Key>
 	</Package>
 	<Package name="Dialogs">
 		<Key ID="STR_WL_dialog_TeamkillText">
-			<English>Você foi morto pelo %2 jogador %1&lt;br/&gt;&lt;br/&gt;If this was an accident, forgive him, otherwise they should explain their actions.&lt;br/&gt;&lt;br/&gt;If the player does not apologize, punish him.</English>
+			<English>Você foi morto pelo %2 jogador %1&lt;br/&gt;&lt;br/&gt;Se isso foi um acidente, perdoe-o, caso contrário eles devem explicar suas ações.&lt;br/&gt;&lt;br/&gt;If the player does not apologize, punish him.</English>
 		</Key>
 	</Package>
 	<Package name="ATM_Menu">
 		<Key ID="STR_ATM_Title">
-			<Original>Bank Account Management</Original>
+			<Original>Conta Bancária</Original>
 		</Key>
 		<Key ID="STR_ATM_Withdraw">
 			<Original>Retirar</Original>
@@ -130,16 +131,16 @@
 			<English>Você já está executando outra ação!</English>
 		</Key>
 		<Key ID="STR_WL_Errors_InVehicle">
-			<English>You are currently busy!</English>
+			<English>Você está ocupado no momento!</English>
 		</Key>
 		<Key ID="STR_WL_Errors_BeaconActive">
-			<English>Você já tem um BEACON ATIVO!</English>
+			<English>Você já tem um SPAWN BEACON ATIVO!</English>
 		</Key>
 		<Key ID="STR_WL_Errors_BeaconInVehicle">
 			<English>Você não pode entrar no veiculo enquanto coloca um Spawn Beacon!</English>
 		</Key>
 		<Key ID="STR_WL_Errors_BeaconTooMany">
-			<English>Você não pode mais colocar Spawn Beacons!</English>
+			<English>Você não pode mais colocar Spawn Beacons! O limite é 1 por jogador!</English>
 		</Key>
 	</Package>
 </Project>

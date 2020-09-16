@@ -212,7 +212,7 @@ class TOParmaInfoD
 		{
 			idc = -1;
 			onButtonClick = "closeDialog 0";
-			text = "Close and Agree to rules and terms";
+			text = "FECHAR E CONCORDAR COM AS REGRAS";
 			sizeEx = 0.04;
 			x = "8 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			y = "21 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";

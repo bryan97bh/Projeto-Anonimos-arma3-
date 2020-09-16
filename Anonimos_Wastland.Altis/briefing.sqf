@@ -13,20 +13,20 @@ _aKeyName = { _arr = actionKeysNamesArray _this; if (count _arr == 0) exitWith {
 
 waitUntil {!isNull player};
 
-player createDiarySubject ["infos", "Infos and Help"];
-player createDiarySubject ["changelog", "Changelog"];
-player createDiarySubject ["credits", "Credits"];
+player createDiarySubject ["infos", "Informações e Ajuda"];
+player createDiarySubject ["changelog", "Atualizações"];
+player createDiarySubject ["credits", "Créditos"];
 
 player createDiaryRecord ["changelog",
 [
 "v1.4d",
 "
-<br/>[Added] ADR-97 SMG
-<br/>[Added] Paint vehicle option at stores
-<br/>[Added] Weapon filter for gunstore accessories
-<br/>[Added] Territory capture warning icons on map
-<br/>[Fixed] UAVs retrieved from parking are unconnectable
-<br/>[Fixed] Other minor changes and fixes
+<br/> [Adicionado] SMD ADR-97;
+<br/> [Adicionado] Opção de pintar veículos nas lojas;
+<br/> [Adicionado] Filtro de armas para acessórios de armas;
+<br/> [Adicionado] Ícones de aviso de captura de território no mapa;
+<br/>  UAVs [fixos] Retirados da Garagem Virtual não podems ser conectados novamente;
+<br/> [Corrigido] Outras pequenas alterações e correções;
 "
 ]];
 
@@ -34,18 +34,18 @@ player createDiaryRecord ["changelog",
 [
 "v1.4c",
 "
-<br/>[Added] Tanks DLC
-<br/>[Added] 3rd column in vehicle store for parts
-<br/>[Added] AA jet variants
-<br/>[Added] HE cannons to gun-only jets
-<br/>[Added] Smoke launchers to tank driver and gunner seats
-<br/>[Changed] All hidden vehicle paintjobs now available
-<br/>[Changed] Improved crate and supply truck loot
-<br/>[Changed] Some store prices
-<br/>[Fixed] Mortar resupply bugs
-<br/>[Fixed] Selling of laser designators
-<br/>[Fixed] More money exploits
-<br/>[Fixed] Other minor changes and fixes
+<br/> [Adicionado] DLC de tanques;
+<br/> [Adicionado] Terceira coluna na loja de veículos para peças;
+<br/> [Adicionado] Variantes de jato AA;
+<br/> [Adicionado] Canhões HE para jatos que apenas usam armas;
+<br/> [Adicionado] Lançadores de fumaça para assentos de motorista e artilheiro;
+<br/> [Alterado] Todos os pinturas de veículos ocultas, agora disponíveis;
+<br/> [Alterado] Caixa aprimorada e Apoio de suprimentos;
+<br/> [Alterado] Alguns preços de loja;
+<br/> [Corrigido] Erros de reabastecimento de Armas estáticas;
+<br/> [Fixo] Venda de designadores a laser;
+<br/> [Corrigido] Mais explorações de dinheiro;
+<br/> [Corrigido] Outras pequenas alterações e correções;
 "
 ]];
 
@@ -53,29 +53,29 @@ player createDiaryRecord ["changelog",
 [
 "v1.4b",
 "
-<br/>[Added] Artillery Strike in random mission crates
-<br/>[Added] Player body marker
-<br/>[Added] Diving gear to purchased RHIB, Speedboat, SDV
-<br/>[Added] SDAR turret to SDV gunner
-<br/>[Added] Object loading capacity to SDV
-<br/>[Added] Tac-Ops DLC Police Van and Gorgon skins
-<br/>[Added] Apex DLC laser designator skins
-<br/>[Added] Saving of 'Autonomous' option for UAVs
-<br/>[Changed] Private storage space 4 times bigger
-<br/>[Changed] Allow towing of locked personal vehicles
-<br/>[Changed] Allow boat purchase on dry land
-<br/>[Changed] Disabled slingloading of locked vehicles
-<br/>[Changed] UAVs now sellable
-<br/>[Changed] Improved kill attribution
-<br/>[Fixed] Resupply error for static weapons
-<br/>[Fixed] Ejection of injured units
-<br/>[Fixed] Static designator ownership saving
-<br/>[Fixed] Saving of stashed uniform contents and weapon items
-<br/>[Fixed] Disappearing parked vehicles
-<br/>[Fixed] Annoying switch to rocket launcher on revive
-<br/>[Fixed] Drowned on dry land
-<br/>[Fixed] Camo nets not saving
-<br/>[Fixed] Many minor changes and fixes
+<br/> [Adicionado] Suporte de Artilharia nascem em caixass de missões aleatórias;
+<br/> [Adicionado] Marcador do corpo do jogador;
+<br/> [Adicionado] Equipamento de mergulho para o RHIB, lancha rápida, SDV comprado;
+<br/> [Adicionado] Torre SDAR para atirador SDV;
+<br/> [Adicionado] Capacidade de carregamento de objetos para SDV;
+<br/> [Adicionado] Skins de Van e Gorgon da polícia Tac-Ops DLC;
+<br/> [Adicionado] Capas de designadores a laser Apex DLC;
+<br/> [Adicionado] Economia da opção 'Autônoma' para UAVs;
+<br/> [Alterado] Espaço de armazenamento privado 4 vezes maior;
+<br/> [Alterado] Permitir reboque de veículos pessoais bloqueados;
+<br/> [Alterado] Permitir a compra de barcos em terra firme;
+<br/> [Alterado] Desativação do carregamento de veículos trancados;
+<br/> [Alterado] VANTs agora vendáveis;
+<br/> [Alterado] Atribuição de morte aprimorada;
+<br/> [Corrigido] Erro de reabastecimento para armas estáticas;
+<br/> [Fixo] Ejeção de unidades feridas;
+<br/> [Fixo] economia de propriedade do designador estático;
+<br/> [Corrigido] Economia de conteúdo uniforme e itens de armas escondidos;
+<br/> [Fixo] Desaparecendo veículos estacionados;
+<br/> [Corrigido] Interruptor irritante para lançador de foguetes ao reviver;
+<br/> [Fixo] Afogado em terra seca;
+<br/> Redes de camuflagem [fixas] não salvando;
+<br/> [Corrigido] Muitas pequenas alterações e correções;
 "
 ]];
 
@@ -83,13 +83,13 @@ player createDiaryRecord ["changelog",
 [
 "v1.4",
 "
-<br/>[Added] Laws of War DLC
-<br/>[Added] Killfeed HUD
-<br/>[Changed] Improved revive system
-<br/>[Changed] Improved kill attribution
-<br/>[Changed] Improved antihack
-<br/>[Fixed] Prone reload freeze
-<br/>[Fixed] Many minor changes and fixes
+<br/> [Adicionado] DLC de Laws of War;
+<br/> [Adicionado] Killfeed HUD;
+<br/> [Alterado] Sistema de recuperação aprimorado;
+<br/> [Alterado] Atribuição de morte aprimorada;
+<br/> [Alterado] Antihack aprimorado;
+<br/> [Corrigido] Prone recarregar congelamento;
+<br/> [Corrigido] Muitas pequenas alterações e correções;
 "
 ]];
 
@@ -97,16 +97,16 @@ player createDiaryRecord ["changelog",
 [
 "v1.3c",
 "
-<br/>[Added] Jets DLC
-<br/>[Added] Aircraft carrier on Stratis
-<br/>[Added] Resupply trucks on Altis and Stratis
-<br/>[Added] Driver assist
-<br/>[Changed] Aircraft prices
-<br/>[Changed] Blocked explosives near parking and storage
-<br/>[Changed] Migrated saving system from extdb2 to extdb3
-<br/>[Fixed] Fast revive exploits
-<br/>[Fixed] Could perform your duty after being revived
-<br/>[Fixed] Other minor changes and fixes
+<br/> [Adicionado] DLC de jatos
+<br/> [Adicionado] Porta-aviões em Stratis
+<br/> [Adicionado] Reabastecer caminhões em Altis e Stratis
+<br/> [Adicionado] Assistência ao motorista
+<br/> [Alterado] Preços das aeronaves
+<br/> [Alterado] Explosivos bloqueados perto de estacionamento e armazenamento
+<br/> [Alterado] Sistema de salvamento migrado do extdb2 para o extdb3
+<br/> [Corrigido] Explode rapidamente
+<br/> [Corrigido] Poderia executar seu dever após ser revivido
+<br/> [Corrigido] Outras pequenas alterações e correções
 "
 ]];
 
@@ -114,20 +114,20 @@ player createDiaryRecord ["changelog",
 [
 "v1.3b",
 "
-<br/>[Added] Private parking
-<br/>[Added] Private storage
-<br/>[Added] Vehicle ownership
-<br/>[Added] Vehicle locking
-<br/>[Added] Vehicle selling
-<br/>[Added] Mine saving
-<br/>[Added] Resupply trucks
-<br/>[Added] CH View Distance
-<br/>[Added] Map legend
-<br/>[Added] UAV side persistence
-<br/>[Added] headless server cleanup
-<br/>[Changed] Static designators now available to indies
-<br/>[Changed] Some store prices
-<br/>[Fixed] Many other minor changes and fixes
+<br/> [Adicionado] Garagem Virtual;
+<br/> [Adicionado] Armário Virtual;
+<br/> [Adicionado] Propriedade do veículo;
+<br/> [Adicionado] Bloqueio de veículo;
+<br/> [Adicionado] Venda de veículos;
+<br/> [Adicionado] Salvamento de minas;
+<br/> [Adicionado] caminhões de reabastecimento;
+<br/> [Adicionado] CH Ver distância;
+<br/> [Adicionado] Legenda do mapa;
+<br/> [Adicionado] Persistência do lado do UAV;
+<br/> [Adicionado] Limpeza sem servidor do servidor;
+<br/> [Alterado] Designadores estáticos agora disponíveis para indies;
+<br/> [Alterado] Alguns preços de loja;
+<br/> [Corrigido] Muitas outras pequenas alterações e correções;
 "
 ]];
 
@@ -135,40 +135,41 @@ player createDiaryRecord ["changelog",
 [
 "v1.3",
 "
-<br/>[Added] Tanoa version
-<br/>[Added] Apex content on dev/preview branches
-<br/>[Added] Sticky explosive charges
-<br/>[Added] Heavy towing and airlifting
-<br/>[Added] Load dragged injured friendly in vehicles
-<br/>[Added] Eject loaded injured friendly from vehicles
-<br/>[Added] Autostabilize when loaded in medical vehicle
-<br/>[Added] 'Finish off' action to slay injured enemies
-<br/>[Added] Improved injured unit detection
-<br/>[Added] Scoreboard persistence option for servers
-<br/>[Added] Fatal PvP headshots option for servers
-<br/>[Added] Custom death messages option for servers
-<br/>[ADded] Auto-center heli turret on manual fire
-<br/>[Added] UAV side persistence
-<br/>[Added] More textures for some vehicles in store
-<br/>[Added] Abandoned quadcopter cleanup
-<br/>[Added] More admin menu logging
-<br/>[Changed] Reduced heli missile damage
-<br/>[Changed] Improved mission crate loot
-<br/>[Changed] Vest armor values in general store
-<br/>[Changed] Increased Mag Repack flexibility
-<br/>[Changed] Toggled off autonomous on static designators
-<br/>[Changed] Disabled rain due to weather desync
-<br/>[Fixed] Engineer with toolkit can now always repair
-<br/>[Fixed] Improved missile lock-on
-<br/>[Fixed] Improvements to kill tracking system
-<br/>[Fixed] Items and money not dropping on injured logout
-<br/>[Fixed] Combat log timer not resetting on death
-<br/>[Fixed] Player not always ejected on injury
-<br/>[Fixed] Double kill/death count
-<br/>[Fixed] Spawn cooldowns resetting on rejoin
-<br/>[Fixed] Striders spawning without laser batteries
-<br/>[Fixed] Disabled rain due to syncing issues
-<br/>[Fixed] Various minor bugfixes and optimizations
+
+<br/> [Adicionado] Versão Tanoa;
+<br/> [Adicionado] Conteúdo do Apex nas ramificações de desenvolvimento / visualização;
+<br/> [Adicionado] Cargas explosivas pegajosas;
+<br/> [Adicionado] Reboque pesado e transporte aéreo;
+<br/> [Adicionado] Carga arrastada ferida amigável em veículos;
+<br/> [Adicionado] Ejete carregado ferido amiga dos veículos;
+<br/> [Adicionado] Estabilização automática quando carregado em veículo médico;
+<br/> [Adicionado] Ação 'Finalizar' para matar inimigos feridos;
+<br/> [Adicionado] Melhor detecção de unidade de feridos;
+<br/> [Adicionado] Opção de persistência de placar para servidores;
+<br/> [Adicionado] opção de headshots PvP fatais para servidores;
+<br/> [Adicionado] Opção personalizada de mensagens de morte para servidores;
+<br/> [ADded] Auto-center heli turret on fire manual;
+<br/> [Adicionado] Persistência do lado do UAV;
+<br/> [Adicionado] Mais texturas para alguns veículos na loja;
+<br/> [Adicionado] Limpeza de quadricóptero abandonada;
+<br/> [Adicionado] Mais registros do menu do administrador;
+<br/> [Alterado] Dano reduzido de mísseis heli;
+<br/> [Alterado] Pilha de missões aprimorada;
+<br/> [Alterado] Colete valores de armadura na loja geral;
+<br/> [Alterado] Maior flexibilidade de Mag Repack;
+<br/> [Alterado] Desativado autônomo em designadores estáticos;
+<br/> [Alterado] Chuva desativada devido à dessincronização do tempo;
+<br/> [Corrigido] O engenheiro com kit de ferramentas agora pode sempre reparar;
+<br/> [Corrigido] Bloqueio de mísseis aprimorado;
+<br/> [Corrigido] Melhorias para eliminar o sistema de rastreamento;
+<br/> [Corrigido] Itens e dinheiro não caindo no logout ferido;
+<br/> [Corrigido] O cronômetro de log de combate não é redefinido na morte;
+<br/> [Corrigido] O jogador nem sempre é expulso por lesão;
+<br/> [Corrigido] Contagem dupla de mortes / mortes;
+<br/> [Corrigido] Recargas de Spawn sendo reinicializadas;
+<br/> [Fixo] Striders que aparecem sem baterias de laser;
+<br/> [Corrigido] Chuva desativada devido a problemas de sincronização;
+<br/> [Corrigido] Várias pequenas correções e otimizações;
 "
 ]];
 
@@ -183,13 +184,11 @@ player createDiaryRecord ["changelog",
 
 player createDiaryRecord ["credits",
 [
-"Credits",
+"Créditos",
 "
-<br/><font size='16' color='#BBBBBB'>Modified by anonymous:</font>
-<br/>	* Staynex
-<br/>	* wiking.at
+<br/><font size='16' color='#BBBBBB'>Modificado por Anônimos Brasil Servidores:</font>
 <br/>
-<br/><font size='16' color='#BBBBBB'>Developed by A3Wasteland.com:</font>
+<br/><font size='16' color='#BBBBBB'>Desenvolvido por A3Wasteland.com:</font>
 <br/>	* AgentRev (TeamPlayerGaming)
 <br/>	* JoSchaap (GoT/Tweakers.net)
 <br/>	* MercyfulFate
@@ -198,7 +197,7 @@ player createDiaryRecord ["credits",
 <br/>	* Torndeco
 <br/>	* Del1te (404Games)
 <br/>
-<br/><font size='16' color='#BBBBBB'>Original Arma 2 Wasteland missions by:</font>
+<br/><font size='16' color='#BBBBBB'>Original das missões de Arma 2 Wasteland:</font>
 <br/>	* Tonic
 <br/>	* Sa-Matra
 <br/>	* MarKeR
@@ -209,7 +208,7 @@ player createDiaryRecord ["credits",
 <br/>	* Pulse
 <br/>	* Domuk
 <br/>
-<br/><font size='16' color='#BBBBBB'>Other contributors:</font>
+<br/><font size='16' color='#BBBBBB'>Outros contribuintes:</font>
 <br/>	* 82ndab-Bravo17 (GitHub)
 <br/>	* afroVoodo (Armaholic)
 <br/>	* Austerror (GitHub)
@@ -247,71 +246,76 @@ player createDiaryRecord ["credits",
 <br/>	* wiking.at (A3W forums)
 <br/>	* xx-LSD-xx (Armaholic)
 <br/>	* Zenophon (BIS Forums)
-<br/>	* Staynex (Armajunkies)
-<br/>
-<br/><font size='16'>Thanks A LOT to everyone involved for the help and inspiration!</font>
+<br/>	* Batista (Resistência Armada)
+<br/>	* Bryan (CMTBR)
+<br/>	* RobérioJr
+<br/><font size='16'>Muito obrigado a todos os envolvidos pela ajuda e inspiração!</font>
 "
 ]];
 
 
 player createDiaryRecord ["infos",
 [
-"Player hotkeys",
+"Teclas de atalho do jogador",
 "
-<br/>List of default player hotkeys:
+<br/>Lista padrão dos atalhos dos jogadores:
 <br/>
-<br/>" + NKEYNAME(41) + " (open player menu)
-<br/>" + NKEYNAME(207) + " (toggle earplugs)
-<br/>" + NKEYNAME(199) + ", " + NKEYNAME(219) + ", " + NKEYNAME(220) + " (toggle player names)
-<br/>Ctrl + " + AKEYNAME("GetOut") + " (emergency eject)
-<br/>" + AKEYNAME("GetOver") + " (open parachute)
-<br/>Shift + " + NKEYNAME(201) + " / " + NKEYNAME(209) + " (adjust nightvision)
-<br/>" + NKEYNAME(22) + " (admin menu)
+<br/>" + NKEYNAME(41) + " (abrir Menu do Jogador)
+<br/>" + NKEYNAME(207) + " (inserir tampões de ouvido)
+<br/>" + NKEYNAME(199) + ", " + NKEYNAME(219) + ", " + NKEYNAME(220) + " (mostra nomes dos amigos)
+<br/>Ctrl + " + AKEYNAME("GetOut") + " (ejeção de emergência)
+<br/>" + AKEYNAME("GetOver") + " (abrir paraquedas)
+<br/>Shift + " + NKEYNAME(201) + " / " + NKEYNAME(209) + " (ajuste do óculos de visão noturna)
+
 "
 ]];
 
 player createDiaryRecord ["infos",
 [
-"Hints and Tips",
+"Dicas e sugestões",
 "
-<br/><font size='16' color='#BBBBBB'>Wasteland - Turning Altis into the ultimate survival sandbox</font>
+<br/><font size='16' color='#BBBBBB'>Tenha sempre ÓCULOS DE VISÃO NOTURNA no seu ARMÁRIO VIRTUAL</font>
 <br/>
 <br/>
-<br/><font face='PuristaBold'>*</font> Bluefor plays together as a Team. Its not allowed to kill friendly players, loot their stuff and / or steal friendly vehicles.
+<br/><font face='PuristaBold'>*</font> Bluefor joga junto como uma equipe. Não é permitido matar jogadores amigos, roubar suas coisas e/ou roubar veículos.
 <br/>
-<br/><font face='PuristaBold'>*</font> Experienced users should play Independent. You can play as a Lonewolf or group up with friends. A max of 15 players per group is allowed.
+<br/><font face='PuristaBold'>*</font> Usuários experientes devem jogar como independente. Você pode jogar como sozinho ou se juntar a amigos. É permitido um grupo com no máximo 15 jogadores.
 <br/>
-<br/><font face='PuristaBold'>*</font> Earny money, gear and vehicles by doing missions ( red crosses marked on map ) or buy your stuff at the marked stores.
+<br/><font face='PuristaBold'>*</font> Ganhe dinheiro, equipamentos e veículos fazendo missões ( cruzes ROXAS marcados no mapa) ou compre seus equipamentos/armamentos nas lojas marcadas no mapa.
 <br/>
-<br/><font face='PuristaBold'>*</font> You can salvage destroyed vehicles or sell good ones at the vehicle-dealer ( marked with Sell Vehicle on map )
+<br/><font face='PuristaBold'>*</font> Você pode recolher destroços de veículos destruídos vender veículos bons nos vendedores das lojas.
 <br/>
-<br/><font face='PuristaBold'>*</font> Rearm, refuel and repair your vehicles at the trucks marked on the map with Resupply.
+<br/><font face='PuristaBold'>*</font> Rearme, reabasteça e repare seus veículos nos caminhões marcados no mapa com Resupply ou compre um deles na Loja de Veículos.
 <br/>
-<br/><font face='PuristaBold'>*</font> The blue circles at the towns are the Spawn-Areas. You can find vehicles with standart loot in it. 
+<br/><font face='PuristaBold'>*</font> Os círculos azuis nas cidades são as áreas de nascimento. Você pode encontrar veículos com alguns itens e armas simples. 
 <br/>
-<br/><font face='PuristaBold'>*</font> Save and transfer money at the ATMs ( marked yellow on the map ).
+<br/><font face='PuristaBold'>*</font> Guarde e transfira dinheiro nos caixas eletrônicos (marcados em amarelo no mapa).
 <br/>
-<br/><font face='PuristaBold'>*</font> Your gear and money will be saved over the server-restarts automatically.
+<br/><font face='PuristaBold'>*</font> Seu equipamento e dinheiro serão salvos durante o reinício do servidor automaticamente.
 <br/>
-<br/><font face='PuristaBold'>*</font> You need to lock weapon crates and Base-elements every 120 hours if you want to save them ( scroll mouse when standing in front )
+<br/><font face='PuristaBold'>*</font> Você precisa travar caixas de armas e elementos de base a cada 120 horas, se quiser salvá-las (role o mouse quando estiver na frente)
 <br/>
-<br/><font face='PuristaBold'>*</font> The Base Locker allows you to prevent your base objects from unlocking. 
+<br/><font face='PuristaBold'>*</font> O TravaBase permite que outros jogadores não destravem as partes da sua Base, você pode comprar ele na Loja Geral. 
 <br/>
-<br/><font face='PuristaBold'>*</font> Bought and mission vehicles can be locked by default. A CodeLock can be found at the General Store. 
+<br/><font face='PuristaBold'>*</font> Os veículos comprados e de missões podem ser travados por padrão. Um TravaCarro pode ser encontrado na Loja Geral. 
 <br/>
-<br/><font face='PuristaBold'>*</font> To build a base, buy elements at the Genereal Store. Its not allowed to stack base-elements.
+<br/><font face='PuristaBold'>*</font> Para construir sua Base, compre os elementos na Loja Geral na aba OBJETOS. Coloque os objetos dentro de algum veículo/container e leve até onde você quer construir sua Base.
 <br/>
-<br/><font face='PuristaBold'>*</font> The territories A, B, C ,(D) change with every restart. Capture and hold these Hotspots to earn a lot of money.
+<br/><font face='PuristaBold'>*</font> Os territórios, também chamados de BANDEIRAS, A, B, C ,(D) mudam de local a cada restart. Capiture e mantenha elas sobre sua posse e ganhe dinheiro a cada 10 minutos.
 <br/>
-<br/><font face='PuristaBold'>*</font> Scroll mouse to request Air-support if you´re left in the middle of nowhere.
+<br/><font face='PuristaBold'>*</font> Quanto mais jogadores no servidor, maior será a recompensa paga pelas BANDEIRAS.
 <br/>
-<br/><font face='PuristaBold'>*</font> Press End-key for earplugs, Windows-key to see friendly player-names.
+<br/><font face='PuristaBold'>*</font> Role o mouse para solicitar Suporte Aéreo se você for deixado no meio do nada.
 <br/>
-<br/><font face='PuristaBold'>*</font> First Aid-Kit is for stabilizing, Medi-Kit is for reviving your Team-members.
+<br/><font face='PuristaBold'>*</font> Precione a tecla END para colocar os abafadores, tecla Windows para ver o nome dos amigos no grupo.
 <br/>
-<br/><font face='PuristaBold'>*</font> Get a second chance by placing a Spawn-Beacon. Buy it at General Store. You can spawn there once every 15 minutes.
+<br/><font face='PuristaBold'>*</font> Kit de Primeiros Socorros irá estabilizar o jogador; Estojo de Primeiros Socorros irá reviver os aliados; Kit de Reparo irá reparar parcialmente o veículo/aéronave.
 <br/>
-<br/><font face='PuristaBold'>*</font> ATTENTION: Our Servers are Admin-monitored. Do always listen to Admins instructions and do not discuss in the chat. Use Ts or the Forums for complaints.
+<br/><font face='PuristaBold'>*</font> Kit de Reparos irá reparar parcialmente o veículo/aéronave; Estojo de Reparos (Maleta Branca) irá consertar completamente.
+<br/>
+<br/><font face='PuristaBold'>*</font> Você tem uma chance de nascer onde você quiser comprando e instalando um Spawn-Beacon. Compre ele na Loja Geral. Você pode nascer nele a cada 15 minutos.
+<br/>
+<br/><font face='PuristaBold'>*</font> ATENÇÃO: Nossos servidores são monitorados por administradores. Sempre ouça as instruções dos administradores e não discuta no chat. Use o DISCORD para isso.
 <br/>
 "
 ]];

@@ -36,7 +36,7 @@ class playerSettings {
 
 		class MainTitle : w_RscText {
 			idc = -1;
-			text = "Player Inventory";
+			text = "Inventário do Jogador";
 			sizeEx = 0.04;
 			shadow = 2;
 			x = 0.260; y = 0.1;
@@ -115,7 +115,7 @@ class playerSettings {
 
 		class DropButton : w_RscButton {
 			idc = -1;
-			text = "Drop";
+			text = "Largar";
 			onButtonClick = "[1] execVM 'client\systems\playerMenu\itemfnc.sqf'";
 			x = 0.610; y = 0.525;
 			w = 0.116; h = 0.033 * safezoneH;
@@ -123,7 +123,7 @@ class playerSettings {
 
 		class UseButton : w_RscButton {
 			idc = -1;
-			text = "Use";
+			text = "Usar";
 			onButtonClick = "[0] execVM 'client\systems\playerMenu\itemfnc.sqf'";
 			x = 0.489; y = 0.525;
 			w = 0.116; h = 0.033 * safezoneH;
@@ -137,7 +137,7 @@ class playerSettings {
 
 		class DropcButton : w_RscButton {
 			idc = -1;
-			text = "Drop";
+			text = "Largar";
 			onButtonClick = "[] execVM 'client\systems\playerMenu\dropMoney.sqf'";
 			x = 0.489; y = 0.60;
 			w = 0.116; h = 0.033 * safezoneH;
@@ -145,7 +145,7 @@ class playerSettings {
 
 		class CloseButton : w_RscButton {
 			idc = close_button;
-			text = "Close";
+			text = "Fechar";
 			onButtonClick = "[] execVM 'client\systems\playerMenu\closePlayerMenu.sqf'";
 			x = 0.02; y = 0.66;
 			w = 0.125; h = 0.033 * safezoneH;
@@ -153,7 +153,7 @@ class playerSettings {
 
 		class GroupsButton : w_RscButton {
 			idc = groupButton;
-			text = "Group Management";
+			text = "GRUPO";
 			onButtonClick = "[] execVM 'client\systems\groups\loadGroupManagement.sqf'";
 			x = 0.158; y = 0.66;
 			w = 0.225; h = 0.033 * safezoneH;
@@ -201,7 +201,7 @@ class playerSettings {
 		};*/
 		class TOParmaInfoButton : w_RscButton {
 			idc = -1;
-			text = "Rules & Info";
+			text = "Informações";
 			onButtonClick = "[] execVM 'addons\TOParmaInfo\loadTOParmaInfo.sqf'";
 			x = 0.228; y = 0.254;
 			w = 0.225; h = 0.033 * safezoneH;
@@ -209,7 +209,7 @@ class playerSettings {
 
 		class btnDistanceCHVD : w_RscButton {
 			idc = -1;
-			text = "Viewdist.";
+			text = "Visão";
 			onButtonClick = "call CHVD_fnc_openDialog";
 			x = 0.02; y = 0.57;
 			w = 0.125; h = 0.033 * safezoneH;
@@ -217,7 +217,7 @@ class playerSettings {
 
 		class btnKillfeed : w_RscButton {
 			idc = -1;
-			text = "Killfeed";
+			text = "Mortes";
 			onButtonClick = "with missionNamespace do { [] call A3W_fnc_killFeedMenu }";
 			x = 0.158; y = 0.57;
 			w = 0.125; h = 0.033 * safezoneH;

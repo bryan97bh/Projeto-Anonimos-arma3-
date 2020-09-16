@@ -52,7 +52,7 @@ class A3W_killFeedMenu
 		class FeedMenu_TopText : w_RscTextCenter
 		{
 			idc = -1;
-			text = "Killfeed";
+			text = "Mortes";
 			sizeEx = 0.06 * TEXT_SCALE;
 
 			w = FeedMenu_BG_W;
@@ -113,7 +113,7 @@ class A3W_killFeedMenu
 	{
 		class FeedMenu_MaxKillsLabel : FeedMenu_Label
 		{
-			text = "Max kills shown:";
+			text = "Mostrar Máx Mortes:";
 
 			#define FeedMenu_MaxKillsLabel_X FeedMenu_OptionsL_X
 			#define FeedMenu_MaxKillsLabel_Y FeedMenu_Options_Y
@@ -146,7 +146,7 @@ class A3W_killFeedMenu
 
 		class FeedMenu_FadeTimeLabel : FeedMenu_Label
 		{
-			text = "Kill fade time:";
+			text = "Apaga da tela em:";
 
 			#define FeedMenu_FadeTimeLabel_X FeedMenu_OptionsL_X
 			#define FeedMenu_FadeTimeLabel_Y (FeedMenu_MaxKillsLabel_Y + FeedMenu_Label_H + FeedMenu_Option_MARGIN_Y)
@@ -193,7 +193,7 @@ class A3W_killFeedMenu
 
 		class FeedMenu_ShowIconsLabel : FeedMenu_Label
 		{
-			text = "Show team icons:";
+			text = "Ícones de amigos:";
 
 			#define FeedMenu_ShowIconsLabel_X FeedMenu_OptionsL_X
 			#define FeedMenu_ShowIconsLabel_Y (FeedMenu_FadeTimeLabel_Y + FeedMenu_Label_H + FeedMenu_Option_MARGIN_Y)
@@ -217,7 +217,7 @@ class A3W_killFeedMenu
 
 		class FeedMenu_ShowChatLabel : FeedMenu_Label
 		{
-			text = "Show kills in chat:";
+			text = "Mortes no chat:";
 
 			#define FeedMenu_ShowChatLabel_X (FeedMenu_ShowIconsCheck_X + FeedMenu_Checkbox_W + (FeedMenu_MARGIN_X * 2)) //FeedMenu_OptionsL_X
 			#define FeedMenu_ShowChatLabel_Y FeedMenu_ShowIconsLabel_Y //+ FeedMenu_Label_H + FeedMenu_Option_MARGIN_Y)
@@ -241,7 +241,7 @@ class A3W_killFeedMenu
 
 		class FeedMenu_OffsetXLabel : FeedMenu_Label
 		{
-			text = "Feed offset X:";
+			text = "Eixo X:";
 
 			#define FeedMenu_OffsetXLabel_X FeedMenu_OptionsR_X
 			#define FeedMenu_OffsetXLabel_Y FeedMenu_Options_Y
@@ -274,7 +274,7 @@ class A3W_killFeedMenu
 
 		class FeedMenu_OffsetYLabel : FeedMenu_Label
 		{
-			text = "Feed offset Y:";
+			text = "Eixo Y:";
 
 			#define FeedMenu_OffsetYLabel_X FeedMenu_OptionsR_X
 			#define FeedMenu_OffsetYLabel_Y (FeedMenu_OffsetXLabel_Y + FeedMenu_Label_H + FeedMenu_Option_MARGIN_Y)
@@ -307,7 +307,7 @@ class A3W_killFeedMenu
 
 		class FeedMenu_OpacityLabel : FeedMenu_Label
 		{
-			text = "Feed opacity:";
+			text = "Transparência:";
 
 			#define FeedMenu_OpacityLabel_X FeedMenu_OptionsR_X
 			#define FeedMenu_OpacityLabel_Y (FeedMenu_OffsetYLabel_Y + FeedMenu_Label_H + FeedMenu_Option_MARGIN_Y)
@@ -359,7 +359,7 @@ class A3W_killFeedMenu
 
 		class FeedMenu_LogLabel : FeedMenu_Label
 		{
-			text = "Kill log";
+			text = "Histórico";
 			style = ST_LEFT;
 
 			#define FeedMenu_LogLabel_W (0.075 * X_SCALE)
@@ -411,7 +411,7 @@ class A3W_killFeedMenu
 		class FeedMenu_CloseButton : w_RscButton
 		{
 			idc = 2;
-			text = "Close";
+			text = "Fechar";
 			onButtonClick = "closeDialog 0";
 
 			#define FeedMenu_CloseButton_X FeedMenu_BottomButton_X
@@ -425,7 +425,7 @@ class A3W_killFeedMenu
 		class FeedMenu_RefreshButton : w_RscButton
 		{
 			idc = A3W_killFeedMenu_RefreshButton_IDC;
-			text = "Refresh";
+			text = "Atualizar";
 			onButtonClick = "with missionNamespace do { call A3W_fnc_killFeedMenuRefresh }";
 
 			#define FeedMenu_RefreshButton_X (FeedMenu_CloseButton_X + (FeedMenu_BottomButton_W + FeedMenu_BottomButton_MARGIN_X))
@@ -439,7 +439,7 @@ class A3W_killFeedMenu
 		class FeedMenu_ResetButton : w_RscButton
 		{
 			idc = A3W_killFeedMenu_ResetButton_IDC;
-			text = "Reset";
+			text = "Resetar";
 			onButtonClick = "execVM 'client\systems\killFeed\killFeedMenuReset.sqf'";
 
 			#define FeedMenu_ResetButton_X (FeedMenu_BottomButton_X + FeedMenu_LogList_W - FeedMenu_BottomButton_W)

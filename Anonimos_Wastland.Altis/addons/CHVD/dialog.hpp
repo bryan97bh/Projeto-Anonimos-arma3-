@@ -319,7 +319,7 @@ class CHVD_dialog
 		{
 			idc = 1000;
 
-			text = "VIEW DISTANCE SETTINGS"; //--- ToDo: Localize;
+			text = "CONFIGURAÇÕES DE ALCANCE DA VISÃO"; //--- ToDo: Localize;
 			x = 7 * GUI_GRID_W + GUI_GRID_X;
 			y = 0.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 24.5 * GUI_GRID_W;
@@ -330,7 +330,7 @@ class CHVD_dialog
 		{
 			idc = 1001;
 
-			text = "ON FOOT"; //--- ToDo: Localize;
+			text = "INFANTARIA"; //--- ToDo: Localize;
 			x = 7 * GUI_GRID_W + GUI_GRID_X;
 			y = 2 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7 * GUI_GRID_W;
@@ -341,7 +341,7 @@ class CHVD_dialog
 		{
 			idc = 1002;
 
-			text = "VIEW:"; //--- ToDo: Localize;
+			text = "VISÃO:"; //--- ToDo: Localize;
 			x = 7.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 3.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 6.5 * GUI_GRID_W;
@@ -351,7 +351,7 @@ class CHVD_dialog
 		{
 			idc = 1003;
 
-			text = "OBJECT:"; //--- ToDo: Localize;
+			text = "OBJETO:"; //--- ToDo: Localize;
 			x = 7.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 6.5 * GUI_GRID_W;
@@ -371,7 +371,7 @@ class CHVD_dialog
 		{
 			idc = 1008;
 
-			text = "IN CAR"; //--- ToDo: Localize;
+			text = "VEICULO"; //--- ToDo: Localize;
 			x = 7 * GUI_GRID_W + GUI_GRID_X;
 			y = 8.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7 * GUI_GRID_W;
@@ -382,7 +382,7 @@ class CHVD_dialog
 		{
 			idc = 1009;
 
-			text = "Sync object with view"; //--- ToDo: Localize;
+			text = "Sincronizar objeto com visão"; //--- ToDo: Localize;
 			x = 17 * GUI_GRID_W + GUI_GRID_X;
 			y = 8.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 12.5 * GUI_GRID_W;
@@ -392,7 +392,7 @@ class CHVD_dialog
 		{
 			idc = 1010;
 
-			text = "VIEW:"; //--- ToDo: Localize;
+			text = "VISÃO:"; //--- ToDo: Localize;
 			x = 7.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 10 * GUI_GRID_H + GUI_GRID_Y;
 			w = 6.5 * GUI_GRID_W;
@@ -402,7 +402,7 @@ class CHVD_dialog
 		{
 			idc = 1011;
 
-			text = "OBJECT:"; //--- ToDo: Localize;
+			text = "OBJETO:"; //--- ToDo: Localize;
 			x = 7.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 18 * GUI_GRID_H + GUI_GRID_Y;
 			w = 6.5 * GUI_GRID_W;
@@ -422,7 +422,7 @@ class CHVD_dialog
 		{
 			idc = 1004;
 
-			text = "Sync object with view"; //--- ToDo: Localize;
+			text = "Sincronizar objeto com visão"; //--- ToDo: Localize;
 			x = 17 * GUI_GRID_W + GUI_GRID_X;
 			y = 2 * GUI_GRID_H + GUI_GRID_Y;
 			w = 12.5 * GUI_GRID_W;
@@ -432,7 +432,7 @@ class CHVD_dialog
 		{
 			idc = 1015;
 
-			text = "IN AIR"; //--- ToDo: Localize;
+			text = "AERONAVES"; //--- ToDo: Localize;
 			x = 7 * GUI_GRID_W + GUI_GRID_X;
 			y = 15 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7 * GUI_GRID_W;
@@ -443,7 +443,7 @@ class CHVD_dialog
 		{
 			idc = 1016;
 
-			text = "VIEW:"; //--- ToDo: Localize;
+			text = "VISÃO:"; //--- ToDo: Localize;
 			x = 7.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 16.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 6.5 * GUI_GRID_W;
@@ -463,7 +463,7 @@ class CHVD_dialog
 		{
 			idc = 1020;
 
-			text = "Sync object with view"; //--- ToDo: Localize;
+			text = "Sincronizar objeto com visão"; //--- ToDo: Localize;
 			x = 17 * GUI_GRID_W + GUI_GRID_X;
 			y = 15 * GUI_GRID_H + GUI_GRID_Y;
 			w = 12.5 * GUI_GRID_W;
@@ -473,7 +473,7 @@ class CHVD_dialog
 		{
 			idc = 1021;
 
-			text = "OBJECT:"; //--- ToDo: Localize;
+			text = "OBJETO:"; //--- ToDo: Localize;
 			x = 7.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 11.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 6.5 * GUI_GRID_W;
@@ -619,7 +619,7 @@ class CHVD_dialog
 			idc = 1612;
 			onButtonClick = "closeDialog 2900";
 
-			text = "Close"; //--- ToDo: Localize;
+			text = "Fechar"; //--- ToDo: Localize;
 			x = 7 * GUI_GRID_W + GUI_GRID_X;
 			y = 21.4 * GUI_GRID_H + GUI_GRID_Y;
 			w = 24.5 * GUI_GRID_W;
