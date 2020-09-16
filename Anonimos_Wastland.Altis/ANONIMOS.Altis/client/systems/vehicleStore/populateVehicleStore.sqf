@@ -32,6 +32,7 @@ _vehArray = switch (_switch) do
 	case 3: { call helicoptersArray };
 	case 4: { call planesArray };
 	case 5: { call boatsArray };
+	case 6: { call DronesArray };
 	default { [] };
 };
 
