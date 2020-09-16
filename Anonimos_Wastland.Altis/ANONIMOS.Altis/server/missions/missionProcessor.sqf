@@ -52,7 +52,7 @@ _aiGroup setVariable ["A3W_missionMarkerName", _marker, true];
 if (isNil "_missionPicture") then { _missionPicture = "" };
 
 [
-	format ["%1 Objetivo", MISSION_PROC_TYPE_NAME],
+	format ["%1 ", MISSION_PROC_TYPE_NAME],
 	_missionType,
 	_missionPicture,
 	_missionHintText,

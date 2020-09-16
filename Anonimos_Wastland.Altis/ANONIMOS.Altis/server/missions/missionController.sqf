@@ -51,7 +51,7 @@ while {true} do
 	[
 		format
 		[
-			"<t color='%1' shadow='2' size='1.75'>%2 Objetivo%3</t><br/>" +
+			"<t color='%1' shadow='2' size='1.75'>%2 %3</t><br/>" +
 			"<t color='%1'>------------------------------</t><br/>" +
 			"<t color='%4' size='1.0'>Começando em %5 minutos</t>",
 			MISSION_CTRL_COLOR_DEFINE,
