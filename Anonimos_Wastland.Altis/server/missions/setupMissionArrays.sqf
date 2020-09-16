@@ -44,10 +44,10 @@ PrincipalMissions =
 
 hostileairMissions =
 [
-	["mission_HostileHelicopter", 1.7],         //HELICÓPTERO HOSTIL
-    ["mission_HostileHeliFormation", 0.5],      //PATRULHA AÉREA
-	["mission_HostileJetFormation", 1.5],       //JATOS HOSTIS 
-	["mission_VTOLCONTRABANDISTA", 0.8],        //VTOL CONTRABANDISTA
+	["mission_HostileHelicopter", 1.5],         //HELICÓPTERO HOSTIL
+    ["mission_FORMAÇAODEHELI", 1],              //PATRULHA AÉREA
+	["mission_HostileJetFormation", 1],         //JATOS HOSTIS 
+	["mission_VTOLCONTRABANDISTA", 0.5],        //VTOL CONTRABANDISTA
 	["mission_OPRESSAOAÉREA", 0.1]              //OPRESSÃO AÉREA
 ];
 
