@@ -34,7 +34,7 @@ class TOParmaInfoD
 		class TAInfoTitle: RscText
 		{
 			idc = 10032;
-			text = "Anônimos Information";
+			text = "Informações do Servidor Anônimos";
 			colorBackground[] = {0,0,0,1};
 			x = "0 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			y = "0 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
@@ -73,7 +73,7 @@ class TOParmaInfoD
 		class TARulesTiTleBackground: RscText
 		{
 			idc = TOParmaInfo_Rules_Title_BG;
-			text = "RULES - IMPORTANT";
+			text = "Importante ler as Regras do Servidor";
 			x = "0 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			y = "2.2 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			w = "15 * (((safezoneW / safezoneH) min 1.2) / 40)";
@@ -100,12 +100,12 @@ class TOParmaInfoD
 			h = "7.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			colorText[] = {1,1,1,1};
 			colorBackground[] = {0,0,0,0.2};
-			text = "Welcome";
+			text = "Bem-vindo!";
 		};
 		class TANewsTiTleBackground: RscText
 		{
 			idc = TOParmaInfo_News_Title_BG;
-			text = "Get in contact with us:";
+			text = "Entre em contato conosco:";
 			x = "15.1 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			y = "9.7 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			w = "14.9 * (((safezoneW / safezoneH) min 1.2) / 40)";

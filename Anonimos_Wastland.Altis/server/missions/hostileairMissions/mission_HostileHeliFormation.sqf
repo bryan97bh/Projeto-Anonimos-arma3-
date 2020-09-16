@@ -2,7 +2,7 @@
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Name: mission_HostileHeliFormation.sqf
-//	@file Author: JoSchaap, AgentRev
+//	@file Author: JoSchaap, AgentRev PO-30 Orca (DAR)", "O_Heli_Light_02_dynamicLoadout_F
 
 if (!isServer) exitwith {};
 #include "hostileairMissionDefines.sqf"

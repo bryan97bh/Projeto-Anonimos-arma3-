@@ -2,16 +2,16 @@
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Name: mission_HostileJetFormation.sqf
-//	@file Author: Staynex, Wiking.at
+//	@file Author: Bryan matar e destruir vencer pelo brasil 
 
 if (!isServer) exitwith {};
 #include "hostileairMissionDefines.sqf"
 
-private ["_planeChoices", "_convoyVeh", "_veh1", "_veh2", "_createVehicle", "_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_vehicleName2", "_numWaypoints", "_cash", "_boxes1", "_currBox1", "_boxes2", "_currBox2", "_box1", "_box2"];
+private ["_planeChoices", "_convoyVeh", "_veh1", "_veh2", "_veh3", "_veh4", "_veh5", "_createVehicle", "_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_vehicleName2", "_vehicleName3", "_vehicleName4", "_vehicleName5", "_numWaypoints", "_cash", "_boxes1", "_currBox1", "_boxes2", "_currBox2", "_box1", "_box2"];
 
 _setupVars =
 {
-	_missionType = "JATOS HOSTIS";
+	_missionType = "OPRESSÃO AÉREA";
 	_locationsArray = nil; // locations are generated on the fly from towns
 };
 
@@ -21,33 +21,12 @@ _setupObjects =
 
 	_planeChoices =
 	[
-		[
-            "B_Plane_Fighter_01_F",                 // F/A-181 Black Wasp
-            "B_Plane_Fighter_01_F"                  // F/A-181 Black Wasp
-		],
         [
-            "B_Plane_Fighter_01_Stealth_F",         // F/A-181 Black Wasp Stealth
-            "B_Plane_Fighter_01_Stealth_F"          // F/A-181 Black Wasp Stealth
-		],
-		[
-            "O_Plane_Fighter_02_F",                 // To-201 Shikra
-            "O_Plane_Fighter_02_F"                  // To-201 Shikra
-		],
-        [
-            "O_Plane_Fighter_02_Stealth_F",         // To-201 Shikra Stealth
-            "O_Plane_Fighter_02_Stealth_F"          // To-201 Shikra Stealth
-		],
-        [
-            "B_Plane_CAS_01_dynamicLoadout_F",      // A-164 Wipeout CAS
-            "B_Plane_CAS_01_dynamicLoadout_F"       // A-164 Wipeout CAS
-		],
-        [
-            "O_Plane_CAS_02_dynamicLoadout_F",      // To-199 Neophron CAS
-            "O_Plane_CAS_02_dynamicLoadout_F"       // To-199 Neophron CAS
-		],
-        [
-            "I_Plane_Fighter_04_F",     // A-149 Gryphon
-            "I_Plane_Fighter_04_F"      // A-149 Gryphon
+            "I_Plane_Fighter_04_F",
+			"I_Plane_Fighter_04_F", 
+			"I_Plane_Fighter_04_F", 
+			"I_Plane_Fighter_04_F",      
+            "I_Plane_Fighter_04_F"      
 		]
 	];
 
@@ -55,6 +34,9 @@ _setupObjects =
 
 	_veh1 = _convoyVeh select 0;
 	_veh2 = _convoyVeh select 1;
+	_veh3 = _convoyVeh select 2;
+	_veh4 = _convoyVeh select 3;
+	_veh5 = _convoyVeh select 4;
 
 	_createVehicle =
 	{
@@ -110,7 +92,10 @@ _setupObjects =
 	_vehicles =
 	[
 		[_veh1, _missionPos vectorAdd ([[random 50, 0, 0], random 360] call BIS_fnc_rotateVector2D), 0] call _createVehicle,
-		[_veh2, _missionPos vectorAdd ([[random 50, 0, 0], random 360] call BIS_fnc_rotateVector2D), 0] call _createVehicle
+		[_veh2, _missionPos vectorAdd ([[random 50, 0, 0], random 360] call BIS_fnc_rotateVector2D), 0] call _createVehicle,
+		[_veh3, _missionPos vectorAdd ([[random 50, 0, 0], random 360] call BIS_fnc_rotateVector2D), 0] call _createVehicle,
+		[_veh4, _missionPos vectorAdd ([[random 50, 0, 0], random 360] call BIS_fnc_rotateVector2D), 0] call _createVehicle,
+		[_veh5, _missionPos vectorAdd ([[random 50, 0, 0], random 360] call BIS_fnc_rotateVector2D), 0] call _createVehicle
 	];
 
 	_leader = effectiveCommander (_vehicles select 0);
@@ -141,8 +126,11 @@ _setupObjects =
 	_missionPicture = getText (configFile >> "CfgVehicles" >> _veh1 >> "picture");
 	_vehicleName = getText (configFile >> "CfgVehicles" >> _veh1 >> "displayName");
 	_vehicleName2 = getText (configFile >> "CfgVehicles" >> _veh2 >> "displayName");
+	_vehicleName3 = getText (configFile >> "CfgVehicles" >> _veh3 >> "displayName");
+	_vehicleName4 = getText (configFile >> "CfgVehicles" >> _veh4 >> "displayName");
+	_vehicleName5 = getText (configFile >> "CfgVehicles" >> _veh5 >> "displayName");
 
-	_missionHintText = format ["Uma formação de jatos contendo dois <t color='%3'>%1</t> estão patrulhando a ilha. Destrua-os e recupere sua carga!", _vehicleName, _vehicleName2, mainMissionColor];
+	_missionHintText = format ["Uma grande frota de <t color='%3'>%1</t> eestão a caça na ilha para matar e destruir, Destrua-os e recupere sua carga!", _vehicleName, _vehicleName2, _vehicleName3, _vehicleName4, _vehicleName5, mainMissionColor];
 
 	_numWaypoints = count waypoints _aiGroup;
 };
@@ -175,7 +163,7 @@ _successExec =
 	
 	{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2];
 
-	_successHintMessage = "O céu está limpo novamente, a patrulha do jato inimigo foi abatida! As caixas de suprimento caíram perto dos destroços.";
+	_successHintMessage = "Missão concluida! As caixas de suprimento caíram perto dos destroços.";
 };
 
 _this call hostileairMissionsProcessor;
