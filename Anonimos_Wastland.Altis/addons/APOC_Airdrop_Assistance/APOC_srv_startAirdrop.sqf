@@ -11,7 +11,7 @@ _selectionNumber = _this select 1;
 _player = _this select 2;
 _heliDirection = _this select 3;
 
-diag_log format ["SERVER - Apoc's Airdrop Assistance - Player: %1, Drop Type: %2, Selection #: %3",name _player,_type,_selectionNumber];
+diag_log format ["Anônimos Suporte Aéreo para o jogador: %1, Lançamento do tipo: %2, Selecionado #: %3",name _player,_type,_selectionNumber];
 //hint format ["Well we've made it this far! %1, %2, %3,",_player,_type,_selectionNumber];
 _selectionArray = [];
 
@@ -32,7 +32,7 @@ _price 			= (_selectionArray select _selectionNumber) select 2;
 
 /////// Let's spawn us  an AI helo to carry the cargo /////////////////////////////////////////////////
 
- _heliType = "B_T_VTOL_01_vehicle_F";
+ _heliType = "B_Heli_Transport_03_unarmed_F";
  _center = createCenter civilian;
 _grp = createGroup civilian;
 if(isNil("_grp2"))then{_grp2 = createGroup civilian;}else{_grp2 = _grp2;};
@@ -42,7 +42,7 @@ _flyHeight = 200;  //Distance from ground that heli will fly at
 _heliStartDistance = 2000;
 _spos=[(_dropSpot select 0) - (sin _heliDirection) * _heliStartDistance, (_dropSpot select 1) - (cos _heliDirection) * _heliStartDistance, (_flyHeight+200)];
 
-diag_log format ["AAA - Heli Spawned at %1", _spos];
+diag_log format ["Apoio aéreo se aproximando pela posição %1", _spos];
 _heli = createVehicle [_heliType, _spos, [], 0, "FLY"];
 _heli allowDamage false;
 _heli setVariable ["R3F_LOG_disabled", true, true];
@@ -81,7 +81,7 @@ _object = switch (_type) do {
 	{
 		_objectSpawnPos = [(_spos select 0), (_spos select 1), (_spos select 2) - 5];
 		_object = createVehicle [_selectionClass, _objectSpawnPos, [], 0, "None"];
-		diag_log format ["Apoc's Airdrop Assistance - Object Spawned at %1", position _object];
+		diag_log format ["Apoio aéreo se aproximando pela posição %1", position _object];
 		_object setVariable ["A3W_purchasedStoreObject", true];
 		_object setVariable ["A3W_purchasedVehicle", true, true];
 		_object setVariable ["R3F_LOG_Disabled", false, true];
@@ -108,7 +108,7 @@ _object = switch (_type) do {
 	{
 		_objectSpawnPos = [(_spos select 0), (_spos select 1), (_spos select 2) - 5];
 		_object = createVehicle ["B_supplyCrate_F", _objectSpawnPos, [], 0, "None"];
-		diag_log format ["Apoc's Airdrop Assistance - Object Spawned at %1", position _object];
+		diag_log format ["Apoio aéreo se aproximando pela posição %1", position _object];
 		_object setVariable ["A3W_purchasedStoreObject", true];
 		_object attachTo [_heli, [0,0,-5]]; //Attach Object to the heli
 		_object
@@ -146,10 +146,10 @@ _object allowDamage false; //Let's not let these things get destroyed on the way
 _heli setpos _spos;
 
 
-diag_log format ["Apoc's Airdrop Assistance - Object at %1", position _object];  //A little log love to confirm the location of this new creature
+diag_log format ["Apoio aéreo se aproximando pela posição %1", position _object];  //A little log love to confirm the location of this new creature
 
 //Wait until the heli completes the drop waypoint, then move on to dropping the cargo and all of that jazz
-diag_log format ["Apoc Debug: Heli currentWaypoint %1", currentWaypoint _grp];  //AJ Heli Debug
+diag_log format ["Apoio aéreo se aproximando pela posição %1", currentWaypoint _grp];  //AJ Heli Debug
 
 While {true} do {
 	sleep 0.1;
