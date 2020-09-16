@@ -38,14 +38,14 @@ for "_i" from 1 to _nbUnits do
 	removeHeadgear _unit;
 	removeGoggles _unit;
 
-	_unit forceAddUniform "U_O_CombatUniform_oucamo";
-	_unit addVest "V_HarnessO_gry";
-	_unit addGoggles "G_Bandanna_tan";
-	_unit addHeadgear "H_HelmetLeaderO_oucamo";
-	_unit addWeapon "srifle_DMR_04_Tan_F";
+	_unit forceAddUniform "U_B_CTRG_1";
+	_unit addVest "V_PlateCarrierH_CTRG";
+	_unit addGoggles "G_Bandanna_sport";
+	_unit addHeadgear "H_HelmetB";
+	_unit addWeapon "arifle_SPAR_03_blk_F";
 	_unit addMagazines ["SmokeShell", 2];
-	_unit addItemToVest "10Rnd_127x54_Mag";
-	for "_i" from 1 to 3 do {_unit addItem "10Rnd_127x54_Mag";};
+	_unit addItemToVest "20Rnd_762x51_Mag";
+	for "_i" from 1 to 3 do {_unit addItem "20Rnd_762x51_Mag";};
 	
 
 
@@ -61,7 +61,7 @@ for "_i" from 1 to _nbUnits do
 		// AT every 7 units, starting from second one
 		case ((_i + 5) % 7 == 0):
 		{
-			_unit addBackpack "B_FieldPack_oucamo";
+			_unit addBackpack "B_Kitbag_mcamo";
 			_unit addMagazine "Titan_AT";
 			_unit addWeapon "launch_O_Titan_short_F";
 			_unit addMagazine "Titan_AT";
@@ -70,7 +70,7 @@ for "_i" from 1 to _nbUnits do
 		// AA every 6 units
 		case (_i % 7 == 0):
 		{
-			_unit addBackpack "B_FieldPack_oucamo";
+			_unit addBackpack "B_Kitbag_mcamo";
 			_unit addMagazine "Titan_AA";
 			_unit addWeapon "launch_O_Titan_F";
 			_unit addMagazine "Titan_AA";
@@ -92,10 +92,10 @@ for "_i" from 1 to _nbUnits do
 			};
 		};
 	};
-	_unit addPrimaryWeaponItem "optic_Holosight";
-	_unit linkItem "O_NVGoggles_urb_F";
+	_unit addPrimaryWeaponItem "optic_ERCO_blk_F";
+	_unit linkItem "NVGoggles";
 	_unit addPrimaryWeaponItem "acc_pointer_IR";
-	_unit addPrimaryWeaponItem "bipod_02_F_tan";
+	_unit addPrimaryWeaponItem "bipod_01_F_blk";
 	_unit enablegunlights "forceOn";
 	
 	_unit linkItem "ItemMap";
