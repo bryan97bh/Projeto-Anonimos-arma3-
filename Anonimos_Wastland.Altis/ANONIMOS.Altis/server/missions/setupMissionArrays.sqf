@@ -17,12 +17,11 @@ MainMissions =
 ];
 
 SideMissions =
-[
-	//["mission_HostileHelicopter", 0.5],   //#manter destivado 
+[ 
 	["mission_MiniConvoy", 1],            //ESCOLTA ARMADA
     ["mission_DrugsRunners", 1],          //TRAFICANTES
     ["mission_Smugglers", 1],             //CONTRABANDO DE ARMAS
-	["mission_TownInvasion", 1],          //CIDADE INVADIDA
+	["mission_TownInvasion", 1],         //CIDADE INVADIDA
 	["mission_AirWreck", 1],              //AERONAVE CAÍDA
 	["mission_WepCache", 1],              //AERONAVE CAÍDA 2
 	["mission_Truck", 1]                  //CAMINHÃO DE SUPRIMENTO
@@ -34,26 +33,22 @@ MoneyMissions =
     ["mission_HostageRescue", 1],           //RESGATE AO REFÉM
     ["mission_Roadblock", 1],               //BLOQUEIO NA ESTRADA
     ["mission_Terror", 1],                  //CIDADE TOMADA 
-	["mission_HackLaptop", 1]	            //Hackers
+	["mission_HackLaptop", 0.1]	            //Hackers
 ];
 
 PrincipalMissions =
 [
 	["mission_Outpost", 1],                  //POSTO AVANÇADO INIMIGO
 	["mission_Convoy", 1]                    //COMBOIO SUSPEITO
-	//["mission_HostileHeliFormation", 0.5],   //#manter destivado 
-    //["mission_HostileJetFormation", 0.5]     //#manter destivado 
 ];
 
 hostileairMissions =
 [
-	//["mission_FalconPatrol", 1],        //sem caixa      //PATRULHA AÉREA FALCON
-    //["mission_HostileHelicopter", 1],   //bugada         //HELICÓPTEROS HOSTIS
-    ["mission_HostileHeliFormation", 1],                   //PATRULHA AÉREA
-    //["mission_HostileJet", 1],          //bugada         //JATO HOSTIL
-	["mission_HostileJetFormation", 1]                     //JATOS HOSTIS 
-	//["mission_HostileVTOL", 1],         //nao da respawn //AERONAVE VTOL NO AR
-	//["mission_SmugglerPlane", 1]        //sem caixa      //AVIÃO CONTRABANDISTA
+	["mission_HostileHelicopter", 0.5],                     //HELICÓPTERO HOSTIL
+    ["mission_HostileHeliFormation", 0.5],                  //PATRULHA AÉREA
+	["mission_HostileJetFormation", 0.5]                    //JATOS HOSTIS 
+	//["mission_FalconPatrol", 1],        //sem caixa       //PATRULHA AÉREA FALCON
+	//["mission_SmugglerPlane", 1]        //sem caixa       //AVIÃO CONTRABANDISTA
 ];
 
 aquaticMissions =

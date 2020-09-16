@@ -21,14 +21,14 @@ _setupObjects =
 
 	_planeChoices =
 	[
-		[
+		/*[
             ["I_Plane_Fighter_03_dynamicLoadout_F","buzzardAA"],    // A-143 Buzzard (AA)
-            ["I_Plane_Fighter_03_dynamicLoadout_F","buzzardCAS"]   // A-143 Buzzard (CAS)
-		],
-		[
+            ["I_Plane_Fighter_03_dynamicLoadout_F","buzzardCAS"]    // A-143 Buzzard (CAS)
+		],*/
+		/*[
             "I_Plane_Fighter_04_F",                 // A-149 Gryphon
             "I_Plane_Fighter_04_F"                  // A-149 Gryphon
-		],
+		],*/
 		[
             "B_Plane_Fighter_01_F",                 // F/A-181 Black Wasp
             "B_Plane_Fighter_01_F"                  // F/A-181 Black Wasp

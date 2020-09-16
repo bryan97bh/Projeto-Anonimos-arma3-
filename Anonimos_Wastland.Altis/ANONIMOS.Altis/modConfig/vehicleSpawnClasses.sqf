@@ -18,6 +18,8 @@ civilianVehicles =
 	"C_Hatchback_01_sport_F",
 	"C_SUV_01_F",
 	"C_Offroad_01_F",
+	"C_Offroad_02_unarmed_F",
+	"C_Offroad_02_unarmed_F",
 	["C_Van_01_box_F", "C_Van_01_transport_F", "C_Van_01_fuel_F"]
 ];
 
@@ -96,6 +98,7 @@ vehicleWeapons =
 		"hgun_PDW2000_F",
 		"SMG_01_F", // Vermin
 		"SMG_02_F", // Sting
+		"SMG_05_F", //Protector
 		[
 			"SMG_03_black", // ADR-97
 			"SMG_03_camo",
@@ -115,23 +118,22 @@ vehicleWeapons =
 			"SMG_03C_TR_khaki"
 		]
 	],
-	["arifle_TRG20_F", "arifle_TRG21_F", "arifle_TRG21_GL_F"],
-	["arifle_Mk20C_F", "arifle_Mk20_F", "arifle_Mk20_GL_F"],
-	["arifle_Katiba_F", "arifle_Katiba_C_F", "arifle_Katiba_GL_F"],
-	["arifle_MXC_F", "arifle_MX_F", "arifle_MX_GL_F", "arifle_MXM_F"],
-	["srifle_EBR_F", "srifle_DMR_01_F"],
-	["arifle_MX_SW_F", "LMG_Mk200_F", "LMG_Zafir_F"]
+	["arifle_TRG20_F"],
+	["arifle_Mk20C_F"],
+	["arifle_MXC_Black_F"],
+	["arifle_SPAR_01_blk_F"],
+    ["srifle_DMR_06_hunter_F"],
+	["sgun_HunterShotgun_01_F", "sgun_HunterShotgun_01_sawedoff_F"],
+	["arifle_MX_SW_F", "LMG_Mk200_F"]
 ];
 
 vehicleAddition =
 [
 	"muzzle_snds_L", // 9mm
-	"muzzle_snds_M", // 5.56mm
 	"muzzle_snds_acp", // .45 ACP
-	"optic_Arco",
-	"optic_SOS",
-	"optic_Hamr",
 	"optic_Aco",
+	"optic_MRCO",
+	"optic_KHS_old",
 	"optic_ACO_grn",
 	"optic_aco_smg",
 	"optic_Holosight",
