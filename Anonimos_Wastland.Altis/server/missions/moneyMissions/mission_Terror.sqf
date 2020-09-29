@@ -12,7 +12,7 @@ private ["_vehicle","_createVehicle","_veh1","_convoyVeh","_explosive","_explosi
 _setupVars =
 {
     //Originally this mission called "ISIS incursion", but to avoid political problems #Staynex changed to "TERROR incursion"
-	_missionType = "INVASÃO REBELDE";
+	_missionType = "GRUPO TERRORISTA";
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
 
 	// settings for this mission

@@ -9,9 +9,9 @@
 
 #define ANIM "AinvPknlMstpSlayWrflDnon_medic"
 #define DURATION 15
-#define ERR_NO_NETS "Unpacking Camouflage Netting Failed. You have not Camouflage Netting to unpack"
-#define ERR_IN_VEHICLE "Unpacking Camouflage Netting Failed. You can't do this in a vehicle."
-#define ERR_CANCELLED "Unpacking Camouflage Netting Cancelled"
+#define ERR_NO_NETS "Falha na descompactação da rede de camuflagem. Você não tem Rede de Camuflagem para descompactar"
+#define ERR_IN_VEHICLE "Falha na descompactação da rede de camuflagem.Você não pode fazer isso em um veículo."
+#define ERR_CANCELLED "Desembalagem da rede de camuflagem cancelada"
 
 private ["_netting", "_error", "_hasFailed", "_success", "_pos"];
 
@@ -31,7 +31,7 @@ _hasFailed = {
 		case (MF_ITEMS_CAMO_NET call mf_inventory_count <= 0): {_text = ERR_NO_NETS};
 		case (doCancelAction): {doCancelAction = false; _text = ERR_CANCELLED};
 		default {
-			_text = format["Camouflage Netting %1%2 Unpacked", round(_progress*100), "%"];
+			_text = format["Rede de Camuflagem %1%2 desembalada", round(_progress*100), "%"];
 			_failed = false;
 		};
 	};
@@ -48,6 +48,6 @@ if (_success) then {
 	_netting setVariable ["allowDamage", true, true];
 	pvar_manualObjectSave = netId _netting;
 	publicVariableServer "pvar_manualObjectSave";
-	["You successfully unpacked the Camouflage Netting", 5] call mf_notify_client;
+	["Você desembalou com sucesso a Rede de Camuflagem", 5] call mf_notify_client;
 };
 _success

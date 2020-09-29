@@ -16,7 +16,7 @@ _player addRating 1e11;
 [] execVM "addons\Door\init.sqf";    // Door script
 [] execVM "addons\vPin\init.sqf";    // Vehicle Pinlock script
 
-_player groupChat "Wasteland - Initialization Complete";
+_player groupChat "Anônimos Servidores Arma 3 / Dayz SA - Iniciando sua sessão! Obrigado pela preferência";
 playerSetupComplete = true;
 
 9999 cutFadeOut 3; //Clean Loading Screen

@@ -9,7 +9,7 @@
 
 if (!isServer) exitWith {};
 
-diag_log "WASTELAND SERVER - Initializing Server Compile";
+diag_log "ANÔNIMOS SERVIDORES BRASIL (ARMA 3/DAYZ SA) - Iniciando sua sessão, bom jogo!";
 
 //Factory Compiles
 _path = "server\missions\factoryMethods";

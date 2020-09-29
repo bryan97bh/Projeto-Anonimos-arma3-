@@ -26,7 +26,7 @@ params [["_killer",_killerName,[""]], ["_victim",_victimName,[""]]]; // custom n
 
 		case "slay": // finished off by enemy while bleeding
 		{
-			if (_killer != "") then { format ["%1 foi finalizado por %2", _killer, _victim] }
+			if (_killer != "") then { format ["%1 finalizou %2", _killer, _victim] }
 			else                    { format ["%1 foi finalizado", _victim] } // not supposed to happen, but just in case
 		};
 

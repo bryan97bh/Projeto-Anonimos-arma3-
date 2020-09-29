@@ -54,7 +54,7 @@ mf_jerrycan_can_syphon = [_path, "can_syphon.sqf"] call mf_compile;
 
 // Setting up refill action.
 private ["_label1", "_execute1", "_condition1", "_action1"];
-_label1 = format["<img image='%1'/> Fill Jerry Can", _iconJerry];
+_label1 = format["<img image='%1'/> Encher Galão de Combustível", _iconJerry];
 _execute1 = {MF_ITEMS_JERRYCAN_EMPTY call mf_inventory_use};
 _condition1 = format["[] call %1 == ''", mf_jerrycan_can_refill];
 _action1 = [_label1, _execute1, [], 1, false, false, "", _condition1];
@@ -62,7 +62,7 @@ _action1 = [_label1, _execute1, [], 1, false, false, "", _condition1];
 
 // setting up refuel action
 private ["_label2", "_execute2", "_condition2", "_action2"];
-_label2 = format["<img image='%1'/> Refuel Vehicle", _iconJerry];
+_label2 = format["<img image='%1'/> Reabastecer Veículo", _iconJerry];
 _execute2 = {MF_ITEMS_JERRYCAN_FULL call mf_inventory_use};
 _condition2 = format["[] call %1 == ''", mf_jerrycan_can_refuel];
 _action2 = [_label2, _execute2, [], 1, false, false, "", _condition2];
@@ -71,7 +71,7 @@ _action2 = [_label2, _execute2, [], 1, false, false, "", _condition2];
 
 // setting up syphon action
 private ["_label3", "_execute3", "_condition3", "_action3"];
-_label3 = format["<img image='%1'/> Syphon Fuel", _iconSyphon];
+_label3 = format["<img image='%1'/> Sifão de combustível", _iconSyphon];
 _execute3 = {MF_ITEMS_SYPHON_HOSE call mf_inventory_use};
 _condition3 = format["[] call %1 == ''", mf_jerrycan_can_syphon];
 _action3= [_label3, _execute3, [], 1, false, false, "", _condition3];

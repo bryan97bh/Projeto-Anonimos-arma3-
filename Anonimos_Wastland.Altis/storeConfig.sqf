@@ -299,24 +299,24 @@ throwputArray = compileFinal str
 [
 	["Granada de fragmentação Pequena RGN", "MiniGrenade", 50],
 	["Granada de fragmentação Grande RGO", "HandGrenade", 100],
-	["Mina Antipessoal com fio APERS", "APERSTripMine_Wire_Mag", 500],
-	["Mina Antipessoal Saltadora APERS", "APERSBoundingMine_Range_Mag", 600],
-	["Mina Antipessoal Pequena APERS", "APERSMine_Range_Mag", 500],
-	["Explosivo Claymore", "ClaymoreDirectionalMine_Remote_Mag", 400],
-	["Mina Anti Veicular M6 SLAM ", "SLAMDirectionalMine_Wire_Mag", 600],
-	["Mina Antitanque", "ATMine_Range_Mag", 800],
+	["Mina Antipessoal com fio APERS", "APERSTripMine_Wire_Mag", 100],
+	["Mina Antipessoal Saltadora APERS", "APERSBoundingMine_Range_Mag", 150],
+	["Mina Antipessoal Pequena APERS", "APERSMine_Range_Mag", 100],
+	["Explosivo Claymore", "ClaymoreDirectionalMine_Remote_Mag", 300],
+	["Mina Anti Veicular M6 SLAM ", "SLAMDirectionalMine_Wire_Mag", 350],
+	["Mina Antitanque", "ATMine_Range_Mag", 400],
     ["Mina de treinamento", "TrainingMine_01_F", 100],
-	["Carga Explosiva C4", "DemoCharge_Remote_Mag", 800],
-	["Bolsa de Explosivos", "SatchelCharge_Remote_Mag", 1000],
-    ["IED Pequeno Urbano", "IEDUrbanSmall_Remote_Mag", 900],
-    ["IED Pequeno Disfarçado", "IEDLandSmall_Remote_Mag", 900],
-    ["IED Grande Urbano", "IEDUrbanBig_Remote_Mag", 1100],
+	["Carga Explosiva C4", "DemoCharge_Remote_Mag", 400],
+	["Bolsa de Explosivos", "SatchelCharge_Remote_Mag", 500],
+    ["IED Pequeno Urbano", "IEDUrbanSmall_Remote_Mag", 400],
+    ["IED Pequeno Disfarçado", "IEDLandSmall_Remote_Mag", 450],
+    ["IED Grande Urbano", "IEDUrbanBig_Remote_Mag", 950],
     ["IED Grande Disfarçado", "IEDLandBig_Remote_Mag", 1100],
 	["Granada De Fumaça|Branca|", "SmokeShell", 50],
 	["Granada De Fumaça|Roxa|", "SmokeShellPurple", 50],
 	["Granada De Fumaça|Azul|", "SmokeShellBlue", 50],
 	["Granada De Fumaça|Verde|", "SmokeShellGreen", 50],
-	["Granada De Fumaça|Tóxica|Amarela|", "SmokeShellYellow", 250],
+	["Granada De Fumaça|Tóxica|Amarela|", "SmokeShellYellow", 150],
 	["Granada De Fumaça|Laranja|", "SmokeShellOrange", 50],
 	["Granada De Fumaça|Vermelha|", "SmokeShellRed", 50]
 ];
@@ -908,7 +908,6 @@ uniformArray = compileFinal str
 	["Deserter Clothes (T-Shirt)", "U_I_L_Uniform_01_deserter_F", 100, "uni"],
 	
 	["Macacão Helicóptero (LDF)", "U_I_E_Uniform_01_coveralls_F", 100, "uni"]
-	
 ];
 
 vestArray = compileFinal str
@@ -942,18 +941,18 @@ vestArray = compileFinal str
     ["Cinto Granadeiro LBV (Castanho)", "V_HarnessOGL_brn", 150, "vest"],
 	["Cinto Granadeiro LBV (Cinzento)", "V_HarnessOGL_gry", 150, "vest"],
     ["Cinto Granadeiro LBV (Verde Hex)", "V_HarnessOGL_ghex_F", 150, "vest"],
-    ["Suporte Peitoral (Cáqui)", "V_Chestrig_khk", 175, "vest"],
-	["Suporte Peitoral (Verde)", "V_Chestrig_rgr", 175, "vest"],
-	["Suporte Peitoral (Preto)", "V_Chestrig_blk", 175, "vest"],
-	["Suporte Peitoral (Verde Oliva)", "V_Chestrig_oli", 175, "vest"],
-    ["Suporte Peitoral Tático (Coiote)", "V_TacChestrig_cbr_F", 175, "vest"],
-    ["Suporte Peitoral Tático (Verde)", "V_TacChestrig_grn_F", 175, "vest"],
-    ["Suporte Peitoral Tático (Verde Oliva)", "V_TacChestrig_oli_F", 175, "vest"],
-    ["Cinto de Carga (Castanho)", "V_HarnessO_brn", 200, "vest"],
-	["Cinto de Carga (Cinzento)", "V_HarnessO_gry", 200, "vest"],
-    ["Cinto de Carga (Verde Hex)", "V_HarnessO_ghex_F", 200, "vest"],
-    ["Traje Kipchak", "V_SmershVest_01_F", 200, "vest", "noDLC"],
-	["Traje Kipchak (Tático Rádio)", "V_SmershVest_01_radio_F", 200, "vest", "noDLC"],
+    ["Suporte Peitoral (Cáqui)", "V_Chestrig_khk", 100, "vest"],
+	["Suporte Peitoral (Verde)", "V_Chestrig_rgr", 100, "vest"],
+	["Suporte Peitoral (Preto)", "V_Chestrig_blk", 100, "vest"],
+	["Suporte Peitoral (Verde Oliva)", "V_Chestrig_oli", 100, "vest"],
+    ["Suporte Peitoral Tático (Coiote)", "V_TacChestrig_cbr_F", 100, "vest"],
+    ["Suporte Peitoral Tático (Verde)", "V_TacChestrig_grn_F", 100, "vest"],
+    ["Suporte Peitoral Tático (Verde Oliva)", "V_TacChestrig_oli_F", 100, "vest"],
+    ["Cinto de Carga (Castanho)", "V_HarnessO_brn", 100, "vest"],
+	["Cinto de Carga (Cinzento)", "V_HarnessO_gry", 100, "vest"],
+    ["Cinto de Carga (Verde Hex)", "V_HarnessO_ghex_F", 100, "vest"],
+    ["Traje Kipchak", "V_SmershVest_01_F", 150, "vest", "noDLC"],
+	["Traje Kipchak (Tático Rádio)", "V_SmershVest_01_radio_F", 150, "vest", "noDLC"],
     
     //Small Protection
     ["Colete Raven", "V_TacVestIR_blk", 225, "vest"],
@@ -972,7 +971,7 @@ vestArray = compileFinal str
     ["Traje Equipe Plataforma (Violeta)", "V_DeckCrew_violet_F", 275, "vest", "noDLC"],
     ["Traje Equipe Plataforma (Branco)", "V_DeckCrew_white_F", 275, "vest", "noDLC"],
 	["Colete Tático (Policial)", "V_TacVest_blk_POLICE", 300, "vest"],
-    ["Colete Tático (Gendarmerie)", "V_TacVest_gen_F", 500, "vest"],
+    ["Colete Tático (Gendarmerie)", "V_TacVest_gen_F", 300, "vest"],
     
     //Mid Protection
     ["Colete Modular Leve (Geométrico)", "V_CarrierRigKBT_01_light_EAF_F", 500, "vest", "noDLC"],

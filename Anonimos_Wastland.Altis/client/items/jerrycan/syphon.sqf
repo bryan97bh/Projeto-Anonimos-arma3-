@@ -10,9 +10,9 @@
 
 #define DURATION 15 // seconds
 #define ANIMATION "AinvPknlMstpSlayWrflDnon_medic"
-#define ERR_IN_VEHICLE "Syphoning Failed! You can't do that while in a vehicle"
-#define ERR_TOO_FAR_AWAY "Syphoning Failed! You moved too far away from the vehicle"
-#define ERR_CANCELLED "Refueling Cancelled!"
+#define ERR_IN_VEHICLE "Falha na sifonagem! Você não pode fazer isso enquanto estiver em um veículo"
+#define ERR_TOO_FAR_AWAY "Falha na sifonagem! Você se afastou muito do veículo"
+#define ERR_CANCELLED "Reabastecimento Cancelado!"
 
 private ["_vehicle", "_error"];
 _vehicle = call mf_jerrycan_nearest_vehicle;
@@ -31,7 +31,7 @@ _checks = {
 		case (player distance _vehicle > (sizeOf typeOf _vehicle / 3) max 2): {_text = ERR_TOO_FAR_AWAY};
 		case (doCancelAction): {_text = ERR_CANCELLED; doCancelAction = false;};
 		default {
-			_text = format["Syphoning fuel %1%2 Complete", round(100 * _progress), "%"];
+			_text = format["Sifonagem de Combustível %1%2 Completo", round(100 * _progress), "%"];
 			_failed = false;
 	    };
 	};
@@ -44,6 +44,6 @@ if (_success) then {
 	[netId _vehicle] remoteExec ["mf_remote_syphon", _vehicle];
 	[MF_ITEMS_JERRYCAN_EMPTY, 1] call mf_inventory_remove;
 	[MF_ITEMS_JERRYCAN_FULL, 1] call mf_inventory_add;
-	["Syphoning complete!", 5] call mf_notify_client;
+	["Sifonagem completa!", 5] call mf_notify_client;
 };
 false;

@@ -7,7 +7,7 @@
 
 #include "defines.sqf"
 
-#define ERR_NOT_ENOUGH_FUNDS "You don't have enough money."
+#define ERR_NOT_ENOUGH_FUNDS "Você não tem dinheiro suficiente."
 
 disableSerialization;
 private ["_crate", "_dialog", "_input", "_amount", "_money"];

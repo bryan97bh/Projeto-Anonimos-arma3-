@@ -12,10 +12,10 @@
 #include "mutex.sqf"
 #define ANIM "AinvPknlMstpSlayWrflDnon_medic"
 #define DURATION 5
-#define ERR_CANCELLED "Changing spawn permissions cancelled"
-#define ERR_TOO_FAR_AWAY "Changing spawn permissions failed as you moved too far away!"
-#define ERR_SOMEONE_ELSE_TAKEN "Changing spawn permissions failed, as someone else finished packing it up before you!"
-#define ERR_NO_GROUP "You must be in a group to enable group spawn restrictions"
+#define ERR_CANCELLED "Alteração das permissões do Spawn canceladas"
+#define ERR_TOO_FAR_AWAY "A alteração das permissões do Spawn falhou quando você se afastou demais!"
+#define ERR_SOMEONE_ELSE_TAKEN "A alteração das permissões do Spawn falhou, pois outra pessoa terminou de empacotá-la antes de vocêu!"
+#define ERR_NO_GROUP "Você deve estar em um grupo para habilitar restrições de Spawn de grupo"
 
 private ["_beacon", "_error", "_hasFailed", "_success"];
 _beacon = [] call mf_items_spawn_beacon_nearest;
@@ -36,7 +36,7 @@ _hasFailed = {
 		case (doCancelAction): {doCancelAction = false; _text = ERR_CANCELLED};
 		//case (count units group player < 2): {_text = ERR_NO_GROUP};
 		default {
-			_text = format["Spawn beacon is %1%2 updated", round(_progress*100), "%"];
+			_text = format["O Spawn beacon %1%2 foi atualizado", round(_progress*100), "%"];
 			_failed = false;
 		};
 	};
@@ -51,10 +51,10 @@ MUTEX_UNLOCK;
 
 if (_success) then {
 	if (_currentGroupOnlyState) then {
-		["The Spawn Beacon is now available to your whole team", 5] call mf_notify_client;
+		["O Spawn Beacon está agora disponível para toda a sua equipe", 5] call mf_notify_client;
 		_beacon setVariable ['groupOnly', false, true];
 	} else {
-		["The Spawn Beacon is now limited to your group", 5] call mf_notify_client;
+		["O Spawn Beacon agora está limitado ao seu grupo", 5] call mf_notify_client;
 		_beacon setVariable ['groupOnly', true, true];
 	};
 };

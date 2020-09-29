@@ -8,7 +8,7 @@
 private ["_length", "_animation", "_check", "_args", "_success", "_failure", "_complete", "_start", "_previousAnim"];
 
 if a3w_actions_mutex exitWith {
-	["You're already doing something!", DURATION_FAILED] call a3w_actions_notify;
+	["Você já está fazendo alguma coisa!", DURATION_FAILED] call a3w_actions_notify;
 };
 a3w_actions_mutex = true;
 
@@ -67,7 +67,7 @@ waitUntil {
 	};
 	if not a3w_actions_mutex then {
 		_failed = true;
-		["Action Cancelled", DURATION_FAILED] call a3w_actions_notify;
+		["Ação Cancelada", DURATION_FAILED] call a3w_actions_notify;
 	} else {
 		_progress = (time - _start)/_length;
 		_progressbar progressSetPosition _progress;

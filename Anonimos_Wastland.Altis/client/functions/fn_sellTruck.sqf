@@ -12,7 +12,7 @@
 // Check if mutex lock is active.
 if (mutexScriptInProgress) exitWith
 {
-	["You are already performing another action.", 5] call mf_notify_client;
+	["Você está fazendo outra ação.", 5] call mf_notify_client;
 };
 
 mutexScriptInProgress = true;

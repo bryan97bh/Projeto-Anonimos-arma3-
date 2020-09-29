@@ -34,7 +34,7 @@ _checks = {
 		case (damage player < 0.005): {_text = ERR_FULL_HEALTH};
 		case (doCancelAction): {_text = ERR_CANCELLED; doCancelAction = false;};
 		default {
-			_text = format["Estojo de Primeiros Socorros %1%2 Aplicado", round(100 * _progress), "%"];
+			_text = format["Kit de Primeiros Socorros %1%2 Aplicado", round(100 * _progress), "%"];
 			_failed = false;
 		};
 	};
@@ -45,6 +45,6 @@ _success = [DURATION, ANIMATION, _checks, []] call a3w_actions_start;
 
 if (_success) then {
 	player setDamage 0;
-	["Kit de Primeiros Socorros Completo!", 5] call mf_notify_client;
+	["Aplicação Completa!", 5] call mf_notify_client;
 };
 _success;

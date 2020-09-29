@@ -11,10 +11,10 @@
 #include "mutex.sqf"
 #define ANIM "AinvPknlMstpSlayWrflDnon_medic"
 #define DURATION 15
-#define ERR_TOO_FAR_AWAY "Packing Camouflage Netting Failed. You moved too far away"
-#define ERR_ALREADY_TAKEN "Packing Camouflage Netting Failed. Someone else beat you to it."
-#define ERR_IN_VEHICLE "Packing Camouflage Netting Failed. You can't do this in a vehicle."
-#define ERR_CANCELLED "Packing Camouflage Netting Cancelled"
+#define ERR_TOO_FAR_AWAY "Falha na embalagem da rede de camuflagem. Você se afastou muito longe"
+#define ERR_ALREADY_TAKEN "Falha na embalagem da rede de camuflagem. Alguém fez isso primeiro."
+#define ERR_IN_VEHICLE "Falha na embalagem da rede de camuflagem. Você não pode fazer isso em um veículo."
+#define ERR_CANCELLED "Embalagem da Rede de Camuflagem cancelado"
 
 private ["_beacon", "_error", "_hasFailed", "_success"];
 _netting = [] call mf_items_camo_net_nearest;
@@ -34,7 +34,7 @@ _hasFailed = {
 		case (player distance _netting > 5): {_text = ERR_TOO_FAR_AWAY};
 		case (doCancelAction): {doCancelAction = false; _text = ERR_CANCELLED};
 		default {
-			_text = format["Camouflage Netting %1%2 Packed", round(_progress*100), "%"];
+			_text = format["Rede de Camuflagem %1%2 empacotada", round(_progress*100), "%"];
 			_failed = false;
 		};
 	};
@@ -50,5 +50,5 @@ if (_success) then {
 	publicVariableServer "pvar_manualObjectDelete";
 	deleteVehicle _netting;
 	[MF_ITEMS_CAMO_NET, 1] call mf_inventory_add;
-	["You successfully packed the Camouflage Netting", 5] call mf_notify_client;
+	["Você emcapotou a Rede de Camuflagem com sucesso", 5] call mf_notify_client;
 };

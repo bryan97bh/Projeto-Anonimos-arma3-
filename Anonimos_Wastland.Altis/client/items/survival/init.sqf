@@ -23,15 +23,15 @@ MF_ITEMS_ENERGY_DRINK = "energydrink";
 
 //[MF_ITEMS_RAW_MEAT, "Raw Meat", {[MF_ITEMS_RAW_MEAT, MF_ITEMS_COOKED_MEAT] call mf_items_survival_cook}, "Land_BakedBeans_F", "", 5];
 //[MF_ITEMS_COOKED_MEAT, "Raw Meat", {50 call mf_items_survival_eat}, "Land_BakedBeans_F", "", 5];
-[MF_ITEMS_CANNED_FOOD, "Canned Food", {50 call mf_items_survival_eat}, "Land_BakedBeans_F","client\icons\cannedfood.paa", 5] call mf_inventory_create;
-[MF_ITEMS_WATER, "Water Bottle", {50 call mf_items_survival_drink}, "Land_BottlePlastic_V2_F","client\icons\waterbottle.paa", 5] call mf_inventory_create;
-[MF_ITEMS_ENERGY_DRINK, "Energy Drink", _energy_drink, "Land_Can_V3_F","client\icons\energydrink.paa", 2] call mf_inventory_create;
+[MF_ITEMS_CANNED_FOOD, "Lata de Comida", {50 call mf_items_survival_eat}, "Land_BakedBeans_F","client\icons\cannedfood.paa", 5] call mf_inventory_create;
+[MF_ITEMS_WATER, "Garrafa d`agua", {50 call mf_items_survival_drink}, "Land_BottlePlastic_V2_F","client\icons\waterbottle.paa", 5] call mf_inventory_create;
+[MF_ITEMS_ENERGY_DRINK, "Bebida Energética", _energy_drink, "Land_Can_V3_F","client\icons\energydrink.paa", 2] call mf_inventory_create;
 
 private ["_label", "_code", "_condition"];
 
 // Take Food from Sacks
 
-_label = "<img image='client\icons\cannedfood.paa'/> Take Canned Food";
+_label = "<img image='client\icons\cannedfood.paa'/> Pegar Lata de comida";
 _condition = "{_x getVariable ['food', 0] >= 1} count nearestObjects [player, ['Land_Sacks_goods_F'], 3] > 0 && !(MF_ITEMS_CANNED_FOOD call mf_inventory_is_full)";
 _code =
 {
@@ -55,11 +55,11 @@ _code =
 				deleteVehicle _this;
 			};
 
-			["You have taken some food.\nSacks are now empty", 5] call mf_notify_client;
+			["Você pegou comida.\nOs sacos estão vazios agora", 5] call mf_notify_client;
 		}
 		else
 		{
-			[format ["You have taken some food.\n(Food left: %1)", _obj getVariable "food"], 5] call mf_notify_client;
+			[format ["Você levou comida.\n(Comida restante: %1)", _obj getVariable "food"], 5] call mf_notify_client;
 		};
 	};
 };
@@ -68,7 +68,7 @@ _code =
 
 // Take Water from White water container
 
-_label = "<img image='client\icons\water.paa'/> Fill Water Bottle";
+_label = "<img image='client\icons\water.paa'/> Pegar garrafas de água";
 _condition = "{_x getVariable ['water', 0] >= 1} count nearestObjects [player, ['Land_BarrelWater_F'], 3] > 0 && !(MF_ITEMS_WATER call mf_inventory_is_full)";
 _code =
 {
@@ -99,11 +99,11 @@ _code =
 				deleteVehicle _obj;
 			};
 
-			["You have filled a water bottle.\nBarrel is now empty", 5] call mf_notify_client;
+			["Você encheu uma garaffa de água.\nBarril agora está vazio", 5] call mf_notify_client;
 		}
 		else
 		{
-			[format ["You have filled a water bottle.\n(Water left: %1)", _obj getVariable "water"], 5] call mf_notify_client;
+			[format ["Você encheu uma garrafa de água.\n(Garrafas restantes: %1)", _obj getVariable "water"], 5] call mf_notify_client;
 		};
 	};
 };
@@ -112,7 +112,7 @@ _code =
 
 // Take Water from Well
 
-_label = "<img image='client\icons\water.paa'/> Fill Water Bottle";
+_label = "<img image='client\icons\water.paa'/> Encher garrafa de Água";
 _condition = "player distance cursorObject <= 3 && {{(str cursorObject) find _x != -1} count [': stallwater_f',': water_source_f'] > 0 && !(MF_ITEMS_WATER call mf_inventory_is_full)}";
 _code =
 {
@@ -120,7 +120,7 @@ _code =
 	player playActionNow "PutDown";
 
 	[MF_ITEMS_WATER, 1] call mf_inventory_add;
-	["You have filled a water bottle.", 5] call mf_notify_client;
+	["Você encheu uma garrafa de água.", 5] call mf_notify_client;
 };
 
 ["take-water-well", [_label, _code, [], 0, true, true, "", _condition]] call mf_player_actions_set;

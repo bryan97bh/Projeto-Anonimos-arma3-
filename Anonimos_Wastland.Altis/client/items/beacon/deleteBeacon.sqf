@@ -7,8 +7,8 @@
 //@file Description: Delete a Spawn Beacon
 
 _MaxSpawnbeacons = ceil (["A3W_maxSpawnBeacons", 5] call getPublicVar);
-#define MAX_BEACONS format ["You cannot deploy more then %1 spawnbeacons.", [_MaxSpawnbeacons]]
-_confirmMsg = MAX_BEACONS + format ["<br/>Press delete to remove a random spawnbeacon."];
+#define MAX_BEACONS format ["Você não pode montar mais de %1 spawnbeacons.", [_MaxSpawnbeacons]]
+_confirmMsg = MAX_BEACONS + format ["<br/>Pressione delete para remover um spawnbeacon aleatório."];
 
 _beacons = []; 
 { 
@@ -19,7 +19,7 @@ _beacons = [];
 } forEach pvar_spawn_beacons; 
 
 // Display confirm message
-if ([parseText _confirmMsg, "DELETE BEACON", "Delete", true] call BIS_fnc_guiMessage) then
+if ([parseText _confirmMsg, "DELETAR BEACON", "Delete", true] call BIS_fnc_guiMessage) then
 {
 	_oldBeacon = _beacons select 0;
 

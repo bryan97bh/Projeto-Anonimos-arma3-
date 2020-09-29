@@ -80,10 +80,10 @@ for "_i" from 1 to _nbUnits do
 			_unit addWeapon "arifle_MXC_khk_F";
 			_unit addPrimaryWeaponItem "muzzle_snds_H_khk_F";
 			_unit addPrimaryWeaponItem "optic_Holosight_khk_F";
-			_unit addMagazine "Titan_AA";
-			_unit addWeapon "launch_B_Titan_tna_F";
-			_unit addMagazine "Titan_AA";
-			_unit addMagazine "Titan_AA";
+			_unit addMagazine "RPG7_F";
+			_unit addWeapon "launch_RPG7_F";
+			_unit addMagazine "RPG7_F";
+			_unit addMagazine "RPG7_F";
 			for "_i" from 1 to 3 do {_unit addItem "30Rnd_65x39_caseless_mag_Tracer";};
 		};
 		// Rifleman

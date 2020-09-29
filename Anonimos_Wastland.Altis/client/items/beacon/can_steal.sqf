@@ -9,10 +9,10 @@
 //@file Argument: [_beacon] The (object that is a) beacon to check if its stealable
 //@file Argument: [] automatically find the closest beacon to test.
 
-#define ERR_NO_TARGET "Need to point at a spawn beacon"
-#define ERR_NOT_SPAWN_BEACON_TYPE "Thats not a spawn beacon (wrong type)"
-#define ERR_IS_FRIENDLY "You cannot steal a friendly beacon!"
-#define ERR_TOO_FAR_AWAY "Stealing Spawn Beacon Failed! You are too far away to do that."
+#define ERR_NO_TARGET "É preciso selecionar um spawn beacon"
+#define ERR_NOT_SPAWN_BEACON_TYPE "Isso não é um spawn beacon (tipo errado)"
+#define ERR_IS_FRIENDLY "Você não pode roubar um spawn beacon amigável!"
+#define ERR_TOO_FAR_AWAY "Roubo do Spawn falhou! Você está muito longe para fazer isso."
 private ["_beacon", "_error"];
 
 if (count _this == 0) then {

@@ -9,13 +9,13 @@
 
 #define DURATION 5 // seconds
 #define ANIMATION "AinvPknlMstpSlayWrflDnon_medic"
-#define ERR_IN_VEHICLE "Applying failed! You can't do that while in a vehicle."
-#define ERR_TOO_FAR_AWAY "Applying Failed! You moved too far away from the vehicle."
-#define ERR_NOT_OWNER "You can't do if you are not the owner of the vehicle."
-#define ERR_LOCKED "This vehicle needs to be unlocked first!"
-#define ERR_PIN "This vehicle already has a pin."
-#define ERR_NO_PINLOCK "You don't own a pinlock device."
-#define ERR_CANCELLED "Applying Cancelled!"
+#define ERR_IN_VEHICLE "Aplicação faihou! Você não pode fazer isso dentro de um veículo."
+#define ERR_TOO_FAR_AWAY "Aplicação faihou! Você se moveu para longe do veículo."
+#define ERR_NOT_OWNER "Você não pode fazer isso se não for o proprietário do veículo."
+#define ERR_LOCKED "Esse veículo precisa estar destravado primeiro!"
+#define ERR_PIN "Esse veículo já tem um TravaCarro."
+#define ERR_NO_PINLOCK "Você não tem a propriedade de um dispositivo TravaCarro."
+#define ERR_CANCELLED "Aplicação Cancelada!"
 
 private ["_vehicle", "_error"];
 _vehicle = call mf_pinlock_nearest_vehicle;
@@ -41,7 +41,7 @@ _checks =
 		case (doCancelAction): {_text = ERR_CANCELLED; doCancelAction = false;};
 		default 
 		{
-			_text = format["Applying the pinlock %1%2 Complete", round(100 * _progress), "%"];
+			_text = format["Aplicando o TravaCarro %1%2 Completo", round(100 * _progress), "%"];
 			_failed = false;
 	    };
 	};
@@ -52,6 +52,6 @@ if (_success) then {
 	_vehicle setVariable ["vPin", true, true];
 	_rNumber = format ["%1", ceil (random 9999)];
 	_vehicle setVariable ["password", _rNumber, true];
-	[format ["Your pincode is %1",_rNumber], 5] call mf_notify_client;	
+	[format ["Seu código é %1",_rNumber], 5] call mf_notify_client;	
 };
 _success;

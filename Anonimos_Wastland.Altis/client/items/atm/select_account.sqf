@@ -21,13 +21,13 @@ _selAcc = call compile (_accDropdown lbData _curSel);
 
 if (!isNil "_selAcc" && {_selAcc != player}) then
 {
-	_deposit ctrlSetText "Transfer";
+	_deposit ctrlSetText "TRANSFERIR";
 	_deposit buttonSetAction "call mf_items_atm_transfer";
 	if (ctrlShown _withdraw) then { _withdraw ctrlShow false };
 }
 else
 {
-	_deposit ctrlSetText "Deposit";
+	_deposit ctrlSetText "DEPOSITAR";
 	_deposit buttonSetAction "call mf_items_atm_deposit";
 	if (!ctrlShown _withdraw) then { _withdraw ctrlShow true };
 };

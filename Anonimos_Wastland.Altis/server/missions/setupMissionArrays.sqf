@@ -21,13 +21,13 @@ MainMissions =
 
 SideMissions =
 [ 
-	["mission_GeoCache", 1],           //analise geografica
-    ["mission_ConvoyCSATSF", 1.2],     //PATRULHA DE RECONHECIMENTO
-    ["mission_DrugsRunners", 1.1],     //TRAFICANTES
-    ["mission_Smugglers", 1.3],        //CONTRABANDO DE ARMAS
-	["mission_AirWreck", 0.9],         //HELICÓPTERO ABATIDO
-	["mission_WepCache", 0.9],         //ACAMPAMENTO DE MILITARES 
-	["mission_Truck", 1.1]             //CAMINHÃO DE SUPRIMENTO
+	//["mission_GeoCache", 0.9],         //analise geografica
+    ["mission_ConvoyCSATSF", 1.2]     //PATRULHA DE RECONHECIMENTO
+    //["mission_DrugsRunners", 1.1],     //TRAFICANTES
+    //["mission_Smugglers", 1.3],        //CONTRABANDO DE ARMAS
+	//["mission_AirWreck", 0.9],         //HELICÓPTERO ABATIDO
+	//["mission_WepCache", 0.9],         //ACAMPAMENTO MILITAR
+	//["mission_Truck", 1.1]             //CAMINHÃO DE SUPRIMENTO
 ];
 
 MoneyMissions =
@@ -35,27 +35,27 @@ MoneyMissions =
 	["mission_MoneyShipment", 1.5],    //ESCOLTA DE DINHEIRO
     ["mission_HostageRescue", 1],      //RESGATE AO REFÉM
     ["mission_Roadblock", 1],          //BLOQUEIO NA ESTRADA
-    ["mission_Terror", 1.6],           //INVASAO REBELDE
+    ["mission_Terror", 1.6],           //GRUPO TERRORISTA
 	["mission_HackLaptop", 0.3],	   //Hackers
-	["mission_Satellite_Uplink", 0.4]
+	["mission_Satellite_Uplink", 0.4]  //SAT
 ];
 
 PrincipalMissions =
 [
-	["mission_Sniper", 0.9],           //SNIPES 
-	["mission_OCUPACAO", 1.4],         //OCUPACAO
-    ["mission_TownInvasion", 1.5],     //CIDADE INVADIDA
-	["mission_MiniConvoy", 1],         //ESCOLTA ARMADA
-	["mission_Outpost", 1.3],          //POSTO AVANÇADO
-	["mission_Convoy", 1]              //COMBOIO SUSPEITO
+	//["mission_Sniper", 0.9],           //SNIPES 
+	//["mission_OCUPACAO", 1.4],         //OCUPACAO
+    //["mission_TownInvasion", 1.5],     //CIDADE INVADIDA
+	//["mission_MiniConvoy", 1],         //ESCOLTA ARMADA
+	["mission_Outpost", 1.3]          //POSTO AVANÇADO
+	//["mission_Convoy", 1]              //COMBOIO SUSPEITO
 ];
 
 hostileairMissions =
 [
-	["mission_HostileHelicopter", 1.5],   //HELICÓPTERO HOSTIL
+	["mission_HostileHelicopter", 1.3],   //HELICÓPTERO HOSTIL
     ["mission_FORMAÇAODEHELI", 1],        //HELICÓPTEROS HOSTIS
 	["mission_PATRULHAAEREA", 0.4],       //PATRULHA AÉREA
-	["mission_HostileJet", 1.5],          //JATO HOSTIL
+	["mission_HostileJet", 1.2],          //JATO HOSTIL
 	["mission_HostileJetFormation", 1],   //JATOS HOSTIS
 	["mission_OPRESSAOAÉREA", 0.4],       //OPRESSÃO AÉREA
 	["mission_PATRULHAVTOL", 0.5]         //PATRULHA VTOL 
@@ -77,14 +77,14 @@ HackerMissionMarkers = (allMapMarkers select {["HackerMission_", _x] call fn_sta
 RoadblockMissionMarkers = (allMapMarkers select {["RoadblockMission_", _x] call fn_startsWith}) apply {[_x, false]};
 SatelliteMissionMarkers = (allMapMarkers select {["SatelliteMission_", _x] call fn_startsWith}) apply {[_x, false]};
 
-if !(ForestMissionMarkers isEqualTo []) then
+/*if !(ForestMissionMarkers isEqualTo []) then
 {
 	SideMissions append
 	[
 		["mission_AirWreck", 1],
 		["mission_WepCache", 1]
 	];
-};
+};*/
 
 
 

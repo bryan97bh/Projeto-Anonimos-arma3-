@@ -37,13 +37,13 @@ mf_items_spawn_beacon_can_use = build("can_use.sqf");
 
 private "_condition";
 _condition = "'' == [] call mf_items_spawn_beacon_can_pack;";
-_pack =[format ["<img image='%1'/> Pack Spawn Beacon", _icon], path("pack.sqf"), [], 1, true, false, "", _condition];
+_pack =[format ["<img image='%1'/> Pacote Spawn Beacon", _icon], path("pack.sqf"), [], 1, true, false, "", _condition];
 ["beacon-pack", _pack] call mf_player_actions_set;
 
 _condition = "'' == [] call mf_items_spawn_beacon_can_steal;";
-_steal = [format ["<img image='%1'/> Steal Spawn Beacon", _icon], path("steal.sqf"), [], 1, true, false, "", _condition];
+_steal = [format ["<img image='%1'/> Roubar Spawn Beacon", _icon], path("steal.sqf"), [], 1, true, false, "", _condition];
 ["beacon-steal", _steal] call mf_player_actions_set;
 
 _condition = "'' == [] call mf_items_spawn_beacon_can_pack && {playerSide != independent}";
-_pack =[format ["<img image='%1'/> Change Spawn Permissions", _icon], path("toggle_spawn_permissions.sqf"), [], 1, true, false, "", _condition];
+_pack =[format ["<img image='%1'/> Mudar permissões de Spawn", _icon], path("toggle_spawn_permissions.sqf"), [], 1, true, false, "", _condition];
 ["beacon-spawn-toggle", _pack] call mf_player_actions_set;

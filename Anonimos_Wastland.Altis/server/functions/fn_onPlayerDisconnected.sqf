@@ -6,7 +6,7 @@
 
 params ["_id", "_uid", "_name", "_owner", "_jip"];
 
-diag_log format ["Player disconnected: %1 (%2)", _name, _uid];
+diag_log format ["Jogador desconectou: %1 (%2)", _name, _uid];
 if (_uid isEqualTo "") exitWith {};
 
 private _resend = false;

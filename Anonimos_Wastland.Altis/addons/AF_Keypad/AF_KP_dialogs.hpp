@@ -24,7 +24,7 @@ class AF_KeyPad_Box: KP_BOX
 class AF_KeyPad_Display: KP_RscText
 {
 	idc = 1000;
-	text = "Enter Keycode"; //--- ToDo: Localize;
+	text = "Entre com a Senha"; //--- ToDo: Localize;
 	x = 0.456246 * safezoneW + safezoneX;
 	y = 0.191931 * safezoneH + safezoneY;
 	w = 0.227519 * safezoneW;
@@ -123,7 +123,7 @@ class AF_Key9: KP_RscButton
 class AF_Key_Clear: KP_RscButton
 {
 	idc = 1609;
-	text = "Clear"; //--- ToDo: Localize;
+	text = "Limpar"; //--- ToDo: Localize;
 	x = 0.456246 * safezoneW + safezoneX;
 	y = 0.556012 * safezoneH + safezoneY;
 	w = 0.0700059 * safezoneW;
@@ -143,7 +143,7 @@ class AF_Key0: KP_RscButton
 class AF_Key_Enter: KP_RscButton
 {
 	idc = 1611;
-	text = "Enter"; //--- ToDo: Localize;
+	text = "Confirmar"; //--- ToDo: Localize;
 	x = 0.61376 * safezoneW + safezoneX;
 	y = 0.556012 * safezoneH + safezoneY;
 	w = 0.0700059 * safezoneW;

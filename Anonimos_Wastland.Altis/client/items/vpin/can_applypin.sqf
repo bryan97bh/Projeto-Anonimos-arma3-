@@ -8,12 +8,12 @@
 //@file Argument: [_vehicle] the vehicle to test
 //@file Argument: [] automatically find the nearest vehicle
 
-#define ERR_NO_VEHICLE "No vehicle within range."
-#define ERR_IN_VEHICLE "You can't do this while in a vehicle."
-#define ERR_NOT_OWNER "You can't do if you are not the owner of the vehicle."
-#define ERR_LOCKED "This vehicle needs to be unlocked first!"
-#define ERR_PIN "This vehicle already has a pin."
-#define ERR_NO_PINLOCK "You don't own a pinlock device."
+#define ERR_NO_VEHICLE "Nenhuk veículo próximo."
+#define ERR_IN_VEHICLE "Você não pode fazer dentro de um veículo."
+#define ERR_NOT_OWNER "Você não pode fazer isso se não for o proprietário do veículo."
+#define ERR_LOCKED "Esse veículo precisar estar destravado primeiro!"
+#define ERR_PIN "Esse veículo já tem um TravaCarro."
+#define ERR_NO_PINLOCK "Você não tem um dispositivo TravaCarro."
 
 private ["_vehicle", "_error"];
 _vehicle = objNull;

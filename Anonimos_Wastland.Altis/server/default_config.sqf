@@ -11,7 +11,7 @@
 // General settings
 A3W_teamPlayersMap = 1;            // Show all friendly players on the map at all times, regardless of difficulty level (0 = no, 1 = yes)
 A3W_disableGlobalVoice = 1;        // Auto-switch channel to Direct communication whenever broadcasting voice on global, unless being admin (0 = no, 1 = yes)
-A3W_uavControl = "group";          // Restrict connection to UAVs based on ownership ("owner", "group", "side")
+A3W_uavControl = "owner";          // Restrict connection to UAVs based on ownership ("owner", "group", "side")
 A3W_disableUavFeed = 1;            // Force disable UAV PIP feed to prevent thermal camera abuse (0 = no, 1 = yes)
 A3W_disableBuiltInThermal = 1;     // Display a black screen if the player tries to use thermal vision built-in a handheld weapon like Titan launcher (0 = no, 1 = yes)
 
@@ -176,23 +176,23 @@ A3W_missionsQuantity = 6;          // Number of missions running at the same tim
 A3W_heliPatrolMissions = 1;        // Enable missions involving flying helicopters piloted by AI (0 = no, 1 = yes)
 A3W_underWaterMissions = 1;        // Enable underwater missions which require diving gear (0 = no, 1 = yes)
 //##############################################################################################################################//
-A3W_mainMissionDelay = 10*60;      // Time in seconds between Main Missions
-A3W_mainMissionTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
+A3W_mainMissionDelay = 1*60;      // Time in seconds between Main Missions
+A3W_mainMissionTimeout = 8*60;    // Time in seconds that a Main Mission will run for, unless completed
 
-A3W_sideMissionDelay = 5*60;       // Time in seconds between Side Missions
-A3W_sideMissionTimeout = 30*60;    // Time in seconds that a Side Mission will run for, unless completed
+A3W_sideMissionDelay = 1*60;       // Time in seconds between Side Missions
+A3W_sideMissionTimeout = 8*60;    // Time in seconds that a Side Mission will run for, unless completed
 
-A3W_moneyMissionDelay = 15*60;     // Time in seconds between Money Missions
-A3W_moneyMissionTimeout = 60*60;   // Time in seconds that a Money Mission will run for, unless completed
+A3W_moneyMissionDelay = 1*60;     // Time in seconds between Money Missions
+A3W_moneyMissionTimeout = 8*60;   // Time in seconds that a Money Mission will run for, unless completed
 
-A3W_principalMissionsDelay = 10*60;      // Time in seconds between Main Missions
-A3W_principalMissionsTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
+A3W_principalMissionsDelay = 1*60;      // Time in seconds between Main Missions
+A3W_principalMissionsTimeout = 8*60;    // Time in seconds that a Main Mission will run for, unless completed
 
-A3W_hostileairMissionDelay = 15*60;      // Time in seconds between Main Missions
-A3W_hostileairMissionTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
+A3W_hostileairMissionDelay = 1*60;      // Time in seconds between Main Missions
+A3W_hostileairMissionTimeout = 8*60;    // Time in seconds that a Main Mission will run for, unless completed
 
-A3W_aquaticMissionDelay = 10*60;      // Time in seconds between Main Missions
-A3W_aquaticMissionTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
+A3W_aquaticMissionDelay = 1*60;      // Time in seconds between Main Missions
+A3W_aquaticMissionTimeout = 8*60;    // Time in seconds that a Main Mission will run for, unless completed
 //###############################################################################################################################//
 A3W_hackedMissionDlSize = 165072;	// File size in Kilobytles (~1Mbps dl Rate)
 A3W_hackedMissionPercentage = 0.05; // Percentage to come out of bankaccounts

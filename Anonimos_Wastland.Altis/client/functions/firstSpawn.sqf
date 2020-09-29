@@ -130,11 +130,11 @@ player addEventHandler ["InventoryOpened",
 
 			if (_obj isKindOf "AllVehicles") then
 			{
-				["This vehicle is locked.", 5] call mf_notify_client;
+				["Este veículo está trancado.", 5] call mf_notify_client;
 			}
 			else
 			{
-				["This object is locked.", 5] call mf_notify_client;
+				["Este objeto está trancado.", 5] call mf_notify_client;
 			};
 
 			_blocked = true;
@@ -194,7 +194,7 @@ if (["A3W_remoteBombStoreRadius", 0] call getPublicVar > 0) then
 						deleteVehicle _bomb;
 						[player, _mag] call fn_forceAddItem;
 						playSound "FD_CP_Not_Clear_F";
-						titleText [format ["You are not allowed to place explosives within %1m of a store.\nThe explosive has been re-added to your inventory.", _minDist], "PLAIN DOWN", 0.5];
+						titleText [format ["Você não tem permissão para colocar explosivos a menos de %1m da Loja.\nO explosivo será readicionado no seu inventário.", _minDist], "PLAIN DOWN", 0.5];
 					};
 				} forEach entities "CAManBase";
 			};
@@ -240,5 +240,5 @@ if (playerSide in [BLUFOR,OPFOR] && {{_x select 0 == _uid} count pvar_teamSwitch
 		case OPFOR:  { "OPFOR" };
 	};
 
-	titleText [format ["You have been locked to %1", _side], "PLAIN", 0.5];
+	titleText [format ["Você foi travado como %1", _side], "PLAIN", 0.5];
 };

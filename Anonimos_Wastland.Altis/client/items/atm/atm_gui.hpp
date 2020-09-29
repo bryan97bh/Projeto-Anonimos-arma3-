@@ -83,7 +83,7 @@ class AtmGUI
 	class AtmBalanceHead : w_RscStructuredText
 	{
 		idc = -1;
-		text = "<t underline='true' shadow='0'>Balance</t>";
+		text = "<t underline='true' shadow='0'>SALDO</t>";
 		size = 0.035 * TEXT_SCALE;
 
 		#define AtmBalanceHead_W AtmBalanceBG_W
@@ -151,7 +151,7 @@ class AtmGUI
 	class AtmAmountLabel : AtmLabelText
 	{
 		idc = -1;
-		text = "Amount:";
+		text = "VALOR:";
 
 		#define AtmAmountLabel_Y (AtmAmountInput_Y + AtmLabel_Y_OFFSET)
 
@@ -179,7 +179,7 @@ class AtmGUI
 	class AtmAccountLabel : AtmLabelText
 	{
 		idc = -1;
-		text = "Account:";
+		text = "CONTA:";
 
 		#define AtmAccountLabel_Y (AtmAccountDropdown_Y + AtmLabel_Y_OFFSET)
 
@@ -208,7 +208,7 @@ class AtmGUI
 	class AtmFeeLabel : AtmLabelText
 	{
 		idc = -1;
-		text = "Fee:";
+		text = "TAXA:";
 
 		#define AtmFeeLabel_Y (AtmFeeText_Y + AtmLabel_Y_OFFSET)
 
@@ -236,7 +236,7 @@ class AtmGUI
 	class AtmTotalLabel : AtmLabelText
 	{
 		idc = -1;
-		text = "Total:";
+		text = "TOTAL:";
 
 		#define AtmTotalLabel_Y (AtmTotalText_Y + AtmLabel_Y_OFFSET)
 
@@ -282,7 +282,7 @@ class AtmGUI
 	class AtmDepositButton : AtmGreenButton
 	{
 		idc = AtmDepositButton_IDC;
-		text = "Deposit";
+		text = "DEPOSITAR";
 		// action is defined in client\items\atm\select_account.sqf
 
 		#define AtmDepositButton_X (AtmBG_X + Atm_OUTER_MARGIN_X)
@@ -293,7 +293,7 @@ class AtmGUI
 	class AtmWithdrawButton : AtmGreenButton
 	{
 		idc = AtmWithdrawButton_IDC;
-		text = "Withdraw";
+		text = "RETIRAR";
 		action = "call mf_items_atm_withdraw";
 
 		#define AtmWithdrawButton_X (AtmDepositButton_X + AtmButton_W + Atm_INNER_MARGIN_X)
@@ -304,7 +304,7 @@ class AtmGUI
 	class AtmCancelButton : AtmButton
 	{
 		idc = AtmCancelButton_IDC;
-		text = "Cancel";
+		text = "CANCELAR";
 		action = "closeDialog 0";
 
 		#define AtmCancelButton_X (AtmWithdrawButton_X + AtmButton_W + Atm_INNER_MARGIN_X)

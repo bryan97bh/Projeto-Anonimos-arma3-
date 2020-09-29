@@ -17,7 +17,7 @@ private _checks =
 
 	if (_text isEqualTo "") then
 	{
-		_text = format ["Acquiring %1%2 complete", round (100 * _progress), "%"];
+		_text = format ["Aquisição %1%2 completo", round (100 * _progress), "%"];
 		_failed = false;
 	};
 
@@ -29,7 +29,7 @@ private _success = [[DURATION, 5] select (_vehicle getVariable ["ownerUID","0"] 
 if (_success) then
 {
 	[_vehicle, player] call A3W_fnc_takeOwnership;
-	["Acquiring complete!", 5] call mf_notify_client;
+	["Aquisição completa!", 5] call mf_notify_client;
 };
 
 _success

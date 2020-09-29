@@ -4,40 +4,48 @@ _playerCustomUniforms =
 [
 	[ // RA
 		[
-			//"76561198092314271", //<[RA] Codigo>
-			//"76561198157312258", //<[RlA] Cap  Batista>
-			//"76561198027682212", //<[RA] 2°Sgt Sniperjoel>
-			//"76561198087974566", //<[RA] 2ºSgt Dpaulla>
-			//"76561198152823076", //<[R] Negri>
-			//"76561198157040893", //<[R]755cardosopower>
-			//"76561198329736745", //<[RA] Sd  Benther>
+			"76561198157312258", //<[RA] Cap  Batista>
+			"76561198027682212", //<[RA] 2°ten Sniperjoel>
+			"76561198087974566", //<[RA] 2ºSgt Dpaulla>
+			"76561198092314271", //<[RA] Codigo>
 			//"76561198332507924", //<[RA] Sd D.Oliveira>
-			//"76561198100776009", //<[RA] Sd Gui_bocão>
-			//"76561198111387070", //<[RA] Sd Rappa>
-			//"76561198252975849", //<[RA] Sd Ferreira>
-			//"76561198060065964", //BRYAN 
-			//"76561198330751305"  //<Funeral>
+			"76561198100776009", //<[RA] Sd Gui_bocão>
+			"76561198111387070", //<[RA] Sd Rappa>
+			"76561198252975849", //<[RA] Sd Ferreira>
+			"76561198157040893", //<[RA] sd 755cardosopower>
+			"76561198152823076", //<[RA] sd Negri>
+			"76561198164537056", //<[RA] Sd França SS
+			"76561198319660200", //<[RA] Sd Bomfim
+			"76561198835543767", //<[RA] Sd Mario
+			"76561198279017971", //<[RA] Sd Simo Hayha
+			"76561197978867972", //<[RA] Sd Cordeiro
+			"76561198216066545", //<[RA] Menegusso>
+			"76561198057291104", //<[RA] Martins>
+			"76561198256683401"  //<[RA] Sd Souza
 		],
 		[
 			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\an_1.jpg"]
 		]
 	],
-	[ // KOBK
+	[ // [CTMBR]
 		[
-			//"76561196666666666", //<USERNAME>
-			//"76561197777777777"  //<USERNAME>
+			"76561198201844818", //[CTMBR] Dracula
+			"76561198070424261", //[CTMBR] bioga
+			"76561198343865767", //[CTMBR] WhiteCaT
+			"76561198176174925", //[CTMBR] --BIEL--
+			"76561198060065964", //[CTMBR] BRYAN 
+			"76561198321878481"  //[CTMBR] xavier
 		],
 		[
-			["GUER","U_I_CombatUniform","addons\playerCustomUniforms\textures\11_I.jpg"]
+			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\19_U.jpg"]
 		]
 	],
 	[ // G4
 		[
-			//"76561198888888888", //<USERNAME>
-			//"76561199999999999"  //<USERNAME>
+			"76561198332507924" //<USERNAME>
 		],
 		[
-			["GUER","U_I_CombatUniform","addons\playerCustomUniforms\textures\11_I.jpg"]
+			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\8_I.jpg"]
 		]
 	]
 ];

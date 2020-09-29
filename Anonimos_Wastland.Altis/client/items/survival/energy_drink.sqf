@@ -7,7 +7,7 @@
 //@file Created: 21/7/2013 16:00
 //@file Description: Drink, and replenish your stamina
 
-#define ERR_CANCELLED "Drinking Cancelled";
+#define ERR_CANCELLED "Beber cancelado";
 #define ANIMATION "Acts_CivilHiding_2"
 private ["_checks", "_hasFailed"];
 _hasFailed = {
@@ -20,7 +20,7 @@ _hasFailed = {
 		case (doCancelAction): {doCancelAction = false; _text = ERR_CANCELLED;};
 		default {
 			_failed = false;
-			_text = format["Drinking %1%2 Complete", round(100*_progress), "%"];
+			_text = format["Bebendo %1%2 Completo", round(100*_progress), "%"];
 		};
 	};
 	[_failed, _text];
@@ -39,7 +39,7 @@ if (_success) then
 		{
 			player enableFatigue false;
 			player setVariable ["energy_drink_active", true];
-			["Você tem resistência ilimitada por 2 minutos", 5] call mf_notify_client;
+			["Você tem resistência ilimitada por 1 minuto", 5] call mf_notify_client;
 
 			sleep (2*60);
 

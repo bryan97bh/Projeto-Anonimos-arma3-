@@ -221,7 +221,7 @@ drawPlayerIcons_thread = [] spawn
 					{
 						if (isNil "A3W_builtInThermalOffline") then
 						{
-							"A3W_thermalOffline" cutText ["THERMAL IMAGING OFFLINE", "BLACK", 0.001, false];
+							"A3W_thermalOffline" cutText ["IMAGEM TERMAL DESATIVADA", "BLACK", 0.001, false];
 							A3W_builtInThermalOffline = true;
 						};
 					}

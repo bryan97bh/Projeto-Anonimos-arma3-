@@ -63,14 +63,14 @@ for "_i" from 1 to _nbUnits do
 		{
 			_unit forceAddUniform "U_B_CombatUniform_mcam_tshirt";
 			_unit addBackpack "B_Kitbag_mcamo";
-			_unit addWeapon "arifle_TRG20_F";
-			_unit addPrimaryWeaponItem "muzzle_snds_M";
-			_unit addPrimaryWeaponItem "optic_Holosight_khk_F";
+			_unit addWeapon "srifle_DMR_06_olive_F";
+			_unit addPrimaryWeaponItem "muzzle_snds_B_khk_F";
+			_unit addPrimaryWeaponItem "optic_MRCO";
 			_unit addMagazine "RPG32_F";
 			_unit addWeapon "launch_RPG32_F";
 			_unit addMagazine "RPG32_HE_F";
 			_unit addMagazine "RPG32_F";
-			for "_i" from 1 to 3 do {_unit addItem "30Rnd_556x45_Stanag";};
+			for "_i" from 1 to 3 do {_unit addItem "10Rnd_762x51_Mag";};
 		};
 		// AA every 6 units
 		case (_i % 7 == 0):
@@ -80,10 +80,10 @@ for "_i" from 1 to _nbUnits do
 			_unit addWeapon "arifle_TRG20_F";
 			_unit addPrimaryWeaponItem "muzzle_snds_M";
 			_unit addPrimaryWeaponItem "optic_Holosight_khk_F";
-			_unit addMagazine "Titan_AA";
-			_unit addWeapon "launch_B_Titan_tna_F";
-			_unit addMagazine "Titan_AA";
-			_unit addMagazine "Titan_AA";
+			_unit addMagazine "RPG7_F";
+			_unit addWeapon "launch_RPG7_F";
+			_unit addMagazine "RPG7_F";
+			_unit addMagazine "RPG7_F";
 			for "_i" from 1 to 3 do {_unit addItem "30Rnd_556x45_Stanag";};
 		};
 		// Rifleman

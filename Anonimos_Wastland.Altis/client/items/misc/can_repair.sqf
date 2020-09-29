@@ -9,11 +9,11 @@
 //@file Argument: [_vehicle] the vehicle to test
 //@file Argument: [] automatically find the nearest vehicle
 
-#define ERR_NO_VEHICLE "You are not close enough to a vehicle that needs repairing"
-#define ERR_IN_VEHICLE "You can't do this while in a vehicle."
-#define ERR_FULL_HEALTH "The vehicle is already fully repaired"
-#define ERR_DESTROYED "The vehicle is too damaged to repair"
-#define ERR_NO_REPAIR_KITS "You have no repair kits"
+#define ERR_NO_VEHICLE "Você não está perto o suficiente de um veículo que precise de reparos"
+#define ERR_IN_VEHICLE "Você não pode fazer isso enquanto estiver em um veículo."
+#define ERR_FULL_HEALTH "O veículo já está totalmente reparado"
+#define ERR_DESTROYED "O veículo está muito danificado para reparar"
+#define ERR_NO_REPAIR_KITS "Você não tem kits de reparo"
 #define ITEM_COUNT(ITEMID) ITEMID call mf_inventory_count
 
 private ["_vehicle", "_hitPoints", "_error"];

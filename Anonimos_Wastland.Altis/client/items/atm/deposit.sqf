@@ -7,9 +7,9 @@
 
 #include "gui_defines.hpp"
 
-#define ERR_NOT_ENOUGH_FUNDS "You don't have enough money."
-#define ERR_MAX_BALANCE "Your account has reached the maximum balance."
-#define ERR_MAX_BALANCE_BLUFOR_OPFOR "ATM maximum balance is 300.000 for your side (3.000.000 for INDEP)."
+#define ERR_NOT_ENOUGH_FUNDS "Você não tem dinheiro suficiente."
+#define ERR_MAX_BALANCE "Sua conta atingiu o saldo máximo."
+#define ERR_MAX_BALANCE_BLUFOR_OPFOR "O saldo máximo do caixa eletrônico é de 300.000 para BLUFOR e (5.000.000 para o INDEP)."
 
 disableSerialization;
 private ["_dialog", "_input", "_amount", "_balance", "_maxBalance"];

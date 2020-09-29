@@ -115,35 +115,35 @@ if (!isNil "_itemEntry") then
 					case (_itemType isKindOf "B_Parachute"):
 					{
 						//_name = getText (_weapon >> "displayName");
-						_description = "The perfect companion for wanna-be pilots!<br/>One-time use.";
+						_description = "O companheiro perfeito para os futuros pilotos!<br/>Só funciona uma vez.";
 					};
 					case (_itemType isKindOf "UGV_02_Demining_backpack_base_F"):
 					{
-						_description = "Remote-controlled robo-shotgun to dispose of trespassers, pre-packaged in a backpack.<br/>UAV Terminal sold separately. Ages 8+";
+						_description = "Robo-espingarda com 24 disparos de calibre 12 e 400 tiros de 5,56mm em sua metralhadora com controle remoto.<br/>Terminal VANT vendido separadamente. Para +18 anos";
 					};
 					case (_itemType isKindOf "UGV_02_backpack_base_F"):
 					{
-						_description = "Remote-controlled robot to spy on your neighbor's wife, pre-packaged in a backpack.<br/>UAV Terminal sold separately. Ages 8+";
+						_description = "Robô com controle remoto para espionar a esposa do seu vizinho, e também para reconhecimento em zonas de guerra.<br/>Terminal VANT vendido separadamente. Para +18 anos";
 					};
 					case (["_UAV_06_antimine_backpack_", _itemType] call fn_findString != -1):
 					{
-						_description = "Remote-controlled hexacopter to bomb the shit out of 'em, pre-packaged in a backpack.<br/>UAV Terminal sold separately. Ages 8+";
+						_description = "Hexacóptero de controle remoto para desarmar minas através de cargas explosivas, lançadas dos céus.<br/>Terminal VANT vendido separadamente. Para +18 anos";
 					};
 					case (_itemType isKindOf "UAV_06_medical_backpack_base_F"):
 					{
-						_description = "Remote-controlled hexacopter to revive and heal your teammates, pre-packaged in a backpack.<br/>UAV Terminal sold separately. Ages 8+";
+						_description = "Hexacóptero com controle remoto para reviver e curar seus companheiros de equipe.<br/>Terminal VANT vendido separadamente. Para +18 anos";
 					};
 					case (_itemType isKindOf "UAV_06_backpack_base_F"):
 					{
-						_description = "Remote-controlled hexacopter to spy on your neighbors, pre-packaged in a backpack.<br/>UAV Terminal sold separately. Ages 8+";
+						_description = "Hexacóptero com controle remoto para espionar seus vizinhos, ou entrega alguma carga dentro dele.<br/>Terminal VANT vendido separadamente. Para +18 anos";
 					};
 					case (["_UAV_01_backpack_", _itemType] call fn_findString != -1):
 					{
-						_description = "Remote-controlled quadcopter to spy on your neighbors, pre-packaged in a backpack.<br/>UAV Terminal sold separately. Ages 8+";
+						_description = "Quadricóptero Militar com controle remoto para reconhecimento e radar com sensor térmico.<br/>Terminal VANT vendido separadamente. Para +18 anos";
 					};
 					case (["_Static_Designator_", _itemType] call fn_findString != -1):
 					{
-						_description = "Remote-controlled laser designator.<br/>UAV Terminal sold separately.";
+						_description = "Um Laser Designador que pode ser controlado remotamente, útil para reconhecimento e marcação de alvos com Laser. Possui Infravermelho.<br/>Terminal VANT vendido separadamente.";
 					};
 					default
 					{
@@ -159,21 +159,21 @@ if (!isNil "_itemEntry") then
 					case (["Default Uniform", _itemText] call fn_startsWith):
 					{
 						//_name = _itemText;
-						_description = "In case you lost your clothes";
+						_description = "Caso você tenha perdido suas roupas";
 					};
 					case ([["Ghillie","_T_Sniper"], _itemType] call fn_findString != -1):
 					{
 						//_name = _itemText;
-						_description = "Disguise as a swamp monster";
+						_description = "Disfarce-se como um monstro do pântano";
 					};
 					case ([["_Wetsuit","_survival_uniform"], _itemType] call fn_findString != -1):
 					{
 						//_name = _itemText;
-						_description = "Allows faster swimming<br/>Required to fire SDAR underwater";
+						_description = "Permite nadar mais rápido<br/>Necessário Fuzil SDAR para disparar debaixo d'água";
 					};
 					case ([["_CTRG_Soldier","_Soldier_Viper"], _itemType] call fn_findString != -1):
 					{
-						_description = "Thermally insulated pajamas";
+						_description = "Roupa com isolamento térmico";
 					};
 					default
 					{
@@ -192,7 +192,7 @@ if (!isNil "_itemEntry") then
 			{
 				if (["_Rebreather", _itemType] call fn_findString != -1) then
 				{
-					_description = "Underwater oxygen supply";
+					_description = "Fornecimento de oxigênio subaquático";
 				};
 
 				if (_description != "") then
@@ -218,11 +218,11 @@ if (!isNil "_itemEntry") then
 
 				if (_itemType == "G_Diving") then
 				{
-					_description = "Increases underwater visibility";
+					_description = "Aumenta a visibilidade subaquática";
 				};
 				if (["G_Balaclava_TI_", _itemType] call fn_startsWith) then
 				{
-					_description = "Thermally insulated";
+					_description = "Permite isolamento térmico";
 				};
 			};
 			default
@@ -232,7 +232,7 @@ if (!isNil "_itemEntry") then
 					case (["_UavTerminal", _itemType] call fn_findString != -1):
 					{
 						//_name = getText (_weapon >> "displayName");
-						_description = getText (_weapon >> "descriptionShort") + "<br/>Assign to GPS slot.";
+						_description = getText (_weapon >> "descriptionShort") + "<br/>Atribuir ao slot GPS. Permite Ver e Controlar todos os Drones do Mapa Online";
 					};
 				};
 			};
@@ -242,7 +242,7 @@ if (!isNil "_itemEntry") then
 		{
 			if ({_x == "Ti"} count getArray (configFile >> "CfgVehicles" >> _itemType >> "Viewoptics" >> "visionMode") == 0) then
 			{
-				_description = format ["%1%2%3", _description, ["<br/>",""] select (_description isEqualTo ""), "<t color='#FF8000'>NO THERMAL IMAGING</t>"];
+				_description = format ["%1%2%3", _description, ["<br/>",""] select (_description isEqualTo ""), "<t color='#FF8000'>IMAGEM TERMAL BLOQUEADA</t>"];
 			};
 		};
 	};

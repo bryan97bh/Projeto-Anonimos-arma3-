@@ -2,7 +2,7 @@
 InputText = "";
 
 //clear text is to reset the display
-ClearText = "Enter Keycode";
+ClearText = "Entre com a Senha";
 
 //this is the keypads output.
 OutputText = "";

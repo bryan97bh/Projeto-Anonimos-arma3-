@@ -19,4 +19,4 @@ _unit action ["EngineOn", _veh];
 if (_veh turretUnit [0] != player) exitWith {};
 if (round getNumber ((([_veh, configNull] call BIS_fnc_getTurrets) param [1,configNull]) >> "isCopilot") < 1) exitWith {};
 
-titleText ["You have been given control of the aircraft", "PLAIN DOWN", 0.5];
+titleText ["Você tem que entregar o ontrole da aeronave", "PLAIN DOWN", 0.5];

@@ -16,8 +16,7 @@ civilianVehicles =
 	"C_SUV_01_F",
 	"C_Offroad_02_unarmed_F",
 	["C_Hatchback_01_F", "C_Hatchback_01_sport_F"],
-	["C_Van_01_box_F", "C_Van_01_transport_F"],
-	["C_Truck_02_covered_F", "C_Truck_02_transport_F"]
+	["C_Van_01_box_F", "C_Van_01_transport_F"]
 ];
 
 //Light Military Vehicle List - Random Spawns
@@ -32,6 +31,7 @@ lightMilitaryVehicles =
 //Medium Military Vehicle List - Random Spawns
 mediumMilitaryVehicles =
 [
+	["C_Truck_02_covered_F", "C_Truck_02_transport_F"],
     ["I_Truck_02_covered_F", "I_Truck_02_transport_F"]
 ];
 
@@ -98,9 +98,7 @@ vehicleWeapons =
 
 vehicleAddition =
 [
-    "Binocular",
-    "ItemGPS",
-	"ToolKit",
+	["ToolKit", "ItemGPS", "Binocular"],
 	["FirstAidKit", "Medikit"],
 	["B_IR_Grenade", "O_IR_Grenade", "I_IR_Grenade"],
 	["SmokeShellGreen", "SmokeShellOrange", "SmokeShellRed", "SmokeShellBlue", "SmokeShellPurple", "SmokeShell"]

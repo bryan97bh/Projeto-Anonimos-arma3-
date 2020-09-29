@@ -35,7 +35,7 @@ mf_repair_nearest_vehicle = {
 // Setting up repairing action.
 mf_repair_can_repair = [_path, "can_repair.sqf"] call mf_compile;
 private ["_label1", "_execute1", "_condition1", "_action1"];
-_label1 = format["<img image='%1'/> Repair Vehicle", _icon];
+_label1 = format["<img image='%1'/> Reparar Veículo", _icon];
 _execute1 = {MF_ITEMS_REPAIR_KIT call mf_inventory_use};
 _condition1 = "[] call mf_repair_can_repair == ''";
 _action1 = [_label1, _execute1, [], -241, false, false, "", _condition1];

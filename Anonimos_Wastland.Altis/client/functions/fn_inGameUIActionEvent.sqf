@@ -23,7 +23,7 @@ if (_unit == player && (_showWindow || _menuOpen)) then
 			if !(_nearbyStores isEqualTo []) exitWith
 			{
 				playSound "FD_CP_Not_Clear_F";
-				[format ["You are not allowed to place explosives within %1m of a store.", _minDist], 5] call mf_notify_client;
+				[format ["Você não tem permissão para colocar explosivos a menos de %1m da Loja.", _minDist], 5] call mf_notify_client;
 				_handled = true;
 			};
 
@@ -32,7 +32,7 @@ if (_unit == player && (_showWindow || _menuOpen)) then
 			if !(_nearbyMissions isEqualTo []) exitWith
 			{
 				playSound "FD_CP_Not_Clear_F";
-				[format ["You are not allowed to place explosives within %1m of a mission spawn.", _minDist], 5] call mf_notify_client;
+				[format ["Você não tem permissão para colocar explosivos a menos de %1m de locais onde nascem missões.", _minDist], 5] call mf_notify_client;
 				_handled = true;
 			};
 
@@ -41,7 +41,7 @@ if (_unit == player && (_showWindow || _menuOpen)) then
 			if !(_nearbyParking isEqualTo []) exitWith
 			{
 				playSound "FD_CP_Not_Clear_F";
-				[format ["You are not allowed to place explosives within %1m of a parking location.", _minDist], 5] call mf_notify_client;
+				[format ["Você não tem permissão para colocar explosivos a menos de %1m de uma garagem virtual.", _minDist], 5] call mf_notify_client;
 				_handled = true;
 			};
 
@@ -50,7 +50,7 @@ if (_unit == player && (_showWindow || _menuOpen)) then
 			if !(_nearbyStorage isEqualTo []) exitWith
 			{
 				playSound "FD_CP_Not_Clear_F";
-				[format ["You are not allowed to place explosives within %1m of a storage location.", _minDist], 5] call mf_notify_client;
+				[format ["Você não tem permissão para colocar explosivos a menos de %1m de um armário virtual.", _minDist], 5] call mf_notify_client;
 				_handled = true;
 			};
 		};
@@ -58,7 +58,7 @@ if (_unit == player && (_showWindow || _menuOpen)) then
 		case (_action == "DisAssemble" && {unitIsUAV _target && !((_target getVariable ["ownerUID",""]) in ["", getPlayerUID player])}):
 		{
 			playSound "FD_CP_Not_Clear_F";
-			["You are not allowed to disassemble other players' drones.", 5] call mf_notify_client;
+			["Você não tem permissão para desmontar drones de outros jogadores.", 5] call mf_notify_client;
 			_handled = true;
 		};
 

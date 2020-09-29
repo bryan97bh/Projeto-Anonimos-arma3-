@@ -5,7 +5,7 @@
 //@file Name: init.sqf
 //@file Author: [404] Deadbeat
 //@file Created: 20/11/2012 05:19
-diag_log format["Message %1",messageSystem];
+diag_log format["Mensagem %1",messageSystem];
 
 _hint = messageSystem;
 if (_hint isEqualType "") then { _hint = parseText _hint };

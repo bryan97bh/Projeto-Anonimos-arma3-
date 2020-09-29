@@ -18,11 +18,11 @@ switch (_type) do
 		{
 			if (isStreamFriendlyUIEnabled) then
 			{
-				_msg = "You have been invited<br/>to join a group";
+				_msg = "Você foi convidado<br/>para entrar em um grupo";
 			}
 			else
 			{
-				_msg = ([name _sender] call fn_encodeText) + "<br/>sent you a group invite";
+				_msg = ([name _sender] call fn_encodeText) + "<br/>enviou um convite para o grupo";
 			};
 
 			["GroupInvite", [_msg]] call BIS_fnc_showNotification;

@@ -9,9 +9,9 @@
 //@file Argument: [_netting] the (object that is a) camo net to check if its packable
 //@file Argument: [] automatically find the closest camo net to check.
 
-#define ERR_NO_TARGET "You are not close enough to any Camouflage Netting"
-#define ERR_TOO_FAR_AWAY "You are too far away from the Camouflage Netting"
-#define ERR_ALREADY_HAVE "You can not carry any more Camouflage Netting"
+#define ERR_NO_TARGET "Você não está perto o suficiente de qualquer rede de camuflagem"
+#define ERR_TOO_FAR_AWAY "Você está muito longe da rede de camuflagem"
+#define ERR_ALREADY_HAVE "Você não pode carregar mais nenhuma rede de camuflagem"
 private ["_netting", "_error"];
 _netting = objNull;
 

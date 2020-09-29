@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=58;
+		nextID=60;
 	};
 	class Camera
 	{
-		pos[]={14519.253,70.082336,16287.54};
-		dir[]={-0.46633378,-0.57742894,0.67016321};
-		up[]={-0.32981262,0.81643975,0.47396988};
-		aside[]={0.82083124,1.6298145e-008,0.57117671};
+		pos[]={8375.2393,38.839371,10656.667};
+		dir[]={-0.63181257,-0.408777,0.65858006};
+		up[]={-0.28299421,0.91263103,0.29498386};
+		aside[]={0.72162294,6.4028427e-008,0.69229352};
 	};
 };
 binarizationWanted=0;
@@ -1774,12 +1774,11 @@ class Mission
 		class Item82
 		{
 			dataType="Marker";
-			position[]={8368.5674,13.81883,10719.636};
+			position[]={8350.4863,13.724416,10700.377};
 			name="Mission_19";
 			type="Empty";
 			colorName="ColorOrange";
 			id=261;
-			atlOffset=-9.5367432e-007;
 		};
 		class Item83
 		{
@@ -3442,7 +3441,7 @@ class Mission
 						angles[]={0,4.7370753,0};
 					};
 					side="Civilian";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 						init="[this] spawn A3W_fnc_setupStoreNPC";
@@ -3450,14 +3449,14 @@ class Mission
 					};
 					id=475;
 					type="C_man_1_1_F";
-					atlOffset=0.090185165;
+					atlOffset=0.38153219;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=477;
-			atlOffset=0.090185165;
+			atlOffset=0.38153219;
 		};
 		class Item220
 		{
@@ -9792,7 +9791,7 @@ class Mission
 			};
 			id=1282;
 			type="Land_Billboard_F";
-			atlOffset=3.1810322;
+			atlOffset=6.7364712;
 		};
 		class Item509
 		{
