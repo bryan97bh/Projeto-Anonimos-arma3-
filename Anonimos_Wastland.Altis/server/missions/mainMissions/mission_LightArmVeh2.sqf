@@ -1,10 +1,5 @@
-// ******************************************************************************************
-// * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
-// ******************************************************************************************
-//	@file Version: 1.0
-//	@file Name: mission_LightArmVeh.sqf
-//	@file Author: [404] Deadbeat, [404] Costlyy, AgentRev
-//	@file Created: 08/12/2012 15:19
+//	@file Author: Bryan /  matar e destruir vencer pelo brasil 
+//	@file Created: 19/07/2020
 
 if (!isServer) exitwith {};
 #include "mainMissionDefines.sqf";

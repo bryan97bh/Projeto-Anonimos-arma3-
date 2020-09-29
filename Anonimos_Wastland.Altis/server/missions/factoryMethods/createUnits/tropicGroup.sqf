@@ -62,13 +62,14 @@ for "_i" from 1 to _nbUnits do
 		case ((_i + 5) % 7 == 0):
 		{
 			_unit forceAddUniform "U_B_T_Soldier_F";
-			_unit addBackpack "B_AssaultPack_tna_F";
+			_unit addBackpack "B_ViperLightHarness_oli_F";
 			_unit addWeapon "arifle_MXC_khk_F";
+			_unit addPrimaryWeaponItem "muzzle_snds_H_khk_F";
 			_unit addPrimaryWeaponItem "optic_Holosight_khk_F";
-			_unit addMagazine "Titan_AT";
-			_unit addWeapon "launch_B_Titan_short_tna_F";
-			_unit addMagazine "Titan_AT";
-			_unit addMagazine "Titan_AT";
+			_unit addMagazine "MRAWS_HEAT_F";
+			_unit addWeapon "launch_MRAWS_green_rail_F";
+			_unit addMagazine "MRAWS_HE_F";
+			_unit addMagazine "MRAWS_HEAT55_F";
 			for "_i" from 1 to 3 do {_unit addItem "30Rnd_65x39_caseless_mag_Tracer";};
 		};
 		// AA every 6 units

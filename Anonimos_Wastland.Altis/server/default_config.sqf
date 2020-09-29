@@ -30,7 +30,7 @@ A3W_headshotNoRevive = 0;          // BROKEN - Instant death on fatal headshot b
 
 // Artillery settings
 A3W_artilleryStrike = 1;           // Availability of Artillery Strike item (0 = no, 1 = yes)
-A3W_artilleryShells = 15;          // Number of shells per strike
+A3W_artilleryShells = 20;          // Number of shells per strike
 A3W_artilleryRadius = 50;          // Strike radius in meters within which the shells will randomly hit
 A3W_artilleryCooldown = 60*60;     // Cooldown in seconds between strike uses per individual player - resets on server restart
 A3W_artilleryCrateOdds = 1/10;     // Odds of finding one Artillery Strike in a mission crate (0.0 to 1.0)
@@ -64,7 +64,7 @@ A3W_fastMovementLoopTime = 1;      // Number of seconds before loop check
 A3W_showGunStoreStatus = 1;        // Show enemy and friendly presence at gunstores on map (0 = no, 1 = yes)
 A3W_gunStoreIntruderWarning = 1;   // Warn players in gunstore areas of enemy intruders (0 = no, 1 = yes)
 A3W_remoteBombStoreRadius = 75;    // Prevent players from placing any kind of explosive on the ground within this distance from any store (0 = disabled)
-A3W_poiObjLockDistance = 100;      // Prevent players from locking objects within this distance from points of interest (stores & mission spawns)
+A3W_poiObjLockDistance = 200;      // Prevent players from locking objects within this distance from points of interest (stores & mission spawns)
 A3W_vehiclePurchaseCooldown = 60;  // Number of seconds to wait before allowing someone to purchase another vehicle, don't bother setting it too high because it can be bypassed by rejoining
 
 // ATM settings
@@ -84,7 +84,7 @@ A3W_bountyFee = 50;
 A3W_bountyKillsLifetime = 3*24;
 
 // Persistence settings
-A3W_savingMethod = "profile";      // Method used for saving data ("profile", "iniDB", "extdb")
+A3W_savingMethod = "extdb";      // Method used for saving data ("profile", "iniDB", "extdb")
 A3W_playerSaving = 1;              // Save player data like position, health, inventory, etc. (0 = no, 1 = yes)
 A3W_moneySaving = 1;               // If playerSaving = 1, save player money amount (0 = no, 1 = yes)
 A3W_playerStatsGlobal = 0;         // If playerSaving = 1 and savingMethod = "extdb", players' stats on the scoreboard will be their all-time global values from all servers of your database (0 = no, 1 = yes)
@@ -176,22 +176,22 @@ A3W_missionsQuantity = 6;          // Number of missions running at the same tim
 A3W_heliPatrolMissions = 1;        // Enable missions involving flying helicopters piloted by AI (0 = no, 1 = yes)
 A3W_underWaterMissions = 1;        // Enable underwater missions which require diving gear (0 = no, 1 = yes)
 //##############################################################################################################################//
-A3W_mainMissionDelay = 1*60;      // Time in seconds between Main Missions
+A3W_mainMissionDelay = 10*60;      // Time in seconds between Main Missions
 A3W_mainMissionTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
 
-A3W_sideMissionDelay = 1*60;       // Time in seconds between Side Missions
-A3W_sideMissionTimeout = 45*60;    // Time in seconds that a Side Mission will run for, unless completed
+A3W_sideMissionDelay = 5*60;       // Time in seconds between Side Missions
+A3W_sideMissionTimeout = 60*60;    // Time in seconds that a Side Mission will run for, unless completed
 
-A3W_moneyMissionDelay = 1*60;     // Time in seconds between Money Missions
+A3W_moneyMissionDelay = 15*60;     // Time in seconds between Money Missions
 A3W_moneyMissionTimeout = 60*60;   // Time in seconds that a Money Mission will run for, unless completed
 
-A3W_principalMissionsDelay = 1*60;      // Time in seconds between Main Missions
+A3W_principalMissionsDelay = 10*60;      // Time in seconds between Main Missions
 A3W_principalMissionsTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
 
-A3W_hostileairMissionDelay = 1*60;      // Time in seconds between Main Missions
+A3W_hostileairMissionDelay = 15*60;      // Time in seconds between Main Missions
 A3W_hostileairMissionTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
 
-A3W_aquaticMissionDelay = 1*60;      // Time in seconds between Main Missions
+A3W_aquaticMissionDelay = 15*60;      // Time in seconds between Main Missions
 A3W_aquaticMissionTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
 //###############################################################################################################################//
 A3W_hackedMissionDlSize = 165072;	// File size in Kilobytles (~1Mbps dl Rate)

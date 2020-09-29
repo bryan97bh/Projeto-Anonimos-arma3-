@@ -12,39 +12,41 @@ disableSerialization;
 
 private ["_start","_panelOptions","_displayAdmin","_adminSelect"];
 _uid = getPlayerUID player;
-if ([_uid, 3] call isAdmin) then {
+if ([_uid, 3] call isAdmin) then
+ {
 	_start = createDialog "AdminMenu";
-
 	_displayAdmin = uiNamespace getVariable "AdminMenu";
 	_adminSelect = _displayAdmin displayCtrl adminMenu_option;
 
-	_panelOptions = ["Target Player Menu (Spectate/Unlock/TP/Kick/kill/Remove Cash)",
-					"Map Markers Log (This only works when in game)",
-					"Toggle Vehicle Markers",
-					"Toggle Map ESP",
-					"Toggle ESP",
-					"Toggle God-mode",
-					"Toggle Vehicle God-mode",
-					"Toggle Invisible-mode",
-					"Map Teleport",
-	                "Unlock all Objects 60m around you",
-	                "Delete all Unlocked Objects 60m around you",
-	                "Relock all Objects 60m around you",
-	                "Add 10k Money to self",
-	                "Vehicle Management (Check/delete hacked vehicles)",
-	                "Object Search",
-	                "Heal Self",
-	                "Delete Cursor Target",
-	                "Repair Cursor Target",
-	                "Artillery Strike on map target",
-	                "Toggle Rocket Bullets",
-	                "Load Gun Store Menu",
-	                "Load Gen Store Menu",
-	                "Load ATM Menu",
-	                "Toggle AI ESP",
-	                "Toggle Terrain Height",
-	                "BIS FreeRoam Cam (Pres ESCAPE to exit!! Do NOT press F1)",
-	                "Unlimited Ammo"                
+	_panelOptions = 
+	[				
+					"Menu do Jogador para alvos (Observar/Destravar/TP/expulsar/matar/Remover dinheiro)",
+					"Registro de marcação no mapa (Isso só funciona quando em jogo)",
+					"Alternar Marcações de Veículos",
+					"Alternar Mapa ESP",
+					"Alternar ESP",
+					"Ativar/desativar Modo Deus",
+					"Ativar/desativar Modo Deus no veículo",
+					"Ativar/desativar modo invisivel",
+					"Teleportar no mapa",
+	                "Destravar todos os objetos no raio de 60m de você",
+	                "Deletar todos objetos destravados no raio de 60m de você",
+	                "Retravar todos objetos no raio de 60m de você",
+	                "Adicionar R$10 mil na mão",
+	                "Gestão de Veículos (Checar/deletar veículos)",
+	                "Procurar Objeto",
+	                "Curar-se completamente",
+	                "Deletar alvo apontado pelo cursor do mouse",
+	                "Reparar alvo apontado pelo cursor do mouse",
+	                "Suporte de Artilharia marcado no mapa",
+	                "Ativar/desativar balas de foguetes",
+	                "Carregar Menu Loja de Armas",
+	                "Carregar Menu Loja Geral",
+	                "Carregar Menu ATM",
+	                "Alternar AI ESP",
+	                "Alternar altura do terreno",
+	                "Câmera Livre (Precione ESCAPE para sair!! NÃO precione F1)",
+	                "Munição ilimitada"                
 	];
 
 	{

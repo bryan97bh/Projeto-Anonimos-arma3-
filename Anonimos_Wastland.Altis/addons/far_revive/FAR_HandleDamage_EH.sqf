@@ -99,7 +99,7 @@ else
 	};
 };
 
-/*if (UNCONSCIOUS(_unit) && !_reviveReady) then
+if (UNCONSCIOUS(_unit) && !_reviveReady) then
 {
 	_headshotQueue = _unit getVariable "FAR_headshotHitPartEH_queued";
 
@@ -114,6 +114,6 @@ else
 
 		_unit setVariable ["FAR_headshotHitPartEH_queued", nil];
 	};
-};*/
+};
 
-//_damage
+_damage

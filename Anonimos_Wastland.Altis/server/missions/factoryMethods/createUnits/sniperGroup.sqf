@@ -59,14 +59,15 @@ for "_i" from 1 to _nbUnits do
 			_unit addVest "V_TacVest_brn";
 			_unit forceAddUniform "U_I_FullGhillie_ard";
 			_unit addBackpack "B_FieldPack_cbr";
-			for "_i" from 1 to 2 do {_unit addItemToUniform "10Rnd_Mk14_762x51_Mag";};
-			for "_i" from 1 to 3 do {_unit addItemToVest "10Rnd_Mk14_762x51_Mag";};
+			for "_i" from 1 to 2 do {_unit addItemToUniform "10Rnd_338_Mag";};
+			for "_i" from 1 to 3 do {_unit addItemToVest "10Rnd_338_Mag";};
 			for "_i" from 1 to 4 do {_unit addItemToBackpack "Titan_AT";};
 			_unit addMagazines ["SmokeShell", 2];
 			_unit addHeadgear "H_HelmetB_sand";
 			_unit addGoggles "G_Bandanna_khk";
-			_unit addWeapon "srifle_DMR_03_tan_F";
+			_unit addWeapon "srifle_DMR_02_sniper_F";
 			_unit addPrimaryWeaponItem "optic_KHS_old";
+			_unit addPrimaryWeaponItem "muzzle_snds_338_sand";
 			_unit addWeapon "launch_B_Titan_short_F";
 		};
 		// AA every 6 units
@@ -75,15 +76,15 @@ for "_i" from 1 to _nbUnits do
 			_unit addVest "V_TacVest_brn";
 			_unit forceAddUniform "U_B_FullGhillie_ard";
 			_unit addBackpack "B_FieldPack_cbr";
-			for "_i" from 1 to 2 do {_unit addItemToUniform "10Rnd_Mk14_762x51_Mag";};
-			for "_i" from 1 to 3 do {_unit addItemToVest "10Rnd_Mk14_762x51_Mag";};
+			for "_i" from 1 to 2 do {_unit addItemToUniform "10Rnd_93x64_DMR_05_Mag";};
+			for "_i" from 1 to 3 do {_unit addItemToVest "10Rnd_93x64_DMR_05_Mag";};
 			for "_i" from 1 to 2 do {_unit addItemToBackpack "Titan_AA";};
 			_unit addMagazines ["SmokeShell", 2];
 			_unit addHeadgear "H_HelmetB_sand";
 			_unit addGoggles "G_Bandanna_khk";
-			_unit addWeapon "srifle_DMR_03_multicam_F";
+			_unit addWeapon "srifle_DMR_05_hex_F";
 			_unit addPrimaryWeaponItem "optic_KHS_old";
-			_unit addPrimaryWeaponItem "muzzle_snds_B";
+			_unit addPrimaryWeaponItem "muzzle_snds_93mmg_tan";
 			_unit addWeapon "launch_B_Titan_F";
 		};
 		// Rifleman
@@ -94,12 +95,12 @@ for "_i" from 1 to _nbUnits do
 			{			
 			_unit addVest "V_TacVest_khk";
 			_unit forceAddUniform "U_I_FullGhillie_ard";
-			for "_i" from 1 to 2 do {_unit addItemToUniform "30Rnd_65x39_caseless_mag";};
-			for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_65x39_caseless_mag";};
+			for "_i" from 1 to 2 do {_unit addItemToUniform "10Rnd_Mk14_762x51_Mag";};
+			for "_i" from 1 to 3 do {_unit addItemToVest "10Rnd_Mk14_762x51_Mag";};
 			_unit addMagazines ["SmokeShellYellow", 1];
 			_unit addHeadgear "H_HelmetB_sand";
 			_unit addGoggles "G_Bandanna_khk";
-			_unit addWeapon "arifle_MXM_F";
+			_unit addWeapon "srifle_DMR_03_tan_F";
 			_unit addPrimaryWeaponItem "optic_NVS";
 
 			}

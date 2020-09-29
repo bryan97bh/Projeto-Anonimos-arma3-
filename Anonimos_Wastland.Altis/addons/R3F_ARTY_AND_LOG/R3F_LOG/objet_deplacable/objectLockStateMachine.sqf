@@ -10,11 +10,16 @@ if(R3F_LOG_mutex_local_verrou) exitWith {
 	player globalChat STR_R3F_LOG_mutex_action_en_cours;
 };
 
-private["_locking", "_object", "_lockState", "_lockDuration", "_stringEscapePercent", "_iteration", "_unlockDuration", "_totalDuration", "_poiDist", "_poiMarkers", "_checks", "_success"];
+private["_locking", "_object", "_lockState", "_lockDuration", "_stringEscapePercent", "_iteration", "_unlockDuration", "_totalDuration","_poiDist", "_poiMarkers", "_checks", "_success","_IsProtected","_IsAllowed"];
 
 _object = _this select 0;
 _lockState = _this select 3;
 
+_IsProtected = false;
+_IsAllowed = false;
+
+_baseradius = ["A3W_AJBaseRadius", 60] call getPublicVar;
+						
 _totalDuration = 0;
 _stringEscapePercent = "%";
 
@@ -26,7 +31,6 @@ switch (_lockState) do
 		_totalDuration = 5;
 		//_lockDuration = _totalDuration;
 		//_iteration = 0;
-
 		// Points of interest
 		_poiDist = ["A3W_poiObjLockDistance", 100] call getPublicVar;
 		_poiMarkers = allMapMarkers select {markerType _x == "Empty" && {[["GenStore","GunStore","VehStore","Mission_","ForestMission_","LandConvoy_","BaseBlocker_"], _x] call fn_startsWith}};
@@ -34,9 +38,22 @@ switch (_lockState) do
 		if ({(getPosASL player) vectorDistance (ATLtoASL getMarkerPos _x) < _poiDist} count _poiMarkers > 0) exitWith
 		{
 			playSound "FD_CP_Not_Clear_F";
-			[format ["You are not allowed to lock objects within %1m of stores and mission spawns", _poiDist], 5] call mf_notify_client;
+			[format ["Você não pode travar objetos a %1m de LOJAS ou lugares onde nascem missões!", _poiDist], 5] call mf_notify_client;
 			R3F_LOG_mutex_local_verrou = false;
 		};
+		
+		if ( _object iskindof "Land_Device_assembled_F" && 
+		{  //use lazy evaluation for performance reasons - see https://community.bistudio.com/wiki/a_%26%26_b
+		count (nearestobjects[player,["Land_Device_assembled_F"], (_baseradius * 2)]) != 1   // count =1 -> should only be the one base locker we are using 
+		}
+		) exitwith {
+			playSound "FD_CP_Not_Clear_F";
+			[format ["Você não pode colocar um TravaBase a uma distância de %1m de outros TravaBase!", (_baseradius * 2)], 5] call mf_notify_client;
+			R3F_LOG_mutex_local_verrou = false;
+			
+		
+		};
+
 
 		_checks =
 		{
@@ -44,18 +61,19 @@ switch (_lockState) do
 			_progress = _this select 0;
 			_object = _this select 1;
 			_failed = true;
-
+			
 			switch (true) do
 			{
 				case (!alive player): { _text = "" };
-				case (doCancelAction): { doCancelAction = false; _text = "Locking cancelled" };
-				case (vehicle player != player): { _text = "Action failed! You can't do this in a vehicle" };
-				case (!isNull (_object getVariable ["R3F_LOG_est_transporte_par", objNull])): { _text = "Action failed! Somebody moved the object" };
-				case (_object getVariable ["objectLocked", false]): { _text = "Somebody else locked it before you" };
+				case (doCancelAction): { doCancelAction = false; _text = "Travamento cancelado" };
+				case (vehicle player != player): { _text = "Ação falhou! Você não pode fazer isso em um veículo!" };
+				case (!isNull (_object getVariable ["R3F_LOG_est_transporte_par", objNull])): { _text = "Ação falhou! Alguém moveu o objeto!" };
+				case (_object getVariable ["objectLocked", false]): { _text = "Alguém travou antes de você!" };
+				case ([(["A3W_AJBaseRadius", 60] call getPublicVar)*2] call fn_checkBaseLock ): { _text = "Você não pode travar objetos perto de uma Base Travada" }; // Re Locker
 				default
 				{
 					_failed = false;
-					_text = format ["Locking %1%2 complete", floor (_progress * 100), "%"];
+					_text = format ["Travando %1%2 completo", floor (_progress * 100), "%"];
 				};
 			};
 
@@ -68,11 +86,15 @@ switch (_lockState) do
 		{
 			_object setVariable ["objectLocked", true, true];
 			_object setVariable ["ownerUID", getPlayerUID player, true];
+			
+			if (_object iskindof "Land_Device_assembled_F") then {
+			_object setVariable ["baseName", (format["%1's Base",name player]), true];
+			};
 
 			pvar_manualObjectSave = netId _object;
 			publicVariableServer "pvar_manualObjectSave";
 
-			["Object locked!", 5] call mf_notify_client;
+			["Objeto travado!", 5] call mf_notify_client;
 		};
 
 		R3F_LOG_mutex_local_verrou = false;
@@ -126,17 +148,19 @@ switch (_lockState) do
 			_object = _this select 1;
 			_failed = true;
 
+			
 			switch (true) do
 			{
 				case (!alive player): {};
-				case (doCancelAction): { doCancelAction = false; _text = "Unlocking cancelled" };
-				case (vehicle player != player): { _text = "Action failed! You can't do this in a vehicle" };
-				case (!isNull (_object getVariable ["R3F_LOG_est_transporte_par", objNull])): { _text = "Action failed! Somebody moved the object" };
-				case !(_object getVariable ["objectLocked", false]): { _text = "Somebody else unlocked it before you" };
+				case (doCancelAction): { doCancelAction = false; _text = "Destravamento cancelado" };
+				case (vehicle player != player): { _text = "Ação falhou! Você não pode fazer isso em um veículo!" };
+				case (!isNull (_object getVariable ["R3F_LOG_est_transporte_par", objNull])): { _text = "Ação falhou! Alguém moveu o objeto!" };
+				case !(_object getVariable ["objectLocked", false]): { _text = "Alguém travou antes de você!" };
+				case ([(["A3W_AJBaseRadius", 60] call getPublicVar)*2] call fn_checkBaseLock): { _text = "Você não pode travar objetos perto de uma Base Travada" }; 
 				default
 				{
 					_failed = false;
-					_text = format ["Unlocking %1%2 complete", floor (_progress * 100), "%"];
+					_text = format ["Destravamento %1%2 completo", floor (_progress * 100), "%"];
 				};
 			};
 
@@ -151,11 +175,12 @@ switch (_lockState) do
 			_object setVariable ["ownerUID", nil, true];
 			_object setVariable ["baseSaving_hoursAlive", nil, true];
 			_object setVariable ["baseSaving_spawningTime", nil, true];
+			_object setVariable ["lockDown", nil, true];
 
 			pvar_manualObjectSave = netId _object;
 			publicVariableServer "pvar_manualObjectSave";
 
-			["Object unlocked!", 5] call mf_notify_client;
+			["Objeto destravado!", 5] call mf_notify_client;
 		};
 
 		R3F_LOG_mutex_local_verrou = false;
@@ -197,11 +222,11 @@ switch (_lockState) do
 	};
 	default // This should not happen...
 	{
-		diag_log format["WASTELAND DEBUG: An error has occured in LockStateMachine.sqf. _lockState was unknown. _lockState actual: %1", _lockState];
+		diag_log format["WASTELAND DEBUG: Algum erro ocorreu no LockStateMachine.sqf. _lockState foi desconhecido. _lockState actual: %1", _lockState];
 	};
 };
 
 if (R3F_LOG_mutex_local_verrou) then {
 	R3F_LOG_mutex_local_verrou = false;
-	diag_log format["WASTELAND DEBUG: An error has occured in LockStateMachine.sqf. Mutex lock was not reset. Mutex lock state actual: %1", R3F_LOG_mutex_local_verrou];
+	diag_log format["WASTELAND DEBUG: Algum erro ocorreu no LockStateMachine.sqf. Mutex lock não foi reiniciado. Mutex lock estado atual: %1", R3F_LOG_mutex_local_verrou];
 };

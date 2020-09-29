@@ -2,7 +2,6 @@
 	@file Version: 0.1
 	@file Name: statusBar.sqf
 	@file  EpochMod StatusBar Port for Wasteland by CRE4MPIE
-	@file: Modified by wiking.at[AJ] for Armajunkies Servers
 */
 
 waitUntil {!(isNull (findDisplay 46))};

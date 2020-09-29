@@ -66,6 +66,7 @@ for "_i" from 1 to _nbUnits do
 			_unit addWeapon "launch_O_Titan_short_F";
 			_unit addMagazine "Titan_AT";
 			_unit addMagazine "Titan_AT";
+			_unit addPrimaryWeaponItem "muzzle_snds_B";
 		};
 		// AA every 6 units
 		case (_i % 7 == 0):

@@ -83,7 +83,7 @@ _successExec =
 		_cash1 = createVehicle ["Land_Money_F",[(_lastPos select 0), (_lastPos select 1) - 5,0],[], 0, "NONE"];
 		_cash1 setPos ([_lastPos, [[2 + random 3,0,0], random 360] call BIS_fnc_rotateVector2D] call BIS_fnc_vectorAdd);
 		_cash1 setDir random 360;
-		_cash1 setVariable ["cmoney",500,true];
+		_cash1 setVariable ["cmoney",550,true];
 		_cash1 setVariable ["owner", "world", true];
 	};
   

@@ -1,9 +1,5 @@
-// ******************************************************************************************
-// * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
-// ******************************************************************************************
-//	@file Name: mission_TownInvasion.sqf
-//	@file Author: [404] Deadbeat, [404] Costlyy, JoSchaap, AgentRev, Zenophon
-//  @file Information: JoSchaap's Lite version of 'Infantry Occupy House' Original was made by: Zenophon
+//	@file Author: Bryan /  matar e destruir vencer pelo brasil 
+//	@file Created: 19/07/2020
 
 if (!isServer) exitwith {};
 

@@ -62,10 +62,11 @@ for "_i" from 1 to _nbUnits do
 			_unit addUniform "U_B_GEN_Commander_F";
 			_unit addBackpack "B_ViperLightHarness_blk_F";
 			_unit addWeapon "arifle_SPAR_01_blk_F";
-			_unit addMagazine "Titan_AT";
-			_unit addWeapon "launch_B_Titan_short_tna_F";
-			_unit addMagazine "Titan_AT";
-			_unit addMagazine "Titan_AT";
+			_unit addPrimaryWeaponItem "muzzle_snds_M";
+			_unit addMagazine "NLAW_F";
+			_unit addWeapon "launch_NLAW_F";
+			_unit addMagazine "NLAW_F";
+			_unit addMagazine "NLAW_F";
 		};
 		// AA every 6 units
 		case (_i % 7 == 0):
@@ -75,7 +76,7 @@ for "_i" from 1 to _nbUnits do
 			_unit addWeapon "arifle_SPAR_01_blk_F";
 			_unit addPrimaryWeaponItem "muzzle_snds_M";
 			_unit addMagazine "Titan_AA";
-			_unit addWeapon "launch_Titan_F";
+			_unit addWeapon "launch_I_Titan_olive_F";
 			_unit addMagazine "Titan_AA";
 			_unit addMagazine "Titan_AA";
 		};

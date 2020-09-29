@@ -2,8 +2,8 @@
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Name: mission_HostileJetFormation.sqf
-//	@file Author: Bryan matar e destruir vencer pelo brasil 
-
+//	@file Author: Bryan / matar e destruir vencer pelo brasil 
+//	@file Created: 19/07/2020
 if (!isServer) exitwith {};
 #include "hostileairMissionDefines.sqf"
 

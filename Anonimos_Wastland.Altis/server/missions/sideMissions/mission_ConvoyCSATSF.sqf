@@ -1,13 +1,13 @@
 // ******************************************************************************************
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
-//	@file Name: mission_DrugsRunners.sqf
-//	@file Author: Staynex
+//	@file modified : Bryan /  matar e destruir vencer pelo brasil 
+//	@file Created: 19/07/2020
 
 if (!isServer) exitwith {};
 #include "sideMissionDefines.sqf";
 
-private ["_convoyVeh", "_veh1", "_veh2", "_createVehicle", "_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_numWaypoints", "_drop_item", "_drugpilerandomizer", "_drugpile", "_box1", "_box2"];
+private ["_convoyVeh", "_veh1", "_veh2", "_createVehicle", "_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_numWaypoints", "_drop_item", "_drugpilerandomizer", "_drugpile", "_box1", "_box2" ,"_cal1"];
 
 _setupVars =
 {
@@ -151,27 +151,12 @@ _successExec =
 	_box2 setDir random 360;
 	[_box2, ["US", "OTHER"] call BIS_fnc_selectRandom] call fn_refillbox;
     
-    
+	_cal1 = createVehicle ["I_HMG_01_F", _lastPos, [], 2, "None"];
+	_cal1 setDir random 360;
+
 	//{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2];
-    { _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2];
+    { _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2 , _cal1];
     
-    
-    /*//Spawn some drugs ;) As Staynex hates drugs :P
-	_drugpilerandomizer = [7,8,9];
-	_drugpile = _drugpilerandomizer call BIS_fnc_SelectRandom;
-	
-	for "_i" from 1 to _drugpile do 
-	{
-	  private["_item"];
-	  _item = [
-	          ["lsd", "Land_WaterPurificationTablets_F"],
-	          ["marijuana", "Land_VitaminBottle_F"],
-	          ["cocaine","Land_PowderedMilk_F"],
-	          ["heroin", "Land_PainKillers_F"]
-	        ] call BIS_fnc_selectRandom;
-	  [_item, _lastPos] call _drop_item;
-	};*/
-	
 	_successHintMessage = "A patrulha foi eliminada, pegue o pacote e saia dai";
 };
 

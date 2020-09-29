@@ -24,7 +24,7 @@ diag_log format ["Servidor Anônimos Brasil - %1 Missão%2 começou: %3", MISSIO
 _missionTimeout = MISSION_PROC_TIMEOUT;
 
 //aj  -only run missions under specific conditions
-if ( _missionType == "Satellite Uplink" && (count allPlayers) < 20 ) exitWith {};
+if ( _missionType == "Satellite Uplink" && (count allPlayers) < 15 ) exitWith {};
 
 
 

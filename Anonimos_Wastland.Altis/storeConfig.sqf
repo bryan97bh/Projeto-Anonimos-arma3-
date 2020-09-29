@@ -247,34 +247,43 @@ allGunStoreFirearms = compileFinal str (call pistolArray + call smgArray + call 
 
 staticGunsArray = compileFinal str
 [
-	// ["Vehicle Ammo Crate", "Box_NATO_AmmoVeh_F", 2500],
-	//["Static Titan AT 4|Munições", "B_static_AT_F", 3000], // Static launchers only have 4 ammo, hence the low price
-	//["Static Titan AT 4|Munições", "O_static_AT_F", 3000],
-	["Lança Míssel Antitanque Titan AA 4|Munições", "I_static_AT_F", 8000],
-	//["Lança Míssel Anti-aéreo Titan AA 4|Munições", "B_static_AA_F", 3000],
-	//["Lança Míssel Anti-aéreo Titan AA 4|Munições", "O_static_AA_F", 3000],
-	["Lança Míssel Antiaéreo Titan AA 4|Munições", "I_static_AA_F", 6000],
-	//["Tripé Baixo+Browning .50 Estática", "B_HMG_01_F", 3000],
-	//["Tripé Baixo+Browning .50 Estática", "O_HMG_01_F", 3000],
+    //["Vehicle Ammo Crate", "Box_NATO_AmmoVeh_F", 2500],
+	
+	["Lança Míssel Antitanque Titan AT 4|Munições", "B_static_AT_F", 6500], // Static launchers only have 4 ammo, hence the low price
+	["Lança Míssel Antitanque Titan AT 4|Munições", "O_static_AT_F", 6500],
+	["Lança Míssel Antitanque Titan AT 4|Munições", "I_static_AT_F", 6500],
+	
+	["Lança Míssel Antiaéreo Titan AA 4|Munições", "B_static_AA_F", 10000],
+	["Lança Míssel Antiaéreo Titan AA 4|Munições", "O_static_AA_F", 10000],
+	["Lança Míssel Antiaéreo Titan AA 4|Munições", "I_static_AA_F", 10000],
+	
+	["Tripé Baixo+Browning .50 Estática", "B_HMG_01_F", 3000],
+	["Tripé Baixo+Browning .50 Estática", "O_HMG_01_F", 3000],
 	["Tripé Baixo+Browning .50 Estática", "I_HMG_01_F", 3000],
-	// ["Mk30A HMG .50 Sentry (NATO)", "B_HMG_01_A_F", 5000], // "A" = Autonomous = Overpowered
-	// ["Mk30A HMG .50 Sentry (CSAT)", "O_HMG_01_A_F", 5000],
-	// ["Mk30A HMG .50 Sentry (AAF)", "I_HMG_01_A_F", 5000],
-	//["Tripé Alto+Browning .50 Estática", "B_HMG_01_high_F", 3000],
-	//["Tripé Alto+Browning .50 Estática", "O_HMG_01_high_F", 3000],
+	
+	//["Mk30A HMG .50 Sentry (NATO)", "B_HMG_01_A_F", 5000], // "A" = Autonomous = Overpowered
+	//["Mk30A HMG .50 Sentry (CSAT)", "O_HMG_01_A_F", 5000],
+	//["Mk30A HMG .50 Sentry (AAF)", "I_HMG_01_A_F", 5000],
+	
+	["Tripé Alto+Browning .50 Estática", "B_HMG_01_high_F", 3500],
+	["Tripé Alto+Browning .50 Estática", "O_HMG_01_high_F", 3500],
 	["Tripé Alto+Browning .50 Estática", "I_HMG_01_high_F", 3500],
-	//["Tripé Baixo+Lança Granadas 20mm Estática", "B_GMG_01_F", 5000],
-	//["Mk32 GMG 20mm Tripé Baixo (CSAT)", "O_GMG_01_F", 5000],
-	["Tripé Baixo+Lança Granadas 20mm Estática", "I_GMG_01_F", 7500],
+	
+	["Tripé Baixo+Lança Granadas 20mm Estática", "B_GMG_01_F", 5000],
+	["Tripé Baixo+Lança Granadas 20mm Estática", "O_GMG_01_F", 5000],
+	["Tripé Baixo+Lança Granadas 20mm Estática", "I_GMG_01_F", 5000],
+	
 	// ["Mk32A GMG 20mm Sentry (NATO)", "B_GMG_01_A_F", 10000], // "A" = Autonomous = Overpowered
 	// ["Mk32A GMG 20mm Sentry (CSAT)", "O_GMG_01_A_F", 10000],
 	// ["Mk32A GMG 20mm Sentry (AAF)", "I_GMG_01_A_F", 10000],
-	//["Tripé Alto+Lança Granadas 20mm Estático", "B_GMG_01_high_F", 5000],
-	//["Tripé Alto+Lança Granadas 20mm Estático", "O_GMG_01_high_F", 5000],
-	["Tripé Alto+Lança Granadas 20mm Estático", "I_GMG_01_high_F", 8500],
-	//["Morteiro 80mm Mk6 (NATO)", "B_Mortar_01_F", 12500],
-	//["Morteiro 80mm MK6 (CSAT)", "O_Mortar_01_F", 12500],
-	["Morteiro 80mm MK6 (AAF)", "I_Mortar_01_F", 15000]
+	
+	["Tripé Alto+Lança Granadas 20mm Estático", "B_GMG_01_high_F", 5500],
+	["Tripé Alto+Lança Granadas 20mm Estático", "O_GMG_01_high_F", 5500],
+	["Tripé Alto+Lança Granadas 20mm Estático", "I_GMG_01_high_F", 5500],
+	
+	["Morteiro 80mm Mk6 (NATO)", "B_Mortar_01_F", 12500],
+	["Morteiro 80mm MK6 (CSAT)", "O_Mortar_01_F", 12500],
+	["Morteiro 80mm MK6 (AAF)", "I_Mortar_01_F", 12500]
 ];
 
 throwputArray = compileFinal str
@@ -440,31 +449,31 @@ accessoriesArray = compileFinal str
 [
 	["Supressor 9mm", "muzzle_snds_L", 150, "item"],
 	["Supressor .45 ACP", "muzzle_snds_acp", 175, "item"],
-    //["Supressor 5.56mm|Preto|", "muzzle_snds_M", 500, "item"],
-    //["Supressor 5.56mm|Khaki", "muzzle_snds_m_khk_F", 500, "item", "noDLC"],
-    //["Supressor 5.56mm|Areia|", "muzzle_snds_m_snd_F", 500, "item", "noDLC"],
+    //["Supressor 5.56mm|Preto|", "muzzle_snds_M", 550, "item"],
+    //["Supressor 5.56mm|Khaki", "muzzle_snds_m_khk_F", 550, "item", "noDLC"],
+    //["Supressor 5.56mm|Areia|", "muzzle_snds_m_snd_F", 550, "item", "noDLC"],
 	//["Supressor 5.7mm", "muzzle_snds_570", 575, "item"],
-    //["Supressor 5.8mm|Verde Hex|" , "muzzle_snds_58_ghex_F", 500, "item"],
-	//["Supressor 5.8mm|Hex|", "muzzle_snds_58_hex_F", 500, "item"],
+    //["Supressor 5.8mm|Verde Hex|" , "muzzle_snds_58_ghex_F", 590, "item"],
+	//["Supressor 5.8mm|Hex|", "muzzle_snds_58_hex_F", 590, "item"],
     //["Supressor 6.5mm|Preto|", "muzzle_snds_H", 600, "item"],
-    //["Supressor 6.5mm|Khaki|", "muzzle_snds_H_khk_F", 600, "item", "noDLC"],
-    //["Supressor 6.5mm|Areia|", "muzzle_snds_H_snd_F", 600, "item", "noDLC"],
-    //["Supressor MK200 LMG|Preto|", "muzzle_snds_H_MG_blk_F", 700, "item", "noDLC"],
-    //["Supressor MK200 LMG|Khaki|", "muzzle_snds_H_MG_khk_F", 700, "item", "noDLC"],
-    //["Supressor MK200 LMG|Areia|", "muzzle_snds_H_MG", 700, "item"],
-    //["Supressor Stealth 6.5mm|Preto|", "muzzle_snds_65_TI_blk_F", 600, "item"],
-    //["Supressor Stealth 6.5mm|Verde Hex|", "muzzle_snds_65_TI_ghex_F", 600, "item"],
-    //["Supressor Stealth 6.5mm|Hex|", "muzzle_snds_65_TI_hex_F", 600, "item"],
-    //["Supressor 7.62mm|Preto|", "muzzle_snds_B", 700, "item"],
-    //["Suppressor 7.62mm|Khaki|", "muzzle_snds_B_khk_F", 700, "item", "noDLC"],
-    //["Supressor 7.62mm|Areia|", "muzzle_snds_B_snd_F", 700, "item", "noDLC"],
-	//["Supressor 7.62mm|Árido|", "muzzle_snds_B_arid_F", 700, "item", "noDLC"],
-	//["Supressor 7.62mm|Exuberante|", "muzzle_snds_B_lush_F", 700, "item", "noDLC"],
-	//["Supressor .338", "muzzle_snds_338_black", 900, "item"],
-	//["Supressor .338|Verde|", "muzzle_snds_338_green", 900, "item"],
-	//["Supressor .338|Areia|", "muzzle_snds_338_sand", 900, "item"],
-	//["Supressor 9.3mm", "muzzle_snds_93mmg", 900, "item"],
-	//["Supressor 9.3mm (Tan)", "muzzle_snds_93mmg_tan", 900, "item"],
+    //["Supressor 6.5mm|Khaki|", "muzzle_snds_H_khk_F", 650, "item", "noDLC"],
+    //["Supressor 6.5mm|Areia|", "muzzle_snds_H_snd_F", 650, "item", "noDLC"],
+    //["Supressor MK200 LMG|Preto|", "muzzle_snds_H_MG_blk_F", 750, "item", "noDLC"],
+    //["Supressor MK200 LMG|Khaki|", "muzzle_snds_H_MG_khk_F", 750, "item", "noDLC"],
+    //["Supressor MK200 LMG|Areia|", "muzzle_snds_H_MG", 750, "item"],
+    //["Supressor Stealth 6.5mm|Preto|", "muzzle_snds_65_TI_blk_F", 650, "item"],
+    //["Supressor Stealth 6.5mm|Verde Hex|", "muzzle_snds_65_TI_ghex_F", 650, "item"],
+    //["Supressor Stealth 6.5mm|Hex|", "muzzle_snds_65_TI_hex_F", 650, "item"],
+    //["Supressor 7.62mm|Preto|", "muzzle_snds_B", 750, "item"],
+    //["Suppressor 7.62mm|Khaki|", "muzzle_snds_B_khk_F", 750, "item", "noDLC"],
+    //["Supressor 7.62mm|Areia|", "muzzle_snds_B_snd_F", 750, "item", "noDLC"],
+	//["Supressor 7.62mm|Árido|", "muzzle_snds_B_arid_F", 750, "item", "noDLC"],
+	//["Supressor 7.62mm|Exuberante|", "muzzle_snds_B_lush_F", 750, "item", "noDLC"],
+	//["Supressor .338", "muzzle_snds_338_black", 1000, "item"],
+	//["Supressor .338|Verde|", "muzzle_snds_338_green", 1000, "item"],
+	//["Supressor .338|Areia|", "muzzle_snds_338_sand", 1000, "item"],
+	//["Supressor 9.3mm", "muzzle_snds_93mmg", 1000, "item"],
+	//["Supressor 9.3mm (Tan)", "muzzle_snds_93mmg_tan", 1000, "item"],
 	["Bipé|Preto| (NATO)", "bipod_01_F_blk", 100, "item", "noDLC"],
 	["Bipé|Preto| (CSAT)", "bipod_02_F_blk", 100, "item", "noDLC"],
 	["Bipé|Preto| (AAF)", "bipod_03_F_blk", 100, "item", "noDLC"],
@@ -2015,17 +2024,37 @@ colorsArray = compileFinal str
 customPlayerItems = compileFinal str
 [
 	["Suporte de Artilharia", "artillery", "", "client\icons\tablet.paa", 100000, 10000],
-	["Garrafa d`agua", "water", localize "STR_WL_ShopDescriptions_Water", "client\icons\waterbottle.paa", 30, 15],
-	["Lata de Comida", "cannedfood", localize "STR_WL_ShopDescriptions_CanFood", "client\icons\cannedfood.paa", 30, 15],
+	["Garrafa d`agua", "water", localize "STR_WL_ShopDescriptions_Water", "client\icons\waterbottle.paa", 100, 75],
+	["Lata de Comida", "cannedfood", localize "STR_WL_ShopDescriptions_CanFood", "client\icons\cannedfood.paa", 100, 75],
 	["Kit de Reparo", "repairkit", localize "STR_WL_ShopDescriptions_RepairKit", "client\icons\briefcase.paa", 500, 250],
 	["Galão Combustível (Cheio)", "jerrycanfull", localize "STR_WL_ShopDescriptions_fuelFull", "client\icons\jerrycan.paa", 150, 75],
 	["Galão Combustível (Vazio)", "jerrycanempty", localize "STR_WL_ShopDescriptions_fuelEmpty", "client\icons\jerrycan.paa", 50, 25],
 	["Spawn Beacon", "spawnbeacon", localize "STR_WL_ShopDescriptions_spawnBeacon", "client\icons\spawnbeacon.paa", 9500, 750],
 	["Tenda Camuflada", "camonet", localize "STR_WL_ShopDescriptions_Camo", "client\icons\camonet.paa", 200, 100],
 	["Cifão de Combustível", "syphonhose", localize "STR_WL_ShopDescriptions_SyphonHose", "client\icons\syphonhose.paa", 200, 100],
-	["TravaCarro", "pinlock", localize "STR_WL_ShopDescriptions_Pinlock", "client\icons\keypad.paa", 250, 50]
-	//["Energy Drink", "energydrink", localize "STR_WL_ShopDescriptions_Energy_Drink", "client\icons\energydrink.paa", 100, 50],
+	["TravaCarro", "pinlock", localize "STR_WL_ShopDescriptions_Pinlock", "client\icons\keypad.paa", 250, 50],
+	["Energy Drink", "energydrink", localize "STR_WL_ShopDescriptions_Energy_Drink", "client\icons\energydrink.paa", 10000, 5000],
+	["LSD", "lsd", localize "STR_WL_ShopDescriptions_LSD", "client\icons\lsd.paa", 1500, 1000],
+	["Marijuana", "marijuana", localize "STR_WL_ShopDescriptions_Marijuana", "client\icons\marijuana.paa", 1500, 1000],
+	["Cocaine", "cocaine", localize "STR_WL_ShopDescriptions_Cocaine", "client\icons\cocaine.paa", 1500, 1000],
+	["Heroin", "heroin", localize "STR_WL_ShopDescriptions_Heroin", "client\icons\heroin.paa", 1500, 1000],
 	//["Warchest", "warchest", localize "STR_WL_ShopDescriptions_Warchest", "client\icons\warchest.paa", 1000, 500]
+	["AN/PRC-148 JEM", "tf_anprc148jem_3", 50, "item"],
+    ["AN/PRC-152", "tf_anprc152", 50, "item"],
+    ["AN/PRC-154", "tf_anprc154", 50, "item"],
+    ["FADAK", "tf_anprc154_2", 50, "item"],
+    ["PNR-1000A", "tf_fadak_3", 50, "item"],
+    ["Rádio", "tf_anprc148jem_6", 50, "item"],
+    ["RF-7800S-TR", "tf_microdagr", 50, "item"],
+    ["AN/ARC-164 Rádio Mochila Verde", "tf_anarc164", 50, "backpack"],
+    ["AN/ARC-210 Rádio Mochila Arido", "tf_anarc210", 50, "backpack"],
+    ["AN/PRC-155 Rádio Mochila Verde", "tf_anprc155", 50, "backpack"],
+    ["AN/PRC-155 Rádio Mochila Coyote", "tf_anprc155_coyote", 50, "backpack"],
+    ["MR6000L Rádio Mochila", "tf_mr6000l", 50, "backpack"],
+    ["MR3000 RHS", "tf_mr3000_rhs", 50, "backpack"],
+    ["MR3000 Multicam", "tf_mr3000_multicam", 50, "backpack"],
+    ["RT-1523G - SAGE", "tf_rt1523g_sage", 50, "backpack"],
+    ["RT-1523G - SAGE", "tf_rt1523g_bwmod", 50, "backpack"]
 ];
 
 call compile preprocessFileLineNumbers "mapConfig\storeOwners.sqf";

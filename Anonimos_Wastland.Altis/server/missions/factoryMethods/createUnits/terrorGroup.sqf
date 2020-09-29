@@ -95,24 +95,25 @@ for "_i" from 1 to _nbUnits do
 			_unit addVest "V_Chestrig_khk";
 			_unit forceAddUniform "U_I_C_Soldier_Para_3_F";
 			_unit addBackpack "B_LegStrapBag_coyote_F";
-			for "_i" from 1 to 2 do {_unit addItemToUniform "30Rnd_762x39_Mag_Green_F";};
-			for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_762x39_Mag_Green_F";};
+			for "_i" from 1 to 2 do {_unit addItemToUniform "30Rnd_545x39_Mag_F";};
+			for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_545x39_Mag_F";};
 			_unit addMagazines ["SmokeShellYellow", 1];
 			_unit addHeadgear "H_HelmetB";
 			_unit addGoggles "G_Bandanna_tan";
-			_unit addWeapon "arifle_AKM_F";
+			_unit addWeapon "arifle_AKS_F";
 
 			}
 			else
 			{
-			_unit addVest "V_BandollierB_cbr";
+			_unit addVest "V_EOD_coyote_F";
 			_unit forceAddUniform "U_I_C_Soldier_Para_5_F";
-			for "_i" from 1 to 2 do {_unit addItemToUniform "30Rnd_545x39_Mag_F";};
-			for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_545x39_Mag_F";};
+			_unit addBackpack "B_Messenger_Coyote_F";
+			for "_i" from 1 to 2 do {_unit addItemToUniform "2Rnd_12Gauge_Pellets";};
+			for "_i" from 1 to 3 do {_unit addItemToVest "2Rnd_12Gauge_Slug";};
 			_unit addMagazines ["SmokeShell", 1];
 			//_unit addHeadgear "H_HelmetB";
 			_unit addGoggles "G_Balaclava_oli";
-			_unit addWeapon "arifle_AKS_F";
+			_unit addWeapon "sgun_HunterShotgun_01_F";
 			};
 		};
 	};

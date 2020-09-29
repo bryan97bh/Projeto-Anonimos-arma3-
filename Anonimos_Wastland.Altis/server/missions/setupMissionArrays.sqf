@@ -8,24 +8,24 @@ if (!isServer) exitWith {};
 // Mission filename, weight 
 MainMissions =
 [
-	["mission_LightArmVeh2", 1.5],     //VIATURA DE COMBATE
-	["mission_LightArmVeh", 1.3],      //VEÍCULO LEVE DE COMBATE
+	["mission_LightArmVeh2", 1.4],     //VIATURA DE COMBATE
+	["mission_LightArmVeh", 1.2],      //VEÍCULO LEVE DE COMBATE
 	["mission_APC", 1],                //VEÍCULO ANTIAÉREO/VEÍCULO DE COMBATE DE INFANTARIA/VEÍCULO BLINDADO DE COMBATE/TRANSPORTADOR DE TROPA BLINDADO
-	["mission_MBT", 0.9],              //CAVALARIA BLINDADA
-	["mission_CivHeli", 1.5],          //HELICÓPTERO DE SUPORTE
+	["mission_MBT", 0.7],              //CAVALARIA BLINDADA
+	["mission_CivHeli", 1.3],          //HELICÓPTERO DE SUPORTE
 	["mission_ArmedHeli", 1],          //HELICÓPTERO GUARNECIDO
-    ["mission_AbandonedJet", 0.8]      //AERONAVE ABANDONADA
+    ["mission_AbandonedJet", 0.7]      //AERONAVE ABANDONADA
 ];
 
 SideMissions =
 [ 
-	["mission_GeoCache", 0.5],         //analise geografica
-	["mission_ConvoyCSATSF", 1],       //PATRULHA DE RECONHECIMENTO
-    ["mission_DrugsRunners", 1],       //TRAFICANTES
-    ["mission_Smugglers", 1],          //CONTRABANDO DE ARMAS
-	["mission_AirWreck", 1],           //HELICÓPTERO ABATIDO
-	["mission_WepCache", 0.5],         //AERONAVE ABATIDA
-	["mission_Truck", 1]               //CAMINHÃO DE SUPRIMENTO
+	["mission_GeoCache", 1],           //analise geografica
+    ["mission_ConvoyCSATSF", 1.2],     //PATRULHA DE RECONHECIMENTO
+    ["mission_DrugsRunners", 1.1],     //TRAFICANTES
+    ["mission_Smugglers", 1.3],        //CONTRABANDO DE ARMAS
+	["mission_AirWreck", 0.9],         //HELICÓPTERO ABATIDO
+	["mission_WepCache", 0.9],         //ACANPAMENTO DE MILITARES 
+	["mission_Truck", 1.1]             //CAMINHÃO DE SUPRIMENTO
 ];
 
 MoneyMissions =
@@ -39,11 +39,11 @@ MoneyMissions =
 
 PrincipalMissions =
 [
-	["mission_Sniper", 0.5],           //SNIPES 
-	["mission_OCUPACAO", 1.5],         //OCUPACAO
-    ["mission_TownInvasion", 1.6],     //CIDADE INVADIDA
+	["mission_Sniper", 0.9],           //SNIPES 
+	["mission_OCUPACAO", 1.4],         //OCUPACAO
+    ["mission_TownInvasion", 1.5],     //CIDADE INVADIDA
 	["mission_MiniConvoy", 1],         //ESCOLTA ARMADA
-	["mission_Outpost", 1.5],          //POSTO AVANÇADO
+	["mission_Outpost", 1.3],          //POSTO AVANÇADO
 	["mission_Convoy", 1]              //COMBOIO SUSPEITO
 ];
 
@@ -52,15 +52,15 @@ hostileairMissions =
 	["mission_HostileHelicopter", 1.6],   //HELICÓPTERO HOSTIL
     ["mission_FORMAÇAODEHELI", 1.5],      //PATRULHA AÉREA
 	["mission_HostileJetFormation", 1],   //JATOS HOSTIS 
-	["mission_VTOLCONTRABANDISTA", 0.5],  //VTOL CONTRABANDISTA
-	["mission_OPRESSAOAÉREA", 0.4]        //OPRESSÃO AÉREA
+	["mission_VTOLCONTRABANDISTA", 0.6],   //PATRULHA VTOL 
+	["mission_OPRESSAOAÉREA", 0.5]        //OPRESSÃO AÉREA
 ];
 
 aquaticMissions =
 [
-	["mission_ArmedDiversquad", 1.0], //EXPEDIÇÃO GRUMEC
-	["mission_Coastal_Convoy", 0.7],  //PATRULHA COSTEIRA
-	["mission_Jaws", 1.1],            //TESOURO SUBMERSO
+	["mission_ArmedDiversquad", 1], //EXPEDIÇÃO GRUMEC
+	["mission_Coastal_Convoy", 1.1],  //PATRULHA COSTEIRA
+	["mission_Jaws", 1.2],            //TESOURO SUBMERSO
 	["mission_SunkenSupplies", 1.5],  //SUPRIMENTOS AFUNDADO
 	["mission_SunkenTreasure", 0.5]   //BAU DO TESOURO
 ];

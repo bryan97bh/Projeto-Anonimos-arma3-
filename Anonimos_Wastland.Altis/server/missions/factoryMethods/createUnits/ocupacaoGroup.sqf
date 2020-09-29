@@ -61,6 +61,8 @@ for "_i" from 1 to _nbUnits do
 		// AT every 7 units, starting from second one
 		case ((_i + 5) % 7 == 0):
 		{
+	        _unit addPrimaryWeaponItem "arifle_MSBS65_Mark_camo_F";
+			_unit addPrimaryWeaponItem "muzzle_snds_65_TI_ghex_F";
 			_unit addBackpack "B_ViperLightHarness_ghex_F";
 			_unit addMagazine "Titan_AT";
 			_unit addWeapon "launch_O_Titan_short_ghex_F";
@@ -70,6 +72,8 @@ for "_i" from 1 to _nbUnits do
 		// AA every 6 units
 		case (_i % 7 == 0):
 		{
+			_unit addPrimaryWeaponItem "arifle_MSBS65_Mark_camo_F";
+			_unit addPrimaryWeaponItem "muzzle_snds_65_TI_ghex_F";
 			_unit addBackpack "B_ViperLightHarness_ghex_F";
 			_unit addMagazine "Titan_AA";
 			_unit addWeapon "launch_I_Titan_eaf_F";

@@ -65,10 +65,11 @@ for "_i" from 1 to _nbUnits do
 			_unit addWeapon "arifle_CTAR_ghex_F";
 			for "_i" from 1 to 3 do {_unit  addItem  "30Rnd_580x42_Mag_F";};
 			_unit addPrimaryWeaponItem "optic_Aco_smg";
-			_unit addMagazine "Titan_AT";
-			_unit addWeapon "launch_O_Titan_short_ghex_F";
-			_unit addMagazine "Titan_AT";
-			_unit addMagazine "Titan_AT";
+			_unit addPrimaryWeaponItem "muzzle_snds_58_ghex_F";
+			_unit addMagazine "NLAW_F";
+			_unit addWeapon "launch_NLAW_F";
+			_unit addMagazine "NLAW_F";
+			_unit addMagazine "NLAW_F";
 		};
 		// AA every 6 units
 		case (_i % 7 == 0):
