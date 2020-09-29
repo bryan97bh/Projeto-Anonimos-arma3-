@@ -28,11 +28,6 @@ _setupObjects =
 		],
 		[
 			"B_Heli_Transport_03_F",                //CH-67 Huron (Armed)
-			"O_Heli_Light_02_dynamicLoadout_F",     //PO-30 Orca (DAR)
-			"O_Heli_Light_02_dynamicLoadout_F"      //PO-30 Orca (DAR)
-		],
-		[
-			"B_Heli_Transport_03_F",                //CH-67 Huron (Armed)
 			"I_Heli_light_03_dynamicLoadout_F",     //WY-55 Hellcat (Armed)
 			"I_Heli_light_03_dynamicLoadout_F"      //WY-55 Hellcat (Armed)
 		],
@@ -40,11 +35,6 @@ _setupObjects =
 			"B_Heli_Transport_03_F",                 //CH-67 Huron (Armed)
 			"B_Heli_Attack_01_dynamicLoadout_F",     //AH-99 Blackfoot
 			"B_Heli_Attack_01_dynamicLoadout_F"      //AH-99 Blackfoot
-		],
-		[
-			"B_Heli_Transport_03_F",                 //CH-67 Huron (Armed)
-			"O_Heli_Attack_02_dynamicLoadout_F",     //Mi-48 Kajman
-			"O_Heli_Attack_02_dynamicLoadout_F"      //Mi-48 Kajman
 		],
 		//--------------------------------------------------------------------//
 	    [
@@ -54,18 +44,8 @@ _setupObjects =
 		],
 		[
 			"B_Heli_Transport_01_F",                //UH-80 Ghost Hawk
-			"O_Heli_Light_02_dynamicLoadout_F",     //PO-30 Orca (DAR)
-			"O_Heli_Light_02_dynamicLoadout_F"      //PO-30 Orca (DAR)
-		],
-		[
-			"B_Heli_Transport_01_F",                //UH-80 Ghost Hawk
 			"I_Heli_light_03_dynamicLoadout_F",     //WY-55 Hellcat (Armed)
 			"I_Heli_light_03_dynamicLoadout_F"      //WY-55 Hellcat (Armed)
-		],
-		[
-			"B_Heli_Transport_01_F",                 //UH-80 Ghost Hawk
-			"B_Heli_Attack_01_dynamicLoadout_F",     //AH-99 Blackfoot
-			"B_Heli_Attack_01_dynamicLoadout_F"      //AH-99 Blackfoot
 		],
 		[
 			"B_Heli_Transport_01_F",                 //UH-80 Ghost Hawk
@@ -79,24 +59,9 @@ _setupObjects =
 			"B_Heli_Transport_01_F"                 //UH-80 Ghost Hawk)
 		],
 		[
-			"B_Heli_Transport_01_F",                //UH-80 Ghost Hawk)2
-			"B_Heli_Transport_01_F",                //UH-80 Ghost Hawk)2
-			"B_Heli_Transport_01_F"                 //UH-80 Ghost Hawk)2
-		],
-		[
 			"B_Heli_Transport_01_F",                 //UH-80 Ghost Hawk
 			"O_Heli_Attack_02_dynamicLoadout_F",     //Mi-48 Kajman
 			"B_Heli_Attack_01_dynamicLoadout_F"      //AH-99 Blackfoot
-		],
-		[
-			"B_Heli_Attack_01_dynamicLoadout_F",     //AH-99 Blackfoot
-			"B_Heli_Attack_01_dynamicLoadout_F",     //AH-99 Blackfoot
-			"B_Heli_Attack_01_dynamicLoadout_F"      //AH-99 Blackfoot
-		],
-		[
-			"O_Heli_Attack_02_dynamicLoadout_F",     //Mi-48 Kajman
-			"O_Heli_Attack_02_dynamicLoadout_F",     //Mi-48 Kajman
-			"O_Heli_Attack_02_dynamicLoadout_F"      //Mi-48 Kajman
 		]
 		
 	];

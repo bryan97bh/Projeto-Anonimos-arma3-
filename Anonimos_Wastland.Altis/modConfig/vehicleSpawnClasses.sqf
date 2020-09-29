@@ -173,6 +173,15 @@ vehicleAddition =
 	"V_SmershVest_01_F",
 	"V_TacVestIR_blk",
 	"V_DeckCrew_brown_F",
+	"B_AssaultPack_blk",
+	"B_AssaultPack_rgr",
+	"B_AssaultPack_mcamo",
+	"B_AssaultPack_ocamo",
+	"B_AssaultPack_khk",
+	"B_AssaultPack_cbr",
+	"B_AssaultPack_sgg",
+	"B_AssaultPack_tna_F",
+	"B_AssaultPack_Kerry",
 	"V_TacVest_brn"
 ];
 

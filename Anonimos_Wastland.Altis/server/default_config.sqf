@@ -107,7 +107,7 @@ A3W_mineSaving = 1;                // Save player-placed proximity mines between
 A3W_mineLifetime = 2*24;           // Maximum lifetime in hours for saved mines across server restarts (0 = no time limit)
 A3W_privateStorage = 1;            // Enable persistent private storage locations across the map (0 = no, 1 = yes)
 A3W_privateParking = 1;            // If vehicleSaving = 1 and savingMethod = "extdb" or "sock", enable persistent private parking locations across the map (0 = no, 1 = yes)
-A3W_privateParkingLimit = 2;       // Maximum amount of vehicles allowed in private parking (0 = no limit)
+A3W_privateParkingLimit = 3;       // Maximum amount of vehicles allowed in private parking (0 = no limit)
 A3W_privateParkingCost = 5000;     // Cost to retrieve an individual vehicle from private parking
 A3W_vehicleLocking = 1;            // Enable vehicle locking and lockpicking (0 = no, 1 = yes)
 
@@ -176,22 +176,22 @@ A3W_missionsQuantity = 6;          // Number of missions running at the same tim
 A3W_heliPatrolMissions = 1;        // Enable missions involving flying helicopters piloted by AI (0 = no, 1 = yes)
 A3W_underWaterMissions = 1;        // Enable underwater missions which require diving gear (0 = no, 1 = yes)
 //##############################################################################################################################//
-A3W_mainMissionDelay = 1*60;      // Time in seconds between Main Missions
+A3W_mainMissionDelay = 10*60;      // Time in seconds between Main Missions
 A3W_mainMissionTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
 
-A3W_sideMissionDelay = 1*60;       // Time in seconds between Side Missions
-A3W_sideMissionTimeout = 30*60;    // Time in seconds that a Side Mission will run for, unless completed
+A3W_sideMissionDelay = 5*60;       // Time in seconds between Side Missions
+A3W_sideMissionTimeout = 45*60;    // Time in seconds that a Side Mission will run for, unless completed
 
-A3W_moneyMissionDelay = 1*60;     // Time in seconds between Money Missions
+A3W_moneyMissionDelay = 15*60;     // Time in seconds between Money Missions
 A3W_moneyMissionTimeout = 60*60;   // Time in seconds that a Money Mission will run for, unless completed
 
-A3W_principalMissionsDelay = 1*60;      // Time in seconds between Main Missions
-A3W_principalMissionsTimeout = 16*60;    // Time in seconds that a Main Mission will run for, unless completed
+A3W_principalMissionsDelay = 10*60;      // Time in seconds between Main Missions
+A3W_principalMissionsTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
 
-A3W_hostileairMissionDelay = 1*60;      // Time in seconds between Main Missions
-A3W_hostileairMissionTimeout = 30*60;    // Time in seconds that a Main Mission will run for, unless completed
+A3W_hostileairMissionDelay = 15*60;      // Time in seconds between Main Missions
+A3W_hostileairMissionTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
 
-A3W_aquaticMissionDelay = 1*60;      // Time in seconds between Main Missions
+A3W_aquaticMissionDelay = 5*60;      // Time in seconds between Main Missions
 A3W_aquaticMissionTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
 //###############################################################################################################################//
 A3W_hackedMissionDlSize = 165072;	// File size in Kilobytles (~1Mbps dl Rate)

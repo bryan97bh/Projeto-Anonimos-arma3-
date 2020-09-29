@@ -25,7 +25,7 @@ _setupVars =
 		// Easy
 		[
 			"ESCOLTA DE DINHEIRO PEQUENA", // Marker text
-			10000, // Money
+			8000, // Money
 			[
 				[ // NATO convoy
 					["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"], // Veh 1
@@ -44,7 +44,7 @@ _setupVars =
 		// Medium
 		[
 			"ESCOLTA DE DINHEIRO MÉDIA", // Marker text
-			15000, // Money
+			10000, // Money
 			[
 				[ // NATO convoy
 					["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"], // Veh 1
@@ -66,7 +66,7 @@ _setupVars =
 		// Hard
 		[
 			"ESCOLTA DE DINHEIRO GRANDE", // Marker text
-			30000, // Money
+			15000, // Money
 			[
 				[ // NATO convoy
 					["B_APC_Wheeled_01_cannon_F", "B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_AA_F", "B_AFV_Wheeled_01_up_cannon_F"], // Veh 1
@@ -88,7 +88,7 @@ _setupVars =
 		// Extreme
 		[
 			"ESCOLTA DE DINHEIRO GIGANTE", // Marker text
-			50000, // Money
+			30000, // Money
 			[
 				[ // NATO convoy
 					["B_APC_Wheeled_01_cannon_F", "B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_AA_F", "B_MBT_01_cannon_F", "B_MBT_01_TUSK_F"], // Veh 1
