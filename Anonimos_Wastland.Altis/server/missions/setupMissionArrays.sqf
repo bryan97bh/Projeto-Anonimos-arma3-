@@ -8,19 +8,19 @@ if (!isServer) exitWith {};
 // Mission filename, weight 
 MainMissions =
 [
+	["mission_LightArmVeh2", 1.9],     //VIATURA DE COMBATE
+	["mission_LightArmVeh", 1.5],      //VEÍCULO LEVE DE COMBATE
 	["mission_APC", 1],                //VEÍCULO ANTIAÉREO/VEÍCULO DE COMBATE DE INFANTARIA/VEÍCULO BLINDADO DE COMBATE/TRANSPORTADOR DE TROPA BLINDADO
 	["mission_MBT", 0.6],              //CAVALARIA BLINDADA
-	["mission_LightArmVeh", 1.5],      //VEÍCULO LEVE DE COMBATE
+	["mission_CivHeli", 1.6],          //HELICÓPTERO DE SUPORTE
 	["mission_ArmedHeli", 1],          //HELICÓPTERO GUARNECIDO
-    ["mission_AbandonedJet", 0.5],     //AERONAVE ABANDONADA
-	["mission_CivHeli", 1.6]           //HELICÓPTERO DE SUPORTE
+    ["mission_AbandonedJet", 0.5]      //AERONAVE ABANDONADA
 ];
 
 SideMissions =
 [ 
     ["mission_DrugsRunners", 1],          //TRAFICANTES
     ["mission_Smugglers", 1],             //CONTRABANDO DE ARMAS
-	["mission_TownInvasion", 2],          //CIDADE INVADIDA
 	["mission_AirWreck", 1],              //HELICÓPTERO ABATIDO
 	["mission_WepCache", 0.5],            //AERONAVE ABATIDA
 	["mission_Truck", 1]                  //CAMINHÃO DE SUPRIMENTO
@@ -31,12 +31,14 @@ MoneyMissions =
 	["mission_MoneyShipment", 1.5],         //ESCOLTA DE DINHEIRO
     ["mission_HostageRescue", 1],           //RESGATE AO REFÉM
     ["mission_Roadblock", 1],               //BLOQUEIO NA ESTRADA
-    ["mission_Terror", 1],                  //CIDADE TOMADA 
+    ["mission_Terror", 1.7],                //INVASAO REBELDE
 	["mission_HackLaptop", 0.1]	            //Hackers
 ];
 
 PrincipalMissions =
 [
+    ["mission_TownInvasion", 1.6],         //CIDADE INVADIDA
+	["mission_ConvoyCSATSF", 0.5],         //PATRULHA DE RECONHECIMENTO
 	["mission_MiniConvoy", 1],             //ESCOLTA ARMADA
 	["mission_Outpost", 1.5],              //POSTO AVANÇADO
 	["mission_Convoy", 1]                  //COMBOIO SUSPEITO
@@ -44,9 +46,9 @@ PrincipalMissions =
 
 hostileairMissions =
 [
-	["mission_HostileHelicopter", 1.5],         //HELICÓPTERO HOSTIL
-    ["mission_FORMAÇAODEHELI", 1],              //PATRULHA AÉREA
-	["mission_HostileJetFormation", 1],         //JATOS HOSTIS 
+	["mission_HostileHelicopter", 1.6],         //HELICÓPTERO HOSTIL
+    ["mission_FORMAÇAODEHELI", 1.5],            //PATRULHA AÉREA
+	["mission_HostileJetFormation", 1],       //JATOS HOSTIS 
 	["mission_VTOLCONTRABANDISTA", 0.5],        //VTOL CONTRABANDISTA
 	["mission_OPRESSAOAÉREA", 0.1]              //OPRESSÃO AÉREA
 ];

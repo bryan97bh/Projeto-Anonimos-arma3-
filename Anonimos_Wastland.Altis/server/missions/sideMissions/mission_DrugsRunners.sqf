@@ -171,4 +171,4 @@ _successExec =
 	_successHintMessage = "Good job! The drug transport has been stopped! Collect the drugs. It's all yours!";
 };
 
-_this call sideMissionProcessor;
+_this call principalMissionProcessor;
