@@ -34,21 +34,25 @@ switch(_switch) do
 	};
 	case 1:
 	{
-		_itemsArray = call uniformArray;
+        _itemsArray = call goggArray;
 	};
 	case 2:
 	{
-		_itemsArray = call vestArray;
+		_itemsArray = call uniformArray;
 	};
 	case 3:
 	{
-		_itemsArray = call backpackArray;
+		_itemsArray = call vestArray;
 	};
 	case 4:
 	{
-		_itemsArray = call genItemArray;
+		_itemsArray = call backpackArray;
 	};
 	case 5:
+	{
+		_itemsArray = call genItemArray;
+	};
+	case 6:
 	{
 		_itemsArray = call customPlayerItems;
 
@@ -75,7 +79,7 @@ switch(_switch) do
 			_itemsArray = [_itemsArray, { !((_x select 1) in _excludedItems) }] call BIS_fnc_conditionalSelect;
 		};
 	};
-	case 6:
+	case 7:
 	{
 		_itemsArray = call genObjectsArray;
 		_showPicture = false;

@@ -34,10 +34,11 @@ _player unlinkItem "ItemGPS";
 // Remove NVG
 if (hmd _player != "") then { _player unlinkItem hmd _player };
 
-_player addItemToVest "6Rnd_45ACP_Cylinder";
+//_player addItemToVest "6Rnd_45ACP_Cylinder";
 // Add NVG - Disabled AJ
 // _player linkItem "NVGoggles";
 
+/*
 switch (_donatorLevel) do
 {
 	default 
@@ -50,10 +51,12 @@ switch (_donatorLevel) do
 		_player addItem "FirstAidKit";
 	};
 	
-};
+};*/
+
+[] Call RJ_fnc_LoadoutInicial;
 
 //AJ Edit - Add Pistol Flashlight to Default Loadout
-_player addHandgunItem "acc_flashlight_pistol";
+//_player addHandgunItem "acc_flashlight_pistol";
 
 
 

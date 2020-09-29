@@ -43,6 +43,8 @@ briefing = 0; // if 0, skip Continue button
 
 //Dialog includes
 
+#include "RJ\Configs.hpp"
+
 #include "RJAT_AdminMenu.hpp"
 #include "client\gui_base.hpp"
 #include "addons\R3F_LOG\desc_include.h"
@@ -109,6 +111,9 @@ class CfgDebriefing
 
 class CfgFunctions
 {
+
+	#include "RJ\RJ_Functions.hpp"
+	
 	class A3W
 	{
 		#include "client\CfgFunctions.hpp"

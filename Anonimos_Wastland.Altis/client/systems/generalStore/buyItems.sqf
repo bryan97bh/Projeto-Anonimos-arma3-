@@ -355,6 +355,67 @@ storePurchaseHandle = _this spawn
 			if (_itemData == _x select 1) exitWith
 			{
 				_class = _x select 1;
+
+				if (_x select 3 == "vest") then
+				{
+					([_class] call fn_getItemArmor) params ["_ballArmor", "_explArmor"];
+					_price = CEIL_PRICE(([_class] call getCapacity) / 2 + _ballArmor*3 + _explArmor*2); // price formula also defined in getItemInfo.sqf
+				}
+				else
+				{
+					_price = _x select 2;
+				};
+
+				// Ensure the player has enough money
+				if (_price > _playerMoney) exitWith
+				{
+					[_itemText] call _showInsufficientFundsError;
+				};
+
+				switch (_x select 3) do
+				{
+					case "gogg":
+					{
+						if (goggles player == _class) exitWith
+						{
+							["goggles", true] call _showAlreadyHaveItemMessage;
+						};
+
+						// Confirm replace
+						if (goggles player != "" && {!(["goggles", true] call _showReplaceConfirmMessage)}) exitWith {};
+
+						removeGoggles player;
+						player addGoggles _class;
+					};
+					case "nvg":
+					{
+						if ({["NVGoggles", _x] call fn_startsWith} count assignedItems player == 0) then
+						{
+							player linkItem _class;
+						}
+						else
+						{
+							if ([player, _class] call fn_fitsInventory) then
+							{
+								[player, _class] call fn_forceAddItem;
+							}
+							else
+							{
+								[_itemText] call _showInsufficientSpaceError;
+							};
+						};
+					};
+				};
+			};
+		} forEach (call goggArray);
+	};
+
+	if (isNil "_price") then
+	{
+		{
+			if (_itemData == _x select 1) exitWith
+			{
+				_class = _x select 1;
 				_price = _x select 2;
 
 				if (uniform player == _class) exitWith

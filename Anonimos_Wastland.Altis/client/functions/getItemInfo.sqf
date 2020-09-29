@@ -77,7 +77,7 @@ if (isNil "_itemEntry") then
 				_parentCfg = "CfgWeapons";
 			};
 		} forEach (call _x);
-	} forEach [headArray, uniformArray, vestArray];
+	} forEach [headArray, goggArray, uniformArray, vestArray];
 };
 
 if (isNil "_itemEntry") then

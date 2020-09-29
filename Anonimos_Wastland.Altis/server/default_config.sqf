@@ -43,7 +43,7 @@ A3W_spawnBeaconSpawnHeight = 1500; // Altitude in meters at which players will s
 A3W_resupplyCostPR = 4;			   // Determine resupply cost by vehicle store cost / A3W_resupplyCostPR. (4 = default, %25 percent)
 A3W_firstPersonCamOnFoot = 1;	   // Lock infantry to first person view
 A3W_firstPersonCamNotDriver = 1;   // Lock all vehicle seating positions besides driver to first person view
-A3W_donatorEnabled = 0;				// Enable/Disable Donator Features
+A3W_donatorEnabled = 1;				// Enable/Disable Donator Features
 A3W_customUniformEnabled = 1;		// Enable/Disable Custom Uniforms
 A3W_tkAutoSwitchEnabled = 0;			// Enable/Disable Switch for team killers
 A3W_maxLockonDistance = 1000; 	// Max Lockon Distance with Missle

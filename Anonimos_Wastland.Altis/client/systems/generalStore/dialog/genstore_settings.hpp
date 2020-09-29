@@ -176,7 +176,7 @@ class genstored
 		{
 			idc = -1;
 			action = "[1] call populateGeneralStore";
-			text = "Uniformes";
+			text = "Óculos";
 			sizeEx = GenStoreButton_textSize;
 
 			x = GenStoreMainBG_X + (0.0167 * SZ_SCALE);
@@ -189,7 +189,7 @@ class genstored
 		{
 			idc = -1;
 			action = "[2] call populateGeneralStore";
-			text = "Coletes";
+			text = "Uniformes";
 			sizeEx = GenStoreButton_textSize;
 
 			x = GenStoreMainBG_X + (0.0167 * SZ_SCALE);
@@ -202,7 +202,7 @@ class genstored
 		{
 			idc = -1;
 			action = "[3] call populateGeneralStore";
-			text = "Mochilas";
+			text = "Coletes";
 			sizeEx = GenStoreButton_textSize;
 
 			x = GenStoreMainBG_X + (0.0167 * SZ_SCALE);
@@ -215,7 +215,7 @@ class genstored
 		{
 			idc = -1;
 			action = "[4] call populateGeneralStore";
-			text = "Itens";
+			text = "Mochilas";
 			sizeEx = GenStoreButton_textSize;
 
 			x = GenStoreMainBG_X + (0.0167 * SZ_SCALE);
@@ -228,7 +228,7 @@ class genstored
 		{
 			idc = -1;
 			action = "[5] call populateGeneralStore";
-			text = "Suprimentos";
+			text = "Itens";
 			sizeEx = GenStoreButton_textSize;
 
 			x = GenStoreMainBG_X + (0.0167 * SZ_SCALE);
@@ -241,6 +241,19 @@ class genstored
 		{
 			idc = -1;
 			action = "[6] call populateGeneralStore";
+			text = "Suprimentos";
+			sizeEx = GenStoreButton_textSize;
+
+			x = GenStoreMainBG_X + (0.0167 * SZ_SCALE);
+			y = GenStoreMainBG_Y + (0.375 * SZ_SCALE);
+			w = 0.1173 * SZ_SCALE;
+			h = 0.040 * SZ_SCALE;
+		};
+
+		class StoreButton7: w_RscButton
+		{
+			idc = -1;
+			action = "[7] call populateGeneralStore";
 			text = "Objetos";
 			sizeEx = GenStoreButton_textSize;
 

@@ -115,8 +115,8 @@ if (_type in ["vest","headgear"]) then
 			default                  { "(<t color='#a0a0a0'>+0</t>)" };
 		}];
 	} forEach [
-		["Ballistic Armor", _newBallArmor, _diffBallArmor],
-		["Explosive Armor", _newExplArmor, _diffExplArmor]
+		["Proteção balistica", _newBallArmor, _diffBallArmor],
+		["proteção explosiva", _newExplArmor, _diffExplArmor]
 	];
 
 	_text = _text + (_textArr joinString "<br/>");

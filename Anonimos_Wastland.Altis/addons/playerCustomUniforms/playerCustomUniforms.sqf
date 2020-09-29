@@ -6,23 +6,13 @@ _playerCustomUniforms =
 		[
 			"76561198073156695",  //guy fawkes
 			"76561198157312258",  //<[RA] Cap  Batista>
-			"76561198027682212",  //<[RA] 2°ten Sniperjoel>
-			"76561198087974566",  //<[RA] 2ºSgt Dpaulla>
 			"76561198092314271",  //<[RA] Codigo>
-			//"76561198332507924", //<[RA] Sd D.Oliveira>
-			"76561198100776009",  //<[RA] Sd Gui_bocão>
-			"76561198111387070",  //<[RA] Sd Rappa>
-			"76561198252975849",  //<[RA] Sd Ferreira>
 			"76561198157040893",  //<[RA] sd 755cardosopower>
-			"76561198152823076",  //<[RA] sd Negri>
-			"76561198164537056",  //<[RA] Sd França SS
 			"76561198319660200",  //<[RA] Sd Bomfim
 			"76561198835543767",  //<[RA] Sd Mario
-			"76561198279017971",  //<[RA] Sd Simo Hayha
 			"76561197978867972",  //<[RA] Sd Cordeiro
 			"76561198216066545",  //<[RA] Menegusso>
-			"76561198057291104",  //<[RA] Martins>
-			"76561198256683401",  //<[RA] Sd Souza
+			
 			"76561198425527927",  //jon
 			"76561198300714399",  //Viniciuus.lcs
 			"76561198825211624",  //Nascimento
@@ -57,6 +47,24 @@ _playerCustomUniforms =
 		],
 		[
 			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\24_O.jpg"]
+		]
+	],
+	[ // [RA]
+		[
+			"76561198027682212",  //<[RA] 2°ten Sniperjoel>
+			"76561198087974566",  //<[RA] 2ºSgt Dpaulla>
+		    //"76561198332507924",  //<[RA] Sd D.Oliveira>
+			"76561198100776009",  //<[RA] Sd Gui_bocão>
+			"76561198111387070",  //<[RA] Sd Rappa>
+			"76561198252975849",  //<[RA] Sd Ferreira>
+			"76561198152823076",  //<[RA] sd Negri>
+			"76561198164537056",  //<[RA] Sd França SS
+			"76561198279017971",  //<[RA] Sd Simo Hayha
+			"76561198057291104",  //<[RA] Martins>
+			"76561198256683401"   //<[RA] Sd Souza
+		],
+		[
+			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\RA_PAA.paa"]
 		]
 	],
 	[ // UNICO

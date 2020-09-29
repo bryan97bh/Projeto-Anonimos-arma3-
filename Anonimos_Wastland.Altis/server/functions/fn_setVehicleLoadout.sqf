@@ -29,12 +29,16 @@ if  (_class isKindOf "C_Plane_Civil_01_racing_F") then
 			[
 				["5000Rnd_762x51_Belt", [-1]],
 				["24Rnd_missiles", [-1]],
+		        ["PylonMissile_1Rnd_Mk82_F", [-1]],
+				["PylonMissile_1Rnd_Mk82_F", [-1]],
 				["120Rnd_CMFlare_Chaff_Magazine", [-1]]
 			];
 	_weapons =
 			[
 				["M134_minigun", [-1]],
 				["missiles_DAR", [-1]],
+				["Mk82BombLauncher", [-1]],
+				["Mk82BombLauncher", [-1]],
 				["CMFlareLauncher", [-1]]
 			];
 	};

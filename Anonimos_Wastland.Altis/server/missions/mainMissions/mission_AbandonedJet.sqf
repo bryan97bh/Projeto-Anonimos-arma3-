@@ -13,20 +13,44 @@ _setupVars =
 {
 	_vehicleClass =
 	[
-		["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardAA"],
-        ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardCAS"],
-        ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardAA"],
-        ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardCAS"],
-        "I_Plane_Fighter_04_F",
-        "B_Plane_Fighter_01_F",
-        "O_Plane_Fighter_02_F",
-        "B_Plane_CAS_01_dynamicLoadout_F",
-        "O_Plane_CAS_02_dynamicLoadout_F",
-        "O_T_VTOL_02_infantry_dynamicLoadout_F",
-        "O_T_VTOL_02_infantry_dynamicLoadout_F", "variant_xianGunOnly"],
-        "O_T_VTOL_02_vehicle_dynamicLoadout_F",
-        "O_T_VTOL_02_vehicle_dynamicLoadout_F", "variant_xianGunOnly"],
-        "B_T_VTOL_01_armed_F"
+        "C_Plane_Civil_01_racing_F",                                      //SUPER TUCANO
+
+        ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardCAS"],            //A-143 Buzzard CAS
+        ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardAA"],             //A-143 Buzzard AA
+        ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardb1"],             //A-143 Buzzard b1
+        ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardb1"],             //A-143 Buzzard b2
+
+        "I_Plane_Fighter_04_F",                                          //A-149 Gryphon cas
+        ["I_Plane_Fighter_04_F", "GryphonAA"],                           //A-149 Gryphon  aa
+        ["I_Plane_Fighter_04_F", "Gryphonb1"],                           //A-149 Gryphon  b1
+        ["I_Plane_Fighter_04_F", "Gryphonb2"],                           //A-149 Gryphon  b2
+
+        "B_Plane_Fighter_01_F",                                           //F/A-181 Black Wasp cas
+        ["B_Plane_Fighter_01_F", "F18AA"],                                //F/A-181 Black Wasp aa
+        ["B_Plane_Fighter_01_F", "F18b1"],                                //F/A-181 Black Wasp b1
+        ["B_Plane_Fighter_01_F", "F18b2"],                                //F/A-181 Black Wasp b2
+        "B_Plane_Fighter_01_Stealth_F",                                   //Furtivo
+
+        "O_Plane_Fighter_02_F",                                           //To-201 Shikra cas
+        ["O_Plane_Fighter_02_F", "ShikraAA"],                             //To-201 Shikra aa
+        ["O_Plane_Fighter_02_F", "Shikrab1"],                             //To-201 Shikra B1
+        ["O_Plane_Fighter_02_F", "Shikrab2"],                             //To-201 Shikra B2
+        "O_Plane_Fighter_02_Stealth_F",                                   //Furtivo
+
+        "B_Plane_CAS_01_dynamicLoadout_F",                                //A-10 Wipeout cas
+        ["B_Plane_CAS_01_dynamicLoadout_F", "A10B2"],                     //A-10 Wipeout cas2
+        ["B_Plane_CAS_01_dynamicLoadout_F", "A10B3"],                     //A-10 Wipeout b3
+
+        "O_Plane_CAS_02_dynamicLoadout_F",                                //To-199 Neophron
+        ["O_Plane_CAS_02_dynamicLoadout_F", "NeophronB2"],                //To-199 Neophron cas2
+       
+
+        "O_T_VTOL_02_infantry_dynamicLoadout_F",                          //Y-32 Xian | Completo|Transporta Infantaria
+        ["O_T_VTOL_02_infantry_dynamicLoadout_F", "variant_xianGunOnly"], //Y-32 Xian | Canhão 30mm|Transporta Infantaria
+        "O_T_VTOL_02_vehicle_dynamicLoadout_F",                           //Y-32 Xian | Completo|Transporta Veículo
+        ["O_T_VTOL_02_vehicle_dynamicLoadout_F", "variant_xianGunOnly"],  //Y-32 Xian | Canhão 30mm|Transporta Veículo
+        
+        "B_T_VTOL_01_armed_F"                                             //V-44 X Blackfish | Armado
 	] call BIS_fnc_selectRandom;
 
 	_missionType = "AERONAVE ABANDONADA";
