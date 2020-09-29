@@ -107,12 +107,13 @@ if (hasInterface || isServer) then
 	[] execVM "addons\R3F_LOG\init.sqf";
     //[] execVM "addons\proving_ground\init.sqf";
 	[] execVM "addons\JumpMF\init.sqf";
-//	[] execVM "addons\zlt_fastrope\zlt_fastrope.sqf";
+    //[] execVM "addons\zlt_fastrope\zlt_fastrope.sqf";
 	[] execVM "addons\outlw_magRepack\MagRepack_init.sqf";
 	[] execVM "addons\lsd_nvg\init.sqf";
 	[] execVM "addons\stickyCharges\init.sqf";
 	[] execVM "addons\APOC_Airdrop_Assistance\init.sqf";
 	[] execVM "addons\laptop\init.sqf";
+	[] execVM "addons\scripts\HvD.sqf"; // High Value Drugrunner
 	[] execVM "addons\HvT\HvT.sqf";
 };
 

@@ -99,6 +99,18 @@
 		<Key ID="STR_WL_ShopDescriptions_Warchest">
 			<English>Um cofre para guardar o dinheiro da sua equipe.</English>
 		</Key>
+		<Key ID="STR_WL_ShopDescriptions_LSD">
+			<English>Droga alucinógena poderosa.</English>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_Marijuana">
+			<English>A Erva da paz.</English>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_Cocaine">
+			<English>Droga estimulante.</English>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_Heroin">
+			<English>Droga analgésica altamente viciante.</English>
+		</Key>
 		<Key ID="STR_WL_ShopDescriptions_Pinlock">
 +            <English>Esta ferramenta de programação é um dispositivo único e não removível para uso único para adicionar uma SENHA a um veículo de sua propriedade. Ao usar isso, seus amigos também podem bloquear e desbloquear seu veículo!
 </English>
