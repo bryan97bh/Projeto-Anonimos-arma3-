@@ -52,7 +52,7 @@ switch (_side) do
 			};
 		};
 
-		if (_item == "headgear") then { _result = "H_MilCap_mcamo" };
+		if (_item == "headgear") then { _result = " " };
 	};
 	case OPFOR:
 	{
@@ -76,7 +76,7 @@ switch (_side) do
 			};
 		};
 
-		if (_item == "headgear") then { _result = "H_MilCap_ocamo" };
+		if (_item == "headgear") then { _result = " " };
 	};
 	default
 	{
@@ -100,7 +100,7 @@ switch (_side) do
 			};
 		};
 
-		if (_item == "headgear") then { _result = "H_MilCap_dgtl" };
+		if (_item == "headgear") then { _result = " " };
 	};
 };
 
