@@ -58,7 +58,7 @@ class vehshopd
 		class DialogTitleText: w_RscTextCenter
 		{
 			idc = -1;
-			text = "Vehicle Store";
+			text = "Loja de Veículos";
 			sizeEx = 0.06 * TEXT_SCALE;
 
 			x = VehStoreMainBG_X;
@@ -134,7 +134,7 @@ class vehshopd
 		class DefaultPartsLabel: w_RscText
 		{
 			idc = -1;
-			text = "Default parts";
+			text = "Peças Padrão";
 			sizeEx = 0.04 * TEXT_SCALE;
 			tooltip = VehStore_DefParts_Tooltip;
 
@@ -178,7 +178,7 @@ class vehshopd
 		{
 			idc = vehshop_BuyButton_IDC;
 			action = "[0] execVM 'client\systems\vehicleStore\buyVehicles.sqf'";
-			text = "Buy";
+			text = "COMPRAR";
 			sizeEx = VehStoreButton_textSize;
 
 			x = VehStoreMainBG_X + (0.334 * SZ_SCALE);
@@ -191,7 +191,7 @@ class vehshopd
 		{
 			idc = -1;
 			action = "closeDialog 0";
-			text = "Cancel";
+			text = "Cancelar";
 			sizeEx = VehStoreButton_textSize;
 
 			x = VehStoreMainBG_X + (0.0167 * SZ_SCALE);
@@ -204,7 +204,7 @@ class vehshopd
 		{
 			idc = vehshop_button0;
 			action = "[0] call populateVehicleStore";
-			text = "Land";
+			text = "Desarmados";
 			sizeEx = VehStoreButton_textSize;
 
 			x = VehStoreMainBG_X + (0.0167 * SZ_SCALE);
@@ -217,7 +217,7 @@ class vehshopd
 		{
 			idc = vehshop_button1;
 			action = "[1] call populateVehicleStore";
-			text = "Armored";
+			text = "Armados";
 			sizeEx = VehStoreButton_textSize;
 
 			x = VehStoreMainBG_X + (0.0167 * SZ_SCALE);
@@ -230,7 +230,7 @@ class vehshopd
 		{
 			idc = vehshop_button2;
 			action = "[2] call populateVehicleStore";
-			text = "Tanks";
+			text = "Blindados";
 			sizeEx = VehStoreButton_textSize;
 
 			x = VehStoreMainBG_X + (0.0167 * SZ_SCALE);
@@ -243,7 +243,7 @@ class vehshopd
 		{
 			idc = vehshop_button3;
 			action = "[3] call populateVehicleStore";
-			text = "Helicopters";
+			text = "Helicópteros";
 			sizeEx = VehStoreButton_textSize;
 
 			x = VehStoreMainBG_X + (0.0167 * SZ_SCALE);
@@ -256,7 +256,7 @@ class vehshopd
 		{
 			idc = vehshop_button4;
 			action = "[4] call populateVehicleStore";
-			text = "Planes";
+			text = "Aviões";
 			sizeEx = VehStoreButton_textSize;
 
 			x = VehStoreMainBG_X + (0.0167 * SZ_SCALE);
@@ -269,7 +269,7 @@ class vehshopd
 		{
 			idc = vehshop_button5;
 			action = "[5] call populateVehicleStore";
-			text = "Boats";
+			text = "Embarcações";
 			sizeEx = VehStoreButton_textSize;
 
 			x = VehStoreMainBG_X + (0.0167 * SZ_SCALE);
@@ -278,13 +278,12 @@ class vehshopd
 			h = 0.040 * SZ_SCALE;
 		};
 
-		// Submarines transferred in Boats
-		/*
+		
 		class StoreButton6: w_RscButton
 		{
 			idc = vehshop_button6;
 			action = "[6] call populateVehicleStore";
-			text = "Submarines";
+			text = "Drones";
 			sizeEx = VehStoreButton_textSize;
 
 			x = VehStoreMainBG_X + (0.0167 * SZ_SCALE);
@@ -292,7 +291,7 @@ class vehshopd
 			w = 0.1173 * SZ_SCALE;
 			h = 0.040 * SZ_SCALE;
 		};
-		*/
+		
 	};
 };
 
