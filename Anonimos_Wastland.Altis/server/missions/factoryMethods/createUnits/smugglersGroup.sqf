@@ -67,7 +67,7 @@ _man2 addRating 1e11;
 _man2 addEventHandler ["Killed", server_playerDied];
 
 
-// Soldier3 - RPG
+// Soldier3 - AA
 _man3 = _group createUnit ["C_man_polo_3_F", [_pos select 0, (_pos select 1) + 30, 0], [], 1, "Form"];
 removeAllAssignedItems _man3;
 sleep 0.1; // Without this delay, headgear doesn't get removed properly
@@ -98,7 +98,7 @@ _man3 addRating 1e11;
 _man3 addEventHandler ["Killed", server_playerDied];
 
 
-// Soldier4
+// Soldier4 GL
 _man4 = _group createUnit ["C_man_polo_4_F", [_pos select 0, (_pos select 1) + 40, 0], [], 1, "Form"];
 removeAllAssignedItems _man4;
 sleep 0.1; // Without this delay, headgear doesn't get removed properly
@@ -125,7 +125,7 @@ _man4 addRating 1e11;
 _man4 addEventHandler ["Killed", server_playerDied];
 
 
-// Soldier5
+// Soldier5 GL
 _man5 = _group createUnit ["C_man_polo_5_F", [_pos select 0, (_pos select 1) + 40, 0], [], 1, "Form"];
 sleep 0.1; // Without this delay, headgear doesn't get removed properly
 removeAllAssignedItems _man5;
@@ -151,7 +151,7 @@ _man5 addRating 1e11;
 _man5 addEventHandler ["Killed", server_playerDied];
 
 
-// Soldier6
+// Soldier6 SNIPER
 _man6 = _group createUnit ["C_man_polo_4_F", [_pos select 0, (_pos select 1) - 30, 0], [], 1, "Form"];
 sleep 0.1; // Without this delay, headgear doesn't get removed properly
 removeAllAssignedItems _man6;
@@ -175,7 +175,7 @@ _man6 call setMissionSkill;
 _man6 addRating 1e11;
 _man6 addEventHandler ["Killed", server_playerDied];
 
-// Soldier7
+// Soldier7 CB
 _man7 = _group createUnit ["C_man_polo_4_F", [_pos select 0, (_pos select 1) - 30, 0], [], 1, "Form"];
 sleep 0.1; // Without this delay, headgear doesn't get removed properly
 removeAllAssignedItems _man7;
@@ -201,7 +201,7 @@ _man7 addEventHandler ["Killed", server_playerDied];
 
 
 
-// Soldier8
+// Soldier8 SD
 _man8 = _group createUnit ["C_man_polo_4_F", [_pos select 0, (_pos select 1) - 30, 0], [], 1, "Form"];
 sleep 0.1; // Without this delay, headgear doesn't get removed properly
 removeAllAssignedItems _man8;
@@ -225,7 +225,7 @@ _man8 call setMissionSkill;
 _man8 addRating 1e11;
 _man8 addEventHandler ["Killed", server_playerDied];
 
-// Soldier9
+// Soldier9 SD
 _man9 = _group createUnit ["C_man_polo_4_F", [_pos select 0, (_pos select 1) - 30, 0], [], 1, "Form"];
 sleep 0.1; // Without this delay, headgear doesn't get removed properly
 removeAllAssignedItems _man8;
@@ -249,7 +249,7 @@ _man9 call setMissionSkill;
 _man9 addRating 1e11;
 _man9 addEventHandler ["Killed", server_playerDied];
 
-// Soldier10
+// Soldier10  SD
 _man10 = _group createUnit ["C_man_polo_4_F", [_pos select 0, (_pos select 1) - 30, 0], [], 1, "Form"];
 sleep 0.1; // Without this delay, headgear doesn't get removed properly
 removeAllAssignedItems _man8;

@@ -28,10 +28,10 @@ if (isNil "borderObjects") then {
 		borderObjects pushBack _light;
     };
 	//["Added Markers around the base _baseradius (30m) they will be removed in 30 seconds", 5] call mf_notify_client;
-	[format ["Added Markers around the base radius (%1m) they will be removed in 30 seconds",_baseradius], 5] call mf_notify_client;	
+	[format ["Added Markers around the base radius (%1m) they will be removed in 3 MINUTOS",_baseradius], 5] call mf_notify_client;	
 };
 
-sleep 30;
+sleep 180;
 if ( !(isNil "borderObjects") ) then {
     {
         deleteVehicle _x;    

@@ -3,7 +3,7 @@
  * Alternative au stringtable.csv qui est plus simple à installer pour le créateur de mission.
  */
 
-STR_R3F_LOG_action_heliporter = "Lift the object";
+//STR_R3F_LOG_action_heliporter = "Lift the object";
 STR_R3F_LOG_action_heliporter_fait = "Object ""%1"" attached.";
 STR_R3F_LOG_action_heliporter_UAV_group = "You must be in the same group as the UAV user to lift it.";
 STR_R3F_LOG_action_heliporter_deja_transporte = "The object ""%1"" is already being transported by a vehicle.";

@@ -43,7 +43,7 @@ _setupObjects =
     */
 	
 	_aiGroup = createGroup CIVILIAN;
-	[_aiGroup,_missionPos,7] spawn createCustomGroup2;
+	[_aiGroup,_missionPos,7] spawn createsmugglersGroup;
 
 	_aiGroup setCombatMode "RED";
 	_aiGroup setBehaviour "COMBAT";

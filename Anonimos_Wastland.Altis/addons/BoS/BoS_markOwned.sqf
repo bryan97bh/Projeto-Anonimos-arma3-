@@ -59,7 +59,7 @@ _relockTime = [];
 	//hint format ["_relockTime is %1 _maxLifetime is %2", _relockTime, _maxLifetime];
 	if (count ownedObjectMapMarkers > 0) then {
 
-		["Added Markers for your objects on the map, they will be removed in 30 seconds", 5] call mf_notify_client;
+		["Added Markers for your objects on the map, they will be removed in 3 MINUTOS", 5] call mf_notify_client;
 		
 		}else{
 		

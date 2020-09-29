@@ -45,8 +45,8 @@ for "_i" from 1 to _nbUnits do
 			_unit addVest "V_TacVest_brn";
 			_unit forceAddUniform "U_I_C_Soldier_Bandit_3_F";
 			_unit addMagazines ["SmokeShell", 2];
-			for "_i" from 1 to 3 do {_unit addItemToUniform "30rnd_762x39_AK12_Arid_Mag_F";};
-			for "_i" from 1 to 3 do {_unit addItemToVest "30rnd_762x39_AK12_Arid_Mag_F";};
+			for "_i" from 1 to 3 do {_unit addItemToUniform "30rnd_762x39_AK12_Arid_Mag_Tracer_F";};
+			for "_i" from 1 to 3 do {_unit addItemToVest "30rnd_762x39_AK12_Arid_Mag_Tracer_F";};
 			_unit addItemToVest "HandGrenade";
 			_unit addHeadgear "H_HelmetB_black";
 			_unit addGoggles "G_Bandanna_tan";
@@ -62,8 +62,8 @@ for "_i" from 1 to _nbUnits do
 			_unit addVest "V_TacVest_brn";
 			_unit forceAddUniform "U_I_C_Soldier_Para_4_F";
 			_unit addBackpack "B_FieldPack_cbr";
-			for "_i" from 1 to 2 do {_unit addItemToUniform "30Rnd_762x39_Mag_Green_F";};
-			for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_762x39_Mag_Green_F";};
+			for "_i" from 1 to 2 do {_unit addItemToUniform "30Rnd_762x39_Mag_Tracer_F";};
+			for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_762x39_Mag_Tracer_F";};
 			for "_i" from 1 to 4 do {_unit addItemToBackpack "RPG7_F";};
 			_unit addMagazines ["SmokeShell", 2];
 			_unit addHeadgear "H_ShemagOpen_khk";
@@ -77,8 +77,8 @@ for "_i" from 1 to _nbUnits do
 			_unit addVest "V_TacChestrig_cbr_F";
 			_unit forceAddUniform "U_I_C_Soldier_Para_1_F";
 			_unit addBackpack "B_Kitbag_tan";
-			for "_i" from 1 to 2 do {_unit addItemToUniform "30Rnd_762x39_Mag_Green_F";};
-			for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_762x39_Mag_Green_F";};
+			for "_i" from 1 to 2 do {_unit addItemToUniform "30Rnd_762x39_Mag_Tracer_F";};
+			for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_762x39_Mag_Tracer_F";};
 			for "_i" from 1 to 2 do {_unit addItemToBackpack "Titan_AA";};
 			_unit addMagazines ["SmokeShell", 2];
 			_unit addHeadgear "H_Booniehat_khk";
@@ -95,8 +95,8 @@ for "_i" from 1 to _nbUnits do
 			_unit addVest "V_Chestrig_khk";
 			_unit forceAddUniform "U_I_C_Soldier_Para_3_F";
 			_unit addBackpack "B_LegStrapBag_coyote_F";
-			for "_i" from 1 to 2 do {_unit addItemToUniform "30Rnd_545x39_Mag_F";};
-			for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_545x39_Mag_F";};
+			for "_i" from 1 to 2 do {_unit addItemToUniform "30Rnd_762x39_Mag_Tracer_F";};
+			for "_i" from 1 to 3 do {_unit addItemToVest "30Rnd_762x39_Mag_Tracer_F";};
 			_unit addMagazines ["SmokeShellYellow", 1];
 			_unit addHeadgear "H_HelmetB";
 			_unit addGoggles "G_Bandanna_tan";

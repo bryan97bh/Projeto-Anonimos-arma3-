@@ -93,7 +93,7 @@ if (!isNil "_price") then
 
 if (count reLockedObjectMapMarkers > 0) then {
 
-	["Marcadores adicionados para os objetos renovados, eles serão removidos em 30 segundos", 5] call mf_notify_client;
+	["Marcadores adicionados para os objetos renovados, eles serão removidos em 3 MINUTOS", 5] call mf_notify_client;
 	
 	}else{
 	//["No owned objects found within the set radius", 5] call mf_notify_client;

@@ -112,7 +112,7 @@ rifleArray = compileFinal str
 	["Fuzil Promet SR (Camuflado)", "arifle_MSBS65_UBS_camo_F", 1000],
 	["Fuzil Promet SR (Areia)", "arifle_MSBS65_UBS_sand_F", 1000],
 		
-	["Carabina AKS-74U", "arifle_AKS_F", 1000],
+	["Carabina AKS-74U", "arifle_AKS_F", 450],
 	["Fuzil AKM", "arifle_AKM_F", 1500],
 	["Fuzil AKU-12 (Preto)", "arifle_AK12U_F", 2000],
 	["Fuzil AKU-12  (Exuberante)", "arifle_AK12U_lush_F", 2000],
@@ -127,9 +127,9 @@ rifleArray = compileFinal str
 	["Espingarda Kozlice 12G", "sgun_HunterShotgun_01_F", 500],
 	["Espingarda Kozlice 12G (Cano serrado)", "sgun_HunterShotgun_01_sawedoff_F", 350],
 	
-	["Fuzil Type 115 .50 (Preta)", "arifle_ARX_blk_F", 2000],
-    ["Fuzil Type 115 .50 (Verde Hex)", "arifle_ARX_ghex_F", 2000],
-    ["Fuzil Type 115 .50 (Hex)", "arifle_ARX_hex_F", 2000],
+	["Fuzil Type 115 .50 (Preta)", "arifle_ARX_blk_F", 2600],
+    ["Fuzil Type 115 .50 (Verde Hex)", "arifle_ARX_ghex_F", 2600],
+    ["Fuzil Type 115 .50 (Hex)", "arifle_ARX_hex_F", 2600],
     
 	// Marksman Rifles
 	["Fuzil MXM", "arifle_MXM_F", 1500],
@@ -148,19 +148,19 @@ rifleArray = compileFinal str
     ["Fuzil CMR-76 (Verde Hex)", "srifle_DMR_07_ghex_F", 2000],
     ["Fuzil CMR-76 (Hex)", "srifle_DMR_07_hex_F", 2000],
 	
-    ["Fuzil SPAR-17 EMR (Preta)", "arifle_SPAR_03_blk_F", 2500],
-    ["Fuzil SPAR-17 EMR (Khaki)", "arifle_SPAR_03_khk_F", 2500],
-    ["Fuzil SPAR-17 EMR (Areia)", "arifle_SPAR_03_snd_F", 2500],
+    ["Fuzil SPAR-17 EMR (Preta)", "arifle_SPAR_03_blk_F", 3000],
+    ["Fuzil SPAR-17 EMR (Khaki)", "arifle_SPAR_03_khk_F", 3000],
+    ["Fuzil SPAR-17 EMR (Areia)", "arifle_SPAR_03_snd_F", 3000],
 
-	["Fuzil Mk14 (Classico)", "srifle_DMR_06_hunter_F", 2500],
-	["Fuzil Mk14 (Camuflado)", "srifle_DMR_06_camo_F", 2500],
-	["Fuzil Mk14 (Oliva)", "srifle_DMR_06_olive_F", 2500],
+	["Fuzil Mk14 (Classico)", "srifle_DMR_06_hunter_F", 3000],
+	["Fuzil Mk14 (Camuflado)", "srifle_DMR_06_camo_F", 3000],
+	["Fuzil Mk14 (Oliva)", "srifle_DMR_06_olive_F", 3000],
 	
-	["Fuzil Mk-I EMR (Preto)", "srifle_DMR_03_F", 2700],
-	["Fuzil Mk-I EMR (Camuflado)", "srifle_DMR_03_multicam_F", 2700],
-	["Fuzil Mk-I EMR (Khaki)", "srifle_DMR_03_khaki_F", 2700],
-	["Fuzil Mk-I EMR (Areia)", "srifle_DMR_03_tan_F", 2700],
-	["Fuzil Mk-I EMR (Woodland)", "srifle_DMR_03_woodland_F", 2700],
+	["Fuzil Mk-I EMR (Preto)", "srifle_DMR_03_F", 2900],
+	["Fuzil Mk-I EMR (Camuflado)", "srifle_DMR_03_multicam_F", 2900],
+	["Fuzil Mk-I EMR (Khaki)", "srifle_DMR_03_khaki_F", 2900],
+	["Fuzil Mk-I EMR (Areia)", "srifle_DMR_03_tan_F", 2900],
+	["Fuzil Mk-I EMR (Woodland)", "srifle_DMR_03_woodland_F", 2900],
 	
 	["Fuzil MAR-10 (Preto)", "srifle_DMR_02_F", 5000],
 	["Fuzil MAR-10 (Camuflado)", "srifle_DMR_02_camo_F", 5000],
@@ -535,16 +535,16 @@ accessoriesArray = compileFinal str
     ["DMS|Verde Hex|","optic_DMS_ghex_F", 1200, "item"],
 	["DMS|Desgastada|","optic_DMS_weathered_F", 1200, "item"],
 	["DMS Kir|Desgastada|","optic_DMS_weathered_Kir_F", 1200, "item"],
-	["AMS", "optic_AMS", 1500, "item"],
-	["AMS|Khaki|", "optic_AMS_khk", 1500, "item"],
-	["AMS|Areia|", "optic_AMS_snd", 1500, "item"],
+	//["AMS", "optic_AMS", 1500, "item"],
+	//["AMS|Khaki|", "optic_AMS_khk", 1500, "item"],
+	//["AMS|Areia|", "optic_AMS_snd", 1500, "item"],
     ["Kahlia|Desgastada|", "optic_KHS_old", 900, "item"],
 	["Kahlia|Preta|", "optic_KHS_blk", 1600, "item"],
 	["Kahlia|Hex|", "optic_KHS_hex", 1600, "item"],
 	["Kahlia|Bronze|", "optic_KHS_tan", 1600, "item"],
-	["LRPS", "optic_LRPS", 2000, "item"],
-	["LRPS|Verde Hex|", "optic_LRPS_ghex_F", 2000, "item", "noDLC"],
-    ["LRPS|Tropical|", "optic_LRPS_tna_F", 2000, "item", "noDLC"],
+	//["LRPS", "optic_LRPS", 2000, "item"],
+	//["LRPS|Verde Hex|", "optic_LRPS_ghex_F", 2000, "item", "noDLC"],
+    //["LRPS|Tropical|", "optic_LRPS_tna_F", 2000, "item", "noDLC"],
 	["Mira De Visão Noturna", "optic_NVS", 3000, "item"],
 	["Mira De VIsão Térmica", "optic_tws", 5000, "item", "HIDDEN"], // To hide from store list, add "HIDDEN" after "item", like "item", "HIDDEN"]
 	["Mira de Visão Térmica|MG|", "optic_tws_mg", 6000, "item", "HIDDEN"],
@@ -1248,7 +1248,6 @@ allStoreGear = compileFinal str (call headArray + call uniformArray + call vestA
 genObjectsArray = compileFinal str
 [
     ["Camo Net", "CamoNet_INDP_open_F", 200, "object", "HIDDEN"], // unlisted, only for object saving
-    
 	["Caixa de Munição | Vazia", "Box_NATO_Ammo_F", 200, "ammocrate"],
     ["Caixa de Arma | Vazia", "Box_NATO_Wps_F", 200, "ammocrate"],
     ["Caixa de Arma Especial | Vazia", "Box_NATO_WpsSpecial_F", 200, "ammocrate"],
@@ -1376,13 +1375,16 @@ genObjectsArray = compileFinal str
 	["Cerca com Fio Militar (Longo)", "Land_New_WiredFence_10m_F", 400, "object"],
 	["Barreira de Concreto Plana", "Land_Mil_ConcreteWall_F", 300, "object"],
 	["Depósito Militar", "Land_Cargo_House_V1_F", 900, "object"],
+	//["Area de descontaminaçao", "ContainmentArea_01_black_F", 500, "object"], //nao da pra pega 
+	["Quadra", "Land_BC_Court_F", 1000, "object"],
 	["QG de Equipamento Militares", "Land_Cargo_HQ_V1_F", 2000, "object"],
 	["Posto de Depósito Militar", "Land_Cargo_Patrol_V1_F", 800, "object"],
 	["Torre Militar Alta", "Land_Cargo_Tower_V1_F", 10000, "object"],
 	["Bomba de Gasolina", "Land_FuelStation_Feed_F", 10000, "object"],
 	["Saco de Comida", "Land_Sacks_goods_F", 1000],
 	["Barril de Água", "Land_BarrelWater_F", 1000],
-	["Container de Carga 2m", "Land_Cargo20_military_green_F", 5000, "object"],
+	//["Container de Carga 2m", "Land_Cargo20_military_green_F", 1000, "object"],
+	["Container de Carga (TARU) ", "Land_Pod_Heli_Transport_04_box_F", 10000, "object"],
 	["TravaBase | SENHA PADRÃO: 0000 |", "Land_Device_assembled_F", 25000, "object"],
     ["Portão da Base (Fino)", "Land_PillboxWall_01_6m_F", 5000, "object"],
 	["Portão da Base (Grosso)", "Land_Canal_Wall_10m_F", 10000, "object"],  
@@ -1447,21 +1449,21 @@ landArray = compileFinal str
 	// SKIPSAVE = will not be autosaved until first manual force save, good for cheap vehicles that usually get abandoned
 
 	["HEMTT | Guincho", "B_Truck_01_mover_F", 4000, "vehicle"],
-	["HEMTT | Carga", "B_Truck_01_box_F", 5000, "vehicle"],
+	["HEMTT | Carga", "B_Truck_01_box_F", 9500, "vehicle"],
 	["HEMTT | Transporte", "B_Truck_01_transport_F", 5000, "vehicle"],
 	["HEMTT | Coberto", "B_Truck_01_covered_F", 6000, "vehicle"],
 	["HEMTT | Combustível", "B_Truck_01_fuel_F", 7500, "vehicle"],
-	["HEMTT | Médico", "B_Truck_01_medical_F", 10000, "vehicle"],
+	["HEMTT | Médico", "B_Truck_01_medical_F", 6000, "vehicle"],
 	//["HEMTT Repair", "B_Truck_01_Repair_F", 12500, "vehicle"],			//Removed to avoid bugusing with default arma rearm/repair function
-	["HEMTT | Remuniciador", "B_Truck_01_ammo_F", 15000, "vehicle"],				//Removed to avoid bugusing with default arma rearm/repair function
+	//["HEMTT | Remuniciador", "B_Truck_01_ammo_F", 15000, "vehicle"],				//Removed to avoid bugusing with default arma rearm/repair function
 	
 	//["Tempest | Device", "O_Truck_03_device_F", 5000, "vehicle"],
 	["Tempest | Transporte", "O_Truck_03_transport_F", 5000, "vehicle"],
 	["Tempest | Coberto", "O_Truck_03_covered_F", 6000, "vehicle"],
 	["Tempest | Combustível", "O_Truck_03_fuel_F", 7500, "vehicle"],
-	["Tempest | Médico", "O_Truck_03_medical_F", 10000, "vehicle"],
+	["Tempest | Médico", "O_Truck_03_medical_F", 6000, "vehicle"],
 	//["Tempest Repair", "O_Truck_03_repair_F", 12500, "vehicle"],			//Removed to avoid bugusing with default arma rearm/repair function
-	["Tempest | Remuniciador", "O_Truck_03_ammo_F", 15000, "vehicle"],				//Removed to avoid bugusing with default arma rearm/repair function
+	//["Tempest | Remuniciador", "O_Truck_03_ammo_F", 15000, "vehicle"],				//Removed to avoid bugusing with default arma rearm/repair function
 	
 	["Zamak | Transporte", "I_Truck_02_transport_F", 5000, "vehicle"],
 		["Zamak Transport (IDAP)", "C_IDAP_Truck_02_transport_F", 4000, "vehicle", "HIDDEN"], // hidden, just a paintjob
@@ -1471,9 +1473,9 @@ landArray = compileFinal str
     ["Zamak | Coberto Civil", "C_Truck_02_covered_F", 5000, "vehicle"],
     //["Zamak Water (IDAP)", "C_IDAP_Truck_02_water_F", 5000, "vehicle"],
 	["Zamak | Combustível", "I_Truck_02_fuel_F", 7500, "vehicle"],
-	["Zamak  | Médico", "I_Truck_02_medical_F", 10000, "vehicle"],
+	["Zamak  | Médico", "I_Truck_02_medical_F", 6000, "vehicle"]
 	//["Zamak Repair", "I_Truck_02_box_F", 10000, "vehicle"],				//Removed to avoid bugusing with default arma rearm/repair function
-	["Zamak | Remuniciador", "I_Truck_02_ammo_F", 15000, "vehicle"]				//Removed to avoid bugusing with default arma rearm/repair function
+	//["Zamak | Remuniciador", "I_Truck_02_ammo_F", 15000, "vehicle"]				//Removed to avoid bugusing with default arma rearm/repair function
     
 ];
 
@@ -1500,7 +1502,6 @@ armoredArray = compileFinal str
 
 	["Strider | Browning .50 | 4 Tripulantes", "I_MRAP_03_hmg_F", 15000, "vehicle"],
 	["Strider | Lança Granadas| 4 Tripulantes", "I_MRAP_03_gmg_F", 17500, "vehicle"]
-	
 ];
 
 tanksArray = compileFinal str
@@ -1550,7 +1551,7 @@ helicoptersArray = compileFinal str
     
 	
 	["Mi-290 Taru | Leve", "O_Heli_Transport_04_F", 6000, "vehicle"],
-	["Mi-290 Taru | Fechado", "O_Heli_Transport_04_box_F", 6000, "vehicle"],
+	["Mi-290 Taru | Fechado", "O_Heli_Transport_04_box_F", 20000, "vehicle"],
 	["Mi-290 Taru | Combustível", "O_Heli_Transport_04_fuel_F", 8500, "vehicle"],
 	["Mi-290 Taru | Bancos", "O_Heli_Transport_04_bench_F", 9000, "vehicle"],
 	["Mi-290 Taru | Transporte", "O_Heli_Transport_04_covered_F", 9500, "vehicle"],
@@ -1576,8 +1577,9 @@ helicoptersArray = compileFinal str
 planesArray = compileFinal str
 [
     ["César BTT", "C_Plane_Civil_01_F", 2000, "vehicle"],
-    //["Caesar Racing BTT (Armed)", "C_Plane_Civil_01_racing_F", 4500, "vehicle"],
-    
+    ["Super Tucano", "C_Plane_Civil_01_racing_F", 4500, "vehicle"],
+    //["Super Tucano", "C_Plane_Civil_01_racing_F", 5000, "vehicle", "variant_civracer"],
+
     ["A-143 Buzzard AA", "I_Plane_Fighter_03_dynamicLoadout_F", 40000, "vehicle", "variant_buzzardAA"],
     ["A-143 Buzzard CAS", "I_Plane_Fighter_03_dynamicLoadout_F", 50000, "vehicle", "variant_buzzardCAS"],
 
@@ -2052,11 +2054,11 @@ customPlayerItems = compileFinal str
 	["Kit de Reparo", "repairkit", localize "STR_WL_ShopDescriptions_RepairKit", "client\icons\briefcase.paa", 500, 250],
 	["Galão Combustível (Cheio)", "jerrycanfull", localize "STR_WL_ShopDescriptions_fuelFull", "client\icons\jerrycan.paa", 150, 75],
 	["Galão Combustível (Vazio)", "jerrycanempty", localize "STR_WL_ShopDescriptions_fuelEmpty", "client\icons\jerrycan.paa", 50, 25],
-	["Spawn Beacon", "spawnbeacon", localize "STR_WL_ShopDescriptions_spawnBeacon", "client\icons\spawnbeacon.paa", 9500, 750],
+	["Spawn Beacon", "spawnbeacon", localize "STR_WL_ShopDescriptions_spawnBeacon", "client\icons\spawnbeacon.paa", 9500, 1000],
 	["Tenda Camuflada", "camonet", localize "STR_WL_ShopDescriptions_Camo", "client\icons\camonet.paa", 200, 100],
 	["Cifão de Combustível", "syphonhose", localize "STR_WL_ShopDescriptions_SyphonHose", "client\icons\syphonhose.paa", 200, 100],
 	["TravaCarro", "pinlock", localize "STR_WL_ShopDescriptions_Pinlock", "client\icons\keypad.paa", 250, 50],
-	["Energético", "energydrink", localize "STR_WL_ShopDescriptions_Energy_Drink", "client\icons\energydrink.paa", 2500, 1000],
+	["Energético", "energydrink", localize "STR_WL_ShopDescriptions_Energy_Drink", "client\icons\energydrink.paa", 2000, 1000],
 	["LSD", "lsd", localize "STR_WL_ShopDescriptions_LSD", "client\icons\lsd.paa", 1500, 1000],
 	["Cannabis", "marijuana", localize "STR_WL_ShopDescriptions_Marijuana", "client\icons\marijuana.paa", 2500, 1500],
 	["Cocaina", "cocaine", localize "STR_WL_ShopDescriptions_Cocaine", "client\icons\cocaine.paa", 2500, 2000],

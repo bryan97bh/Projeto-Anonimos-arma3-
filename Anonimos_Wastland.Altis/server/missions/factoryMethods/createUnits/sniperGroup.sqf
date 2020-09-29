@@ -43,7 +43,7 @@ for "_i" from 1 to _nbUnits do
 		case (_i % 3 == 0):
 		{
 			_unit addVest "V_TacVest_brn";
-			_unit forceAddUniform "U_B_FullGhillie_ard";
+			_unit forceAddUniform "U_I_FullGhillie_sard";
 			_unit addMagazines ["SmokeShell", 2];
 			for "_i" from 1 to 3 do {_unit addItemToUniform "5Rnd_127x108_APDS_Mag";};
 			for "_i" from 1 to 3 do {_unit addItemToVest "5Rnd_127x108_Mag";};
@@ -51,13 +51,13 @@ for "_i" from 1 to _nbUnits do
 			_unit addHeadgear "H_HelmetSpecB_sand";
 			_unit addGoggles "G_Bandanna_tan";
 			_unit addWeapon "srifle_GM6_camo_F";
-			_unit addPrimaryWeaponItem "optic_KHS_old";
+			_unit addPrimaryWeaponItem "optic_LRPS";
 		};
 		// RPG-7 every 7 units, starting from second one
 		case ((_i + 5) % 7 == 0):
 		{
 			_unit addVest "V_TacVest_brn";
-			_unit forceAddUniform "U_I_FullGhillie_ard";
+			_unit forceAddUniform "U_B_FullGhillie_ard";
 			_unit addBackpack "B_FieldPack_cbr";
 			for "_i" from 1 to 2 do {_unit addItemToUniform "10Rnd_338_Mag";};
 			for "_i" from 1 to 3 do {_unit addItemToVest "10Rnd_338_Mag";};
@@ -66,7 +66,7 @@ for "_i" from 1 to _nbUnits do
 			_unit addHeadgear "H_HelmetB_sand";
 			_unit addGoggles "G_Bandanna_khk";
 			_unit addWeapon "srifle_DMR_02_sniper_F";
-			_unit addPrimaryWeaponItem "optic_KHS_old";
+			_unit addPrimaryWeaponItem "optic_LRPS";
 			_unit addPrimaryWeaponItem "muzzle_snds_338_sand";
 			_unit addWeapon "launch_B_Titan_short_F";
 		};
@@ -74,7 +74,7 @@ for "_i" from 1 to _nbUnits do
 		case (_i % 7 == 0):
 		{
 			_unit addVest "V_TacVest_brn";
-			_unit forceAddUniform "U_I_FullGhillie_lsh";
+			_unit forceAddUniform "U_B_FullGhillie_sard";
 			_unit addBackpack "B_FieldPack_cbr";
 			for "_i" from 1 to 2 do {_unit addItemToUniform "10Rnd_93x64_DMR_05_Mag";};
 			for "_i" from 1 to 3 do {_unit addItemToVest "10Rnd_93x64_DMR_05_Mag";};
@@ -83,7 +83,7 @@ for "_i" from 1 to _nbUnits do
 			_unit addHeadgear "H_HelmetB_sand";
 			_unit addGoggles "G_Bandanna_khk";
 			_unit addWeapon "srifle_DMR_05_hex_F";
-			_unit addPrimaryWeaponItem "optic_KHS_old";
+			_unit addPrimaryWeaponItem "optic_LRPS_ghex_F";
 			_unit addPrimaryWeaponItem "muzzle_snds_93mmg_tan";
 			_unit addWeapon "launch_B_Titan_F";
 		};
@@ -94,28 +94,28 @@ for "_i" from 1 to _nbUnits do
 			if (_unit == leader _group) then
 			{			
 			_unit addVest "V_TacVest_khk";
-			_unit forceAddUniform "U_B_FullGhillie_lsh";
+			_unit forceAddUniform "U_I_FullGhillie_lsh";
 			for "_i" from 1 to 2 do {_unit addItemToUniform "10Rnd_Mk14_762x51_Mag";};
 			for "_i" from 1 to 3 do {_unit addItemToVest "10Rnd_Mk14_762x51_Mag";};
 			_unit addMagazines ["SmokeShellYellow", 1];
 			_unit addHeadgear "H_HelmetB_sand";
 			_unit addGoggles "G_Bandanna_khk";
 			_unit addWeapon "srifle_DMR_03_tan_F";
-			_unit addPrimaryWeaponItem "optic_NVS";
+			_unit addPrimaryWeaponItem "optic_LRPS_ghex_F";
 			_unit addPrimaryWeaponItem "muzzle_snds_B_snd_F";
 
 			}
 			else
 			{
 			_unit addVest "V_TacVest_khk";
-			_unit forceAddUniform "U_I_FullGhillie_sard";
+			_unit forceAddUniform "U_I_FullGhillie_ard";
 			for "_i" from 1 to 2 do {_unit addItemToUniform "10Rnd_Mk14_762x51_Mag";};
 			for "_i" from 1 to 3 do {_unit addItemToVest "10Rnd_Mk14_762x51_Mag";};
 			_unit addMagazines ["SmokeShell", 1];
 			_unit addHeadgear "H_HelmetB_sand";
 			_unit addGoggles "G_Bandanna_khk";
 			_unit addWeapon "srifle_DMR_03_woodland_F";
-			_unit addPrimaryWeaponItem "optic_MRCO";
+			_unit addPrimaryWeaponItem "optic_LRPS_tna_F";
 			_unit addPrimaryWeaponItem "muzzle_snds_B_snd_F";
 			};
 		};

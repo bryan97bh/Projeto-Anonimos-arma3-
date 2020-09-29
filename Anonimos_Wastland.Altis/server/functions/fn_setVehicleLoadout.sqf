@@ -27,11 +27,15 @@ if  (_class isKindOf "C_Plane_Civil_01_racing_F") then
 	{
 	_mags =
 			[
-				["5000Rnd_762x51_Belt", [-1]]
+				["5000Rnd_762x51_Belt", [-1]],
+				["24Rnd_missiles", [-1]],
+				["120Rnd_CMFlare_Chaff_Magazine", [-1]]
 			];
 	_weapons =
 			[
-				["M134_minigun", [-1]]
+				["M134_minigun", [-1]],
+				["missiles_DAR", [-1]],
+				["CMFlareLauncher", [-1]]
 			];
 	};
 

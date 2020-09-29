@@ -52,7 +52,7 @@ for "_i" from 1 to _nbUnits do
 		{
 			_unit forceAddUniform "U_B_T_Soldier_F";
 			_unit addWeapon "arifle_MX_GL_khk_F";
-			for "_i" from 1 to 3 do {_unit addItem "30Rnd_65x39_caseless_mag_Tracer";};
+			for "_i" from 1 to 3 do {_unit addItem "30Rnd_65x39_caseless_khaki_mag_Tracer";};
 			for "_i" from 1 to 2 do {_unit addItemToVest "MiniGrenade";};
 			for "_i" from 1 to 3 do {_unit addItemToVest "1Rnd_HE_Grenade_shell";};
 			_unit addPrimaryWeaponItem "optic_Holosight_khk_F";
@@ -70,21 +70,21 @@ for "_i" from 1 to _nbUnits do
 			_unit addWeapon "launch_MRAWS_green_rail_F";
 			_unit addMagazine "MRAWS_HE_F";
 			_unit addMagazine "MRAWS_HEAT55_F";
-			for "_i" from 1 to 3 do {_unit addItem "30Rnd_65x39_caseless_mag_Tracer";};
+			for "_i" from 1 to 3 do {_unit addItem "30Rnd_65x39_caseless_khaki_mag_Tracer";};
 		};
 		// AA every 6 units
 		case (_i % 7 == 0):
 		{
 			_unit forceAddUniform "U_B_T_Soldier_F";
-			_unit addBackpack "B_AssaultPack_tna_F";
+			//_unit addBackpack "B_AssaultPack_tna_F";
 			_unit addWeapon "arifle_MXC_khk_F";
 			_unit addPrimaryWeaponItem "muzzle_snds_H_khk_F";
 			_unit addPrimaryWeaponItem "optic_Holosight_khk_F";
-			_unit addMagazine "RPG7_F";
-			_unit addWeapon "launch_RPG7_F";
-			_unit addMagazine "RPG7_F";
-			_unit addMagazine "RPG7_F";
-			for "_i" from 1 to 3 do {_unit addItem "30Rnd_65x39_caseless_mag_Tracer";};
+			//_unit addMagazine "Titan_AA";
+			//_unit addWeapon "launch_B_Titan_tna_F";
+			//_unit addMagazine "Titan_AA";
+			//_unit addMagazine "Titan_AA";
+			for "_i" from 1 to 3 do {_unit addItem "30Rnd_65x39_caseless_khaki_mag_Tracer";};
 		};
 		// Rifleman
 		default
@@ -100,7 +100,7 @@ for "_i" from 1 to _nbUnits do
 				_unit addPrimaryWeaponItem "optic_Hamr_khk_F";
 				_unit addHeadgear "H_HelmetB_TI_tna_F";
 				_unit addGoggles "G_Combat_Goggles_tna_F";
-				for "_i" from 1 to 3 do {_unit addItem "100Rnd_65x39_caseless_mag_Tracer";};
+				for "_i" from 1 to 3 do {_unit addItem "100Rnd_65x39_caseless_khaki_mag";};
 			}
 			else
 			{
@@ -108,7 +108,7 @@ for "_i" from 1 to _nbUnits do
 				_unit addWeapon "arifle_MX_khk_F";
 				_unit addPrimaryWeaponItem "optic_Holosight_khk_F";
 				_unit addWeapon "Binocular";
-				for "_i" from 1 to 3 do {_unit addItem "30Rnd_65x39_caseless_mag_Tracer";};
+				for "_i" from 1 to 3 do {_unit addItem "30Rnd_65x39_caseless_khaki_mag_Tracer";};
 			};
 		};
 	};

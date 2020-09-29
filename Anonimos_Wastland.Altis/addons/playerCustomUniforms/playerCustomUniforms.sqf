@@ -2,8 +2,9 @@ if (!hasInterface) exitWith {};  // DO NOT DELETE THIS LINE!
 
 _playerCustomUniforms =
 [
-	[ // RA
+	[ // aleatorios 
 		[
+			"76561198073156695", //guy fawkes
 			"76561198157312258", //<[RA] Cap  Batista>
 			"76561198027682212", //<[RA] 2°ten Sniperjoel>
 			"76561198087974566", //<[RA] 2ºSgt Dpaulla>
@@ -21,7 +22,8 @@ _playerCustomUniforms =
 			"76561197978867972", //<[RA] Sd Cordeiro
 			"76561198216066545", //<[RA] Menegusso>
 			"76561198057291104", //<[RA] Martins>
-			"76561198256683401"  //<[RA] Sd Souza
+			"76561198256683401", //<[RA] Sd Souza
+			"76561198425527927"  //jon
 		],
 		[
 			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\an_1.jpg"]
@@ -33,16 +35,25 @@ _playerCustomUniforms =
 			"76561198070424261", //[CTMBR] bioga
 			"76561198343865767", //[CTMBR] WhiteCaT
 			"76561198176174925", //[CTMBR] --BIEL--
-			"76561198060065964", //[CTMBR] BRYAN 
+			"76561198060065964", //[CTMBR] BRYAN
+			"76561198014855920", //[CTMBR] marechal
 			"76561198321878481"  //[CTMBR] xavier
 		],
 		[
 			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\19_U.jpg"]
 		]
 	],
-	[ // G4
+	[ // UNICO
+		[ 
+			"76561198135910862"  //gtl_BR
+		],
 		[
-			"76561198332507924" //<USERNAME>
+			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\18_u.jpg"]
+		]
+	],
+	[ //UNICO
+		[
+			"76561198332507924" //<pororoca voadora>
 		],
 		[
 			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\8_I.jpg"]

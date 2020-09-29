@@ -21,13 +21,13 @@ MainMissions =
 
 SideMissions =
 [ 
-	//["mission_GeoCache", 0.9],         //analise geografica
-    ["mission_ConvoyCSATSF", 1.2]     //PATRULHA DE RECONHECIMENTO
-    //["mission_DrugsRunners", 1.1],     //TRAFICANTES
-    //["mission_Smugglers", 1.3],        //CONTRABANDO DE ARMAS
-	//["mission_AirWreck", 0.9],         //HELICÓPTERO ABATIDO
-	//["mission_WepCache", 0.9],         //ACAMPAMENTO MILITAR
-	//["mission_Truck", 1.1]             //CAMINHÃO DE SUPRIMENTO
+	["mission_GeoCache", 0.9],         //analise geografica
+    ["mission_ConvoyCSATSF", 1.2],     //PATRULHA DE RECONHECIMENTO
+    ["mission_DrugsRunners", 1.1],     //TRAFICANTES
+    ["mission_Smugglers", 1.3],        //CONTRABANDO DE ARMAS
+	["mission_AirWreck", 0.9],         //HELICÓPTERO ABATIDO
+	["mission_WepCache", 0.9],         //ACAMPAMENTO MILITAR
+	["mission_Truck", 1.1]             //CAMINHÃO DE SUPRIMENTO
 ];
 
 MoneyMissions =
@@ -42,12 +42,12 @@ MoneyMissions =
 
 PrincipalMissions =
 [
-	//["mission_Sniper", 0.9],           //SNIPES 
-	//["mission_OCUPACAO", 1.4],         //OCUPACAO
-    //["mission_TownInvasion", 1.5],     //CIDADE INVADIDA
-	//["mission_MiniConvoy", 1],         //ESCOLTA ARMADA
-	["mission_Outpost", 1.3]          //POSTO AVANÇADO
-	//["mission_Convoy", 1]              //COMBOIO SUSPEITO
+	["mission_Sniper", 0.9],           //SNIPES 
+	["mission_OCUPACAO", 1.4],          //OCUPACAO
+    ["mission_TownInvasion", 1.5],     //CIDADE INVADIDA
+	["mission_MiniConvoy", 1],         //ESCOLTA ARMADA
+	["mission_Outpost", 1.3],          //POSTO AVANÇADO
+	["mission_Convoy", 1]              //COMBOIO SUSPEITO
 ];
 
 hostileairMissions =
@@ -77,14 +77,14 @@ HackerMissionMarkers = (allMapMarkers select {["HackerMission_", _x] call fn_sta
 RoadblockMissionMarkers = (allMapMarkers select {["RoadblockMission_", _x] call fn_startsWith}) apply {[_x, false]};
 SatelliteMissionMarkers = (allMapMarkers select {["SatelliteMission_", _x] call fn_startsWith}) apply {[_x, false]};
 
-/*if !(ForestMissionMarkers isEqualTo []) then
+if !(ForestMissionMarkers isEqualTo []) then
 {
 	SideMissions append
 	[
 		["mission_AirWreck", 1],
 		["mission_WepCache", 1]
 	];
-};*/
+};
 
 
 

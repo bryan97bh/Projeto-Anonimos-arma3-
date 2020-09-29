@@ -35,10 +35,22 @@ switch (true) do
 	// AH-9 Pawnee
 	case (_class isKindOf "B_Heli_Light_01_dynamicLoadout_F"):
 	{
+		_weapons =
+		[
+			["CMFlareLauncher", [-1]]
+		];
+		_mags =
+		[
+			["60Rnd_CMFlare_Chaff_Magazine", [-1]]
+		];
+        _customCode =
+		{
+			reload _veh;
+		};
 		switch (_variant) do
 		{
-			case "pawneeGun": { _pylons = ["",""] };
-			default           { _pylons = ["PylonRack_12Rnd_missiles","PylonRack_12Rnd_missiles"] };
+			case "pawneeGun": { _pylons = ["","60Rnd_CMFlare_Chaff_Magazine"] };
+			default           { _pylons = ["PylonRack_12Rnd_missiles","PylonRack_12Rnd_missiles","60Rnd_CMFlare_Chaff_Magazine"] };
 		};
 	};
 
@@ -127,6 +139,34 @@ switch (true) do
 			_veh setAmmoOnPylon [4, 500]; // 20mm gun
 		};
 	};
+
+    
+    /*// SUPER TUCANO UP
+	case (_class isKindOf "C_Plane_Civil_01_racing_F"):
+	{
+		_weapons =
+		[
+			["M134_minigun", [-1]],
+			["missiles_DAR", [-1]],
+			["CMFlareLauncher", [-1]]
+		];
+		_mags =
+		[
+			["5000Rnd_762x51_Belt", [-1]],
+			["24Rnd_missiles", [-1]],
+			["120Rnd_CMFlare_Chaff_Magazine", [-1]]
+		];
+        _customCode =
+		{
+			reload _veh;
+		};
+		switch (_variant) do
+		{
+			case "UP": { _pylons = ["5000Rnd_762x51_Belt","24Rnd_missiles","PylonMissile_1Rnd_BombCluster_01_F","120Rnd_CMFlare_Chaff_Magazine"] };
+			default    { _pylons = ["5000Rnd_762x51_Belt","24Rnd_missiles","120Rnd_CMFlare_Chaff_Magazine"] };
+		};
+	};*/
+
 
 	// A-149 Gryphon
 	case (_class isKindOf "Plane_Fighter_04_Base_F"):

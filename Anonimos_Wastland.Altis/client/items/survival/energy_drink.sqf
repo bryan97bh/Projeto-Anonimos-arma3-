@@ -41,7 +41,7 @@ if (_success) then
 			player setVariable ["energy_drink_active", true];
 			["Você tem resistência ilimitada por 1 minuto", 5] call mf_notify_client;
 
-			sleep (2*60);
+			sleep (1*60);
 
 			player enableFatigue true;
 			player setVariable ["energy_drink_active", false];

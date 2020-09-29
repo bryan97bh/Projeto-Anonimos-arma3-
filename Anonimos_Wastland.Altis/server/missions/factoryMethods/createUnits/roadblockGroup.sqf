@@ -39,11 +39,10 @@ for "_i" from 1 to _nbUnits do
 	removeGoggles _unit;
 
 	_unit addVest "V_TacVest_gen_F";
-	_unit addGoggles "G_Balaclava_blk";
 	_unit addMagazines ["SmokeShell", 2];
-	_unit addMagazine "30Rnd_556x45_Stanag";
-	_unit addMagazine "30Rnd_556x45_Stanag";
-	_unit addMagazine "30Rnd_556x45_Stanag";
+	_unit addMagazine "30Rnd_556x45_Stanag_Tracer_Red";
+	_unit addMagazine "30Rnd_556x45_Stanag_Tracer_Red";
+	_unit addMagazine "30Rnd_556x45_Stanag_Tracer_Red";
 
 	switch (true) do
 	{
@@ -51,18 +50,23 @@ for "_i" from 1 to _nbUnits do
 		case (_i % 3 == 0):
 		{
 			_unit addUniform "U_B_GEN_Commander_F";
+			_unit addHeadgear "H_PASGT_basic_blue_F";
+			_unit addGoggles "G_Balaclava_blk";
 			_unit addMagazine "1Rnd_HE_Grenade_shell";
 			_unit addWeapon "arifle_SPAR_01_GL_blk_F";
+			_unit addPrimaryWeaponItem "optic_MRCO";
 			_unit addMagazine "1Rnd_HE_Grenade_shell";
 			_unit addMagazine "1Rnd_HE_Grenade_shell";
 		};
 		// AT every 7 units, starting from second one
 		case ((_i + 5) % 7 == 0):
 		{
-			_unit addUniform "U_B_GEN_Commander_F";
+			_unit addUniform "U_B_GEN_Soldier_F";
+			_unit addHeadgear "H_Beret_gen_F";
 			_unit addBackpack "B_ViperLightHarness_blk_F";
 			_unit addWeapon "arifle_SPAR_01_blk_F";
 			_unit addPrimaryWeaponItem "muzzle_snds_M";
+			_unit addPrimaryWeaponItem "optic_Holosight_blk_F";
 			_unit addMagazine "NLAW_F";
 			_unit addWeapon "launch_NLAW_F";
 			_unit addMagazine "NLAW_F";
@@ -71,14 +75,16 @@ for "_i" from 1 to _nbUnits do
 		// AA every 6 units
 		case (_i % 7 == 0):
 		{
-			_unit addUniform "U_B_GEN_Commander_F";
-			_unit addBackpack "B_ViperLightHarness_blk_F";
+			_unit addUniform "U_B_GEN_Soldier_F";
+			_unit addHeadgear "H_Beret_gen_F";
+			//_unit addBackpack "B_ViperLightHarness_blk_F";
 			_unit addWeapon "arifle_SPAR_01_blk_F";
 			_unit addPrimaryWeaponItem "muzzle_snds_M";
-			_unit addMagazine "Titan_AA";
+			_unit addPrimaryWeaponItem "optic_Holosight_blk_F";
+			/*_unit addMagazine "Titan_AA";
 			_unit addWeapon "launch_I_Titan_olive_F";
 			_unit addMagazine "Titan_AA";
-			_unit addMagazine "Titan_AA";
+			_unit addMagazine "Titan_AA";*/
 		};
 		// Rifleman
 		default
@@ -87,33 +93,22 @@ for "_i" from 1 to _nbUnits do
 
 			if (_unit == leader _group) then
 			{
-				
+				_unit addHeadgear "H_MilCap_gen_F";
 				_unit addWeapon "arifle_SPAR_01_blk_F";
+				_unit addPrimaryWeaponItem "optic_Aco";
 				_unit setRank "SERGEANT";
 				_unit addMagazines ["SmokeShellYellow", 1];
 			}
 			else
 			{
-				_unit addHeadgear "H_Helmet_Skate";
+				_unit addGoggles "G_Balaclava_blk";
+				_unit linkItem "NVGogglesB_blk_F";
 				_unit addWeapon "arifle_SPAR_01_blk_F";
+				_unit addPrimaryWeaponItem "optic_ACO_grn";
 			};
 		};
 	};
-	_unit addPrimaryWeaponItem "optic_Holosight_blk_F";
-	_unit linkItem "NVGogglesB_blk_F";
-	_unit addPrimaryWeaponItem "acc_pointer_IR";
 	_unit enablegunlights "forceOn";
-
-			if (_unit == leader _group) then
-			{
-				_unit addHeadgear "H_Beret_gen_F";
-			}
-			else
-			{
-				_unit addHeadgear "H_Helmet_Skate";
-			};
-	
-	
 
 	_unit addRating 1e11;
 	_unit spawn refillPrimaryAmmo;

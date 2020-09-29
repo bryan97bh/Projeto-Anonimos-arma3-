@@ -88,7 +88,7 @@ if (isNil "A3W_AllowClientToEnterGame") then
 {
 	waitUntil {!isNil "A3W_AllowClientToEnterGame"}; //With sleep at the end to avoid base objects bugusing during object positioning after restart
 	//uisleep ((["A3W_ClientSpawnDelayAfterRestart", 60*1] call getPublicVar)/10); //To avoid base objects bugusing during object positioning after restart
-	UiSleep 10;
+	UiSleep 300;
 	9999 cutRsc ["loadingscreen","BLACK"];    
 };
 

@@ -54,7 +54,7 @@ for "_i" from 1 to _nbUnits do
 			_unit addWeapon "arifle_CTARS_ghex_F";
 			for "_i" from 1 to 2 do {_unit addItemToVest "MiniGrenade";};
 			_unit addPrimaryWeaponItem "optic_Holosight_smg_blk_F";
-			for "_i" from 1 to 3 do {_unit  addItem  "100Rnd_580x42_Mag_F";};
+			for "_i" from 1 to 3 do {_unit  addItem  "100Rnd_580x42_ghex_Mag_Tracer_F";};
 
 		};
 		// AT every 7 units, starting from second one
@@ -63,7 +63,7 @@ for "_i" from 1 to _nbUnits do
 			_unit forceAddUniform "U_O_T_Soldier_F";
 			_unit addBackpack "B_FieldPack_ghex_F";
 			_unit addWeapon "arifle_CTAR_ghex_F";
-			for "_i" from 1 to 3 do {_unit  addItem  "30Rnd_580x42_Mag_F";};
+			for "_i" from 1 to 3 do {_unit  addItem  "30Rnd_580x42_Mag_Tracer_F";};
 			_unit addPrimaryWeaponItem "optic_Aco_smg";
 			_unit addPrimaryWeaponItem "muzzle_snds_58_ghex_F";
 			_unit addMagazine "NLAW_F";
@@ -75,15 +75,15 @@ for "_i" from 1 to _nbUnits do
 		case (_i % 7 == 0):
 		{
 			_unit forceAddUniform "U_O_T_Soldier_F";
-			_unit addBackpack "B_FieldPack_ghex_F";
+			//_unit addBackpack "B_FieldPack_ghex_F";
 			_unit addWeapon "arifle_CTAR_ghex_F";
-			for "_i" from 1 to 3 do {_unit  addItem  "30Rnd_580x42_Mag_F";};
+			for "_i" from 1 to 3 do {_unit  addItem  "30Rnd_580x42_Mag_Tracer_F";};
 			_unit addPrimaryWeaponItem "optic_Aco_smg";
 			_unit addPrimaryWeaponItem "muzzle_snds_58_ghex_F";
-			_unit addMagazine "Titan_AA";
-			_unit addWeapon "launch_O_Titan_ghex_F";
-			_unit addMagazine "Titan_AA";
-			_unit addMagazine "Titan_AA";
+			//_unit addMagazine "Titan_AA";
+			//_unit addWeapon "launch_O_Titan_ghex_F";
+			//_unit addMagazine "Titan_AA";
+			//_unit addMagazine "Titan_AA";
 		};
 		// Rifleman
 		default
@@ -104,7 +104,7 @@ for "_i" from 1 to _nbUnits do
 			{
 				_unit forceAddUniform "U_O_T_Soldier_F";
 				_unit addWeapon "arifle_CTAR_ghex_F";
-				for "_i" from 1 to 3 do {_unit  addItem  "30Rnd_580x42_Mag_F";};
+				for "_i" from 1 to 3 do {_unit  addItem  "30Rnd_580x42_Mag_Tracer_F";};
 				_unit addPrimaryWeaponItem "optic_Aco_smg";
 				_unit addWeapon "Binocular";
 			};

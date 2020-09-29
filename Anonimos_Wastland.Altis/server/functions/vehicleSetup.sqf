@@ -36,11 +36,11 @@ else
     _vehicle disableTIEquipment false;
 };
 
-//Disable Arma Default Sling Loading /staynex
+/*//Disable Arma Default Sling Loading /staynex
 if (_disableArmaSlingLoading) then
 {
 	_vehicle enableRopeAttach false;
-};
+};*/
 
 clearMagazineCargoGlobal _vehicle;
 clearWeaponCargoGlobal _vehicle;

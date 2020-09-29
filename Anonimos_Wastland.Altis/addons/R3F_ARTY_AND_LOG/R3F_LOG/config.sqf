@@ -332,6 +332,7 @@ R3F_LOG_CFG_can_be_lifted = R3F_LOG_CFG_can_be_lifted +
 	//"MBT_01_base_F",
 	//"MBT_02_base_F",
 	//"MBT_03_base_F",
+	"Land_Pod_Heli_Transport_04_box_F",
 	"Land_Cargo20_military_green_F"
 ];
 
@@ -393,13 +394,15 @@ R3F_LOG_CFG_can_transport_cargo = R3F_LOG_CFG_can_transport_cargo +
 	["Heli_Transport_01_base_F", 25],
 	["Heli_Transport_02_base_F", 30],
 	["Heli_Transport_03_base_F", 30],
-	["Heli_Transport_04_base_F", 30],
+	["Heli_Transport_04_base_F", 200],
+	["O_Heli_Transport_04_box_F", 1500],
 	["Heli_Attack_01_base_F", 10],
 	["Heli_Attack_02_base_F", 20],
 	["Plane_Civil_01_base_F", 5],
 	["VTOL_01_base_F", 50],
 	["VTOL_02_base_F", 30],
-	["Land_Cargo20_military_green_F", 150]
+	["Land_Pod_Heli_Transport_04_box_F", 1000],
+	["Land_Cargo20_military_green_F", 100]
 ];
 
 /**
@@ -549,6 +552,8 @@ R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +
 	["Land_BagBunker_01_small_green_F", 7],
 	["Land_BagBunker_01_large_green_F", 10],
 	["Bag Bunker Tower (Tan)", 10],	
+	["Land_Cargo_House_V1_F", 10], //Adicionado
+	["Land_BC_Court_F", 10], //Adicionado
 	["Land_HBarrier_01_tower_green_F", 10]
 ];
 
@@ -698,5 +703,8 @@ R3F_LOG_CFG_can_be_moved_by_player = R3F_LOG_CFG_can_be_moved_by_player +
     "Land_SandbagBarricade_01_hole_F",
 	"Land_BagBunker_01_small_green_F",
 	"Land_BagBunker_01_large_green_F",
+	"Land_Cargo_House_V1_F", //Adicionado 
+	"Land_BC_Court_F", //Adicionado 
+	"Land_Pod_Heli_Transport_04_box_F",//Adicionado 
 	"Land_HBarrier_01_tower_green_F"
 ];

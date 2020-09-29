@@ -79,7 +79,7 @@ for "_i" from 1 to _nbUnits do
 			_unit addWeapon "srifle_DMR_01_F";
 			_unit addPrimaryWeaponItem "muzzle_snds_B";
 			for "_i" from 1 to 3 do {_unit addItem "10Rnd_762x54_Mag";};
-			_unit addPrimaryWeaponItem "optic_KHS_old";
+			_unit addPrimaryWeaponItem "optic_AMS_snd";
 			_unit addMagazine "Titan_AA";
 			_unit addWeapon "launch_O_Titan_F";
 			_unit addMagazine "Titan_AA";

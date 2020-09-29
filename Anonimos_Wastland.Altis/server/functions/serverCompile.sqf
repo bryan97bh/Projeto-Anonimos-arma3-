@@ -17,7 +17,7 @@ attemptCompileMissions = [_path, "attemptCompileMissions.sqf"] call mf_compile;
 checkMissionVehicleLock = [_path, "checkMissionVehicleLock.sqf"] call mf_compile;
 cleanLocationObjects = [_path, "cleanLocationObjects.sqf"] call mf_compile;
 createCustomGroup = [_path, "createUnits\customGroup.sqf"] call mf_compile;
-createCustomGroup2 = [_path, "createUnits\customGroup2.sqf"] call mf_compile;
+createsmugglersGroup = [_path, "createUnits\smugglersGroup.sqf"] call mf_compile;
 // custom groups
 createroadblockGroup = [_path, "createUnits\roadblockGroup.sqf"] call mf_compile;
 createterrorGroup = [_path, "createUnits\terrorGroup.sqf"] call mf_compile;

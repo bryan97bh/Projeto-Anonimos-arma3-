@@ -19,12 +19,14 @@ if (_grouptype == "random") then
 	{
 		_selectedgroup = 
 		[
-			["defaultGroup", 1.5],
-			["greenhexGroup", 1],
-			["hexGroup", 1],
-			["tropicGroup", 1],
-			["roadblockGroup", 0.5]
-			
+			["defaultGroup", 0.5], //7.62-MIRA
+			["hexGroup", 0.5],  // 7.62-MIRA
+			["greenhexGroup", 1],  //SAA
+			["tropicGroup", 1.5], //SAA
+			["roadblockGroup", 1.5], //SAA 
+			["ocupacaoGroup", 0.7] //MIRA 
+			//["smugglersGroup", 1] 
+
 		] call fn_selectRandomWeightedPairs call fn_selectRandomNested;
 	} 
 	else

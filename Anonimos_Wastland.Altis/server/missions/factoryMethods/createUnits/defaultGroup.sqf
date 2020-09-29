@@ -52,7 +52,7 @@ for "_i" from 1 to _nbUnits do
 		{
 			_unit forceAddUniform "U_B_CombatUniform_mcam_vest";
 			_unit addWeapon "arifle_TRG21_GL_F";
-			for "_i" from 1 to 3 do {_unit addItem "30Rnd_556x45_Stanag";};
+			for "_i" from 1 to 3 do {_unit addItem "30Rnd_556x45_Stanag_green";};
 			for "_i" from 1 to 2 do {_unit addItemToVest "MiniGrenade";};
 			for "_i" from 1 to 3 do {_unit addItemToVest "1Rnd_HE_Grenade_shell";};
 			_unit addPrimaryWeaponItem "optic_Holosight_khk_F";
@@ -65,7 +65,7 @@ for "_i" from 1 to _nbUnits do
 			_unit addBackpack "B_Kitbag_mcamo";
 			_unit addWeapon "srifle_DMR_06_olive_F";
 			_unit addPrimaryWeaponItem "muzzle_snds_B_khk_F";
-			_unit addPrimaryWeaponItem "optic_MRCO";
+			_unit addPrimaryWeaponItem "optic_AMS_khk";
 			_unit addMagazine "RPG32_F";
 			_unit addWeapon "launch_RPG32_F";
 			_unit addMagazine "RPG32_HE_F";
@@ -80,11 +80,11 @@ for "_i" from 1 to _nbUnits do
 			_unit addWeapon "arifle_TRG20_F";
 			_unit addPrimaryWeaponItem "muzzle_snds_M";
 			_unit addPrimaryWeaponItem "optic_Holosight_khk_F";
-			_unit addMagazine "RPG7_F";
-			_unit addWeapon "launch_RPG7_F";
-			_unit addMagazine "RPG7_F";
-			_unit addMagazine "RPG7_F";
-			for "_i" from 1 to 3 do {_unit addItem "30Rnd_556x45_Stanag";};
+			_unit addMagazine "Titan_AA";
+			_unit addWeapon "launch_Titan_F";
+			_unit addMagazine "Titan_AA";
+			_unit addMagazine "Titan_AA";
+			for "_i" from 1 to 3 do {_unit addItem "30Rnd_556x45_Stanag_green";};
 		};
 		// Rifleman
 		default
@@ -98,7 +98,7 @@ for "_i" from 1 to _nbUnits do
 				_unit addWeapon "arifle_TRG20_F";
 				_unit addPrimaryWeaponItem "bipod_01_F_khk";
 				_unit addPrimaryWeaponItem "optic_Hamr_khk_F";
-				for "_i" from 1 to 3 do {_unit addItem "30Rnd_556x45_Stanag";};
+				for "_i" from 1 to 3 do {_unit addItem "30Rnd_556x45_Stanag_green";};
 			}
 			else
 			{
@@ -106,7 +106,7 @@ for "_i" from 1 to _nbUnits do
 				_unit addWeapon "arifle_TRG20_F";
 				_unit addPrimaryWeaponItem "optic_Holosight_khk_F";
 				_unit addWeapon "Binocular";
-				for "_i" from 1 to 3 do {_unit addItem "30Rnd_556x45_Stanag";};
+				for "_i" from 1 to 3 do {_unit addItem "30Rnd_556x45_Stanag_green";};
 			};
 		};
 	};
