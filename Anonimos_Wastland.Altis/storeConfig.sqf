@@ -1534,8 +1534,8 @@ tanksArray = compileFinal str
 
 	["T-140 Angara | Padrão", "O_MBT_04_cannon_F", 75000, "vehicle"],
     ["T-140K Angara | Canhão Automático | 30mm", "O_MBT_04_command_F", 90000, "vehicle"]
-	//["M5 Sandstorm MLRS	", "B_MBT_01_mlrs_F", 80000, "vehicle"],
-    //["M4 Scorcher ", "B_MBT_01_arty_F", 80000, "vehicle"],
+	//["M5 Sandstorm MLRS", "B_MBT_01_mlrs_F", 80000, "vehicle"],
+    //["M4 Scorcher", "B_MBT_01_arty_F", 80000, "vehicle"],
     //["Zamak MRL", "I_Truck_02_MRL_F", 50000, "vehicle"]
 ];
 
@@ -1551,7 +1551,7 @@ helicoptersArray = compileFinal str
     
 	
 	["Mi-290 Taru | Leve", "O_Heli_Transport_04_F", 6000, "vehicle"],
-	["Mi-290 Taru | Fechado", "O_Heli_Transport_04_box_F", 20000, "vehicle"],
+	["Mi-290 Taru | Carga", "O_Heli_Transport_04_box_F", 20000, "vehicle"],
 	["Mi-290 Taru | Combustível", "O_Heli_Transport_04_fuel_F", 8500, "vehicle"],
 	["Mi-290 Taru | Bancos", "O_Heli_Transport_04_bench_F", 9000, "vehicle"],
 	["Mi-290 Taru | Transporte", "O_Heli_Transport_04_covered_F", 9500, "vehicle"],
@@ -1566,9 +1566,12 @@ helicoptersArray = compileFinal str
 	
     ["AH-9 Pawnee | Somente Minigun", "B_Heli_Light_01_dynamicLoadout_F", 20000, "vehicle", "variant_pawneeGun"], // Armed AH-6 (no missiles)
     ["AH-9 Pawnee | Completo", "B_Heli_Light_01_dynamicLoadout_F", 35000, "vehicle", "variant_pawneeNormal"], // Armed AH-6
-    ["PO-30 Orca | DAR", "O_Heli_Light_02_dynamicLoadout_F", 50000, "vehicle", "variant_orcaDAR"], // Armed Ka-60
-    ["PO-30 Orca | DAGR", "O_Heli_Light_02_dynamicLoadout_F", 55000, "vehicle", "variant_orcaDAGR", "HIDDEN"], // Armed Ka-60 with guided missles
-    ["WY-55 Hellcat | Armedo", "I_Heli_light_03_dynamicLoadout_F", 60000, "vehicle"], // Armed AW159
+	["AH-9 Pawnee | CAS", "B_Heli_Light_01_dynamicLoadout_F", 35000, "vehicle", "variant_pawneeDelta"], // Armed AH-6
+	
+    ["PO-30 Orca | DAR", "O_Heli_Light_02_dynamicLoadout_F", 40000, "vehicle", "variant_orcaDAR"], // Armed Ka-60
+    ["PO-30 Orca | DAGR", "O_Heli_Light_02_dynamicLoadout_F", 55000, "vehicle", "variant_orcaDAGR"], // Armed Ka-60 with guided missles
+
+    ["WY-55 Hellcat | Armedo", "I_Heli_light_03_dynamicLoadout_F", 45000, "vehicle"], // Armed AW159
     ["AH-99 Blackfoot", "B_Heli_Attack_01_dynamicLoadout_F", 95000, "vehicle"], // RAH-66 with gunner
     ["Mi-48 Kajman", "O_Heli_Attack_02_dynamicLoadout_F", 90000, "vehicle"] // Mi-28 with gunner 
     
@@ -1577,7 +1580,7 @@ helicoptersArray = compileFinal str
 planesArray = compileFinal str
 [
     ["César BTT", "C_Plane_Civil_01_F", 2000, "vehicle"],
-    ["Super Tucano", "C_Plane_Civil_01_racing_F", 4500, "vehicle"],
+    ["Super Tucano", "C_Plane_Civil_01_racing_F", 20000, "vehicle"],
     //["Super Tucano", "C_Plane_Civil_01_racing_F", 5000, "vehicle", "variant_civracer"],
 
     ["A-143 Buzzard AA", "I_Plane_Fighter_03_dynamicLoadout_F", 40000, "vehicle", "variant_buzzardAA"],

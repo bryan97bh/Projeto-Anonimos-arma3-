@@ -15,6 +15,10 @@ _setupVars =
 {
 	_vehicleClass = // to specify a vehicleLoadouts variant, simply write "class/variant", e.g. "O_Heli_Light_02_dynamicLoadout_F/orcaDAR"
 	[
+		//"B_MBT_01_mlrs_F",
+		//"B_MBT_01_arty_F",
+		//"I_Truck_02_MRL_F",
+		///////////////////
 		"B_MBT_01_cannon_F",
 		"O_MBT_02_cannon_F",
 		"I_MBT_03_cannon_F",

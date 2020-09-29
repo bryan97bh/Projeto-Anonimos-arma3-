@@ -4,27 +4,31 @@ _playerCustomUniforms =
 [
 	[ // aleatorios 
 		[
-			"76561198073156695", //guy fawkes
-			"76561198157312258", //<[RA] Cap  Batista>
-			"76561198027682212", //<[RA] 2°ten Sniperjoel>
-			"76561198087974566", //<[RA] 2ºSgt Dpaulla>
-			"76561198092314271", //<[RA] Codigo>
+			"76561198073156695",  //guy fawkes
+			"76561198157312258",  //<[RA] Cap  Batista>
+			"76561198027682212",  //<[RA] 2°ten Sniperjoel>
+			"76561198087974566",  //<[RA] 2ºSgt Dpaulla>
+			"76561198092314271",  //<[RA] Codigo>
 			//"76561198332507924", //<[RA] Sd D.Oliveira>
-			"76561198100776009", //<[RA] Sd Gui_bocão>
-			"76561198111387070", //<[RA] Sd Rappa>
-			"76561198252975849", //<[RA] Sd Ferreira>
-			"76561198157040893", //<[RA] sd 755cardosopower>
-			"76561198152823076", //<[RA] sd Negri>
-			"76561198164537056", //<[RA] Sd França SS
-			"76561198319660200", //<[RA] Sd Bomfim
-			"76561198835543767", //<[RA] Sd Mario
-			"76561198279017971", //<[RA] Sd Simo Hayha
-			"76561197978867972", //<[RA] Sd Cordeiro
-			"76561198216066545", //<[RA] Menegusso>
-			"76561198057291104", //<[RA] Martins>
-			"76561198256683401", //<[RA] Sd Souza
-			"76561198425527927"  //jon
-		],
+			"76561198100776009",  //<[RA] Sd Gui_bocão>
+			"76561198111387070",  //<[RA] Sd Rappa>
+			"76561198252975849",  //<[RA] Sd Ferreira>
+			"76561198157040893",  //<[RA] sd 755cardosopower>
+			"76561198152823076",  //<[RA] sd Negri>
+			"76561198164537056",  //<[RA] Sd França SS
+			"76561198319660200",  //<[RA] Sd Bomfim
+			"76561198835543767",  //<[RA] Sd Mario
+			"76561198279017971",  //<[RA] Sd Simo Hayha
+			"76561197978867972",  //<[RA] Sd Cordeiro
+			"76561198216066545",  //<[RA] Menegusso>
+			"76561198057291104",  //<[RA] Martins>
+			"76561198256683401",  //<[RA] Sd Souza
+			"76561198425527927",  //jon
+			"76561198300714399",  //Viniciuus.lcs
+			"76561198825211624",  //Nascimento
+			"76561198811166180", //Felipe Andreola 
+			"76561198011943505"  //Tho+
+		],  
 		[
 			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\an_1.jpg"]
 		]
@@ -41,6 +45,18 @@ _playerCustomUniforms =
 		],
 		[
 			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\19_U.jpg"]
+		]
+	],
+	[ // bope
+		[
+			"76561198062643926", //josei
+			"76561198305612921", //kowalsk
+			"76561198394566682", //Raimundo
+			"76561198135009641", //sr.smack
+			"76561198047686023"  //delroy
+		],
+		[
+			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\24_O.jpg"]
 		]
 	],
 	[ // UNICO

@@ -33,26 +33,15 @@ switch (true) do
 	};
 
 	// AH-9 Pawnee
-	case (_class isKindOf "B_Heli_Light_01_dynamicLoadout_F"):
-	{
-		_weapons =
-		[
-			["CMFlareLauncher", [-1]]
-		];
-		_mags =
-		[
-			["60Rnd_CMFlare_Chaff_Magazine", [-1]]
-		];
-        _customCode =
-		{
-			reload _veh;
-		};
-		switch (_variant) do
-		{
-			case "pawneeGun": { _pylons = ["","60Rnd_CMFlare_Chaff_Magazine"] };
-			default           { _pylons = ["PylonRack_12Rnd_missiles","PylonRack_12Rnd_missiles","60Rnd_CMFlare_Chaff_Magazine"] };
-		};
-	};
+    case (_class isKindOf "B_Heli_Light_01_dynamicLoadout_F"):
+    {
+        switch (_variant) do
+        {
+            case "pawneeGun": { _pylons = ["",""] };
+            case "pawneeDelta": { _pylons = ["PylonRack_7Rnd_Rocket_04_HE_F","PylonRack_7Rnd_Rocket_04_AP_F","PylonRack_4Rnd_LG_scalpel","PylonRack_20Rnd_Rocket_03_HE_F"] };
+            default           { _pylons = ["PylonRack_12Rnd_missiles","PylonRack_12Rnd_missiles"] };
+        };
+    };
 
 	// PO-30 Orca
 	case (_class isKindOf "O_Heli_Light_02_dynamicLoadout_F"):

@@ -17,7 +17,9 @@ _setupVars =
 	[
         ["B_Heli_Light_01_dynamicLoadout_F", "pawneeNormal"],       // Pawnee Normal - Armed
         ["B_Heli_Light_01_dynamicLoadout_F", "pawneeGun"],  		// Pawnee Gun only - Armed
+		["B_Heli_Light_01_dynamicLoadout_F", "pawneeDelta"],  		// cas - Armed
 		"O_Heli_Light_02_dynamicLoadout_F",           				// Orca DAR (unguided) - Armed
+		"O_Heli_Light_02_dynamicLoadout_F",  "orcaDAGR"],         	// Orca DAR (guided) - Armed
 		"I_Heli_light_03_dynamicLoadout_F",                         // Hellcat - Armed	        
 		"B_Heli_Transport_01_F",                                    // Ghosthawk Black - Armed
 		"B_Heli_Transport_03_F"                                     // Huron Green - Armed

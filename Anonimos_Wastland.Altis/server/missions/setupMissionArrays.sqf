@@ -16,7 +16,7 @@ MainMissions =
 	["mission_ArmedHeli", 1],          //HELICÓPTERO GUARNECIDO 
 	["mission_ArmedHeli2", 0.6],       //HELICÓPTERO DE ATAQUE GUARNECIDO 
 	["mission_Abandoneddrone", 0.5],   //drone ABANDONADO
-    ["mission_AbandonedJet", 0.4]      //AERONAVE ABANDONADA
+    ["mission_AbandonedJet", 0.5]      //AERONAVE ABANDONADA
 ];
 
 SideMissions =
@@ -43,11 +43,12 @@ MoneyMissions =
 PrincipalMissions =
 [
 	["mission_Sniper", 0.9],           //SNIPES 
-	["mission_OCUPACAO", 1.4],          //OCUPACAO
+	["mission_OCUPACAO", 1.4],         //OCUPACAO
     ["mission_TownInvasion", 1.5],     //CIDADE INVADIDA
 	["mission_MiniConvoy", 1],         //ESCOLTA ARMADA
 	["mission_Outpost", 1.3],          //POSTO AVANÇADO
-	["mission_Convoy", 1]              //COMBOIO SUSPEITO
+	["mission_Convoy", 1]             //COMBOIO SUSPEITO 
+	//["mission_ConvoyART", 1]           //ARTILHARIA
 ];
 
 hostileairMissions =
