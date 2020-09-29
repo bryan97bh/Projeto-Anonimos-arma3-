@@ -76,6 +76,7 @@ for "_i" from 1 to _nbUnits do
 			_unit forceAddUniform "U_O_CombatUniform_ocamo";
 			_unit addBackpack "B_FieldPack_ocamo";
 			_unit addWeapon "arifle_Katiba_F";
+			_unit addPrimaryWeaponItem "muzzle_snds_H";
 			for "_i" from 1 to 3 do {_unit addItem "30Rnd_65x39_caseless_green_mag_Tracer";};
 			_unit addPrimaryWeaponItem "optic_Hamr";
 			_unit addMagazine "Titan_AA";

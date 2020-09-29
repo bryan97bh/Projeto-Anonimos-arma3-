@@ -52,6 +52,7 @@ for "_i" from 1 to _nbUnits do
 			_unit addGoggles "G_Bandanna_tan";
 			_unit addMagazine "1Rnd_HE_Grenade_shell";
 			_unit addWeapon "arifle_AK12_GL_arid_F";
+			_unit addPrimaryWeaponItem "muzzle_snds_B_snd_F";
 			_unit addMagazine "1Rnd_HE_Grenade_shell";
 			_unit addMagazine "1Rnd_HE_Grenade_shell";
 		};

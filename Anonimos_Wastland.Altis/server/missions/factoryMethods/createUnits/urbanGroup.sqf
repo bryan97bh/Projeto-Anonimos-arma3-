@@ -75,6 +75,7 @@ for "_i" from 1 to _nbUnits do
 			_unit addWeapon "launch_O_Titan_F";
 			_unit addMagazine "Titan_AA";
 			_unit addMagazine "Titan_AA";
+			_unit addPrimaryWeaponItem "muzzle_snds_B";
 		};
 		// Rifleman
 		default

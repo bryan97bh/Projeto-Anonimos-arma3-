@@ -73,6 +73,7 @@ for "_i" from 1 to _nbUnits do
 			_unit addUniform "U_B_GEN_Commander_F";
 			_unit addBackpack "B_ViperLightHarness_blk_F";
 			_unit addWeapon "arifle_SPAR_01_blk_F";
+			_unit addPrimaryWeaponItem "muzzle_snds_M";
 			_unit addMagazine "Titan_AA";
 			_unit addWeapon "launch_Titan_F";
 			_unit addMagazine "Titan_AA";

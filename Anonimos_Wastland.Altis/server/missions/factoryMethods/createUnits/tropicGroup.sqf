@@ -77,6 +77,7 @@ for "_i" from 1 to _nbUnits do
 			_unit forceAddUniform "U_B_T_Soldier_F";
 			_unit addBackpack "B_AssaultPack_tna_F";
 			_unit addWeapon "arifle_MXC_khk_F";
+			_unit addPrimaryWeaponItem "muzzle_snds_H_khk_F";
 			_unit addPrimaryWeaponItem "optic_Holosight_khk_F";
 			_unit addMagazine "Titan_AA";
 			_unit addWeapon "launch_B_Titan_tna_F";
