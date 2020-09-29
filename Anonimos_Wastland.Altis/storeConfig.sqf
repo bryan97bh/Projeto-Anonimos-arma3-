@@ -250,28 +250,28 @@ staticGunsArray = compileFinal str
 	// ["Vehicle Ammo Crate", "Box_NATO_AmmoVeh_F", 2500],
 	//["Static Titan AT 4|Munições", "B_static_AT_F", 3000], // Static launchers only have 4 ammo, hence the low price
 	//["Static Titan AT 4|Munições", "O_static_AT_F", 3000],
-	["Lança Míssel Antitanque Titan AA 4|Munições", "I_static_AT_F", 10000],
+	["Lança Míssel Antitanque Titan AA 4|Munições", "I_static_AT_F", 8000],
 	//["Lança Míssel Anti-aéreo Titan AA 4|Munições", "B_static_AA_F", 3000],
 	//["Lança Míssel Anti-aéreo Titan AA 4|Munições", "O_static_AA_F", 3000],
-	["Lança Míssel Antiaéreo Titan AA 4|Munições", "I_static_AA_F", 10000],
+	["Lança Míssel Antiaéreo Titan AA 4|Munições", "I_static_AA_F", 6000],
 	//["Tripé Baixo+Browning .50 Estática", "B_HMG_01_F", 3000],
 	//["Tripé Baixo+Browning .50 Estática", "O_HMG_01_F", 3000],
-	["Tripé Baixo+Browning .50 Estática", "I_HMG_01_F", 10000],
+	["Tripé Baixo+Browning .50 Estática", "I_HMG_01_F", 3000],
 	// ["Mk30A HMG .50 Sentry (NATO)", "B_HMG_01_A_F", 5000], // "A" = Autonomous = Overpowered
 	// ["Mk30A HMG .50 Sentry (CSAT)", "O_HMG_01_A_F", 5000],
 	// ["Mk30A HMG .50 Sentry (AAF)", "I_HMG_01_A_F", 5000],
 	//["Tripé Alto+Browning .50 Estática", "B_HMG_01_high_F", 3000],
 	//["Tripé Alto+Browning .50 Estática", "O_HMG_01_high_F", 3000],
-	["Tripé Alto+Browning .50 Estática", "I_HMG_01_high_F", 10000],
+	["Tripé Alto+Browning .50 Estática", "I_HMG_01_high_F", 3500],
 	//["Tripé Baixo+Lança Granadas 20mm Estática", "B_GMG_01_F", 5000],
 	//["Mk32 GMG 20mm Tripé Baixo (CSAT)", "O_GMG_01_F", 5000],
-	["Tripé Baixo+Lança Granadas 20mm Estática", "I_GMG_01_F", 10000],
+	["Tripé Baixo+Lança Granadas 20mm Estática", "I_GMG_01_F", 7500],
 	// ["Mk32A GMG 20mm Sentry (NATO)", "B_GMG_01_A_F", 10000], // "A" = Autonomous = Overpowered
 	// ["Mk32A GMG 20mm Sentry (CSAT)", "O_GMG_01_A_F", 10000],
 	// ["Mk32A GMG 20mm Sentry (AAF)", "I_GMG_01_A_F", 10000],
 	//["Tripé Alto+Lança Granadas 20mm Estático", "B_GMG_01_high_F", 5000],
 	//["Tripé Alto+Lança Granadas 20mm Estático", "O_GMG_01_high_F", 5000],
-	["Tripé Alto+Lança Granadas 20mm Estático", "I_GMG_01_high_F", 10000],
+	["Tripé Alto+Lança Granadas 20mm Estático", "I_GMG_01_high_F", 8500],
 	//["Morteiro 80mm Mk6 (NATO)", "B_Mortar_01_F", 12500],
 	//["Morteiro 80mm MK6 (CSAT)", "O_Mortar_01_F", 12500],
 	["Morteiro 80mm MK6 (AAF)", "I_Mortar_01_F", 15000]
@@ -371,18 +371,18 @@ ammoArray = compileFinal str
 	["12.7mm 5|Munições|Perfurante De Blindagem|", "5Rnd_127x108_APDS_Mag", 700],
 	["12.7mm 10|Munições|Subsonicas|", "10Rnd_127x54_Mag", 400],
 	[".50 BW 10|Munições|", "10Rnd_50BW_Mag_F", 200],            //                 hit                      hit,  radius
-    ["PG-7VM HEAT|Granada|", "RPG7_F", 750],                   // Direct damage:  343     | Splash damage:  13,  3.0m     | Guidance: none
-    ["RPG-42 AT|Foguete|", "RPG32_F", 950],                     //                 422     |                 28,  2.5m     |           none
-    ["RPG-42 HE|Foguete|", "RPG32_HE_F", 500],                  //                 200     |                 50,  6.0m     |           none
-    ["MAAWS HEAT 75|Foguete|", "MRAWS_HEAT_F", 950],            //                 495     |                 14,  2.0m     |           none
-    ["MAAWS HEAT 55|Foguete|", "MRAWS_HEAT55_F", 750],          //                 450     |                 14,  2.0m     |           none
-    ["MAAWS HE|Foguete|", "MRAWS_HE_F", 500],                   //                 200     |                 50,  6.0m     |           none
-    ["9M135 HEAT|Míssil|", "Vorona_HEAT", 2000],              //                 634     |                 28,  2.5m     |           mouse
-    ["9M135 HE|Míssil|", "Vorona_HE", 1750],                   //                 220     |                 45,  8.0m     |           mouse
-    ["PCML AT|Míssil|", "NLAW_F", 750],                       //                 462     |                 25,  2.4m     |           laser/IR, cold/hot ground vehicles
-    ["Titan AT|Míssil|", "Titan_AT", 1000],            //                 515     |                 20,  2.0m     |           mouse, laser/IR, hot ground vehicles
-    ["Titan AP|Míssil|", "Titan_AP", 750],        //                 100     |                 25, 10.0m     |           mouse, laser/IR
-    ["Titan AA|Míssil|", "Titan_AA", 750],                    //                  80     |                 60,  6.0m     |           aircraft
+    ["PG-7VM HEAT|Granada|", "RPG7_F", 750],                     // Direct damage:  343     | Splash damage:  13,  3.0m     | Guidance: none
+    ["RPG-42 AT|Foguete|", "RPG32_F", 950],                      //                 422     |                 28,  2.5m     |           none
+    ["RPG-42 HE|Foguete|", "RPG32_HE_F", 500],                   //                 200     |                 50,  6.0m     |           none
+    ["MAAWS HEAT 75|Foguete|", "MRAWS_HEAT_F", 950],             //                 495     |                 14,  2.0m     |           none
+    ["MAAWS HEAT 55|Foguete|", "MRAWS_HEAT55_F", 750],           //                 450     |                 14,  2.0m     |           none
+    ["MAAWS HE|Foguete|", "MRAWS_HE_F", 500],                    //                 200     |                 50,  6.0m     |           none
+    ["9M135 HEAT|Míssil|", "Vorona_HEAT", 2000],                 //                 634     |                 28,  2.5m     |           mouse
+    ["9M135 HE|Míssil|", "Vorona_HE", 1750],                     //                 220     |                 45,  8.0m     |           mouse
+    ["PCML AT|Míssil|", "NLAW_F", 850],                          //                 462     |                 25,  2.4m     |           laser/IR, cold/hot ground vehicles
+    ["Titan AT|Míssil|", "Titan_AT", 1500],                      //                 515     |                 20,  2.0m     |           mouse, laser/IR, hot ground vehicles
+    ["Titan AP|Míssil|", "Titan_AP", 1000],                      //                 100     |                 25, 10.0m     |           mouse, laser/IR
+    ["Titan AA|Míssil|", "Titan_AA", 2500],                      //                  80     |                 60,  6.0m     |           aircraft
 	["40mm HE|Granada De Bocal|", "1Rnd_HE_Grenade_shell", 300],
 	["40mm HE|3|Munições|Granadas De Bocal|", "3Rnd_HE_Grenade_shell", 850],
 	["40mm Fumaça De Bocal|Branca|", "1Rnd_Smoke_Grenade_shell", 50],
@@ -440,31 +440,31 @@ accessoriesArray = compileFinal str
 [
 	["Supressor 9mm", "muzzle_snds_L", 150, "item"],
 	["Supressor .45 ACP", "muzzle_snds_acp", 175, "item"],
-    ["Supressor 5.56mm|Preto|", "muzzle_snds_M", 500, "item"],
-    ["Supressor 5.56mm|Khaki", "muzzle_snds_m_khk_F", 500, "item", "noDLC"],
-    ["Supressor 5.56mm|Areia|", "muzzle_snds_m_snd_F", 500, "item", "noDLC"],
-	["Supressor 5.7mm", "muzzle_snds_570", 575, "item"],
-    ["Supressor 5.8mm|Verde Hex|" , "muzzle_snds_58_ghex_F", 500, "item"],
-	["Supressor 5.8mm|Hex|", "muzzle_snds_58_hex_F", 500, "item"],
-    ["Supressor 6.5mm|Preto|", "muzzle_snds_H", 600, "item"],
-    ["Supressor 6.5mm|Khaki|", "muzzle_snds_H_khk_F", 600, "item", "noDLC"],
-    ["Supressor 6.5mm|Areia|", "muzzle_snds_H_snd_F", 600, "item", "noDLC"],
-    ["Supressor MK200 LMG|Preto|", "muzzle_snds_H_MG_blk_F", 700, "item", "noDLC"],
-    ["Supressor MK200 LMG|Khaki|", "muzzle_snds_H_MG_khk_F", 700, "item", "noDLC"],
-    ["Supressor MK200 LMG|Areia|", "muzzle_snds_H_MG", 700, "item"],
-    ["Supressor Stealth 6.5mm|Preto|", "muzzle_snds_65_TI_blk_F", 600, "item"],
-    ["Supressor Stealth 6.5mm|Verde Hex|", "muzzle_snds_65_TI_ghex_F", 600, "item"],
-    ["Supressor Stealth 6.5mm|Hex|", "muzzle_snds_65_TI_hex_F", 600, "item"],
-    ["Supressor 7.62mm|Preto|", "muzzle_snds_B", 700, "item"],
-    ["Suppressor 7.62mm|Khaki|", "muzzle_snds_B_khk_F", 700, "item", "noDLC"],
-    ["Supressor 7.62mm|Areia|", "muzzle_snds_B_snd_F", 700, "item", "noDLC"],
-	["Supressor 7.62mm|Árido|", "muzzle_snds_B_arid_F", 700, "item", "noDLC"],
-	["Supressor 7.62mm|Exuberante|", "muzzle_snds_B_lush_F", 700, "item", "noDLC"],
-	["Supressor .338", "muzzle_snds_338_black", 900, "item"],
-	["Supressor .338|Verde|", "muzzle_snds_338_green", 900, "item"],
-	["Supressor .338|Areia|", "muzzle_snds_338_sand", 900, "item"],
-	["Supressor 9.3mm", "muzzle_snds_93mmg", 900, "item"],
-	["Supressor 9.3mm (Tan)", "muzzle_snds_93mmg_tan", 900, "item"],
+    //["Supressor 5.56mm|Preto|", "muzzle_snds_M", 500, "item"],
+    //["Supressor 5.56mm|Khaki", "muzzle_snds_m_khk_F", 500, "item", "noDLC"],
+    //["Supressor 5.56mm|Areia|", "muzzle_snds_m_snd_F", 500, "item", "noDLC"],
+	//["Supressor 5.7mm", "muzzle_snds_570", 575, "item"],
+    //["Supressor 5.8mm|Verde Hex|" , "muzzle_snds_58_ghex_F", 500, "item"],
+	//["Supressor 5.8mm|Hex|", "muzzle_snds_58_hex_F", 500, "item"],
+    //["Supressor 6.5mm|Preto|", "muzzle_snds_H", 600, "item"],
+    //["Supressor 6.5mm|Khaki|", "muzzle_snds_H_khk_F", 600, "item", "noDLC"],
+    //["Supressor 6.5mm|Areia|", "muzzle_snds_H_snd_F", 600, "item", "noDLC"],
+    //["Supressor MK200 LMG|Preto|", "muzzle_snds_H_MG_blk_F", 700, "item", "noDLC"],
+    //["Supressor MK200 LMG|Khaki|", "muzzle_snds_H_MG_khk_F", 700, "item", "noDLC"],
+    //["Supressor MK200 LMG|Areia|", "muzzle_snds_H_MG", 700, "item"],
+    //["Supressor Stealth 6.5mm|Preto|", "muzzle_snds_65_TI_blk_F", 600, "item"],
+    //["Supressor Stealth 6.5mm|Verde Hex|", "muzzle_snds_65_TI_ghex_F", 600, "item"],
+    //["Supressor Stealth 6.5mm|Hex|", "muzzle_snds_65_TI_hex_F", 600, "item"],
+    //["Supressor 7.62mm|Preto|", "muzzle_snds_B", 700, "item"],
+    //["Suppressor 7.62mm|Khaki|", "muzzle_snds_B_khk_F", 700, "item", "noDLC"],
+    //["Supressor 7.62mm|Areia|", "muzzle_snds_B_snd_F", 700, "item", "noDLC"],
+	//["Supressor 7.62mm|Árido|", "muzzle_snds_B_arid_F", 700, "item", "noDLC"],
+	//["Supressor 7.62mm|Exuberante|", "muzzle_snds_B_lush_F", 700, "item", "noDLC"],
+	//["Supressor .338", "muzzle_snds_338_black", 900, "item"],
+	//["Supressor .338|Verde|", "muzzle_snds_338_green", 900, "item"],
+	//["Supressor .338|Areia|", "muzzle_snds_338_sand", 900, "item"],
+	//["Supressor 9.3mm", "muzzle_snds_93mmg", 900, "item"],
+	//["Supressor 9.3mm (Tan)", "muzzle_snds_93mmg_tan", 900, "item"],
 	["Bipé|Preto| (NATO)", "bipod_01_F_blk", 100, "item", "noDLC"],
 	["Bipé|Preto| (CSAT)", "bipod_02_F_blk", 100, "item", "noDLC"],
 	["Bipé|Preto| (AAF)", "bipod_03_F_blk", 100, "item", "noDLC"],
@@ -1301,9 +1301,9 @@ genObjectsArray = compileFinal str
     ["Casamata Modular (Alta)", "Land_Bunker_01_tall_F", 1300, "object"],
     ["Casamata Modular (Grande)", "Land_Bunker_01_big_F", 2000, "object"],
     ["Casamata Modular (QG)", "Land_Bunker_01_HQ_F", 2000, "object"],
-	//["Casamata Grande", "Land_PillboxBunker_01_big_F", 2000, "object"],       //Adicionado
-	//["Casamata Retangular", "Land_PillboxBunker_01_rectangle_F", 2000, "object"],       //Adicionado
-	//["Casamata Hexagonal", "Land_PillboxBunker_01_hex_F", 2000, "object"],
+	//["Casamata Grande", "Land_PillboxBunker_01_big_F", 2000, "object"],             //Adicionado nao funciona 
+	//["Casamata Retangular", "Land_PillboxBunker_01_rectangle_F", 2000, "object"],   //Adicionado nao funciona 
+	//["Casamata Hexagonal", "Land_PillboxBunker_01_hex_F", 2000, "object"],          //Adicionado nao funciona 
 	["Barreira Hesco (1 Bloco, Tan)", "Land_HBarrier_1_F", 100, "object"],
     ["Barreira Hesco (1 Bloco, Verde)", "Land_HBarrier_01_line_1_green_F", 100, "object"],
 	["Barreira Hesco (3 Blocos, Tan)", "Land_HBarrier_3_F", 200, "object"],
@@ -1605,16 +1605,16 @@ DronesArray = compileFinal str
 	//["Remote Designator Bag (CSAT)", "O_Static_Designator_02_weapon_F", 2500, "vehicle"],
     ["Designator Remoto | Mochila | Independente", "B_W_Static_Designator_01_weapon_F", 2500, "vehicle"],
 	
-	["Quadricóptero | Reconhecimento|BLUFOR", "B_UAV_01_backpack_F", 5000, "vehicle"],
+	["Quadricóptero | Reconhecimento|BLUFOR", "B_UAV_01_backpack_F", 3000, "vehicle"],
 	//["Quadcopter UAV (CSAT)", "O_UAV_01_backpack_F", 3000, "vehicle"],
-	["Quadricóptero | Reconhecimento|Independente", "I_UAV_01_backpack_F", 5000, "vehicle"],
+	["Quadricóptero | Reconhecimento|Independente", "I_UAV_01_backpack_F", 3000, "vehicle"],
     
-	["Hexacóptero | Carga | BLUFOR", "B_UAV_06_backpack_F", 3000, "vehicle"],
+	["Hexacóptero | Carga | BLUFOR", "B_UAV_06_backpack_F", 4000, "vehicle"],
 	//["Hexacopter UAV (CSAT)", "O_UAV_06_backpack_F", 4000, "vehicle"],
-	["Hexacóptero | Carga | Independente", "I_UAV_06_backpack_F", 3000, "vehicle"],
-	["Hexacóptero Médico UAV | BLUFOR", "B_UAV_06_medical_backpack_F", 8000, "vehicle"],
+	["Hexacóptero | Carga | Independente", "I_UAV_06_backpack_F", 4000, "vehicle"],
+	["Hexacóptero Médico UAV | BLUFOR", "B_UAV_06_medical_backpack_F", 5000, "vehicle"],
 	//["Hexacopter Medical UAV (CSAT)", "O_UAV_06_medical_backpack_F", 5000, "vehicle"],
-	["Hexacóptero Médico UAV | Independente", "I_UAV_06_medical_backpack_F", 8000, "vehicle"],
+	["Hexacóptero Médico UAV | Independente", "I_UAV_06_medical_backpack_F", 5000, "vehicle"],
 	["Hexacóptero Demolidor | 4 Cargas", "C_IDAP_UAV_06_antimine_backpack_F", 20000, "vehicle"],
         
 	["ED-1E | Reconhecimento", "B_UGV_02_Science_F", 3000, "vehicle"],
@@ -1624,12 +1624,12 @@ DronesArray = compileFinal str
     //["ED-1D Demining UGV", "O_UGV_02_Demining_F", 10000, "vehicle"],
     ["ED-1D | Demolidor |5,56mm|12 Pelotas|12 Balotes", "I_UGV_02_Demining_F", 10000, "vehicle"],
 
-	["MQ-12 Falcon|24 Foguetes|2 ATGM|2 AA", "B_T_UAV_03_F", 70000, "vehicle"], // Do NOT use "B_T_UAV_03_dynamicLoadout_F" (doesn't support ASRAAM pylons)
+	["MQ-12 Falcon|24 Foguetes|2 ATGM|2 AA", "B_T_UAV_03_F", 100000, "vehicle"], // Do NOT use "B_T_UAV_03_dynamicLoadout_F" (doesn't support ASRAAM pylons)
 
-    ["KH-3A Fenghuang | 4 Mísseis", "O_T_UAV_04_CAS_F", 800000, "vehicle"],
-    ["MQ4A Greyhawk | 4 Mísseis", "B_UAV_02_dynamicLoadout_F", 90000, "vehicle", "variant_greyhawkMissile"],
+    ["KH-3A Fenghuang | 4 Mísseis", "O_T_UAV_04_CAS_F", 100000, "vehicle"],
+    ["MQ4A Greyhawk | 4 Mísseis", "B_UAV_02_dynamicLoadout_F", 100000, "vehicle", "variant_greyhawkMissile"],
     //["K40 Ababil-3 Missile UAV", "O_UAV_02_dynamicLoadout_F", 100000, "vehicle", "variant_greyhawkMissile"],
-    ["K40 Ababil | 4 Mísseis", "I_UAV_02_dynamicLoadout_F", 90000, "vehicle", "variant_greyhawkMissile"],
+    ["K40 Ababil | 4 Mísseis", "I_UAV_02_dynamicLoadout_F", 100000, "vehicle", "variant_greyhawkMissile"],
     ["Sentinel | 4 Mísseis | RADAR", "B_UAV_05_F", 100000, "vehicle", "variant_sentinelMissile"],
     
     ["MQ4A Greyhawk | 2 Bombas", "B_UAV_02_dynamicLoadout_F", 40000, "vehicle", "variant_greyhawkBomber"], // Bomber UAVs are a lot harder to use, hence why they are cheaper than Missile ones

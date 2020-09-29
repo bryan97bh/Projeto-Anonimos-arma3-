@@ -8,49 +8,52 @@ if (!isServer) exitWith {};
 // Mission filename, weight 
 MainMissions =
 [
-	["mission_LightArmVeh2", 1.9],     //VIATURA DE COMBATE
-	["mission_LightArmVeh", 1.5],      //VEÍCULO LEVE DE COMBATE
+	["mission_LightArmVeh2", 1.5],     //VIATURA DE COMBATE
+	["mission_LightArmVeh", 1.3],      //VEÍCULO LEVE DE COMBATE
 	["mission_APC", 1],                //VEÍCULO ANTIAÉREO/VEÍCULO DE COMBATE DE INFANTARIA/VEÍCULO BLINDADO DE COMBATE/TRANSPORTADOR DE TROPA BLINDADO
-	["mission_MBT", 0.6],              //CAVALARIA BLINDADA
-	["mission_CivHeli", 1.6],          //HELICÓPTERO DE SUPORTE
+	["mission_MBT", 0.9],              //CAVALARIA BLINDADA
+	["mission_CivHeli", 1.5],          //HELICÓPTERO DE SUPORTE
 	["mission_ArmedHeli", 1],          //HELICÓPTERO GUARNECIDO
-    ["mission_AbandonedJet", 0.5]      //AERONAVE ABANDONADA
+    ["mission_AbandonedJet", 0.8]      //AERONAVE ABANDONADA
 ];
 
 SideMissions =
 [ 
-    ["mission_DrugsRunners", 1],          //TRAFICANTES
-    ["mission_Smugglers", 1],             //CONTRABANDO DE ARMAS
-	["mission_AirWreck", 1],              //HELICÓPTERO ABATIDO
-	["mission_WepCache", 0.5],            //AERONAVE ABATIDA
-	["mission_Truck", 1]                  //CAMINHÃO DE SUPRIMENTO
+	["mission_GeoCache", 0.5],         //analise geografica
+	["mission_ConvoyCSATSF", 1],       //PATRULHA DE RECONHECIMENTO
+    ["mission_DrugsRunners", 1],       //TRAFICANTES
+    ["mission_Smugglers", 1],          //CONTRABANDO DE ARMAS
+	["mission_AirWreck", 1],           //HELICÓPTERO ABATIDO
+	["mission_WepCache", 0.5],         //AERONAVE ABATIDA
+	["mission_Truck", 1]               //CAMINHÃO DE SUPRIMENTO
 ];
 
 MoneyMissions =
 [
-	["mission_MoneyShipment", 1.5],         //ESCOLTA DE DINHEIRO
-    ["mission_HostageRescue", 1],           //RESGATE AO REFÉM
-    ["mission_Roadblock", 1],               //BLOQUEIO NA ESTRADA
-    ["mission_Terror", 1.7],                //INVASAO REBELDE
-	["mission_HackLaptop", 0.1]	            //Hackers
+	["mission_MoneyShipment", 1.5],    //ESCOLTA DE DINHEIRO
+    ["mission_HostageRescue", 1],      //RESGATE AO REFÉM
+    ["mission_Roadblock", 1],          //BLOQUEIO NA ESTRADA
+    ["mission_Terror", 1.6],           //INVASAO REBELDE
+	["mission_HackLaptop", 0.8]	       //Hackers
 ];
 
 PrincipalMissions =
 [
-    ["mission_TownInvasion", 1.6],         //CIDADE INVADIDA
-	["mission_ConvoyCSATSF", 0.5],         //PATRULHA DE RECONHECIMENTO
-	["mission_MiniConvoy", 1],             //ESCOLTA ARMADA
-	["mission_Outpost", 1.5],              //POSTO AVANÇADO
-	["mission_Convoy", 1]                  //COMBOIO SUSPEITO
+	["mission_Sniper", 0.5],           //SNIPES 
+	["mission_OCUPACAO", 1.5],         //OCUPACAO
+    ["mission_TownInvasion", 1.6],     //CIDADE INVADIDA
+	["mission_MiniConvoy", 1],         //ESCOLTA ARMADA
+	["mission_Outpost", 1.5],          //POSTO AVANÇADO
+	["mission_Convoy", 1]              //COMBOIO SUSPEITO
 ];
 
 hostileairMissions =
 [
-	["mission_HostileHelicopter", 1.6],         //HELICÓPTERO HOSTIL
-    ["mission_FORMAÇAODEHELI", 1.5],            //PATRULHA AÉREA
-	["mission_HostileJetFormation", 1],       //JATOS HOSTIS 
-	["mission_VTOLCONTRABANDISTA", 0.5],        //VTOL CONTRABANDISTA
-	["mission_OPRESSAOAÉREA", 0.1]              //OPRESSÃO AÉREA
+	["mission_HostileHelicopter", 1.6],   //HELICÓPTERO HOSTIL
+    ["mission_FORMAÇAODEHELI", 1.5],      //PATRULHA AÉREA
+	["mission_HostileJetFormation", 1],   //JATOS HOSTIS 
+	["mission_VTOLCONTRABANDISTA", 0.5],  //VTOL CONTRABANDISTA
+	["mission_OPRESSAOAÉREA", 0.4]        //OPRESSÃO AÉREA
 ];
 
 aquaticMissions =
@@ -82,7 +85,7 @@ if !(SatelliteMissionMarkers isEqualTo []) then
 {
 	MoneyMissions append
 	[
-		["mission_Satellite_Uplink", 0.2]
+		["mission_Satellite_Uplink", 0.5]
 	];
 };
 
