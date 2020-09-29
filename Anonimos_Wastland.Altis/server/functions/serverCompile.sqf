@@ -18,15 +18,17 @@ checkMissionVehicleLock = [_path, "checkMissionVehicleLock.sqf"] call mf_compile
 cleanLocationObjects = [_path, "cleanLocationObjects.sqf"] call mf_compile;
 createCustomGroup = [_path, "createUnits\customGroup.sqf"] call mf_compile;
 createCustomGroup2 = [_path, "createUnits\customGroup2.sqf"] call mf_compile;
-//aj custom groups
+// custom groups
 createroadblockGroup = [_path, "createUnits\roadblockGroup.sqf"] call mf_compile;
 createterrorGroup = [_path, "createUnits\terrorGroup.sqf"] call mf_compile;
 createurbanGroup = [_path, "createUnits\urbanGroup.sqf"] call mf_compile;
+createocupacaoGroup = [_path, "createUnits\ocupacaoGroup.sqf"] call mf_compile;
 createhexGroup = [_path, "createUnits\hexGroup.sqf"] call mf_compile;
 creategreenhexGroup = [_path, "createUnits\greenhexGroup.sqf"] call mf_compile;
 createtropicGroup = [_path, "createUnits\tropicGroup.sqf"] call mf_compile;
 createdefaultGroup = [_path, "createUnits\defaultGroup.sqf"] call mf_compile;
-//aj custum groups end
+createsniperGroup = [_path, "createUnits\sniperGroup.sqf"] call mf_compile;
+// custum groups end
 createRandomPilot = [_path, "createUnits\createRandomPilot.sqf"] call mf_compile;
 createHackerGroup1= [_path, "createUnits\hackerGroup1.sqf"] call mf_compile;
 createHackerGroup2= [_path, "createUnits\hackerGroup2.sqf"] call mf_compile;

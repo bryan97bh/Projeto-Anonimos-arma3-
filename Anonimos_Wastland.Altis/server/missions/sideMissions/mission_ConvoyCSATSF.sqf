@@ -5,7 +5,7 @@
 //	@file Author: Staynex
 
 if (!isServer) exitwith {};
-#include "principalMissionsDefines.sqf";
+#include "sideMissionDefines.sqf";
 
 private ["_convoyVeh", "_veh1", "_veh2", "_createVehicle", "_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_numWaypoints", "_drop_item", "_drugpilerandomizer", "_drugpile", "_box1", "_box2"];
 
@@ -175,4 +175,4 @@ _successExec =
 	_successHintMessage = "A patrulha foi eliminada, pegue o pacote e saia dai";
 };
 
-_this call principalMissionProcessor;
+_this call sideMissionProcessor;
