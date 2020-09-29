@@ -628,7 +628,7 @@ class RscButtonMenuCancel
 	{
 		"0x00050000 + 1"
 	};
-	text = "Cancel";
+	text = "Cancelar";
 };
 class RscControlsGroup
 {

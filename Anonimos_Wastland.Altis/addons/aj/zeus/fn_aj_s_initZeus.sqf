@@ -1,7 +1,6 @@
 scriptName "fn_aj_s_initZeus";
 // @file Name: fn_aj_s_initZeus.sqf
-// @file Author:  wiking.at
-// @file Author: www.armajunkies.de
+// @file Author: Anônimos Brasil
 
 if (isServer) then 
 	{
@@ -9,7 +8,7 @@ if (isServer) then
 	//load Zeus now - no variables available at pre-init - so do it from scratch
 	if (loadFile ("\A3Wasteland_settings\zeus.sqf") != "") then
 		{
-		diag_log "A3W:Zeus Config File found";
+		diag_log "A3W:Arquivo de Configuração Zeus encontrado";
 		call compile preprocessFileLineNumbers ("\A3Wasteland_settings\zeus.sqf");
 		}
 	else
@@ -33,7 +32,7 @@ if (isServer) then
 		[
 		// Put player UIDs here
 		];
-		diag_log "A3W:Zeus - no external Zeus Config File found";
+		diag_log "A3W:Zeus - Arquivo externo de configuração Zeus não encontrado";
 		};
 
 	if (typeName zeusAdmins == "ARRAY") then

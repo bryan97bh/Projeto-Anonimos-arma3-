@@ -1,6 +1,5 @@
 // @file Name: fn_aj_c_checkbaselock.sqf
-// @file Author:  wiking.at
-// @file Author: www.armajunkies.de
+// @file Author: Anônimos Brasil
 // check base lock status function
 // Param  can be distance check
 

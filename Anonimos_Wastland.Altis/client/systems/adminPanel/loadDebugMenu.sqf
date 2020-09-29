@@ -20,8 +20,8 @@ if (_uid call isAdmin) then
 	_debugSelect = _displayDebug displayCtrl debugMenu_option;
 
 	_panelOptions = ["Accessar Loja de Armas",
-					"Accessar General Store",
-					"Accessar VS",
+					"Accessar Loja Geral",
+					"Accessar Loja de Veículos",
 					"Accessar Banco",
 					"Accessar Respaw",
 					"Mostrar FPS do Servidor"

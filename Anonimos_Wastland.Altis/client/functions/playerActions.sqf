@@ -22,20 +22,20 @@
 	["<img image='client\icons\money.paa'/> Pegar Dinheiro", "client\actions\pickupMoney.sqf", [], -210, false, false, "", "{_x getVariable ['owner', ''] != 'mission'} count (player nearEntities ['Land_Money_F', 5]) > 0"],
     ["<img image='client\icons\money.paa'/> Vender destroços", "client\actions\salvage.sqf", [], -220, false, false, "", "!isNull cursorTarget && !alive cursorTarget && {cursorTarget isKindOf 'AllVehicles' && !(cursorTarget isKindOf 'Man') && player distance cursorTarget <= (sizeOf typeOf cursorTarget / 3) max 2}"],
     ["<img image='client\icons\repair.paa'/> Remover ruínas", "addons\playercleanup\removeRuins.sqf", [], -230, false, false, "", "count nearestObjects [player, ['Ruins'], 5] > 0"],
-    ["<img image='\a3\ui_f\data\IGUI\Cfg\Actions\heal_ca.paa' color='#ff0000'/><t color='#FFFFFF'> Curar a si mesmo</t>", "client\functions\healSelf.sqf", 0, -240, false, false,"","((damage player)>0.01 && (damage player)<0.25499) && (vehicle player == player) && (('FirstAidKit' in (items player)) || ('Medikit' in (items player))) "],
+    ["<img image='\a3\ui_f\data\IGUI\Cfg\Actions\heal_ca.paa' color='#ff0000'/><t color='#FFFFFF'> Curar-se completamente</t>", "client\functions\healSelf.sqf", 0, -240, false, false,"","((damage player)>0.01 && (damage player)<0.25499) && (vehicle player == player) && (('FirstAidKit' in (items player)) || ('Medikit' in (items player))) "],
     //Repair Vehicle (\client\items\misc\init.sqf) with "-241"
 
     ["[0]"] call getPushPlaneAction,
-	["Empurrar o veículo", "server\functions\pushVehicle.sqf", [2.5, true], -242, false, false, "", "[2.5] call canPushVehicleOnFoot"],
-	["Empurrar o veículo para a frente", "server\functions\pushVehicle.sqf", [2.5], -244, false, false, "", "[2.5] call canPushWatercraft"],
-	["Empurrar o veículo para trás", "server\functions\pushVehicle.sqf", [-2.5], -246, false, false, "", "[-2.5] call canPushWatercraft"],
+	["Empurrar veículo", "server\functions\pushVehicle.sqf", [2.5, true], -242, false, false, "", "[2.5] call canPushVehicleOnFoot"],
+	["Empurrar veículo para frente", "server\functions\pushVehicle.sqf", [2.5], -244, false, false, "", "[2.5] call canPushWatercraft"],
+	["Empurrar veículo para trás", "server\functions\pushVehicle.sqf", [-2.5], -246, false, false, "", "[-2.5] call canPushWatercraft"],
     
     //Removed as we dont want casual battlefield. We want ARMA! /Staynex
     //Driver Assist allows the gunner to shoot and drive together
     //["<img image='client\icons\driver.paa'/> Enable driver assist", fn_enableDriverAssist, [], -247, false, true, "", "_veh = objectParent player; alive _veh && !alive driver _veh && {effectiveCommander _veh == player && player in [gunner _veh, commander _veh] && {_veh isKindOf _x} count ['LandVehicle','Ship'] > 0 && !(_veh isKindOf 'StaticWeapon')}"],
     //["<img image='client\icons\driver.paa'/> Disable driver assist", fn_disableDriverAssist, [], -247, false, true, "", "_driver = driver objectParent player; isAgent teamMember _driver && {(_driver getVariable ['A3W_driverAssistOwner', objNull]) in [player,objNull]}"],
 
-	["<img image='client\icons\r3f_unlock.paa'/> Adquirir propriedade de veículo", "client\actions\takeOwnership.sqf", [],-248, false, false, "", "[] call fn_canTakeOwnership isEqualTo ''"],
+	["<img image='client\icons\r3f_unlock.paa'/> Adquirir propriedade do veículo", "client\actions\takeOwnership.sqf", [],-248, false, false, "", "[] call fn_canTakeOwnership isEqualTo ''"],
 	//Lock Pick (at the bottom of this file) with "-249"
 
     ["<img image='client\icons\gunner.paa'/> Procurar Beacons", "addons\beacondetector\beacondetector.sqf", 0, -250, false, false,"","('ToolKit' in (items player)) && !BeaconScanInProgress"],
@@ -47,9 +47,9 @@
     //["Install countermeasures", "if(!('CMFlareLauncher' in (vehicle player weaponsTurret [-1]))) then {vehicle player addweapon 'CMFlareLauncher';};vehicle player addMagazineTurret ['60Rnd_CMFlareMagazine',[-1]];", [5,1], -350, false, false, "", "(vehicle player isKindOf 'Air') && !(vehicle player isKindOf "Plane_Base_F") && ( getPos vehicle player select 2) < 1"],
     
     //smokescreen tank (commander)
-	["Recarregar granadas de fumaça defensivas (5000R$)", "addons\aj\smokescreen\fn_aj_c_reloadsmokescreen.sqf", [5,1], -360, false, false, "", "({vehicle player isKindOf _x} count ['Tank','Wheeled_APC_F'] > 0) && ( player == commander vehicle player) && !(isengineon vehicle player)"],
+	["Recarregar granadas fumígenas (5000R$)", "addons\aj\smokescreen\fn_aj_c_reloadsmokescreen.sqf", [5,1], -360, false, false, "", "({vehicle player isKindOf _x} count ['Tank','Wheeled_APC_F'] > 0) && ( player == commander vehicle player) && !(isengineon vehicle player)"],
 	//smokescreen boat (driver)
-	["Recarregar granadas de fumaça defensivas (5000R$)", "addons\aj\smokescreen\fn_aj_c_reloadsmokescreen_boat.sqf", [5,1], -360, false, false, "", "vehicle player isKindOf 'Boat_Armed_01_base_F' && ( player == driver vehicle player) && !(isengineon vehicle player)"],
+	["Recarregar granadas fumígenas (5000R$)", "addons\aj\smokescreen\fn_aj_c_reloadsmokescreen_boat.sqf", [5,1], -360, false, false, "", "vehicle player isKindOf 'Boat_Armed_01_base_F' && ( player == driver vehicle player) && !(isengineon vehicle player)"],
 
     ["<img image='client\icons\running_man.paa' color='#FFFFFF'/><t color='#FFFFFF'>Guardar Arma</t>", { player action ["SwitchWeapon", player, player, 100] }, [], -400, false, false, "", "vehicle player == player && currentWeapon player != '' && (stance player != 'CROUCH' || currentWeapon player != handgunWeapon player)"], // A3 v1.58 bug, holstering handgun while crouched causes infinite anim loop
 
@@ -73,8 +73,8 @@ if (["A3W_savingMethod", "profile"] call getPublicVar == "extdb") then
 {
 	if (["A3W_vehicleSaving"] call isConfigOn) then
 	{
-		[player, ["<img image='client\icons\save.paa'/> Ligar Salvamento de Veículo", { cursorTarget call fn_forceSaveVehicle }, [], -9.5, false, true, "", "cursorTarget call canForceSaveVehicle && (cursorTarget getVariable ['A3W_skipAutoSave', false])"]] call fn_addManagedAction;
-		[player, ["<img image='client\icons\save.paa'/> Forçar Salvamento de Veículo", { cursorTarget call fn_forceSaveVehicle }, [], -9.5, false, true, "", "cursorTarget call canForceSaveVehicle && !(cursorTarget getVariable ['A3W_skipAutoSave', false])"]] call fn_addManagedAction;
+		[player, ["<img image='client\icons\save.paa'/> Ligar Salvamento do Veículo", { cursorTarget call fn_forceSaveVehicle }, [], -9.5, false, true, "", "cursorTarget call canForceSaveVehicle && (cursorTarget getVariable ['A3W_skipAutoSave', false])"]] call fn_addManagedAction;
+		[player, ["<img image='client\icons\save.paa'/> Forçar Salvamento do Veículo", { cursorTarget call fn_forceSaveVehicle }, [], -9.5, false, true, "", "cursorTarget call canForceSaveVehicle && !(cursorTarget getVariable ['A3W_skipAutoSave', false])"]] call fn_addManagedAction;
 	};
 
 	if (["A3W_staticWeaponSaving"] call isConfigOn) then

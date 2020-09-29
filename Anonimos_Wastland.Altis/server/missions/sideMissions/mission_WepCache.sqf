@@ -13,7 +13,7 @@ private ["_nbUnits", "_box1", "_box2"];
 
 _setupVars =
 {
-	_missionType = "AERONAVE ABATIDA";
+	_missionType = "ACAMPAMENTO MILITAR";
 	_locationsArray = [ForestMissionMarkers, MissionSpawnMarkers] select (ForestMissionMarkers isEqualTo []);
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
 };
@@ -36,7 +36,7 @@ _setupObjects =
 	[_aiGroup, _missionPos, _nbUnits] call createCustomGroup;
 	_aiGroup setCombatMode "Red";
 
-	_missionHintText = "Um helicóptero foi avariado e sua tripulação está no local guarnecendo a aeronave!";
+	_missionHintText = "Um grupo militar está acampando com algum suprimentos";
 };
 
 _waitUntilMarkerPos = nil;
@@ -54,7 +54,7 @@ _successExec =
 	// Mission completed
 	{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2];
 
-	_successHintMessage = "Os suprimentos que carregava a aeronave foram coletados com sucesso!";
+	_successHintMessage = "Os militares foram mortos";
 };
 
 _this call sideMissionProcessor;

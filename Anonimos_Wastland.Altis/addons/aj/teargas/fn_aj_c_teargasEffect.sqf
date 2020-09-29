@@ -1,17 +1,12 @@
 scriptName "teargasEffect";
 /*--------------------------------------------------------------------
-	-------------------- Armajunkies Wasteland -----------------------
+	-------------------- Anônimos Wasteland -----------------------
 	------------------------------------------------------------------
 
 	- This Wasteland Version is a completely new code build. -
 	- Please do not just copy and paste this code, there could be server dependencies -
 
-
-	file: teargasEffect.sqf
-	path: /E/Arma3Dev/Missions/particle_test.altis/teargasEffect.sqf
-	=======================
-	Author: Hatchet Harry <orga@armajunkies.de>
-	Modified by:
+	Modified by: Anônimos Brasil
 	Description: Creates a Teargas Effect
 	Parameter(s):
 	Returns:
@@ -58,7 +53,7 @@ player setFatigue 1;
 	_handle ppEffectCommit 5;
 	waitUntil {ppEffectCommitted _handle};
 	//uiSleep 3;
-	comment "admire effect for a sec";
+	comment "Admire o efeito por um segundo";
 	_handle ppEffectEnable false;
 	ppEffectDestroy _handle;
 };
@@ -78,7 +73,7 @@ player setFatigue 1;
 	_handle1 ppEffectCommit 11;
 	waitUntil {ppEffectCommitted _handle1};
 	//uiSleep 3;
-	comment "admire effect for a sec";
+	comment "Admire o efeito por um segundo";
 	_handle1 ppEffectEnable false;
 	ppEffectDestroy _handle1;
 };
@@ -99,7 +94,7 @@ player setFatigue 1;
 	_handle ppEffectCommit 3;
 	waitUntil {ppEffectCommitted _handle};
 	//uiSleep 3;
-	comment "admire effect for a sec";
+	comment "Admire o efeito por um segundo";
 	_handle ppEffectEnable false;
 	ppEffectDestroy _handle;
 };

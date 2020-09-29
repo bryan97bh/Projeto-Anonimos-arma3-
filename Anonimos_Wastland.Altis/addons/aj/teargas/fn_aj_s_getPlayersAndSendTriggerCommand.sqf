@@ -1,17 +1,12 @@
 scriptName "fn_getPlayersAndSendTriggerCommand";
 /*--------------------------------------------------------------------
-	-------------------- Armajunkies Wasteland -----------------------
+	-------------------- Anônimos Wasteland -----------------------
 	------------------------------------------------------------------
 
 	- This Wasteland Version is a completely new code build. -
 	- Please do not just copy and paste this code, there could be server dependencies -
 
-
-	file: fn_getPlayersAndSendTriggerCommand.sqf
-	path: /E/Arma3Dev/Missions/particle_test.altis/fn_getPlayersAndSendTriggerCommand.sqf
-	============================================
-	Author: Hatchet Harry <orga@armajunkies.de>
-	Modified by:
+	Modified by: Anônimos Brasil
 	Description: This file detects player, near the delivered teargas object and sends a publicvariable to the clients who need to create a clientlocal trigger.
 	Parameter(s):
 	Returns:

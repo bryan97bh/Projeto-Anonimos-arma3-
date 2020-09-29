@@ -9,9 +9,9 @@
 
 #define DURATION 5
 #define ANIMATION "AinvPknlMstpSlayWrflDnon_medic"
-#define ERR_NOT_ENOUGH_HEALTH "First Aid Failed! You are too badly injured to use this."
-#define ERR_FULL_HEALTH "First Aid Failed! You already have full health."
-#define ERR_CANCELLED "First Aid Cancelled!"
+#define ERR_NOT_ENOUGH_HEALTH "Kit de primeiros socorros falhou! Você está gravemente ferido para usar isso."
+#define ERR_FULL_HEALTH "Kit de primeiros socorros falhou! Você está com a saúde máxima."
+#define ERR_CANCELLED "Kit de primeiros socorros cancelado!"
 private ["_checks", "_success"];
 if (damage player < 0.005) exitWith {
 	[ERR_FULL_HEALTH, 5] call mf_notify_client;
@@ -34,7 +34,7 @@ _checks = {
 		case (damage player < 0.005): {_text = ERR_FULL_HEALTH};
 		case (doCancelAction): {_text = ERR_CANCELLED; doCancelAction = false;};
 		default {
-			_text = format["Medkit %1%2 Applied", round(100 * _progress), "%"];
+			_text = format["Estojo de Primeiros Socorros %1%2 Aplicado", round(100 * _progress), "%"];
 			_failed = false;
 		};
 	};
@@ -45,6 +45,6 @@ _success = [DURATION, ANIMATION, _checks, []] call a3w_actions_start;
 
 if (_success) then {
 	player setDamage 0;
-	["First Aid Completed!", 5] call mf_notify_client;
+	["Kit de Primeiros Socorros Completo!", 5] call mf_notify_client;
 };
 _success;

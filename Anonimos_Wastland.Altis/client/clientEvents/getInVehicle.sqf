@@ -36,7 +36,7 @@ if (!_uavConnect) then
 			if (isPlayer _x && alive _x && !([_x, player] call A3W_fnc_isFriendly)) exitWith 
 			{
 				moveOut player;
-				["You can't enter vehicles being used by enemies.", 5] call mf_notify_client;
+				["Você não pode entrar em veículos sendo usados por inimigos.", 5] call mf_notify_client;
 
 				// ejection bug workaround
 				if (!alive player || lifeState player == "INCAPACITATED") then
@@ -55,7 +55,7 @@ if (isNil {_veh getVariable "A3W_engineEH"}) then
 };
 
 // Missile alarm to all radarless air vehicles e.g. MH-9, Caesar BTT, etc.
-//if (_veh isKindOf "Air" && {isNil {_veh getVariable "A3W_incomingMissileEH"} && round getNumber (configFile >> "CfgVehicles" >> typeOf _veh >> "incomingMissileDetectionSystem") < 1}) then
+if (_veh isKindOf "Air" && {isNil {_veh getVariable "A3W_incomingMissileEH"} && round getNumber (configFile >> "CfgVehicles" >> typeOf _veh >> "incomingMissileDetectionSystem") < 1}) then
 
 // MissileAlarm for Military Hummbingbird (armed and unarmed)
 if (isNil {_veh getVariable "A3W_incomingMissileEH"} && {_veh isKindOf _x} count ["Heli_Light_01_armed_base_F", "B_Heli_Light_01_F"] > 0) then
@@ -76,7 +76,7 @@ if (unitIsUAV _veh) then
 {
 	if (_veh isKindOf "LandVehicle" && isNil {_veh getVariable "A3W_flipDroneAction"}) then
 	{
-		_veh setVariable ["A3W_flipDroneAction", [_veh, ["<img image='addons\vactions\icons\flip.paa'/> Unflip drone", { [_this select 0, surfaceNormal getPosWorld (_this select 0)] call A3W_fnc_unflip }, [], 10, false, false, "", "cameraOn == _target && (uavControl _target) select 0 == player && [_target] call va_unflip_action_available"]] call fn_addManagedAction];
+		_veh setVariable ["A3W_flipDroneAction", [_veh, ["<img image='addons\vactions\icons\flip.paa'/> Virar drone", { [_this select 0, surfaceNormal getPosWorld (_this select 0)] call A3W_fnc_unflip }, [], 10, false, false, "", "cameraOn == _target && (uavControl _target) select 0 == player && [_target] call va_unflip_action_available"]] call fn_addManagedAction];
 	};
 
 	if (["A3W_savingMethod", "profile"] call getPublicVar == "extdb" && isNil {_veh getVariable "A3W_saveDroneActions"}) then
@@ -89,8 +89,8 @@ if (unitIsUAV _veh) then
 			{
 				_saveActions append
 				[
-					[_veh, ["<img image='client\icons\save.paa'/> Enable Drone Saving", fn_forceSaveVehicle, [], -9.5, false, true, "", "cameraOn == _target && _target call canForceSaveVehicle && (_target getVariable ['A3W_skipAutoSave', false])"]] call fn_addManagedAction,
-					[_veh, ["<img image='client\icons\save.paa'/> Force Save Drone", fn_forceSaveVehicle, [], -9.5, false, true, "", "cameraOn == _target && _target call canForceSaveVehicle && !(_target getVariable ['A3W_skipAutoSave', false])"]] call fn_addManagedAction
+					[_veh, ["<img image='client\icons\save.paa'/> Habilitar salvamento de Drone", fn_forceSaveVehicle, [], -9.5, false, true, "", "cameraOn == _target && _target call canForceSaveVehicle && (_target getVariable ['A3W_skipAutoSave', false])"]] call fn_addManagedAction,
+					[_veh, ["<img image='client\icons\save.paa'/> Forçar salvamento de Drone", fn_forceSaveVehicle, [], -9.5, false, true, "", "cameraOn == _target && _target call canForceSaveVehicle && !(_target getVariable ['A3W_skipAutoSave', false])"]] call fn_addManagedAction
 				];
 			};
 		}
@@ -100,8 +100,8 @@ if (unitIsUAV _veh) then
 			{
 				_saveActions append
 				[
-					[_veh, ["<img image='client\icons\save.paa'/> Enable Drone Saving", fn_forceSaveObject, [], -9.5, false, true, "", "cameraOn == _target && _target call canForceSaveStaticWeapon && (_target getVariable ['A3W_skipAutoSave', false])"]] call fn_addManagedAction,
-					[_veh, ["<img image='client\icons\save.paa'/> Force Save Drone", fn_forceSaveObject, [], -9.5, false, true, "", "cameraOn == _target && _target call canForceSaveStaticWeapon && !(_target getVariable ['A3W_skipAutoSave', false])"]] call fn_addManagedAction
+					[_veh, ["<img image='client\icons\save.paa'/> Habilitar salvamento de Drone", fn_forceSaveObject, [], -9.5, false, true, "", "cameraOn == _target && _target call canForceSaveStaticWeapon && (_target getVariable ['A3W_skipAutoSave', false])"]] call fn_addManagedAction,
+					[_veh, ["<img image='client\icons\save.paa'/> Forçar salvamento de Drone", fn_forceSaveObject, [], -9.5, false, true, "", "cameraOn == _target && _target call canForceSaveStaticWeapon && !(_target getVariable ['A3W_skipAutoSave', false])"]] call fn_addManagedAction
 				];
 			};
 		};

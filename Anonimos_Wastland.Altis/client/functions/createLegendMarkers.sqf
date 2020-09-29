@@ -8,8 +8,8 @@ _markers =
 [
 	["Legenda:", "EmptyIcon", "ColorWhite", [1,1]],
 
-	["GS - General Store", "mil_dot", "ColorBlue", [1,1]],
-	["VS - Loja de Véiculos | Aeronaves | Embarcações", "mil_dot", "ColorOrange", [1,1]]
+	["LG - General Store", "mil_dot", "ColorBlue", [1,1]],
+	["LV - Loja de Véiculos | Aeronaves | Embarcações", "mil_dot", "ColorOrange", [1,1]]
 ];
 
 

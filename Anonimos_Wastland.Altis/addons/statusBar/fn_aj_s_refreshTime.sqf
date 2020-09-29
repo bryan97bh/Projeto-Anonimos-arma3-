@@ -1,7 +1,6 @@
 scriptName "fn_aj_s_refreshTime";
 // @file Name: fn_aj_s_refreshTime.sqf
-// @file Author:  wiking.at
-// @file Author: www.armajunkies.de
+// @file Author: Anônimos
 // Based on ideas in serverRestartMessages by soulkobk
 // Refresh current server time and broadcast to clients if hh:mm changes.
 

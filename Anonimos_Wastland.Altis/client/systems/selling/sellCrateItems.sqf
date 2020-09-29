@@ -45,7 +45,7 @@ storeSellingHandle = _this spawn
 		if (!_forceSell) then
 		{
 			playSound "FD_CP_Not_Clear_F";
-			[format ['"%1" does not contain valid items to sell.', _objName], "Error"] call BIS_fnc_guiMessage;
+			[format ['"%1" não tem itens validos para vender.', _objName], "Error"] call BIS_fnc_guiMessage;
 		};
 	};
 
@@ -66,13 +66,13 @@ storeSellingHandle = _this spawn
 
 		//player setVariable ["cmoney", (player getVariable ["cmoney", 0]) + _sellValue, true];
 		[player, _sellValue] call A3W_fnc_setCMoney;
-		hint format [format ['The inventory of "%1" was sold for $%2', _objName, _sellValue]];
+		hint format [format ['O inventário "%1" foi vendido por $%2', _objName, _sellValue]];
 		playSound "FD_Finish_F";
 	}
 	else
 	{
 		// Add total sell value to confirm message
-		_confirmMsg = format ["You will obtain $%1 for:<br/>", [_sellValue] call fn_numbersText];
+		_confirmMsg = format ["Você irá obter $%1 por:<br/>", [_sellValue] call fn_numbersText];
 
 		// Add item quantities and names to confirm message
 		{
@@ -125,14 +125,14 @@ storeSellingHandle = _this spawn
 				//player setVariable ["cmoney", (player getVariable ["cmoney", 0]) + _sellValue, true];
 				[player, _sellValue] call A3W_fnc_setCMoney;
 
-				_hintMsg = if (_deleteObject) then { 'You sold "%1" for $%2' } else { 'You sold the inventory of "%1" for $%2' };
+				_hintMsg = if (_deleteObject) then { 'Você vendeu "%1" por $%2' } else { 'Você vendeu o inventário "%1" por $%2' };
 				hint format [_hintMsg, _objName, _sellValue];
 				playSound "FD_Finish_F";
 			}
 			else
 			{
 				playSound "FD_CP_Not_Clear_F";
-				[format ['The contents of "%1" have changed, please restart the selling process.', _objName], "Error"] call BIS_fnc_guiMessage;
+				[format ['O conteúdo de "%1" foi alterado, por favor recomece a processo de venda.', _objName], "Error"] call BIS_fnc_guiMessage;
 			};
 		};
 	};

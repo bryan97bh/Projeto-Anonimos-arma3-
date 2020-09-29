@@ -17,11 +17,11 @@ FAR_Player_Actions =
 		// addAction args: title, filename, (arguments, priority, showWindow, hideOnUse, shortcut, condition, positionInModel, radius, radiusView, showIn3D, available, textDefault, textToolTip)
 		{ [player, _x] call fn_addManagedAction } forEach
 		[
-			["<t color='#FF0000'>" + "Finish off" + "</t>", "addons\FAR_revive\FAR_handleAction.sqf", ["action_slay"], 101, true, true, "", FAR_Check_Slay],
-			["<t color='#00FF00'>" + "Revive" + "</t>", "addons\FAR_revive\FAR_handleAction.sqf", ["action_revive"], 100, true, true, "", FAR_Check_Revive], // also defined in addons\UAV_Control\functions.sqf
-			["<t color='#00FF00'>" + "Stabilize" + "</t>", "addons\FAR_revive\FAR_handleAction.sqf", ["action_stabilize"], 99, true, true, "", FAR_Check_Stabilize],
-			["<t color='#FFFF00'>" + "Drag" + "</t>", "addons\FAR_revive\FAR_handleAction.sqf", ["action_drag"], 98, true, true, "", FAR_Check_Dragging],
-			["<t color='#FFFF00'>" + "Eject injured units from vehicle" + "</t>", "addons\FAR_revive\FAR_handleAction.sqf", ["action_eject"], 5.2, false, true, "", FAR_Check_Eject_Injured]
+			["<t color='#FF0000'>" + "Cortar garganta" + "</t>", "addons\FAR_revive\FAR_handleAction.sqf", ["action_slay"], 101, true, true, "", FAR_Check_Slay],
+			["<t color='#00FF00'>" + "Reviver" + "</t>", "addons\FAR_revive\FAR_handleAction.sqf", ["action_revive"], 100, true, true, "", FAR_Check_Revive], // also defined in addons\UAV_Control\functions.sqf
+			["<t color='#00FF00'>" + "Estabilizar" + "</t>", "addons\FAR_revive\FAR_handleAction.sqf", ["action_stabilize"], 99, true, true, "", FAR_Check_Stabilize],
+			["<t color='#FFFF00'>" + "Arrastar" + "</t>", "addons\FAR_revive\FAR_handleAction.sqf", ["action_drag"], 98, true, true, "", FAR_Check_Dragging],
+			["<t color='#FFFF00'>" + "Retirar ferido do veículo" + "</t>", "addons\FAR_revive\FAR_handleAction.sqf", ["action_eject"], 5.2, false, true, "", FAR_Check_Eject_Injured]
 		];
 	};
 }
@@ -84,12 +84,12 @@ FAR_HandleTreating =
 			{
 				params ["_progress", "_target", "_isRevive"];
 				private _failed = true;
-				private _text = "Revive failed!";
+				private _text = "Revive falhou!";
 
 				if (CAN_PERFORM) then
 				{
 					_failed = false;
-					_text = format [["Stabilizing %1%2 complete","Reviving %1%2 complete"] select _isRevive, floor (_progress * 100), "%"];
+					_text = format [["Estabilizando %1%2 completo","Revivendo %1%2 completo"] select _isRevive, floor (_progress * 100), "%"];
 				};
 
 				[_failed, _text];
@@ -190,11 +190,11 @@ FAR_Drag =
 	// Add release action and save its id so it can be removed
 	_actions =
 	[
-		[player, ["<t color='#FFFF00'>" + "Load unit in vehicle" + "</t>", "addons\FAR_revive\FAR_handleAction.sqf", ["action_load"], 103, true, true, "", FAR_Check_Load_Dragged]] call fn_addManagedAction,
-		player addAction ["<t color='#FF0000'>" + "Release" + "</t>", "addons\FAR_revive\FAR_handleAction.sqf", ["action_release"], 102]
+		[player, ["<t color='#FFFF00'>" + "Colocar ferido no veículo" + "</t>", "addons\FAR_revive\FAR_handleAction.sqf", ["action_load"], 103, true, true, "", FAR_Check_Load_Dragged]] call fn_addManagedAction,
+		player addAction ["<t color='#FF0000'>" + "Soltar" + "</t>", "addons\FAR_revive\FAR_handleAction.sqf", ["action_release"], 102]
 	];
 
-	titleText [format ["Press %1 (%2) if you can't move back.", (actionKeysNamesArray "TactToggle") param [0,"<UNDEFINED>"], actionName "TactToggle"], "PLAIN DOWN", 0.5];
+	titleText [format ["Precione %1 (%2) se você não puder voltar.", (actionKeysNamesArray "TactToggle") param [0,"<UNDEFINED>"], actionName "TactToggle"], "PLAIN DOWN", 0.5];
 	player selectWeapon primaryWeapon player;
 
 	// Drag & Carry animation fix
@@ -502,7 +502,7 @@ FAR_CheckFriendlies =
 	private ["_veh", "_dir", "_cardinal", "_medic", "_name"];
 
 	private _medics = [];
-	private _medicsText = [format ["<t underline='true'>%1</t>", "Nearby medics" splitString " " joinString toString [160]]]; // 160 = non-breaking space, otherwise the underline is split between the words
+	private _medicsText = [format ["<t underline='true'>%1</t>", "Médicos próximos" splitString " " joinString toString [160]]]; // 160 = non-breaking space, otherwise the underline is split between the words
 	private _units = player nearEntities ["AllVehicles", 1000];
 
 	{

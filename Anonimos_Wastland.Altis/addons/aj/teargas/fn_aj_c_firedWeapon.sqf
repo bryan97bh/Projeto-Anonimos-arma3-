@@ -1,16 +1,12 @@
 scriptName "fn_firedWeapon";
 /*--------------------------------------------------------------------
-	-------------------- Armajunkies Wasteland -----------------------
+	-------------------- Anônimos Wasteland -----------------------
 	------------------------------------------------------------------
 
 	- This Wasteland Version is a completely new code build. -
 	- Please do not just copy and paste this code, there could be server dependencies -
 
-
-	file: fn_particles.sqf
-	path: /C/Users/Dirk/Documents/Arma 3 - Other Profiles/Hatchet_Harry/missions/particle_test.VR/fn_particles.sqf
-	======================
-	Author: Hatchet Harry <orga@armajunkies.de>
+	Author: Anônimos Brasil
 	Modified by:
 	Description: This file reacts on every single shot (File eventhandler). If a player throws a SmokeShellYellow, than the player will
 	- deliver the netID to the server

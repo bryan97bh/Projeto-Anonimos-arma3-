@@ -1,6 +1,6 @@
 scriptName "fn_c_createTearTrigger";
 /*--------------------------------------------------------------------
-	-------------------- Armajunkies Wasteland -----------------------
+	-------------------- Anônimos Wasteland -----------------------
 	------------------------------------------------------------------
 
 	- This Wasteland Version is a completely new code build. -
@@ -10,7 +10,7 @@ scriptName "fn_c_createTearTrigger";
 	file: fn_c_createTearTrigger.sqf
 	path: /E/Arma3Dev/Missions/particle_test.altis/fn_c_createTearTrigger.sqf
 	================================
-	Author: Hatchet Harry <orga@armajunkies.de>
+	Author: Anônimos Brasil
 	Modified by:
 	Description: Creates a trigger locally on client, which is handling the teargas functions.
 	Parameter(s):

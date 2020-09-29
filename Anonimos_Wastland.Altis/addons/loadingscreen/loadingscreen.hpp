@@ -1,7 +1,6 @@
 //	@file Version: 1.0
 //	@file Name: loadingscreen.hpp
-//	@file Author: wiking.at
-//	www.armajunkies.de
+//	@file Author: Anônimos
 //	Definition of custom loadingscreen display.
 
 titles[] = {"loadingscreen", "loadingscreen_server_init"};

@@ -1,7 +1,5 @@
 // @file Name: refreshZeus.sqf
-// @file Author:  wiking.at
-// @file Author: www.armajunkies.de
-// Refresh of all Mission Objects and set Owner on Zeus Keypress
+// @file Author:  Anônimos Brasil
 
 
 _uid = getPlayerUID player;

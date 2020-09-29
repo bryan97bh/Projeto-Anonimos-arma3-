@@ -1,7 +1,6 @@
 scriptName "fn_aj_s_refreshZeus";
 // @file Name: fn_aj_s_refreshZeus.sqf
-// @file Author:  wiking.at
-// @file Author: www.armajunkies.de
+// @file Author:  Anônimos Brasil
 
 if (isServer) then {
     // Refresh map objects if zeus ui is opened

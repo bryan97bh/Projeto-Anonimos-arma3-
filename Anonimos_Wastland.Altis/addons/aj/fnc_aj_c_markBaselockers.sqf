@@ -1,12 +1,11 @@
 scriptName "fnc_aj_c_markBaselockers";
 // @file Name: fnc_aj_c_markBaselockers.sqf
-// @file Author:  wiking.at
-// @file Author: www.armajunkies.de
+// @file Author: Anônimos Brasil
 
 _baselockers = allMissionObjects "Land_device_assembled_F";
 _MapMarkers = [];
 
-["Current base and vehicle positions are shown on map for three minutes.", 5] call mf_notify_client;
+["Acesso confirmado ao Satélite. Todas as Bases da ilha e as posições dos veiculos estaram sendo mostradas no mapa por três minutos.", 5] call mf_notify_client;
 
 {
 	_objPos = getPosATL _x;
@@ -82,7 +81,7 @@ while {diag_ticktime < _until} do
 		{
 			deleteMarkerLocal _x;
 		} forEach _MapMarkers;
-		["The Satellite has left the area. Map info removed", 5] call mf_notify_client;
+		["O Satélite saiu da área. Informações do mapa serão apagadas.", 5] call mf_notify_client;
 	};
 
 //clear group icons again if first loop isn't catching all players

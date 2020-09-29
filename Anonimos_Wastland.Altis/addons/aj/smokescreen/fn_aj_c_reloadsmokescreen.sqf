@@ -18,7 +18,7 @@ if (_playerMoney >= _smokeprice ) then
  } 
 else
 {
-	["Você não pode recarregar seu lançador de granadas defensivas.", 5] call mf_notify_client;
+	["Você não pode recarregar seu lançador de granadas defensivas. Pode ser falta de dinheiro", 5] call mf_notify_client;
 	playSound "FD_CP_Not_Clear_F";
 };
 
