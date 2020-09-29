@@ -32,28 +32,29 @@ SideMissions =
 
 MoneyMissions =
 [
-	["mission_MoneyShipment", 1.5],    //ESCOLTA DE DINHEIRO
-    ["mission_HostageRescue", 1],      //RESGATE AO REFÉM
+	//["mission_MoneyShipment", 1.5],    //ESCOLTA DE DINHEIRO
+    //["mission_HostageRescue", 1],      //RESGATE AO REFÉM
     ["mission_Roadblock", 1],          //BLOQUEIO NA ESTRADA
-    ["mission_Terror", 1.6],           //GRUPO TERRORISTA
-	["mission_HackLaptop", 0.3]	   //Hackers
+    ["mission_Terror", 1.6]           //GRUPO TERRORISTA
+	//["mission_HackLaptop", 0.3],	   //Hackers
 	//["mission_Satellite_Uplink", 0.4]  //SAT
 ];
 
 PrincipalMissions =
 [
-	["mission_Sniper", 0.8],           //SNIPES 
-	["mission_OCUPACAO", 1.4],         //OCUPACAO
-    ["mission_TownInvasion", 1.5],     //CIDADE INVADIDA
-	["mission_MiniConvoy", 1],         //ESCOLTA ARMADA
-	["mission_Outpost", 1.3],          //POSTO AVANÇADO
-	["mission_Convoy", 1]              //COMBOIO SUSPEITO 
+	//["mission_Sniper", 0.9],           //SNIPES 
+	["mission_OCUPACAO", 1.4]         //OCUPACAO
+    //["mission_TownInvasion", 1.5],     //CIDADE INVADIDA
+	//["mission_MiniConvoy", 1],         //ESCOLTA ARMADA
+	//["mission_Outpost", 1.3],          //POSTO AVANÇADO
+	//["mission_Convoy", 1],             //COMBOIO SUSPEITO 
+	//["mission_ConvoyART", 1]           //ARTILHARIA
 ];
 
 hostileairMissions =
 [
 	["mission_HostileHelicopter", 1.5],   //HELICÓPTERO HOSTIL
-    ["mission_FORMAÇAODEHELI", 1.2],      //HELICÓPTEROS HOSTIS
+    ["mission_FORMAÇAODEHELI", 1.2],        //HELICÓPTEROS HOSTIS
 	["mission_PATRULHAAEREA", 0.6],       //PATRULHA AÉREA
 
 	["mission_HostileJet", 1.2],          //JATO HOSTIL

@@ -10,11 +10,6 @@
 // This tracks which store owner the client is interacting with
 currentOwnerName = "";
 
-// Gunstore Weapon List - Gun Store Base List
-// Text name, classname, buy cost
-
-// empty name = name is extracted from class config
-
 pistolArray = compileFinal str
 [
 	// Handguns
@@ -35,24 +30,25 @@ smgArray = compileFinal str
 	["Sting Sub Metralhadora", "SMG_02_F", 250],
 	["Vermin Sub Metralhadora", "SMG_01_F", 250],
 
-	["ADR-97C (Preta)", "SMG_03C_black", 100],
-	["ADR-97C (Camuflada)", "SMG_03C_camo", 100],
-	["ADR-97C (Hex)", "SMG_03C_hex", 100],
-	["ADR-97C (Khaki)","SMG_03C_khaki", 100],
+	["ADR-97C (Preta)", "SMG_03C_black", 450],
+	["ADR-97C (Camuflada)", "SMG_03C_camo", 450],
+	["ADR-97C (Hex)", "SMG_03C_hex", 450],
+	["ADR-97C (Khaki)","SMG_03C_khaki", 450],
 
-	["ADR-97C TR (Preta)", "SMG_03C_TR_black", 125],
-	["ADR-97C TR (Camuflada)", "SMG_03C_TR_camo", 125],
-	["ADR-97C TR (Hex)", "SMG_03C_TR_hex", 125],
-	["ADR-97C TR (Khaki)", "SMG_03C_TR_khaki", 125],
+	["ADR-97C TR (Preta)", "SMG_03C_TR_black", 450],
+	["ADR-97C TR (Camuflada)", "SMG_03C_TR_camo", 450],
+	["ADR-97C TR (Hex)", "SMG_03C_TR_hex", 450],
+	["ADR-97C TR (Khaki)", "SMG_03C_TR_khaki", 450],
 
-	["ADR-97 (Preta)", "SMG_03_black", 125],
-	["ADR-97 (Camo)", "SMG_03_camo", 125],
-	["ADR-97 (Hex)", "SMG_03_hex", 125],
-	["ADR-97 (Khaki)", "SMG_03_khaki", 125],
-	["ADR-97 TR (Preta)", "SMG_03_TR_black", 150],
-	["ADR-97 TR (Camuflada)", "SMG_03_TR_camo", 150],
-	["ADR-97 TR (Hex)", "SMG_03_TR_hex", 150],
-	["ADR-97 TR (Khaki)", "SMG_03_TR_khaki", 150]
+	["ADR-97 (Preta)", "SMG_03_black", 450],
+	["ADR-97 (Camo)", "SMG_03_camo", 450],
+	["ADR-97 (Hex)", "SMG_03_hex", 450],
+	["ADR-97 (Khaki)", "SMG_03_khaki", 450],
+
+	["ADR-97 TR (Preta)", "SMG_03_TR_black", 450],
+	["ADR-97 TR (Camuflada)", "SMG_03_TR_camo", 450],
+	["ADR-97 TR (Hex)", "SMG_03_TR_hex", 450],
+	["ADR-97 TR (Khaki)", "SMG_03_TR_khaki", 450]
 ];
 
 rifleArray = compileFinal str
@@ -213,7 +209,8 @@ lmgArray = compileFinal str
     
 	["Metralhadora Pesada SPMG (Preta)", "MMG_02_black_F", 7500],
 	["Metralhadora Pesada SPMG (Areia)", "MMG_02_sand_F", 7500],
-	["Metralhadora Pesada SPMG (Multicam)", "MMG_02_camo_F", 7500]
+	["Metralhadora Pesada SPMG (Multicam)", "MMG_02_camo_F", 7500],
+	["TESTE", "gm_mg3_blk", 1000000]
 ];
 
 launcherArray = compileFinal str
@@ -252,7 +249,6 @@ staticGunsArray = compileFinal str
 	["GRUPO Browning .50", "", 0, ""],
     ["Browning.50 ALTA", "B_HMG_01_high_weapon_F", 4000],
 	["Browning.50 BAIXA", "B_HMG_01_weapon_F", 3000],
-	
 
 	["GRUPO Browning M2.50", "", 0, ""],
 	["Browning M2.50 COM MIRA ALTA", "I_HMG_02_high_weapon_F", 3000],
@@ -260,18 +256,15 @@ staticGunsArray = compileFinal str
 	
 	["Browning M2.50 SEM MIRA ALTA", "I_G_HMG_02_high_weapon_F", 3000],
 	["Browning M2.50 SEM MIRA BAIXA", "I_G_HMG_02_weapon_F", 2500],
-	
 
     ["GRUPO Browning 20MM", "", 0, ""],
 	["Browning 20MM ALTA", "B_GMG_01_high_weapon_F", 5000],
 	["Browning 20MM BAIXA", "B_GMG_01_weapon_F", 4500],
-	
 
     ["GRUPO LANÇADORES", "", 0, ""],
 	["LANÇADOR AT", "B_AT_01_weapon_F", 7000],
 	["LANÇADOR AA", "B_AA_01_weapon_F", 7000],
 	["Tubo Morteiro 80mm", "B_Mortar_01_weapon_F", 12000],
-	
 	
 	["GRUPO TRIPÉS", "", 0, ""],
     ["Tripé Alto para .50", "B_HMG_01_support_high_F", 500],
@@ -346,20 +339,20 @@ ammoArray = compileFinal str
 	["9mm 16|Munições|", "16Rnd_9x21_Mag", 15],
 	["9mm 30|Munições|", "30Rnd_9x21_Mag", 25],
     ["9mm 30|Munições|", "30Rnd_9x21_Mag_SMG_02", 25],
-	[".45 ACP 6|Munições|", "6Rnd_45ACP_Cylinder", 25],
-	[".45 ACP 9|Munições|", "9Rnd_45ACP_Mag", 15],
-	[".45 ACP 11|Munições|", "11Rnd_45ACP_Mag", 25],
-	[".45 ACP 30|Munições|Kriss Vector", "30Rnd_45ACP_MAG_SMG_01", 30],
-	[".45 ACP 30|Munições|Traçante|Verde|", "30Rnd_45ACP_Mag_SMG_01_tracer_green", 25],
+	[".45 ACP 6|Munições|", "6Rnd_45ACP_Cylinder", 20],
+	[".45 ACP 9|Munições|", "9Rnd_45ACP_Mag", 25],
+	[".45 ACP 11|Munições|", "11Rnd_45ACP_Mag", 30],
+	[".45 ACP 30|Munições|Kriss Vector", "30Rnd_45ACP_MAG_SMG_01", 35],
+	[".45 ACP 30|Munições|Traçante|Verde|", "30Rnd_45ACP_Mag_SMG_01_tracer_green", 35],
     ["5.45mm 30|Munições|", "30Rnd_545x39_Mag_F", 30],
 	["5.45mm 30|Munições|Traçante|Amarelo|", "30Rnd_545x39_Mag_Tracer_F", 20],
 	["5.45mm 30|Munições|Traçante|Verde|", "30Rnd_545x39_Mag_Tracer_Green_F", 20],
 	["5.56mm 20|Munições|Subaquático|", "20Rnd_556x45_UW_mag", 30],
 	["5.56mm 30|Munições|STANAG|", "30Rnd_556x45_Stanag", 25],
-	["5.56mm 30Rnd|Munições|STANAG|Areia|", "30Rnd_556x45_Stanag_Sand_Green", 25],
-	["5.56mm 30Rnd|Munições|Traçante|Verde|", "30Rnd_556x45_Stanag_Tracer_Green", 20],
-	["5.56mm 30Rnd|Munições|Traçante|Amarelo|", "30Rnd_556x45_Stanag_Tracer_Yellow", 20],
-	["5.56mm 30Rnd|Munições|Traçante|Vermelho|", "30Rnd_556x45_Stanag_Tracer_Red", 20],
+	["5.56mm 30Rnd|Munições|STANAG|Areia|", "30Rnd_556x45_Stanag_Sand_Green", 75],
+	["5.56mm 30Rnd|Munições|Traçante|Verde|", "30Rnd_556x45_Stanag_Tracer_Green", 75],
+	["5.56mm 30Rnd|Munições|Traçante|Amarelo|", "30Rnd_556x45_Stanag_Tracer_Yellow", 75],
+	["5.56mm 30Rnd|Munições|Traçante|Vermelho|", "30Rnd_556x45_Stanag_Tracer_Red", 75],
     ["5.56mm 150|Munições|", "150Rnd_556x45_Drum_Mag_F", 100],
 	["5.56mm 150|Munições|verde|", "150Rnd_556x45_Drum_Green_Mag_F", 100],
 	["5.56mm 150|Munições|Areia|", "150Rnd_556x45_Drum_Sand_Mag_F", 100],
@@ -465,8 +458,8 @@ ammoArray = compileFinal str
 	["7.62 75|Munições|AKM|Cinta|", "75rnd_762x39_Mag_F", 100],
 	
 	["7.62 30|Munições|AK12|Árido|", "30rnd_762x39_AK12_Arid_Mag_F", 100],
-	["7.62 30|Munições|AK12|Exuberante|", "30rnd_762x39_AK12_Lush_Mag_F", 100]
-	
+	["7.62 30|Munições|AK12|Exuberante|", "30rnd_762x39_AK12_Lush_Mag_F", 100],
+	["TESTE", "gm_120Rnd_762x51mm_B_T_DM21_mg3_grn", 1000000]
 ];
 
 //Gun Store item List
@@ -491,7 +484,7 @@ accessoriesArray = compileFinal str
     //["Supressor Stealth 6.5mm|Verde Hex|", "muzzle_snds_65_TI_ghex_F", 2500, "item"],
     //["Supressor Stealth 6.5mm|Hex|", "muzzle_snds_65_TI_hex_F", 2500, "item"],
     //["Supressor 7.62mm|Preto|", "muzzle_snds_B", 3500, "item"],
-    //["Suppressor 7.62mm|Khaki|", "muzzle_snds_B_khk_F", 3500, "item", "noDLC"],
+    //["Supressor 7.62mm|Khaki|", "muzzle_snds_B_khk_F", 3500, "item", "noDLC"],
     //["Supressor 7.62mm|Areia|", "muzzle_snds_B_snd_F", 3500, "item", "noDLC"],
 	//["Supressor 7.62mm|Árido|", "muzzle_snds_B_arid_F", 3500, "item", "noDLC"],
 	//["Supressor 7.62mm|Exuberante|", "muzzle_snds_B_lush_F", 3500, "item", "noDLC"],
@@ -978,8 +971,8 @@ uniformArray = compileFinal str
 	["Guerilla Smocks", "U_IG_Guerilla3_1", 100, "uni"],
     ["Guerilla Smocks 2", "U_IG_Guerilla3_2", 100, "uni"],
 	["Guerilla Apparel", "U_IG_Guerrilla_6_1", 100, "uni"],
-	["Uniforme de guerrilha", "U_IG_leader", 100, "uni"],
-	["======================================================", "", 0, ""],
+	["Uniforme de guerrilha", "U_IG_leader", 100, "uni"]
+	/*["======================================================", "", 0, ""],
 
     ["EXCLUSIVO BLUFOR", "", 0, ""],
     ["Uniforme Manga Curta (MTP)", "U_B_CombatUniform_mcam_tshirt", 100, "uni"],       //Blufor
@@ -1304,8 +1297,8 @@ genItemArray = compileFinal str
 	["UTILIDADES", "", 0, ""],
 	["Kit Médico", "FirstAidKit", 25, "item"],
 	["Estojo Médico", "Medikit", 250, "item"],
-	["Estojo de Ferramentas", "ToolKit", 250, "item"],
-	["Detector de Minas", "MineDetector", 1000, "item"],
+	["Estojo de Ferramentas", "ToolKit", 2500, "item"],
+	["Detector de Minas", "MineDetector", 3000, "item"],
 	["Binóculos", "Binocular", 500, "binoc"],
 	["Focalizador", "Rangefinder", 1000, "binoc"],
 	["Granada Infra Vermelho", "B_IR_Grenade", 100, "mag"],
@@ -1326,6 +1319,12 @@ genItemArray = compileFinal str
 	["(Olivea)", "Laserdesignator_03", 2000, "binoc", "noDLC"],
 	["(Hex)", "Laserdesignator_02", 2000, "binoc", "noDLC"],		// Attention: Check the main config and change the price if thermal is activated == overpowered
     ["(Verde Hex)", "Laserdesignator_02_ghex_F", 2000, "binoc"],
+	["======================================================", "", 0, ""],
+
+	["Designator Remoto ", "", 0, ""],
+	//["BLUFOR", "B_Static_Designator_01_weapon_F", 2500, "vehicle"],
+	//[" (CSAT)", "O_Static_Designator_02_weapon_F", 2500, "vehicle"],
+    ["Independente", "B_W_Static_Designator_01_weapon_F", 2500, "backpack", "noDLC"],
 	["======================================================", "", 0, ""],
 
     ["Bastaão de Luz", "", 0, ""],
@@ -1356,8 +1355,8 @@ genObjectsArray = compileFinal str
 
     ["----UTILIDADES DE BASE----", "", 0, ""],
 	["Bomba de Gasolina", "Land_FuelStation_Feed_F", 10000, "object"],
-	["Saco de Comida", "Land_Sacks_goods_F", 1000],
-	["Barril de Água", "Land_BarrelWater_F", 1000],
+	["Saco de Comida", "Land_Sacks_goods_F", 5000],
+	["Barril de Água", "Land_BarrelWater_F", 5000],
     ["======================================================", "", 0, ""],
 
 	["----UTILIDADES DE CONSTRUÇÃO----", "", 0, ""],
@@ -1377,8 +1376,8 @@ genObjectsArray = compileFinal str
 	["----GRUPO DE PAREDES----", "", 0, ""],
     ["(Única)", "Land_CncWall1_F", 200, "object"],
 	["(Longo)", "Land_CncWall4_F", 300, "object"],
-    ["(Alta) (4m)", "Land_ConcreteWall_01_l_4m_F", 200, "object"],
-    ["(Alta) (8m)", "Land_ConcreteWall_01_l_8m_F", 400, "object"],
+    ["Concreto(Alta) (4m)", "Land_ConcreteWall_01_l_4m_F", 200, "object"],
+    ["Concreto(Alta) (8m)", "Land_ConcreteWall_01_l_8m_F", 400, "object"],
     ["(Alta | Portão)", "Land_ConcreteWall_01_l_gate_F", 500, "object"],
 	["Muro de Canal (Escadas)", "Land_Canal_Wall_Stairs_F", 500, "object"],
 	["Muro de Canal (Pequeno)", "Land_Canal_WallSmall_10m_F", 500, "object"],
@@ -1565,7 +1564,7 @@ landArray = compileFinal str
     ["MB 4WD", "C_Offroad_02_unarmed_F", 1000, "vehicle"],
         ["MB 4WD (Guerilla)", "I_C_Offroad_02_unarmed_F", 1000, "vehicle", "HIDDEN"], // hidden, just a paintjob
     ["------------------------------------------------------------------------", "", 0, ""],
-	["Prowler | Leve | Desarmado", "B_CTRG_LSV_01_light_F", 1000, "vehicle"],
+	["Prowler | Leve | Desarmado", "B_CTRG_LSV_01_light_F", 2000, "vehicle"],
 	["Prowler | Desarmado", "B_T_LSV_01_unarmed_F", 2500, "vehicle"],
 	["Qilin | Desarmado", "O_T_LSV_02_unarmed_F", 2500, "vehicle"],
 	["======================================================", "", 0, ""],
@@ -1857,42 +1856,36 @@ boatsArray = compileFinal str
 
 DronesArray = compileFinal str
 [
-	["Designator Remoto ", "", 0, ""],
-	["BLUFOR", "B_Static_Designator_01_weapon_F", 2500, "vehicle"],
-	//[" (CSAT)", "O_Static_Designator_02_weapon_F", 2500, "vehicle"],
-    ["Independente", "B_W_Static_Designator_01_weapon_F", 2500, "vehicle"],
-	["======================================================", "", 0, ""],
-	
 	["Quadricóptero Reconhecimento", "", 0, ""],
-	["BLUFOR", "B_UAV_01_backpack_F", 3000, "vehicle"],
+	//["BLUFOR", "B_UAV_01_backpack_F", 3000, "vehicle"],
 	//["Quadcopter UAV (CSAT)", "O_UAV_01_backpack_F", 3000, "vehicle"],
-	["Independente", "I_UAV_01_backpack_F", 3000, "vehicle"],
+	["Independente", "I_UAV_01_F", 3000, "vehicle"],
 	["======================================================", "", 0, ""],
     
 	["Hexacóptero de Carga", "", 0, ""],
-	["BLUFOR", "B_UAV_06_backpack_F", 4000, "vehicle"],
+	//["BLUFOR", "B_UAV_06_backpack_F", 4000, "vehicle"],
 	//["Hexacopter UAV (CSAT)", "O_UAV_06_backpack_F", 4000, "vehicle"],
-	["Independente", "I_UAV_06_backpack_F", 4000, "vehicle"],
+	["Independente", "I_UAV_06_F", 4000, "vehicle"],
 	["======================================================", "", 0, ""],
 
     ["Hexacóptero Médico", "", 0, ""],
-	["BLUFOR", "B_UAV_06_medical_backpack_F", 5000, "vehicle"],
+	//["BLUFOR", "B_UAV_06_medical_backpack_F", 5000, "vehicle"],
 	//["Hexacopter Medical UAV (CSAT)", "O_UAV_06_medical_backpack_F", 5000, "vehicle"],
-	["Independente", "I_UAV_06_medical_backpack_F", 5000, "vehicle"],
+	["Independente", "I_UAV_06_medical_F", 5000, "vehicle"],
 	["======================================================", "", 0, ""],
 
     ["Hexacóptero Demolidor", "", 0, ""],
-	["Demolidor | 4 Cargas", "C_IDAP_UAV_06_antimine_backpack_F", 20000, "vehicle"],
+	["4 Cargas", "C_IDAP_UAV_06_antimine_F", 20000, "vehicle"],
 	["======================================================", "", 0, ""],
 	
     ["ED-1E de Reconhecimento", "", 0, ""],    
-	["BLUFOR", "B_UGV_02_Science_F", 3000, "vehicle"],
+	//["BLUFOR", "B_UGV_02_Science_F", 3000, "vehicle"],
     //["ED-1E Camera UGV", "O_UGV_02_Science_F", 3000, "vehicle"],
     ["Independente", "I_UGV_02_Science_F", 3000, "vehicle"],
 	["======================================================", "", 0, ""],
 
     ["ED-1E de Demolidor", "", 0, ""],
-    ["BLUFOR |5,56mm|12 Pelotas|12 Balotes", "B_UGV_02_Demining_F", 10000, "vehicle"],
+    //["BLUFOR |5,56mm|12 Pelotas|12 Balotes", "B_UGV_02_Demining_F", 10000, "vehicle"],
     //["ED-1D Demining UGV", "O_UGV_02_Demining_F", 10000, "vehicle"],
     ["Independente |5,56mm|12 Pelotas|12 Balotes", "I_UGV_02_Demining_F", 10000, "vehicle"],
 	["======================================================", "", 0, ""],
@@ -2298,7 +2291,7 @@ customPlayerItems = compileFinal str
     ["Spawn Beacon", "spawnbeacon", localize "STR_WL_ShopDescriptions_spawnBeacon", "client\icons\spawnbeacon.paa", 9500, 1000],
 	["Tenda Camuflada", "camonet", localize "STR_WL_ShopDescriptions_Camo", "client\icons\camonet.paa", 200, 100],
 	//["Warchest", "warchest", localize "STR_WL_ShopDescriptions_Warchest", "client\icons\warchest.paa", 1000, 500]
-	//["Suporte de Artilharia", "artillery", "", "client\icons\tablet.paa", 100000, 10000],
+	["Suporte de Artilharia", "artillery", "", "client\icons\tablet.paa", 100000, 10000, "HIDDEN"],
     ["======================================================", "", 0, ""],
 
 	["COMIDAS", "", 0, ""],

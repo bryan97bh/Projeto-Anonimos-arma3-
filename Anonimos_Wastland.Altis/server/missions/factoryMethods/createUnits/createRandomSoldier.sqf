@@ -18,9 +18,9 @@ if (!isServer) exitWith {};
 private ["_soldierTypes", "_uniformTypes", "_vestTypes", "_weaponTypes", "_group", "_position", "_rank", "_soldier"];
 
 _soldierTypes = ["C_man_polo_1_F", "C_man_polo_2_F", "C_man_polo_3_F", "C_man_polo_4_F", "C_man_polo_5_F", "C_man_polo_6_F"];
-_uniformTypes = ["U_I_CombatUniform_tshirt", "U_I_CombatUniform_shortsleeve" ,"U_B_CombatUniform_mcam_tshirt", "U_C_WorkerCoveralls"];
-_vestTypes = ["V_PlateCarrier1_rgr", "V_HarnessOGL_gry", "V_TacVestIR_blk", "V_Chestrig_oli", "V_HarnessO_brn", "V_TacVest_brn", "V_Chestrig_khk", "V_TacVest_camo"];
-_weaponTypes = ["arifle_Katiba_F","arifle_CTARS_blk_F","srifle_DMR_07_blk_F","arifle_Katiba_GL_F"];
+_uniformTypes = ["U_I_CombatUniform_tshirt", "U_I_CombatUniform_shortsleeve" ,"U_B_CombatUniform_mcam_tshirt", "U_C_WorkerCoveralls", "U_I_E_Uniform_01_officer_F", "U_I_E_Uniform_01_sweater_F", "U_B_CombatUniform_mcam_wdl_F", "U_B_CTRG_Soldier_F", "U_I_C_Soldier_Camo_F", "U_O_OfficerUniform_ocamo", "U_BG_Guerilla1_1", "U_I_C_Soldier_Para_1_F", "U_I_C_Soldier_Para_4_F", "U_IG_Guerilla2_1", "U_IG_Guerilla2_2"];
+_vestTypes = ["V_Pocketed_black_F", "V_Pocketed_coyote_F", "V_Pocketed_olive_F", "V_BandollierB_blk", "V_BandollierB_cbr", "V_BandollierB_rgr", "V_HarnessO_brn", "V_HarnessO_gry", "V_HarnessO_ghex_F", "V_TacVest_blk", "V_TacVest_brn", "V_TacVest_camo", "V_CarrierRigKBT_01_EAF_F", "V_CarrierRigKBT_01_Olive_F", "V_PlateCarrierIA1_dgtl", "V_PlateCarrier1_rgr", "V_PlateCarrier1_rgr_noflag_F", "V_PlateCarrier1_blk", "V_PlateCarrier2_rgr", "V_PlateCarrier2_rgr_noflag_F", "V_PlateCarrier2_blk"];
+_weaponTypes = ["SMG_03C_black", "SMG_03C_TR_black", "SMG_03_black", "SMG_03_TR_black", "arifle_Mk20C_plain_F", "arifle_TRG20_F", "arifle_SPAR_01_blk_F", "arifle_CTAR_blk_F", "arifle_Katiba_F", "arifle_MXC_Black_F", "arifle_MX_Black_F", "LMG_Mk200_F"];
 
 _group = _this select 0;
 _position = _this select 1;

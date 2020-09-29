@@ -10,7 +10,7 @@ private ["_nbUnits", "_box1", "_box2", "_townName", "_missionPos", "_buildingRad
 _setupVars =
 {
 	_missionType = "OCUPAÇÃO";
-	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
+	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE };
 
 	// settings for this mission
 	_locArray = ((call cityList) call BIS_fnc_selectRandom);

@@ -15,7 +15,7 @@ APOC_AA_VehOptions =
 //	["T-100 Varsuk","O_MBT_02_cannon_F",100000,"vehicle",2700],
 	["Lançador Antiaéreo","I_static_AA_F",15000,"vehicle"],
 	["Lançador Antitanque","I_static_AT_F",15000,"vehicle"],
-	["MH-9 Hummingbird","B_Heli_Light_01_F",6000,"vehicle"]
+	["M-900 Modelo Cívil","C_Heli_Light_01_civil_F",6000,"vehicle"]
 //	["UH-80 Ghost Hawk", "B_Heli_Transport_01_F", 45000, "vehicle"]
 	
 ];
@@ -27,7 +27,7 @@ APOC_AA_SupOptions =
 //	["Sniper Rifles","airdrop_Snipers",50000,"supply"],
 //	["DLC Rifles","airdrop_DLC_Rifles",45000,"supply"],
 //	["DLC LMGs","airdrop_DLC_LMGs",45000,"supply"],
-	["Comida","Land_Sacks_goods_F",2000,"picnic"],
-	["Água","Land_BarrelWater_F",2000,"picnic"],
+	["Comida","Land_Sacks_goods_F",8000,"picnic"],
+	["Água","Land_BarrelWater_F",10000,"picnic"],
 	["Estrutura de FOB","Land_Cargo20_military_green_F",10000,"base"]
 ];

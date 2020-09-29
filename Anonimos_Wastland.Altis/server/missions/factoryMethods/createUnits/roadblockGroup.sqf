@@ -1,127 +1,320 @@
-// ******************************************************************************************
-// * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
-// ******************************************************************************************
-//	@file Name: customGroup.sqf
-//	@file Author: AgentRev
-//  @modified by wiking.at [AJ]
+//	@file Version: 1.0
+//	@file Name: midGroup.sqf
+//	@file Author: [404] Deadbeat, [404] Costlyy, AgentRev
+//	@file Created: 08/12/2012 21:58
+//	@file Args:
 
 if (!isServer) exitWith {};
 
-private ["_group", "_pos", "_nbUnits", "_unitTypes", "_uPos", "_unit"];
+private ["_group", "_pos", "_leader", "_man2", "_man3", "_man4", "_man5", "_man6", "_man7", "_man8", "_man9", "_man10", "_man11", "_man12", "_man13", "_man14", "_man15"];
 
 _group = _this select 0;
 _pos = _this select 1;
 _nbUnits = param [2, 7, [0]];
 _radius = param [3, 10, [0]];
 
-_unitTypes =
-[
-	"C_man_polo_1_F", "C_man_polo_1_F_euro", "C_man_polo_1_F_afro", "C_man_polo_1_F_asia",
-	"C_man_polo_2_F", "C_man_polo_2_F_euro", "C_man_polo_2_F_afro", "C_man_polo_2_F_asia",
-	"C_man_polo_3_F", "C_man_polo_3_F_euro", "C_man_polo_3_F_afro", "C_man_polo_3_F_asia",
-	"C_man_polo_4_F", "C_man_polo_4_F_euro", "C_man_polo_4_F_afro", "C_man_polo_4_F_asia",
-	"C_man_polo_5_F", "C_man_polo_5_F_euro", "C_man_polo_5_F_afro", "C_man_polo_5_F_asia",
-	"C_man_polo_6_F", "C_man_polo_6_F_euro", "C_man_polo_6_F_afro", "C_man_polo_6_F_asia"
-];
+// Leader
+_leader = _group createUnit ["C_man_polo_2_F", [(_pos select 0) - 30, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _leader;
+sleep 0.1; 
+_leader addHeadgear "H_Beret_gen_F";
+_leader addGoggles "G_Aviator";
+_leader addUniform "U_B_GEN_Commander_F";
+_leader addVest "V_TacVest_gen_F";
 
-for "_i" from 1 to _nbUnits do
-{
-	_uPos = _pos vectorAdd ([[random _radius, 0, 0], random 360] call BIS_fnc_rotateVector2D);
-	_unit = _group createUnit [_unitTypes call BIS_fnc_selectRandom, _uPos, [], 0, "Form"];
-	_unit setPosATL _uPos;
+_leader addMagazine "30Rnd_556x45_Stanag_Tracer_Yellow";
+_leader addWeapon "arifle_SPAR_01_blk_F";
+_leader addPrimaryWeaponItem "optic_MRCO";
+_leader addPrimaryWeaponItem "muzzle_snds_M";
+_leader addPrimaryWeaponItem "acc_flashlight";
 
-	removeAllWeapons _unit;
-	removeAllAssignedItems _unit;
-	removeUniform _unit;
-	removeVest _unit;
-	removeBackpack _unit;	
-	removeHeadgear _unit;
-	removeGoggles _unit;
+_leader addMagazines ["SmokeShell", 2];
+_leader addItemToVest "FirstAidKit";
 
-	_unit addVest "V_TacVest_gen_F";
-	_unit addMagazines ["SmokeShell", 2];
-	_unit addMagazine "30Rnd_556x45_Stanag_Tracer_Red";
-	_unit addMagazine "30Rnd_556x45_Stanag_Tracer_Red";
-	_unit addMagazine "30Rnd_556x45_Stanag_Tracer_Red";
-
-	switch (true) do
-	{
-		// Grenadier every 3 units
-		case (_i % 3 == 0):
-		{
-			_unit addUniform "U_B_GEN_Commander_F";
-			_unit addHeadgear "H_PASGT_basic_blue_F";
-			_unit addGoggles "G_Balaclava_blk";
-			_unit addMagazine "1Rnd_HE_Grenade_shell";
-			_unit addWeapon "arifle_SPAR_01_GL_blk_F";
-			_unit addPrimaryWeaponItem "optic_MRCO";
-			_unit addMagazine "1Rnd_HE_Grenade_shell";
-			_unit addMagazine "1Rnd_HE_Grenade_shell";
-		};
-		// AT every 7 units, starting from second one
-		case ((_i + 5) % 7 == 0):
-		{
-			_unit addUniform "U_B_GEN_Soldier_F";
-			_unit addHeadgear "H_Beret_gen_F";
-			_unit addBackpack "B_ViperLightHarness_blk_F";
-			_unit addWeapon "arifle_SPAR_01_blk_F";
-			_unit addPrimaryWeaponItem "muzzle_snds_M";
-			_unit addPrimaryWeaponItem "optic_Holosight_blk_F";
-			_unit addMagazine "NLAW_F";
-			_unit addWeapon "launch_NLAW_F";
-			_unit addMagazine "NLAW_F";
-			_unit addMagazine "NLAW_F";
-		};
-		// AA every 6 units
-		case (_i % 7 == 0):
-		{
-			_unit addUniform "U_B_GEN_Soldier_F";
-			_unit addHeadgear "H_Beret_gen_F";
-			//_unit addBackpack "B_ViperLightHarness_blk_F";
-			_unit addWeapon "arifle_SPAR_01_blk_F";
-			_unit addPrimaryWeaponItem "muzzle_snds_M";
-			_unit addPrimaryWeaponItem "optic_Holosight_blk_F";
-			/*_unit addMagazine "Titan_AA";
-			_unit addWeapon "launch_I_Titan_olive_F";
-			_unit addMagazine "Titan_AA";
-			_unit addMagazine "Titan_AA";*/
-		};
-		// Rifleman
-		default
-		{
-			_unit addUniform "U_B_GEN_Commander_F";
-
-			if (_unit == leader _group) then
-			{
-				_unit addHeadgear "H_MilCap_gen_F";
-				_unit addWeapon "arifle_SPAR_01_blk_F";
-				_unit addPrimaryWeaponItem "optic_Aco";
-				_unit setRank "SERGEANT";
-				_unit addMagazines ["SmokeShellYellow", 1];
-			}
-			else
-			{
-				_unit addGoggles "G_Balaclava_blk";
-				_unit linkItem "NVGogglesB_blk_F";
-				_unit addWeapon "arifle_SPAR_01_blk_F";
-				_unit addPrimaryWeaponItem "optic_ACO_grn";
-			};
-		};
-	};
-	_unit enablegunlights "forceOn";
-
-	_unit addRating 1e11;
-	_unit spawn refillPrimaryAmmo;
-	_unit call setMissionSkill;
-	_unit addEventHandler ["Killed", server_playerDied];
-    
-    // Give AI a new magazine (same type as old one) on reload if only 2 clips left
-    _unit addeventhandler ["Reloaded", {
-         if (count (magazines  (_this select 0) ) < 3 ) then {
-         (_this select 0) addMagazine ((_this select 4) select 0)
-         }
-    }];
-};
+_leader enablegunlights "forceOn";		
+_leader call setMissionSkill;
+_leader addRating 1e11;
+_leader spawn refillPrimaryAmmo;
+_leader addEventHandler ["Killed", server_playerDied];
 
 
+// Soldier2 - AT
+_man2 = _group createUnit ["C_man_polo_2_F", [(_pos select 0) - 30, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man2;
+sleep 0.1; 
+_man2 addHeadgear "H_MilCap_gen_F";
+_man2 addUniform "U_B_GEN_Soldier_F";
+_man2 addVest "V_TacVest_gen_F";
+
+_man2 addMagazine "30Rnd_556x45_Stanag_Tracer_Yellow";
+_man2 addWeapon "arifle_SPAR_01_blk_F";
+_man2 addPrimaryWeaponItem "optic_Holosight_blk_F";
+_man3 addPrimaryWeaponItem "acc_flashlight";
+
+_man2 addItemToVest "FirstAidKit";
+	
+_man2 call setMissionSkill;
+_man2 addRating 1e11;
+_man2 spawn refillPrimaryAmmo;
+_man2 addEventHandler ["Killed", server_playerDied];
+
+// Soldier3 - AA
+_man3 = _group createUnit ["C_man_polo_2_F", [(_pos select 0) - 30, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man3;
+sleep 0.1;
+_man3 addHeadgear "H_MilCap_gen_F";
+_man4 addGoggles "G_WirelessEarpiece_F";
+_man3 addUniform "U_B_GEN_Soldier_F";
+_man3 addVest "V_TacVest_gen_F";
+
+_man3 addMagazine "30Rnd_556x45_Stanag_Tracer_Yellow";
+_man3 addWeapon "arifle_SPAR_01_blk_F";
+_man3 addPrimaryWeaponItem "optic_Holosight_blk_F";
+_man3 addPrimaryWeaponItem "acc_flashlight";
+
+_man3 addItemToVest "FirstAidKit";
+
+_man3 enablegunlights "forceOn";		
+_man3 call setMissionSkill;
+_man3 addRating 1e11;
+_man3 spawn refillPrimaryAmmo;
+_man3 addEventHandler ["Killed", server_playerDied];
+
+// Soldier4 GL
+_man4 = _group createUnit ["C_man_polo_2_F", [(_pos select 0) - 30, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man4;
+sleep 0.1; 
+_man4 linkItem "NVGoggles_OPFOR";
+_man4 addHeadgear "H_PASGT_basic_blue_F";
+_man4 addGoggles "G_WirelessEarpiece_F";
+_man4 addUniform "U_B_GEN_Soldier_F";
+_man4 addVest "V_TacVest_gen_F";
+
+_man4 addMagazine "30Rnd_556x45_Stanag_Tracer_Yellow";
+_man4 addWeapon "arifle_SPAR_01_GL_blk_F";
+_man4 addPrimaryWeaponItem "optic_Aco";
+
+_man4 addItemToVest "FirstAidKit";
+for "_i" from 1 to 4 do {_man4 addItemToVest "1Rnd_HE_Grenade_shell";};
+		
+_man4 call setMissionSkill;
+_man4 addRating 1e11;
+_man4 spawn refillPrimaryAmmo;
+_man4 addEventHandler ["Killed", server_playerDied];
+
+
+// Soldier5 GL
+_man5 = _group createUnit ["C_man_polo_2_F", [(_pos select 0) - 30, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man5;
+sleep 0.1; 
+_man5 linkItem "NVGoggles_OPFOR";
+_man5 addHeadgear "H_PASGT_basic_blue_F";
+_man5 addGoggles "G_WirelessEarpiece_F";
+_man5 addUniform "U_B_GEN_Soldier_F";
+_man5 addVest "V_TacVest_gen_F";
+
+_man5 addMagazine "30Rnd_556x45_Stanag_Tracer_Yellow";
+_man5 addWeapon "arifle_SPAR_01_GL_blk_F";
+_man5 addPrimaryWeaponItem "optic_Aco";
+
+_man5 addItemToVest "FirstAidKit";
+for "_i" from 1 to 4 do {_man5 addItemToVest "1Rnd_HE_Grenade_shell";};
+		
+_man5 call setMissionSkill;
+_man5 addRating 1e11;
+_man5 spawn refillPrimaryAmmo;
+_man5 addEventHandler ["Killed", server_playerDied];
+
+// Soldier6 SNIPER
+_man6 = _group createUnit ["C_man_polo_2_F", [(_pos select 0) - 30, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man6;
+sleep 0.1; 
+_man6 addHeadgear "H_MilCap_gen_F";
+_man6 addGoggles "G_WirelessEarpiece_F";
+_man6 addUniform "U_B_GEN_Soldier_F";
+_man6 addVest "V_TacVest_gen_F";
+
+_man6 addMagazine "150Rnd_556x45_Drum_Mag_Tracer_F";
+_man6 addWeapon "arifle_SPAR_02_blk_F";
+_man6 addPrimaryWeaponItem "optic_MRCO";
+_man6 addPrimaryWeaponItem "muzzle_snds_M";
+
+_man6 addItemToVest "FirstAidKit";
+		
+_man6 call setMissionSkill;
+_man6 addRating 1e11;
+_man6 spawn refillPrimaryAmmo;
+_man6 addEventHandler ["Killed", server_playerDied];
+
+// Soldier7 CB
+_man7 = _group createUnit ["C_man_polo_2_F", [(_pos select 0) - 30, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man7;
+sleep 0.1; 
+_man7 addHeadgear "H_MilCap_gen_F";
+_man7 addUniform "U_B_GEN_Soldier_F";
+_man7 addVest "V_TacVest_gen_F";
+
+_man7 addMagazine "30Rnd_556x45_Stanag_Tracer_Yellow";
+_man7 addWeapon "arifle_SPAR_01_blk_F";
+
+_man7 addItemToVest "FirstAidKit";
+		
+_man7 call setMissionSkill;
+_man7 addRating 1e11;
+_man7 spawn refillPrimaryAmmo;
+_man7 addEventHandler ["Killed", server_playerDied];
+
+// Soldier8 SD
+_man8 = _group createUnit ["C_man_polo_2_F", [(_pos select 0) - 30, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man8;
+sleep 0.1; 
+_man8 addHeadgear "H_Cap_police";
+_man8 addGoggles "G_WirelessEarpiece_F";
+_man8 addUniform "U_B_GEN_Soldier_F";
+_man8 addVest "V_TacVest_gen_F";
+
+_man8 addMagazine "30Rnd_9x21_Mag_SMG_02_Tracer_Yellow";
+_man8 addWeapon "SMG_05_F";
+
+_man8 addItemToVest "FirstAidKit";
+	
+_man8 call setMissionSkill;
+_man8 addRating 1e11;
+_man8 spawn refillPrimaryAmmo;
+_man8 addEventHandler ["Killed", server_playerDied];
+
+// Soldier9 SD
+_man9 = _group createUnit ["C_man_polo_2_F", [(_pos select 0) - 30, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man9;
+sleep 0.1;
+_man9 addHeadgear "H_Cap_police";
+_man9 addGoggles "G_WirelessEarpiece_F";
+_man9 addUniform "U_B_GEN_Soldier_F";
+_man9 addVest "V_TacVest_gen_F";
+
+_man9 addMagazine "30Rnd_9x21_Mag_SMG_02_Tracer_Yellow";
+_man9 addWeapon "SMG_05_F";
+
+_man9 addItemToVest "FirstAidKit";
+		
+_man9 call setMissionSkill;
+_man9 addRating 1e11;
+_man9 spawn refillPrimaryAmmo;
+_man9 addEventHandler ["Killed", server_playerDied];
+
+// Soldier10  SD
+_man10 = _group createUnit ["C_man_polo_2_F", [(_pos select 0) - 30, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man10;
+sleep 0.1; 
+_man10 addHeadgear "H_Cap_police";
+_man10 addGoggles "G_WirelessEarpiece_F";
+_man10 addUniform "U_B_GEN_Soldier_F";
+_man10 addVest "V_TacVest_gen_F";
+
+_man10 addMagazine "30Rnd_9x21_Mag_SMG_02_Tracer_Yellow";
+_man10 addWeapon "SMG_05_F";
+
+_man10 addItemToVest "FirstAidKit";
+	
+_man10 call setMissionSkill;
+_man10 addRating 1e11;
+_man10 spawn refillPrimaryAmmo;
+_man10 addEventHandler ["Killed", server_playerDied];
+
+// Soldier11  SD
+_man11 = _group createUnit ["C_man_polo_2_F", [(_pos select 0) - 30, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man11;
+sleep 0.1; 
+_man11 addHeadgear "H_Cap_police";
+_man11 addGoggles "G_WirelessEarpiece_F";
+_man11 addUniform "U_B_GEN_Soldier_F";
+_man11 addVest "V_TacVest_gen_F";
+
+_man11 addMagazine "30Rnd_9x21_Mag_SMG_02_Tracer_Yellow";
+_man11 addWeapon "SMG_05_F";
+
+_man11 addItemToVest "FirstAidKit";
+	
+_man11 call setMissionSkill;
+_man11 addRating 1e11;
+_man11 spawn refillPrimaryAmmo;
+_man11 addEventHandler ["Killed", server_playerDied];
+
+// Soldier10  SD
+_man12 = _group createUnit ["C_man_polo_2_F", [(_pos select 0) - 30, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man12;
+sleep 0.1; 
+_man12 addHeadgear "H_Cap_police";
+_man12 addGoggles "G_WirelessEarpiece_F";
+_man12 addUniform "U_B_GEN_Soldier_F";
+_man12 addVest "V_TacVest_gen_F";
+
+_man12 addMagazine "30Rnd_9x21_Mag_SMG_02_Tracer_Yellow";
+_man12 addWeapon "SMG_05_F";
+
+_man12 addItemToVest "FirstAidKit";
+	
+_man12 call setMissionSkill;
+_man12 addRating 1e11;
+_man12 spawn refillPrimaryAmmo;
+_man12 addEventHandler ["Killed", server_playerDied];
+
+// Soldier10  SD
+_man13 = _group createUnit ["C_man_polo_2_F", [(_pos select 0) - 30, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man13;
+sleep 0.1; 
+_man13 addHeadgear "H_Cap_police";
+_man13 addGoggles "G_WirelessEarpiece_F";
+_man13 addUniform "U_B_GEN_Soldier_F";
+_man13 addVest "V_TacVest_gen_F";
+
+_man13 addMagazine "30Rnd_9x21_Mag_SMG_02_Tracer_Yellow";
+_man13 addWeapon "SMG_05_F";
+
+_man13 addItemToVest "FirstAidKit";
+	
+_man13 call setMissionSkill;
+_man13 addRating 1e11;
+_man13 spawn refillPrimaryAmmo;
+_man13 addEventHandler ["Killed", server_playerDied];
+
+// Soldier10  SD
+_man14 = _group createUnit ["C_man_polo_2_F", [(_pos select 0) - 30, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man14;
+sleep 0.1; 
+_man14 addHeadgear "H_Cap_police";
+_man14 addGoggles "G_WirelessEarpiece_F";
+_man14 addUniform "U_B_GEN_Soldier_F";
+_man14 addVest "V_TacVest_gen_F";
+
+_man14 addMagazine "30Rnd_9x21_Mag_SMG_02_Tracer_Yellow";
+_man14 addWeapon "SMG_05_F";
+
+_man14 addItemToVest "FirstAidKit";
+	
+_man14 call setMissionSkill;
+_man14 addRating 1e11;
+_man14 spawn refillPrimaryAmmo;
+_man14 addEventHandler ["Killed", server_playerDied];
+
+// Soldier10  SD
+_man15 = _group createUnit ["C_man_polo_2_F", [(_pos select 0) - 30, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man15;
+sleep 0.1; 
+_man15 addHeadgear "H_Cap_police";
+_man15 addGoggles "G_WirelessEarpiece_F";
+_man15 addUniform "U_B_GEN_Soldier_F";
+_man15 addVest "V_TacVest_gen_F";
+
+_man15 addMagazine "30Rnd_9x21_Mag_SMG_02_Tracer_Yellow";
+_man15 addWeapon "SMG_05_F";
+
+_man15 addItemToVest "FirstAidKit";
+	
+_man15 call setMissionSkill;
+_man15 addRating 1e11;
+_man15 spawn refillPrimaryAmmo;
+_man15 addEventHandler ["Killed", server_playerDied];
+
+_leader = leader _group;
 [_group, _pos] call defendArea;

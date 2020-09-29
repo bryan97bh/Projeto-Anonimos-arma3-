@@ -12,7 +12,7 @@ private ["_nbUnits","_positions", "_bunker", "_laptop", "_table", "_obj","_bunke
 _setupVars =
 {
 	_missionType = "Hackers";
-	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
+	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE };
 	_locationsArray = HackerMissionMarkers;
 	_nbUnits = _nbUnits + round(random (_nbUnits*0.8));
 };

@@ -1,26 +1,17 @@
-if (!hasInterface) exitWith {};  // DO NOT DELETE THIS LINE!
+if (!hasInterface) exitWith {};  
 
 _playerCustomUniforms =
 [
 	[ // aleatorios 
 		[
 			"76561198073156695",  //guy fawkes
-			"76561198157312258",  //<[RA] Cap  Batista>
-			"76561198092314271",  //<[RA] Codigo>
-			"76561198157040893",  //<[RA] sd 755cardosopower>
-			"76561198319660200",  //<[RA] Sd Bomfim
-			"76561198835543767",  //<[RA] Sd Mario
-			"76561197978867972",  //<[RA] Sd Cordeiro
-			"76561198216066545",  //<[RA] Menegusso>
-			
 			"76561198425527927",  //jon
 			"76561198300714399",  //Viniciuus.lcs
-			"76561198825211624",  //Nascimento
 			"76561198811166180", //Felipe Andreola 
 			"76561198011943505"  //Tho+
 		],  
 		[
-			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\an_1.jpg"]
+			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\an_2.paa"]
 		]
 	],
 	[ // [CTMBR]
@@ -31,7 +22,12 @@ _playerCustomUniforms =
 			"76561198176174925", //[CTMBR] --BIEL--
 			"76561198060065964", //[CTMBR] BRYAN
 			"76561198014855920", //[CTMBR] marechal
-			"76561198321878481"  //[CTMBR] xavier
+			"76561198321878481", //[CTMBR] xavier
+			"76561198455692848", //satan
+			"76561198328104544", //CASTRO
+			"76561198309869233", //MATUS S
+			"76561198199216317", //bruzone
+			"76561198217512245"  //MATHIELO
 		],
 		[
 			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\19_U.jpg"]
@@ -43,17 +39,71 @@ _playerCustomUniforms =
 			"76561198305612921", //kowalsk
 			"76561198394566682", //Raimundo
 			"76561198135009641", //sr.smack
-			"76561198047686023"  //delroy
+			"76561198047686023", //delroy
+			"76561199070115331", //Wetto
+			"76561198177668437"  //Kadumac
 		],
 		[
 			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\24_O.jpg"]
 		]
 	],
+	[ //Undead †
+		[
+			"76561199019571271",//Alex @Resende@
+            "76561198016851216",//Aspirante Carlos
+            "76561198107211132",//CABO-VEIO
+            "76561198064921908",// ChUcK
+            "76561198798829149",//Elias Rambo
+            "76561198019934366",//Fanty_RS 
+            "76561198400705240",//Habermann
+            "76561198168706894",//HAL9000  
+            "76561198075431300",//Henriiquez 
+            "76561197985182878",//Ice_RJ
+            "76561198382934865",//ITALO
+            "76561198077087266",//iTTo 
+            "76561198132930070",//jes US
+            "76561198316227141",//LockYzSL
+            "76561198161599471",//Mago 
+            "76561197976894832",//Mangekyou/ByAfter
+            "76561198071600874",//Mineirobaum
+            "76561198108077656",//Mr.KoLl1nG
+            "76561198050921137",//Pabones 
+            "76561198868972493",//Pestana 
+            "76561198048280217",//Rec Carlos
+            "76561198001300934",//Saraiva.wast
+            "76561198206908809",//SWATCF-RS 
+            "76561198087340374",//Tareco 
+            "76561198203882857",//Ten. Giva
+            "76561198157013088",//TheGauzz
+            "76561198169698677" //Ventilador Arnor
+		],
+		[
+			["GUER","U_I_CombatUniform","addons\playerCustomUniforms\textures\z7_u.jpg"]
+		]
+	],
+	[ // RONALDO
+		[
+			"76561197964189306"  //RONALDO
+		],
+		[
+			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\12_I.jpg"]
+		]
+	],
 	[ // [RA]
 		[
+			/*"76561198157312258",  //<[RA] Cap  Batista>
+			"76561198092314271",  //<[RA] Codigo>
+			"76561198157040893",  //<[RA] sd 755cardosopower>
+			"76561198319660200",  //<[RA] Sd Bomfim
+			"76561198835543767",  //<[RA] Sd Mario
+			"76561197978867972",  //<[RA] Sd Cordeiro
+			"76561198216066545",  //<[RA] Menegusso>
+			"76561198825211624",  //Nascimento
+			"76561198135910862",  //gtl_BR*/
+
 			"76561198027682212",  //<[RA] 2°ten Sniperjoel>
 			"76561198087974566",  //<[RA] 2ºSgt Dpaulla>
-		    //"76561198332507924",  //<[RA] Sd D.Oliveira>
+		    "76561198332507924",  //<[RA] Sd D.Oliveira>
 			"76561198100776009",  //<[RA] Sd Gui_bocão>
 			"76561198111387070",  //<[RA] Sd Rappa>
 			"76561198252975849",  //<[RA] Sd Ferreira>
@@ -66,28 +116,9 @@ _playerCustomUniforms =
 		[
 			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\RA_PAA.paa"]
 		]
-	],
-	[ // UNICO
-		[ 
-			"76561198135910862"  //gtl_BR
-		],
-		[
-			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\18_u.jpg"]
-		]
-	],
-	[ //UNICO
-		[
-			"76561198332507924" //<pororoca voadora>
-		],
-		[
-			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\8_I.jpg"]
-		]
 	]
 ];
 
-/*	------------------------------------------------------------------------------------------
-	DO NOT EDIT BELOW HERE!
-	------------------------------------------------------------------------------------------	*/
 
 SL_customUniformCheck = {
 	_hasCustomUniform = player getVariable ["U_I_CombatUniform_shortsleeve",false];

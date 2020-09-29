@@ -24,7 +24,7 @@ If !((_RoupasArray Select 0) IsEqualTo "") Then {Player ForceAddUniform (_Roupas
 If !((_RoupasArray Select 1) IsEqualTo "") Then {Player AddVest (_RoupasArray Select 1)};
 If !((_RoupasArray Select 2) IsEqualTo "") Then {Player AddHeadGear (_RoupasArray Select 2)};
 If !((_RoupasArray Select 3) IsEqualTo "") Then {Player AddGoggles (_RoupasArray Select 3)};
-If !((_RoupasArray Select 4) IsEqualTo "") Then {Player LinkItem (_RoupasArray Select 4)};
+If !((_RoupasArray Select 4) IsEqualTo "") Then {Player addBackpack  (_RoupasArray Select 4)};
 
 Private _QtdArmas = Count _ArmasArray;
 
@@ -37,8 +37,17 @@ If (_QtdArmas > 0) Then {
 
 Private _QtdItems = Count _ItemsArray;
 
+Private _ClassItem = "";
+
 If (_QtdItems > 0) Then {
 	For "_i" From 0 To _QtdItems Do {
-		For "_k" From 1 To ((_ItemsArray Select _i) Select 1) Do {Player AddItem ((_ItemsArray Select _i) Select 0)};
+		For "_k" From 1 To ((_ItemsArray Select _i) Select 1) Do {
+			_ClassItem = (_ItemsArray Select _i) Select 0;
+			If (_ClassItem In ["ItemGPS","ItemCompass","ItemMap","ItemWatch"]) Then {
+				Player LinkItem _ClassItem;
+			} Else {
+				Player AddItem _ClassItem;
+			};
+		};
 	};
 };

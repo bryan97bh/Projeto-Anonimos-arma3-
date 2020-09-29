@@ -72,7 +72,7 @@ _setupObjects =
 
 		// add a driver/pilot/captain to the vehicle
 		// the little bird, orca, and hellcat do not require gunners and should not have any passengers
-		_soldier = [_aiGroup, _position] call createRandomSoldierC;
+		_soldier = [_aiGroup, _position] call createRandomPilot;
 		_soldier moveInDriver _vehicle;
 
 		switch (true) do
@@ -83,28 +83,28 @@ _setupObjects =
 				if (missionDifficultyHard) then
 				{
 					// frontgunner will be here if mission is running at hard dificulty
-					_soldier = [_aiGroup, _position] call createRandomSoldierC;
+					_soldier = [_aiGroup, _position] call createRandomPilot;
 					_soldier moveInTurret [_vehicle, [0]]; // commanderseat - front gunner
 				};
 
-				_soldier = [_aiGroup, _position] call createRandomSoldierC;
+				_soldier = [_aiGroup, _position] call createRandomPilot;
 				_soldier moveInTurret [_vehicle, [1]]; // rear gunner
 			};
 
 			case (_type isKindOf "Heli_Transport_01_base_F"):
 			{
 				// these choppers have 2 turrets so we need 2 gunners
-				_soldier = [_aiGroup, _position] call createRandomSoldierC;
+				_soldier = [_aiGroup, _position] call createRandomPilot;
 				_soldier moveInTurret [_vehicle, [1]];
 
-				_soldier = [_aiGroup, _position] call createRandomSoldierC;
+				_soldier = [_aiGroup, _position] call createRandomPilot;
 				_soldier moveInTurret [_vehicle, [2]];
 			};
 
 			case (_type isKindOf "Heli_Attack_01_base_F" || _type isKindOf "Heli_Attack_02_base_F"):
 			{
 				// these choppers need 1 gunner
-				_soldier = [_aiGroup, _position] call createRandomSoldierC;
+				_soldier = [_aiGroup, _position] call createRandomPilot;
 				_soldier moveInGunner _vehicle;
 			};
 		};

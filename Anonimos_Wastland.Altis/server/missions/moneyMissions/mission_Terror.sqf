@@ -13,7 +13,7 @@ _setupVars =
 {
     //Originally this mission called "ISIS incursion", but to avoid political problems #Staynex changed to "TERROR incursion"
 	_missionType = "GRUPO TERRORISTA";
-	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
+	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE };
 
 	// settings for this mission
 	_locArray = ((call cityList) call BIS_fnc_selectRandom);
@@ -88,7 +88,7 @@ _setupObjects =
 	
 	_aiGroup setCombatMode "Red";
 	
-	_missionHintText = format ["Os rebeldes assumiram o controle <br/><t size='1.25' color='%1'>%2</t><br/><br/>Parece haver <t color='%1'>%3 inimigos</t> escondidos dentro ou em cima de edifícios. Livre-se de todos e leve os suprimentos!", sideMissionColor, _townName, _nbUnits];
+	_missionHintText = format ["Os rebeldes assumiram o controle <br/><t size='1.25' color='%1'>%2</t><br/><br/>Parece haver 15 escondidos dentro ou em cima de edifícios. Livre-se de todos e leve os suprimentos!", sideMissionColor, _townName, _nbUnits];
 };
 
 _waitUntilMarkerPos = nil;
@@ -143,7 +143,7 @@ _successExec =
 		_cash = "Land_Money_F" createVehicle markerPos _marker;
 		_cash setPos ((markerPos _marker) vectorAdd ([[2 + random 2,0,0], random 360] call BIS_fnc_rotateVector2D));
 		_cash setDir random 360;
-		_cash setVariable["cmoney",1000,true];
+		_cash setVariable["cmoney",1500,true];
 		_cash setVariable["owner","world",true];
 	};
 
