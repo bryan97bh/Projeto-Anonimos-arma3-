@@ -14,7 +14,7 @@
 if (currentWeapon player == "") exitWith
 {
 	playSound "FD_CP_Not_Clear_F";
-	hint "You don't have a weapon in your hands to sell!";
+	hint "Você não tem uma arma na sua mão para vender!";
 };
 
 storeSellingHandle = [] spawn
@@ -117,16 +117,16 @@ storeSellingHandle = [] spawn
 	} forEach _itemsToSell;
 
 	// Add total sell value to confirm message
-	_confirmMsg = format ["You will obtain $%1 for:<br/><br/>", [_sellValue] call fn_numbersText] + _confirmMsg;
+	_confirmMsg = format ["Voê irá obter $%1 por:<br/><br/>", [_sellValue] call fn_numbersText] + _confirmMsg;
 
 	// Add note about removing weapon mag if the player doesn't want to sell inventory mags
 	if (_currMag != "") then
 	{
-		_confirmMsg = _confirmMsg + "<br/><br/>If you don't want to sell your ammo, simply remove the magazine from your weapon.";
+		_confirmMsg = _confirmMsg + "<br/><br/>Se você não quiser vender sua munição, basta remover a revista da sua arma.";
 	};
 
 	// Display confirmation
-	if ([parseText _confirmMsg, "Confirm", "Sell", true] call BIS_fnc_guiMessage) then
+	if ([parseText _confirmMsg, "Confirmar", "Vender", true] call BIS_fnc_guiMessage) then
 	{
 		// Remove weapon if sale confirmed by player
 		player removeWeapon _currWep;
@@ -141,7 +141,7 @@ storeSellingHandle = [] spawn
 
 		//player setVariable ["cmoney", (player getVariable ["cmoney", 0]) + _sellValue, true];
 		[player, _sellValue] call A3W_fnc_setCMoney;
-		hint format ["You sold your gun for $%1", [_sellValue] call fn_numbersText];
+		hint format ["Você vendeu sua arma por $%1", [_sellValue] call fn_numbersText];
 	};
 };
 

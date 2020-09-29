@@ -117,7 +117,7 @@ class  T8_DDD_head
 		type = CT_STATIC;
 		style = ST_LEFT;
 		font = "puristaMedium";
-		text = "Initializing ..."; 
+		text = "Iniciando ..."; 
 		sizeEx = 0.03; 
 		colorText[] = { 0, 1, 0, 1 };
 		colorBackground[] = { 0, 0, 0, 1 }; 		
@@ -281,7 +281,7 @@ class  SAT_DDD_head
 		type = CT_STATIC;
 		style = ST_LEFT;
 		font = "puristaMedium";
-		text = "Initializing ..."; 
+		text = "Iniciando ..."; 
 		sizeEx = 0.03; 
 		colorText[] = { 0, 1, 0, 1 };
 		colorBackground[] = { 0, 0, 0, 1 }; 		

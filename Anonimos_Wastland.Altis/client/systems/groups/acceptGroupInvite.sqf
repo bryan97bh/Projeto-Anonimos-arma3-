@@ -60,7 +60,7 @@ if (!isNil "_sender" && {side _newGroup == playerSide}) then
 
 	[_newTerritories, false, _newGroup, true] call updateTerritoryMarkers;
 
-	player globalChat "You have accepted the invite.";
+	player globalChat "Você aceitou o grupo.";
 	player setVariable ["currentGroupRestore", _newGroup, true];
 	player setVariable ["currentGroupIsLeader", false, true];
 }
@@ -72,5 +72,5 @@ else
 		publicVariableServer "pvar_processGroupInvite";
 	};
 
-	player globalChat "The group no longer exists or the leader disconnected / changed sides";
+	player globalChat "O grupo não existe mais ou o líder desconectou / mudou de lado";
 };

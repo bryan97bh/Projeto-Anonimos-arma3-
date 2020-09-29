@@ -42,7 +42,7 @@ storePurchaseHandle = _this spawn
 	_showInsufficientFundsError =
 	{
 		_itemText = _this select 0;
-		hint parseText format ["Not enough money for<br/>""%1""", _itemText];
+		hint parseText format ["Você não tem dinheiro suficiente para<br/>""%1""", _itemText];
 		playSound "FD_CP_Not_Clear_F";
 		_price = -1;
 	};
@@ -50,7 +50,7 @@ storePurchaseHandle = _this spawn
 	_showInsufficientSpaceError =
 	{
 		_itemText = _this select 0;
-		hint parseText format ["Not enough space for<br/>""%1""", _itemText];
+		hint parseText format ["Você não tem espaço suficiente para<br/>""%1""", _itemText];
 		playSound "FD_CP_Not_Clear_F";
 		_price = -1;
 	};
@@ -58,7 +58,7 @@ storePurchaseHandle = _this spawn
 	_showItemSpawnTimeoutError =
 	{
 		_itemText = _this select 0;
-		hint parseText format ["<t color='#ffff00'>An unknown error occurred.</t><br/>The purchase of ""%1"" has been cancelled.", _itemText];
+		hint parseText format ["<t color='#ffff00'>Algum erro desconhecido ocorreu.</t><br/>A compra de  ""%1"" foi cancelado.", _itemText];
 		playSound "FD_CP_Not_Clear_F";
 		_price = -1;
 	};
@@ -66,7 +66,7 @@ storePurchaseHandle = _this spawn
 	_showItemSpawnedOutsideMessage =
 	{
 		_itemText = _this select 0;
-		hint format ["""%1"" has been spawned outside, in front of the store.", _itemText];
+		hint format ["""%1"" foi gerado do lado de fora, em frente à loja.", _itemText];
 		playSound "FD_Finish_F";
 		_successHint = false;
 	};
@@ -74,7 +74,7 @@ storePurchaseHandle = _this spawn
 	_showAlreadyHaveTypeMessage =
 	{
 		_itemText = _this select 0;
-		hint format ["Your inventory is full, or you already have a weapon of this type. Please unequip it before purchasing ""%1""", _itemText];
+		hint format ["Seu inventário está cheio ou você já tem uma arma desse tipo. Desequipe-o antes de comprar ""%1""", _itemText];
 		playSound "FD_CP_Not_Clear_F";
 		_price = -1;
 	};
@@ -231,8 +231,8 @@ storePurchaseHandle = _this spawn
 			[player, -_price] call A3W_fnc_setCMoney;
 		};
 
-		_playerMoneyText ctrlSetText format ["Cash: $%1", [player getVariable ["cmoney", 0]] call fn_numbersText];
-		if (_successHint) then { hint "Purchase successful!" };
+		_playerMoneyText ctrlSetText format ["Dinheiro: $%1", [player getVariable ["cmoney", 0]] call fn_numbersText];
+		if (_successHint) then { hint "Compra com sucesso" };
 		playSound "FD_Finish_F";
 	};
 

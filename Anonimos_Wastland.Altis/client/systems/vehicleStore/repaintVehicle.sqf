@@ -18,7 +18,7 @@ _vehicle = objectFromNetId ([player getVariable ["lastVehicleRidden", ""], _vehN
 if (isNull _vehicle) exitWith
 {
 	playSound "FD_CP_Not_Clear_F";
-	["Your previous vehicle was not found.", "Error"] spawn BIS_fnc_guiMessage;
+	["Seu último veículo não foi encontrado.", "Error"] spawn BIS_fnc_guiMessage;
 	_dialog closeDisplay 2;
 };
 
@@ -30,7 +30,7 @@ _checkAlive =
 	if (!alive _vehicle) then
 	{
 		playSound "FD_CP_Not_Clear_F";
-		[format ['"%1" is destroyed and cannot be painted.', _objName], "Error"] spawn BIS_fnc_guiMessage;
+		[format ['"%1" está destruido e não pode ser pintado.', _objName], "Error"] spawn BIS_fnc_guiMessage;
 		_dialog closeDisplay 2;
 		false
 	} else { true };
@@ -41,7 +41,7 @@ _checkValidDistance =
 	if (_vehicle distance player > VEHICLE_REPAINT_MAX_DISTANCE) then
 	{
 		playSound "FD_CP_Not_Clear_F";
-		[format ['"%1" is further away than %2m from the store.', _objName, VEHICLE_REPAINT_MAX_DISTANCE], "Error"] spawn BIS_fnc_guiMessage;
+		[format ['"%1" está mais distante do que %2m da loja.', _objName, VEHICLE_REPAINT_MAX_DISTANCE], "Error"] spawn BIS_fnc_guiMessage;
 		_dialog closeDisplay 2;
 		false
 	} else { true };
@@ -52,7 +52,7 @@ _checkValidOwnership =
 	if (!local _vehicle) then
 	{
 		playSound "FD_CP_Not_Clear_F";
-		[format ['You are not the owner of "%1", try getting in the driver seat.', _objName], "Error"] spawn BIS_fnc_guiMessage;
+		[format ['Você não é o proprietário de "%1", tente entrando no assento do motorista.', _objName], "Error"] spawn BIS_fnc_guiMessage;
 		_dialog closeDisplay 2;
 		false
 	} else { true };
@@ -63,7 +63,7 @@ _checkEnoughMoney =
 	if (player getVariable ["cmoney", 0] < _price) then
 	{
 		playSound "FD_CP_Not_Clear_F";
-		[format ['You need $%1 to repaint "%2"', _price, _objName], "Error"] spawn BIS_fnc_guiMessage;
+		[format ['Você precisa de $%1 para repintar "%2"', _price, _objName], "Error"] spawn BIS_fnc_guiMessage;
 		_dialog closeDisplay 2;
 		false
 	} else { true };

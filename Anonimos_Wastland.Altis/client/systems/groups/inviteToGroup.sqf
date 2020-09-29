@@ -25,7 +25,7 @@ _hasInvite = false;
 //Check selected data is valid
 { if (getPlayerUID _x == _playerData) exitWith { _target = _x } } forEach allPlayers;
 
-diag_log "Invite to group: Before the checks";
+diag_log "Convidar para o grupo: antes das verificações";
 
 
 #define MAX_GROUP_COUNT 15
@@ -40,17 +40,17 @@ if (_groupCount < MAX_GROUP_COUNT) then
 		};
 	} forEach currentInvites;
 };
-if (_groupCount >= MAX_GROUP_COUNT) exitWith { [format ["You cannot have more than %1 group members, including pending invites.", MAX_GROUP_COUNT]] spawn BIS_fnc_guiMessage };
+if (_groupCount >= MAX_GROUP_COUNT) exitWith { [format ["Você não pode ter mais de %1 membros do grupo, incluindo convites pendentes.", MAX_GROUP_COUNT]] spawn BIS_fnc_guiMessage };
 
 //Checks
-if(isNil "_target") exitWith {player globalChat "you must select someone to invite first"};
-if(_target == player) exitWith {player globalChat "you can't invite yourself"};
-if((count units group _target) > 1) exitWith {player globalChat "This player is already in a group"};
+if(isNil "_target") exitWith {player globalChat "você deve selecionar alguém para convidar primeiro"};
+if(_target == player) exitWith {player globalChat "você não pode se convidar"};
+if((count units group _target) > 1) exitWith {player globalChat "Este jogador já está em um grupo"};
 
 { if (_x select 1 == getPlayerUID _target) then { _hasInvite = true } } forEach currentInvites;
-if(_hasInvite) exitWith {player globalChat "This player already has a pending invite"};
+if(_hasInvite) exitWith {player globalChat "Este jogador já tem um convite pendente"};
 
-diag_log "Invite to group: After the checks";
+diag_log "Convidar para o grupo: após as verificações";
 
 //currentInvites pushBack [getPlayerUID player, getPlayerUID _target];
 //publicVariable "currentInvites";
@@ -60,7 +60,7 @@ publicVariableServer "pvar_processGroupInvite";
 
 //[format ["You have been invited to join %1's group", name player], "A3W_fnc_titleTextMessage", _target, false] call A3W_fnc_MP;
 
-player globalChat format["You have invited %1 to join the group", name _target];
+player globalChat format["Você convidou %1 para ingressar no grupo", name _target];
 
 player setVariable ["currentGroupRestore", group player, true];
 player setVariable ["currentGroupIsLeader", true, true];

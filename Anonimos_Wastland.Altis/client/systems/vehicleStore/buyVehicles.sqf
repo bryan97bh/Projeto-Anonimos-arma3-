@@ -16,7 +16,7 @@ if (!isNil "vehicleStore_lastPurchaseTime") then
 
 	if (_timeLeft > 0) then
 	{
-		hint format ["You need to wait %1s before buying another vehicle", ceil _timeLeft];
+		hint format ["Você precisa aguardar %1s para depois comprar outro veículo", ceil _timeLeft];
 		playSound "FD_CP_Not_Clear_F";
 		breakOut "buyVehicles";
 	};
@@ -65,21 +65,21 @@ storePurchaseHandle = _this spawn
 
 	_showInsufficientFundsError =
 	{
-		hint parseText format ["Not enough money for<br/>""%1""", _itemText];
+		hint parseText format ["Não há dinheiro suficiente para<br/>""%1""", _itemText];
 		playSound "FD_CP_Not_Clear_F";
 		_price = -1;
 	};
 
 	_showItemSpawnTimeoutError =
 	{
-		hint parseText format ["<t color='#ffff00'>An unknown error occurred.</t><br/>The purchase of ""%1"" has been cancelled.", _itemText];
+		hint parseText format ["<t color='#ffff00'>Um erro desconhecido ocorreu.</t><br/>A compra do ""%1"" foi cancelada.", _itemText];
 		playSound "FD_CP_Not_Clear_F";
 		_price = -1;
 	};
 
 	_showItemSpawnedOutsideMessage =
 	{
-		hint format ["""%1"" has been spawned outside, in front of the store.%2", _itemText, ["","\n\nVehicle saving will not start until manually enabled."] select ((objectFromNetId _object) getVariable ["A3W_skipAutoSave", false])];
+		hint format ["""%1"" foi gerado do lado de fora, em frente à loja.%2", _itemText, ["","\n\nA economia de veículo não será iniciada até que seja ativada manualmente."] select ((objectFromNetId _object) getVariable ["A3W_skipAutoSave", false])];
 		playSound "FD_Finish_F";
 	};
 
@@ -167,7 +167,7 @@ storePurchaseHandle = _this spawn
 
 		//player setVariable ["cmoney", _playerMoney - _price, true];
 		//[player, -_price] call A3W_fnc_setCMoney;
-		_playerMoneyText ctrlSetText format ["Cash: $%1", [player getVariable ["cmoney", 0]] call fn_numbersText];
+		_playerMoneyText ctrlSetText format ["Dinheiro: $%1", [player getVariable ["cmoney", 0]] call fn_numbersText];
 
 		if (["A3W_playerSaving"] call isConfigOn) then
 		{

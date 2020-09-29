@@ -108,7 +108,7 @@ _object = switch (_type) do {
 	{
 		_objectSpawnPos = [(_spos select 0), (_spos select 1), (_spos select 2) - 5];
 		_object = createVehicle ["B_supplyCrate_F", _objectSpawnPos, [], 0, "None"];
-		diag_log format ["Apoio aéreo se aproximando pela posição %1", position _object];
+		diag_log format ["Apoio aéreo se aproximando pelo AZT %1", position _object];
 		_object setVariable ["A3W_purchasedStoreObject", true];
 		_object attachTo [_heli, [0,0,-5]]; //Attach Object to the heli
 		_object
@@ -146,10 +146,10 @@ _object allowDamage false; //Let's not let these things get destroyed on the way
 _heli setpos _spos;
 
 
-diag_log format ["Apoio aéreo se aproximando pela posição %1", position _object];  //A little log love to confirm the location of this new creature
+diag_log format ["Apoio aéreo se aproximando pelo AZT %1", position _object];  //A little log love to confirm the location of this new creature
 
 //Wait until the heli completes the drop waypoint, then move on to dropping the cargo and all of that jazz
-diag_log format ["Apoio aéreo se aproximando pela posição %1", currentWaypoint _grp];  //AJ Heli Debug
+diag_log format ["Apoio aéreo se aproximando pelo AZT %1", currentWaypoint _grp];  //AJ Heli Debug
 
 While {true} do {
 	sleep 0.1;
@@ -172,7 +172,7 @@ _player setVariable ["bmoney", _newBalance, true];
 
 //  Now on to the fun stuff:
 
-diag_log format ["Suporte Aéreo Anônimo - Objeto em %1, Soltando próximo", position _object];  //A little log love to confirm the location of this new creature
+diag_log format ["Suporte Aéreo Anônimo - Se aproximando pelo AZT %1, Soltando próximo", position _object];  //A little log love to confirm the location of this new creature
 playSound3D ["a3\sounds_f\air\sfx\SL_rope_break.wss",_heli,false,getPosASL _heli,3,1,500];
 detach _object;  //WHEEEEEEEEEEEEE
 _objectPosDrop = position _object;

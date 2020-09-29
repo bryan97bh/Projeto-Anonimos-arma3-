@@ -12,7 +12,7 @@
 if (isNull vestContainer player) exitWith
 {
 	playSound "FD_CP_Not_Clear_F";
-	hint "You don't have a vest to sell!";
+	hint "Você não tem um colete para vender!";
 };
 
 storeSellingHandle = _this spawn
@@ -52,7 +52,7 @@ storeSellingHandle = _this spawn
 	} forEach _allObjItems;
 
 	// Add total sell value to confirm message
-	_confirmMsg = format ["You will obtain $%1 for:<br/>", [_sellValue] call fn_numbersText];
+	_confirmMsg = format ["Você irá obter $%1 por:<br/>", [_sellValue] call fn_numbersText];
 
 	// Add item quantities and names to confirm message
 	{
@@ -67,7 +67,7 @@ storeSellingHandle = _this spawn
 	} forEach _allObjItems;
 
 	// Display confirmation
-	if ([parseText _confirmMsg, "Confirm", "Sell", true] call BIS_fnc_guiMessage) then
+	if ([parseText _confirmMsg, "Confirmar", "Vender", true] call BIS_fnc_guiMessage) then
 	{
 		// Check if somebody else manipulated the cargo since the start
 		if (CARGO_STRING(_obj) == _originalCargo) then
@@ -77,13 +77,13 @@ storeSellingHandle = _this spawn
 			//player setVariable ["cmoney", (player getVariable ["cmoney", 0]) + _sellValue, true];
 			[player, _sellValue] call A3W_fnc_setCMoney;
 
-			hint format ['You sold "%1" for $%2', _objName, _sellValue];
+			hint format ['Você vendeu "%1" por $%2', _objName, _sellValue];
 			playSound "FD_Finish_F";
 		}
 		else
 		{
 			playSound "FD_CP_Not_Clear_F";
-			[format ['The contents of "%1" have changed, please restart the selling process.', _objName], "Error"] call BIS_fnc_guiMessage;
+			[format ['O conteúdo de "%1" foi alterado, por favor, reinicie o processo de venda.', _objName], "Error"] call BIS_fnc_guiMessage;
 		};
 	};
 };

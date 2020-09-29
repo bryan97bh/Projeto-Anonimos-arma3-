@@ -91,15 +91,6 @@ _setupObjects =
 		_soldier = [_aiGroup, _position] call createRandomPilot;
 		_soldier moveInDriver _vehicle;
         
-        if (_type isKindOf "Air") then
-		{
-			{
-				if (["CMFlare", _x] call fn_findString != -1) then
-				{
-					_vehicle removeMagazinesTurret [_x, [-1]];
-				};
-			} forEach getArray (configFile >> "CfgVehicles" >> _type >> "magazines");
-		};
 
         // lock the vehicle until the mission is finished and initialize cleanup on it	
 		[_vehicle, _aiGroup] spawn checkMissionVehicleLock;

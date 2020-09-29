@@ -56,7 +56,7 @@ smgArray = compileFinal str
 rifleArray = compileFinal str
 [
 	// Underwater Gun
-	["SDAR Fuzil Subaquático", "arifle_SDAR_F", 200],
+	["SDAR Fuzil Subaquático", "arifle_SDAR_F", 1000],
 
 	// Assault Rifles
 	["Carabina Mk20", "arifle_Mk20C_plain_F", 450],
@@ -91,12 +91,12 @@ rifleArray = compileFinal str
 	["Carabina MX (Preto)", "arifle_MXC_Black_F", 950],
 	["Carabina MX (Khaki)", "arifle_MXC_khk_F", 950, "noDLC"],
 	["Carabina MX (Areia)", "arifle_MXC_F", 950],
-	["Carabina MX (Preto)", "arifle_MX_Black_F", 950],
-	["Carabina MX (Khaki)", "arifle_MX_khk_F", 950, "noDLC"],
-	["Carabina MX (Areia)", "arifle_MX_F", 950],
-	["Carabina MX 3GL (Preto)", "arifle_MX_GL_Black_F", 1500],
-	["Carabina MX 3GL (Khaki)", "arifle_MX_GL_khk_F", 1500, "noDLC"],
-	["Carabina MX 3GL (Areia)", "arifle_MX_GL_F", 1500],
+	["Fuzil MX (Preto)", "arifle_MX_Black_F", 950],
+	["Fuzil MX (Khaki)", "arifle_MX_khk_F", 950, "noDLC"],
+	["Fuzil MX (Areia)", "arifle_MX_F", 950],
+	["Fuzil MX 3GL (Preto)", "arifle_MX_GL_Black_F", 1500],
+	["Fuzil MX 3GL (Khaki)", "arifle_MX_GL_khk_F", 1500, "noDLC"],
+	["Fuzil MX 3GL (Areia)", "arifle_MX_GL_F", 1500],
 	
 	["Fuzil Promet", "arifle_MSBS65_F", 1000],
 	["Fuzil Promet (Preto)", "arifle_MSBS65_black_F", 1000],
@@ -249,13 +249,13 @@ staticGunsArray = compileFinal str
 [
     //["Vehicle Ammo Crate", "Box_NATO_AmmoVeh_F", 2500],
 	
-	["Lança Míssel Antitanque Titan AT 4|Munições", "B_static_AT_F", 6500], // Static launchers only have 4 ammo, hence the low price
-	["Lança Míssel Antitanque Titan AT 4|Munições", "O_static_AT_F", 6500],
-	["Lança Míssel Antitanque Titan AT 4|Munições", "I_static_AT_F", 6500],
+	["Lança Míssel Antitanque Titan AT 4|Munições", "B_static_AT_F", 7500], // Static launchers only have 4 ammo, hence the low price
+	["Lança Míssel Antitanque Titan AT 4|Munições", "O_static_AT_F", 7500],
+	["Lança Míssel Antitanque Titan AT 4|Munições", "I_static_AT_F", 7500],
 	
-	["Lança Míssel Antiaéreo Titan AA 4|Munições", "B_static_AA_F", 10000],
-	["Lança Míssel Antiaéreo Titan AA 4|Munições", "O_static_AA_F", 10000],
-	["Lança Míssel Antiaéreo Titan AA 4|Munições", "I_static_AA_F", 10000],
+	["Lança Míssel Antiaéreo Titan AA 4|Munições", "B_static_AA_F", 7500],
+	["Lança Míssel Antiaéreo Titan AA 4|Munições", "O_static_AA_F", 7500],
+	["Lança Míssel Antiaéreo Titan AA 4|Munições", "I_static_AA_F", 7500],
 	
 	["Tripé Baixo+Browning .50 Estática", "B_HMG_01_F", 3000],
 	["Tripé Baixo+Browning .50 Estática", "O_HMG_01_F", 3000],
@@ -447,33 +447,33 @@ ammoArray = compileFinal str
 //Text name, classname, buy cost, item class
 accessoriesArray = compileFinal str
 [
-	["Supressor 9mm", "muzzle_snds_L", 150, "item"],
+	["Supressor 9mm", "muzzle_snds_L", 150, "item"], 
 	["Supressor .45 ACP", "muzzle_snds_acp", 175, "item"],
-    //["Supressor 5.56mm|Preto|", "muzzle_snds_M", 550, "item"],
-    //["Supressor 5.56mm|Khaki", "muzzle_snds_m_khk_F", 550, "item", "noDLC"],
-    //["Supressor 5.56mm|Areia|", "muzzle_snds_m_snd_F", 550, "item", "noDLC"],
-	//["Supressor 5.7mm", "muzzle_snds_570", 575, "item"],
-    //["Supressor 5.8mm|Verde Hex|" , "muzzle_snds_58_ghex_F", 590, "item"],
-	//["Supressor 5.8mm|Hex|", "muzzle_snds_58_hex_F", 590, "item"],
-    //["Supressor 6.5mm|Preto|", "muzzle_snds_H", 600, "item"],
-    //["Supressor 6.5mm|Khaki|", "muzzle_snds_H_khk_F", 650, "item", "noDLC"],
-    //["Supressor 6.5mm|Areia|", "muzzle_snds_H_snd_F", 650, "item", "noDLC"],
-    //["Supressor MK200 LMG|Preto|", "muzzle_snds_H_MG_blk_F", 750, "item", "noDLC"],
-    //["Supressor MK200 LMG|Khaki|", "muzzle_snds_H_MG_khk_F", 750, "item", "noDLC"],
-    //["Supressor MK200 LMG|Areia|", "muzzle_snds_H_MG", 750, "item"],
-    //["Supressor Stealth 6.5mm|Preto|", "muzzle_snds_65_TI_blk_F", 650, "item"],
-    //["Supressor Stealth 6.5mm|Verde Hex|", "muzzle_snds_65_TI_ghex_F", 650, "item"],
-    //["Supressor Stealth 6.5mm|Hex|", "muzzle_snds_65_TI_hex_F", 650, "item"],
-    //["Supressor 7.62mm|Preto|", "muzzle_snds_B", 750, "item"],
-    //["Suppressor 7.62mm|Khaki|", "muzzle_snds_B_khk_F", 750, "item", "noDLC"],
-    //["Supressor 7.62mm|Areia|", "muzzle_snds_B_snd_F", 750, "item", "noDLC"],
-	//["Supressor 7.62mm|Árido|", "muzzle_snds_B_arid_F", 750, "item", "noDLC"],
-	//["Supressor 7.62mm|Exuberante|", "muzzle_snds_B_lush_F", 750, "item", "noDLC"],
-	//["Supressor .338", "muzzle_snds_338_black", 1000, "item"],
-	//["Supressor .338|Verde|", "muzzle_snds_338_green", 1000, "item"],
-	//["Supressor .338|Areia|", "muzzle_snds_338_sand", 1000, "item"],
-	//["Supressor 9.3mm", "muzzle_snds_93mmg", 1000, "item"],
-	//["Supressor 9.3mm (Tan)", "muzzle_snds_93mmg_tan", 1000, "item"],
+    //["Supressor 5.56mm|Preto|", "muzzle_snds_M", 1550, "item"],
+    //["Supressor 5.56mm|Khaki", "muzzle_snds_m_khk_F", 1550, "item", "noDLC"],
+    //["Supressor 5.56mm|Areia|", "muzzle_snds_m_snd_F", 1550, "item", "noDLC"],
+	//["Supressor 5.7mm", "muzzle_snds_570", 1800, "item"],
+    //["Supressor 5.8mm|Verde Hex|" , "muzzle_snds_58_ghex_F", 2000, "item"],
+	//["Supressor 5.8mm|Hex|", "muzzle_snds_58_hex_F", 2000, "item"],
+    //["Supressor 6.5mm|Preto|", "muzzle_snds_H", 2500, "item"],
+    //["Supressor 6.5mm|Khaki|", "muzzle_snds_H_khk_F", 2500, "item", "noDLC"],
+    //["Supressor 6.5mm|Areia|", "muzzle_snds_H_snd_F", 2500, "item", "noDLC"],
+    //["Supressor MK200 LMG|Preto|", "muzzle_snds_H_MG_blk_F", 2750, "item", "noDLC"],
+    //["Supressor MK200 LMG|Khaki|", "muzzle_snds_H_MG_khk_F", 2750, "item", "noDLC"],
+    //["Supressor MK200 LMG|Areia|", "muzzle_snds_H_MG", 2750, "item"],
+    //["Supressor Stealth 6.5mm|Preto|", "muzzle_snds_65_TI_blk_F", 2500, "item"],
+    //["Supressor Stealth 6.5mm|Verde Hex|", "muzzle_snds_65_TI_ghex_F", 2500, "item"],
+    //["Supressor Stealth 6.5mm|Hex|", "muzzle_snds_65_TI_hex_F", 2500, "item"],
+    //["Supressor 7.62mm|Preto|", "muzzle_snds_B", 3500, "item"],
+    //["Suppressor 7.62mm|Khaki|", "muzzle_snds_B_khk_F", 3500, "item", "noDLC"],
+    //["Supressor 7.62mm|Areia|", "muzzle_snds_B_snd_F", 3500, "item", "noDLC"],
+	//["Supressor 7.62mm|Árido|", "muzzle_snds_B_arid_F", 3500, "item", "noDLC"],
+	//["Supressor 7.62mm|Exuberante|", "muzzle_snds_B_lush_F", 3500, "item", "noDLC"],
+	//["Supressor .338", "muzzle_snds_338_black", 5000, "item"],
+	//["Supressor .338|Verde|", "muzzle_snds_338_green", 5000, "item"],
+	//["Supressor .338|Areia|", "muzzle_snds_338_sand", 5000, "item"],
+	//["Supressor 9.3mm", "muzzle_snds_93mmg", 5000, "item"],
+	//["Supressor 9.3mm (Tan)", "muzzle_snds_93mmg_tan", 5000, "item"],
 	["Bipé|Preto| (NATO)", "bipod_01_F_blk", 100, "item", "noDLC"],
 	["Bipé|Preto| (CSAT)", "bipod_02_F_blk", 100, "item", "noDLC"],
 	["Bipé|Preto| (AAF)", "bipod_03_F_blk", 100, "item", "noDLC"],
@@ -810,18 +810,19 @@ uniformArray = compileFinal str
     ["Traje Ghillie Incompleto (Jungle) (NATO)", "U_B_T_Sniper_F", 1000, "uni"],
     ["Traje Ghillie Incompleto (Jungle) (CSAT)", "U_O_T_Sniper_F", 1000, "uni"],
     
-	["Traje Ghillie Completo (Arido)", "U_B_FullGhillie_ard", 5000, "uni"],
-	["Traje Ghillie Completo (Arido)", "U_O_FullGhillie_ard", 5000, "uni"],
-	["Traje Ghillie Completo (Arido)", "U_I_FullGhillie_ard", 5000, "uni"],
-	["Traje Ghillie Completo (Lush)", "U_B_FullGhillie_lsh", 5000, "uni"],
-	["Traje Ghillie Completo (Lush)", "U_O_FullGhillie_lsh", 5000, "uni"],
-	["Traje Ghillie Completo (Lush)", "U_I_FullGhillie_lsh", 5000, "uni"],
-    ["Traje Ghillie Completo (Selva)", "U_B_T_FullGhillie_tna_F", 5000, "uni"],
-    ["Traje Ghillie Completo (Selva)", "U_O_T_FullGhillie_tna_F", 5000, "uni"],
-	["Traje Ghillie Completo (Semi-Arido)", "U_B_FullGhillie_sard", 5000, "uni"],
-	["Traje Ghillie Completo (Semi-Arido)", "U_O_FullGhillie_sard", 5000, "uni"],
-	["Traje Ghillie Completo (Semi-Arido)", "U_I_FullGhillie_sard", 5000, "uni"],
+	//["Traje Ghillie Completo (Arido)", "U_B_FullGhillie_ard", 5000, "uni"],
+	//["Traje Ghillie Completo (Arido)", "U_O_FullGhillie_ard", 5000, "uni"],
+	//["Traje Ghillie Completo (Arido)", "U_I_FullGhillie_ard", 5000, "uni"],
+	//["Traje Ghillie Completo (Lush)", "U_B_FullGhillie_lsh", 5000, "uni"],
+	//["Traje Ghillie Completo (Lush)", "U_O_FullGhillie_lsh", 5000, "uni"],
+	//["Traje Ghillie Completo (Lush)", "U_I_FullGhillie_lsh", 5000, "uni"],
+    //["Traje Ghillie Completo (Selva)", "U_B_T_FullGhillie_tna_F", 5000, "uni"],
+    //["Traje Ghillie Completo (Selva)", "U_O_T_FullGhillie_tna_F", 5000, "uni"],
+	//["Traje Ghillie Completo (Semi-Arido)", "U_B_FullGhillie_sard", 5000, "uni"],
+	//["Traje Ghillie Completo (Semi-Arido)", "U_O_FullGhillie_sard", 5000, "uni"],
+	//["Traje Ghillie Completo (Semi-Arido)", "U_I_FullGhillie_sard", 5000, "uni"],
     
+
     ["Vestuário de Guerrilha", "U_BG_Guerilla1_1", 100, "uni"],                    // BLUFOR
 	["Roupa Guerrilha (Plainador, Escuro)", "U_BG_Guerilla2_1", 100, "uni"],
 	["Roupa Guerrilha (Xadres)", "U_BG_Guerilla2_2", 100, "uni"],
@@ -926,9 +927,9 @@ vestArray = compileFinal str
 	["Bandoleira Vertica (Cáqui)", "V_BandollierB_khk", 100, "vest"],
 	["Bandoleira Vertica (Verde Oliva)", "V_BandollierB_oli", 100, "vest"],
     ["Bandoleira Vertica (Verde Hex)", "V_BandollierB_ghex_F", 100, "vest"],
-    ["Bolsa de Perna (Preto)", "V_LegStrapBag_black_F", 130, "vest", "noDLC"],
-    ["Bolsa de Perna (Coiote)", "V_LegStrapBag_coyote_F", 130, "vest", "noDLC"],
-    ["Bolsa de Perna (Verde Oliva)", "V_LegStrapBag_olive_F", 130, "vest", "noDLC"],
+    //["Bolsa de Perna (Preto)", "V_LegStrapBag_black_F", 130, "vest", "noDLC"],
+    //["Bolsa de Perna (Coiote)", "V_LegStrapBag_coyote_F", 130, "vest", "noDLC"],
+    //["Bolsa de Perna (Verde Oliva)", "V_LegStrapBag_olive_F", 130, "vest", "noDLC"],
     ["Cinto Granadeiro LBV (Castanho)", "V_HarnessOGL_brn", 150, "vest"],
 	["Cinto Granadeiro LBV (Cinzento)", "V_HarnessOGL_gry", 150, "vest"],
     ["Cinto Granadeiro LBV (Verde Hex)", "V_HarnessOGL_ghex_F", 150, "vest"],
@@ -1022,15 +1023,15 @@ backpackArray = compileFinal str
 	// ["Outdoor Pack (Blue)", "B_OutdoorPack_blu", 100, "backpack"],				//Duplicate of Outdoor Pack (Tan) - BI...
 	// ["Hunting Backpack", "B_HuntingBackpack", 100, "backpack"],					//Duplicate of Outdoor Pack (Tan) - BI...	
 	
-    ["Bolsa de Perna (Preto)", "B_LegStrapBag_black_F", 130, "vest", "noDLC"],
-    ["Bolsa de Perna (Coiote)", "B_LegStrapBag_coyote_F", 130, "vest", "noDLC"],
-    ["Bolsa de Perna (Oliva)", "B_LegStrapBag_olive_F", 130, "vest", "noDLC"],
+    ["Bolsa de Perna (Preto)", "B_LegStrapBag_black_F", 100, "vest", "noDLC"],
+    ["Bolsa de Perna (Coiote)", "B_LegStrapBag_coyote_F", 100, "vest", "noDLC"],
+    ["Bolsa de Perna (Oliva)", "B_LegStrapBag_olive_F", 100, "vest", "noDLC"],
     
-    ["Bolsa de Mensageiro (Preto)", "B_Messenger_Black_F", 100, "backpack", "noDLC"],
-    ["Bolsa de Mensageiro (Coiote)", "B_Messenger_Coyote_F", 100, "backpack", "noDLC"],
-    ["Bolsa de Mensageiro (Cinzento)", "B_Messenger_Gray_F", 100, "backpack", "noDLC"],
-    ["Bolsa de Mensageiro (Oliva)", "B_Messenger_Olive_F", 100, "backpack", "noDLC"],
-    ["Bolsa de Mensageiro (IDAP)", "B_Messenger_IDAP_F", 100, "backpack", "noDLC"],
+    ["Bolsa de Mensageiro (Preto)", "B_Messenger_Black_F", 130, "backpack", "noDLC"],
+    ["Bolsa de Mensageiro (Coiote)", "B_Messenger_Coyote_F", 130, "backpack", "noDLC"],
+    ["Bolsa de Mensageiro (Cinzento)", "B_Messenger_Gray_F", 130, "backpack", "noDLC"],
+    ["Bolsa de Mensageiro (Oliva)", "B_Messenger_Olive_F", 130, "backpack", "noDLC"],
+    ["Bolsa de Mensageiro (IDAP)", "B_Messenger_IDAP_F", 130, "backpack", "noDLC"],
     
 	["Mochila de Assalto (Preto)", "B_AssaultPack_blk", 150, "backpack"],
 	["Mochila de Assalto (Verde)", "B_AssaultPack_rgr", 150, "backpack"],
@@ -1043,16 +1044,16 @@ backpackArray = compileFinal str
     ["Mochila de Assalto (Tropical)", "B_AssaultPack_tna_F", 150, "backpack", "noDLC"],
 	["Mochila de Assalto (Kerry)", "B_AssaultPack_Kerry", 150, "backpack"],
 	
-	["Mochila Suporte (Coiote)", "B_Kitbag_cbr", 200, "backpack"],
-	["Mochila Suporte (Verde)", "B_Kitbag_rgr", 200, "backpack"],
-	["Mochila Suporte (MTP)", "B_Kitbag_mcamo", 200, "backpack"],
-	["Mochila Suporte (Sage)", "B_Kitbag_sgg", 200, "backpack"],
+	["Mochila Suporte (Coiote)", "B_Kitbag_cbr", 300, "backpack"],
+	["Mochila Suporte (Verde)", "B_Kitbag_rgr", 300, "backpack"],
+	["Mochila Suporte (MTP)", "B_Kitbag_mcamo", 300, "backpack"],
+	["Mochila Suporte (Sage)", "B_Kitbag_sgg", 300, "backpack"],
     
-    ["Mochila Viper Leve (Black)", "B_ViperLightHarness_blk_F", 200, "backpack", "noDLC"],
-    ["Mochila Viper Leve (Green Hex)", "B_ViperLightHarness_ghex_F", 200, "backpack", "noDLC"],
-    ["Mochila Viper Leve (Hex)", "B_ViperLightHarness_hex_F", 200, "backpack", "noDLC"],
-    ["Mochila Viper Leve (Khaki)", "B_ViperLightHarness_khk_F", 200, "backpack", "noDLC"],
-    ["Mochila Viper Leve (Olive)", "B_ViperLightHarness_oli_F", 200, "backpack", "noDLC"],
+    ["Mochila Viper Leve (Black)", "B_ViperLightHarness_blk_F", 300, "backpack", "noDLC"],
+    ["Mochila Viper Leve (Green Hex)", "B_ViperLightHarness_ghex_F", 300, "backpack", "noDLC"],
+    ["Mochila Viper Leve (Hex)", "B_ViperLightHarness_hex_F", 300, "backpack", "noDLC"],
+    ["Mochila Viper Leve (Khaki)", "B_ViperLightHarness_khk_F", 300, "backpack", "noDLC"],
+    ["Mochila Viper Leve (Olive)", "B_ViperLightHarness_oli_F", 300, "backpack", "noDLC"],
 	
 	["Mochila Tática (Verde)", "B_TacticalPack_rgr", 250, "backpack"],
 	["Mochila Tática (MTP)", "B_TacticalPack_mcamo", 250, "backpack"],
@@ -1060,17 +1061,17 @@ backpackArray = compileFinal str
 	//["Tactical Backpack (Black)", "	B_TacticalPack_blk", 250, "backpack"],		//Does not exist - BI....
 	["Mochila Tática (Oliva)", "B_TacticalPack_oli", 250, "backpack"],
 	
-	["Mochila de Campo (Preto)", "B_FieldPack_blk", 300, "backpack"],
-	["Mochila de Campo (Coiote)", "B_FieldPack_cbr", 300, "backpack"],
-	["Mochila de Campo (Cáqui)", "B_FieldPack_khk", 300, "backpack"],
-	["Mochila de Campo (Urbano)", "B_FieldPack_oucamo", 300, "backpack"],
-	["Mochila de Campo (Hex)", "B_FieldPack_ocamo", 300, "backpack"],
-    ["Mochila de Campo (Verde Hex)", "B_FieldPack_ghex_F", 300, "backpack", "noDLC"],
+	["Mochila de Campo (Preto)", "B_FieldPack_blk", 200, "backpack"],
+	["Mochila de Campo (Coiote)", "B_FieldPack_cbr", 200, "backpack"],
+	["Mochila de Campo (Cáqui)", "B_FieldPack_khk", 200, "backpack"],
+	["Mochila de Campo (Urbano)", "B_FieldPack_oucamo", 200, "backpack"],
+	["Mochila de Campo (Hex)", "B_FieldPack_ocamo", 200, "backpack"],
+    ["Mochila de Campo (Verde Hex)", "B_FieldPack_ghex_F", 200, "backpack", "noDLC"],
 	
-	["Mochila de Carga Leve (Preto)", "B_Bergen_blk", 350, "backpack"], // nao contem tradução Bergen
-	["Mochila de Carga Leve (Verde)", "B_Bergen_rgr", 350, "backpack"],
-	["Mochila de Carga Leve (MTP)", "B_Bergen_mcamo", 350, "backpack"],
-	["Mochila de Carga Leve (Sage)", "B_Bergen_sgg", 350, "backpack"],
+	["Mochila de Carga Leve (Preto)", "B_Bergen_blk", 300, "backpack"], // nao contem tradução Bergen
+	["Mochila de Carga Leve (Verde)", "B_Bergen_rgr", 300, "backpack"],
+	["Mochila de Carga Leve (MTP)", "B_Bergen_mcamo", 300, "backpack"],
+	["Mochila de Carga Leve (Sage)", "B_Bergen_sgg", 300, "backpack"],
 	// ["Bergen (Red)", "B_BergenC_red", 350, "backpack"],							//Shitty copy of Bergen without color and less capacity
 	// ["Bergen (Green)", "B_BergenC_grn", 350, "backpack"],						//Shitty copy of Bergen without color and less capacity
 	// ["Bergen (Blue)", "B_BergenC_blu", 350, "backpack"],							//Shitty copy of Bergen without color and less capacity
@@ -1102,20 +1103,20 @@ backpackArray = compileFinal str
 	["Mochilão (Taiga)", "B_Carryall_taiga_F", 500, "backpack", "noDLC"],
 	["Mochilão (Floresta)", "B_Carryall_wdl_F", 500, "backpack", "noDLC"],
 	["Respirador Avançado", "B_CombinationUnitRespirator_01_F", 500, "backpack", "noDLC"],
-	["Mochila de Campo (Verde)", "B_FieldPack_green_F", 300, "backpack", "noDLC"],
-	["Mochila de Campo (Taiga)", "B_FieldPack_taiga_F", 300, "backpack", "noDLC"],
+	["Mochila de Campo (Verde)", "B_FieldPack_green_F", 200, "backpack", "noDLC"],
+	["Mochila de Campo (Taiga)", "B_FieldPack_taiga_F", 200, "backpack", "noDLC"],
 	
-	["Mochila de Rádio (Preto)", "B_RadioBag_01_black_F", 500, "backpack", "noDLC"],
-	["Mochila de Rádio (Digital)", "B_RadioBag_01_digi_F", 500, "backpack", "noDLC"],
-	["Mochila de Rádio (Geometrico)", "B_RadioBag_01_eaf_F", 500, "backpack", "noDLC"],
-	["Mochila de Rádio (Verde Hex)", "B_RadioBag_01_ghex_F", 500, "backpack", "noDLC"],
-	["Mochila de Rádio (Hex)", "B_RadioBag_01_hex_F", 500, "backpack", "noDLC"],
-	["Mochila de Rádio (MTP)", "B_RadioBag_01_mtp_F", 500, "backpack", "noDLC"],
-	["Mochila de Rádio (Tropical)", "B_RadioBag_01_tropic_F", 500, "backpack", "noDLC"],
-	["Mochila de Rádio (Urbano)", "B_RadioBag_01_oucamo_F", 500, "backpack", "noDLC"],
-	["Mochila de Rádio (Floresta)", "B_RadioBag_01_wdl_F", 500, "backpack", "noDLC"],
+	["Mochila de Rádio (Preto)", "B_RadioBag_01_black_F", 80, "backpack", "noDLC"],
+	["Mochila de Rádio (Digital)", "B_RadioBag_01_digi_F", 80, "backpack", "noDLC"],
+	["Mochila de Rádio (Geometrico)", "B_RadioBag_01_eaf_F", 80, "backpack", "noDLC"],
+	["Mochila de Rádio (Verde Hex)", "B_RadioBag_01_ghex_F", 80, "backpack", "noDLC"],
+	["Mochila de Rádio (Hex)", "B_RadioBag_01_hex_F", 80, "backpack", "noDLC"],
+	["Mochila de Rádio (MTP)", "B_RadioBag_01_mtp_F", 80, "backpack", "noDLC"],
+	["Mochila de Rádio (Tropical)", "B_RadioBag_01_tropic_F", 80, "backpack", "noDLC"],
+	["Mochila de Rádio (Urbano)", "B_RadioBag_01_oucamo_F", 80, "backpack", "noDLC"],
+	["Mochila de Rádio (Floresta)", "B_RadioBag_01_wdl_F", 80, "backpack", "noDLC"],
 	
-	["Equipamento Respiratório Autônomo", "B_SCBA_01_F", 500, "backpack", "noDLC"]
+	["Equipamento Respiratório Autônomo", "B_SCBA_01_F", 100, "backpack", "noDLC"]
 	
 ];
 
@@ -1144,18 +1145,18 @@ genItemArray = compileFinal str
     ["UGV Camera ED-1E (CSAT)", "O_UGV_02_Science_backpack_F", 3000, "backpack", "HIDDEN"],  //Hidden as custom loadouts for vehicles are not possible for backpacks...
     ["UGV Camera ED-1E (AAF)", "I_UGV_02_Science_backpack_F", 3000, "backpack", "HIDDEN"],*/  //Hidden as custom loadouts for vehicles are not possible for backpacks...
         
-	["GPS", "ItemGPS", 100, "gps"],
+	["GPS", "ItemGPS", 500, "gps"],
 	["Kit Médico", "FirstAidKit", 25, "item"],
 	["Estojo Médico", "Medikit", 250, "item"],
 	["Estojo de Ferramentas", "ToolKit", 250, "item"],
-	["Detector de Minas", "MineDetector", 100, "item"],
-	["Binóculos", "Binocular", 50, "binoc"],
-	["Focalizador", "Rangefinder", 200, "binoc"],
-	["Designador Laser (Areia)", "Laserdesignator", 500, "binoc", "noDLC"],			// Removed team tag to allow all Desis for all teams ->  ["Laser Designator (NATO)", "Laserdesignator", 10000, "binoc", "WEST"],
-	["Designador Laser (Cáqui)", "Laserdesignator_01_khk_F", 500, "binoc"],
-	["Designador Laser (Olivea)", "Laserdesignator_03", 500, "binoc", "noDLC"],
-	["Designador Laser (Hex)", "Laserdesignator_02", 500, "binoc", "noDLC"],		// Attention: Check the main config and change the price if thermal is activated == overpowered
-    ["Designador Laser (Verde Hex)", "Laserdesignator_02_ghex_F", 500, "binoc"],
+	["Detector de Minas", "MineDetector", 1000, "item"],
+	["Binóculos", "Binocular", 500, "binoc"],
+	["Focalizador", "Rangefinder", 1000, "binoc"],
+	["Designador Laser (Areia)", "Laserdesignator", 2000, "binoc", "noDLC"],			// Removed team tag to allow all Desis for all teams ->  ["Laser Designator (NATO)", "Laserdesignator", 10000, "binoc", "WEST"],
+	["Designador Laser (Cáqui)", "Laserdesignator_01_khk_F", 2000, "binoc"],
+	["Designador Laser (Olivea)", "Laserdesignator_03", 2000, "binoc", "noDLC"],
+	["Designador Laser (Hex)", "Laserdesignator_02", 2000, "binoc", "noDLC"],		// Attention: Check the main config and change the price if thermal is activated == overpowered
+    ["Designador Laser (Verde Hex)", "Laserdesignator_02_ghex_F", 2000, "binoc"],
     /*["Mochila Designador Remoto", "B_Static_Designator_01_weapon_F", 250, "backpack"],
 	["Mochila Designador Remoto", "O_Static_Designator_02_weapon_F", 250, "backpack"],
     ["Mochila Designador Remoto (Cáqui)", "B_W_Static_Designator_01_weapon_F", 250, "backpack"],*/
@@ -1278,8 +1279,8 @@ genObjectsArray = compileFinal str
     ["Placa (Área de Risco)", "Land_Sign_WarningUnexplodedAmmo_F", 50, "object"],
     ["Placa (Para alugar)", "Land_SignM_forRent_F", 50, "object"],
     ["Placa (À venda)", "Land_SignM_forSale_F", 50, "object"],
-	["Galpão Industrial (Pequeno)", "Land_Shed_Small_F", 2000, "object"],
-	["Galpão Industrial (Grande)", "Land_Shed_Big_F", 3000, "object"],
+	["Galpão Industrial (Pequeno)", "Land_Shed_Small_F", 1000, "object"],
+	["Galpão Industrial (Grande)", "Land_Shed_Big_F", 1500, "object"],
     ["Barreira de Concreto (Pequeno)", "Land_CncBarrier_F", 100, "object"],
 	["Barreira de Concreto (Única)", "Land_CncBarrierMedium_F", 250, "object"],
 	["Barreira de Concreto (Médio, Longo)", "Land_CncBarrierMedium4_F", 350, "object"],
@@ -1358,12 +1359,12 @@ genObjectsArray = compileFinal str
 	["QG de Equipamento Militares", "Land_Cargo_HQ_V1_F", 2000, "object"],
 	["Posto de Depósito Militar", "Land_Cargo_Patrol_V1_F", 800, "object"],
 	["Torre Militar Alta", "Land_Cargo_Tower_V1_F", 10000, "object"],
-	["Container de Carga 2m", "Land_Cargo20_military_green_F", 5000, "object"],
 	["Bomba de Gasolina", "Land_FuelStation_Feed_F", 10000, "object"],
 	["Saco de Comida", "Land_Sacks_goods_F", 1000],
 	["Barril de Água", "Land_BarrelWater_F", 1000],
+	["Container de Carga 2m", "Land_Cargo20_military_green_F", 5000, "object"],
 	["TravaBase | SENHA PADRÃO: 0000 |", "Land_Device_assembled_F", 25000, "object"],
-    ["Portão da Base (Fino)", "Land_PillboxWall_01_6m_F", 10000, "object"],
+    ["Portão da Base (Fino)", "Land_PillboxWall_01_6m_F", 5000, "object"],
 	["Portão da Base (Grosso)", "Land_Canal_Wall_10m_F", 10000, "object"],  
 	["Painel do Portão | SENHA PADRÃO: 0000 |", "Land_TripodScreen_01_dual_v1_F", 2000, "object"],
     ["Cofre | SENHA PADRÃO: 0000 |", "Box_GEN_Equip_F", 10000, "ammocrate"]
@@ -1382,7 +1383,7 @@ landArray = compileFinal str
         ["Quadbike (NATO)", "B_Quadbike_01_F", 700, "vehicle", "HIDDEN"], //
         ["Quadbike (CSAT)", "O_Quadbike_01_F", 700, "vehicle", "HIDDEN"], //
         ["Quadbike (AAF)", "I_Quadbike_01_F", 700, "vehicle", "HIDDEN"], //
-    ["Quadriciclo", "I_G_Quadbike_01_F", 700, "vehicle"],
+    ["Quadriciclo", "I_G_Quadbike_01_F", 600, "vehicle"],
 
 	["Hatchback | Normal", "C_Hatchback_01_F", 1000, "vehicle"],
 	["Hatchback Sport | Tunado", "C_Hatchback_01_sport_F", 2000, "vehicle"],
@@ -2033,11 +2034,11 @@ customPlayerItems = compileFinal str
 	["Tenda Camuflada", "camonet", localize "STR_WL_ShopDescriptions_Camo", "client\icons\camonet.paa", 200, 100],
 	["Cifão de Combustível", "syphonhose", localize "STR_WL_ShopDescriptions_SyphonHose", "client\icons\syphonhose.paa", 200, 100],
 	["TravaCarro", "pinlock", localize "STR_WL_ShopDescriptions_Pinlock", "client\icons\keypad.paa", 250, 50],
-	["Energy Drink", "energydrink", localize "STR_WL_ShopDescriptions_Energy_Drink", "client\icons\energydrink.paa", 10000, 5000],
+	["Energético", "energydrink", localize "STR_WL_ShopDescriptions_Energy_Drink", "client\icons\energydrink.paa", 2500, 1000],
 	["LSD", "lsd", localize "STR_WL_ShopDescriptions_LSD", "client\icons\lsd.paa", 1500, 1000],
-	["Marijuana", "marijuana", localize "STR_WL_ShopDescriptions_Marijuana", "client\icons\marijuana.paa", 1500, 1000],
-	["Cocaine", "cocaine", localize "STR_WL_ShopDescriptions_Cocaine", "client\icons\cocaine.paa", 1500, 1000],
-	["Heroin", "heroin", localize "STR_WL_ShopDescriptions_Heroin", "client\icons\heroin.paa", 1500, 1000],
+	["Cannabis", "marijuana", localize "STR_WL_ShopDescriptions_Marijuana", "client\icons\marijuana.paa", 2500, 1500],
+	["Cocaina", "cocaine", localize "STR_WL_ShopDescriptions_Cocaine", "client\icons\cocaine.paa", 2500, 2000],
+	["Heroina", "heroin", localize "STR_WL_ShopDescriptions_Heroin", "client\icons\heroin.paa", 3000, 2500],
 	//["Warchest", "warchest", localize "STR_WL_ShopDescriptions_Warchest", "client\icons\warchest.paa", 1000, 500]
 	["AN/PRC-148 JEM", "tf_anprc148jem_3", 50, "item"],
     ["AN/PRC-152", "tf_anprc152", 50, "item"],

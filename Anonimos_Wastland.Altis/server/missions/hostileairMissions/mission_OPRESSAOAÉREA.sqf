@@ -72,15 +72,6 @@ _setupObjects =
 		_soldier = [_aiGroup, _position] call createRandomPilot;
 		_soldier moveInDriver _vehicle;
         
-        if (_type isKindOf "Air") then
-		{
-			{
-				if (["CMFlare", _x] call fn_findString != -1) then
-				{
-					_vehicle removeMagazinesTurret [_x, [-1]];
-				};
-			} forEach getArray (configFile >> "CfgVehicles" >> _type >> "magazines");
-		};
 
         // lock the vehicle until the mission is finished and initialize cleanup on it	
 		[_vehicle, _aiGroup] spawn checkMissionVehicleLock;
@@ -130,7 +121,7 @@ _setupObjects =
 	_vehicleName4 = getText (configFile >> "CfgVehicles" >> _veh4 >> "displayName");
 	_vehicleName5 = getText (configFile >> "CfgVehicles" >> _veh5 >> "displayName");
 
-	_missionHintText = format ["Uma grande frota de <t color='%3'>%1</t> eestão a caça na ilha para matar e destruir, Destrua-os e recupere sua carga!", _vehicleName, _vehicleName2, _vehicleName3, _vehicleName4, _vehicleName5, mainMissionColor];
+	_missionHintText = format ["Uma grande frota de <t color='%3'>%1</t> estão a caça na ilha para matar e destruir, Destrua-os e recupere sua carga!", _vehicleName, _vehicleName2, _vehicleName3, _vehicleName4, _vehicleName5, mainMissionColor];
 
 	_numWaypoints = count waypoints _aiGroup;
 };

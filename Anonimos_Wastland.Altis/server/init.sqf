@@ -33,7 +33,7 @@ if (isServer) then
 
 		diag_log format ["HandleDisconnect - %1 - alive: %2 - local: %3 - isPlayer: %4 - group: %5", [_name, _uid], alive _unit, local _unit, isPlayer _unit, group _unit];
 		//aj - text disconnect to lobby
-		(format ["Player %1 went to lobby", _name]) remoteExecCall ["systemChat", 0];
+		(format ["Jogador %1 foi para recepção", _name]) remoteExecCall ["systemChat", 0];
 
 		_veh = objectParent _unit;
 
@@ -104,7 +104,7 @@ if (isServer) then
 	};
 };
 
-diag_log "WASTELAND SERVER - Server Compile Finished";
+diag_log "ANÔNIMOS BRASIL SERVIDORES - Carregamento do Servidor finalizado";
 
 // load default config
 call compile preprocessFileLineNumbers "server\default_config.sqf";
@@ -208,6 +208,7 @@ if (isServer) then
 		"A3W_fastMovementLog",
 		"A3W_fastMovementLogDist",
 		"A3W_fastMovementLoopTime",
+		"A3W_customUniformEnabled",
 		"A3W_maxSpawnBeacons"
 	];
 

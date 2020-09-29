@@ -165,7 +165,7 @@ A3W_territoryCaptureTime = 3*60;   // Time in seconds needed to capture a territ
 A3W_territoryPayroll = 1;          // Periodically reward sides and indie groups based on how many territories they own (0 = no, 1 = yes)
 A3W_territoryWarningIcons = 1;     // Show exclamation marks on map for friendly territories where enemies are present (0 = no, 1 = yes)
 A3W_payrollInterval = 10*60;       // Delay in seconds between each payroll
-A3W_payrollAmount = 400;           // Amount of money rewarded per territory on each payroll
+A3W_payrollAmount = 100;           // Amount of money rewarded per territory on each payroll
 A3W_territoryAllowed = [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120]; //Territory Allowed
 
 // Mission settings
@@ -180,7 +180,7 @@ A3W_mainMissionDelay = 10*60;      // Time in seconds between Main Missions
 A3W_mainMissionTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
 
 A3W_sideMissionDelay = 5*60;       // Time in seconds between Side Missions
-A3W_sideMissionTimeout = 60*60;    // Time in seconds that a Side Mission will run for, unless completed
+A3W_sideMissionTimeout = 30*60;    // Time in seconds that a Side Mission will run for, unless completed
 
 A3W_moneyMissionDelay = 15*60;     // Time in seconds between Money Missions
 A3W_moneyMissionTimeout = 60*60;   // Time in seconds that a Money Mission will run for, unless completed
@@ -188,10 +188,10 @@ A3W_moneyMissionTimeout = 60*60;   // Time in seconds that a Money Mission will 
 A3W_principalMissionsDelay = 10*60;      // Time in seconds between Main Missions
 A3W_principalMissionsTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
 
-A3W_hostileairMissionDelay = 15*60;      // Time in seconds between Main Missions
+A3W_hostileairMissionDelay = 10*60;      // Time in seconds between Main Missions
 A3W_hostileairMissionTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
 
-A3W_aquaticMissionDelay = 15*60;      // Time in seconds between Main Missions
+A3W_aquaticMissionDelay = 10*60;      // Time in seconds between Main Missions
 A3W_aquaticMissionTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
 //###############################################################################################################################//
 A3W_hackedMissionDlSize = 165072;	// File size in Kilobytles (~1Mbps dl Rate)

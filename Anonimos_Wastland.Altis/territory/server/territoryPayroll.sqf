@@ -92,7 +92,7 @@ while {true} do
 			};
 		
 		_money = _count * _moneyAmount;
-		_message =  format ["Your team received a $%1 bonus for holding %2 territor%3 during the past %4 minutes", [_money] call fn_numbersText, _count, if (_count == 1) then { "y" } else { "ies" }, ceil (_timeInterval / 60)];
+		_message =  format ["Seu time recebeu $%1 como bônus por manter capturado %2 territórios %3 durante os últimos %4 minutos", [_money] call fn_numbersText, _count, if (_count == 1) then { "y" } else { "ies" }, ceil (_timeInterval / 60)];
 
 		[[_message, _money], "A3W_fnc_territoryActivityHandler", _team, false] call A3W_fnc_MP;
 	} forEach _payouts;

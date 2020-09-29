@@ -30,7 +30,7 @@ _displayTerritoryActivity =
 
 	_boldFont = "PuristaBold";
 
-	_descriptiveName = "Unknown territory";
+	_descriptiveName = "Território desconhecido";
 
 	// Expensive lookup for the HUD, so cache it
 	if (_territoryName != _lastTerritoryName) then
@@ -61,26 +61,26 @@ _displayTerritoryActivity =
 				_territoryCaptureCountdown = (_territoryCaptureCountdown - _seconds) / 60;
 				_minutes = _territoryCaptureCountdown % 60;
 
-				_territoryActionText = format["Capturing territory in about <t font='%1'>%2 minutes</t>", _boldFont, _minutes + 1];
+				_territoryActionText = format["Capturando território em cerca de <t font='%1'>%2 minutos</t>", _boldFont, _minutes + 1];
 			}
 			else
 			{
 				if (_territoryCaptureCountdown < 5) then
 				{
-					_territoryActionText = "Territory transition in progress...";
+					_territoryActionText = "Transição de território em andamento...";
 				}
 				else
 				{
-					_territoryActionText = format["Capturing territory in <t font='%1'>%2 seconds</t>", _boldFont, _territoryCaptureCountdown];
+					_territoryActionText = format["Capturando território em <t font='%1'>%2 segundos</t>", _boldFont, _territoryCaptureCountdown];
 				};
 			};
 		};
-		case "BLOCKEDATTACKER": { _territoryActionText = "Territory capture blocked" };
-		case "BLOCKEDDEFENDER": { _territoryActionText = "Territory under attack" };
-		case "RESET":           { _territoryActionText = "Territory capture started" };
+		case "BLOCKEDATTACKER": { _territoryActionText = "Captura de território bloqueada" };
+		case "BLOCKEDDEFENDER": { _territoryActionText = "Território sob ataque" };
+		case "RESET":           { _territoryActionText = "Captura de território iniciada" };
 	};
 
-	_activityMessage = format ["Location: <t font='%1'>%2</t><br/>%3", _boldFont, _descriptiveName, _territoryActionText];
+	_activityMessage = format ["Localização: <t font='%1'>%2</t><br/>%3", _boldFont, _descriptiveName, _territoryActionText];
 	_topLeftIconText = format ["<img size='%1' image='territory\client\icons\territory_cap_white.paa'/>", 3 * (0.55 / (getResolution select 5))];
 
 	[_topLeftIconText, _activityMessage]

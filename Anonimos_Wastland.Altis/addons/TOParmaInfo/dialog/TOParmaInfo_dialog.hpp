@@ -105,7 +105,7 @@ class TOParmaInfoD
 		class TANewsTiTleBackground: RscText
 		{
 			idc = TOParmaInfo_News_Title_BG;
-			text = "Entre em contato conosco:";
+			text = "Clique para entrar no:";
 			x = "15.1 * (((safezoneW / safezoneH) min 1.2) / 40)";
 			y = "9.7 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 			w = "14.9 * (((safezoneW / safezoneH) min 1.2) / 40)";

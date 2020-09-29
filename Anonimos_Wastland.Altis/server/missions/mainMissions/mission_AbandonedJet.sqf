@@ -13,7 +13,7 @@ _setupVars =
 {
 	_vehicleClass =
 	[
-		"I_Plane_Fighter_03_dynamicLoadout_F", "buzzardAA"],
+		["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardAA"],
         ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardCAS"],
         "I_Plane_Fighter_04_F",
         "B_Plane_Fighter_01_F",

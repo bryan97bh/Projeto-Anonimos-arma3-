@@ -43,7 +43,7 @@ if (typeName _this == "ARRAY" && {count _this >= 1}) then {
 		}
 		else 
 		{ 
-			titleText ["You are more than 2km away from the capture territories so you received no money.", "plain down", 0.5];
+			titleText ["Você está a mais de 2km de distância dos territórios(BANDEIRAS) de captura para receber o dinheiro.", "plain down", 0.5];
 		};
 	};
 

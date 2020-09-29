@@ -6,7 +6,7 @@
 // Check if script is already active
 if (BeaconScanInProgress) exitWith
 {
-	["You are already performing another beacon scan.", 5] call mf_notify_client;
+	["Você já está detectando um Spawn Beacon.", 5] call mf_notify_client;
 };
 
 _beaconsnear = nearestObjects [player, ["Land_Tentdome_F"], 100];
@@ -14,7 +14,7 @@ _beaconsnear = nearestObjects [player, ["Land_Tentdome_F"], 100];
 if ((count _beaconsnear) > 0 ) then 
 	{
 	
-	playsound "beep9"; ["Spawn beacon found - tracking started.", 5] call mf_notify_client;
+	playsound "beep9"; ["Spawn beacon encontrado - siga o sinal sonoro agudo.", 5] call mf_notify_client;
 	BeaconScanInProgress = true;
 	Beaconscanstop = false;
 	
@@ -27,14 +27,14 @@ if ((count _beaconsnear) > 0 ) then
 		if (Beaconscanstop) exitwith 
 			{
 			playsound "beep9";
-			["Spawn beacon scan interrupted.", 5] call mf_notify_client;
+			["Escaneamento de Spawn beacon interrompido.", 5] call mf_notify_client;
 			BeaconScanInProgress = false;
 			};
 		
 		if (count _beaconsnear == 0) exitwith 
 			{
 			playsound "beep9";
-			["No spawn beacon in detector range.", 5] call mf_notify_client;
+			["Nenhum Spawn Beacon encontrado no raio de 100m do detector.", 5] call mf_notify_client;
 			BeaconScanInProgress = false;
 			};
 		
@@ -62,7 +62,7 @@ if ((count _beaconsnear) > 0 ) then
 				default {
 						//default case should not happen
 						playsound "beep9";
-						["There was a malfunction of your beacon detector.", 5] call mf_notify_client;
+						["Ocorreu um mal funcionamento no seu detector de beacon.", 5] call mf_notify_client;
 						};
 				};
 			sleep _beepfreq;
@@ -72,5 +72,5 @@ if ((count _beaconsnear) > 0 ) then
 else
 {
 playsound "beep9";
-["No Spawn beacon in detector range.", 5] call mf_notify_client;
+["Nenhum Spawn Beacon encontrado no raio do detector.", 5] call mf_notify_client;
 };

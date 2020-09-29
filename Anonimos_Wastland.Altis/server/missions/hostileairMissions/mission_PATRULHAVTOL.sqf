@@ -1,17 +1,17 @@
 // ******************************************************************************************
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
-//	@file Name: mission_HostileJetFormation.sqf
-//	@file Author: Bryan / matar e destruir vencer pelo brasil 
+//	@file Author: Bryan /  matar e destruir vencer pelo brasil 
 //	@file Created: 19/07/2020
+
 if (!isServer) exitwith {};
 #include "hostileairMissionDefines.sqf"
 
-private ["_planeChoices", "_convoyVeh", "_veh1", "_veh2", "_veh3", "_createVehicle", "_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_vehicleName2", "_vehicleName3", "_numWaypoints", "_cash", "_boxes1", "_currBox1", "_boxes2", "_currBox2", "_box1", "_box2"];
+private ["_planeChoices", "_convoyVeh", "_veh1", "_veh2", "_createVehicle", "_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_vehicleName2", "_numWaypoints", "_cash", "_boxes1", "_currBox1", "_boxes2", "_currBox2", "_box1", "_box2"];
 
 _setupVars =
 {
-	_missionType = "HELICÓPTEROS HOSTIS";
+	_missionType = "PATRULHA VTOL";
 	_locationsArray = nil; // locations are generated on the fly from towns
 };
 
@@ -22,55 +22,15 @@ _setupObjects =
 	_planeChoices =
 	[
         [
-			"B_Heli_Transport_03_F",                //CH-67 Huron (Armed)
-			"B_Heli_Light_01_dynamicLoadout_F",     //AH-9 Pawnee (Gun-Only)
-			"B_Heli_Light_01_dynamicLoadout_F"      //AH-9 Pawnee (Gun-Only)
-		],
-		[
-			"B_Heli_Transport_03_F",                //CH-67 Huron (Armed)
-			"I_Heli_light_03_dynamicLoadout_F",     //WY-55 Hellcat (Armed)
-			"I_Heli_light_03_dynamicLoadout_F"      //WY-55 Hellcat (Armed)
-		],
-		[
-			"B_Heli_Transport_03_F",                 //CH-67 Huron (Armed)
-			"B_Heli_Attack_01_dynamicLoadout_F",     //AH-99 Blackfoot
-			"B_Heli_Attack_01_dynamicLoadout_F"      //AH-99 Blackfoot
-		],
-		//--------------------------------------------------------------------//
-	    [
-			"B_Heli_Transport_01_F",                //UH-80 Ghost Hawk)
-			"B_Heli_Light_01_dynamicLoadout_F",     //AH-9 Pawnee (Gun-Only)
-			"B_Heli_Light_01_dynamicLoadout_F"      //AH-9 Pawnee (Gun-Only)
-		],
-		[
-			"B_Heli_Transport_01_F",                //UH-80 Ghost Hawk
-			"I_Heli_light_03_dynamicLoadout_F",     //WY-55 Hellcat (Armed)
-			"I_Heli_light_03_dynamicLoadout_F"      //WY-55 Hellcat (Armed)
-		],
-		[
-			"B_Heli_Transport_01_F",                 //UH-80 Ghost Hawk
-			"O_Heli_Attack_02_dynamicLoadout_F",     //Mi-48 Kajman
-			"O_Heli_Attack_02_dynamicLoadout_F"      //Mi-48 Kajman
-		],
-		//--------------------------------------------------------------------//
-	    [
-			"B_Heli_Transport_01_F",                //UH-80 Ghost Hawk)
-			"B_Heli_Transport_01_F",                //UH-80 Ghost Hawk)
-			"B_Heli_Transport_01_F"                 //UH-80 Ghost Hawk)
-		],
-		[
-			"B_Heli_Transport_01_F",                 //UH-80 Ghost Hawk
-			"O_Heli_Attack_02_dynamicLoadout_F",     //Mi-48 Kajman
-			"B_Heli_Attack_01_dynamicLoadout_F"      //AH-99 Blackfoot
+            "B_T_VTOL_01_infantry_F",     
+            "B_T_VTOL_01_vehicle_F"      
 		]
-		
 	];
 
 	_convoyVeh = _planeChoices call BIS_fnc_selectRandom;
 
 	_veh1 = _convoyVeh select 0;
 	_veh2 = _convoyVeh select 1;
-	_veh3 = _convoyVeh select 2;
 
 	_createVehicle =
 	{
@@ -105,25 +65,15 @@ _setupObjects =
 		// add pilot
 		_soldier = [_aiGroup, _position] call createRandomPilot;
 		_soldier moveInDriver _vehicle;
-		
-		switch (true) do
+        
+        if (_type isKindOf "Air") then
 		{
-			case (_type isKindOf "B_Heli_Transport_01_F" || _type isKindOf "B_Heli_Transport_03_F"):
 			{
-				// these choppers have 2 turrets so we need 2 gunners
-				_soldier = [_aiGroup, _position] call createRandomPilot;
-				_soldier moveInTurret [_vehicle, [1]];
-
-				_soldier = [_aiGroup, _position] call createRandomPilot;
-				_soldier moveInTurret [_vehicle, [2]];
-			};
-
-			case (_type isKindOf "B_Heli_Attack_01_dynamicLoadout_F" || _type isKindOf "O_Heli_Attack_02_dynamicLoadout_F"):
-			{
-				// these choppers need 1 gunner
-				_soldier = [_aiGroup, _position] call createRandomPilot;
-				_soldier moveInGunner _vehicle;
-			};
+				if (["CMFlare", _x] call fn_findString != -1) then
+				{
+					_vehicle removeMagazinesTurret [_x, [-1]];
+				};
+			} forEach getArray (configFile >> "CfgVehicles" >> _type >> "magazines");
 		};
 
         // lock the vehicle until the mission is finished and initialize cleanup on it	
@@ -136,8 +86,7 @@ _setupObjects =
 	_vehicles =
 	[
 		[_veh1, _missionPos vectorAdd ([[random 50, 0, 0], random 360] call BIS_fnc_rotateVector2D), 0] call _createVehicle,
-		[_veh2, _missionPos vectorAdd ([[random 50, 0, 0], random 360] call BIS_fnc_rotateVector2D), 0] call _createVehicle,
-		[_veh3, _missionPos vectorAdd ([[random 50, 0, 0], random 360] call BIS_fnc_rotateVector2D), 0] call _createVehicle
+		[_veh2, _missionPos vectorAdd ([[random 50, 0, 0], random 360] call BIS_fnc_rotateVector2D), 0] call _createVehicle
 	];
 
 	_leader = effectiveCommander (_vehicles select 0);
@@ -168,9 +117,8 @@ _setupObjects =
 	_missionPicture = getText (configFile >> "CfgVehicles" >> _veh1 >> "picture");
 	_vehicleName = getText (configFile >> "CfgVehicles" >> _veh1 >> "displayName");
 	_vehicleName2 = getText (configFile >> "CfgVehicles" >> _veh2 >> "displayName");
-	_vehicleName3 = getText (configFile >> "CfgVehicles" >> _veh3 >> "displayName");
 
-	_missionHintText = format ["Uma patrulha aérea está na ilha.Contendo um <t color='%3'>%1</t> e dois <t color='%3'>%2</t>. Destrua eles e pegue a carga que eles carregam!", _vehicleName, _vehicleName2, mainMissionColor];
+	_missionHintText = format ["Um <t color='%3'>%1</t> estão contrabandeado caixas de equipamentos, Destrua-os e recupere sua carga!", _vehicleName, _vehicleName2, mainMissionColor];
 
 	_numWaypoints = count waypoints _aiGroup;
 };

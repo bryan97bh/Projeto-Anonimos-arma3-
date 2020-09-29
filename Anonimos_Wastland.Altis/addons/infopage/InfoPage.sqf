@@ -53,7 +53,7 @@ _text = "
 <t align='left'><t size='1.2'><t shadow= 1 shadowColor='#000000'>Entre em contato conosco pelo:</t><br />
 <br />
 <t align='left'><img size='1.7' shadow = 0 image='addons\infopage\discord.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'>   https://invite.gg/anonimos</t><br />
-<t align='left'><img size='1.6' shadow = 0 image='addons\infopage\fb.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'>    Em desenvolvimento</t><br />
+<t align='left'><img size='1.6' shadow = 0 image='addons\infopage\fb.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'>    https://www.facebook.com/anonimosbrasil11</t><br />
 <t align='center'><img size='7' shadow = 0 image='mapConfig\Loading.jpg'/></t>
 <br />";
 

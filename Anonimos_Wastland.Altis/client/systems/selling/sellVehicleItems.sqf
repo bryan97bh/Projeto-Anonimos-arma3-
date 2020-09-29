@@ -16,7 +16,7 @@ storeSellingHandle = _this spawn
 	if (isNull _veh) exitWith
 	{
 		playSound "FD_CP_Not_Clear_F";
-		["Your previous vehicle was not found.", "Error"] call  BIS_fnc_guiMessage;
+		["Seu veículo anterior não foi encontrado.", "Error"] call  BIS_fnc_guiMessage;
 	};
 
 	_objClass = typeOf _veh;
@@ -27,7 +27,7 @@ storeSellingHandle = _this spawn
 		if (_veh distance _storeNPC > VEHICLE_MAX_SELLING_DISTANCE) then
 		{
 			playSound "FD_CP_Not_Clear_F";
-			[format ['"%1" is further away than %2m from the store.', _objName, VEHICLE_MAX_SELLING_DISTANCE], "Error"] call  BIS_fnc_guiMessage;
+			[format ['"%1" está mais longe do que %2m da loja.', _objName, VEHICLE_MAX_SELLING_DISTANCE], "Error"] call  BIS_fnc_guiMessage;
 			false
 		} else { true };
 	};
@@ -37,7 +37,7 @@ storeSellingHandle = _this spawn
 		if (!local _veh) then
 		{
 			playSound "FD_CP_Not_Clear_F";
-			[format ['You are not the owner of "%1", try getting in the driver seat.', _objName], "Error"] call  BIS_fnc_guiMessage;
+			[format ['Você não é o proprietário de "%1", tente entrar no banco do motorista.', _objName], "Error"] call  BIS_fnc_guiMessage;
 			false
 		} else { true };
 	};
@@ -54,7 +54,7 @@ storeSellingHandle = _this spawn
 	if (count _allVehItems == 0) exitWith
 	{
 		playSound "FD_CP_Not_Clear_F";
-		[format ['"%1" does not contain valid items to sell.', _objName], "Error"] call BIS_fnc_guiMessage;
+		[format ['"%1" não contém itens validos para venda.', _objName], "Error"] call BIS_fnc_guiMessage;
 	};
 
 	// Calculate total value
@@ -66,7 +66,7 @@ storeSellingHandle = _this spawn
 	} forEach _allVehItems;
 
 	// Add total sell value to confirm message
-	_confirmMsg = format ["You will obtain $%1 for:<br/>", [_sellValue] call fn_numbersText];
+	_confirmMsg = format ["Você irá obter $%1 por:<br/>", [_sellValue] call fn_numbersText];
 
 	// Add item quantities and names to confirm message
 	{
@@ -81,7 +81,7 @@ storeSellingHandle = _this spawn
 	} forEach _allVehItems;
 
 	// Display confirmation
-	if ([parseText _confirmMsg, "Confirm", "Sell", true] call BIS_fnc_guiMessage) then
+	if ([parseText _confirmMsg, "Confirmar", "Vender", true] call BIS_fnc_guiMessage) then
 	{
 		if (!call _checkValidDistance) exitWith {};
 		if (!call _checkValidOwnership) exitWith {};
@@ -90,7 +90,7 @@ storeSellingHandle = _this spawn
 		if (CARGO_STRING(_veh) != _originalCargo) exitWith
 		{
 			playSound "FD_CP_Not_Clear_F";
-			[format ['The contents of "%1" have changed, please restart the selling process.', _objName], "Error"] call BIS_fnc_guiMessage;
+			[format ['O conteúdo de "%1" foi alterado, por favor, reinicie o processo de venda.', _objName], "Error"] call BIS_fnc_guiMessage;
 		};
 
 		// Have to spawn clearing commands due to mysterious game crash...
@@ -112,7 +112,7 @@ storeSellingHandle = _this spawn
 		//player setVariable ["cmoney", (player getVariable ["cmoney", 0]) + _sellValue, true];
 		[player, _sellValue] call A3W_fnc_setCMoney;
 
-		hint format ['You sold the inventory of "%1" for $%2', _objName, _sellValue];
+		hint format ['O inventário de "%1" foi vendido por $%2', _objName, _sellValue];
 		playSound "FD_Finish_F";
 	};
 };

@@ -156,7 +156,7 @@ _baseClass = "";
 
 if (!isServer) then
 {
-	diag_log "WASTELAND HEADLESS - Object cleanup enabled";
+	diag_log "WASTELAND HEADLESS - Limpeza de objetos ativada";
 };
 
 _lastCleanup = diag_tickTime;
@@ -192,10 +192,10 @@ while {true} do
 	{ _storeCleanup forEach nearestObjects [_x, ["GroundWeaponHolder"], STORE_CLEANUP_RADIUS] } forEach _storeNPCs;
 	_parachuteCleanup forEach ([0,0] nearEntities ["ParachuteBase", 1e11]); // delete glitched parachutes
 
-	diag_log format ["SERVER CLEANUP: Deleted %1 expired objects", _delQtyO];
+	diag_log format ["LIMPEZA DE SERVIDOR: Deletado %1 objetos expirados", _delQtyO];
 
 	_delQtyG = 0;
 	_groupCleanup forEach allGroups;
 
-	diag_log format ["SERVER CLEANUP: Deleted %1 empty groups", _delQtyG];
+	diag_log format ["LIMPEZA DE SERVIDOR: Deletado %1 grupos vazios", _delQtyG];
 };

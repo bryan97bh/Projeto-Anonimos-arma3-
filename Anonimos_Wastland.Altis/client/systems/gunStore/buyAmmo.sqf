@@ -38,7 +38,7 @@ storePurchaseHandle = _this spawn
 	_showInsufficientFundsError =
 	{
 		_itemText = _this select 0;
-		hint format ["You don't have enough money for ""%1""", _itemText];
+		hint format ["Você não tem dinheiro suficiente para ""%1""", _itemText];
 		playSound "FD_CP_Not_Clear_F";
 		_price = -1;
 	};
@@ -46,7 +46,7 @@ storePurchaseHandle = _this spawn
 	_showInsufficientSpaceError =
 	{
 		_itemText = _this select 0;
-		hint format ["You don't have enough space for ""%1""", _itemText];
+		hint format ["Você não tem espaço suficiente para ""%1""", _itemText];
 		playSound "FD_CP_Not_Clear_F";
 		_price = -1;
 	};
@@ -87,7 +87,7 @@ storePurchaseHandle = _this spawn
 		//player setVariable ["cmoney", _playerMoney - _price, true];
 		[player, -_price] call A3W_fnc_setCMoney;
 		_playerMoneyText ctrlSetText format ["Cash: $%1", [player getVariable ["cmoney", 0]] call fn_numbersText];
-		hint "Purchase successful!";
+		hint "Comprado com sucesso";
 		playSound "FD_Finish_F";
 	};
 };

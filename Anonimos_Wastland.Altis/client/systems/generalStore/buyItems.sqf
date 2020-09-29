@@ -39,7 +39,7 @@ storePurchaseHandle = _this spawn
 	_showInsufficientFundsError =
 	{
 		_itemText = _this select 0;
-		hint parseText format ["Not enough money for<br/>""%1""", _itemText];
+		hint parseText format ["Sem dinheiro para comprar<br/>""%1""", _itemText];
 		playSound "FD_CP_Not_Clear_F";
 		_price = -1;
 	};
@@ -47,7 +47,7 @@ storePurchaseHandle = _this spawn
 	_showInsufficientSpaceError =
 	{
 		_itemText = _this select 0;
-		hint parseText format ["Not enough space for<br/>""%1""", _itemText];
+		hint parseText format ["Se espaço para <br/>""%1""", _itemText];
 		playSound "FD_CP_Not_Clear_F";
 		_price = -1;
 	};
@@ -55,7 +55,7 @@ storePurchaseHandle = _this spawn
 	_showItemSpawnTimeoutError =
 	{
 		_itemText = _this select 0;
-		hint parseText format ["<t color='#ffff00'>An unknown error occurred.</t><br/>The purchase of ""%1"" has been cancelled.", _itemText];
+		hint parseText format ["<t color='#ffff00'>Algum erro desconhecido aconteceu.</t><br/>A compra do ""%1"" foi cancelado.", _itemText];
 		playSound "FD_CP_Not_Clear_F";
 		_price = -1;
 	};
@@ -63,7 +63,7 @@ storePurchaseHandle = _this spawn
 	_showItemSpawnedOutsideMessage =
 	{
 		_itemText = _this select 0;
-		hint format ["""%1"" has been spawned outside, in front of the store.", _itemText];
+		hint format ["""%1"" foi comprado com sucesso e está na frente da loja.", _itemText];
 		playSound "FD_Finish_F";
 		_successHint = false;
 	};
@@ -74,17 +74,17 @@ storePurchaseHandle = _this spawn
 
 		if (param [1, false, [false]]) then
 		{
-			_itemText = format ["Purchasing these %1 will replace your current ones.", _itemText];
+			_itemText = format ["Comprando esse item  %1 irá substituir o seu atual.", _itemText];
 		}
 		else
 		{
 			if (param [2, false, [false]]) then
 			{
-				_itemText = format ["Purchasing this %1 will replace your current one.", _itemText];
+				_itemText = format ["Comprando isso  %1 irá substituir o seu atual.", _itemText];
 			}
 			else
 			{
-				_itemText = format ["Purchasing this %1 will replace your current one, and its contents will be lost.", _itemText];
+				_itemText = format ["Comprando isso %1 irá substituir seu atual, e seu conteúdo será perdido.", _itemText];
 			};
 		};
 
@@ -104,11 +104,11 @@ storePurchaseHandle = _this spawn
 
 		if (param [1, false, [false]]) then
 		{
-			_itemText = format ["You already have these %1.", _itemText];
+			_itemText = format ["Você já tem esse item %1.", _itemText];
 		}
 		else
 		{
-			_itemText = format ["You already have this %1.", _itemText];
+			_itemText = format ["Você já tem isso %1.", _itemText];
 		};
 
 		playSound "FD_CP_Not_Clear_F";
@@ -453,7 +453,7 @@ storePurchaseHandle = _this spawn
 		};
 
 		_playerMoneyText ctrlSetText format ["Cash: $%1", [player getVariable ["cmoney", 0]] call fn_numbersText];
-		if (_successHint) then { hint "Purchase successful!" };
+		if (_successHint) then { hint "Comprado com sucesso" };
 		playSound "FD_Finish_F";
 	};
 

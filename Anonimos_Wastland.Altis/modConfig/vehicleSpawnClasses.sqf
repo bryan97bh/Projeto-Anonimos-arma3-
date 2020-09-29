@@ -82,7 +82,7 @@ staticHeliList =
 	"C_Heli_Light_01_civil_F",
 	"B_Heli_Light_01_F",
 	"O_Heli_Light_02_unarmed_F",
-	"C_IDAP_Heli_Transport_02_F"
+	"I_Heli_Transport_02_F"
 	// don't put cargo helicopters here, it doesn't make sense to find them in towns; they spawn in the CivHeli mission
 ];
 
@@ -98,35 +98,26 @@ A3W_planeSpawnOdds = 0.25; // 0.0 to 1.0
 //Random Weapon List - Change this to what you want to spawn in cars.
 vehicleWeapons =
 [
-	[
-		"hgun_PDW2000_F",
-		"SMG_01_F", // Vermin
-		"SMG_02_F", // Sting
-		"SMG_05_F", //Protector
-		"arifle_AKS_F", //AKS-74U
-		[
-			"SMG_03C_TR_black", // ADR-97
-			"SMG_03C_TR_camo",
-			"SMG_03C_TR_hex",
-			"SMG_03C_TR_khaki"
-		]
-	],
-	["arifle_Katiba_C_F"],
-	["arifle_AKM_F"],
-	["srifle_DMR_06_hunter_F", "srifle_DMR_01_F"],
-	["arifle_TRG20_F", "arifle_Mk20C_plain_F", "arifle_Mk20C_F"],
-	["sgun_HunterShotgun_01_F", "sgun_HunterShotgun_01_sawedoff_F"],
+	["hgun_PDW2000_F"],
+	["SMG_01_F"],
+	["SMG_02_F"],
+	["SMG_05_F"],
+	["SMG_03C_TR_black", "SMG_03C_TR_camo", "SMG_03C_TR_khaki", "SMG_03C_TR_hex"],
+	["srifle_DMR_01_F"],
+	["arifle_Katiba_C_F", "arifle_Katiba_F"],
+    ["arifle_Mk20C_plain_F", "arifle_Mk20C_F"],
+	["arifle_Mk20_plain_F", "arifle_Mk20_F"],
+	["arifle_TRG20_F", "arifle_TRG21_F"],
 	["arifle_MXC_Black_F", "arifle_MXC_khk_F", "arifle_MXC_F"],
-	["arifle_SPAR_01_blk_F", "arifle_SPAR_01_khk_F", "arifle_SPAR_01_snd_F"],
-	["arifle_CTAR_blk_F", "arifle_CTAR_ghex_F", "arifle_CTAR_hex_F"],
-	["arifle_SPAR_02_blk_F", "arifle_SPAR_02_khk_F", "arifle_SPAR_02_snd_F"]
+	["arifle_MX_Black_F", "arifle_MX_khk_F", "arifle_MX_F"],
+	["arifle_MXM_F", "arifle_MXM_khk_F", "arifle_MXM_Black_F"],
+	["arifle_MX_SW_Black_F", "arifle_MX_SW_khk_F", "arifle_MX_SW_F"]
 ];
 
 vehicleAddition =
 [
 	"optic_Aco",
 	"optic_MRCO",
-	"optic_KHS_old",
 	"optic_ACO_grn",
 	"optic_aco_smg",
 	"optic_Holosight",
@@ -157,9 +148,6 @@ vehicleAddition =
     "G_Balaclava_blk",
     "G_Spectacles_Tinted",
 	"ToolKit",
-    "NVGoggles",
-    "NVGoggles_OPFOR",
-    "NVGoggles_INDEP",
 	"H_Hat_Tinfoil_F",
 	"H_HeadBandage_bloody_F",
 	"U_IG_Guerilla1_1",
@@ -173,6 +161,31 @@ vehicleAddition =
 	"V_SmershVest_01_F",
 	"V_TacVestIR_blk",
 	"V_DeckCrew_brown_F",
+	"SmokeShellGreen",
+    "SmokeShellOrange",
+    "SmokeShellRed",
+    "SmokeShellBlue",
+    "SmokeShellPurple",
+    "SmokeShell",
+	"V_TacVest_brn"
+];
+
+vehicleAddition2 =
+[
+    "Chemlight_blue",
+	"Chemlight_green",
+	"Chemlight_yellow",
+	"Chemlight_red",
+	"NVGoggles",
+    "NVGoggles",
+    "NVGoggles_OPFOR",
+	"NVGoggles_OPFOR",
+	"NVGoggles_INDEP",
+    "NVGoggles_INDEP"
+];
+
+vehicleAddition3 =
+[
 	"B_AssaultPack_blk",
 	"B_AssaultPack_rgr",
 	"B_AssaultPack_mcamo",
@@ -181,23 +194,5 @@ vehicleAddition =
 	"B_AssaultPack_cbr",
 	"B_AssaultPack_sgg",
 	"B_AssaultPack_tna_F",
-	"B_AssaultPack_Kerry",
-	"V_TacVest_brn"
-];
-
-vehicleAddition2 =
-[
-    "SmokeShellGreen",
-    "SmokeShellOrange",
-    "SmokeShellRed",
-    "SmokeShellBlue",
-    "SmokeShellPurple",
-    "SmokeShell",
-	"Chemlight_blue",
-	"Chemlight_green",
-	"Chemlight_yellow",
-	"Chemlight_red",
-    "NVGoggles",
-    "NVGoggles_OPFOR",
-    "NVGoggles_INDEP"
+	"B_AssaultPack_Kerry"
 ];

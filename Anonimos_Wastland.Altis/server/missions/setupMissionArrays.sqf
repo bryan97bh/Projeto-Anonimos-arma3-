@@ -8,13 +8,13 @@ if (!isServer) exitWith {};
 // Mission filename, weight 
 MainMissions =
 [
-	["mission_LightArmVeh2", 1.4],     //VIATURA DE COMBATE
-	["mission_LightArmVeh", 1.2],      //VEÍCULO LEVE DE COMBATE
-	["mission_APC", 1],                //VEÍCULO ANTIAÉREO/VEÍCULO DE COMBATE DE INFANTARIA/VEÍCULO BLINDADO DE COMBATE/TRANSPORTADOR DE TROPA BLINDADO
-	["mission_MBT", 0.7],              //CAVALARIA BLINDADA
-	["mission_CivHeli", 1.3],          //HELICÓPTERO DE SUPORTE
+	["mission_LightArmVeh2", 1],       //VIATURA DE COMBATE
+	["mission_LightArmVeh", 1.1],      //VEÍCULO LEVE DE COMBATE
+	["mission_APC", 0.7],              //VEÍCULO ANTIAÉREO/VEÍCULO DE COMBATE DE INFANTARIA/VEÍCULO BLINDADO DE COMBATE/TRANSPORTADOR DE TROPA BLINDADO
+	["mission_MBT", 0.4],              //CAVALARIA BLINDADA
+	["mission_CivHeli", 1.2],          //HELICÓPTERO DE SUPORTE
 	["mission_ArmedHeli", 1],          //HELICÓPTERO GUARNECIDO
-    ["mission_AbandonedJet", 0.7]      //AERONAVE ABANDONADA
+    ["mission_AbandonedJet", 0.4]      //AERONAVE ABANDONADA
 ];
 
 SideMissions =
@@ -24,7 +24,7 @@ SideMissions =
     ["mission_DrugsRunners", 1.1],     //TRAFICANTES
     ["mission_Smugglers", 1.3],        //CONTRABANDO DE ARMAS
 	["mission_AirWreck", 0.9],         //HELICÓPTERO ABATIDO
-	["mission_WepCache", 0.9],         //ACANPAMENTO DE MILITARES 
+	["mission_WepCache", 0.9],         //ACAMPAMENTO DE MILITARES 
 	["mission_Truck", 1.1]             //CAMINHÃO DE SUPRIMENTO
 ];
 
@@ -34,7 +34,8 @@ MoneyMissions =
     ["mission_HostageRescue", 1],      //RESGATE AO REFÉM
     ["mission_Roadblock", 1],          //BLOQUEIO NA ESTRADA
     ["mission_Terror", 1.6],           //INVASAO REBELDE
-	["mission_HackLaptop", 0.8]	       //Hackers
+	["mission_HackLaptop", 0.3],	   //Hackers
+	["mission_Satellite_Uplink", 0.4]
 ];
 
 PrincipalMissions =
@@ -49,16 +50,19 @@ PrincipalMissions =
 
 hostileairMissions =
 [
-	["mission_HostileHelicopter", 1.6],   //HELICÓPTERO HOSTIL
-    ["mission_FORMAÇAODEHELI", 1.5],      //PATRULHA AÉREA
-	["mission_HostileJetFormation", 1],   //JATOS HOSTIS 
-	["mission_VTOLCONTRABANDISTA", 0.6],   //PATRULHA VTOL 
-	["mission_OPRESSAOAÉREA", 0.5]        //OPRESSÃO AÉREA
+	["mission_HostileHelicopter", 1.5],   //HELICÓPTERO HOSTIL
+    ["mission_FORMAÇAODEHELI", 1],        //HELICÓPTEROS HOSTIS
+	["mission_OPRESSAOAÉREA2", 0.4],      //PATRULHA AÉREA
+	["mission_HostileJet", 1.5],          //JATO HOSTIL
+	["mission_HostileJetFormation", 1],   //JATOS HOSTIS
+	["mission_OPRESSAOAÉREA", 0.4],       //OPRESSÃO AÉREA
+	["mission_PATRULHAVTOL", 0.5]         //PATRULHA VTOL 
+	
 ];
 
 aquaticMissions =
 [
-	["mission_ArmedDiversquad", 1], //EXPEDIÇÃO GRUMEC
+	["mission_ArmedDiversquad", 1],   //EXPEDIÇÃO GRUMEC
 	["mission_Coastal_Convoy", 1.1],  //PATRULHA COSTEIRA
 	["mission_Jaws", 1.2],            //TESOURO SUBMERSO
 	["mission_SunkenSupplies", 1.5],  //SUPRIMENTOS AFUNDADO
@@ -81,13 +85,7 @@ if !(ForestMissionMarkers isEqualTo []) then
 	];
 };
 
-if !(SatelliteMissionMarkers isEqualTo []) then
-{
-	MoneyMissions append
-	[
-		["mission_Satellite_Uplink", 0.5]
-	];
-};
+
 
 LandConvoyPaths = (call compile preprocessFileLineNumbers "mapConfig\convoys\landConvoysList.sqf") apply {[_x, false]};
 CoastalConvoyPaths = (call compile preprocessFileLineNumbers "mapConfig\convoys\coastalConvoysList.sqf") apply {[_x, false]};

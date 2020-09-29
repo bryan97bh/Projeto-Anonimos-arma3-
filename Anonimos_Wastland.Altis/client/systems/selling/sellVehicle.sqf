@@ -19,7 +19,7 @@ storeSellingHandle = _this spawn
 	if (isNull _vehicle) exitWith
 	{
 		playSound "FD_CP_Not_Clear_F";
-		["Your previous vehicle was not found.", "Error"] call  BIS_fnc_guiMessage;
+		["Seu veículo anterior não foi encontrado.", "Error"] call  BIS_fnc_guiMessage;
 	};
 
 	_type = typeOf _vehicle;
@@ -30,7 +30,7 @@ storeSellingHandle = _this spawn
 		if (damage _vehicle > 0.99) then
 		{
 			playSound "FD_CP_Not_Clear_F";
-			[format ['"%1" is too much damaged to be sold.', _objName], "Error"] call  BIS_fnc_guiMessage;
+			[format ['"%1" está muito danificado para ser vendido.', _objName], "Error"] call  BIS_fnc_guiMessage;
 			false
 		} else { true };
 	};
@@ -40,7 +40,7 @@ storeSellingHandle = _this spawn
 		if (_vehicle distance _storeNPC > VEHICLE_MAX_SELLING_DISTANCE) then
 		{
 			playSound "FD_CP_Not_Clear_F";
-			[format ['"%1" is further away than %2m from the store.', _objName, VEHICLE_MAX_SELLING_DISTANCE], "Error"] call  BIS_fnc_guiMessage;
+			[format ['"%1" está mais longe do que %2m da loja.', _objName, VEHICLE_MAX_SELLING_DISTANCE], "Error"] call  BIS_fnc_guiMessage;
 			false
 		} else { true };
 	};
@@ -50,7 +50,7 @@ storeSellingHandle = _this spawn
 		if (!local _vehicle) then
 		{
 			playSound "FD_CP_Not_Clear_F";
-			[format ['You are not the owner of "%1", try getting in the driver seat.', _objName], "Error"] call  BIS_fnc_guiMessage;
+			[format ['Você não é o proprietário de "%1", tente entrar no banco do motorista.', _objName], "Error"] call  BIS_fnc_guiMessage;
 			false
 		} else { true };
 	};
@@ -74,10 +74,10 @@ storeSellingHandle = _this spawn
 	if (!isNil "_price") then
 	{
 		// Add total sell value to confirm message
-		_confirmMsg = format ["Selling the %1 will give you $%2<br/>", _objName, [_price] call fn_numbersText];
+		_confirmMsg = format ["A venda do %1 dará a você $%2<br/>", _objName, [_price] call fn_numbersText];
 
 		// Display confirm message
-		if ([parseText _confirmMsg, "Confirm", "Sell", true] call BIS_fnc_guiMessage) then
+		if ([parseText _confirmMsg, "Confirmar", "Vender", true] call BIS_fnc_guiMessage) then
 		{
 			if (!call _checkValidDistance) exitWith {};
 			if (!call _checkValidOwnership) exitWith {};
@@ -85,7 +85,7 @@ storeSellingHandle = _this spawn
 			if (_vehicle distance _storeNPC > VEHICLE_MAX_SELLING_DISTANCE) exitWith
 			{
 				playSound "FD_CP_Not_Clear_F";
-				[format ['The %1 has already been sold!', _objname, VEHICLE_MAX_SELLING_DISTANCE], "Error"] call  BIS_fnc_guiMessage;
+				[format ['O %1 já foi vendido!', _objname, VEHICLE_MAX_SELLING_DISTANCE], "Error"] call  BIS_fnc_guiMessage;
 			};
 
 			_vehID = _vehicle getVariable "A3W_vehicleID";
@@ -98,7 +98,7 @@ storeSellingHandle = _this spawn
 
 			//player setVariable ["cmoney", (player getVariable ["cmoney",0]) + _price, true];
 			[player, _price] call A3W_fnc_setCMoney;
-			[format ['The %1 has been sold!', _objname, VEHICLE_MAX_SELLING_DISTANCE], "Thank You"] call  BIS_fnc_guiMessage;
+			[format ['O %1 já foi vendido!', _objname, VEHICLE_MAX_SELLING_DISTANCE], "Obrigado"] call  BIS_fnc_guiMessage;
 
 			if (["A3W_playerSaving"] call isConfigOn) then
 			{
@@ -117,7 +117,7 @@ storeSellingHandle = _this spawn
 	}
 	else
 	{
-		hint parseText "<t color='#FFFF00'>An unknown error occurred.</t><br/>Vehicle sale cancelled.";
+		hint parseText "<t color='#FFFF00'>Algum erro desconhecido ocorreu.</t><br/>Venda de veículo cancelada.";
 		playSound "FD_CP_Not_Clear_F";
 	};
 };

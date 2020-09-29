@@ -93,7 +93,7 @@ if (!isDedicated) then
 if (isServer) then
 {
 	diag_log format ["############################# %1 #############################", missionName];
-	diag_log "WASTELAND SERVER - Initializing Server";
+	diag_log "ANÔNIMOS BRASIL SERVIDORES - Conheça também nosso Servidor de DAYZ";
 	call compile preprocessFile "mapConfig\territories\init_external.sqf";
 	[] execVM "server\init.sqf";
 };
@@ -113,8 +113,8 @@ if (hasInterface || isServer) then
 	[] execVM "addons\stickyCharges\init.sqf";
 	[] execVM "addons\APOC_Airdrop_Assistance\init.sqf";
 	[] execVM "addons\laptop\init.sqf";
-	[] execVM "addons\scripts\HvD.sqf"; // High Value Drugrunner
 	[] execVM "addons\HvT\HvT.sqf";
+	[] execVM "addons\playerCustomUniforms\playerCustomUniforms.sqf";
 };
 
 // Remove line drawings from map
