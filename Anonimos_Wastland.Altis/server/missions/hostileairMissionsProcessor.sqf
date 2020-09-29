@@ -5,7 +5,7 @@
 //	@file Author: AgentRev
 
 #define MISSION_PROC_TYPE_NAME "AÉREO"
-#define MISSION_PROC_TIMEOUT (["A3W_hostileairMissionTimeout", 30*60] call getPublicVar)
+#define MISSION_PROC_TIMEOUT (["A3W_hostileairMissionTimeout", 60*60] call getPublicVar)
 #define MISSION_PROC_COLOR_DEFINE hostileairMissionColor
 
 #include "hostileairMissions\hostileairMissionDefines.sqf"

@@ -43,6 +43,7 @@ briefing = 0; // if 0, skip Continue button
 
 //Dialog includes
 
+#include "RJAT_AdminMenu.hpp"
 #include "client\gui_base.hpp"
 #include "addons\R3F_LOG\desc_include.h"
 #include "client\systems\ui_toolkit.hpp"

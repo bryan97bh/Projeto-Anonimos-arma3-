@@ -11,6 +11,9 @@ player addEventHandler ["Fired", {_this spawn armajunkies_fnc_aj_c_firedWeapon}]
 player addEventHandler ["Take", {diag_log "Took Weapon"; _this spawn armajunkies_fnc_aj_c_evtookSomeThing}];
 player addEventHandler ["InventoryClosed", {diag_log "Took Weapon"; _this spawn armajunkies_fnc_aj_c_evInventoryClosed}];
 
+"ColorCorrections" ppEffectEnable true; 
+"ColorCorrections" ppEffectAdjust [0.88, 0.88, 0, [0.2, 0.29, 0.4, -0.22], [1, 1, 1, 1.3], [0.15, 0.09, 0.09, 0.0]];
+"ColorCorrections" ppEffectCommit 0;
 
 0 = 0 spawn {
 	"netIDToSend" addPublicVariableEventHandler {

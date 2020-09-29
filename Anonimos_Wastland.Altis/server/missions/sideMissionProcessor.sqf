@@ -5,7 +5,7 @@
 //	@file Author: AgentRev
 
 #define MISSION_PROC_TYPE_NAME "COLATERAL"
-#define MISSION_PROC_TIMEOUT (["A3W_sideMissionTimeout", 30*60] call getPublicVar)
+#define MISSION_PROC_TIMEOUT (["A3W_sideMissionTimeout", 45*60] call getPublicVar)
 #define MISSION_PROC_COLOR_DEFINE sideMissionColor
 
 #include "sideMissions\sideMissionDefines.sqf"
