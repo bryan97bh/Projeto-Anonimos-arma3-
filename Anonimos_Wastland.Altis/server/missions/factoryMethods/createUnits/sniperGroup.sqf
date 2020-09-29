@@ -116,6 +116,7 @@ for "_i" from 1 to _nbUnits do
 			_unit addGoggles "G_Bandanna_khk";
 			_unit addWeapon "srifle_DMR_03_woodland_F";
 			_unit addPrimaryWeaponItem "optic_MRCO";
+			_unit addPrimaryWeaponItem "muzzle_snds_B_snd_F";
 			};
 		};
 	};

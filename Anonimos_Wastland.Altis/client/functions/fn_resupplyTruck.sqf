@@ -38,7 +38,7 @@ _resupplyThread = [_vehicle, _unit] spawn
 
 	scopeName "resupplyTruckThread";
 
-	_price = 1000; // price = 1000 for vehicles not found in vehicle store
+	_price = 2500; // price = 1000 for vehicles not found in vehicle store
 
 	_variant = _vehicle getVariable ["A3W_vehicleVariant", ""];
 	if (_variant != "") then { _variant = "variant_" + _variant };

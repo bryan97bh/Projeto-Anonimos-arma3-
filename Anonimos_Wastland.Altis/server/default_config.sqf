@@ -31,7 +31,7 @@ A3W_headshotNoRevive = 0;          // BROKEN - Instant death on fatal headshot b
 // Artillery settings
 A3W_artilleryStrike = 1;           // Availability of Artillery Strike item (0 = no, 1 = yes)
 A3W_artilleryShells = 20;          // Number of shells per strike
-A3W_artilleryRadius = 50;          // Strike radius in meters within which the shells will randomly hit
+A3W_artilleryRadius = 55;          // Strike radius in meters within which the shells will randomly hit
 A3W_artilleryCooldown = 60*60;     // Cooldown in seconds between strike uses per individual player - resets on server restart
 A3W_artilleryCrateOdds = 1/10;     // Odds of finding one Artillery Strike in a mission crate (0.0 to 1.0)
 A3W_artilleryAmmo = "ModuleOrdnanceHowitzer_F_ammo"; // CfgAmmo class of fired shells, also available for example are the more powerful "R_230mm_fly" and less powerful "ModuleOrdnanceMortar_F_ammo"
@@ -69,8 +69,8 @@ A3W_vehiclePurchaseCooldown = 60;  // Number of seconds to wait before allowing 
 
 // ATM settings
 A3W_atmEnabled = 1;                // Enable ATM system (0 = no, 1 = yes)
-A3W_atmMaxBalance = 1000000;       // Maximum amount of money that can be stored in a bank account (don't go over 16777216 as numbers start losing accuracy)
-A3W_atmTransferFee = 5;            // Fee in percent charged to players for money transfers to other players (0 to 50)
+A3W_atmMaxBalance = 5000000;       // Maximum amount of money that can be stored in a bank account (don't go over 16777216 as numbers start losing accuracy)
+A3W_atmTransferFee = 10;            // Fee in percent charged to players for money transfers to other players (0 to 50)
 A3W_atmTransferAllTeams = 0;       // Allow money transfers between players of all teams/sides (0 = same team only, 1 = all teams)
 A3W_atmEditorPlacedOnly = 0;       // Only allow access via ATMs placed from the mission editor (0 = all ATMs from towns & editor allowed, 1 = ATMs from editor only) Note: Stratis has no town ATMs, only editor ones.
 A3W_atmMapIcons = 1;               // Draw small icons on the map that indicate ATM locations (0 = no, 1 = yes)
@@ -108,7 +108,7 @@ A3W_mineLifetime = 2*24;           // Maximum lifetime in hours for saved mines 
 A3W_privateStorage = 1;            // Enable persistent private storage locations across the map (0 = no, 1 = yes)
 A3W_privateParking = 1;            // If vehicleSaving = 1 and savingMethod = "extdb" or "sock", enable persistent private parking locations across the map (0 = no, 1 = yes)
 A3W_privateParkingLimit = 3;       // Maximum amount of vehicles allowed in private parking (0 = no limit)
-A3W_privateParkingCost = 5000;     // Cost to retrieve an individual vehicle from private parking
+A3W_privateParkingCost = 1000;     // Cost to retrieve an individual vehicle from private parking
 A3W_vehicleLocking = 1;            // Enable vehicle locking and lockpicking (0 = no, 1 = yes)
 
 // iniDB settings
@@ -145,7 +145,7 @@ A3W_hcObjSavingID = 1;             // ID of the headless client in charge of obj
 // Server spawn settings
 A3W_serverSpawning = 1;            // Vehicle, object, and loot spawning (0 = no, 1 = yes)
 A3W_vehicleSpawning = 1;           // If serverSpawning = 1, spawn vehicles in towns (0 = no, 1 = yes)
-A3W_vehicleQuantity = 150;         // Approximate number of land vehicles to be spawned in towns
+A3W_vehicleQuantity = 250;         // Approximate number of land vehicles to be spawned in towns
 A3W_boatSpawning = 1;              // If serverSpawning = 1, spawn boats at marked areas near coasts (0 = no, 1 = yes)
 A3W_heliSpawning = 1;              // If serverSpawning = 1, spawn helicopters in some towns and airfields (0 = no, 1 = yes)
 A3W_planeSpawning = 0;             // If serverSpawning = 1, spawn planes at some airfields (0 = no, 1 = yes)
@@ -165,7 +165,7 @@ A3W_territoryCaptureTime = 3*60;   // Time in seconds needed to capture a territ
 A3W_territoryPayroll = 1;          // Periodically reward sides and indie groups based on how many territories they own (0 = no, 1 = yes)
 A3W_territoryWarningIcons = 1;     // Show exclamation marks on map for friendly territories where enemies are present (0 = no, 1 = yes)
 A3W_payrollInterval = 10*60;       // Delay in seconds between each payroll
-A3W_payrollAmount = 100;           // Amount of money rewarded per territory on each payroll
+A3W_payrollAmount = 90;           // Amount of money rewarded per territory on each payroll
 A3W_territoryAllowed = [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120]; //Territory Allowed
 
 // Mission settings
@@ -188,7 +188,7 @@ A3W_moneyMissionTimeout = 60*60;   // Time in seconds that a Money Mission will 
 A3W_principalMissionsDelay = 10*60;      // Time in seconds between Main Missions
 A3W_principalMissionsTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
 
-A3W_hostileairMissionDelay = 10*60;      // Time in seconds between Main Missions
+A3W_hostileairMissionDelay = 15*60;      // Time in seconds between Main Missions
 A3W_hostileairMissionTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
 
 A3W_aquaticMissionDelay = 10*60;      // Time in seconds between Main Missions

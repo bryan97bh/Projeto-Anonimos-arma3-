@@ -4,28 +4,28 @@ _playerCustomUniforms =
 [
 	[ // RA
 		[
-			"76561198092314271", //<[RA] Codigo>
-			"76561198157312258", //<[RlA] Cap  Batista>
-			"76561198027682212", //<[RA] 2°Sgt Sniperjoel>
-			"76561198087974566", //<[RA] 2ºSgt Dpaulla>
-			"76561198152823076", //<[R] Negri>
-			"76561198157040893", //<[R]755cardosopower>
-			"76561198329736745", //<[RA] Sd  Benther>
-			"76561198332507924", //<[RA] Sd D.Oliveira>
-			"76561198100776009", //<[RA] Sd Gui_bocão>
-			"76561198111387070", //<[RA] Sd Rappa>
-			"76561198252975849", //<[RA] Sd Ferreira>
-			"76561198330751305"  //<Funeral>
+			//"76561198092314271", //<[RA] Codigo>
+			//"76561198157312258", //<[RlA] Cap  Batista>
+			//"76561198027682212", //<[RA] 2°Sgt Sniperjoel>
+			//"76561198087974566", //<[RA] 2ºSgt Dpaulla>
+			//"76561198152823076", //<[R] Negri>
+			//"76561198157040893", //<[R]755cardosopower>
+			//"76561198329736745", //<[RA] Sd  Benther>
+			//"76561198332507924", //<[RA] Sd D.Oliveira>
+			//"76561198100776009", //<[RA] Sd Gui_bocão>
+			//"76561198111387070", //<[RA] Sd Rappa>
+			//"76561198252975849", //<[RA] Sd Ferreira>
+			//"76561198060065964", //BRYAN 
+			//"76561198330751305"  //<Funeral>
 		],
 		[
-			["GUER","U_I_CombatUniform","addons\playerCustomUniforms\textures\16_I.jpg"]
+			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\an_1.jpg"]
 		]
 	],
 	[ // KOBK
 		[
-			"76561196666666666", //<USERNAME>
-			"76561197777777777"  //<USERNAME>
-			"76561198060065964",  //BRYAN 
+			//"76561196666666666", //<USERNAME>
+			//"76561197777777777"  //<USERNAME>
 		],
 		[
 			["GUER","U_I_CombatUniform","addons\playerCustomUniforms\textures\11_I.jpg"]
@@ -33,8 +33,8 @@ _playerCustomUniforms =
 	],
 	[ // G4
 		[
-			"76561198888888888", //<USERNAME>
-			"76561199999999999"  //<USERNAME>
+			//"76561198888888888", //<USERNAME>
+			//"76561199999999999"  //<USERNAME>
 		],
 		[
 			["GUER","U_I_CombatUniform","addons\playerCustomUniforms\textures\11_I.jpg"]

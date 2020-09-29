@@ -14,16 +14,12 @@ private ["_vehicleClass", "_nbUnits"];
 _setupVars =
 {
 	_vehicleClass = selectRandom
-	[
-        ["B_Heli_Light_01_dynamicLoadout_F", "pawneeNormal"],       // Pawnee Normal - Armed
-        ["B_Heli_Light_01_dynamicLoadout_F", "pawneeGun"],  		// Pawnee Gun only - Armed
-		"O_Heli_Light_02_dynamicLoadout_F",           				// Orca DAR (unguided) - Armed
-		"I_Heli_light_03_dynamicLoadout_F",                         // Hellcat - Armed	        
-		"B_Heli_Transport_01_F",                                    // Ghosthawk Black - Armed
-		"B_Heli_Transport_03_F"                                     // Huron Green - Armed
+	[	        
+		"B_Heli_Attack_01_dynamicLoadout_F",                        //AH-99 Blackfoot
+        "O_Heli_Attack_02_dynamicLoadout_F"                         //Mi-48 Kajman
 	];
 
-	_missionType = "HELICÓPTERO GUARNECIDO";
+	_missionType = "HELICÓPTERO DE ATAQUE GUARNECIDO";
 	_locationsArray = MissionSpawnMarkers;
 
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };

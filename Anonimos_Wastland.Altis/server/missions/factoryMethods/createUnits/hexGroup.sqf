@@ -39,7 +39,7 @@ for "_i" from 1 to _nbUnits do
 	removeGoggles _unit;
 
 
-	_unit addVest "V_HarnessOGL_brn";
+	_unit addVest "V_TacVest_brn";
 	_unit addHeadgear "H_HelmetO_ocamo";
 	_unit addGoggles "G_Bandanna_khk";
 

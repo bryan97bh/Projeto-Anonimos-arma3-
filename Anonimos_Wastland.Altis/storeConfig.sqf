@@ -248,42 +248,51 @@ allGunStoreFirearms = compileFinal str (call pistolArray + call smgArray + call 
 staticGunsArray = compileFinal str
 [
     //["Vehicle Ammo Crate", "Box_NATO_AmmoVeh_F", 2500],
-	
-	["Lança Míssel Antitanque Titan AT 4|Munições", "B_static_AT_F", 7500], // Static launchers only have 4 ammo, hence the low price
+	/*["Lança Míssel Antitanque Titan AT 4|Munições", "B_static_AT_F", 7500], // Static launchers only have 4 ammo, hence the low price
 	["Lança Míssel Antitanque Titan AT 4|Munições", "O_static_AT_F", 7500],
 	["Lança Míssel Antitanque Titan AT 4|Munições", "I_static_AT_F", 7500],
-	
 	["Lança Míssel Antiaéreo Titan AA 4|Munições", "B_static_AA_F", 7500],
 	["Lança Míssel Antiaéreo Titan AA 4|Munições", "O_static_AA_F", 7500],
 	["Lança Míssel Antiaéreo Titan AA 4|Munições", "I_static_AA_F", 7500],
-	
-	["Tripé Baixo+Browning .50 Estática", "B_HMG_01_F", 3000],
-	["Tripé Baixo+Browning .50 Estática", "O_HMG_01_F", 3000],
-	["Tripé Baixo+Browning .50 Estática", "I_HMG_01_F", 3000],
-	
-	//["Mk30A HMG .50 Sentry (NATO)", "B_HMG_01_A_F", 5000], // "A" = Autonomous = Overpowered
-	//["Mk30A HMG .50 Sentry (CSAT)", "O_HMG_01_A_F", 5000],
-	//["Mk30A HMG .50 Sentry (AAF)", "I_HMG_01_A_F", 5000],
-	
-	["Tripé Alto+Browning .50 Estática", "B_HMG_01_high_F", 3500],
-	["Tripé Alto+Browning .50 Estática", "O_HMG_01_high_F", 3500],
-	["Tripé Alto+Browning .50 Estática", "I_HMG_01_high_F", 3500],
-	
+	["Tripé Baixo+Browning .50 Estática", "B_HMG_01_F", 3500],
+	["Tripé Baixo+Browning .50 Estática", "O_HMG_01_F", 3500],
+	["Tripé Baixo+Browning .50 Estática", "I_HMG_01_F", 3500],
+	["Tripé Baixo+Browning .50 M2 Estática", "B_HMG_02_F", 3000], //MIRA
+	["Tripé Baixo+Browning .50 M2 Estática", "O_HMG_02_F", 3000],
+	["Tripé Baixo+Browning .50 M2 Estática", "I_HMG_02_F", 3000], //MIRA
+	["Tripé Baixo+Browning .50 M2K Estática", "I_G_HMG_02_F", 2500], //SEM MIRA
+	["Tripé Alto+Browning .50 Estática", "B_HMG_01_high_F", 4500],
+	["Tripé Alto+Browning .50 Estática", "O_HMG_01_high_F", 4500],
+	["Tripé Alto+Browning .50 Estática", "I_HMG_01_high_F", 4500],
+	["Tripé Alto+Browning .50 M2 Estática", "B_G_HMG_02_high_F", 3000],//SEM MIRA
+	["Tripé Alto+Browning .50 M2 Estática", "O_G_HMG_02_high_F", 3500],
+	["Tripé Alto+Browning .50 M2 Estática", "I_HMG_02_high_F", 3500], //MIRA
+	["Tripé Alto+Browning .50 M2K Estática", "I_G_HMG_02_high_F", 3000], //SEM MIRA
 	["Tripé Baixo+Lança Granadas 20mm Estática", "B_GMG_01_F", 5000],
 	["Tripé Baixo+Lança Granadas 20mm Estática", "O_GMG_01_F", 5000],
 	["Tripé Baixo+Lança Granadas 20mm Estática", "I_GMG_01_F", 5000],
-	
-	// ["Mk32A GMG 20mm Sentry (NATO)", "B_GMG_01_A_F", 10000], // "A" = Autonomous = Overpowered
-	// ["Mk32A GMG 20mm Sentry (CSAT)", "O_GMG_01_A_F", 10000],
-	// ["Mk32A GMG 20mm Sentry (AAF)", "I_GMG_01_A_F", 10000],
-	
 	["Tripé Alto+Lança Granadas 20mm Estático", "B_GMG_01_high_F", 5500],
 	["Tripé Alto+Lança Granadas 20mm Estático", "O_GMG_01_high_F", 5500],
 	["Tripé Alto+Lança Granadas 20mm Estático", "I_GMG_01_high_F", 5500],
-	
 	["Morteiro 80mm Mk6 (NATO)", "B_Mortar_01_F", 12500],
 	["Morteiro 80mm MK6 (CSAT)", "O_Mortar_01_F", 12500],
-	["Morteiro 80mm MK6 (AAF)", "I_Mortar_01_F", 12500]
+	["Morteiro 80mm MK6 (AAF)", "I_Mortar_01_F", 12500]*/
+    ["Browning .50 ALTA", "B_HMG_01_high_weapon_F", 4000],
+	["Browning .50 BAIXA", "B_HMG_01_weapon_F", 3000],
+	["Browning M2.50 ALTA", "I_HMG_02_high_weapon_F", 3000],
+	["Browning M2.50 BAIXA", "I_HMG_02_weapon_F", 2500],
+	["Browning M2.50K ALTA", "I_G_HMG_02_high_weapon_F", 3000],
+	["Browning M2.50K BAIXA", "I_G_HMG_02_weapon_F", 2500],
+	["Browning 20MM ALTA", "B_GMG_01_high_weapon_F", 5000],
+	["Browning 20MM BAIXA", "B_GMG_01_weapon_F", 4500],
+	["Tubo Morteiro 80mm", "B_Mortar_01_weapon_F", 12000],
+	["Tubo Lançador AT", "B_AT_01_weapon_F", 7000],
+	["Tubo Lançador AA", "B_AA_01_weapon_F", 7000],
+    ["Tripé Alto para .50", "B_HMG_01_support_high_F", 500],
+	["Tripé Baixo para .50|20MM|AT|AA", "B_HMG_01_support_F", 500],
+	["Tripé Alto para M2.50", "I_HMG_02_support_high_F", 500],
+	["Tripé Baixo para M2.50", "I_C_HMG_02_support_F", 500],
+	["Base do Morteiro", "B_Mortar_01_support_F", 500]
 ];
 
 throwputArray = compileFinal str
@@ -1178,18 +1187,32 @@ genItemArray = compileFinal str
     /*["Óculos de Visão Noturna ENVG (Preto)", "NVGogglesB_blk_F", 250, "nvg"],         // With Termal
     ["Óculos de Visão Noturna ENVG (Verde)", "NVGogglesB_grn_F", 250, "nvg"],         // With Termal
     ["Óculos de Visão Noturna ENVG (Cinzento)", "NVGogglesB_gry_F", 250, "nvg"],*/          // With Termal
+	["Óculos Táticos", "G_Tactical_Clear", 25, "gogg"],
+    ["Óculos Táticos", "G_Tactical_Black", 25, "gogg"],
     ["Óculos de Piloto", "G_Aviator", 25, "gogg"],
     ["Óculos", "G_Lady_Blue", 25, "gogg"],
+	["Ladies Shades (Fire)", "G_Lady_Red", 10, "gogg"],
     ["Óculos de Proteção", "G_Lowprofile", 25, "gogg"],
-    ["Óculos Táticos", "G_Tactical_Clear", 25, "gogg"],
-    ["Óculos Táticos", "G_Tactical_Black", 25, "gogg"],
-    ["Óculos", "G_Spectacles_Tinted", 25, "gogg"],
-	["Óculos Mergulho", "G_Diving", 100, "gogg"],
+	["Ladies Shades (Iridium)", "G_Lady_Mirror", 10, "gogg"],
+	["Ladies Shades (Sea)", "G_Lady_Dark", 10, "gogg"],
+	["Sport Shades (Fire)", "G_Sport_Red", 10, "gogg"],
+	["Sport Shades (Poison)", "G_Sport_Blackyellow", 10, "gogg"],
+	["Sport Shades (Shadow)", "G_Sport_BlackWhite", 10, "gogg"],
+	["Sport Shades (Style)", "G_Sport_Checkered", 10, "gogg"],
+	["Sport Shades (Vulcan)", "G_Sport_Blackred", 10, "gogg"],
+	["Sport Shades (Yetti)", "G_Sport_Greenblack", 10, "gogg"],
+    ["Square Shades", "G_Squares_Tinted", 10, "gogg"],
+	["Square Spectacles", "G_Squares", 10, "gogg"],
+	["Óculos", "G_Spectacles_Tinted", 25, "gogg"],
+	["Spectacle Glasses", "G_Spectacles", 10, "gogg"],
     ["Óculos de Combate (Tan)", "G_Combat", 50, "gogg"],
     ["Óculos de Combate (Verde)", "G_Combat_Goggles_tna_F", 50, "gogg", "noDLC"],
+	["Óculos de Segurança", "G_EyeProtectors_F", 25, "gogg"],
+    ["Óculos de Segurança (Armação)", "G_EyeProtectors_Earpiece_F", 25, "gogg"],
+    ["Óculos Mergulho", "G_Diving", 100, "gogg"],
 	["Balaclava (Preto)", "G_Balaclava_blk", 25, "gogg"],
 	["Balaclava (Oliva)", "G_Balaclava_oli", 25, "gogg"],
-	//["Balaclava (Low Profile G)", "G_Balaclava_lowprofile", 25, "gogg"],
+	["Balaclava (Low Profile G)", "G_Balaclava_lowprofile", 25, "gogg"],
 	["Balaclava (Combate)", "G_Balaclava_combat", 25, "gogg"],
     ["Balaclava Furtiva (Preto)", "G_Balaclava_TI_blk_F", 75, "gogg"],
     ["Balaclava Furtiva II (Preto)", "G_Balaclava_TI_G_blk_F", 75, "gogg"],
@@ -1202,12 +1225,10 @@ genItemArray = compileFinal str
 	["Bandanna (Cáque)", "G_Bandanna_khk", 25, "gogg"],
 	["Bandanna (Oliva)", "G_Bandanna_oli", 25, "gogg"],
 	["Bandanna (Tan)", "G_Bandanna_tan", 25, "gogg"],
-    ["Respirador (Azul)", "G_Respirator_blue_F", 25, "gogg"],
     ["Bandanna (Branco)", "G_Respirator_white_F", 25, "gogg"],
     ["Bandanna (Amarelo)", "G_Respirator_yellow_F", 25, "gogg"],
-    ["Óculos de Segurança", "G_EyeProtectors_F", 25, "gogg"],
-    ["Óculos de Segurança (Armação)", "G_EyeProtectors_Earpiece_F", 25, "gogg"],
     ["Fone de Ouvido sem Fio", "G_WirelessEarpiece_F", 25, "gogg"],
+	["Respirador (Azul)", "G_Respirator_blue_F", 25, "gogg"],
 	
 	//DLC Contact
 	["Máscara de Gás (Preto)", "G_AirPurifyingRespirator_02_black_F", 500, "gogg", "noDLC"],
@@ -1445,8 +1466,10 @@ landArray = compileFinal str
 	
 	["Zamak | Transporte", "I_Truck_02_transport_F", 5000, "vehicle"],
 		["Zamak Transport (IDAP)", "C_IDAP_Truck_02_transport_F", 4000, "vehicle", "HIDDEN"], // hidden, just a paintjob
+	["Zamak | Transporte Civil", "C_Truck_02_transport_F", 4000, "vehicle"], 
 	["Zamak | Coberto", "I_Truck_02_covered_F", 6000, "vehicle"],
 		["Zamak Covered (IDAP)", "C_IDAP_Truck_02_F", 5000, "vehicle", "HIDDEN"], // hidden, just a paintjob
+    ["Zamak | Coberto Civil", "C_Truck_02_covered_F", 5000, "vehicle"],
     //["Zamak Water (IDAP)", "C_IDAP_Truck_02_water_F", 5000, "vehicle"],
 	["Zamak | Combustível", "I_Truck_02_fuel_F", 7500, "vehicle"],
 	["Zamak  | Médico", "I_Truck_02_medical_F", 10000, "vehicle"],
@@ -1458,7 +1481,7 @@ landArray = compileFinal str
 armoredArray = compileFinal str
 [
     //["Prowler Light", "B_CTRG_LSV_01_light_F", 1000, "vehicle"],
-    ["MB 4WD | Browning .50", "I_C_Offroad_02_LMG_F", 3500, "vehicle"],
+    ["MB 4WD | LMG", "I_C_Offroad_02_LMG_F", 3500, "vehicle"],
     ["MB 4WD | Lança Míssil Anti-Tanque", "I_C_Offroad_02_AT_F", 5000, "vehicle"],
 	
 	["Caminhonete | Browning .50", "I_G_Offroad_01_armed_F", 3500, "vehicle"],
@@ -1697,7 +1720,7 @@ colorsArray = compileFinal str
 			["AAF Green", _texDir + "aaf.paa"], // #(argb,8,8,3)color(0.546,0.59,0.363,0.2)
 			// ["Bloodshot", _texDir + "bloodshot.paa"],
 			// ["Carbon", _texDir + "carbon.paa"],
-			["Confederate", _texDir + "confederate.paa"],
+			//["Confederate", _texDir + "confederate.paa"],
 			// ["Denim", _texDir + "denim.paa"],
 			["Digital", _texDir + "digi.paa"],
 			["Digital Black", _texDir + "digi_black.paa"],
@@ -1707,15 +1730,15 @@ colorsArray = compileFinal str
 			["Drylands", _texDir + "drylands.paa"],
 			//["Hello Kitty", _texDir + "hellokitty.paa"],
 			["Hex", _texDir + "hex.paa"],
-			["Hippie", _texDir + "hippie.paa"],
+			//["Hippie", _texDir + "hippie.paa"],
 			// ["ISIS", _texDir + "isis.paa"],
 			// ["Leopard", _texDir + "leopard.paa"],
 			// ["Mountain Dew", _texDir + "mtndew.paa"],
-			["'Murica", _texDir + "murica.paa"],
+			//["'Murica", _texDir + "murica.paa"],
 			// ["Nazi", _texDir + "nazi.paa"],
 			["Orange Camo", _texDir + "camo_orange.paa"],
 			["Pink Camo", _texDir + "camo_pink.paa"],
-			["Pride", _texDir + "pride.paa"],
+			//["Pride", _texDir + "pride.paa"],
 			// ["Psych", _texDir + "psych.paa"],
 			["Red Camo", _texDir + "camo_red.paa"],
 			["Rusty", _texDir + "rusty.paa"],
@@ -1729,7 +1752,7 @@ colorsArray = compileFinal str
 			// ["Trippy", _texDir + "rainbow.paa"],
 			["Union Jack", _texDir + "unionjack.paa"],
 			["Urban", _texDir + "urban.paa"],
-			["Weed", _texDir + "weed.paa"],
+			//["Weed", _texDir + "weed.paa"],
 			["Woodland", _texDir + "woodland.paa"],
 			["Woodland Dark", _texDir + "wooddark.paa"],
 			["Woodland Tiger", _texDir + "woodtiger.paa"]

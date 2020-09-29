@@ -7,7 +7,7 @@
 if (!isServer) exitwith {};
 #include "hostileairMissionDefines.sqf"
 
-private ["_planeChoices", "_convoyVeh", "_veh1", "_veh2", "_veh3", "_veh4", "_veh5", "_createVehicle", "_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_vehicleName2", "_vehicleName3", "_vehicleName4", "_vehicleName5", "_numWaypoints", "_cash", "_boxes1", "_currBox1", "_boxes2", "_currBox2", "_box1", "_box2"];
+private ["_planeChoices", "_convoyVeh", "_veh1", "_veh2", "_veh3", "_createVehicle", "_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_vehicleName2", "_vehicleName3", "_numWaypoints", "_cash", "_boxes1", "_currBox1", "_boxes2", "_currBox2", "_box1", "_box2"];
 
 _setupVars =
 {
@@ -21,13 +21,37 @@ _setupObjects =
 
 	_planeChoices =
 	[
+	    [
+			"O_Plane_Fighter_02_F",                 // To-201 Shikra
+            "I_Plane_Fighter_04_F",                 // A-149 Gryphon
+            "B_Plane_Fighter_01_F"                  // F/A-181 Black Wasp
+		],
         [
-            "I_Plane_Fighter_04_F",
-			"I_Plane_Fighter_04_F", 
-			"I_Plane_Fighter_04_F", 
-			"I_Plane_Fighter_04_F",      
-            "I_Plane_Fighter_04_F"      
+			"O_Plane_Fighter_02_Stealth_F",         // To-201 Shikra Stealth
+            "B_Plane_Fighter_01_Stealth_F",         // F/A-181 Black Wasp Stealth
+            "B_Plane_Fighter_01_Stealth_F"          // F/A-181 Black Wasp Stealth
+		],
+		[
+			"B_Plane_Fighter_01_F",                 // F/A-181 Black Wasp
+            "O_Plane_Fighter_02_F",                 // To-201 Shikra
+            "O_Plane_Fighter_02_F"                  // To-201 Shikra
+		],
+        [
+            "B_Plane_CAS_01_dynamicLoadout_F",      // A-164 Wipeout CAS 
+			"B_Plane_CAS_01_dynamicLoadout_F",      // A-164 Wipeout CAS
+            "B_Plane_CAS_01_dynamicLoadout_F"       // A-164 Wipeout CAS
+		],
+        [
+            "I_Plane_Fighter_04_F",                 // A-149 Gryphon
+			"O_Plane_CAS_02_dynamicLoadout_F",      // To-199 Neophron CAS
+            "O_Plane_CAS_02_dynamicLoadout_F"       // To-199 Neophron CAS
+		],
+        [
+            "I_Plane_Fighter_04_F",                 // A-149 Gryphon
+			"I_Plane_Fighter_04_F",                 // A-149 Gryphon
+            "I_Plane_Fighter_04_F"                  // A-149 Gryphon
 		]
+		
 	];
 
 	_convoyVeh = _planeChoices call BIS_fnc_selectRandom;
@@ -35,8 +59,6 @@ _setupObjects =
 	_veh1 = _convoyVeh select 0;
 	_veh2 = _convoyVeh select 1;
 	_veh3 = _convoyVeh select 2;
-	_veh4 = _convoyVeh select 3;
-	_veh5 = _convoyVeh select 4;
 
 	_createVehicle =
 	{
@@ -84,9 +106,7 @@ _setupObjects =
 	[
 		[_veh1, _missionPos vectorAdd ([[random 50, 0, 0], random 360] call BIS_fnc_rotateVector2D), 0] call _createVehicle,
 		[_veh2, _missionPos vectorAdd ([[random 50, 0, 0], random 360] call BIS_fnc_rotateVector2D), 0] call _createVehicle,
-		[_veh3, _missionPos vectorAdd ([[random 50, 0, 0], random 360] call BIS_fnc_rotateVector2D), 0] call _createVehicle,
-		[_veh4, _missionPos vectorAdd ([[random 50, 0, 0], random 360] call BIS_fnc_rotateVector2D), 0] call _createVehicle,
-		[_veh5, _missionPos vectorAdd ([[random 50, 0, 0], random 360] call BIS_fnc_rotateVector2D), 0] call _createVehicle
+		[_veh3, _missionPos vectorAdd ([[random 50, 0, 0], random 360] call BIS_fnc_rotateVector2D), 0] call _createVehicle
 	];
 
 	_leader = effectiveCommander (_vehicles select 0);
@@ -117,11 +137,8 @@ _setupObjects =
 	_missionPicture = getText (configFile >> "CfgVehicles" >> _veh1 >> "picture");
 	_vehicleName = getText (configFile >> "CfgVehicles" >> _veh1 >> "displayName");
 	_vehicleName2 = getText (configFile >> "CfgVehicles" >> _veh2 >> "displayName");
-	_vehicleName3 = getText (configFile >> "CfgVehicles" >> _veh3 >> "displayName");
-	_vehicleName4 = getText (configFile >> "CfgVehicles" >> _veh4 >> "displayName");
-	_vehicleName5 = getText (configFile >> "CfgVehicles" >> _veh5 >> "displayName");
-
-	_missionHintText = format ["Uma grande frota de <t color='%3'>%1</t> estão a caça na ilha para matar e destruir, Destrua-os e recupere sua carga!", _vehicleName, _vehicleName2, _vehicleName3, _vehicleName4, _vehicleName5, mainMissionColor];
+	
+	_missionHintText = format ["Uma grande frota de <t color='%3'>%1</t> estão a caça na ilha para matar e destruir, Destrua-os e recupere sua carga!", _vehicleName, _vehicleName2, _vehicleName3, mainMissionColor];
 
 	_numWaypoints = count waypoints _aiGroup;
 };

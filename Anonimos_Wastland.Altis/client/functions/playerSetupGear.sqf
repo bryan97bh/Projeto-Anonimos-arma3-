@@ -42,7 +42,7 @@ switch (_donatorLevel) do
 {
 	default 
 	{
-		//_player addBackpack "B_LegStrapBag_black_F";
+		//_player addBackpack "B_AssaultPack_blk";
 		_player addMagazine "6Rnd_45ACP_Cylinder";
 		_player addWeapon "hgun_Pistol_heavy_02_F";
 		_player addMagazine "6Rnd_45ACP_Cylinder";

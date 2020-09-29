@@ -9,21 +9,21 @@
 
 if (!isServer) exitWith {};
 
-private ["_car", "_additionArray", "_nightTime", "_weapon", "_mag", "_additionOne", "_additionTwo", "_additionThree", "_additionfour", "_buildingLootOn", "_random"];
+private ["_car", "_additionArray", "_nightTime", "_weapon", "_mag", "_additionOne", "_additionTwo", "_additionThree", "_additionfour", "_additionfive", "_additionsix", "_additionseven", "_additioneithg", "_additionnine", "_buildingLootOn", "_random"];
 
 //Grabs car object from array in execVM
 _car = _this select 0;
 _additionArray = vehicleAddition;
 _nightTime = (date select 3 >= 18 || date select 3 < 5); // spawn night items between 18:00 and 05:00 (sunlight is completely gone by 20:00)
 
-// If night is falling, add flashlight, IR pointers, and NV goggles to loot possibilities
+/*/ If night is falling, add flashlight, IR pointers, and NV goggles to loot possibilities
 if (_nightTime) then
 {
 	{ _additionArray pushBack _x} forEach ["acc_flashlight", "acc_pointer_IR"];
 	if (random 1 < 0.15) then { _car addItemCargoGlobal ["NVGoggles", 1]};
 };
-
-if (random 1 < 0.45) then { _car addWeaponCargoGlobal ["Binocular", 1]};
+/*if (_nightTime) then { _car addMagazineCargoGlobal [_additionThree, 1] };
+if (random 1 < 0.45) then { _car addWeaponCargoGlobal ["Binocular", 1]};*/
 
 //Get Random Gun From randomWeapons Array.
 _weapon = vehicleWeapons call fn_selectRandomNested;
@@ -37,6 +37,22 @@ _additionThree = vehicleAddition2 call fn_selectRandomNested;
 
 _additionfour = vehicleAddition3 call fn_selectRandomNested;
 _additionArray = _additionArray - [_additionfour];
+
+_additionfive = vehicleAddition4 call fn_selectRandomNested;
+_additionArray = _additionArray - [_additionfive];
+
+_additionsix = vehicleAddition5 call fn_selectRandomNested;
+_additionArray = _additionArray - [_additionsix];
+
+_additionseven = vehicleAddition6 call fn_selectRandomNested;
+_additionArray = _additionArray - [_additionseven];
+
+_additioneithg = vehicleAddition7 call fn_selectRandomNested;
+_additionArray = _additionArray - [_additioneithg];
+
+_additionnine = vehicleAddition8 call fn_selectRandomNested;
+_additionArray = _additionArray - [_additionnine];
+
 _buildingLootOn = (["A3W_buildingLootWeapons"] call isConfigOn && (isNil "A3W_buildingLoot" || {["A3W_buildingLoot"] call isConfigOn}));
 
 // A3W_vehicleloot
@@ -67,12 +83,17 @@ switch (["A3W_vehicleLoot", 1] call getPublicVar) do
 	{
 		_car addWeaponCargoGlobal [_weapon, 1];
 		_car addMagazineCargoGlobal [_mag, 2 + floor random 3];
-
-		_car addItemCargoGlobal ["FirstAidKit", 1];
+		//_car addItemCargoGlobal ["FirstAidKit", 1];
 		_car addItemCargoGlobal [_additionOne, 1];
 		_car addItemCargoGlobal [_additionTwo, 1];
-		_car addBackpackCargoGlobal [_additionfour, 1];
-		if (_nightTime) then { _car addMagazineCargoGlobal [_additionThree, 1] };
+		_car addItemCargoGlobal [_additionThree, 1];
+		_car addItemCargoGlobal [_additionfour, 1];
+		_car addItemCargoGlobal [_additionfive, 1];
+		_car addItemCargoGlobal [_additionsix, 1];
+		_car addItemCargoGlobal [_additionseven, 1];
+		_car addBackpackCargoGlobal [_additioneithg, 1];
+		_car addItemCargoGlobal [_additionnine, 1]
+		//if (_nightTime) then { _car addItemCargoGlobal ["acc_flashlight", "acc_pointer_IR"]};
 	};
 	case 3:
 	{
@@ -88,7 +109,7 @@ switch (["A3W_vehicleLoot", 1] call getPublicVar) do
 		_car addItemCargoGlobal ["FirstAidKit", 2];
 		_car addItemCargoGlobal [_additionOne, 2];
 		_car addItemCargoGlobal [_additionTwo, 2];
-		_car addBackpackCargoGlobal [_additionfour, 1];
+		_car addItemCargoGlobal [_additionfour, 1];
 		if (_nightTime) then { _car addMagazineCargoGlobal [_additionThree, 1] };
 	};
 };

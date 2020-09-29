@@ -95,7 +95,7 @@ switch (_side) do
 			};
 			default
 			{
-				if (_item == "uniform") then { _result = "U_I_CombatUniform" };
+				if (_item == "uniform") then { _result = "U_I_CombatUniform_shortsleeve" }; 
 				if (_item == "vest") then { _result = "V_Rangemaster_belt" };
 			};
 		};
@@ -105,3 +105,4 @@ switch (_side) do
 };
 
 _result
+

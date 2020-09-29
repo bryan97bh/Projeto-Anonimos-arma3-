@@ -7,7 +7,7 @@
 if (!isServer) exitwith {};
 #include "hostileairMissionDefines.sqf"
 
-private ["_planeChoices", "_convoyVeh", "_veh1", "_veh2", "_veh3", "_veh4", "_veh5", "_createVehicle", "_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_vehicleName2", "_vehicleName3", "_vehicleName4", "_vehicleName5", "_numWaypoints", "_cash", "_boxes1", "_currBox1", "_boxes2", "_currBox2", "_box1", "_box2"];
+private ["_planeChoices", "_convoyVeh", "_veh1", "_veh2", "_veh3", "_createVehicle", "_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_vehicleName2", "_vehicleName3", "_numWaypoints", "_cash", "_boxes1", "_currBox1", "_boxes2", "_currBox2", "_box1", "_box2"];
 
 _setupVars =
 {
@@ -20,28 +20,44 @@ _setupObjects =
 	_missionPos = markerPos (((call cityList) call BIS_fnc_selectRandom) select 0);
 
 	_planeChoices =
-	[
+	[ 
 		[
-            "B_Heli_Light_01_dynamicLoadout_F",   //AH-9 Pawnee (Gun-Only)
-			"B_Heli_Light_01_dynamicLoadout_F",   //AH-9 Pawnee (Gun-Only)
-			"B_Heli_Light_01_dynamicLoadout_F",   //AH-9 Pawnee (Gun-Only)
-			"B_Heli_Transport_01_F",              //UH-80 Ghost Hawk)    
-            "B_Heli_Transport_01_F"               //UH-80 Ghost Hawk)  
+			"B_Heli_Transport_01_F",                //UH-80 Ghost Hawk)
+			"B_Heli_Light_01_dynamicLoadout_F",     //AH-9 Pawnee (Gun-Only)
+			"B_Heli_Light_01_dynamicLoadout_F"      //AH-9 Pawnee (Gun-Only)
 		],
 		[
-            "B_Heli_Transport_01_F",              //UH-80 Ghost Hawk)
-			"B_Heli_Transport_01_F",              //UH-80 Ghost Hawk)
-			"B_Heli_Transport_01_F",              //UH-80 Ghost Hawk)
-			"B_Heli_Transport_01_F",              //UH-80 Ghost Hawk)    
-            "B_Heli_Transport_01_F"               //UH-80 Ghost Hawk)  
+			"B_Heli_Transport_01_F",                //UH-80 Ghost Hawk
+			"I_Heli_light_03_dynamicLoadout_F",     //WY-55 Hellcat (Armed)
+			"I_Heli_light_03_dynamicLoadout_F"      //WY-55 Hellcat (Armed)
 		],
-        [
-            "B_Heli_Transport_01_F",              //UH-80 Ghost Hawk) 
-			"O_Heli_Attack_02_dynamicLoadout_F",  //Mi-48 Kajman
-			"O_Heli_Attack_02_dynamicLoadout_F",  //Mi-48 Kajman
-			"B_Heli_Attack_01_dynamicLoadout_F",  //AH-99 Blackfoot 
-            "B_Heli_Attack_01_dynamicLoadout_F"   //AH-99 Blackfoot 
+		[
+			"B_Heli_Transport_03_F",                //CH-67 Huron (Armed)
+			"O_Heli_Light_02_dynamicLoadout_F",     //PO-30 Orca (DAR)
+			"O_Heli_Light_02_dynamicLoadout_F"      //PO-30 Orca (DAR)
+		],
+		[
+			"B_Heli_Transport_01_F",                //UH-80 Ghost Hawk)
+			"B_Heli_Transport_01_F",                //UH-80 Ghost Hawk)
+			"B_Heli_Transport_01_F"                 //UH-80 Ghost Hawk)
+		],
+		//--------------------------------------------------------------------//
+	    [
+			"B_Heli_Transport_01_F",                 //UH-80 Ghost Hawk
+			"O_Heli_Attack_02_dynamicLoadout_F",     //Mi-48 Kajman
+			"O_Heli_Attack_02_dynamicLoadout_F"      //Mi-48 Kajman
+		],
+		[
+			"B_Heli_Transport_01_F",                 //UH-80 Ghost Hawk
+			"B_Heli_Attack_01_dynamicLoadout_F",     //AH-99 Blackfoot
+			"B_Heli_Attack_01_dynamicLoadout_F"      //AH-99 Blackfoot
+		],
+		[
+			"B_Heli_Transport_01_F",                 //UH-80 Ghost Hawk
+			"O_Heli_Attack_02_dynamicLoadout_F",     //Mi-48 Kajman
+			"B_Heli_Attack_01_dynamicLoadout_F"      //AH-99 Blackfoot
 		]
+
 	];
 
 	_convoyVeh = _planeChoices call BIS_fnc_selectRandom;
@@ -49,8 +65,6 @@ _setupObjects =
 	_veh1 = _convoyVeh select 0;
 	_veh2 = _convoyVeh select 1;
 	_veh3 = _convoyVeh select 2;
-	_veh4 = _convoyVeh select 3;
-	_veh5 = _convoyVeh select 4;
 
 	_createVehicle =
 	{
@@ -85,7 +99,7 @@ _setupObjects =
 		// add pilot
 		_soldier = [_aiGroup, _position] call createRandomPilot;
 		_soldier moveInDriver _vehicle;
-        
+		
 		switch (true) do
 		{
 			case (_type isKindOf "B_Heli_Transport_01_F" || _type isKindOf "B_Heli_Transport_03_F"):
@@ -105,7 +119,6 @@ _setupObjects =
 				_soldier moveInGunner _vehicle;
 			};
 		};
-    
 
         // lock the vehicle until the mission is finished and initialize cleanup on it	
 		[_vehicle, _aiGroup] spawn checkMissionVehicleLock;
@@ -118,9 +131,7 @@ _setupObjects =
 	[
 		[_veh1, _missionPos vectorAdd ([[random 50, 0, 0], random 360] call BIS_fnc_rotateVector2D), 0] call _createVehicle,
 		[_veh2, _missionPos vectorAdd ([[random 50, 0, 0], random 360] call BIS_fnc_rotateVector2D), 0] call _createVehicle,
-		[_veh3, _missionPos vectorAdd ([[random 50, 0, 0], random 360] call BIS_fnc_rotateVector2D), 0] call _createVehicle,
-		[_veh4, _missionPos vectorAdd ([[random 50, 0, 0], random 360] call BIS_fnc_rotateVector2D), 0] call _createVehicle,
-		[_veh5, _missionPos vectorAdd ([[random 50, 0, 0], random 360] call BIS_fnc_rotateVector2D), 0] call _createVehicle
+		[_veh3, _missionPos vectorAdd ([[random 50, 0, 0], random 360] call BIS_fnc_rotateVector2D), 0] call _createVehicle
 	];
 
 	_leader = effectiveCommander (_vehicles select 0);
@@ -152,10 +163,8 @@ _setupObjects =
 	_vehicleName = getText (configFile >> "CfgVehicles" >> _veh1 >> "displayName");
 	_vehicleName2 = getText (configFile >> "CfgVehicles" >> _veh2 >> "displayName");
 	_vehicleName3 = getText (configFile >> "CfgVehicles" >> _veh3 >> "displayName");
-	_vehicleName4 = getText (configFile >> "CfgVehicles" >> _veh4 >> "displayName");
-	_vehicleName5 = getText (configFile >> "CfgVehicles" >> _veh5 >> "displayName");
 
-	_missionHintText = format ["Uma grande frota de <t color='%3'>%1</t> estão a caça na ilha para matar e destruir, Destrua-os e recupere sua carga!", _vehicleName, _vehicleName2, _vehicleName3, _vehicleName4, _vehicleName5, mainMissionColor];
+	_missionHintText = format ["Uma patrulha aérea está na ilha.Contendo um <t color='%3'>%1</t> e dois <t color='%3'>%2</t>. Destrua eles e pegue a carga que eles carregam!", _vehicleName, _vehicleName2, mainMissionColor];
 
 	_numWaypoints = count waypoints _aiGroup;
 };

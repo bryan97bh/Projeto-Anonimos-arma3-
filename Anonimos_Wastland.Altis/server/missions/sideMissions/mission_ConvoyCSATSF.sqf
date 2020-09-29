@@ -1,13 +1,14 @@
 // ******************************************************************************************
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
-//	@file modified : Bryan /  matar e destruir vencer pelo brasil 
-//	@file Created: 19/07/2020
+//	@file Name: mission_DrugsRunners.sqf
+//	@file Author: Staynex
+//  @file Author: bryan 
 
 if (!isServer) exitwith {};
 #include "sideMissionDefines.sqf";
 
-private ["_convoyVeh", "_veh1", "_veh2", "_createVehicle", "_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_numWaypoints", "_drop_item", "_drugpilerandomizer", "_drugpile", "_box1", "_box2" ,"_cal1"];
+private ["_convoyVeh", "_veh1", "_veh2", "_createVehicle", "_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_numWaypoints", "_drop_item", "_drugpilerandomizer", "_drugpile", "_cal1", "_cal2"];
 
 _setupVars =
 {
@@ -56,15 +57,11 @@ _setupObjects =
         _soldier = [_aiGroup, _position] call createRandomSoldier;
 		_soldier moveInGunner  _vehicle;
 		
-		_soldier = [_aiGroup, _position] call createRandomSoldier;
-		_soldier moveInCargo _vehicle;
-		
 		_vehicle addEventhandler ["HandleDamage", {0.75*(_this select 2)}];
 		_vehicle addEventhandler ["HandleDamage", {if (_this select 1 in ["wheel_1_1_steering","wheel_1_2_steering","wheel_2_1_steering","wheel_2_2_steering"]) then {0*(_this select 2)}}];
 
 		[_vehicle, _aiGroup] spawn checkMissionVehicleLock;
-    
-		/*[_vehicle, "client\images\vehicleTextures\hippie.paa"] call applyVehicleTexture;*/
+		//[_vehicle, "client\images\vehicleTextures\hippie.paa"] call applyVehicleTexture;
 
 		_vehicle
 	};
@@ -142,21 +139,42 @@ _drop_item =
 _successExec =
 {
 	// Mission completed
-	_box1 = createVehicle ["Box_NATO_Wps_F", _lastPos, [], 2, "None"];
+	/*_box1 = createVehicle ["Box_NATO_Wps_F", _lastPos, [], 2, "None"];
 	_box1 setDir random 360;
 	[_box1, ["MILITIA", "OTHER"] call BIS_fnc_selectRandom] call fn_refillbox;
     
-    
-	_box2 = createVehicle ["Box_NATO_Wps_F", _lastPos, [], 2, "None"];
+    /*
+	_box2 = createVehicle ["Box_East_WpsSpecial_F", _lastPos, [], 2, "None"];
 	_box2 setDir random 360;
 	[_box2, ["US", "OTHER"] call BIS_fnc_selectRandom] call fn_refillbox;
-    
-	_cal1 = createVehicle ["I_HMG_01_F", _lastPos, [], 2, "None"];
+    */
+
+    _cal1 = createVehicle ["I_HMG_01_F", _lastPos, [], 2, "None"];
 	_cal1 setDir random 360;
+	
+	_cal2 = createVehicle ["I_HMG_02_F", _lastPos, [], 2, "None"];
+	_cal2 setDir random 360;
 
 	//{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2];
-    { _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2 , _cal1];
+    { _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_cal1, _cal2];
     
+    
+    //Spawn some drugs ;) As Staynex hates drugs :P
+	_drugpilerandomizer = [2,3,4];
+	_drugpile = _drugpilerandomizer call BIS_fnc_SelectRandom;
+	
+	for "_i" from 1 to _drugpile do 
+	{
+	  private["_item"];
+	  _item = [
+	          ["energydrink", "Land_Can_V3_F"],
+	          ["energydrink", "Land_Can_V3_F"],
+	          ["energydrink", "Land_Can_V3_F"],
+	          ["energydrink", "Land_Can_V3_F"]
+	        ] call BIS_fnc_selectRandom;
+	  [_item, _lastPos] call _drop_item;
+	};
+	
 	_successHintMessage = "A patrulha foi eliminada, pegue o pacote e saia dai";
 };
 

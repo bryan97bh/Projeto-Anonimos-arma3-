@@ -8,12 +8,14 @@ if (!isServer) exitWith {};
 // Mission filename, weight 
 MainMissions =
 [
-	["mission_LightArmVeh2", 1],       //VIATURA DE COMBATE
-	["mission_LightArmVeh", 1.1],      //VEÍCULO LEVE DE COMBATE
+	["mission_LightArmVeh2", 1.1],     //VIATURA DE COMBATE
+	["mission_LightArmVeh", 1],        //VEÍCULO LEVE DE COMBATE
 	["mission_APC", 0.7],              //VEÍCULO ANTIAÉREO/VEÍCULO DE COMBATE DE INFANTARIA/VEÍCULO BLINDADO DE COMBATE/TRANSPORTADOR DE TROPA BLINDADO
 	["mission_MBT", 0.4],              //CAVALARIA BLINDADA
 	["mission_CivHeli", 1.2],          //HELICÓPTERO DE SUPORTE
-	["mission_ArmedHeli", 1],          //HELICÓPTERO GUARNECIDO
+	["mission_ArmedHeli", 1],          //HELICÓPTERO GUARNECIDO 
+	["mission_ArmedHeli2", 0.6],       //HELICÓPTERO DE ATAQUE GUARNECIDO 
+	["mission_Abandoneddrone", 0.5],   //drone ABANDONADO
     ["mission_AbandonedJet", 0.4]      //AERONAVE ABANDONADA
 ];
 
@@ -52,12 +54,11 @@ hostileairMissions =
 [
 	["mission_HostileHelicopter", 1.5],   //HELICÓPTERO HOSTIL
     ["mission_FORMAÇAODEHELI", 1],        //HELICÓPTEROS HOSTIS
-	["mission_OPRESSAOAÉREA2", 0.4],      //PATRULHA AÉREA
+	["mission_PATRULHAAEREA", 0.4],       //PATRULHA AÉREA
 	["mission_HostileJet", 1.5],          //JATO HOSTIL
 	["mission_HostileJetFormation", 1],   //JATOS HOSTIS
 	["mission_OPRESSAOAÉREA", 0.4],       //OPRESSÃO AÉREA
 	["mission_PATRULHAVTOL", 0.5]         //PATRULHA VTOL 
-	
 ];
 
 aquaticMissions =
