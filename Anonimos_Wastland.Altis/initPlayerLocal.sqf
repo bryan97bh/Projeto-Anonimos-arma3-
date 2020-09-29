@@ -10,6 +10,8 @@ playerMoneyTransactions = [getPlayerUID player,[]];
 player addEventHandler ["Fired", {_this spawn armajunkies_fnc_aj_c_firedWeapon}];
 player addEventHandler ["Take", {diag_log "Took Weapon"; _this spawn armajunkies_fnc_aj_c_evtookSomeThing}];
 player addEventHandler ["InventoryClosed", {diag_log "Took Weapon"; _this spawn armajunkies_fnc_aj_c_evInventoryClosed}];
+null = [player] execVM "addons\GrassCutter\grasscutter.sqf";
+player addEventhandler["respawn","_this execVM 'addons\GrassCutter\grasscutter.sqf'"];
 
 "ColorCorrections" ppEffectEnable true; 
 "ColorCorrections" ppEffectAdjust [0.88, 0.88, 0, [0.2, 0.29, 0.4, -0.22], [1, 1, 1, 1.3], [0.15, 0.09, 0.09, 0.0]];
@@ -20,7 +22,7 @@ player addEventHandler ["InventoryClosed", {diag_log "Took Weapon"; _this spawn 
 		(_this select 1) spawn armajunkies_fnc_aj_c_createTearTrigger;
 	};
 };
-//END AJ
+//END 
 
 
 if (!isServer) then
