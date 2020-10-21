@@ -8,7 +8,7 @@ if (!isServer) exitWith {};
 // Mission filename, weight 
 MainMissions =
 [
-	["mission_LightArmVeh2", 1.1],     //VIATURA DE COMBATE
+    ["mission_LightArmVeh2", 1.1],     //VIATURA DE COMBATE
 	["mission_LightArmVeh", 1],        //VEÍCULO LEVE DE COMBATE
 	["mission_APC", 0.7],              //VEÍCULO ANTIAÉREO/VEÍCULO DE COMBATE DE INFANTARIA/VEÍCULO BLINDADO DE COMBATE/TRANSPORTADOR DE TROPA BLINDADO
 	["mission_MBT", 0.4],              //CAVALARIA BLINDADA
@@ -16,7 +16,17 @@ MainMissions =
 	["mission_ArmedHeli", 1],          //HELICÓPTERO GUARNECIDO 
 	["mission_ArmedHeli2", 0.6],       //HELICÓPTERO DE ATAQUE GUARNECIDO 
 	["mission_Abandoneddrone", 0.5],   //drone ABANDONADO
-    ["mission_AbandonedJet", 0.5]      //AERONAVE ABANDONADA
+    ["mission_AbandonedJet", 0.5],     //AERONAVE ABANDONADA
+//-------------------_v2--------------------------------------
+	["mission_LightArmVeh2_v2", 1.0],     //VIATURA DE COMBATE
+	["mission_LightArmVeh_v2", 0.9],      //VEÍCULO LEVE DE COMBATE
+	["mission_APC_v2", 0.6],              //VEÍCULO ANTIAÉREO/VEÍCULO DE COMBATE DE INFANTARIA/VEÍCULO BLINDADO DE COMBATE/TRANSPORTADOR DE TROPA BLINDADO
+	["mission_MBT_v2", 0.5],              //CAVALARIA BLINDADA
+	["mission_CivHeli_v2", 1.1],          //HELICÓPTERO DE SUPORTE
+	["mission_ArmedHeli_v2", 0.9],        //HELICÓPTERO GUARNECIDO 
+	["mission_ArmedHeli2_v2", 0.5],       //HELICÓPTERO DE ATAQUE GUARNECIDO 
+	["mission_Abandoneddrone_v2", 0.4],   //drone ABANDONADO
+    ["mission_AbandonedJet_v2", 0.4]      //AERONAVE ABANDONADA
 ];
 
 SideMissions =
@@ -32,11 +42,11 @@ SideMissions =
 
 MoneyMissions =
 [
-	["mission_MoneyShipment", 1.5],    //ESCOLTA DE DINHEIRO
+	["mission_MoneyShipment", 0.8],    //ESCOLTA DE DINHEIRO
+    ["mission_MoneyShipment2", 0.5],   //ESCOLTA DE DINHEIRO
     ["mission_HostageRescue", 1],      //RESGATE AO REFÉM
     ["mission_Roadblock", 1],          //BLOQUEIO NA ESTRADA
-    ["mission_Terror", 1.6],           //GRUPO TERRORISTA
-	["mission_HackLaptop", 0.3]	   //Hackers
+	["mission_HackLaptop", 0.3]	         //Hackers
 	//["mission_Satellite_Uplink", 0.4]  //SAT
 ];
 
@@ -44,10 +54,12 @@ PrincipalMissions =
 [
 	["mission_Sniper", 0.8],           //SNIPES 
 	["mission_OCUPACAO", 1.4],         //OCUPACAO
-    ["mission_TownInvasion", 1.5],     //CIDADE INVADIDA
+    ["mission_TownInvasion", 1.3],     //CIDADE INVADIDA
+	["mission_Terror", 0.9],          //GRUPO TERRORISTA
 	["mission_MiniConvoy", 1],         //ESCOLTA ARMADA
-	["mission_Outpost", 1.3],          //POSTO AVANÇADO
-	["mission_Convoy", 1]              //COMBOIO SUSPEITO 
+	["mission_Outpost", 1.5],          //POSTO AVANÇADO
+	["mission_Convoy", 1],             //COMBOIO SUSPEITO 
+	["mission_PATRULHADEALTIS", 0.7]   //PATRULHADEALTIS
 ];
 
 hostileairMissions =
@@ -55,11 +67,9 @@ hostileairMissions =
 	["mission_HostileHelicopter", 1.5],   //HELICÓPTERO HOSTIL
     ["mission_FORMAÇAODEHELI", 1.2],      //HELICÓPTEROS HOSTIS
 	["mission_PATRULHAAEREA", 0.6],       //PATRULHA AÉREA
-
 	["mission_HostileJet", 1.2],          //JATO HOSTIL
 	["mission_HostileJetFormation", 1],   //JATOS HOSTIS
 	["mission_OPRESSAOAÉREA", 0.4],       //OPRESSÃO AÉREA
-
 	["mission_PATRULHAVTOL", 0.5]         //PATRULHA VTOL 
 ];
 

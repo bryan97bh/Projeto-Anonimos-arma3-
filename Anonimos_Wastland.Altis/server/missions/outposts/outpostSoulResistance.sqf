@@ -1,5 +1,5 @@
 // ******************************************************************************************
-// * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
+// * This project is licensed under the GNU Affero GPL v3. Copyright ï¿½ 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Name: outpostSoulResistance.sqf
 //	@file Author: soulkobk, Staynex
@@ -51,8 +51,8 @@
     ["Land_BagFence_Long_F",[-1.61323,12.4438,0],270],
     ["Land_BagFence_Long_F",[-7.5,-4,2.75],0],
     ["Land_BagFence_Long_F",[-0.238232,10.9438,0],180],
-    //["O_CargoNet_01_ammo_F", [0,0,0],0, { [_this, ["US", "RU", "OTHER"] call BIS_fnc_selectRandom] call fn_refillbox }],
-    //["O_CargoNet_01_ammo_F", [-7.375,-4.75,0],0, { [_this, ["US", "RU", "OTHER"] call BIS_fnc_selectRandom] call fn_refillbox }],
+    ["O_CargoNet_01_ammo_F", [0,0,0],0, { [_this, ["US", "RU", "OTHER"] call BIS_fnc_selectRandom] call fn_refillbox }],
+    ["O_CargoNet_01_ammo_F", [-7.375,-4.75,0],0, { [_this, ["US", "RU", "OTHER"] call BIS_fnc_selectRandom] call fn_refillbox }],
     ["O_CargoNet_01_ammo_F", [7.07523,4.21517,0],0, { [_this, ["US", "RU", "OTHER"] call BIS_fnc_selectRandom] call fn_refillbox }],
     ["Land_BagFence_Short_F",[-8.288,-1.466,0],225],
     ["Land_BagFence_Short_F",[7.625,-7.25,0],45],

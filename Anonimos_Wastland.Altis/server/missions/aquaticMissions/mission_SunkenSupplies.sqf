@@ -7,7 +7,7 @@
 if (!isServer) exitwith {};
 #include "aquaticMissionDefines.sqf"
 
-private ["_box1", "_box2", "_boxPos"];
+private ["_box1", "_box2", "_box3", "_box4", "_boxPos"];
 
 _setupVars =
 {
@@ -18,13 +18,19 @@ _setupVars =
 _setupObjects =
 {
 	_missionPos = markerPos _missionLocation;
-	_randomBox = ["mission_USLaunchers","mission_Uniform","mission_HVSniper"] call BIS_fnc_selectRandom;
-	_randomBox2 = ["mission_USSpecial","mission_Main_A3snipers","mission_HVLaunchers"] call BIS_fnc_selectRandom;
+	_randomBox = ["O_CargoNet_01_ammo_F","mission_Uniform","mission_HVSniper"] call BIS_fnc_selectRandom;
+	_randomBox2 = ["mission_USSpecial","B_supplyCrate_F","mission_HVLaunchers"] call BIS_fnc_selectRandom;
 	_box1 = createVehicle ["Box_East_Wps_F", _missionPos, [], 5, "None"];
 	[_box1, ["RU", "MILITIA"] call BIS_fnc_selectRandom] call fn_refillbox;
 
 	_box2 = createVehicle ["Box_East_Wps_F", _missionPos, [], 5, "None"];
 	[_box2, ["RU", "MILITIA"] call BIS_fnc_selectRandom] call fn_refillbox;
+
+	_box3 = createVehicle ["Box_East_Wps_F", _missionPos, [], 5, "None"];
+	[_box3, ["RU", "MILITIA"] call BIS_fnc_selectRandom] call fn_refillbox;
+
+	_box4 = createVehicle ["Box_East_Wps_F", _missionPos, [], 5, "None"];
+	[_box4, ["RU", "MILITIA"] call BIS_fnc_selectRandom] call fn_refillbox;
 
 	{
 		_boxPos = getPosASL _x;
@@ -32,7 +38,7 @@ _setupObjects =
 		_x setPos _boxPos;
 		_x setDir random 360;
 		_x setVariable ["R3F_LOG_disabled", true, true];
-	} forEach [_box1, _box2];
+	} forEach [_box1, _box2, _box3, _box4];
 
 	_aiGroup = createGroup CIVILIAN;
 	[_aiGroup, _missionPos] call createSmallDivers;
@@ -47,13 +53,13 @@ _waitUntilCondition = nil;
 _failedExec =
 {
 	// Mission failed
-	{ deleteVehicle _x } forEach [_box1, _box2];
+	{ deleteVehicle _x } forEach [_box1, _box2, _box3, _box4];
 };
 
 _successExec =
 {
 	// Mission completed
-	{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2];
+	{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2, _box3, _box4];
 
 	_successHintMessage = "Suprimentos afundados foram recolhidos.";
 };

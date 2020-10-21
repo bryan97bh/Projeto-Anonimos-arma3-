@@ -3,12 +3,12 @@
 //	@file Author: Cael817, CRE4MPIE, LouD, AgentRev
 
 #define HVT_AMOUNT 40000  // how much a player needs to be carrying to become a HvT
-#define HINT_DELAY 180  // number of seconds between each HvT reminder hint
-#define MARKER_REFRESH 60  // number of seconds between each HvT marker refresh
+#define HINT_DELAY 60  // number of seconds between each HvT reminder hint
+#define MARKER_REFRESH 30  // number of seconds between each HvT marker refresh
 
 if (isServer) then
 {
-	["HvT_deleteMarker", "onPlayerDisconnected", { deleteMarker ("HvT_" + _uid) }] call BIS_fnc_addStackedEventHandler;
+	addMissionEventHandler ["PlayerDisconnected", { deleteMarker ("HvT_" + (_this select 1)) }];
 };
 
 if (!hasInterface) exitWith {};
@@ -27,9 +27,9 @@ while {true} do
 	if (_isHvT && diag_tickTime - _lastHint >= HINT_DELAY) then
 	{
 		hint parseText ([
-			"<t color='#FF0000' size='1.5' align='center'>High Value VIP</t>",
+			"<t color='#FF0000' size='1.5' align='center'>ALVO DE ALTO VALOR (DINHEIRO)</t>",
 			//profileName,
-			"<t color='#FFFFFF' shadow='1' shadowColor='#000000' align='center'>Someone has spotted you carrying a large sum of money and has marked your location on the map!</t>"
+			"<t color='#FFFFFF' shadow='1' shadowColor='#000000' align='center'>ALGUEM FOI MARCADO NO MAPA CARREGANDO UMA GRANDE QUANTIDADE DE DINHEIRO!</t>"
 		] joinString "<br/>");
 
 		_lastHint = diag_tickTime;
@@ -48,20 +48,9 @@ while {true} do
 
 		if (_isHvT) then
 		{
-			createMarker [_markerName, getPosWorld player];			
-			//_markerName setMarkerText format [" VIP: %1 ($%2k)", profileName, (floor ((player getVariable ["cmoney",0]) / 1000)) call fn_numToStr];
-            
-            //Code Optimization - call_if_exitWith is faster than switch /Staynex 
-            _player_money = floor (player getVariable ["cmoney",0]);            
-            call {
-                if (_player_money < 70000) exitWith {_markerName setMarkerText format ["VIP: %1", profileName]};
-                if (_player_money < 110000) exitWith {_markerName setMarkerText format ["High VIP: %1", profileName]};
-                if (_player_money < 500000) exitWith {_markerName setMarkerText format ["Very High VIP: %1", profileName]};
-                if (_player_money >= 500000) exitWith {_markerName setMarkerText format ["Dagobert Duck $$$ - Extreme High VIP: %1", profileName]};
-            };
-            
-            
-            _markerName setMarkerColor "ColorRed";
+			createMarker [_markerName, getPosWorld player];
+			_markerName setMarkerColor "ColorRed";
+			_markerName setMarkerText format ["ALTO VALOR! %1 ($%2K)", profileName, (floor ((player getVariable ["cmoney",0]) / 1000)) call fn_numToStr];
 			_markerName setMarkerSize [0.75, 0.75];
 			_markerName setMarkerShape "ICON";
 			_markerName setMarkerType "mil_warning";
@@ -69,7 +58,7 @@ while {true} do
 			_lastMarker = diag_tickTime;
 			_markerTarget = player;
 			_hasMarker = true;
-			playSound "Topic_Done";
+			//playSound "Topic_Done";
 		};
 	};
 

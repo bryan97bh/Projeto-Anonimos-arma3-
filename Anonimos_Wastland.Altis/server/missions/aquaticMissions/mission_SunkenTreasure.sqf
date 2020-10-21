@@ -10,7 +10,7 @@
 if (!isServer) exitwith {};
 #include "aquaticMissionDefines.sqf";
 
-private ["_cashObjects", "_cash", "_cashPos", "_box1", "_boxPos", "_vehicleClass", "_vehicle"];
+private ["_cashObjects", "_cash", "_cashPos", "_vehicleClass", "_vehicle", "_wreck", "_wreck2"];
 
 _setupVars =
 {
@@ -22,10 +22,10 @@ _setupObjects =
 {
 	_missionPos = markerPos _missionLocation;
 
-	_box1 = createVehicle ["Box_NATO_Wps_F", _missionPos, [], 0, "None"];
-	_box1 setVariable ["R3F_LOG_disabled", true, true];
-	_box1 setDir random 360;
-	[_box1, "mission_USSpecial"] call randomCrateLoadOut;
+	_wreck = createVehicle ["Land_Wreck_Traw_F", _missionPos, [], 2, "None"];
+	_wreck setDir random 360;
+	_wreck2 = createVehicle ["Land_Wreck_Traw2_F", _missionPos, [], 15, "None"];
+	_wreck2 setDir random 360;
 
 	_cashObjects = [];
 
@@ -39,7 +39,7 @@ _setupObjects =
 		//_cash setPos _cashPos;
 
 		// Money value is set only when AI are dead
-		_cashObjects pushBack _cash;
+		_cashObjects pushBack _cash, _wreck, _wreck2;
 	};
 
 	_vehicleClass = ["B_Boat_Armed_01_minigun_F", "O_Boat_Armed_01_hmg_F", "I_Boat_Armed_01_minigun_F"] call BIS_fnc_selectRandom;
@@ -55,7 +55,7 @@ _setupObjects =
 	[_vehicle, _aiGroup] spawn checkMissionVehicleLock;
 
 	_missionPicture = getText (configFile >> "CfgVehicles" >> _vehicleClass >> "picture");
-	_missionHintText = format ["Um tesouro contendo <t color='%1'>$30,000</t> e caixas de armas foi descoberto.<br/>Se você for realizar essa missão, você irá precisar de roupa e armas especiais.", aquaticMissionColor];
+	_missionHintText = format ["Um tesouro contendo <t color='%1'>$50,000</t> e caixas de armas foi descoberto.<br/>Se você for realizar essa missão, você irá precisar de roupa e armas especiais.", aquaticMissionColor];
 };
 
 _waitUntilMarkerPos = nil;
@@ -79,10 +79,12 @@ _successExec =
 
 	// Give the rewards
 	{
-		_x setVariable ["cmoney", 3000, true];
+		_x setVariable ["cmoney", 5000, true];
 		_x setVariable ["owner", "world", true];
 		_x setVariable ["persistent", false, true];
 	} forEach _cashObjects;
+
+	{ deleteVehicle _x } forEach [_wreck, _wreck2];
 
 	_successHintMessage = "A guarnição do tesouro foi eliminada. Agora é só recolher o dinheiro.";
 };

@@ -7,7 +7,7 @@
 
 if (!isServer) exitWith {};
 
-private ["_group", "_pos", "_leader", "_man2", "_man3", "_man4", "_man5", "_man6"];
+private ["_group", "_pos", "_leader", "_man2", "_man3", "_man4", "_man5", "_man6", "_man7", "_man8", "_man9", "_man10", "_man11", "_man12", "_man13", "_man14", "_man15", "_man16", "_man17", "_man18", "_man19", "_man20"];
 
 _group = _this select 0;
 _pos = _this select 1;
@@ -77,6 +77,162 @@ _man6 addMagazine "20Rnd_556x45_UW_Mag";
 _man6 addWeapon "arifle_SDAR_F";
 _man6 addMagazine "20Rnd_556x45_UW_Mag";
 _man6 addMagazine "20Rnd_556x45_UW_Mag";
+
+// Rifleman
+_man7 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man7;
+_man7 addUniform "U_B_Wetsuit";
+_man7 addVest "V_RebreatherB";
+_man7 addGoggles "G_Diving";
+_man7 addMagazine "20Rnd_556x45_UW_Mag";
+_man7 addWeapon "arifle_SDAR_F";
+_man7 addMagazine "20Rnd_556x45_UW_Mag";
+_man7 addMagazine "20Rnd_556x45_UW_Mag";
+
+// Rifleman
+_man8 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man8;
+_man8 addUniform "U_B_Wetsuit";
+_man8 addVest "V_RebreatherB";
+_man8 addGoggles "G_Diving";
+_man8 addMagazine "20Rnd_556x45_UW_Mag";
+_man8 addWeapon "arifle_SDAR_F";
+_man8 addMagazine "20Rnd_556x45_UW_Mag";
+_man8 addMagazine "20Rnd_556x45_UW_Mag";
+
+// Rifleman
+_man9 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man9;
+_man9 addUniform "U_B_Wetsuit";
+_man9 addVest "V_RebreatherB";
+_man9 addGoggles "G_Diving";
+_man9 addMagazine "20Rnd_556x45_UW_Mag";
+_man9 addWeapon "arifle_SDAR_F";
+_man9 addMagazine "20Rnd_556x45_UW_Mag";
+_man9 addMagazine "20Rnd_556x45_UW_Mag";
+
+// Rifleman
+_man10 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man10;
+_man10 addUniform "U_B_Wetsuit";
+_man10 addVest "V_RebreatherB";
+_man10 addGoggles "G_Diving";
+_man10 addMagazine "20Rnd_556x45_UW_Mag";
+_man10 addWeapon "arifle_SDAR_F";
+_man10 addMagazine "20Rnd_556x45_UW_Mag";
+_man10 addMagazine "20Rnd_556x45_UW_Mag";
+
+// Rifleman
+_man11 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man11;
+_man11 addUniform "U_B_Wetsuit";
+_man11 addVest "V_RebreatherB";
+_man11 addGoggles "G_Diving";
+_man11 addMagazine "20Rnd_556x45_UW_Mag";
+_man11 addWeapon "arifle_SDAR_F";
+_man11 addMagazine "20Rnd_556x45_UW_Mag";
+_man11 addMagazine "20Rnd_556x45_UW_Mag";
+
+// Rifleman
+_man12 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man12;
+_man12 addUniform "U_B_Wetsuit";
+_man12 addVest "V_RebreatherB";
+_man12 addGoggles "G_Diving";
+_man12 addMagazine "20Rnd_556x45_UW_Mag";
+_man12 addWeapon "arifle_SDAR_F";
+_man12 addMagazine "20Rnd_556x45_UW_Mag";
+_man12 addMagazine "20Rnd_556x45_UW_Mag";
+
+// Rifleman
+_man13 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man13;
+_man13 addUniform "U_B_Wetsuit";
+_man13 addVest "V_RebreatherB";
+_man13 addGoggles "G_Diving";
+_man13 addMagazine "20Rnd_556x45_UW_Mag";
+_man13 addWeapon "arifle_SDAR_F";
+_man13 addMagazine "20Rnd_556x45_UW_Mag";
+_man13 addMagazine "20Rnd_556x45_UW_Mag";
+
+// Rifleman
+_man14 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man14;
+_man14 addUniform "U_B_Wetsuit";
+_man14 addVest "V_RebreatherB";
+_man14 addGoggles "G_Diving";
+_man14 addMagazine "20Rnd_556x45_UW_Mag";
+_man14 addWeapon "arifle_SDAR_F";
+_man14 addMagazine "20Rnd_556x45_UW_Mag";
+_man14 addMagazine "20Rnd_556x45_UW_Mag";
+
+// Rifleman
+_man15 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man15;
+_man15 addUniform "U_B_Wetsuit";
+_man15 addVest "V_RebreatherB";
+_man15 addGoggles "G_Diving";
+_man15 addMagazine "20Rnd_556x45_UW_Mag";
+_man15 addWeapon "arifle_SDAR_F";
+_man15 addMagazine "20Rnd_556x45_UW_Mag";
+_man15 addMagazine "20Rnd_556x45_UW_Mag";
+
+// Rifleman
+_man16 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man16;
+_man16 addUniform "U_B_Wetsuit";
+_man16 addVest "V_RebreatherB";
+_man16 addGoggles "G_Diving";
+_man16 addMagazine "20Rnd_556x45_UW_Mag";
+_man16 addWeapon "arifle_SDAR_F";
+_man16 addMagazine "20Rnd_556x45_UW_Mag";
+_man16 addMagazine "20Rnd_556x45_UW_Mag";
+
+// Rifleman
+_man17 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man17;
+_man17 addUniform "U_B_Wetsuit";
+_man17 addVest "V_RebreatherB";
+_man17 addGoggles "G_Diving";
+_man17 addMagazine "20Rnd_556x45_UW_Mag";
+_man17 addWeapon "arifle_SDAR_F";
+_man17 addMagazine "20Rnd_556x45_UW_Mag";
+_man17 addMagazine "20Rnd_556x45_UW_Mag";
+
+// Rifleman
+_man18 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man18;
+_man18 addUniform "U_B_Wetsuit";
+_man18 addVest "V_RebreatherB";
+_man18 addGoggles "G_Diving";
+_man18 addMagazine "20Rnd_556x45_UW_Mag";
+_man18 addWeapon "arifle_SDAR_F";
+_man18 addMagazine "20Rnd_556x45_UW_Mag";
+_man18 addMagazine "20Rnd_556x45_UW_Mag";
+
+// Rifleman
+_man19 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man19;
+_man19 addUniform "U_B_Wetsuit";
+_man19 addVest "V_RebreatherB";
+_man19 addGoggles "G_Diving";
+_man19 addMagazine "20Rnd_556x45_UW_Mag";
+_man19 addWeapon "arifle_SDAR_F";
+_man19 addMagazine "20Rnd_556x45_UW_Mag";
+_man19 addMagazine "20Rnd_556x45_UW_Mag";
+
+// Rifleman
+_man20 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man20;
+_man20 addUniform "U_B_Wetsuit";
+_man20 addVest "V_RebreatherB";
+_man20 addGoggles "G_Diving";
+_man20 addMagazine "20Rnd_556x45_UW_Mag";
+_man20 addWeapon "arifle_SDAR_F";
+_man20 addMagazine "20Rnd_556x45_UW_Mag";
+_man20 addMagazine "20Rnd_556x45_UW_Mag";
+
+
 
 _leader = leader _group;
 

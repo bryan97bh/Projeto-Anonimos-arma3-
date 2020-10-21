@@ -19,9 +19,9 @@ if (!isNil "_uid") then {
 
 	_panelOptions = 
 	[
-		"Open Door",
-		"Close Door",
-		"Change PIN"
+		"Abrir Porta ",
+		"Fechar Porta",
+		"Mudar Senha"
 	];
 
 	{

@@ -32,7 +32,7 @@ clearItemCargoGlobal _box;
 if (_boxType == "US") then { _boxType = (["mission_USLaunchers", "mission_USRifles", "mission_USMachineguns", "mission_USSniper"] call BIS_fnc_selectRandom) };
 if (_boxType == "RU") then { _boxType = (["mission_RULaunchers", "mission_RURifles", "mission_RUMachineguns", "mission_RUSniper"] call BIS_fnc_selectRandom) };
 if (_boxType == "MILITIA") then { _boxType = (["mission_Militia"] call BIS_fnc_selectRandom) };
-if (_boxType == "OTHER") then { _boxType = (["mission_PDW", "mission_Explosive", "mission_Gear", "mission_Diving"] call BIS_fnc_selectRandom) };
+if (_boxType == "OTHER") then { _boxType = (["mission_PDW", "mission_Gear", "mission_Diving"] call BIS_fnc_selectRandom) };
 
 switch (_boxType) do
 {
@@ -43,10 +43,8 @@ switch (_boxType) do
 			// Item type, Item class(es), # of items, # of magazines per weapon
 			["wep", ["launch_Titan_short_F", "launch_O_Titan_short_F", "launch_I_Titan_short_F", "launch_B_Titan_short_tna_F", "launch_O_Titan_short_ghex_F", "launch_Titan_F", "launch_O_Titan_F", "launch_I_Titan_F", "launch_O_Titan_ghex_F", "launch_B_Titan_tna_F"], RANDOM_BETWEEN(1,2), RANDOM_BETWEEN(1,2)],
             ["wep", "launch_NLAW_F", RANDOM_BETWEEN(0,2), RANDOM_BETWEEN(1,2)],
-			["mag", ["APERSTripMine_Wire_Mag", "APERSBoundingMine_Range_Mag", "APERSMine_Range_Mag", "ClaymoreDirectionalMine_Remote_Mag", "SLAMDirectionalMine_Wire_Mag", "ATMine_Range_Mag", "DemoCharge_Remote_Mag", "SatchelCharge_Remote_Mag", "IEDUrbanSmall_Remote_Mag", "IEDLandSmall_Remote_Mag", "IEDUrbanBig_Remote_Mag", "IEDLandBig_Remote_Mag", "TrainingMine_01_F"], RANDOM_BETWEEN(1,4)],
             ["mag", ["1Rnd_HE_Grenade_shell", "1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell"], RANDOM_BETWEEN(0,4)],
-            ["mag", "Titan_AP", RANDOM_BETWEEN(0,2)],
-            ["itm", "Toolkit", RANDOM_ODDS(0.7)]
+            ["mag", "Titan_AP", RANDOM_BETWEEN(0,2)]
 		];
 	};
     case "mission_RULaunchers":
@@ -55,10 +53,8 @@ switch (_boxType) do
 		[
 			// Item type, Item class(es), # of items, # of magazines per weapon
 			["wep", ["launch_RPG7_F", "launch_RPG32_F", "launch_RPG32_ghex_F"], RANDOM_BETWEEN(1,2), RANDOM_BETWEEN(1,2)],
-			["mag", ["APERSTripMine_Wire_Mag", "APERSBoundingMine_Range_Mag", "APERSMine_Range_Mag", "ClaymoreDirectionalMine_Remote_Mag", "SLAMDirectionalMine_Wire_Mag", "ATMine_Range_Mag", "DemoCharge_Remote_Mag", "SatchelCharge_Remote_Mag", "IEDUrbanSmall_Remote_Mag", "IEDLandSmall_Remote_Mag", "IEDUrbanBig_Remote_Mag", "IEDLandBig_Remote_Mag", "TrainingMine_01_F"], RANDOM_BETWEEN(1,4)],
             ["mag", ["1Rnd_HE_Grenade_shell", "1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell"], RANDOM_BETWEEN(0,4)],
-            ["mag", "RPG32_HE_F", RANDOM_BETWEEN(0,2)],
-            ["itm", "Toolkit", RANDOM_ODDS(0.7)]
+            ["mag", "RPG32_HE_F", RANDOM_BETWEEN(0,2)]
 		];
 	};
     case "mission_USRifles":
@@ -181,10 +177,47 @@ switch (_boxType) do
 		_boxItems =
 		[
 			// Item type, Item class(es), # of items, # of magazines per weapon
-            ["mag", ["UGL_FlareWhite_F", "UGL_FlareGreen_F", "UGL_FlareYellow_F", "UGL_FlareRed_F", "UGL_FlareCIR_F", "1Rnd_Smoke_Grenade_shell", "1Rnd_SmokePurple_Grenade_shell", "1Rnd_SmokeBlue_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeYellow_Grenade_shell", "1Rnd_SmokeOrange_Grenade_shell", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell"],  RANDOM_BETWEEN(4,7)],    //40mm
-            ["mag", ["APERSTripMine_Wire_Mag", "APERSBoundingMine_Range_Mag", "APERSMine_Range_Mag", "ClaymoreDirectionalMine_Remote_Mag", "SLAMDirectionalMine_Wire_Mag", "ATMine_Range_Mag", "DemoCharge_Remote_Mag", "SatchelCharge_Remote_Mag", "IEDUrbanSmall_Remote_Mag", "IEDLandSmall_Remote_Mag", "IEDUrbanBig_Remote_Mag", "IEDLandBig_Remote_Mag", "TrainingMine_01_F"],  RANDOM_BETWEEN(4,8)],    //Explosives
-            ["mag", ["MiniGrenade", "HandGrenade", "SmokeShell", "SmokeShellPurple", "SmokeShellBlue", "SmokeShellGreen", "SmokeShellYellow", "SmokeShellOrange", "SmokeShellRed"],  RANDOM_BETWEEN(4,9)],    //Grenades
-            ["itm", "Toolkit", RANDOM_BETWEEN(2,4)]
+			["mag", "APERSTripMine_Wire_Mag",  10],   
+			["mag", "APERSBoundingMine_Range_Mag",  10],    
+			["mag", "APERSMine_Range_Mag",  10],    
+			["mag", "SLAMDirectionalMine_Wire_Mag",  10],    
+			["mag", "ATMine_Range_Mag",  10],    
+			["mag", "IEDUrbanSmall_Remote_Mag",  10],    
+			["mag", "IEDLandSmall_Remote_Mag",  10], 
+			["mag", "IEDUrbanBig_Remote_Mag",  10], 
+			["mag", "IEDLandBig_Remote_Mag",  10]
+        ];
+	};
+	case "mission_suply":
+	{
+		_boxItems =
+		[
+			// Item type, Item class(es), # of items, # of magazines per weapon
+			["itm", "MineDetector", 10],   
+			["itm", "ToolKit", 10],    
+			["itm", "Medikit", 10],    
+			["itm", "FirstAidKit", 10],    
+			["itm", "Rangefinder", 5],    
+			["itm", "Binocular", 10],    
+			["itm", "ItemGPS", 10], 
+			["itm", "B_UavTerminal", 5], 
+			["itm", "B_IR_Grenade", 10],
+			["itm", "Laserdesignator", 2],
+			["itm", "Laserdesignator_01_khk_F", 2],
+			["itm", "Laserdesignator_03", 2],
+			["itm", "Laserdesignator_02", 2],
+			["itm", "Laserdesignator_02_ghex_F", 2],
+			["itm", "Chemlight_blue", 10],
+			["itm", "Chemlight_green", 10],
+			["itm", "Chemlight_yellow", 10],
+			["itm", "Chemlight_red", 10],
+			["itm", "SmokeShell", 10],
+			["itm", "SmokeShellPurple", 10],
+			["itm", "SmokeShellBlue", 10],
+			["itm", "SmokeShellGreen", 10],
+			["itm", "SmokeShellYellow", 10],
+			["itm", "SmokeShellOrange", 10],
+			["itm", "SmokeShellRed", 10]
         ];
 	};
     case "mission_Gear":
@@ -199,7 +232,7 @@ switch (_boxType) do
             ["itm", ["G_Aviator", "G_Lady_Blue", "G_Lowprofile", "G_Tactical_Clear", "G_Tactical_Black", "G_Spectacles_Tinted", "G_Diving", "G_Combat", "G_Combat_Goggles_tna_F", "G_Balaclava_blk", "G_Balaclava_oli", "G_Balaclava_lowprofile", "G_Balaclava_combat", "G_Balaclava_TI_blk_F", "G_Balaclava_TI_G_blk_F", "G_Balaclava_TI_tna_F", "G_Balaclava_TI_G_tna_F", "G_Bandanna_aviator", "G_Bandanna_shades", "G_Bandanna_beast", "G_Bandanna_blk", "G_Bandanna_khk", "G_Bandanna_oli", "G_Bandanna_tan", "G_Respirator_blue_F", "G_Respirator_white_F", "G_Respirator_yellow_F", "G_EyeProtectors_F", "G_EyeProtectors_Earpiece_F", "G_WirelessEarpiece_F"], RANDOM_BETWEEN(4,10)],     //Goggles
             ["itm", ["NVGoggles", "NVGoggles_OPFOR", "NVGoggles_INDEP", "NVGoggles_tna_F", "O_NVGoggles_ghex_F", "O_NVGoggles_hex_F", "O_NVGoggles_urb_F", "NVGogglesB_blk_F", "NVGogglesB_grn_F", "NVGogglesB_gry_F"], RANDOM_BETWEEN(3,7)],     //Night Visions
             ["itm", ["Chemlight_blue", "Chemlight_green", "Chemlight_yellow", "Chemlight_red"], RANDOM_BETWEEN(5,20)],     //Chemlights
-            ["itm", ["ItemGPS", "FirstAidKit", "Medikit", "ToolKit", "MineDetector", "Binocular", "Rangefinder", "Laserdesignator", "Laserdesignator_01_khk_F", "Laserdesignator_03", "Laserdesignator_02", "Laserdesignator_02_ghex_F", "B_IR_Grenade", "O_IR_Grenade", "I_IR_Grenade"], RANDOM_BETWEEN(4,6)]     //Special Purpose
+            ["itm", ["ItemGPS", "FirstAidKit", "Medikit", "ToolKit", "Binocular", "Rangefinder", "Laserdesignator", "Laserdesignator_01_khk_F", "Laserdesignator_03", "Laserdesignator_02", "Laserdesignator_02_ghex_F", "B_IR_Grenade", "O_IR_Grenade", "I_IR_Grenade"], RANDOM_BETWEEN(4,6)]     //Special Purpose
 		];
 	};
     case "mission_Diving":
@@ -211,7 +244,7 @@ switch (_boxType) do
             ["wep", ["hgun_PDW2000_F", "SMG_05_F"], RANDOM_BETWEEN(1,4), RANDOM_BETWEEN(2,4)],     //some PDWs
 			["mag", ["DemoCharge_Remote_Mag", "SatchelCharge_Remote_Mag", "SmokeShell", "SmokeShellPurple", "SmokeShellBlue", "SmokeShellGreen", "SmokeShellYellow", "SmokeShellOrange", "SmokeShellRed"], RANDOM_BETWEEN(4,6)],        //Smoke Grenades and Charge/Satchel
 			["mag", "20Rnd_556x45_UW_mag", RANDOM_BETWEEN(6,10)],    //Underwater Mag
-            ["itm", ["U_B_Wetsuit", "U_B_survival_uniform", "V_RebreatherB", "G_Diving"], RANDOM_BETWEEN(4,6)],     //Diving Stuff Blufor
+            ["itm", ["U_I_Wetsuit", "V_RebreatherIA", "G_Diving"], RANDOM_BETWEEN(4,6)],     //Diving Stuff Blufor
             ["itm", ["U_I_Wetsuit", "V_RebreatherIA", "G_Diving"], RANDOM_BETWEEN(4,6)]        //Diving Stuff Independent
 		];
 	};
@@ -221,7 +254,7 @@ switch (_boxType) do
 		[
 			// Item type, Item class(es), # of items, # of magazines per weapon
 			["wep", ["arifle_AKM_F", "launch_RPG7_F", "arifle_AKS_F", "srifle_DMR_06_camo_F", "srifle_DMR_06_olive_F", "hgun_Rook40_F", "hgun_Pistol_01_F", "SMG_05_F", "LMG_03_F"], RANDOM_BETWEEN(3,5), RANDOM_BETWEEN(2,4)],
-			["itm", ["MineDetector", "Binocular", "V_Chestrig_rgr", "V_Chestrig_khk", "V_Chestrig_blk", "V_TacChestrig_oli_F", "V_TacChestrig_cbr_F", "V_TacVest_camo", "H_Bandanna_camo"], RANDOM_BETWEEN(2,5)],
+			["itm", ["Binocular", "V_Chestrig_rgr", "V_Chestrig_khk", "V_Chestrig_blk", "V_TacChestrig_oli_F", "V_TacChestrig_cbr_F", "V_TacVest_camo", "H_Bandanna_camo"], RANDOM_BETWEEN(2,5)],
 			["itm", ["H_ShemagOpen_khk", "H_ShemagOpen_tan", "H_Shemag_olive"], RANDOM_BETWEEN(2,5)],
 			["itm", ["FirstAidKit"], RANDOM_BETWEEN(5,10)]
 		];

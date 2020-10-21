@@ -7,121 +7,44 @@
 //	@file Created: 31/08/2013 18:19
 
 if (!isServer) exitwith {};
-#include "moneyMissionDefines.sqf";
+#include "principalMissionsDefines.sqf";
 
-private ["_MoneyShipment", "_moneyAmount", "_convoys", "_vehChoices", "_moneyText", "_vehClasses", "_createVehicle", "_vehicles", "_veh2", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_numWaypoints", "_cash"];
+private ["_MoneyShipment", "_moneyAmount", "_convoys", "_vehChoices", "_moneyText", "_vehClasses", "_createVehicle", "_vehicles", "_veh2", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_numWaypoints", "_box1", "_box2"];
 
 _setupVars =
 {
 	_locationsArray = LandConvoyPaths;
 
-	// Money Shipments settings
-	// Difficulties : Min = 1, Max = infinite
-	// Convoys per difficulty : Min = 1, Max = infinite
-	// Vehicles per convoy : Min = 1, Max = infinite
-	// Choices per vehicle : Min = 1, Max = infinite
 	_MoneyShipment = selectRandom
 	[
-		// Easy
+		// Extreme
 		[
-			"ESCOLTA DE DINHEIRO PEQUENA", // Marker text
-			10000, // Money
-			[
-				[ // NATO convoy
-				    ["B_T_LSV_01_armed_F"], // Veh 1
-					["B_T_LSV_01_armed_F"], // Veh 2
-					["B_T_LSV_01_AT_F"], // Veh 3
-					["B_T_LSV_01_AT_F"] // Veh 4
-				],
-				[ // CSAT convoy
-				    ["O_T_LSV_02_armed_F"], // Veh 1
-					["O_T_LSV_02_armed_F"], // Veh 2
-					["O_T_LSV_02_AT_F"], // Veh 3
-					["O_T_LSV_02_AT_F"] // Veh 4
-				],
-				[ // AAF convoy
-					["I_LT_01_cannon_F"], // Veh 1
-					["I_LT_01_AT_F"], // Veh 2
-					["I_G_Offroad_01_armed_F"], // Veh 3
-					["I_G_Offroad_01_AT_F"] // Veh 4
-				]
-			]
-		],
-		// Medium
-		[
-			"ESCOLTA DE DINHEIRO MÉDIA", // Marker text
-			20000, // Money
+			"PATRULHA DE ALTIS", // Marker text
+			0, // Money
 			[
 				[ // NATO convoy
 				    ["B_MRAP_01_hmg_F"], // Veh 1
-					["B_APC_Wheeled_01_cannon_F", "B_APC_Tracked_01_rcws_F"], // Veh 2
-					["B_MRAP_01_gmg_F"], // Veh 3
-					["I_LT_01_scout_F"], // Veh 4
-					["I_LT_01_AA_F"] // Veh 5
+					["B_MBT_01_arty_F"], // Veh 2
+					["B_APC_Wheeled_01_cannon_F"], // Veh 3
+					["B_MBT_01_TUSK_F"], // Veh 4
+					["B_APC_Tracked_01_AA_F"], // Veh 5
+					["B_MBT_01_cannon_F"] // Veh 6
 				],
 				[ // CSAT convoy
-				    ["O_MRAP_02_hmg_F"], // Veh 1
-					["O_APC_Wheeled_02_rcws_v2_F", "O_APC_Tracked_02_cannon_F"], // Veh 2
-					["O_MRAP_02_gmg_F"], // Veh 3
-					["I_LT_01_scout_F"], // Veh 4
-					["I_LT_01_AA_F"] // Veh 5
+					["I_MRAP_03_hmg_F"], // Veh 1
+					["B_MBT_01_mlrs_F"], // Veh 2
+					["O_APC_Tracked_02_cannon_F"], // Veh 3
+					["O_MBT_02_cannon_F"], // Veh 4
+					["O_APC_Tracked_02_AA_F"], // Veh 5
+					["O_APC_Wheeled_02_rcws_v2_F"] // Veh 6
 				],
 				[ // AAF convoy
 				    ["I_MRAP_03_hmg_F"], // Veh 1
-					["I_APC_Wheeled_03_cannon_F", "I_APC_tracked_03_cannon_F"], // Veh 2
-					["I_MRAP_03_gmg_F"], // Veh 3
-					["I_LT_01_scout_F"], // Veh 4
-					["I_LT_01_AA_F"] // Veh 5
-				]
-			]
-		],
-		// Hard
-		[
-			"ESCOLTA DE DINHEIRO GRANDE", // Marker text
-			30000, // Money
-			[
-				[ // NATO convoy
-				    ["B_APC_Tracked_01_rcws_F"], // Veh 1
-					["B_AFV_Wheeled_01_cannon_F", "B_AFV_Wheeled_01_up_cannon_F"], // Veh 2
-					["B_APC_Wheeled_01_cannon_F"], // Veh 3
-					["B_APC_Tracked_01_AA_F"] // Veh 4
-				],
-				[ // CSAT convoy
-					["O_APC_Wheeled_02_rcws_v2_F"], // Veh 1
-					["O_APC_Tracked_02_cannon_F"], // Veh 2
-					["O_APC_Tracked_02_AA_F"] // Veh 3
-				],
-				[ // AAF convoy
-					["I_APC_Wheeled_03_cannon_F"], // Veh 1
-					["I_APC_tracked_03_cannon_F"], // Veh 2
-					["B_APC_Tracked_01_AA_F"] // Veh 3
-				]
-			]
-		],
-		// Extreme
-		[
-			"ESCOLTA DE DINHEIRO GIGANTE", // Marker text
-			40000, // Money
-			[
-				[ // NATO convoy
-				    ["B_APC_Tracked_01_rcws_F"], // Veh 1
-					["B_AFV_Wheeled_01_cannon_F", "B_AFV_Wheeled_01_up_cannon_F"], // Veh 2
-					["B_APC_Wheeled_01_cannon_F"], // Veh 3
-					["B_MBT_01_cannon_F", "B_MBT_01_TUSK_F"], // Veh 4
-					["B_APC_Tracked_01_AA_F"] // Veh 5
-				],
-				[ // CSAT convoy
-					["O_APC_Wheeled_02_rcws_v2_F"], // Veh 1
-				    ["O_APC_Tracked_02_cannon_F"], // Veh 2
-					["O_MBT_04_cannon_F", "O_MBT_04_command_F"], // Veh 3
-					["O_MBT_02_cannon_F"], // Veh 4
-				    ["O_APC_Tracked_02_AA_F"] // Veh 5
-				],
-				[ // AAF convoy
-				    ["I_APC_Wheeled_03_cannon_F"], // Veh 1
-					["I_APC_tracked_03_cannon_F"], // Veh 2
+					["I_Truck_02_MRL_F"], // Veh 2
 					["I_MBT_03_cannon_F"], // Veh 3
-					["B_APC_Tracked_01_AA_F"] // Veh 4
+					["I_LT_01_scout_F"], // Veh 4
+					["I_LT_01_AA_F"], // Veh 5
+					["I_APC_Wheeled_03_cannon_F"] // Veh 6
 				]
 			]
 		]
@@ -235,7 +158,7 @@ _setupObjects =
 	_missionPicture = getText (configFile >> "CfgVehicles" >> _veh2 >> "picture");
 	_vehicleName = getText (configFile >> "cfgVehicles" >> _veh2 >> "displayName");
 
-	_missionHintText = format ["Uma escolta transportando um valor desconhecido de dinheiro esta sendo escoltado por <t color='%1'>%2</t> escorted by a <t color='%1'>%3</t> e está levando dinheiro para fora da ilha.<br/>Pare-os!", moneyMissionColor, _moneyText, _vehicleName];
+	_missionHintText = format ["Uma é suspeito de estar carregando caixas de armas e está sendo escoltado por veiculos armados. Verifique essa informação", moneyMissionColor, _moneyText, _vehicleName];
 
 	_numWaypoints = count waypoints _aiGroup;
 };
@@ -252,16 +175,17 @@ _successExec =
 {
 	// Mission completed
 
-	for "_i" from 1 to 10 do
-	{
-		_cash = createVehicle ["Land_Money_F", _lastPos, [], 5, "None"];
-		_cash setPos ([_lastPos, [[2 + random 3,0,0], random 360] call BIS_fnc_rotateVector2D] call BIS_fnc_vectorAdd);
-		_cash setDir random 360;
-		_cash setVariable ["cmoney", _moneyAmount / 10, true];
-		_cash setVariable ["owner", "world", true];
-	};
+	_box1 = createVehicle ["O_CargoNet_01_ammo_F", _lastPos, [], 2, "None"];
+	_box1 setDir random 360;
+	[_box1, ["US", "OTHER"] call BIS_fnc_selectRandom] call fn_refillbox;
 
-	_successHintMessage = "O comboio foi parado, o dinheiro e os veículos agora são seus para levar.";
+	_box2 = createVehicle ["B_supplyCrate_F", _lastPos, [], 2, "None"];
+	_box2 setDir random 360;
+	[_box2, ["RU", "MILITIA"] call BIS_fnc_selectRandom] call fn_refillbox;
+
+	{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2];
+
+	_successHintMessage = "O comboio foi parado";
 };
 
-_this call moneyMissionProcessor;
+_this call principalMissionProcessor;

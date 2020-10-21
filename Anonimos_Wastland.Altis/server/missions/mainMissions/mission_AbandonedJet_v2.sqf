@@ -55,4 +55,4 @@ _setupVars =
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
 };
 
-_this call mission_VehicleCapture;
+_this call mission_VehicleCapture_v2;

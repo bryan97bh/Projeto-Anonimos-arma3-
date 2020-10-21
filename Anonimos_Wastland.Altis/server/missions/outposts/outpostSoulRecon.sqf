@@ -1,5 +1,5 @@
 // ******************************************************************************************
-// * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
+// * This project is licensed under the GNU Affero GPL v3. Copyright ï¿½ 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Name: outpostSoulRecon.sqf
 //	@file Author: soulkobk, Staynex
@@ -41,8 +41,8 @@
     ["Land_BagFence_Long_F",[-10.5,-3,0],180],
     ["Land_BagFence_Corner_F",[7.75,4,0],180],
     ["Land_BagFence_Corner_F",[-8.25,-3.25,0],0],
-    //["O_CargoNet_01_ammo_F", [5.70585,-3.99227,15.5007],90, { [_this, ["US", "OTHER"] call BIS_fnc_selectRandom] call fn_refillbox }],
-    //["O_CargoNet_01_ammo_F", [5.70585,-1.49227,15.5007],90, { [_this, ["US", "OTHER"] call BIS_fnc_selectRandom] call fn_refillbox }],
+    ["O_CargoNet_01_ammo_F", [5.70585,-3.99227,15.5007],90, { [_this, ["US", "OTHER"] call BIS_fnc_selectRandom] call fn_refillbox }],
+    ["O_CargoNet_01_ammo_F", [5.70585,-1.49227,15.5007],90, { [_this, ["US", "OTHER"] call BIS_fnc_selectRandom] call fn_refillbox }],
     ["O_CargoNet_01_ammo_F", [0.955849,-2.99227,17.8895],90, { [_this, ["US", "RU", "OTHER"] call BIS_fnc_selectRandom] call fn_refillbox }],
     ["I_HMG_01_high_F",[8.70585,-14.2423,2.78],270,{if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup}],
     ["I_HMG_01_high_F",[-9.54415,15.0077,2.78],90,{if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup}],

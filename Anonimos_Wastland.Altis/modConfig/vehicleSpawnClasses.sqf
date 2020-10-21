@@ -12,9 +12,12 @@ A3W_smallVehicles =
 //Civilian Vehicle List - Random Spawns
 civilianVehicles =
 [
+	"C_Tractor_01_F",
+    "C_Kart_01_F",
 	"C_Offroad_01_F",
 	"C_SUV_01_F",
 	"C_Offroad_02_unarmed_F",
+	"I_E_Offroad_01_covered_F",
 	["C_Hatchback_01_F", "C_Hatchback_01_sport_F"],
 	["C_Van_01_box_F", "C_Van_01_transport_F"]
 ];
@@ -91,9 +94,11 @@ vehicleWeapons =
 	],	
 	[
 		"arifle_Katiba_C_F",
-	    ["arifle_MXC_Black_F", "arifle_MXC_khk_F", "arifle_MXC_F"]
+	    ["arifle_MXC_Black_F", "arifle_MXC_khk_F", "arifle_MXC_F"],
+		["arifle_MSBS65_F", "arifle_MSBS65_black_F", "arifle_MSBS65_camo_F", "arifle_MSBS65_sand_F"]
 	],
-	["arifle_AKM_F", "srifle_DMR_01_F"]
+	["arifle_AKM_F", "srifle_DMR_01_F", "srifle_DMR_06_hunter_F"],
+	["sgun_HunterShotgun_01_F", "sgun_HunterShotgun_01_sawedoff_F"]
 ];
 
 vehicleAddition =

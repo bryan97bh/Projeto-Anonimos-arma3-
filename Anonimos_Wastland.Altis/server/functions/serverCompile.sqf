@@ -53,6 +53,7 @@ createRandomPilot = [_path, "createUnits\createRandomPilot.sqf"] call mf_compile
 createSmallDivers = [_path, "createUnits\smallDivers.sqf"] call mf_compile;
 generateMissionWeights = [_path, "generateMissionWeights.sqf"] call mf_compile;
 mission_VehicleCapture = "server\missions\mainMissions\mission_VehicleCapture.sqf" call mf_compile;
+mission_VehicleCapture_v2 = "server\missions\mainMissions\mission_VehicleCapture_v2.sqf" call mf_compile;
 missionHint = [_path, "missionHint.sqf"] call mf_compile;
 moveIntoBuildings = [_path, "moveIntoBuildings.sqf"] call mf_compile;
 removeDisabledMissions = [_path, "removeDisabledMissions.sqf"] call mf_compile;

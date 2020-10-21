@@ -36,11 +36,11 @@ Door_open =
 		};
 		case (isNil _uid || isNull _uid):
 		{
-			hint "You need to lock the object first!";
+			hint "Você precisa bloquear o objeto primeiro!";
 		};
 		default
 		{
-		hint "An unknown error occurred. This could be because your door is not locked."
+		hint "Ocorreu um erro desconhecido. Isso pode ser porque sua porta não está trancada."
 		};
 
 	};

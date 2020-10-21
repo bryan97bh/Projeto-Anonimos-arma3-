@@ -123,8 +123,8 @@
     (time > _timeout)
   };
   
-  _player setFatigue 0;
-  _player enableFatigue false;
+  //_player setFatigue 0;
+  //_player enableFatigue false;
   enableEnvironment [false, true];
   playMusic "";
   deleteVehicle _shell;
@@ -156,6 +156,7 @@
   
   playMusic "";
   ppEffectDestroy _effect1;
+  
 };};
      
 drug_heroin_effects = { _this spawn {
@@ -192,8 +193,8 @@ drug_heroin_effects = { _this spawn {
   
   3 setFog 0;
   playMusic "";
-  _player setFatigue 0;
-  _player enableFatigue false;
+  //_player setFatigue 0;
+  //_player enableFatigue false;
   ppEffectDestroy _effect1;
   ppEffectDestroy _effect2;
 };};

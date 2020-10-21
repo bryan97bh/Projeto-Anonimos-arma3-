@@ -95,12 +95,12 @@ if (!isNil "_getPublicVar" && !isNil "_isConfigOn") then
 							{
 								if (_unconscious) then
 								{
-									_text = "\n\n\n\nNão pode se masturbar durante sangramentong!";
+									_text = "\n\n\n\nNão pode fugir durante sangramento!";
 								}
 								else
 								{
 									_timer = with missionNamespace do { (_abortDelay - (diag_tickTime - _timeStamp)) call fn_formatTimer };
-									_text = format ["\nNão pode se masturbar durante o combate! (%1)", _timer];
+									_text = format ["\nNão pode fugir durante o combate! (%1)", _timer];
 								};
 
 								10290 cutText [_text, "PLAIN DOWN"]; // 10290 is higher than ReviveGUI_IDD

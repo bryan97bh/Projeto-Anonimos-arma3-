@@ -57,6 +57,7 @@ _adjustZ = switch (true) do
 	case (_objClass == "Land_Scaffolding_F"):         { -3 };
 	case (_objClass == "Land_Canal_WallSmall_10m_F"): { 3 };
     case (_objClass == "Land_PillboxWall_01_6m_F"):   { 3 };
+	case (_objClass == "Land_PillboxWall_01_3m_round_F"):   { 3 };
 	case (_objClass == "Land_Canal_Wall_Stairs_F"):   { 3 };
 	default                                           { 0 };
 };

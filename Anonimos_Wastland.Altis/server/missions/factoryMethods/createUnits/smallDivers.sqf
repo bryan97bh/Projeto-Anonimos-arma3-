@@ -7,12 +7,12 @@
 
 if (!isServer) exitWith {};
 
-private ["_group", "_pos", "_leader", "_man2", "_man3"];
+private ["_group", "_pos", "_leader", "_man2", "_man3", "_man4", "_man5", "_man6", "_man7", "_man8", "_man9", "_man10"];
 
 _group = _this select 0;
 _pos = _this select 1;
 
-// Leader
+// Rifleman
 _leader = _group createUnit ["C_man_polo_1_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
 removeAllAssignedItems _leader;
 _leader addVest "V_RebreatherB";
@@ -45,6 +45,83 @@ _man3 addWeapon "arifle_SDAR_F";
 _man3 addMagazine "20Rnd_556x45_UW_Mag";
 _man3 addMagazine "20Rnd_556x45_UW_Mag";
 
+// Rifleman
+_man4 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man4;
+_man4 addUniform "U_B_Wetsuit";
+_man4 addVest "V_RebreatherB";
+_man4 addGoggles "G_Diving";
+_man4 addMagazine "20Rnd_556x45_UW_Mag";
+_man4 addWeapon "arifle_SDAR_F";
+_man4 addMagazine "20Rnd_556x45_UW_Mag";
+_man4 addMagazine "20Rnd_556x45_UW_Mag";
+
+// Rifleman
+_man5 = _group createUnit ["C_man_polo_5_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man5;
+_man5 addUniform "U_B_Wetsuit";
+_man5 addVest "V_RebreatherB";
+_man5 addGoggles "G_Diving";
+_man5 addMagazine "20Rnd_556x45_UW_Mag";
+_man5 addWeapon "arifle_SDAR_F";
+_man5 addMagazine "20Rnd_556x45_UW_Mag";
+_man5 addMagazine "20Rnd_556x45_UW_Mag";
+
+// Rifleman
+_man6 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man6;
+_man6 addUniform "U_B_Wetsuit";
+_man6 addVest "V_RebreatherB";
+_man6 addGoggles "G_Diving";
+_man6 addMagazine "20Rnd_556x45_UW_Mag";
+_man6 addWeapon "arifle_SDAR_F";
+_man6 addMagazine "20Rnd_556x45_UW_Mag";
+_man6 addMagazine "20Rnd_556x45_UW_Mag";
+
+// Rifleman
+_man7 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man7;
+_man7 addUniform "U_B_Wetsuit";
+_man7 addVest "V_RebreatherB";
+_man7 addGoggles "G_Diving";
+_man7 addMagazine "20Rnd_556x45_UW_Mag";
+_man7 addWeapon "arifle_SDAR_F";
+_man7 addMagazine "20Rnd_556x45_UW_Mag";
+_man7 addMagazine "20Rnd_556x45_UW_Mag";
+
+// Rifleman
+_man8 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man8;
+_man8 addUniform "U_B_Wetsuit";
+_man8 addVest "V_RebreatherB";
+_man8 addGoggles "G_Diving";
+_man8 addMagazine "20Rnd_556x45_UW_Mag";
+_man8 addWeapon "arifle_SDAR_F";
+_man8 addMagazine "20Rnd_556x45_UW_Mag";
+_man8 addMagazine "20Rnd_556x45_UW_Mag";
+
+// Rifleman
+_man9 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man9;
+_man9 addUniform "U_B_Wetsuit";
+_man9 addVest "V_RebreatherB";
+_man9 addGoggles "G_Diving";
+_man9 addMagazine "20Rnd_556x45_UW_Mag";
+_man9 addWeapon "arifle_SDAR_F";
+_man9 addMagazine "20Rnd_556x45_UW_Mag";
+_man9 addMagazine "20Rnd_556x45_UW_Mag";
+
+// Rifleman
+_man10 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
+removeAllAssignedItems _man10;
+_man10 addUniform "U_B_Wetsuit";
+_man10 addVest "V_RebreatherB";
+_man10 addGoggles "G_Diving";
+_man10 addMagazine "20Rnd_556x45_UW_Mag";
+_man10 addWeapon "arifle_SDAR_F";
+_man10 addMagazine "20Rnd_556x45_UW_Mag";
+_man10 addMagazine "20Rnd_556x45_UW_Mag";
+
 _leader = leader _group;
 
 {
@@ -52,13 +129,6 @@ _leader = leader _group;
 	_x call setMissionSkill;
 	_x addRating 9999999;
 	_x addEventHandler ["Killed", server_playerDied];
-    
-    // Give AI a new magazine (same type as old one) on reload if only 2 clips left
-    _x addeventhandler ["Reloaded", {
-         if (count (magazines  (_this select 0) ) < 3 ) then {
-         (_this select 0) addMagazine ((_this select 4) select 0)
-         }
-    }];
 } forEach units _group;
 
 [_group, _pos, "Ship"] call defendArea;

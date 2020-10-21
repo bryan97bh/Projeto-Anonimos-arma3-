@@ -401,7 +401,7 @@ R3F_LOG_CFG_can_transport_cargo = R3F_LOG_CFG_can_transport_cargo +
 	["Plane_Civil_01_base_F", 5],
 	["VTOL_01_base_F", 50],
 	["VTOL_02_base_F", 30],
-	["Land_Pod_Heli_Transport_04_box_F", 1000],
+	["Land_Pod_Heli_Transport_04_box_F", 500],
 	["Land_Cargo20_military_green_F", 100]
 ];
 
@@ -417,8 +417,9 @@ R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +
 	// e.g. : ["MyTransportableObjectClassName1", itsCost], ["MyTransportableObjectClassName2", itsCost]
 	["Land_Device_assembled_F", 100],           //Re Locker
     ["Box_GEN_Equip_F", 10],                    //Safe
-    ["Land_PillboxWall_01_6m_F", 10],           //Base Door (Pillbox)
-    ["Land_Canal_Wall_10m_F", 15],              //Base Door (Canal Wall)
+	["Land_PillboxWall_01_3m_round_F", 10],      //Base Door (Pillbox) 3m
+    ["Land_PillboxWall_01_6m_F", 15],           //Base Door (Pillbox)
+    ["Land_Canal_Wall_10m_F", 20],              //Base Door (Canal Wall)
     ["Land_TripodScreen_01_dual_v1_F", 5],      //Base Door Key
 	["StaticWeapon", 5],
 	["Box_NATO_AmmoVeh_F", 10],
@@ -564,6 +565,7 @@ R3F_LOG_CFG_can_be_moved_by_player = R3F_LOG_CFG_can_be_moved_by_player +
 	// e.g. : "MyMovableObjectClassName1", "MyMovableObjectClassName2"
 	"Land_Device_assembled_F",          //Re Locker
     "Box_GEN_Equip_F",                  //Safe
+	"Land_PillboxWall_01_3m_round_F",   //base door
     "Land_PillboxWall_01_6m_F",         //Base Door
     "Land_TripodScreen_01_dual_v1_F",   //Base Door Key
 	"StaticWeapon",

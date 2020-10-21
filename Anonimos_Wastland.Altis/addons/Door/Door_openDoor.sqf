@@ -7,7 +7,7 @@
 //	@file Description: Door script
 
 private ["_doors"];
-_doors = (nearestObjects [player, ["Land_Canal_Wall_10m_F", "Land_PillboxWall_01_6m_F"], 10]);
+_doors = (nearestObjects [player, ["Land_Canal_Wall_10m_F", "Land_PillboxWall_01_6m_F", "Land_PillboxWall_01_3m_round_F"], 10]);
 
 
 
@@ -20,7 +20,7 @@ if (!isNil "_doors") then
 		}
 		else
 		{
-		["The door and the opener have to be locked by the same player", 5] call mf_notify_client;
+		["A porta e o abridor devem ser trancados pelo mesmo jogador", 5] call mf_notify_client;
 		};	
 	} forEach _doors;
 //cursortarget setObjectTextureGlobal [0, "\A3\Structures_F_Heli\Items\Electronics\Data\Tablet_Screen_CO.paa"];
@@ -28,5 +28,5 @@ if (!isNil "_doors") then
 } 
 else 
 {
-	["No locked door found", 5] call mf_notify_client;
+	["Nenhuma porta trancada encontrada", 5] call mf_notify_client;
 };

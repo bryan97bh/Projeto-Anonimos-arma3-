@@ -19,7 +19,7 @@ for "_i" from 0 to 1 step 0 do
 	
 	//if (_lsd > 3 || _mar > 3 || _coc > 3 || _her > 3) then
 	
-	if (_drugpile > 4) then
+	if (_drugpile > 2) then
 		{
 			_title  = "<t color='#ff0000' size='1.2' align='center'>Portando drogas! </t><br />";
 			_name = format ["%1<br /> ",name player];     

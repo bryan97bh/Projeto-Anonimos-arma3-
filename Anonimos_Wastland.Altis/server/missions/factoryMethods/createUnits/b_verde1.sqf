@@ -49,7 +49,7 @@ _man2 addHeadgear "H_HelmetSpecB_wdl";
 _man2 addGoggles "G_Combat";
 _man2 addUniform "U_B_CombatUniform_vest_mcam_wdl_f";
 _man2 addVest "V_PlateCarrier1_wdl";
-_man2 addBackpack "B_AssaultPack_rgr";
+_man2 addBackpack "B_FieldPack_oli";
 
 _man2 addMagazine "30Rnd_65x39_caseless_black_mag_Tracer";
 _man2 addWeapon "arifle_MXC_Black_F";

@@ -5,7 +5,7 @@
 //	@file Author: Staynex
 
 if (!isServer) exitwith {};
-#include "moneyMissionDefines.sqf";
+#include "principalMissionsDefines.sqf";
 
 private ["_vehicle","_createVehicle","_veh1","_convoyVeh","_explosive","_explosivePos","_nbUnits", "_box1", "_box2", "_townName", "_missionPos", "_buildingRadius", "_putOnRoof", "_fillEvenly", "_drop_item", "_drugpilerandomizer", "_drugpile","_cash"];
 
@@ -34,19 +34,17 @@ _setupVars =
 _setupObjects =
 {
 	// spawn some crates in the middle of town (Town marker position)
-	/* x1 = createVehicle ["Box_NATO_Wps_F", _missionPos, [], 5, "None"];
+	_box1 = createVehicle ["Box_NATO_Wps_F", _missionPos, [], 5, "None"];
 	_box1 setDir random 360;
-	[_box1, "RU"] call fn_refillbox;
+	[_box1, "mission_suply"] call fn_refillbox;
 	_box1 allowDamage false; // just so the bomb doesnt destroy it
 
 	_box2 = createVehicle ["Box_East_Wps_F", _missionPos, [], 5, "None"];
 	_box2 setDir random 360;
-	[_box2, "MILITIA"] call fn_refillbox;
+	[_box2, "mission_suply"] call fn_refillbox;
 	_box2 allowDamage false; // just so the bomb doesnt destroy it
 
 	{ _x setVariable ["R3F_LOG_disabled", true, true] } forEach [_box1, _box2];
-    */
-
 	
 	_veh1 = "B_G_Offroad_01_armed_F";
 
@@ -98,7 +96,7 @@ _waitUntilCondition = nil;
 _failedExec =
 {
 	// Mission failed
-	//{ deleteVehicle _x } forEach [_vehicle,_box1, _box2];	
+	{ deleteVehicle _x } forEach [_vehicle,_box1, _box2];	
 	deleteVehicle _vehicle;
 };
 
@@ -107,7 +105,7 @@ _failedExec =
 _successExec =
 {
 
-	_drop_item = 
+	/*_drop_item = 
 	{
 	private["_item", "_pos"];
 	_item = _this select 0;
@@ -124,11 +122,11 @@ _successExec =
 	_obj = createVehicle [_class, _pos, [], 5, "None"];
 	_obj setPos ([_pos, [[2 + random 3,0,0], random 360] call BIS_fnc_rotateVector2D] call BIS_fnc_vectorAdd);
 	_obj setVariable ["mf_item_id", _id, true];
-	};
+	};*/
 
 	// Mission completed
-	// playSound3D [call currMissionDir + "client\sounds\lastresort.ogg", _vehicle, false, getPosASL _vehicle, 1, 1, 300];
-	// { _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2];
+	playSound3D [call currMissionDir + "client\sounds\lastresort.ogg", _vehicle, false, getPosASL _vehicle, 1, 1, 300];
+	{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2];
     
     uiSleep 2.2;
 
@@ -138,17 +136,17 @@ _successExec =
 	_explosive setDamage 1;
 
 
-	for "_x" from 1 to 5 do
+	/*for "_x" from 1 to 5 do
 	{
 		_cash = "Land_Money_F" createVehicle markerPos _marker;
 		_cash setPos ((markerPos _marker) vectorAdd ([[2 + random 2,0,0], random 360] call BIS_fnc_rotateVector2D));
 		_cash setDir random 360;
 		_cash setVariable["cmoney",1500,true];
 		_cash setVariable["owner","world",true];
-	};
+	};*/
 
 	_successHintMessage = format ["Bom trabalho!<br/><br/><t color='%1'>%2</t><br/> é um lugar seguro novamente! <br/> os pertences agora são seus!", moneyMissionColor, _townName];
 	
 };
 
-_this call moneyMissionProcessor;
+_this call principalMissionProcessor;

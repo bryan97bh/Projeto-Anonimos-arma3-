@@ -31,9 +31,9 @@ if (_grouptype == "random") then
             ["o_car_urb", 1.4],
 			["o_car_tan", 1.3],
 			["o_car_verde", 1.1], 
-			["o_esp", 0.7],
+			["o_esp", 0.8],
 			["A_aff1", 1],
-			["A_affesp", 0.6]
+			["A_affesp", 0.7]
 		] call fn_selectRandomWeightedPairs call fn_selectRandomNested;
 	} 
 	else

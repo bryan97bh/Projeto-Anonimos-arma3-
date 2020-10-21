@@ -8,7 +8,7 @@
 
 
 private ["_doors"];
-_doors = (nearestObjects [player, ["Land_Canal_Wall_10m_F", "Land_PillboxWall_01_6m_F"], 10]);
+_doors = (nearestObjects [player, ["Land_Canal_Wall_10m_F", "Land_PillboxWall_01_6m_F", "Land_PillboxWall_01_3m_round_F"], 10]);
 
 if (!isNil "_doors") then
 {

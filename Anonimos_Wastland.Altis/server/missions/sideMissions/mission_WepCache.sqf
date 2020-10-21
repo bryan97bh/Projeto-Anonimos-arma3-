@@ -9,7 +9,7 @@
 if (!isServer) exitwith {};
 #include "sideMissionDefines.sqf"
 
-private ["_nbUnits", "_box1", "_box2"];
+private ["_nbUnits", "_box1", "_box2", "_box3", "_tent1", "_chair1", "_chair2", "_cFire1", "_tent2"];
 
 _setupVars =
 {
@@ -30,6 +30,21 @@ _setupObjects =
 	_box2 setDir random 360;
 	[_box2, ["US", "OTHER"] call BIS_fnc_selectRandom] call fn_refillbox;
 
+	_box3 = createVehicle ["Box_East_Wps_F", _missionPos, [], 5, "None"];
+	_box3 setDir random 360;
+	[_box3, ["mission_suply"] call BIS_fnc_selectRandom] call fn_refillbox;
+
+	// create some atmosphere around the crates 8)
+	_tent1 = createVehicle ["Land_cargo_addon02_V2_F", _missionPos, [], 3, "None"];
+	_tent1 setDir random 360;
+	_tent2 = createVehicle ["Land_TentA_F", _missionPos, [], 5, "None"];
+	_tent2 setDir random 360;
+	_chair1 = createVehicle ["Land_CampingChair_V1_F", _missionPos, [], 2, "None"];
+	_chair1 setDir random 90;
+	_chair2 = createVehicle ["Land_CampingChair_V2_F", _missionPos, [], 2, "None"];
+	_chair2 setDir random 180;
+	_cFire1	= createVehicle ["Campfire_burning_F", _missionPos, [], 2, "None"];
+
 	{ _x setVariable ["R3F_LOG_disabled", true, true] } forEach [_box1, _box2];
 
 	_aiGroup = createGroup CIVILIAN;
@@ -46,15 +61,16 @@ _waitUntilCondition = nil;
 _failedExec =
 {
 	// Mission failed
-	{ deleteVehicle _x } forEach [_box1, _box2];
+	{ deleteVehicle _x } forEach [_box1, _box2, _box3, _tent1, _tent2, _chair1, _chair2, _cFire1];
 };
 
 _successExec =
 {
 	// Mission completed
-	{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2];
+	{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2, _box3, _tent1, _tent2, _chair1, _chair2, _cFire1];
 
 	_successHintMessage = "Os militares foram mortos";
+	{ deleteVehicle _x } forEach [_tent1, _tent2, _chair1, _chair2, _cFire1];
 };
 
 _this call sideMissionProcessor;
