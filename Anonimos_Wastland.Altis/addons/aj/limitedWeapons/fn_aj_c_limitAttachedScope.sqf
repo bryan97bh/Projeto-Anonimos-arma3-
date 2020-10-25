@@ -39,7 +39,10 @@ _limitedScopeWeaponsArray = [
 "LMG_03_F",
 "arifle_CTARS_blk_F",
 "arifle_CTARS_ghex_F",
-"arifle_CTARS_hex_F"
+"arifle_CTARS_hex_F",
+"arifle_RPK12_F",
+"arifle_RPK12_arid_F",
+"arifle_RPK12_lush_F"
 ];
 
 _disallowedScopes = [

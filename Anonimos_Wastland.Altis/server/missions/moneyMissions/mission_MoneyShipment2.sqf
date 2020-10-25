@@ -25,7 +25,7 @@ _setupVars =
 		// Easy
 		[
 			"ESCOLTA DE DINHEIRO PEQUENA", // Marker text
-			20000, // Money
+			10000, // Money
 			[
 				[ // NATO convoy
 					["B_T_LSV_01_armed_F"], // Veh 1
@@ -53,7 +53,7 @@ _setupVars =
 		// Medium
 		[
 			"ESCOLTA DE DINHEIRO MÉDIA", // Marker text
-			30000, // Money
+			15000, // Money
 			[
 				[ // NATO convoy
 					["B_MRAP_01_hmg_F"], // Veh 1
@@ -84,7 +84,7 @@ _setupVars =
 		// Hard
 		[
 			"ESCOLTA DE DINHEIRO GRANDE", // Marker text
-			40000, // Money
+			20000, // Money
 			[
 				[ // NATO convoy
 					["B_APC_Tracked_01_rcws_F"], // Veh 1
@@ -110,7 +110,7 @@ _setupVars =
 		// Extreme
 		[
 			"ESCOLTA DE DINHEIRO GIGANTE", // Marker text
-			50000, // Money
+			30000, // Money
 			[
 				[ // NATO convoy
 					["B_APC_Tracked_01_rcws_F"], // Veh 1

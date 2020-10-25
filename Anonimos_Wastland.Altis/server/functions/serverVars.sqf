@@ -61,7 +61,6 @@ objectList =
 	"Land_Mil_WallBig_4m_F",
 	"Land_Mil_WallBig_4m_F",
 	"Land_Mil_WallBig_4m_F",
-	"Land_Pipes_large_F",
 	"Land_RampConcrete_F",
 	"Land_RampConcreteHigh_F",
 	"Land_Shoot_House_Wall_F"

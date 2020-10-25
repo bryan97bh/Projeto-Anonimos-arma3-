@@ -73,15 +73,8 @@ if (isClass (configFile >> "CfgVehicles" >> "ACE_Required_Logic")) then
 	 *   If "Truck" is declared with a capacity of 140 before "Car". And if "Car" is declared after "Truck" with a capacity of 40,
 	 *   Then all the sub-classes in "Truck" will have a capacity of 140. And all the sub-classes of "Car", excepted the ones
 	 *   in "Truck", will have a capacity of 40.
-	 *
-	 * Note : la priorité d'une déclaration de capacité sur une autre correspond à leur ordre dans les tableaux.
-	 *   Par exemple : la classe "Truck" appartient à la classe "Car" (voir http://community.bistudio.com/wiki/ArmA_2:_CfgVehicles).
-	 *   Si "Truck" est déclaré avec une capacité de 140 avant "Car". Et que "Car" est déclaré après "Truck" avec une capacité de 40,
-	 *   Alors toutes les sous-classes appartenant à "Truck" auront une capacité de 140. Et toutes les sous-classes appartenant
-	 *   à "Car", exceptées celles de "Truck", auront une capacité de 40.
 	 */
-
-	/**
+	/*
 	 * List of class names of (ground or air) vehicles which can transport transportables objects.
 	 * The second element of the arrays is the load capacity (in relation with the capacity cost of the objects).
 	 *

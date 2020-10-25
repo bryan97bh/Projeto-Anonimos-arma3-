@@ -17,8 +17,7 @@ _radius = param [3, 10, [0]];
 _leader = _group createUnit ["C_man_1", [(_pos select 0) - 30, _pos select 1, 0], [], 1, "Form"];
 removeAllAssignedItems _leader;
 sleep 0.1; // Without this delay, headgear doesn't get removed properly
-_leader linkItem "NVGoggles";
-_leader addHeadgear "H_HelmetLeaderO_ocamo";
+_leader addHeadgear "H_HelmetO_ViperSP_hex_F";
 _leader addGoggles "G_WirelessEarpiece_F";
 _leader addUniform "U_O_CombatUniform_ocamo";
 _leader addVest "V_EOD_coyote_F";

@@ -125,7 +125,7 @@ _object = switch (_type) do {
 		clearMagazineCargoGlobal _object;
 		clearItemCargoGlobal _object;
 		clearBackpackCargoGlobal _object;
-		[_object, [["Land_Cargo_Patrol_V1_F", 2], ["Box_NATO_Ammo_F", 2], ["Land_HBarrier_5_F", 12], ["Land_BarGate_F", 1], ["Land_Carousel_01_F", 1]] ] execVM "addons\R3F_LOG\auto_load_in_vehicle.sqf";	
+		[_object, [["Land_Cargo_Patrol_V1_F", 2], ["Box_NATO_Ammo_F", 2], ["Land_HBarrier_5_F", 12], ["Land_BarGate_F", 1]] ] execVM "addons\R3F_LOG\auto_load_in_vehicle.sqf";	
 		//Attention: Dont forget to modify the spawnStoreObject.sqf, here you can change the airdrop content only NOT the store content
 
 		

@@ -49,6 +49,21 @@ if (!isNil "_getPublicVar" && !isNil "_isConfigOn") then
 	{
 		_abortDelay = ["A3W_combatAbortDelay", 0] call _getPublicVar;
 
+		if (player getVariable ["cmoney",0] >= 10000) then {
+			private _display = findDisplay 49;
+			if (!isNull _display) then
+			{
+				(_display displayCtrl 104) ctrlEnable false; // Abort
+			};
+			systemChat "Não pode sair com mais de 10.000 em dinheiro! Vá a um banco";
+		} else {
+			private _display = findDisplay 49;
+			if (!isNull _display) then
+			{
+				(_display displayCtrl 104) ctrlEnable true; // Abort
+			};
+		};
+
 		if (_abortDelay > 0) then
 		{
 			private ["_unconscious", "_timeStamp"];

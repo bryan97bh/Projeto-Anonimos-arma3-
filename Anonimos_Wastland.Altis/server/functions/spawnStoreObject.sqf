@@ -283,7 +283,7 @@ if (_key != "" && _player isKindOf "Man" && {_isGenStore || _isGunStore || _isVe
 				// Add default password to baselocker, safe and doorlocks.
 				case ({_object isKindOf _x} count ["Land_TripodScreen_01_dual_v1_F", "Land_Device_assembled_F", "Box_GEN_Equip_F"] > 0):
 				{
-					_object setVariable ["password", "0000", true];
+					_object setVariable ["senha", "0000", true];
 				};
                 
 				// Give diving gear to RHIB, Speedboat, and SDV - Default in A3W but in AJ Switch-Case Statement implemented

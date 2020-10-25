@@ -23,13 +23,13 @@ _setupObjects =
 	_box1 = createVehicle ["Box_East_Wps_F", _missionPos, [], 5, "None"];
 	[_box1, ["RU", "MILITIA"] call BIS_fnc_selectRandom] call fn_refillbox;
 
-	_box2 = createVehicle ["Box_East_Wps_F", _missionPos, [], 5, "None"];
+	_box2 = createVehicle ["O_CargoNet_01_ammo_F", _missionPos, [], 5, "None"];
 	[_box2, ["RU", "MILITIA"] call BIS_fnc_selectRandom] call fn_refillbox;
 
 	_box3 = createVehicle ["Box_East_Wps_F", _missionPos, [], 5, "None"];
 	[_box3, ["RU", "MILITIA"] call BIS_fnc_selectRandom] call fn_refillbox;
 
-	_box4 = createVehicle ["Box_East_Wps_F", _missionPos, [], 5, "None"];
+	_box4 = createVehicle ["B_supplyCrate_F", _missionPos, [], 5, "None"];
 	[_box4, ["RU", "MILITIA"] call BIS_fnc_selectRandom] call fn_refillbox;
 
 	{
@@ -41,7 +41,7 @@ _setupObjects =
 	} forEach [_box1, _box2, _box3, _box4];
 
 	_aiGroup = createGroup CIVILIAN;
-	[_aiGroup, _missionPos] call createSmallDivers;
+	[_aiGroup, _missionPos] call createLargeDivers;
 
 	_missionHintText = "Suprimentos afundados foram vistos no oceano perto da marcação e estao fortemente protegidos. Recomenda-se equipamento de mergulho e arma de propósito duplo...";
 };

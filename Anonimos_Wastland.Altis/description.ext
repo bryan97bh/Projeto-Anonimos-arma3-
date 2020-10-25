@@ -37,9 +37,9 @@ briefing = 0; // if 0, skip Continue button
 
 // A3W UI color (default = sky blue)
 
-#define A3W_UICOLOR_R  0.13 // default = 0.25
-#define A3W_UICOLOR_G  0.11 // default = 0.51
-#define A3W_UICOLOR_B  0.11 // default = 0.96
+#define A3W_UICOLOR_R  0.147 // default = 0.25
+#define A3W_UICOLOR_G  0.112 // default = 0.51
+#define A3W_UICOLOR_B  0.219 // default = 0.96
 
 //Dialog includes
 
@@ -85,6 +85,11 @@ briefing = 0; // if 0, skip Continue button
 #include "addons\vPin\dialog\vPin_mainMenu.hpp"
 #include "addons\AF_Keypad\AF_KP_defines.hpp"
 #include "addons\AF_Keypad\AF_KP_dialogs.hpp"
+#include "scarCODE\ServerInfoMenu\hpp\CfgServerInfoMenu.hpp"
+#include "scarCODE\ServerInfoMenu\hpp\RscDisplayServerInfoMenu.hpp"
+
+#include "scarCODE\ServerInfoMenu2\hpp\CfgServerInfoMenu2.hpp"
+#include "scarCODE\ServerInfoMenu2\hpp\RscDisplayServerInfoMenu2.hpp"
 
 class RscTitles
 {
@@ -127,48 +132,6 @@ class CfgFunctions
 		#include "addons\aj\aj_FunctionsDefinition.hpp"
 	};
 	//AJ End
-};
-
-class CfgUnitInsignia
-{
-	class aj_rank_BrigGen 
-	{
-		displayName = "Brigardegeneral"; // Name displayed in Arsenal
-		author = "wiking.at"; // Author displayed in Arsenal
-		texture = "client\images\ranks\BrigGen_ca.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class aj_rank_OTL 
-	{
-		displayName = "Oberstleutnant"; // Name displayed in Arsenal
-		author = "wiking.at"; // Author displayed in Arsenal
-		texture = "client\images\ranks\OTL_ca.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class aj_rank_Hptm
-	{
-		displayName = "Hauptmann"; // Name displayed in Arsenal
-		author = "wiking.at"; // Author displayed in Arsenal
-		texture = "client\images\ranks\Hptm_ca.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class aj_rank_HG
-	{
-		displayName = "Hauptgefreiter"; // Name displayed in Arsenal
-		author = "wiking.at"; // Author displayed in Arsenal
-		texture = "client\images\ranks\HG_ca.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-
-	class aj_rank_Gef
-	{
-		displayName = "Gefreiter"; // Name displayed in Arsenal
-		author = "wiking.at"; // Author displayed in Arsenal
-		texture = "client\images\ranks\Gef_ca.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-
-
 };
 
 class CfgNotifications

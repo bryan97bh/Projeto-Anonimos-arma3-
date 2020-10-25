@@ -16,7 +16,6 @@ _setupVars =
 	[
         "I_UAV_01_F",
         "I_UAV_06_F",
-		"I_UAV_06_medical_F",
 		"C_IDAP_UAV_06_antimine_F",
 		"I_UGV_02_Demining_F",
         "I_UGV_01_rcws_F",

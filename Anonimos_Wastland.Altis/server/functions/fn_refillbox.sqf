@@ -177,15 +177,15 @@ switch (_boxType) do
 		_boxItems =
 		[
 			// Item type, Item class(es), # of items, # of magazines per weapon
-			["mag", "APERSTripMine_Wire_Mag",  10],   
-			["mag", "APERSBoundingMine_Range_Mag",  10],    
-			["mag", "APERSMine_Range_Mag",  10],    
-			["mag", "SLAMDirectionalMine_Wire_Mag",  10],    
-			["mag", "ATMine_Range_Mag",  10],    
-			["mag", "IEDUrbanSmall_Remote_Mag",  10],    
-			["mag", "IEDLandSmall_Remote_Mag",  10], 
-			["mag", "IEDUrbanBig_Remote_Mag",  10], 
-			["mag", "IEDLandBig_Remote_Mag",  10]
+			["mag", "APERSTripMine_Wire_Mag",  20],   
+			["mag", "APERSBoundingMine_Range_Mag",  20],    
+			["mag", "APERSMine_Range_Mag",  20],    
+			["mag", "SLAMDirectionalMine_Wire_Mag",  20],    
+			["mag", "ATMine_Range_Mag",  20],    
+			["mag", "IEDUrbanSmall_Remote_Mag",  20],    
+			["mag", "IEDLandSmall_Remote_Mag",  20], 
+			["mag", "IEDUrbanBig_Remote_Mag",  20], 
+			["mag", "IEDLandBig_Remote_Mag",  20]
         ];
 	};
 	case "mission_suply":
@@ -194,30 +194,30 @@ switch (_boxType) do
 		[
 			// Item type, Item class(es), # of items, # of magazines per weapon
 			["itm", "MineDetector", 10],   
-			["itm", "ToolKit", 10],    
-			["itm", "Medikit", 10],    
-			["itm", "FirstAidKit", 10],    
-			["itm", "Rangefinder", 5],    
-			["itm", "Binocular", 10],    
-			["itm", "ItemGPS", 10], 
-			["itm", "B_UavTerminal", 5], 
-			["itm", "B_IR_Grenade", 10],
-			["itm", "Laserdesignator", 2],
-			["itm", "Laserdesignator_01_khk_F", 2],
-			["itm", "Laserdesignator_03", 2],
-			["itm", "Laserdesignator_02", 2],
-			["itm", "Laserdesignator_02_ghex_F", 2],
-			["itm", "Chemlight_blue", 10],
-			["itm", "Chemlight_green", 10],
-			["itm", "Chemlight_yellow", 10],
-			["itm", "Chemlight_red", 10],
-			["itm", "SmokeShell", 10],
-			["itm", "SmokeShellPurple", 10],
-			["itm", "SmokeShellBlue", 10],
-			["itm", "SmokeShellGreen", 10],
-			["itm", "SmokeShellYellow", 10],
-			["itm", "SmokeShellOrange", 10],
-			["itm", "SmokeShellRed", 10]
+			["itm", "ToolKit", 2],    
+			["itm", "Medikit", 2],    
+			["itm", "FirstAidKit", 5],    
+			["itm", "Rangefinder", 2],    
+			["itm", "Binocular", 5],    
+			["itm", "ItemGPS", 2], 
+			["itm", "I_UavTerminal", 2], 
+			["itm", "B_IR_Grenade", 5],
+			["itm", "Laserdesignator", 1],
+			["itm", "Laserdesignator_01_khk_F", 1],
+			["itm", "Laserdesignator_03", 1],
+			["itm", "Laserdesignator_02", 1],
+			["itm", "Laserdesignator_02_ghex_F", 1],
+			["itm", "Chemlight_blue", 5],
+			["itm", "Chemlight_green", 5],
+			["itm", "Chemlight_yellow", 5],
+			["itm", "Chemlight_red", 5],
+			["itm", "SmokeShell", 5],
+			["itm", "SmokeShellPurple", 5],
+			["itm", "SmokeShellBlue", 5],
+			["itm", "SmokeShellGreen", 5],
+			["itm", "SmokeShellYellow", 5],
+			["itm", "SmokeShellOrange", 5],
+			["itm", "SmokeShellRed", 5]
         ];
 	};
     case "mission_Gear":

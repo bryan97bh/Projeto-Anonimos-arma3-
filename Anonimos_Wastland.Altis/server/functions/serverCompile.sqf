@@ -16,9 +16,9 @@ _path = "server\missions\factoryMethods";
 attemptCompileMissions = [_path, "attemptCompileMissions.sqf"] call mf_compile;
 checkMissionVehicleLock = [_path, "checkMissionVehicleLock.sqf"] call mf_compile;
 cleanLocationObjects = [_path, "cleanLocationObjects.sqf"] call mf_compile;
+// custom groups
 createCustomGroup = [_path, "createUnits\customGroup.sqf"] call mf_compile;
 createsmugglersGroup = [_path, "createUnits\smugglersGroup.sqf"] call mf_compile;
-// custom groups
 createroadblockGroup = [_path, "createUnits\roadblockGroup.sqf"] call mf_compile;
 createterrorGroup = [_path, "createUnits\terrorGroup.sqf"] call mf_compile;
 createurbanGroup = [_path, "createUnits\urbanGroup.sqf"] call mf_compile;
@@ -39,18 +39,18 @@ createo_esp = [_path, "createUnits\o_esp.sqf"] call mf_compile;
 createA_aff1 = [_path, "createUnits\A_aff1.sqf"] call mf_compile;
 createA_affesp = [_path, "createUnits\A_affesp.sqf"] call mf_compile;
 createsniperGroup = [_path, "createUnits\sniperGroup.sqf"] call mf_compile;
-// custum groups end
 createHackerGroup1= [_path, "createUnits\hackerGroup1.sqf"] call mf_compile;
 createHackerGroup2= [_path, "createUnits\hackerGroup2.sqf"] call mf_compile;
 createLargeDivers = [_path, "createUnits\largeDivers.sqf"] call mf_compile;
+createRandomSoldier = [_path, "createUnits\createRandomSoldier.sqf"] call mf_compile;
+createRandomPilot = [_path, "createUnits\createRandomPilot.sqf"] call mf_compile;
+createSmallDivers = [_path, "createUnits\smallDivers.sqf"] call mf_compile;
+// custum groups end
 createMissionLocation = [_path, "createMissionLocation.sqf"] call mf_compile;
 createMissionMarker = [_path, "createMissionMarker.sqf"] call mf_compile;
 createMissionVehicle = [_path, "createMissionVehicle.sqf"] call mf_compile;
 createMissionVehicle2 = [_path, "createMissionVehicle2.sqf"] call mf_compile;
 createOutpost = [_path, "createOutpost.sqf"] call mf_compile;
-createRandomSoldier = [_path, "createUnits\createRandomSoldier.sqf"] call mf_compile;
-createRandomPilot = [_path, "createUnits\createRandomPilot.sqf"] call mf_compile;
-createSmallDivers = [_path, "createUnits\smallDivers.sqf"] call mf_compile;
 generateMissionWeights = [_path, "generateMissionWeights.sqf"] call mf_compile;
 mission_VehicleCapture = "server\missions\mainMissions\mission_VehicleCapture.sqf" call mf_compile;
 mission_VehicleCapture_v2 = "server\missions\mainMissions\mission_VehicleCapture_v2.sqf" call mf_compile;

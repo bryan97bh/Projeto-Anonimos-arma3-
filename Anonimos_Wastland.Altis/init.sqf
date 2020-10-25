@@ -114,7 +114,9 @@ if (hasInterface || isServer) then
 	[] execVM "addons\APOC_Airdrop_Assistance\init.sqf";
 	[] execVM "addons\laptop\init.sqf";
 	[] execVM "addons\HvT\HvT.sqf";
-	[] execVM "addons\scripts\HvD.sqf"; // High Value Drugrunner
+	[] execVM "addons\HvT\HvD.sqf"; // High Value Drugrunner
+	[] execVM "scarCODE\ServerInfoMenu\sqf\initLocal.sqf"; // scarCODE ServerInfoMenu
+	[] execVM "scarCODE\ServerInfoMenu2\sqf\initLocal.sqf"; // scarCODE ServerInfoMenu
 	[] execVM "addons\playerCustomUniforms\playerCustomUniforms.sqf";
 };
 

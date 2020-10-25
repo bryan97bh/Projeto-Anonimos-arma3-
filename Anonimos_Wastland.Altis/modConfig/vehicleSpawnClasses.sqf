@@ -12,8 +12,6 @@ A3W_smallVehicles =
 //Civilian Vehicle List - Random Spawns
 civilianVehicles =
 [
-	"C_Tractor_01_F",
-    "C_Kart_01_F",
 	"C_Offroad_01_F",
 	"C_SUV_01_F",
 	"C_Offroad_02_unarmed_F",
@@ -59,10 +57,7 @@ staticWeaponsList =
 //Object List - Random Helis.
 staticHeliList =
 [
-	"C_Heli_Light_01_civil_F",
-	"B_Heli_Light_01_F",
-	"O_Heli_Light_02_unarmed_F",
-	"I_Heli_Transport_02_F"
+	"C_Heli_Light_01_civil_F"
 	// don't put cargo helicopters here, it doesn't make sense to find them in towns; they spawn in the CivHeli mission
 ];
 

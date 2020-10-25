@@ -329,4 +329,3 @@ class genstored
 		};
 	};
 };
-

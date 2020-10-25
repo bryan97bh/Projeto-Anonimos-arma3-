@@ -136,9 +136,6 @@ switch (true) do
     {
         _mags =
         [
-			["magazine_Fighter04_Gun20mm_AA_x250", [-1]],
-			["magazine_Fighter04_Gun20mm_AA_x250", [-1]],
-			["magazine_Fighter04_Gun20mm_AA_x250", [-1]],
             ["magazine_Fighter04_Gun20mm_AA_x250", [-1]], // extra gun mags (non-explosive ammo)
             ["Laserbatteries", [-1]],
             ["240Rnd_CMFlare_Chaff_Magazine", [-1]]
@@ -156,7 +153,6 @@ switch (true) do
 	{
 		_mags =
 		[
-			["magazine_Fighter01_Gun20mm_AA_x450", [-1]],
 			["magazine_Fighter01_Gun20mm_AA_x450", [-1]], // extra gun mag (non-explosive ammo)
 			["Laserbatteries", [-1]],
 			["240Rnd_CMFlare_Chaff_Magazine", [-1]]
@@ -175,10 +171,6 @@ switch (true) do
 	{
 		_mags =
 		[
-			["magazine_Fighter01_Gun20mm_AA_x450", [-1]],
-			["magazine_Fighter01_Gun20mm_AA_x450", [-1]],
-			["magazine_Fighter01_Gun20mm_AA_x450", [-1]],
-			["magazine_Fighter01_Gun20mm_AA_x450", [-1]],
 			["magazine_Fighter01_Gun20mm_AA_x450", [-1]], // extra gun mags to make up for lack of pylons (non-explosive ammo)
 			["Laserbatteries", [-1]],
 			["240Rnd_CMFlare_Chaff_Magazine", [-1]]
@@ -191,9 +183,6 @@ switch (true) do
 	{
 		_mags =
 		[
-			["magazine_Fighter02_Gun30mm_AA_x180", [-1]],
-			["magazine_Fighter02_Gun30mm_AA_x180", [-1]],
-			["magazine_Fighter02_Gun30mm_AA_x180", [-1]],
 			["magazine_Fighter02_Gun30mm_AA_x180", [-1]], // extra gun mag (non-explosive ammo)
 			["Laserbatteries", [-1]],
 			["240Rnd_CMFlare_Chaff_Magazine", [-1]]
@@ -212,10 +201,6 @@ switch (true) do
 	{
 		_mags =
 		[
-			["magazine_Fighter02_Gun30mm_AA_x180", [-1]],
-			["magazine_Fighter02_Gun30mm_AA_x180", [-1]],
-			["magazine_Fighter02_Gun30mm_AA_x180", [-1]],
-			["magazine_Fighter02_Gun30mm_AA_x180", [-1]],
 			["magazine_Fighter02_Gun30mm_AA_x180", [-1]], // extra gun mags to make up for lack of pylons (non-explosive ammo)
 			["Laserbatteries", [-1]],
 			["240Rnd_CMFlare_Chaff_Magazine", [-1]]

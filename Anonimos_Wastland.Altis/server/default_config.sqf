@@ -43,11 +43,11 @@ A3W_spawnBeaconSpawnHeight = 1500; // Altitude in meters at which players will s
 A3W_resupplyCostPR = 4;			   // Determine resupply cost by vehicle store cost / A3W_resupplyCostPR. (4 = default, %25 percent)
 A3W_firstPersonCamOnFoot = 1;	   // Lock infantry to first person view
 A3W_firstPersonCamNotDriver = 1;   // Lock all vehicle seating positions besides driver to first person view
-A3W_donatorEnabled = 1;				// Enable/Disable Donator Features
-A3W_customUniformEnabled = 1;		// Enable/Disable Custom Uniforms
-A3W_tkAutoSwitchEnabled = 0;			// Enable/Disable Switch for team killers
-A3W_maxLockonDistance = 1000; 	// Max Lockon Distance with Missle
-APOC_coolDownTimer = 300;		// APOC Air Drop Cool Down Time
+A3W_donatorEnabled = 1;			   // Enable/Disable Donator Features
+A3W_customUniformEnabled = 1;	   // Enable/Disable Custom Uniforms
+A3W_tkAutoSwitchEnabled = 0;	   // Enable/Disable Switch for team killers
+A3W_maxLockonDistance = 1000; 	   // Max Lockon Distance with Missle
+APOC_coolDownTimer = 300;		   // APOC Air Drop Cool Down Time
 BoS_coolDownTimer = 600;           // Baselocker hacking timer
 Safe_coolDownTimer = 600;          // Safe hacking timer
 A3W_maxSpawnBeacons = 1;		   // Maxmimum number of spawn beacons (0 = disabled)
@@ -56,7 +56,7 @@ A3W_maxSpawnBeacons = 1;		   // Maxmimum number of spawn beacons (0 = disabled)
 A3W_antiHackUnitCheck = 1;         // Detect players who spawn unauthorized AI units (0 = no, 1 = yes) - disable if you have custom unit scripts/mods like AI recruitment or ALiVE
 A3W_antiHackMinRecoil = 1.0;       // Mininum recoil coefficient enforced by the antihack (recommended values: default = 1.0, TMR Mod = 0.5, VTS Weapon Resting = 0.25) (minimum: 0.02)
 A3W_fastMovementLog = 1;           // Enable fast movement check (0 = no, 1 = yes)
-A3W_fastMovementLogDist = 300;    // Number of meters in loop before logged 300ms = 1080 km/h
+A3W_fastMovementLogDist = 300;     // Number of meters in loop before logged 300ms = 1080 km/h
 A3W_fastMovementLoopTime = 1;      // Number of seconds before loop check
 
 // Store settings
@@ -86,10 +86,10 @@ A3W_bountyKillsLifetime = 3*24;
 A3W_savingMethod = "extdb";      // Method used for saving data ("profile", "iniDB", "extdb")
 A3W_playerSaving = 1;              // Save player data like position, health, inventory, etc. (0 = no, 1 = yes)
 A3W_moneySaving = 1;               // If playerSaving = 1, save player money amount (0 = no, 1 = yes)
-A3W_playerStatsGlobal = 1;       // If playerSaving = 1 and savingMethod = "extdb", players' stats on the scoreboard will be their all-time global values from all servers of your database (0 = no, 1 = yes)
+A3W_playerStatsGlobal = 0;         // If playerSaving = 1 and savingMethod = "extdb", players' stats on the scoreboard will be their all-time global values from all servers of your database (0 = no, 1 = yes)
 A3W_timeSaving = 1;                // Save and restore in-game clock time between server restarts (0 = no, 1 = yes)
 A3W_weatherSaving = 1;             // Save and restore weather settings between server restarts (0 = no, 1 = yes)
-A3W_combatAbortDelay = 60;         // If playerSaving = 1, delay in seconds for which to disable abort and respawn buttons after firing or being shot (0 = none)
+A3W_combatAbortDelay = 5;          // If playerSaving = 1, delay in seconds for which to disable abort and respawn buttons after firing or being shot (0 = none)
 A3W_vehicleSaving = 1;             // Save purchased and captured vehicles between server restarts (0 = no, 1 = yes)
 A3W_missionVehicleSaving = 0;      // Autosaving behavior for convoy/patrol/shipment _vehicles, until a player force-saves or acquires ownership (0 = off, 1 = on)
 A3W_baseSaving = 1;                // Save locked base parts between server restarts (0 = no, 1 = yes)
@@ -163,7 +163,7 @@ A3W_territoryCaptureTime = 3*60;   // Time in seconds needed to capture a territ
 A3W_territoryPayroll = 1;          // Periodically reward sides and indie groups based on how many territories they own (0 = no, 1 = yes)
 A3W_territoryWarningIcons = 1;     // Show exclamation marks on map for friendly territories where enemies are present (0 = no, 1 = yes)
 A3W_payrollInterval = 10*60;       // Delay in seconds between each payroll
-A3W_payrollAmount = 90;           // Amount of money rewarded per territory on each payroll
+A3W_payrollAmount = 100;           // Amount of money rewarded per territory on each payroll
 A3W_territoryAllowed = [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120]; //Territory Allowed
 
 // Mission settings

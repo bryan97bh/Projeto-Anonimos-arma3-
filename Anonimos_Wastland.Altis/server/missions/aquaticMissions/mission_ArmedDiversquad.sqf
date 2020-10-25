@@ -51,7 +51,7 @@ _setupObjects =
 	]] call processItems;
 
 	_aiGroup = createGroup CIVILIAN;
-	[_aiGroup, _missionPos] call createLargeDivers;
+	[_aiGroup, _missionPos] call createsmallDivers;
 
 	[_vehicle, _aiGroup] spawn checkMissionVehicleLock;
 

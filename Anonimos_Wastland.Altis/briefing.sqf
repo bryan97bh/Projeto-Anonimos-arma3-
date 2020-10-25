@@ -263,7 +263,6 @@ player createDiaryRecord ["infos",
 <br/>" + NKEYNAME(41) + " (abrir Menu do Jogador)
 <br/>" + NKEYNAME(207) + " (inserir tampões de ouvido)
 <br/>" + NKEYNAME(199) + ", " + NKEYNAME(219) + ", " + NKEYNAME(220) + " (mostra nomes dos amigos)
-<br/>Ctrl + " + AKEYNAME("GetOut") + " (ejeção de emergência)
 <br/>" + AKEYNAME("GetOver") + " (abrir paraquedas)
 <br/>Shift + " + NKEYNAME(201) + " / " + NKEYNAME(209) + " (ajuste do óculos de visão noturna)
 

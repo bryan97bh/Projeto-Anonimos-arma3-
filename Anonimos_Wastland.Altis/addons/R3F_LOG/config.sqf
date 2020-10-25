@@ -1,22 +1,12 @@
 /**
- * MAIN CONFIGURATION FILE
- * 
- * English and French comments
- * Commentaires anglais et fran�ais
- * 
+ * ARQUIVO DE CONFIGURAÇÃO PRINCIPAL
  * (EN)
- * This file contains the configuration variables of the logistics system.
+ * Este arquivo contém as variáveis de configuração do sistema logístico.
  * For the configuration of the creation factory, see the file "config_creation_factory.sqf".
  * IMPORTANT NOTE : when a logistics feature is given to an object/vehicle class name, all the classes which inherit
  *                  of the parent/generic class (according to the CfgVehicles) will also have this feature.
  *                  CfgVehicles tree view example : http://madbull.arma.free.fr/A3_stable_1.20.124746_CfgVehicles_tree.html
- * 
- * (FR)
- * Fichier contenant les variables de configuration du syst�me de logistique.
- * Pour la configuration de l'usine de cr�ation, voir le fichier "config_creation_factory.sqf".
- * NOTE IMPORTANTE : lorsqu'une fonctionnalit� logistique est accord�e � un nom de classe d'objet/v�hicule, les classes
- *                   h�ritant de cette classe m�re/g�n�rique (selon le CfgVehicles) se verront �galement dot�es de cette fonctionnalit�.
- *                   Exemple d'arborescence du CfgVehicles : http://madbull.arma.free.fr/A3_stable_1.20.124746_CfgVehicles_tree.html
+Exemple d'arborescence du CfgVehicles : http://madbull.arma.free.fr/A3_stable_1.20.124746_CfgVehicles_tree.html
  */
 
 /**
@@ -30,16 +20,6 @@
  *            You can disable some objects with : object setVariable ["R3F_LOG_disabled", true];
  * If true :  all objects are disabled by default
  *            You can enable some objects with : object setVariable ["R3F_LOG_disabled", false];
- * 
- * 
- * (FR)
- * D�fini si les objets et v�hicules disposent des fonctionnalit�s logistiques par d�faut,
- * ou si elles doivent �tre autoris�s explicitement sur des objets/v�hicules sp�cifiques.
- * 
- * Si false : tous les objets sont actifs en accord avec les noms de classes list�s dans ce fichier
- *            Vous pouvez d�sactiver certains objets avec : objet setVariable ["R3F_LOG_disabled", true];
- * Si true :  tous les objets sont inactifs par d�faut
- *            Vous pouvez activer quelques objets avec : objet setVariable ["R3F_LOG_disabled", false];
  */
 R3F_LOG_CFG_disabled_by_default = true;
 
@@ -59,24 +39,6 @@ R3F_LOG_CFG_disabled_by_default = true;
  * If "unit" : the object is locked to the last player which interacts with it. The lock is lost when the unit dies.
  * 
  * Note : for military objects (not civilian), the lock is initialized to the object's side.
- * 
- * See also the config variable R3F_LOG_CFG_unlock_objects_timer.
- * 
- * (FR)
- * D�fini le mode de verrouillage des fonctionnalit�s logistics pour un objet donn�.
- * Un objet peut �tre verrouill� pour une side, une faction, un joueur (respawn) ou une unit� (vie).
- * Si l'objet est verrouill�, le joueur peut le d�verrouiller en fonction de la
- * valeur de la variable de configiration R3F_LOG_CFG_unlock_objects_timer.
- * 
- * Si "none" : pas de verrouillage, tout le monde peut utiliser les fonctionnalit�s logistiques.
- * Si "side" : l'objet est verrouill� pour la derni�re side ayant interagit avec lui.
- * Si "faction" : l'objet est verrouill� pour la derni�re faction ayant interagit avec lui.
- * Si "player" : l'objet est verrouill� pour le dernier joueur ayant interagit avec lui. Le verrou est transmis apr�s respawn.
- * Si "unit" : l'objet est verrouill� pour le dernier joueur ayant interagit avec lui. Le verrou est perdu quand l'unit� meurt.
- * 
- * Note : pour les objets militaires (non civils), le verrou est initialis� � la side de l'objet.
- * 
- * Voir aussi la variable de configiration R3F_LOG_CFG_unlock_objects_timer.
  */
 R3F_LOG_CFG_lock_objects_mode = "none";
 
@@ -146,19 +108,6 @@ R3F_LOG_CFG_language = switch (language) do
  * Note that quotes of the strings inside the string condition must be doubled.
  * Note : if the condition depends of the aimed objects/vehicle, you can use the command cursorTarget
  * To allow the logistics to everyone, just set the condition to "true".
- * 
- * (FR)
- * Cette variable permet d'utiliser une condition SQF dynamique pour autoriser ou non les fonctions logistiques sur des clients sp�cifiques.
- * La variable doit �tre une CHAINE de caract�res d�limit�e par des guillemets et doit contenir une condition SQF valide qui sera �valu�e durant la mission.
- * Par exemple pour autoriser la logistique sur seulement quelques joueurs ayant un ID de jeu connu, la variable peut �tre d�fini comme suit :
- * "getPlayerUID player in [""76xxxxxxxxxxxxxxx"", ""76yyyyyyyyyyyyyyy"", ""76zzzzzzzzzzzzzzz""]"
- * Ou elle peut se baser sur le nom de profil : "profileName in [""maxime"", ""martin"", ""marc""]"
- * Ou pour n'autoriser que l'admin de serveur : "serverCommandAvailable "#kick"""
- * Les condition sont �valu�es en temps r�el, et peuvent donc d�pendre du d�roulement de la mission : "alive officier && taskState tache1 == ""Succeeded"""
- * Ou pour interdire la logistique dans la zone d�fini par un marqueur circulaire : "player distance getMarkerPos ""markerName"" > getMarkerSize ""markerName"" select 0"
- * Notez que les guillemets des cha�nes de caract�res dans la cha�ne de condition doivent �tre doubl�s.
- * Note : si la condition d�pend de l'objet/v�hicule point�, vous pouvez utiliser la commande cursorTarget
- * Pour autoriser la logistique chez tout le monde, il suffit de d�finir la condition � "true".
  */
 R3F_LOG_CFG_string_condition_allow_logistics_on_this_client = "true";
 
@@ -177,19 +126,6 @@ R3F_LOG_CFG_string_condition_allow_logistics_on_this_client = "true";
  * Note also that the condition is evaluted in real time, so it can use condition depending on the mission progress :
  * "alive officer && taskState task1 == ""Succeeded"""
  * To allow the creation factory to everyone, just set the condition to "true".
- * 
- * (FR)
- * Cette variable permet d'utiliser une condition SQF dynamique pour rendre accessible ou non l'usine de cr�ation sur des clients sp�cifiques.
- * La variable doit �tre une CHAINE de caract�res d�limit�e par des guillemets et doit contenir une condition SQF valide qui sera �valu�e durant la mission.
- * Par exemple pour autoriser l'usine de cr�ation sur seulement quelques joueurs ayant un ID de jeu connu, la variable peut �tre d�fini comme suit :
- * "getPlayerUID player in [""76xxxxxxxxxxxxxxx"", ""76yyyyyyyyyyyyyyy"", ""76zzzzzzzzzzzzzzz""]"
- * Ou elle peut se baser sur le nom de profil : "profileName in [""maxime"", ""martin"", ""marc""]"
- * Ou pour n'autoriser que l'admin de serveur : "serverCommandAvailable "#kick"""
- * Notez que les guillemets des cha�nes de caract�res dans la cha�ne de condition doivent �tre doubl�s.
- * Note : si la condition d�pend de l'objet/v�hicule point�, vous pouvez utiliser la commande cursorTarget
- * Notez aussi que les condition sont �valu�es en temps r�el, et peuvent donc d�pendre du d�roulement de la mission :
- * "alive officier && taskState tache1 == ""Succeeded"""
- * Pour autoriser l'usine de cr�ation chez tout le monde, il suffit de d�finir la condition � "true".
  */
 R3F_LOG_CFG_string_condition_allow_creation_factory_on_this_client = "false";
 
@@ -208,17 +144,6 @@ R3F_LOG_CFG_string_condition_allow_creation_factory_on_this_client = "false";
  * These variables are based on the inheritance principle according to the CfgVehicles tree.
  * It means that a features accorded to a class name, is also accorded to all child classes.
  * Inheritance tree view : http://madbull.arma.free.fr/A3_1.32_CfgVehicles_tree.html
- * 
- * (FR)
- * Deux moyens existent pour g�rer de nouveaux objets avec le syst�me logistique. Le premier consiste � ajouter
- * ces objets dans les listes appropri�es ci-dessous. Le deuxi�me est de cr�er un fichier externe dans le r�pertoire
- * /addons_config/ bas� sur /addons_config/TEMPLATE.sqf, et d'ajouter un #include ci-dessous.
- * La premi�re m�thode est pr�f�rable lorsqu'il s'agit d'ajouter ou corriger quelques classes diverses.
- * La deuxi�me m�thode est pr�f�rable s'il s'agit de prendre en compte le contenu d'un addon suppl�mentaire.
- * 
- * Ces variables sont bas�es sur le principe d'h�ritage utilis�s dans l'arborescence du CfgVehicles.
- * Cela signifie qu'une fonctionnalit� accord�e � une classe, le sera aussi pour toutes ses classes filles.
- * Vue de l'arborescence d'h�ritage : http://madbull.arma.free.fr/A3_1.32_CfgVehicles_tree.html
  */
 
 /****** LIST OF ADDONS CONFIG TO INCLUDE / LISTE DES CONFIG D'ADDONS A INCLURE ******/
@@ -227,11 +152,11 @@ R3F_LOG_CFG_string_condition_allow_creation_factory_on_this_client = "false";
 //#include "addons_config\R3F_addons.sqf"
 //#include "addons_config\YOUR_ADDITIONAL_ADDON.sqf"
 
-/****** TOW WITH VEHICLE / REMORQUER AVEC VEHICULE ******/
+//TOW WITH VEHICLE 
 
 /**
  * List of class names of ground vehicles which can tow objects.
- * Liste des noms de classes des v�hicules terrestres pouvant remorquer des objets.
+ *Lista de nomes de classes de veículos terrestres que podem rebocar objetos
  */
 R3F_LOG_CFG_can_tow = R3F_LOG_CFG_can_tow +
 [
@@ -259,7 +184,7 @@ R3F_LOG_CFG_can_tow = R3F_LOG_CFG_can_tow +
 
 /**
  * List of class names of objects which can be towed.
- * Liste des noms de classes des objets remorquables.
+ * Lista de nomes de classes de objetos que podem ser rebocados.
  */
 R3F_LOG_CFG_can_be_towed = R3F_LOG_CFG_can_be_towed +
 [
@@ -279,16 +204,17 @@ R3F_LOG_CFG_can_be_towed = R3F_LOG_CFG_can_be_towed +
 	"UGV_01_base_F",
 	"Helicopter_Base_F",
     "Plane",
+	"I_E_Radar_System_01_F",
+	"I_E_SAM_System_03_F",
 	"Ship"
 ];
 
 
-/****** LIFT WITH VEHICLE / HELIPORTER AVEC VEHICULE ******/
+/*//LIFT WITH VEHICLE GUICHO DE VEICULO
 
-/**
- * List of class names of helicopters which can lift objects.
- * Liste des noms de classes des h�licopt�res pouvant h�liporter des objets.
- */
+// List of class names of helicopters which can lift objects.
+// Lista de nomes de classes de helicópteros que podem levantar objetos
+
 R3F_LOG_CFG_can_lift = R3F_LOG_CFG_can_lift +
 [
 	// e.g. : "MyLifterVehicleClassName1", "MyLifterVehicleClassName2"
@@ -297,10 +223,9 @@ R3F_LOG_CFG_can_lift = R3F_LOG_CFG_can_lift +
     "VTOL_02_base_F"
 ];
 
-/**
- * List of class names of objects which can be lifted.
- * Liste des noms de classes des objets h�liportables.
- */
+// * List of class names of objects which can be lifted.
+// * Lista de nomes de classes de objetos que podem ser levantados.
+
 R3F_LOG_CFG_can_be_lifted = R3F_LOG_CFG_can_be_lifted +
 [
 	// e.g. : "MyLiftableObjectClassName1", "MyLiftableObjectClassName2"
@@ -334,30 +259,16 @@ R3F_LOG_CFG_can_be_lifted = R3F_LOG_CFG_can_be_lifted +
 	//"MBT_03_base_F",
 	"Land_Pod_Heli_Transport_04_box_F",//Adicionado 
 	"Land_Cargo20_military_green_F"
-];
+];*/
 
 
 /****** LOAD IN VEHICLE / CHARGER DANS LE VEHICULE ******/
 
 /*
-* (EN)
- * This section uses a numeric quantification of capacity and cost of the objets.
- * For example, in a vehicle has a capacity of 100, we will be able to load in 5 objects costing 20 capacity units.
- * The capacity doesn't represent a real volume or weight, but a choice made for gameplay.
- * 
- * (FR)
- * Cette section utilise une quantification num�rique de la capacit� et du co�t des objets.
- * Par exemple, dans un v�hicule d'une capacit� de 100, nous pouvons charger 5 objets co�tant 20 unit�s de capacit�.
- * La capacit� ne repr�sente ni un poids, ni un volume, mais un choix fait pour la jouabilit�.
- */
+ * Esta seção usa uma quantificação numérica da capacidade e custo dos objetos.
+ * Por exemplo, em um veículo com capacidade de 100, poderemos carregar 5 objetos com custo de 20 unidades de capacidade.
+ * A capacidade não representa um volume ou peso real, mas uma escolha feita para a jogabilidade.*/
 
-/**
- * List of class names of vehicles or cargo objects which can transport objects.
- * The second element of the nested arrays is the load capacity (in relation with the capacity cost of the objects).
- * 
- * Liste des noms de classes des v�hicules ou "objets contenant" pouvant transporter des objets.
- * Le deuxi�me �l�ment des sous-tableaux est la capacit� de chargement (en relation avec le co�t de capacit� des objets).
- */
 R3F_LOG_CFG_can_transport_cargo = R3F_LOG_CFG_can_transport_cargo +
 [
 	// e.g. : ["MyTransporterClassName1", itsCapacity], ["MyTransporterClassName2", itsCapacity]
@@ -379,7 +290,7 @@ R3F_LOG_CFG_can_transport_cargo = R3F_LOG_CFG_can_transport_cargo +
 	["MRAP_01_base_F", 20],
 	["MRAP_02_base_F", 20],
 	["MRAP_03_base_F", 20],
-	["B_Truck_01_box_F", 150],
+	["B_Truck_01_box_F", 500],
 	["Truck_F", 75],
 	["Wheeled_APC_F", 30],
 	["LT_01_base_F", 20],
@@ -399,8 +310,8 @@ R3F_LOG_CFG_can_transport_cargo = R3F_LOG_CFG_can_transport_cargo +
 	["Heli_Attack_01_base_F", 10],
 	["Heli_Attack_02_base_F", 20],
 	["Plane_Civil_01_base_F", 5],
-	["VTOL_01_base_F", 50],
-	["VTOL_02_base_F", 30],
+	["VTOL_01_base_F", 1500],
+	["VTOL_02_base_F", 1500],
 	["Land_Pod_Heli_Transport_04_box_F", 500],
 	["Land_Cargo20_military_green_F", 100]
 ];
@@ -409,15 +320,15 @@ R3F_LOG_CFG_can_transport_cargo = R3F_LOG_CFG_can_transport_cargo +
  * List of class names of objects which can be loaded in transport vehicle/cargo.
  * The second element of the nested arrays is the cost capacity (in relation with the capacity of the vehicles).
  * 
- * Liste des noms de classes des objets transportables.
- * Le deuxi�me �l�ment des sous-tableaux est le co�t de capacit� (en relation avec la capacit� des v�hicules).
+  * Lista de nomes de classes de objetos que podem ser carregados no veículo de transporte / carga.
+  * O segundo elemento das matrizes aninhadas é a capacidade de custo (em relação à capacidade dos veículos).
  */
 R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +
 [
 	// e.g. : ["MyTransportableObjectClassName1", itsCost], ["MyTransportableObjectClassName2", itsCost]
 	["Land_Device_assembled_F", 100],           //Re Locker
     ["Box_GEN_Equip_F", 10],                    //Safe
-	["Land_PillboxWall_01_3m_round_F", 10],      //Base Door (Pillbox) 3m
+	["Land_PillboxWall_01_3m_round_F", 10],     //Base Door (Pillbox) 3m
     ["Land_PillboxWall_01_6m_F", 15],           //Base Door (Pillbox)
     ["Land_Canal_Wall_10m_F", 20],              //Base Door (Canal Wall)
     ["Land_TripodScreen_01_dual_v1_F", 5],      //Base Door Key
@@ -431,7 +342,9 @@ R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +
 	["Quadbike_01_base_F", 10],
 	["C_Scooter_Transport_01_F", 10],
 	["Rubber_duck_base_F", 10],
-	["SDV_01_base_F", 15],
+	["SDV_01_base_F", 500],
+	["I_E_Radar_System_01_F", 500],
+	["I_E_SAM_System_03_F", 500],
 	["Land_BagBunker_Large_F", 10],
 	["Land_BagBunker_Small_F", 5],
 	["Land_BagBunker_Tower_F", 7],
@@ -472,7 +385,6 @@ R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +
 	["Land_Mil_ConcreteWall_F", 5],
 	["Land_Mil_WallBig_4m_F", 5],
 	["Land_Obstacle_Ramp_F", 5],
-	["Land_Pipes_large_F", 5],
 	["Land_RampConcreteHigh_F", 6],
 	["Land_RampConcrete_F", 5],
 	["BlockConcrete_F", 6],
@@ -481,18 +393,8 @@ R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +
     ["Land_Obstacle_Bridge_F", 4],
 	["Land_Shoot_House_Wall_F", 3],
 	["Land_Stone_8m_F", 5],
-	["Land_ToiletBox_F", 2],
 	["Land_BarrelWater_F", 4],
-	["Land_Pier_F", 150],  
 	["Land_FuelStation_Feed_F", 75],
-	["Land_ConcretePipe_F", 5],
-	["Land_Maroula_F", 8],
-    ["Land_Grave_obelisk_F", 12],
-	["Land_Slide_F", 3],
-	["Land_Carousel_01_F", 3],
-    ["Land_Swing_01_F", 3],
-	["Land_i_Garage_V1_F", 20],
-	["Land_cargo_house_slum_F", 20],
 	["Land_Shed_Small_F", 20],
 	["Land_Shed_Big_F", 30],
     ["Land_GH_Platform_F", 8],
@@ -510,18 +412,9 @@ R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +
 	["TargetP_Inf_F", 3],
 	["Land_New_WiredFence_5m_F", 4],
 	["Land_New_WiredFence_10m_F", 8],
-	["Land_TTowerBig_2_F", 40],
-	["Land_TTowerBig_1_F", 50],
 	["Land_ConcreteWall_01_l_4m_F", 10], 
 	["Land_ConcreteWall_01_l_8m_F", 10], 
 	["Land_ConcreteWall_01_l_gate_F", 10],
-	["Land_Fortress_01_5m_F", 20],
-	["Land_Fortress_01_10m_F", 30],
-	["Land_Fortress_01_d_L_F", 20],
-	["Land_Fortress_01_d_R_F", 20],
-	["Land_Fortress_01_outterCorner_50_F", 30],
-	["Land_Fortress_01_outterCorner_80_F", 30],
-	["Land_Fortress_01_outterCorner_90_F", 30],
     ["Land_CzechHedgehog_01_F", 5],
     ["Land_Bunker_01_blocks_1_F", 3],
     ["Land_Bunker_01_blocks_3_F", 5],
@@ -558,7 +451,7 @@ R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +
 
 /**
  * List of class names of objects which can be carried and moved by a player.
- * Liste des noms de classes des objets qui peuvent �tre port�s et d�plac�s par le joueur.
+ * Lista de nomes de classes de objetos que podem ser carregados e movidos por um jogador.
  */
 R3F_LOG_CFG_can_be_moved_by_player = R3F_LOG_CFG_can_be_moved_by_player +
 [
@@ -577,6 +470,8 @@ R3F_LOG_CFG_can_be_moved_by_player = R3F_LOG_CFG_can_be_moved_by_player +
 	"C_Scooter_Transport_01_F",
 	"Rubber_duck_base_F",
 	"SDV_01_base_F",
+	"I_E_Radar_System_01_F",
+	"I_E_SAM_System_03_F",
 	"Land_BagBunker_Large_F",
 	"Land_BagBunker_Small_F",
 	"Land_BagBunker_Tower_F",
@@ -618,7 +513,6 @@ R3F_LOG_CFG_can_be_moved_by_player = R3F_LOG_CFG_can_be_moved_by_player +
 	"Land_Mil_ConcreteWall_F",
 	"Land_Mil_WallBig_4m_F",
 	"Land_Obstacle_Ramp_F",
-	"Land_Pipes_large_F",
 	"Land_RampConcreteHigh_F",
 	"Land_RampConcrete_F",
 	"BlockConcrete_F",
@@ -627,22 +521,12 @@ R3F_LOG_CFG_can_be_moved_by_player = R3F_LOG_CFG_can_be_moved_by_player +
     "Land_Obstacle_Bridge_F",
 	"Land_Shoot_House_Wall_F",
 	"Land_Stone_8m_F",
-	"Land_ToiletBox_F",
 	"Land_BarrelWater_F",
 	"Land_HandyCam_F",
 	"Land_Laptop_F",
 	"Land_Cargo20_military_green_F",
 	"Land_Pod_Heli_Transport_04_box_F",//Adicionado 
-	"Land_Maroula_F",
-    "Land_Grave_obelisk_F",
-	"Land_Slide_F",
-	"Land_Carousel_01_F",
-    "Land_Swing_01_F",
-	"Land_Pier_F",
 	"Land_FuelStation_Feed_F",
-    "Land_ConcretePipe_F",
-    "Land_i_Garage_V1_F",
-	"Land_cargo_house_slum_F",
 	"Land_Shed_Small_F",
 	"Land_Shed_Big_F",
     "Land_GH_Platform_F",
@@ -660,18 +544,9 @@ R3F_LOG_CFG_can_be_moved_by_player = R3F_LOG_CFG_can_be_moved_by_player +
 	"TargetP_Inf_F",
 	"Land_New_WiredFence_5m_F",
 	"Land_New_WiredFence_10m_F",
-	"Land_TTowerBig_2_F",
-	"Land_TTowerBig_1_F",
 	"Land_ConcreteWall_01_l_4m_F", 
 	"Land_ConcreteWall_01_l_8m_F", 
 	"Land_ConcreteWall_01_l_gate_F",
-	"Land_Fortress_01_5m_F",
-	"Land_Fortress_01_10m_F",
-	"Land_Fortress_01_d_L_F",
-	"Land_Fortress_01_d_R_F",
-	"Land_Fortress_01_outterCorner_50_F",
-	"Land_Fortress_01_outterCorner_80_F",
-	"Land_Fortress_01_outterCorner_90_F", 
     "Land_CzechHedgehog_01_F",
     "Land_Bunker_01_blocks_1_F",
     "Land_Bunker_01_blocks_3_F",

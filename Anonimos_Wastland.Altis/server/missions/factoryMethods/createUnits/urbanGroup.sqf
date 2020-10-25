@@ -6,7 +6,7 @@
 
 if (!isServer) exitWith {};
 
-private ["_group", "_pos", "_leader", "_man2", "_man3", "_man4", "_man5", "_man6", "_man7", "_man8", "_man9", "_man10", "_man11", "_man12", "_man13", "_man14", "_man15"];
+private ["_group", "_pos", "_leader", "_man2", "_man3", "_man4", "_man5", "_man6", "_man7", "_man8", "_man9", "_man10"];
 
 _group = _this select 0;
 _pos = _this select 1;
@@ -270,126 +270,6 @@ _man10 call setMissionSkill;
 _man10 addRating 1e11;
 _man10 spawn refillPrimaryAmmo;
 _man10 addEventHandler ["Killed", server_playerDied];
-
-// Soldier11 SD-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-_man11 = _group createUnit ["C_man_1", [(_pos select 0) - 30, _pos select 1, 0], [], 1, "Form"];
-removeAllAssignedItems _man11;
-sleep 0.1; // Without this delay, headgear doesn't get removed properly
-_man11 linkItem "NVGoggles";
-_man11 addHeadgear "H_HelmetSpecB";
-_man11 addGoggles "G_WirelessEarpiece_F";
-_man11 addUniform "U_B_CTRG_1";
-_man11 addVest "V_PlateCarrierH_CTRG";
-
-_man11 addMagazine "20Rnd_762x51_Mag";
-_man11 addWeapon "arifle_SPAR_03_blk_F";
-_man11 addPrimaryWeaponItem "optic_ERCO_blk_F";
-_man11 addPrimaryWeaponItem "acc_flashlight";
-
-_man11 addMagazines ["SmokeShell", 2];
-_man11 addItemToVest "FirstAidKit";
-
-_man11 enablegunlights "forceOn";		
-_man11 call setMissionSkill;
-_man11 addRating 1e11;
-_man11 spawn refillPrimaryAmmo;
-_man11 addEventHandler ["Killed", server_playerDied];
-
-// Soldier12 SD-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-_man12 = _group createUnit ["C_man_1", [(_pos select 0) - 30, _pos select 1, 0], [], 1, "Form"];
-removeAllAssignedItems _man12;
-sleep 0.1; // Without this delay, headgear doesn't get removed properly
-_man12 linkItem "NVGoggles";
-_man12 addHeadgear "H_HelmetSpecB";
-_man12 addGoggles "G_WirelessEarpiece_F";
-_man12 addUniform "U_B_CTRG_1";
-_man12 addVest "V_PlateCarrierH_CTRG";
-
-_man12 addMagazine "20Rnd_762x51_Mag";
-_man12 addWeapon "arifle_SPAR_03_blk_F";
-_man12 addPrimaryWeaponItem "optic_ERCO_blk_F";
-_man12 addPrimaryWeaponItem "acc_flashlight";
-
-_man12 addMagazines ["SmokeShell", 2];
-_man12 addItemToVest "FirstAidKit";
-
-_man12 enablegunlights "forceOn";		
-_man12 call setMissionSkill;
-_man12 addRating 1e11;
-_man12 spawn refillPrimaryAmmo;
-_man12 addEventHandler ["Killed", server_playerDied];
-
-// Soldier13 SD-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-_man13 = _group createUnit ["C_man_1", [(_pos select 0) - 30, _pos select 1, 0], [], 1, "Form"];
-removeAllAssignedItems _man13;
-sleep 0.1; // Without this delay, headgear doesn't get removed properly
-_man13 linkItem "NVGoggles";
-_man13 addHeadgear "H_HelmetSpecB";
-_man13 addGoggles "G_WirelessEarpiece_F";
-_man13 addUniform "U_B_CTRG_1";
-_man13 addVest "V_PlateCarrierH_CTRG";
-
-_man13 addMagazine "20Rnd_762x51_Mag";
-_man13 addWeapon "arifle_SPAR_03_blk_F";
-_man13 addPrimaryWeaponItem "optic_ERCO_blk_F";
-_man13 addPrimaryWeaponItem "acc_flashlight";
-
-_man13 addMagazines ["SmokeShell", 2];
-_man13 addItemToVest "FirstAidKit";
-
-_man13 enablegunlights "forceOn";		
-_man13 call setMissionSkill;
-_man13 addRating 1e11;
-_man13 spawn refillPrimaryAmmo;
-_man13 addEventHandler ["Killed", server_playerDied];
-
-// Soldier14 SD-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-_man14 = _group createUnit ["C_man_1", [(_pos select 0) - 30, _pos select 1, 0], [], 1, "Form"];
-removeAllAssignedItems _man14;
-sleep 0.1; // Without this delay, headgear doesn't get removed properly
-_man14 linkItem "NVGoggles";
-_man14 addHeadgear "H_HelmetSpecB";
-_man14 addGoggles "G_WirelessEarpiece_F";
-_man14 addUniform "U_B_CTRG_1";
-_man14 addVest "V_PlateCarrierH_CTRG";
-
-_man14 addMagazine "20Rnd_762x51_Mag";
-_man14 addWeapon "arifle_SPAR_03_blk_F";
-_man14 addPrimaryWeaponItem "optic_ERCO_blk_F";
-_man14 addPrimaryWeaponItem "acc_flashlight";
-
-_man14 addMagazines ["SmokeShell", 2];
-_man14 addItemToVest "FirstAidKit";
-
-_man14 enablegunlights "forceOn";		
-_man14 call setMissionSkill;
-_man14 addRating 1e11;
-_man14 spawn refillPrimaryAmmo;
-_man14 addEventHandler ["Killed", server_playerDied];
-
-// Soldier15 SD-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-_man15 = _group createUnit ["C_man_1", [(_pos select 0) - 30, _pos select 1, 0], [], 1, "Form"];
-removeAllAssignedItems _man15;
-sleep 0.1; // Without this delay, headgear doesn't get removed properly
-_man15 linkItem "NVGoggles";
-_man15 addHeadgear "H_HelmetSpecB";
-_man15 addGoggles "G_WirelessEarpiece_F";
-_man15 addUniform "U_B_CTRG_1";
-_man15 addVest "V_PlateCarrierH_CTRG";
-
-_man15 addMagazine "20Rnd_762x51_Mag";
-_man15 addWeapon "arifle_SPAR_03_blk_F";
-_man15 addPrimaryWeaponItem "optic_ERCO_blk_F";
-_man15 addPrimaryWeaponItem "acc_flashlight";
-
-_man15 addMagazines ["SmokeShell", 2];
-_man15 addItemToVest "FirstAidKit";
-
-_man15 enablegunlights "forceOn";		
-_man15 call setMissionSkill;
-_man15 addRating 1e11;
-_man15 spawn refillPrimaryAmmo;
-_man15 addEventHandler ["Killed", server_playerDied];
 
 _leader = leader _group;
 [_group, _pos] call defendArea;

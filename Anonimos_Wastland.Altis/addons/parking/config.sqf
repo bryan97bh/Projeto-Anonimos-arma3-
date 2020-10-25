@@ -6,7 +6,7 @@ pp_markers_enabled = true;
 pp_markers_properties = ["ICON", "mil_dot", "ColorCIV", [1,1], "Parking"];
 
 //amount of money to charge player for retrieving a vehicle from parking (0 = no charge)
-pp_retrieve_cost = ["A3W_privateParkingCost", 5000] call getPublicVar;
+pp_retrieve_cost = ["A3W_privateParkingCost", 1000] call getPublicVar;
 
 //maximum number of vehicles that a player can park (0 = no limit)
 pp_max_player_vehicles = ["A3W_privateParkingLimit", 3] call getPublicVar;

@@ -109,26 +109,6 @@ if (!UNCONSCIOUS) then // ####################
         };
     };
 
-    // Eject
-    if (!_handled && _key in actionKeys "GetOut") then
-    {
-        _veh = vehicle player;
-
-        if (alive player && _veh != player) then
-        {
-            if (_ctrl && {_veh isKindOf 'Air' && !(_veh isKindOf 'ParachuteBase')}) then
-            {
-                [] spawn
-                {
-                    if !(["Você está certo que quer ejetar?", "Confirm", true, true] call BIS_fnc_guiMessage) exitWith {};
-                    [[], fn_emergencyEject] execFSM "call.fsm";
-                };
-
-                _handled = true;
-            };
-        };
-    };
-
     // Override prone reload freeze (ffs BIS)
     if (!_handled && _key in (actionKeys "MoveDown" + actionKeys "MoveUp")) then
     {

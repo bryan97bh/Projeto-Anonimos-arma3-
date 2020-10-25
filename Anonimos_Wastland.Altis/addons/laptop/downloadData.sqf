@@ -14,7 +14,7 @@
 T8_varTLine01 = "Download cancelled!";				// download aborted
 T8_varTLine02 = "Download already in progress by someone else!";			// download already in progress by someone else
 T8_varTLine03 = "Download started!";					// download started
-T8_varTLine04 = "Download finished! $25,000 added to your inventory!";				// download finished
+T8_varTLine04 = "Download finished";				// download finished
 T8_varTLine05 = "##  Hack Player Bank Accounts  ##";				// line for the addaction
 
 T8_varDiagAbort = false;

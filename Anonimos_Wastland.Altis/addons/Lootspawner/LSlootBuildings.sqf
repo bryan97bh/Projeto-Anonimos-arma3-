@@ -13,30 +13,10 @@
 //-------------------------------------------------------------------------------------
 Buildingstoloot_list =
 [
-	//["Land_Addon_01_V1_dam_F", 0],        //not viable
-	//["Land_Airport_center_F", 0],         //no positions
-	//["Land_cargo_addon01_V1_F", 0],       //no positions
-	//["Land_cargo_addon01_V2_F", 0],       //no positions
-	//["Land_cargo_addon02_V2_F", 0],       //no positions
-	//["Land_Castle_01_tower_F", 0],        //no positions
-	//["Land_Communication_anchor_F", 0],   //no positions
-	//["Land_Communication_F", 0],          //no positions
-	//["Land_dp_smallFactory_F", 0],        //no positions
-	//["Land_dp_smallTank_F", 0],           //no positions
-	//["Land_Factory_Hopper_F", 0],         //no positions
-	//["Land_Garage_V1_dam_F", 0],          //not viable
-	//["Land_ReservoirTank_Airport_F", 0],  //no positions
-	//["Land_ReservoirTower_F", 2],         //no positions
-	//["Land_Shed_Big_F", 0],               //no positions
-	//["Land_Shed_Small_F", 0],             //no positions
-	//["Land_TBox_F", 0],                   //no positions
-	//["Land_TTowerBig_1_F", 2],            //no positions
-	//["Land_TTowerBig_2_F", 2],            //no positions
 	["Land_Airport_left_F", 0],
 	["Land_Airport_right_F", 0],
 	["Land_Airport_Tower_dam_F", 2],
 	["Land_Airport_Tower_F", 2],
-	["Land_cargo_house_slum_F", 0],
 	["Land_Cargo_House_V1_F", 1],
 	["Land_Cargo_House_V2_F", 1],
 	["Land_Cargo_House_V3_F", 1],

@@ -2,18 +2,6 @@ if (!hasInterface) exitWith {};
 
 _playerCustomUniforms =
 [
-	[ // aleatorios 
-		[
-			"76561198117917952", //jb
-			"76561198158853539", //trex amigo jb 
-			"76561198117587693", //[-SaS-] WecTy amigo jb 
-			"76561198119668279",  //xBlackHalo amigo jb  76561198117587693
-			"76561198073156695"  //guy fawkes
-		],  
-		[
-			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\gratis.paa"]
-		]
-	],
 	[ // [CTMBR]
 		[
 			"76561198201844818", //[CTMBR] Dracula
@@ -82,15 +70,7 @@ _playerCustomUniforms =
 			["GUER","U_I_CombatUniform","addons\playerCustomUniforms\textures\z7_u.jpg"]
 		]
 	],
-	[ // Itamar Junior
-		[
-			"76561197973807596"  //Itamar Junior
-		],
-		[
-			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\26.paa"]
-		]
-	],
-		[ // Walkers
+	[ // Walkers
 		[
 			"76561198077983095", //Nielrx 
 			"76561198063319219", //Cass 
@@ -133,7 +113,49 @@ _playerCustomUniforms =
 			"76561197964189306"   //RONALDO
 		],
 		[
-			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\15.paa"]
+			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\15ra.paa"]
+		]
+	],
+	[ // [GEIB]
+		[
+			"76561198328745152",  //Mano2 
+			"76561197973807596",  //Kryptus 
+			"76561199027651724",  //MenorPet 
+			"76561198416892378",  //Snipernambucano 
+			"76561198396851044",  //Prof.Silva
+			"76561198118710990",  //Lucas 
+			"76561198285532898",  //CapiBoy 
+			"76561198811166180",  //Felipe Andreola
+			"76561198137948469",  //Jeferson 
+			"76561198089933704",  //Markezini 
+		    "76561198377304999",  //Daniel 
+			"76561198988502730",  //Chuck Mawhinney
+			"76561198200918322",  //Gabriel 
+			"76561198795837766",  //TulioMSC 
+			"76561198397121225"   //CobraCriada 
+		],
+		[
+			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\15ra.paa"]
+		]
+	],
+	[ // Itamar Junior
+		[
+			"76561197973807596"  //Itamar Junior
+		],
+		[
+			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\26.paa"]
+		]
+	],
+	[ // aleatorios 
+		[
+			"76561198117917952", //jb
+			"76561198158853539", //trex amigo jb 
+			"76561198117587693", //[-SaS-] WecTy amigo jb 
+			"76561198119668279",  //xBlackHalo amigo jb  
+			"76561198073156695"  //guy fawkes
+		],  
+		[
+			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\gratis.paa"]
 		]
 	]
 ];

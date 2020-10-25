@@ -7,7 +7,7 @@
 
 if (!isServer) exitWith {};
 
-private ["_group", "_pos", "_leader", "_man2", "_man3", "_man4", "_man5", "_man6", "_man7", "_man8", "_man9", "_man10", "_man11", "_man12", "_man13", "_man14", "_man15", "_man16", "_man17", "_man18", "_man19", "_man20"];
+private ["_group", "_pos", "_leader", "_man2", "_man3", "_man4", "_man5", "_man6", "_man7", "_man8", "_man9", "_man10", "_man11", "_man12", "_man13", "_man14", "_man15"];
 
 _group = _this select 0;
 _pos = _this select 1;
@@ -176,63 +176,6 @@ _man15 addMagazine "20Rnd_556x45_UW_Mag";
 _man15 addWeapon "arifle_SDAR_F";
 _man15 addMagazine "20Rnd_556x45_UW_Mag";
 _man15 addMagazine "20Rnd_556x45_UW_Mag";
-
-// Rifleman
-_man16 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
-removeAllAssignedItems _man16;
-_man16 addUniform "U_B_Wetsuit";
-_man16 addVest "V_RebreatherB";
-_man16 addGoggles "G_Diving";
-_man16 addMagazine "20Rnd_556x45_UW_Mag";
-_man16 addWeapon "arifle_SDAR_F";
-_man16 addMagazine "20Rnd_556x45_UW_Mag";
-_man16 addMagazine "20Rnd_556x45_UW_Mag";
-
-// Rifleman
-_man17 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
-removeAllAssignedItems _man17;
-_man17 addUniform "U_B_Wetsuit";
-_man17 addVest "V_RebreatherB";
-_man17 addGoggles "G_Diving";
-_man17 addMagazine "20Rnd_556x45_UW_Mag";
-_man17 addWeapon "arifle_SDAR_F";
-_man17 addMagazine "20Rnd_556x45_UW_Mag";
-_man17 addMagazine "20Rnd_556x45_UW_Mag";
-
-// Rifleman
-_man18 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
-removeAllAssignedItems _man18;
-_man18 addUniform "U_B_Wetsuit";
-_man18 addVest "V_RebreatherB";
-_man18 addGoggles "G_Diving";
-_man18 addMagazine "20Rnd_556x45_UW_Mag";
-_man18 addWeapon "arifle_SDAR_F";
-_man18 addMagazine "20Rnd_556x45_UW_Mag";
-_man18 addMagazine "20Rnd_556x45_UW_Mag";
-
-// Rifleman
-_man19 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
-removeAllAssignedItems _man19;
-_man19 addUniform "U_B_Wetsuit";
-_man19 addVest "V_RebreatherB";
-_man19 addGoggles "G_Diving";
-_man19 addMagazine "20Rnd_556x45_UW_Mag";
-_man19 addWeapon "arifle_SDAR_F";
-_man19 addMagazine "20Rnd_556x45_UW_Mag";
-_man19 addMagazine "20Rnd_556x45_UW_Mag";
-
-// Rifleman
-_man20 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
-removeAllAssignedItems _man20;
-_man20 addUniform "U_B_Wetsuit";
-_man20 addVest "V_RebreatherB";
-_man20 addGoggles "G_Diving";
-_man20 addMagazine "20Rnd_556x45_UW_Mag";
-_man20 addWeapon "arifle_SDAR_F";
-_man20 addMagazine "20Rnd_556x45_UW_Mag";
-_man20 addMagazine "20Rnd_556x45_UW_Mag";
-
-
 
 _leader = leader _group;
 
