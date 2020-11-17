@@ -2,23 +2,6 @@ if (!hasInterface) exitWith {};
 
 _playerCustomUniforms =
 [
-	[ // [CTMBR]
-		[
-			"76561198201844818", //[CTMBR] Dracula
-			"76561198070424261", //[CTMBR] bioga
-			"76561198343865767", //[CTMBR] WhiteCaT
-			"76561198176174925", //[CTMBR] --BIEL--
-			"76561198060065964", //[CTMBR] BRYAN
-			"76561198014855920", //[CTMBR] marechal
-			"76561198321878481", //[CTMBR] xavier
-			"76561198455692848", //satan
-			"76561198328104544", //CASTRO
-			"76561198217512245"  //MATHIELO
-		],
-		[
-			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\13P8.paa"]
-		]
-	],
 	[ // bope
 		[
 			"76561198062643926", //josei
@@ -30,7 +13,16 @@ _playerCustomUniforms =
 			"76561198177668437", //Kadumac
 			"76561198174464914", //Yesode 
 			"76561198106149544", //Jande 
-			"76561198387210033"  //SniperRush 
+			"76561198387210033", //SniperRush
+			"76561198328104544", //L 7 X O
+			"76561198218145436", //Vegge 
+			"76561198032315375", //Diogo Daron
+			"76561199006207266", //Erikao 
+			"76561198079937081", //Batista 
+			"76561198338874748", //Ity 
+			"76561198382350163", //Geladeira Tsuname
+			"76561198973417951", //SGT Roger
+			"76561198397080694" //Vidigal
 		],
 		[
 			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\24_O.jpg"]
@@ -70,7 +62,7 @@ _playerCustomUniforms =
 			["GUER","U_I_CombatUniform","addons\playerCustomUniforms\textures\z7_u.jpg"]
 		]
 	],
-	[ // Walkers
+	/*[ // Walkers
 		[
 			"76561198077983095", //Nielrx 
 			"76561198063319219", //Cass 
@@ -87,7 +79,7 @@ _playerCustomUniforms =
 		[
 			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\13.paa"]
 		]
-	],
+	],*/
 	[ // [RA]
 		[
 			"76561198157312258",  //<[RA] Cap  Batista>
@@ -97,8 +89,7 @@ _playerCustomUniforms =
 			"76561198835543767",  //<[RA] Sd Mario
 			"76561197978867972",  //<[RA] Sd Cordeiro
 			"76561198216066545",  //<[RA] Menegusso>
-			"76561198825211624",  //Nascimento
-			"76561198135910862",  //gtl_BR
+			//"76561198825211624",  //Nascimento
 			"76561198027682212",  //<[RA] 2°ten Sniperjoel>
 			"76561198087974566",  //<[RA] 2ºSgt Dpaulla>
 		    "76561198332507924",  //<[RA] Sd D.Oliveira>
@@ -110,6 +101,10 @@ _playerCustomUniforms =
 			"76561198279017971",  //<[RA] Sd Simo Hayha
 			"76561198057291104",  //<[RA] Martins>
 			"76561198256683401",  //<[RA] Sd Souza
+			"76561198060065964",  // BRYAN
+			"76561198343865767",  // WhiteCaT
+			"76561198321878481",  // xavier
+			"76561198201844818",  // Dracula
 			"76561197964189306"   //RONALDO
 		],
 		[
@@ -136,6 +131,18 @@ _playerCustomUniforms =
 		],
 		[
 			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\15ra.paa"]
+		]
+	],
+	[ // |SNP|
+		[
+			"76561198058414465",  //NersuBR
+			"76561198189765365",  //Predador
+			"76566198209166837",  //satros
+			"76561198122430254",  //Monsterdog
+			"76561198245280286"   //Mercenário_Sniper 
+		],
+		[
+			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\snp2.paa"]
 		]
 	],
 	[ // Itamar Junior
