@@ -143,6 +143,18 @@ _playerCustomUniforms =
 			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\snp2.paa"]
 		]
 	],
+	[ // |nkn|
+		[
+			"76561198960820249",  //Niko
+			"76561198328001833",  //Leo
+			"76561198339545528",  //Baby Beef
+			"76561198058108974",  //Dino Bração
+			"76561198440248452"   // Oliveira
+		],
+		[
+			["GUER","U_I_Wetsuit","addons\playerCustomUniforms\textures\diver_NKN.paa"]
+		]
+	],
 	[ // Itamar Junior
 		[
 			"76561197973807596"  //Itamar Junior
@@ -156,7 +168,8 @@ _playerCustomUniforms =
 			"76561198117917952", //jb
 			"76561198158853539", //trex amigo jb 
 			"76561198117587693", //[-SaS-] WecTy amigo jb 
-			"76561198119668279",  //xBlackHalo amigo jb  
+			"76561198119668279", //xBlackHalo amigo jb  
+			"76561198993657162", //bruno
 			"76561198073156695"  //guy fawkes
 		],  
 		[
