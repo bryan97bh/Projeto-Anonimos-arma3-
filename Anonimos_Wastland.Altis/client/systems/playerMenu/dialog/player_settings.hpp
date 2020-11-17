@@ -207,7 +207,7 @@ class playerSettings {
 
 		class airdrop: w_RscButton {
 			idc = -1;
-			text = "Airdrop Menu";
+			text = "Suporte Aéreo";
 			action = "closeDialog 0;[] execVM 'addons\APOC_Airdrop_Assistance\APOC_cli_menu.sqf'";
 			x = 0.35;
 			y = 0.54;

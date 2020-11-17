@@ -14,8 +14,8 @@ APOC_AA_VehOptions =
 //	["IFV-6a Cheetah AA","B_APC_Tracked_01_AA_F",70000,"vehicle",2700],
 //	["T-100 Varsuk","O_MBT_02_cannon_F",100000,"vehicle",2700],
 	["Lançador Antiaéreo","I_static_AA_F",15000,"vehicle"],
-	["Lançador Antitanque","I_static_AT_F",15000,"vehicle"],
-	["M-900 Modelo Cívil","C_Heli_Light_01_civil_F",6000,"vehicle"]
+	["Lançador Antitanque","I_static_AT_F",15000,"vehicle"]
+//	["M-900 Modelo Cívil","C_Heli_Light_01_civil_F",6000,"vehicle"]
 //	["UH-80 Ghost Hawk", "B_Heli_Transport_01_F", 45000, "vehicle"]
 	
 ];

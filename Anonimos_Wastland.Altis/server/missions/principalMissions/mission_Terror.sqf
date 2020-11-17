@@ -36,12 +36,12 @@ _setupObjects =
 	// spawn some crates in the middle of town (Town marker position)
 	_box1 = createVehicle ["Box_NATO_Wps_F", _missionPos, [], 5, "None"];
 	_box1 setDir random 360;
-	[_box1, "mission_suply"] call fn_refillbox;
+	[_box1, "mission_Explosive"] call fn_refillbox;
 	_box1 allowDamage false; // just so the bomb doesnt destroy it
 
 	_box2 = createVehicle ["Box_East_Wps_F", _missionPos, [], 5, "None"];
 	_box2 setDir random 360;
-	[_box2, "mission_suply"] call fn_refillbox;
+	[_box2, "mission_Explosive"] call fn_refillbox;
 	_box2 allowDamage false; // just so the bomb doesnt destroy it
 
 	{ _x setVariable ["R3F_LOG_disabled", true, true] } forEach [_box1, _box2];

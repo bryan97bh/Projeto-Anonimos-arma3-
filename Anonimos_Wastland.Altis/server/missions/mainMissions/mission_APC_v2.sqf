@@ -34,7 +34,7 @@ _setupVars =
 		default                                                                                             { "TRANSPORTADOR DE TROPA BLINDADO" };
 	};
 
-	_locationsArray = MissionSpawnMarkers;
+	_locationsArray = spawn_VMarkers;
 
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
 };

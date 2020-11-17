@@ -8,25 +8,25 @@ if (!isServer) exitWith {};
 // Mission filename, weight 
 MainMissions =
 [
-    ["mission_LightArmVeh2", 1.1],     //VIATURA DE COMBATE
-	["mission_LightArmVeh", 1],        //VEÍCULO LEVE DE COMBATE
-	["mission_APC", 0.7],              //VEÍCULO ANTIAÉREO/VEÍCULO DE COMBATE DE INFANTARIA/VEÍCULO BLINDADO DE COMBATE/TRANSPORTADOR DE TROPA BLINDADO
-	["mission_MBT", 0.4],              //CAVALARIA BLINDADA
+    ["mission_LightArmVeh2", 1.1],     //VIATURA DE COMBATE @
+	["mission_LightArmVeh", 1],        //VEÍCULO LEVE DE COMBATE @
+	["mission_APC", 0.7],              //VEÍCULO APC @
+	//["mission_MBT", 0.3],              //CAVALARIA BLINDADA
 	["mission_CivHeli", 1.2],          //HELICÓPTERO DE SUPORTE
 	["mission_ArmedHeli", 1],          //HELICÓPTERO GUARNECIDO 
-	["mission_ArmedHeli2", 0.6],       //HELICÓPTERO DE ATAQUE GUARNECIDO 
-	["mission_Abandoneddrone", 0.5],   //drone ABANDONADO 
-    ["mission_AbandonedJet", 0.5],     //AERONAVE ABANDONADA*/
+	//["mission_ArmedHeli2", 0.4],       //HELICÓPTERO DE ATAQUE GUARNECIDO 
+	["mission_Abandoneddrone", 0.5],   //drone ABANDONADO @
+    //["mission_AbandonedJet", 0.4],     //AERONAVE ABANDONADA*/
 //-------------------_v2--------------------------------------
-	["mission_LightArmVeh2_v2", 1.0],     //VIATURA DE COMBATE
-	["mission_LightArmVeh_v2", 0.9],      //VEÍCULO LEVE DE COMBATE
-	["mission_APC_v2", 0.6],              //VEÍCULO ANTIAÉREO/VEÍCULO DE COMBATE DE INFANTARIA/VEÍCULO BLINDADO DE COMBATE/TRANSPORTADOR DE TROPA BLINDADO
-	["mission_MBT_v2", 0.5],              //CAVALARIA BLINDADA
+	["mission_LightArmVeh2_v2", 1.0],     //VIATURA DE COMBATE @
+	["mission_LightArmVeh_v2", 0.9],      //VEÍCULO LEVE DE COMBATE @
+	["mission_APC_v2", 0.6],              //VEÍCULO APC @
+	//["mission_MBT_v2", 0.2],              //CAVALARIA BLINDADA
 	["mission_CivHeli_v2", 1.1],          //HELICÓPTERO DE SUPORTE
 	["mission_ArmedHeli_v2", 0.9],        //HELICÓPTERO GUARNECIDO 
-	["mission_ArmedHeli2_v2", 0.5],       //HELICÓPTERO DE ATAQUE GUARNECIDO 
-	["mission_Abandoneddrone_v2", 0.4],   //drone ABANDONADO
-    ["mission_AbandonedJet_v2", 0.4]      //AERONAVE ABANDONADA
+	//["mission_ArmedHeli2_v2", 0.3],       //HELICÓPTERO DE ATAQUE GUARNECIDO 
+	["mission_Abandoneddrone_v2", 0.4]   //drone ABANDONADO @
+    //["mission_AbandonedJet_v2", 0.3]      //AERONAVE ABANDONADA
 ];
 
 SideMissions =
@@ -43,10 +43,10 @@ SideMissions =
 MoneyMissions =
 [
 	["mission_MoneyShipment", 0.7],    //ESCOLTA DE DINHEIRO
-    ["mission_MoneyShipment2", 0.6],   //ESCOLTA DE DINHEIRO
+    ["mission_MoneyShipment2", 0.5],   //ESCOLTA DE DINHEIRO
     ["mission_HostageRescue", 0.9],    //RESGATE AO REFÉM
     ["mission_Roadblock", 1.1],        //BLOQUEIO NA ESTRADA
-	["mission_HackLaptop", 0.3]	       //Hackers
+	["mission_HackLaptop", 0.2]	       //Hackers
 	//["mission_Satellite_Uplink", 0.4]  //SAT
 ];
 
@@ -83,21 +83,12 @@ aquaticMissions =
 ];
 
 MissionSpawnMarkers = (allMapMarkers select {["Mission_", _x] call fn_startsWith}) apply {[_x, false]};
+spawn_VMarkers = (allMapMarkers select {["spawn_V", _x] call fn_startsWith}) apply {[_x, false]};
 ForestMissionMarkers = (allMapMarkers select {["ForestMission_", _x] call fn_startsWith}) apply {[_x, false]};
 SunkenMissionMarkers = (allMapMarkers select {["SunkenMission_", _x] call fn_startsWith}) apply {[_x, false]};
 HackerMissionMarkers = (allMapMarkers select {["HackerMission_", _x] call fn_startsWith}) apply {[_x, false]};
 RoadblockMissionMarkers = (allMapMarkers select {["RoadblockMission_", _x] call fn_startsWith}) apply {[_x, false]};
 SatelliteMissionMarkers = (allMapMarkers select {["SatelliteMission_", _x] call fn_startsWith}) apply {[_x, false]};
-
-if !(ForestMissionMarkers isEqualTo []) then
-{
-	SideMissions append
-	[
-		["mission_AirWreck", 1],
-		["mission_WepCache", 1]
-	];
-};
-
 
 
 LandConvoyPaths = (call compile preprocessFileLineNumbers "mapConfig\convoys\landConvoysList.sqf") apply {[_x, false]};

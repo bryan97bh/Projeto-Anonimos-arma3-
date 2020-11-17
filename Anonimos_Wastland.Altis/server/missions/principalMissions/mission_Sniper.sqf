@@ -14,7 +14,7 @@ private ["_nbUnits", "_wreckPos", "_wreck", "_box1", "_box2"];
 _setupVars =
 {
 	_missionType = "ACAMPAMENTO DE CAÇADORES";
-	_locationsArray = [ForestMissionMarkers, MissionSpawnMarkers] select (ForestMissionMarkers isEqualTo []);
+	_locationsArray = ForestMissionMarkers;
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
 };
 

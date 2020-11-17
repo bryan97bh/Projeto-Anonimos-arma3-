@@ -193,13 +193,13 @@ switch (_boxType) do
 		_boxItems =
 		[
 			// Item type, Item class(es), # of items, # of magazines per weapon
-			["itm", "MineDetector", 10],   
-			["itm", "ToolKit", 2],    
-			["itm", "Medikit", 2],    
+			["itm", "MineDetector", 5],   
+			["itm", "ToolKit", 1],    
+			["itm", "Medikit", 1],    
 			["itm", "FirstAidKit", 5],    
-			["itm", "Rangefinder", 2],    
-			["itm", "Binocular", 5],    
-			["itm", "ItemGPS", 2], 
+			["itm", "Rangefinder", 1],    
+			["itm", "Binocular", 2],    
+			["itm", "ItemGPS", 1], 
 			["itm", "I_UavTerminal", 2], 
 			["itm", "B_IR_Grenade", 5],
 			["itm", "Laserdesignator", 1],

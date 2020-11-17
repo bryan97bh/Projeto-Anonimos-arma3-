@@ -46,7 +46,7 @@ sleep 0.1;
 _man2 addHeadgear "H_Beret_02";
 _man2 addGoggles "G_Bandanna_blk";
 _man2 addUniform "U_O_R_Gorka_01_black_F";
-_man2 addVest "V_PlateCarrier2_blk";
+_man2 addVest "V_TacVest_blk";
 _man2 addBackpack "B_ViperHarness_blk_F";
 
 _man2 addMagazine "30Rnd_556x45_Stanag_red";
@@ -72,7 +72,7 @@ sleep 0.1;
 _man3 addHeadgear "H_Beret_02";
 _man3 addGoggles "G_Bandanna_blk";
 _man3 addUniform "U_O_R_Gorka_01_black_F";
-_man3 addVest "V_PlateCarrier2_blk";
+_man3 addVest "V_TacVest_blk";
 _man3 addBackpack "B_ViperHarness_blk_F";
 
 _man3 addMagazine "30Rnd_556x45_Stanag_red";
@@ -99,7 +99,7 @@ _man4 linkItem "NVGoggles_OPFOR";
 _man4 addHeadgear "H_PASGT_basic_black_F";
 _man4 addGoggles "G_Balaclava_TI_blk_F";
 _man4 addUniform "U_O_R_Gorka_01_black_F";
-_man4 addVest "V_PlateCarrier2_blk";
+_man4 addVest "V_TacVest_blk";
 
 _man4 addMagazine "30Rnd_556x45_Stanag_red";
 _man4 addWeapon "arifle_SPAR_01_GL_blk_F";
@@ -123,7 +123,7 @@ _man5 linkItem "NVGoggles_OPFOR";
 _man5 addHeadgear "H_PASGT_basic_black_F";
 _man5 addGoggles "G_Balaclava_TI_blk_F";
 _man5 addUniform "U_O_R_Gorka_01_black_F";
-_man5 addVest "V_PlateCarrier2_blk";
+_man5 addVest "V_TacVest_blk";
 
 _man5 addMagazine "30Rnd_556x45_Stanag_red";
 _man5 addWeapon "arifle_SPAR_01_GL_blk_F";
@@ -146,7 +146,7 @@ sleep 0.1;
 _man6 addHeadgear "H_Watchcap_blk";
 _man6 addGoggles "G_Bandanna_beast";
 _man6 addUniform "U_O_R_Gorka_01_black_F";
-_man6 addVest "V_PlateCarrier2_blk";
+_man6 addVest "V_TacVest_blk";
 
 _man6 addMagazine "20Rnd_762x51_Mag";
 _man6 addWeapon "arifle_SPAR_03_blk_F";
@@ -192,7 +192,7 @@ sleep 0.1;
 _man8 addHeadgear "H_Beret_Colonel";
 _man8 addGoggles "G_WirelessEarpiece_F";
 _man8 addUniform "U_O_R_Gorka_01_black_F";
-_man8 addVest "V_PlateCarrier2_blk";
+_man8 addVest "V_TacVest_blk";
 
 _man8 addMagazine "30Rnd_556x45_Stanag_red";
 _man8 addWeapon "arifle_SPAR_01_blk_F";
@@ -214,7 +214,7 @@ sleep 0.1;
 _man9 addHeadgear "H_Beret_Colonel";
 _man9 addGoggles "G_WirelessEarpiece_F";
 _man9 addUniform "U_O_R_Gorka_01_black_F";
-_man9 addVest "V_PlateCarrier2_blk";
+_man9 addVest "V_TacVest_blk";
 
 _man9 addMagazine "30Rnd_556x45_Stanag_red";
 _man9 addWeapon "arifle_SPAR_01_blk_F";
@@ -236,7 +236,7 @@ sleep 0.1;
 _man10 addHeadgear "H_Beret_Colonel";
 _man10 addGoggles "G_WirelessEarpiece_F";
 _man10 addUniform "U_O_R_Gorka_01_black_F";
-_man10 addVest "V_PlateCarrier2_blk";
+_man10 addVest "V_TacVest_blk";
 
 _man10 addMagazine "30Rnd_556x45_Stanag_red";
 _man10 addWeapon "arifle_SPAR_01_blk_F";

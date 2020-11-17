@@ -25,15 +25,11 @@ _setupVars =
                     "O_Heli_Transport_04_bench_F",
                     "O_Heli_Transport_04_covered_F",
                     "O_Heli_Transport_04_medevac_F",
-                    "B_Heli_Transport_03_unarmed_F",
-                    "O_T_VTOL_02_infantry_dynamicLoadout_F", "variant_xianUnarmed"],
-		            "O_T_VTOL_02_vehicle_dynamicLoadout_F",  "variant_xianUnarmed"],
-                    "B_T_VTOL_01_vehicle_F",
-                    "B_T_VTOL_01_infantry_F"
+                    "B_Heli_Transport_03_unarmed_F"
                     ] call BIS_fnc_selectRandom;
 
 	_missionType = "HELICÓPTERO DE SUPORTE";
-	_locationsArray = MissionSpawnMarkers;
+	_locationsArray = spawn_VMarkers;
 
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
 };

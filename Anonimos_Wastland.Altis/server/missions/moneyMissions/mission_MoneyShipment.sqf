@@ -107,20 +107,22 @@ _setupVars =
 				    ["B_APC_Tracked_01_rcws_F"], // Veh 1
 					["B_AFV_Wheeled_01_cannon_F", "B_AFV_Wheeled_01_up_cannon_F"], // Veh 2
 					["B_APC_Wheeled_01_cannon_F"], // Veh 3
-					["B_MBT_01_cannon_F", "B_MBT_01_TUSK_F"], // Veh 4
+					//["B_MBT_01_cannon_F", "B_MBT_01_TUSK_F"], // Veh 4
 					["B_APC_Tracked_01_AA_F"] // Veh 5
 				],
 				[ // CSAT convoy
 					["O_APC_Wheeled_02_rcws_v2_F"], // Veh 1
 				    ["O_APC_Tracked_02_cannon_F"], // Veh 2
 					["O_MBT_04_cannon_F", "O_MBT_04_command_F"], // Veh 3
-					["O_MBT_02_cannon_F"], // Veh 4
+					["B_AFV_Wheeled_01_cannon_F", "B_AFV_Wheeled_01_up_cannon_F"], // Veh 2
+					//["O_MBT_02_cannon_F"], // Veh 4
 				    ["O_APC_Tracked_02_AA_F"] // Veh 5
 				],
 				[ // AAF convoy
 				    ["I_APC_Wheeled_03_cannon_F"], // Veh 1
 					["I_APC_tracked_03_cannon_F"], // Veh 2
-					["I_MBT_03_cannon_F"], // Veh 3
+					["B_AFV_Wheeled_01_cannon_F", "B_AFV_Wheeled_01_up_cannon_F"], // Veh 2
+					//["I_MBT_03_cannon_F"], // Veh 3
 					["B_APC_Tracked_01_AA_F"] // Veh 4
 				]
 			]

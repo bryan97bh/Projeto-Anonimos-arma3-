@@ -50,7 +50,7 @@ _setupVars =
 	] call BIS_fnc_selectRandom;
 
 	_missionType = "AERONAVE ABANDONADA";
-	_locationsArray = MissionSpawnMarkers;
+	_locationsArray = spawn_VMarkers;
 
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
 };

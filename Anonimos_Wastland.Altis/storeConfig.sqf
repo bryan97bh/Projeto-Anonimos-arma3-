@@ -378,9 +378,9 @@ ammoArray = compileFinal str
     ["9M135 HEAT|Míssil|", "Vorona_HEAT", 2000],                 //                 634     |                 28,  2.5m     |           mouse
     ["9M135 HE|Míssil|", "Vorona_HE", 1750],                     //                 220     |                 45,  8.0m     |           mouse
     ["PCML AT|Míssil|", "NLAW_F", 850],                          //                 462     |                 25,  2.4m     |           laser/IR, cold/hot ground vehicles
-    ["Titan AT|Míssil|", "Titan_AT", 1500],                      //                 515     |                 20,  2.0m     |           mouse, laser/IR, hot ground vehicles
-    ["Titan AP|Míssil|", "Titan_AP", 1000],                      //                 100     |                 25, 10.0m     |           mouse, laser/IR
-    ["Titan AA|Míssil|", "Titan_AA", 2500],                      //                  80     |                 60,  6.0m     |           aircraft
+    ["Titan AT|Míssil|", "Titan_AT", 5000],                      //                 515     |                 20,  2.0m     |           mouse, laser/IR, hot ground vehicles
+    ["Titan AP|Míssil|", "Titan_AP", 4000],                      //                 100     |                 25, 10.0m     |           mouse, laser/IR
+    ["Titan AA|Míssil|", "Titan_AA", 5000],                      //                  80     |                 60,  6.0m     |           aircraft
 	["40mm HE|Granada De Bocal|", "1Rnd_HE_Grenade_shell", 300],
 	["40mm HE|3|Munições|Granadas De Bocal|", "3Rnd_HE_Grenade_shell", 850],
 	["40mm Fumaça De Bocal|Branca|", "1Rnd_Smoke_Grenade_shell", 50],
@@ -1049,7 +1049,7 @@ vestArray = compileFinal str
 	["Colete Especial Pesado (MTP)", "V_PlateCarrierSpec_mtp", 5000, "vest", "HIDDEN"],                              //CA-100 BA-81 EX-24
     ["Colete Especial Pesado (Tropical)", "V_PlateCarrierSpec_tna_F", 5000, "vest", "noDLC", "HIDDEN"],              //CA-100 BA-81 EX-24
 	["Colete Especial Pesado (Floresta)", "V_PlateCarrierSpec_wdl", 5000, "vest", "noDLC", "HIDDEN"],                //CA-100 BA-81 EX-24
-    ["======================================================", "", 0, ""],
+    //["======================================================", "", 0, ""],
 
     //Explosive Resistant - IMBA Vest  //CA-30 BA-32 EX-78
 	["Resistente a Explosivos ", "", 0, ""],
@@ -1193,7 +1193,7 @@ backpackArray = compileFinal str
 genItemArray = compileFinal str
 [
 	["UTILIDADES", "", 0, ""],
-	["Kit Médico", "FirstAidKit", 25, "item"],
+	["Kit Médico", "FirstAidKit", 20, "item"],
 	["Estojo Médico", "Medikit", 1000, "item"],
 	["Estojo de Ferramentas", "ToolKit", 3000, "item"],
 	["Detector de Minas", "MineDetector", 500, "item", "HIDDEN"],
@@ -1415,21 +1415,21 @@ allGenStoreVanillaItems = compileFinal str (call genItemArray + call genObjectsA
 //Text name, classname, buy cost, spawn type, sell price (selling not implemented) or spawning color
 landArray = compileFinal str
 [
-    ["Kart", "C_Kart_01_F", 500, "vehicle"], 
+    ["Kart", "C_Kart_01_F", 500, "vehicle", "SKIPSAVE"], 
     ["Quadriciclo", "I_G_Quadbike_01_F", 600, "vehicle"],
-        ["Quadbike (Civilian)", "C_Quadbike_01_F", 700, "vehicle", "HIDDEN"], // hidden, just a paintjob
-        ["Quadbike (NATO)", "B_Quadbike_01_F", 700, "vehicle", "HIDDEN"], 
-        ["Quadbike (CSAT)", "O_Quadbike_01_F", 700, "vehicle", "HIDDEN"],
-        ["Quadbike (AAF)", "I_Quadbike_01_F", 700, "vehicle", "HIDDEN"], 
-	["Trator", "C_Tractor_01_F", 500, "vehicle"],
+        ["Quadbike (Civilian)", "C_Quadbike_01_F", 700, "vehicle", "SKIPSAVE", "HIDDEN"], // hidden, just a paintjob
+        ["Quadbike (NATO)", "B_Quadbike_01_F", 700, "vehicle", "SKIPSAVE", "HIDDEN"], 
+        ["Quadbike (CSAT)", "O_Quadbike_01_F", 700, "vehicle", "SKIPSAVE", "HIDDEN"],
+        ["Quadbike (AAF)", "I_Quadbike_01_F", 700, "vehicle", "SKIPSAVE", "HIDDEN"], 
+	["Trator", "C_Tractor_01_F", 500, "vehicle", "SKIPSAVE"],
     ["------------------------------------------------------------------------", "", 0, ""],
     ["Carros", "", 0, ""],
-	["Hatchback | Normal", "C_Hatchback_01_F", 1000, "vehicle"],
-	["Hatchback Sport | Tunado", "C_Hatchback_01_sport_F", 2000, "vehicle"],
+	["Hatchback | Normal", "C_Hatchback_01_F", 1000, "vehicle", "SKIPSAVE"],
+	["Hatchback Sport | Tunado", "C_Hatchback_01_sport_F", 2000, "vehicle", "SKIPSAVE"],
 	["------------------------------------------------------------------------", "", 0, ""],
 	["SUV", "C_SUV_01_F", 1500, "vehicle"],
 	["------------------------------------------------------------------------", "", 0, ""],
-	["Caminhonete | Desarmada", "C_Offroad_01_F", 1000, "vehicle"],
+	["Caminhonete | Desarmada", "C_Offroad_01_F", 1000, "vehicle", "SKIPSAVE"],
     ["Caminhonete | Coberta", "I_E_Offroad_01_covered_F", 1500, "vehicle"],
         ["Offroad Camo", "I_G_Offroad_01_F", 1100, "vehicle", "HIDDEN"], // hidden, just a paintjob
     ["Caminhonete | Policial", "B_GEN_Offroad_01_gen_F", 1250, "vehicle", "noDLC"],
@@ -1594,7 +1594,7 @@ tanksArray = compileFinal str
 helicoptersArray = compileFinal str
 [
 	["DESARMADOS", "", 0, ""],
-    ["M-900 Modelo Cívil", "C_Heli_Light_01_civil_F", 2000, "vehicle"], // MH-6, no flares
+    ["M-900 Modelo Cívil", "C_Heli_Light_01_civil_F", 2000, "vehicle", "SKIPSAVE"], // MH-6, no flares
 	["MH-9 Hummingbird", "B_Heli_Light_01_F", 3000, "vehicle"], // MH-6
     ["PO-30 Orca | Desarmado", "O_Heli_Light_02_unarmed_F", 5000, "vehicle"], // Ka-60
     ["WY-55 Hellcat | Desarmado", "I_Heli_light_03_unarmed_F", 7500, "vehicle"], // AW159
@@ -1643,7 +1643,7 @@ helicoptersArray = compileFinal str
 planesArray = compileFinal str
 [
 	["Caesar", "C_Plane_Civil_01_F", 3000, "vehicle"],
-    ["Super Tucano", "C_Plane_Civil_01_racing_F", 15000, "vehicle"],
+    ["Super Tucano", "C_Plane_Civil_01_racing_F", 20000, "vehicle"],
     ["------------------------------------------------------------------------", "", 0, ""],
 
     ["GRUPO A-143 Buzzard", "", 0, ""],
@@ -1654,22 +1654,22 @@ planesArray = compileFinal str
 	["======================================================", "", 0, ""],
 
     ["GRUPO A-149 Gryphon", "", 0, ""],
-    ["CAS", "I_Plane_Fighter_04_F", 50000, "vehicle"],
-	["AA", "I_Plane_Fighter_04_F", 55000, "vehicle", "variant_GryphonAA"],
+    ["CAS", "I_Plane_Fighter_04_F", 80000, "vehicle"],
+	["AA", "I_Plane_Fighter_04_F", 85000, "vehicle", "variant_GryphonAA"],
 	["======================================================", "", 0, ""],
 
     ["GRUPO F/A-181 Black Wasp", "", 0, ""],
-    ["CAS", "B_Plane_Fighter_01_F", 65000, "vehicle"],
-	["AA", "B_Plane_Fighter_01_F", 75000, "vehicle", "variant_F18AA"],
-	["BOMBARDEIRO1", "B_Plane_Fighter_01_F", 80000, "vehicle", "variant_F18b1"],
-    ["Furtivo", "B_Plane_Fighter_01_Stealth_F", 60000, "vehicle"],
+    ["CAS", "B_Plane_Fighter_01_F", 130000, "vehicle"],
+	["AA", "B_Plane_Fighter_01_F", 150000, "vehicle", "variant_F18AA"],
+	["BOMBARDEIRO1", "B_Plane_Fighter_01_F", 190000, "vehicle", "variant_F18b1"],
+    ["Furtivo", "B_Plane_Fighter_01_Stealth_F", 100000, "vehicle"],
 	["======================================================", "", 0, ""],
 
     ["GRUPO To-201 Shikra", "", 0, ""],
-    ["CAS", "O_Plane_Fighter_02_F", 75000, "vehicle"],
-	["AA", "O_Plane_Fighter_02_F", 85000, "vehicle", "variant_ShikraAA"],
-	["BOMBARDEIRO 1", "O_Plane_Fighter_02_F", 90000, "vehicle", "variant_Shikrab1"],
-    ["Furtivo", "O_Plane_Fighter_02_Stealth_F", 60000, "vehicle"],
+    ["CAS", "O_Plane_Fighter_02_F", 140000, "vehicle"],
+	["AA", "O_Plane_Fighter_02_F", 160000, "vehicle", "variant_ShikraAA"],
+	["BOMBARDEIRO 1", "O_Plane_Fighter_02_F", 190000, "vehicle", "variant_Shikrab1"],
+    ["Furtivo", "O_Plane_Fighter_02_Stealth_F", 110000, "vehicle"],
 	["======================================================", "", 0, ""],
 
     ["GRUPO A-10 Wipeout", "", 0, ""],
@@ -1679,8 +1679,8 @@ planesArray = compileFinal str
 	["======================================================", "", 0, ""],
 
     ["To-199 Neophron", "", 0, ""],
-    ["CAS", "O_Plane_CAS_02_dynamicLoadout_F", 90000, "vehicle"],
-    ["CAS 2", "O_Plane_CAS_02_dynamicLoadout_F", 100000, "vehicle", "variant_NeophronB2"],
+    ["CAS", "O_Plane_CAS_02_dynamicLoadout_F", 130000, "vehicle"],
+    ["CAS 2", "O_Plane_CAS_02_dynamicLoadout_F", 150000, "vehicle", "variant_NeophronB2"],
 	["BOMBARDEIRO 3", "O_Plane_CAS_02_dynamicLoadout_F", 120000, "vehicle", "variant_NeophronB1"],
 	["======================================================", "", 0, ""],
 
