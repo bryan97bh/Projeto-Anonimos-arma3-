@@ -2,59 +2,22 @@ if (!hasInterface) exitWith {};
 
 _playerCustomUniforms =
 [
-	[ // bope
-		[
-			"76561198062643926", //josei 				
-			"76561198311988065", //G_A_V_I_A_O			
-			"76561198394566682", //Raimundo 			
-			"76561198135009641", //sr.smack 			
-			"76561198047686023", //delroy 				
-			"76561198106149544", //Hathcock				
-			"76561198177668437", //Kadumac 				
-			"76561198174464914", //Yesode  				
-			"76561198387210033", //SniperRush			
-			"76561198328104544", //L 7 X O				
-			"76561198218145436", //Vegge 				
-			"76561198032315375", //Diogo Daron			
-			"76561199006207266", //Erikao 				
-			"76561198079937081", //Batista				
-			"76561198338874748", //Ity 					
-			"76561198973417951", //SGT Roger			
-			"76561198397080694" //Vidigal				
-		],
-		[
-			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\24_O.jpg"]
-		]
-	],
 	[ //Undead †
 		[
 			"76561199019571271",//Alex @Resende@
             "76561198016851216",//Aspirante Carlos
             "76561198107211132",//CABO-VEIO
-            "76561198064921908",// ChUcK
-            "76561198798829149",//Elias Rambo
-            "76561198019934366",//Fanty_RS 
-            "76561198400705240",//Habermann
-            "76561198168706894",//HAL9000  
-            "76561198075431300",//Henriiquez 
-            "76561197985182878",//Ice_RJ
-            "76561198382934865",//ITALO
-            "76561198077087266",//iTTo 
-            "76561198132930070",//jes US
-            "76561198316227141",//LockYzSL
-            "76561198161599471",//Mago 
-            "76561197976894832",//Mangekyou/ByAfter
-            "76561198071600874",//Mineirobaum
-            "76561198108077656",//Mr.KoLl1nG
-            "76561198050921137",//Pabones 
-            "76561198868972493",//Pestana 
-            "76561198048280217",//Rec Carlos
-            "76561198001300934",//Saraiva.wast
-            "76561198206908809",//SWATCF-RS 
-            "76561198087340374",//Tareco 
-            "76561198203882857",//Ten. Giva
-            "76561198157013088",//TheGauzz
-            "76561198169698677" //Ventilador Arnor
+            "76561198064921908",//ChUcK 
+			"76561198077087266",//iTTo  
+			"76561198132930070",//jes US
+			"76561198123756720",//JOKER 
+			"76561198316227141",//LockYzSL 
+			"76561198050921137",//Pabones  
+			"76561198048280217",//Rec Carlos
+			"76561198001300934",//Saraiva.wast
+			"76561198145751887",//Bicota 
+			"76561198203882857",//Ten. Giva    
+            "76561198157013088" //TheGauzz
 		],
 		[
 			["GUER","U_I_CombatUniform","addons\playerCustomUniforms\textures\z7_u.jpg"]
@@ -137,6 +100,7 @@ _playerCustomUniforms =
 			"76561198189765365",  //Predador
 			"76566198209166837",  //satros
 			"76561198122430254",  //Monsterdog
+			"76561198106629413", //tiago
 			"76561198245280286"   //Mercenário_Sniper 
 		],
 		[
@@ -161,6 +125,16 @@ _playerCustomUniforms =
 		],
 		[
 			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\26.paa"]
+		]
+	],
+	[ // gsf
+		[
+			"76561198993657162",  //bruno
+			"76561198930874562",  //Patrick
+			"76561198316120503"   //Weverton
+		],
+		[
+			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\22.paa"]
 		]
 	],
 	[ // aleatorios 

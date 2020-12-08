@@ -203,3 +203,6 @@ switch (toLower _type) do
 };
 
 _event remoteExecCall ["A3W_fnc_playerEventServer", _player];
+
+RJ_DiscordLog = [0,[name _player,getPlayerUID _player,_event]];
+PublicVariableServer "RJ_DiscordLog";

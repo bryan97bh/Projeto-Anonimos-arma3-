@@ -14,13 +14,8 @@ _setupVars =
 {
 	_vehicleClass =
 	[
-        "I_UAV_01_F",
-        "I_UAV_06_F",
-		"C_IDAP_UAV_06_antimine_F",
 		"I_UGV_02_Demining_F",
         "I_UGV_01_rcws_F",
-		"B_T_UAV_03_F",
-		"O_T_UAV_04_CAS_F",
         ["I_UAV_02_dynamicLoadout_F", "variant_greyhawkMissile"],
 		["I_UAV_02_dynamicLoadout_F", "variant_greyhawkMissile6"],
 		["I_UAV_02_dynamicLoadout_F", "variant_greyhawkBomber"],

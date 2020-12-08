@@ -11,22 +11,22 @@ MainMissions =
     ["mission_LightArmVeh2", 1.1],     //VIATURA DE COMBATE @
 	["mission_LightArmVeh", 1],        //VEÍCULO LEVE DE COMBATE @
 	["mission_APC", 0.7],              //VEÍCULO APC @
-	//["mission_MBT", 0.3],              //CAVALARIA BLINDADA
+	["mission_MBT", 0.3],              //CAVALARIA BLINDADA
 	["mission_CivHeli", 1.2],          //HELICÓPTERO DE SUPORTE
 	["mission_ArmedHeli", 1],          //HELICÓPTERO GUARNECIDO 
-	//["mission_ArmedHeli2", 0.4],       //HELICÓPTERO DE ATAQUE GUARNECIDO 
+	["mission_ArmedHeli2", 0.4],       //HELICÓPTERO DE ATAQUE GUARNECIDO 
 	["mission_Abandoneddrone", 0.5],   //drone ABANDONADO @
-    //["mission_AbandonedJet", 0.4],     //AERONAVE ABANDONADA*/
+    ["mission_AbandonedJet", 0.4],     //AERONAVE ABANDONADA*/
 //-------------------_v2--------------------------------------
 	["mission_LightArmVeh2_v2", 1.0],     //VIATURA DE COMBATE @
 	["mission_LightArmVeh_v2", 0.9],      //VEÍCULO LEVE DE COMBATE @
 	["mission_APC_v2", 0.6],              //VEÍCULO APC @
-	//["mission_MBT_v2", 0.2],              //CAVALARIA BLINDADA
+	["mission_MBT_v2", 0.2],              //CAVALARIA BLINDADA
 	["mission_CivHeli_v2", 1.1],          //HELICÓPTERO DE SUPORTE
 	["mission_ArmedHeli_v2", 0.9],        //HELICÓPTERO GUARNECIDO 
-	//["mission_ArmedHeli2_v2", 0.3],       //HELICÓPTERO DE ATAQUE GUARNECIDO 
-	["mission_Abandoneddrone_v2", 0.4]   //drone ABANDONADO @
-    //["mission_AbandonedJet_v2", 0.3]      //AERONAVE ABANDONADA
+	["mission_ArmedHeli2_v2", 0.3],       //HELICÓPTERO DE ATAQUE GUARNECIDO 
+	["mission_Abandoneddrone_v2", 0.4],   //drone ABANDONADO @
+    ["mission_AbandonedJet_v2", 0.3]      //AERONAVE ABANDONADA
 ];
 
 SideMissions =

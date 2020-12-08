@@ -748,20 +748,20 @@ headArray = compileFinal str
 	["Balistico (Relva)", "H_HelmetSpecB_paint1", 600, "hat"],
 	["Balistico (Pele de cobra)", "H_HelmetSpecB_snakeskin", 600, "hat"],
 	["Balistico (Tropico)", "H_HelmetB_Enh_tna_F", 600, "hat"],
-	["Balistico  ASS (Preto)", "H_HelmetSpecO_blk", 600, "hat"],
-	["Balistico  ASS (Verde Hex)", "H_HelmetSpecO_ghex_F", 600, "hat"],
-	["Balistico  ASS (Hex)", "H_HelmetSpecO_ocamo", 600, "hat"],
+	["Balistico  ASS (Preto)", "H_HelmetSpecO_blk", 600, "hat", "HIDDEN"],
+	["Balistico  ASS (Verde Hex)", "H_HelmetSpecO_ghex_F", 600, "hat", "HIDDEN"],
+	["Balistico  ASS (Hex)", "H_HelmetSpecO_ocamo", 600, "hat", "HIDDEN"],
 	["Capacete Vingador", "H_HelmetAggressor_F", 600, "hat"],
 	["Capacete Vingador (Coberto B)", "H_HelmetAggressor_cover_F", 600, "hat"],
 	["Capacete Vingador (Coberto T)", "H_HelmetAggressor_cover_taiga_F", 600, "hat"],
 	["Capacete Melhorado (Floresta)", "H_HelmetSpecB_wdl", 600, "hat"],
-	["======================================================", "", 0, ""],
+	//["======================================================", "", 0, ""],
 
     //Ba 17- exp 12
-	["proteção nivel 6", "", 0, ""],
-	["Defender (Verde Hex)", "H_HelmetLeaderO_ghex_F", 1000, "hat"],
-	["Defender (Hex)", "H_HelmetLeaderO_ocamo", 1000, "hat"],
-	["Defender (Urbano)", "H_HelmetLeaderO_oucamo", 1000, "hat"],
+	//["proteção nivel 6", "", 0, ""],
+	["Defender (Verde Hex)", "H_HelmetLeaderO_ghex_F", 1000, "hat", "HIDDEN"],
+	["Defender (Hex)", "H_HelmetLeaderO_ocamo", 1000, "hat", "HIDDEN"],
+	["Defender (Urbano)", "H_HelmetLeaderO_oucamo", 1000, "hat", "HIDDEN"],
 	["Spetsnaz (Verde Hex)", "H_HelmetO_ViperSP_ghex_F", 1500, "hat", "HIDDEN"],
 	["Spetsnaz (Hex)", "H_HelmetO_ViperSP_hex_F", 1500, "hat", "HIDDEN"]	
 ];
@@ -1578,12 +1578,12 @@ tanksArray = compileFinal str
 	
     ["Carro de Combate", "", 0, ""],
 	["MBT-52 Kuma", "I_MBT_03_cannon_F", 60000, "vehicle"],
-	["T-100 Varsuk", "O_MBT_02_cannon_F", 60000, "vehicle"],
-	["======================================================", "", 0, ""],
+	["T-100 Varsuk", "O_MBT_02_cannon_F", 60000, "vehicle", "HIDDEN"],
+	//["======================================================", "", 0, ""],
 
-    ["T-140 Angara", "", 0, ""],
-	["Padrão", "O_MBT_04_cannon_F", 75000, "vehicle"],
-    ["Melhorado Canhão Automático | 30mm", "O_MBT_04_command_F", 90000, "vehicle"],
+    //["T-140 Angara", "", 0, ""],
+	["Padrão", "O_MBT_04_cannon_F", 75000, "vehicle", "HIDDEN"],
+    ["Melhorado Canhão Automático | 30mm", "O_MBT_04_command_F", 90000, "vehicle", "HIDDEN"],
 
 	["M5 Sandstorm MLRS", "B_MBT_01_mlrs_F", 80000, "vehicle", "HIDDEN"],
     ["M4 Scorcher", "B_MBT_01_arty_F", 80000, "vehicle", "HIDDEN"],
@@ -1632,11 +1632,11 @@ helicoptersArray = compileFinal str
     ["GRUPO HELICÓPTEROS ARMADOS", "", 0, ""],
     ["WY-55 Hellcat | Armedo", "I_Heli_light_03_dynamicLoadout_F", 30000, "vehicle"],    // Armed AW159
 	["UH-80 Ghost Hawk | Minigun", "B_Heli_Transport_01_F", 12000, "vehicle"], 		     // UH-60 Stealth with 2 side miniguns
-	["======================================================", "", 0, ""],
+	//["======================================================", "", 0, ""],
 
-    ["GRUPO HELICÓPTERO DE ATAQUE", "", 0, ""],
-    ["AH-99 Blackfoot", "B_Heli_Attack_01_dynamicLoadout_F", 95000, "vehicle"],          // RAH-66 with gunner
-    ["Mi-48 Kajman", "O_Heli_Attack_02_dynamicLoadout_F", 90000, "vehicle"]              // Mi-28 with gunner 
+    //["GRUPO HELICÓPTERO DE ATAQUE", "", 0, ""],
+    ["AH-99 Blackfoot", "B_Heli_Attack_01_dynamicLoadout_F", 95000, "vehicle", "HIDDEN"],          // RAH-66 with gunner
+    ["Mi-48 Kajman", "O_Heli_Attack_02_dynamicLoadout_F", 90000, "vehicle", "HIDDEN"]              // Mi-28 with gunner 
     
 ];
 
@@ -1647,56 +1647,56 @@ planesArray = compileFinal str
     ["------------------------------------------------------------------------", "", 0, ""],
 
     ["GRUPO A-143 Buzzard", "", 0, ""],
-    ["CAS", "I_Plane_Fighter_03_dynamicLoadout_F", 40000, "vehicle", "variant_buzzardCAS"],
-    ["AA", "I_Plane_Fighter_03_dynamicLoadout_F", 50000, "vehicle", "variant_buzzardAA"],
-    ["BOMBARDEIRO 1", "I_Plane_Fighter_03_dynamicLoadout_F", 60000, "vehicle", "variant_buzzardb1"],
-	["BOMBARDEIRO 2", "I_Plane_Fighter_03_dynamicLoadout_F", 70000, "vehicle", "variant_buzzardb2"],
+    ["CAS", "I_Plane_Fighter_03_dynamicLoadout_F", 100000, "vehicle", "variant_buzzardCAS"],
+    ["AA", "I_Plane_Fighter_03_dynamicLoadout_F", 120000, "vehicle", "variant_buzzardAA"],
+    ["BOMBARDEIRO 1", "I_Plane_Fighter_03_dynamicLoadout_F", 140000, "vehicle", "variant_buzzardb1"],
+	["BOMBARDEIRO 2", "I_Plane_Fighter_03_dynamicLoadout_F", 160000, "vehicle", "variant_buzzardb2"],
 	["======================================================", "", 0, ""],
 
     ["GRUPO A-149 Gryphon", "", 0, ""],
-    ["CAS", "I_Plane_Fighter_04_F", 80000, "vehicle"],
-	["AA", "I_Plane_Fighter_04_F", 85000, "vehicle", "variant_GryphonAA"],
+    ["CAS", "I_Plane_Fighter_04_F", 160000, "vehicle", "HIDDEN"],
+	["AA", "I_Plane_Fighter_04_F", 170000, "vehicle", "variant_GryphonAA"],
 	["======================================================", "", 0, ""],
 
     ["GRUPO F/A-181 Black Wasp", "", 0, ""],
-    ["CAS", "B_Plane_Fighter_01_F", 130000, "vehicle"],
-	["AA", "B_Plane_Fighter_01_F", 150000, "vehicle", "variant_F18AA"],
-	["BOMBARDEIRO1", "B_Plane_Fighter_01_F", 190000, "vehicle", "variant_F18b1"],
-    ["Furtivo", "B_Plane_Fighter_01_Stealth_F", 100000, "vehicle"],
+    ["CAS", "B_Plane_Fighter_01_F", 260000, "vehicle", "HIDDEN"],
+	["AA", "B_Plane_Fighter_01_F", 300000, "vehicle", "variant_F18AA"],
+	["BOMBARDEIRO1", "B_Plane_Fighter_01_F", 380000, "vehicle", "variant_F18b1", "HIDDEN"],
+    ["Furtivo", "B_Plane_Fighter_01_Stealth_F", 200000, "vehicle", "HIDDEN"],
 	["======================================================", "", 0, ""],
 
     ["GRUPO To-201 Shikra", "", 0, ""],
-    ["CAS", "O_Plane_Fighter_02_F", 140000, "vehicle"],
-	["AA", "O_Plane_Fighter_02_F", 160000, "vehicle", "variant_ShikraAA"],
-	["BOMBARDEIRO 1", "O_Plane_Fighter_02_F", 190000, "vehicle", "variant_Shikrab1"],
-    ["Furtivo", "O_Plane_Fighter_02_Stealth_F", 110000, "vehicle"],
+    ["CAS", "O_Plane_Fighter_02_F", 280000, "vehicle", "HIDDEN"],
+	["AA", "O_Plane_Fighter_02_F", 320000, "vehicle", "variant_ShikraAA"],
+	["BOMBARDEIRO 1", "O_Plane_Fighter_02_F", 380000, "vehicle", "variant_Shikrab1", "HIDDEN"],
+    ["Furtivo", "O_Plane_Fighter_02_Stealth_F", 220000, "vehicle", "HIDDEN"],
 	["======================================================", "", 0, ""],
 
-    ["GRUPO A-10 Wipeout", "", 0, ""],
-    ["CAS", "B_Plane_CAS_01_dynamicLoadout_F", 100000, "vehicle"],
-	["CAS 2", "B_Plane_CAS_01_dynamicLoadout_F", 110000, "vehicle", "variant_A10B2"],
-	["BOMBARDEIRO 3", "B_Plane_CAS_01_dynamicLoadout_F", 100000, "vehicle", "variant_A10B3"],
-	["======================================================", "", 0, ""],
+    //["GRUPO A-10 Wipeout", "", 0, ""],
+    ["CAS", "B_Plane_CAS_01_dynamicLoadout_F", 200000, "vehicle", "HIDDEN"],
+	["CAS 2", "B_Plane_CAS_01_dynamicLoadout_F", 220000, "vehicle", "variant_A10B2", "HIDDEN"],
+	["BOMBARDEIRO 3", "B_Plane_CAS_01_dynamicLoadout_F", 200000, "vehicle", "variant_A10B3", "HIDDEN"],
+	//["======================================================", "", 0, ""],
 
-    ["To-199 Neophron", "", 0, ""],
-    ["CAS", "O_Plane_CAS_02_dynamicLoadout_F", 130000, "vehicle"],
-    ["CAS 2", "O_Plane_CAS_02_dynamicLoadout_F", 150000, "vehicle", "variant_NeophronB2"],
-	["BOMBARDEIRO 3", "O_Plane_CAS_02_dynamicLoadout_F", 120000, "vehicle", "variant_NeophronB1"],
-	["======================================================", "", 0, ""],
+    //["To-199 Neophron", "", 0, ""],
+    ["CAS", "O_Plane_CAS_02_dynamicLoadout_F", 260000, "vehicle", "HIDDEN"],
+    ["CAS 2", "O_Plane_CAS_02_dynamicLoadout_F", 300000, "vehicle", "variant_NeophronB2", "HIDDEN"],
+	["BOMBARDEIRO 3", "O_Plane_CAS_02_dynamicLoadout_F", 240000, "vehicle", "variant_NeophronB1", "HIDDEN"], 
+	//["======================================================", "", 0, ""],
 
 	["V-44 X Blackfish", "", 0, ""],
     ["Transporta Infantaria", "B_T_VTOL_01_infantry_F", 12000, "vehicle"],
 	["Transporta Veículo", "B_T_VTOL_01_vehicle_F", 12000, "vehicle"],
-	["Armado", "B_T_VTOL_01_armed_F", 150000, "vehicle"],
+	["Armado", "B_T_VTOL_01_armed_F", 250000, "vehicle"],
 	["======================================================", "", 0, ""],
 
     ["Y-32 Xian", "", 0, ""],
-    ["Completo|Transporta Infantaria", "O_T_VTOL_02_infantry_dynamicLoadout_F", 130000, "vehicle"],
+    ["Completo|Transporta Infantaria", "O_T_VTOL_02_infantry_dynamicLoadout_F", 100000, "vehicle"],
     ["Canhão 30mm|Transporta Infantaria", "O_T_VTOL_02_infantry_dynamicLoadout_F", 90000, "vehicle", "variant_xianGunOnly"],
     ["Desarmado|Transporta Infantaria", "O_T_VTOL_02_infantry_dynamicLoadout_F", 12000, "vehicle", "variant_xianUnarmed"],
     ["------------------------------------------------------------------------", "", 0, ""],
-    ["Completo|Transporta Veículo", "O_T_VTOL_02_vehicle_dynamicLoadout_F", 130000, "vehicle"],
-    ["Canhão 30mm|Transporta Veículo", "O_T_VTOL_02_vehicle_dynamicLoadout_F", 130000, "vehicle", "variant_xianGunOnly"],
+    ["Completo|Transporta Veículo", "O_T_VTOL_02_vehicle_dynamicLoadout_F", 100000, "vehicle"],
+    ["Canhão 30mm|Transporta Veículo", "O_T_VTOL_02_vehicle_dynamicLoadout_F", 95000, "vehicle", "variant_xianGunOnly"],
     ["Desarmado|Transporta Veículo", "O_T_VTOL_02_vehicle_dynamicLoadout_F", 12000, "vehicle", "variant_xianUnarmed"]
 ];
 
@@ -1761,25 +1761,25 @@ DronesArray = compileFinal str
     ["KH-3A Fenghuang | 4 Mísseis", "O_T_UAV_04_CAS_F", 100000, "vehicle"],
     ["------------------------------------------------------------------------", "", 0, ""],
     ["K40 Ababil/MQ4A Greyhawk", "", 0, ""],
-	["skalpel 4 Mísseis", "I_UAV_02_dynamicLoadout_F", 100000, "vehicle", "variant_greyhawkMissile"],
-	["skalpel 6 Mísseis", "I_UAV_02_dynamicLoadout_F", 150000, "vehicle", "variant_greyhawkMissile6"],
-    ["GBU12 2 Bombas", "I_UAV_02_dynamicLoadout_F", 40000, "vehicle", "variant_greyhawkBomber"],
-	["GBU12 4 Bombas", "I_UAV_02_dynamicLoadout_F", 80000, "vehicle", "variant_greyhawkBomber4"],
-	["Cluster 2 Bombas ", "I_UAV_02_dynamicLoadout_F", 50000, "vehicle", "variant_greyhawkCluster"],
-	["DAGR 24 Foguetes", "I_UAV_02_dynamicLoadout_F", 80000, "vehicle", "variant_greyhawkDAGR"],
+	["skalpel 4 Mísseis", "I_UAV_02_dynamicLoadout_F", 120000, "vehicle", "variant_greyhawkMissile"],
+	["skalpel 6 Mísseis", "I_UAV_02_dynamicLoadout_F", 170000, "vehicle", "variant_greyhawkMissile6", "HIDDEN"],
+    ["GBU12 2 Bombas", "I_UAV_02_dynamicLoadout_F", 60000, "vehicle", "variant_greyhawkBomber"],
+	["GBU12 4 Bombas", "I_UAV_02_dynamicLoadout_F", 100000, "vehicle", "variant_greyhawkBomber4", "HIDDEN"],
+	["Cluster 2 Bombas ", "I_UAV_02_dynamicLoadout_F", 70000, "vehicle", "variant_greyhawkCluster"],
+	["DAGR 24 Foguetes", "I_UAV_02_dynamicLoadout_F", 100000, "vehicle", "variant_greyhawkDAGR"],
 	["------------------------------------------------------------------------", "", 0, ""],
 	["Sentinel", "", 0, ""],
-	["skalpel 4 Mísseis | RADAR", "B_UAV_05_F", 150000, "vehicle", "variant_sentinelMissile"],
-	["skalpel 6 Mísseis | RADAR", "B_UAV_05_F", 175000, "vehicle", "variant_sentinelMissile2"],
-	["GBU12 2 Bombas    | RADAR", "B_UAV_05_F", 55000, "vehicle", "variant_sentinelBomber2"],
-    ["GBU12 4 Bombas    | RADAR", "B_UAV_05_F", 90000, "vehicle", "variant_sentinelBomber4"],
-	["SDB 8 Bombas      | RADAR", "B_UAV_05_F", 70000, "vehicle", "variant_sentinelBomber8"],
-	["Cluster 2 Bombas  | RADAR", "B_UAV_05_F", 75000, "vehicle", "variant_sentinelCluster"],
+	["skalpel 4 Mísseis | RADAR", "B_UAV_05_F", 120000, "vehicle", "variant_sentinelMissile"],
+	["skalpel 6 Mísseis | RADAR", "B_UAV_05_F", 195000, "vehicle", "variant_sentinelMissile2", "HIDDEN"],
+	["GBU12 2 Bombas    | RADAR", "B_UAV_05_F", 75000, "vehicle", "variant_sentinelBomber2"],
+    ["GBU12 4 Bombas    | RADAR", "B_UAV_05_F", 11000, "vehicle", "variant_sentinelBomber4", "HIDDEN"],
+	["SDB 8 Bombas      | RADAR", "B_UAV_05_F", 90000, "vehicle", "variant_sentinelBomber8"],
+	["Cluster 2 Bombas  | RADAR", "B_UAV_05_F", 95000, "vehicle", "variant_sentinelCluster"],
 	["======================================================", "", 0, ""],
 	
 	["SISTEMA ANTIAÉREO", "", 0, ""],
-	["Radar AN/MPQ-105", "I_E_Radar_System_01_F", 40000],
-	["MIM-145Â Defender", "I_E_SAM_System_03_F", 50000]
+	["Radar AN/MPQ-105", "I_E_Radar_System_01_F", 15000],
+	["MIM-145Â Defender", "I_E_SAM_System_03_F", 25000]
 ];
 
 allVehStoreVehicles = compileFinal str (call landArray + call armoredArray + call tanksArray + call helicoptersArray + call planesArray + call boatsArray + call DronesArray);

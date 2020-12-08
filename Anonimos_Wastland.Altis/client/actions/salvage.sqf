@@ -8,7 +8,7 @@
 
 // Salvaging of vehicle wrecks
 
-#define GET_ONE_TENTH_PRICE(PRICE) ((ceil (((PRICE) / 10) / 5)) * 5)
+#define GET_ONE_TENTH_PRICE(PRICE) ((ceil (((PRICE) / 20) / 5)) * 5)
 
 // Check if mutex lock is active.
 if (mutexScriptInProgress) exitWith
@@ -102,6 +102,11 @@ switch (true) do
 	{
 		_time = 3;
 		_money = 50;
+	};
+	case ({_vehClass isKindOf _x} count ["I_Plane_Fighter_03_dynamicLoadout_F", "I_Plane_Fighter_04_F", "B_Plane_Fighter_01_F", "O_Plane_Fighter_02_F", "B_Plane_CAS_01_dynamicLoadout_F", "O_Plane_CAS_02_dynamicLoadout_F"] > 0): // Quadbikes, karts, rubber boats, UAV_01
+	{
+		_time = 30;
+		_money = 10000;
 	};
 	default // Everything else
 	{

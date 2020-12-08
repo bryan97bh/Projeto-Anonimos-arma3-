@@ -19,6 +19,10 @@ _setupVars =
         ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardAA"],             //A-143 Buzzard AA
         ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardb1"],             //A-143 Buzzard b1
         ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardb1"],             //A-143 Buzzard b2
+        ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardCAS"],            //A-143 Buzzard CAS
+        ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardAA"],             //A-143 Buzzard AA
+        ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardb1"],             //A-143 Buzzard b1
+        ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardb1"],             //A-143 Buzzard b2
 
         "I_Plane_Fighter_04_F",                                          //A-149 Gryphon cas
         ["I_Plane_Fighter_04_F", "GryphonAA"],                           //A-149 Gryphon  aa
@@ -32,6 +36,10 @@ _setupVars =
         ["O_Plane_Fighter_02_F", "ShikraAA"],                             //To-201 Shikra aa
         ["O_Plane_Fighter_02_F", "Shikrab1"],                             //To-201 Shikra B1
         "O_Plane_Fighter_02_Stealth_F",                                   //Furtivo
+
+        "B_Plane_CAS_01_dynamicLoadout_F",                                //A-10 Wipeout cas
+        ["B_Plane_CAS_01_dynamicLoadout_F", "A10B2"],                     //A-10 Wipeout cas2
+        ["B_Plane_CAS_01_dynamicLoadout_F", "A10B3"],                     //A-10 Wipeout b3
 
         "B_Plane_CAS_01_dynamicLoadout_F",                                //A-10 Wipeout cas
         ["B_Plane_CAS_01_dynamicLoadout_F", "A10B2"],                     //A-10 Wipeout cas2
