@@ -85,11 +85,18 @@ briefing = 0; // if 0, skip Continue button
 #include "addons\vPin\dialog\vPin_mainMenu.hpp"
 #include "addons\AF_Keypad\AF_KP_defines.hpp"
 #include "addons\AF_Keypad\AF_KP_dialogs.hpp"
+
 #include "scarCODE\ServerInfoMenu\hpp\CfgServerInfoMenu.hpp"
 #include "scarCODE\ServerInfoMenu\hpp\RscDisplayServerInfoMenu.hpp"
 
 #include "scarCODE\ServerInfoMenu2\hpp\CfgServerInfoMenu2.hpp"
 #include "scarCODE\ServerInfoMenu2\hpp\RscDisplayServerInfoMenu2.hpp"
+
+#include "scarCODE\ServerInfoMenu3\hpp\CfgServerInfoMenu3.hpp"
+#include "scarCODE\ServerInfoMenu3\hpp\RscDisplayServerInfoMenu3.hpp"
+
+#include "scarCODE\ServerInfoMenu4\hpp\CfgServerInfoMenu4.hpp"
+#include "scarCODE\ServerInfoMenu4\hpp\RscDisplayServerInfoMenu4.hpp"
 
 class RscTitles
 {

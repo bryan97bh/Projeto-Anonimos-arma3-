@@ -210,8 +210,7 @@ lmgArray = compileFinal str
     
 	["Metralhadora Pesada SPMG (Preta)", "MMG_02_black_F", 7500],
 	["Metralhadora Pesada SPMG (Areia)", "MMG_02_sand_F", 7500],
-	["Metralhadora Pesada SPMG (Multicam)", "MMG_02_camo_F", 7500],
-	["TESTE", "gm_mg3_blk", 3000]
+	["Metralhadora Pesada SPMG (Multicam)", "MMG_02_camo_F", 7500]
 ];
 
 launcherArray = compileFinal str
@@ -1210,6 +1209,7 @@ genItemArray = compileFinal str
 	["======================================================", "", 0, ""],
 
     ["Designador Laser", "", 0, ""],
+	["Bateria", "Laserbatteries", 200, "item"],	
 	["(Areia)", "Laserdesignator", 2000, "binoc", "noDLC"],			// Removed team tag to allow all Desis for all teams ->  ["Laser Designator (NATO)", "Laserdesignator", 10000, "binoc", "WEST"],
 	["(Cáqui)", "Laserdesignator_01_khk_F", 2000, "binoc"],
 	["(Olivea)", "Laserdesignator_03", 2000, "binoc", "noDLC"],
@@ -1405,6 +1405,7 @@ genObjectsArray = compileFinal str
 	["0000000", "Land_PillboxBunker_01_big_F", 2000, "object", "HIDDEN"],
 	["0000000", "Land_FireEscape_01_short_F", 1000, "object", "HIDDEN"],
 	["0000000", "Land_ServiceHangar_01_R_F", 30000, "object", "HIDDEN"],
+	["0000000", "Land_CobblestoneSquare_01_32m_F", 5000, "object", "HIDDEN"],
 	["Military Wall (Big)", "Land_Mil_WallBig_4m_F", 600, "object", "HIDDEN"]			// Fall over after a few minutes - removed
 	//["Container de Carga 2m", "Land_Cargo20_military_green_F", 1000, "object"],  
 	//["Tambor de Metal", "Land_MetalBarrel_F", 100, "object"],    //removido
@@ -1577,7 +1578,7 @@ tanksArray = compileFinal str
 	["======================================================", "", 0, ""],
 	
     ["Carro de Combate", "", 0, ""],
-	["MBT-52 Kuma", "I_MBT_03_cannon_F", 60000, "vehicle"],
+	["MBT-52 Kuma", "I_MBT_03_cannon_F", 70000, "vehicle"],
 	["T-100 Varsuk", "O_MBT_02_cannon_F", 60000, "vehicle", "HIDDEN"],
 	//["======================================================", "", 0, ""],
 
@@ -1619,18 +1620,18 @@ helicoptersArray = compileFinal str
 	["======================================================", "", 0, ""],
 
 	["GRUPO AH-9 Pawnee", "", 0, ""],
-    ["Somente Minigun", "B_Heli_Light_01_dynamicLoadout_F", 15000, "vehicle", "variant_pawneeGun"], // Armed AH-6 (no missiles)
-    ["Completo", "B_Heli_Light_01_dynamicLoadout_F", 25000, "vehicle", "variant_pawneeNormal"], // Armed AH-6
-	["CAS", "B_Heli_Light_01_dynamicLoadout_F", 20000, "vehicle", "variant_pawneeDelta"], // Armed AH-6
+    ["Somente Minigun", "B_Heli_Light_01_dynamicLoadout_F", 10000, "vehicle", "variant_pawneeGun"], // Armed AH-6 (no missiles)
+    ["Completo", "B_Heli_Light_01_dynamicLoadout_F", 20000, "vehicle", "variant_pawneeNormal"], // Armed AH-6
+	["CAS", "B_Heli_Light_01_dynamicLoadout_F", 15000, "vehicle", "variant_pawneeDelta"], // Armed AH-6
 	["======================================================", "", 0, ""],
 
 	["GRUPO PO-30 Orca", "", 0, ""],
-    ["DAR", "O_Heli_Light_02_dynamicLoadout_F", 35000, "vehicle", "variant_orcaDAR"], // Armed Ka-60
-    ["DAGR", "O_Heli_Light_02_dynamicLoadout_F", 45000, "vehicle", "variant_orcaDAGR"], // Armed Ka-60 with guided missles
+    ["DAR", "O_Heli_Light_02_dynamicLoadout_F", 30000, "vehicle", "variant_orcaDAR"], // Armed Ka-60
+    ["DAGR", "O_Heli_Light_02_dynamicLoadout_F", 35000, "vehicle", "variant_orcaDAGR"], // Armed Ka-60 with guided missles
 	["======================================================", "", 0, ""],
 
     ["GRUPO HELICÓPTEROS ARMADOS", "", 0, ""],
-    ["WY-55 Hellcat | Armedo", "I_Heli_light_03_dynamicLoadout_F", 30000, "vehicle"],    // Armed AW159
+    ["WY-55 Hellcat | Armedo", "I_Heli_light_03_dynamicLoadout_F", 25000, "vehicle"],    // Armed AW159
 	["UH-80 Ghost Hawk | Minigun", "B_Heli_Transport_01_F", 12000, "vehicle"], 		     // UH-60 Stealth with 2 side miniguns
 	//["======================================================", "", 0, ""],
 
@@ -1740,7 +1741,7 @@ DronesArray = compileFinal str
 	["======================================================", "", 0, ""],
 
     ["Hexacóptero Demolidor", "", 0, ""],
-	["4 Cargas", "C_IDAP_UAV_06_antimine_F", 20000, "vehicle"],
+	["4 Cargas", "C_IDAP_UAV_06_antimine_F", 40000, "vehicle"],
 	["======================================================", "", 0, ""],
 	
     ["ED-1E de Reconhecimento", "", 0, ""],    

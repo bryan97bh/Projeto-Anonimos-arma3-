@@ -172,9 +172,9 @@ class RJ_Configs {
 		},
 		{ // 
 			"76561198077087266",//iTTo 
-			{"U_I_CombatUniform","V_Chestrig_rgr","H_Booniehat_mgrn","G_Bandanna_oli",""}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
-			{{"hgun_Pistol_heavy_01_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
-			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
+			{"U_I_CombatUniform","V_Chestrig_rgr","H_Watchcap_khk","",""}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
+			{{"hgun_Rook40_F","30Rnd_9x21_Red_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
+			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_L",1},{"Chemlight_green",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
 		},
 		{ // 
 			"76561198132930070",//jes US
@@ -253,93 +253,93 @@ class RJ_Configs {
 		//---------------------------------------------------------------[ G.E.I.B ]-------------------------------------------------------------------------------------------------//
 		{ // Mano2
 			"76561198328745152",
-			{"U_I_CombatUniform_shortsleeve","V_SmershVest_01_F","","G_Balaclava_TI_tna_F","B_LegStrapBag_olive_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
-			{{"hgun_Pistol_heavy_01_green_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
-			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD_black",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
+			{"U_B_CBRN_Suit_01_MTP_F","V_Chestrig_khk","","G_Balaclava_TI_blk_F","B_Messenger_Coyote_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
+			{{"hgun_Pistol_heavy_01_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
+			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
 		},
 		{ // Kryptus 
 			"76561197973807596",
-			{"U_I_CombatUniform_shortsleeve","V_SmershVest_01_F","","G_Balaclava_TI_tna_F","B_LegStrapBag_olive_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
-			{{"hgun_Pistol_heavy_01_green_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
-			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD_black",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
+			{"U_B_CBRN_Suit_01_MTP_F","V_Chestrig_khk","","G_Balaclava_TI_blk_F","B_Messenger_Coyote_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
+			{{"hgun_Pistol_heavy_01_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
+			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
 		},
 		{ // MenorPet
 			"76561199027651724",
-			{"U_I_CombatUniform_shortsleeve","V_SmershVest_01_F","","G_Balaclava_TI_tna_F","B_LegStrapBag_olive_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
-			{{"hgun_Pistol_heavy_01_green_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
-			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD_black",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
+			{"U_B_CBRN_Suit_01_MTP_F","V_Chestrig_khk","","G_Balaclava_TI_blk_F","B_Messenger_Coyote_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
+			{{"hgun_Pistol_heavy_01_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
+			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
 		},
 		{ // Snipernambucano 
 			"76561198416892378",
-			{"U_I_CombatUniform_shortsleeve","V_SmershVest_01_F","","G_Balaclava_TI_tna_F","B_LegStrapBag_olive_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
-			{{"hgun_Pistol_heavy_01_green_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
-			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD_black",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
+			{"U_B_CBRN_Suit_01_MTP_F","V_Chestrig_khk","","G_Balaclava_TI_blk_F","B_Messenger_Coyote_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
+			{{"hgun_Pistol_heavy_01_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
+			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
 		},
 		{ // Prof.Silva 
 			"76561198396851044",
-			{"U_I_CombatUniform_shortsleeve","V_SmershVest_01_F","","G_Balaclava_TI_tna_F","B_LegStrapBag_olive_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
-			{{"hgun_Pistol_heavy_01_green_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
-			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD_black",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
+			{"U_B_CBRN_Suit_01_MTP_F","V_Chestrig_khk","","G_Balaclava_TI_blk_F","B_Messenger_Coyote_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
+			{{"hgun_Pistol_heavy_01_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
+			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
 		},
 		{ // Lucas
 			"76561198118710990",
-			{"U_I_CombatUniform_shortsleeve","V_SmershVest_01_F","","G_Balaclava_TI_tna_F","B_LegStrapBag_olive_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
-			{{"hgun_Pistol_heavy_01_green_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
-			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD_black",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
+			{"U_B_CBRN_Suit_01_MTP_F","V_Chestrig_khk","","G_Balaclava_TI_blk_F","B_Messenger_Coyote_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
+			{{"hgun_Pistol_heavy_01_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
+			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
 		},
 		{ // CapiBoy 
 			"76561198285532898",
-			{"U_I_CombatUniform_shortsleeve","V_SmershVest_01_F","","G_Balaclava_TI_tna_F","B_LegStrapBag_olive_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
-			{{"hgun_Pistol_heavy_01_green_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
-			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD_black",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
+			{"U_B_CBRN_Suit_01_MTP_F","V_Chestrig_khk","","G_Balaclava_TI_blk_F","B_Messenger_Coyote_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
+			{{"hgun_Pistol_heavy_01_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
+			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
 		},
 		{ // Felipe Andreola
 			"76561198811166180",
-			{"U_I_CombatUniform_shortsleeve","V_SmershVest_01_F","","G_Balaclava_TI_tna_F","B_LegStrapBag_olive_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
-			{{"hgun_Pistol_heavy_01_green_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
-			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD_black",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
+			{"U_B_CBRN_Suit_01_MTP_F","V_Chestrig_khk","","G_Balaclava_TI_blk_F","B_Messenger_Coyote_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
+			{{"hgun_Pistol_heavy_01_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
+			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
 		},
 		{ // Jeferson
 			"76561198137948469",
-			{"U_I_CombatUniform_shortsleeve","V_SmershVest_01_F","","G_Balaclava_TI_tna_F","B_LegStrapBag_olive_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
-			{{"hgun_Pistol_heavy_01_green_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
-			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD_black",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
+			{"U_B_CBRN_Suit_01_MTP_F","V_Chestrig_khk","","G_Balaclava_TI_blk_F","B_Messenger_Coyote_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
+			{{"hgun_Pistol_heavy_01_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
+			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
 		},
 		{ // Markezini 
 			"76561198089933704",
-			{"U_I_CombatUniform_shortsleeve","V_SmershVest_01_F","","G_Balaclava_TI_tna_F","B_LegStrapBag_olive_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
-			{{"hgun_Pistol_heavy_01_green_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
-			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD_black",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
+			{"U_B_CBRN_Suit_01_MTP_F","V_Chestrig_khk","","G_Balaclava_TI_blk_F","B_Messenger_Coyote_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
+			{{"hgun_Pistol_heavy_01_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
+			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
 		},
 		{ // Daniel 
 			"76561198377304999",
-			{"U_I_CombatUniform_shortsleeve","V_SmershVest_01_F","","G_Balaclava_TI_tna_F","B_LegStrapBag_olive_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
-			{{"hgun_Pistol_heavy_01_green_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
-			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD_black",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
+			{"U_B_CBRN_Suit_01_MTP_F","V_Chestrig_khk","","G_Balaclava_TI_blk_F","B_Messenger_Coyote_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
+			{{"hgun_Pistol_heavy_01_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
+			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
 		},
 		{ // Chuck Mawhinney
 			"76561198988502730",
-			{"U_I_CombatUniform_shortsleeve","V_SmershVest_01_F","","G_Balaclava_TI_tna_F","B_LegStrapBag_olive_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
-			{{"hgun_Pistol_heavy_01_green_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
-			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD_black",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
+			{"U_B_CBRN_Suit_01_MTP_F","V_Chestrig_khk","","G_Balaclava_TI_blk_F","B_Messenger_Coyote_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
+			{{"hgun_Pistol_heavy_01_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
+			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
 		},
 		{ // Gabriel 
 			"76561198200918322",
-			{"U_I_CombatUniform_shortsleeve","V_SmershVest_01_F","","G_Balaclava_TI_tna_F","B_LegStrapBag_olive_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
-			{{"hgun_Pistol_heavy_01_green_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
-			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD_black",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
+			{"U_B_CBRN_Suit_01_MTP_F","V_Chestrig_khk","","G_Balaclava_TI_blk_F","B_Messenger_Coyote_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
+			{{"hgun_Pistol_heavy_01_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
+			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
 		},
 		{ // TulioMSC 
 			"76561198795837766",
-			{"U_I_CombatUniform_shortsleeve","V_SmershVest_01_F","","G_Balaclava_TI_tna_F","B_LegStrapBag_olive_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
-			{{"hgun_Pistol_heavy_01_green_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
-			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD_black",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
+			{"U_B_CBRN_Suit_01_MTP_F","V_Chestrig_khk","","G_Balaclava_TI_blk_F","B_Messenger_Coyote_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
+			{{"hgun_Pistol_heavy_01_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
+			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
 		},
 		{ // CobraCriada 
 			"76561198397121225",
-			{"U_I_CombatUniform_shortsleeve","V_SmershVest_01_F","","G_Balaclava_TI_tna_F","B_LegStrapBag_olive_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
-			{{"hgun_Pistol_heavy_01_green_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
-			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD_black",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
+			{"U_B_CBRN_Suit_01_MTP_F","V_Chestrig_khk","","G_Balaclava_TI_blk_F","B_Messenger_Coyote_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
+			{{"hgun_Pistol_heavy_01_F","11Rnd_45ACP_Mag",3}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
+			{{"FirstAidKit",1},{"O_NVGoggles_ghex_F",1},{"muzzle_snds_acp",1},{"optic_MRD",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
 		},
 		//-----------------------------------------------------------------XXGG-----------------------------------------------------------------------------------------------//
 		{ // Sua Mãe 
@@ -449,6 +449,12 @@ class RJ_Configs {
 		},
 		{ //Weverton
 			"76561198316120503",
+			{"U_I_CombatUniform_shortsleeve","V_Chestrig_blk","H_Tank_eaf_F","G_Balaclava_TI_G_blk_F","B_LegStrapBag_black_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
+			{{"hgun_Pistol_heavy_01_green_F","11Rnd_45ACP_Mag",2}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
+			{{"FirstAidKit",1},{"NVGoggles_OPFOR",1},{"muzzle_snds_acp",1},{"optic_MRD_black",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}
+		},
+		{ //Sombrio
+			"76561198419299344",
 			{"U_I_CombatUniform_shortsleeve","V_Chestrig_blk","H_Tank_eaf_F","G_Balaclava_TI_G_blk_F","B_LegStrapBag_black_F"}, 		//{"ROUPA","COLETE","CAPACETE","OCULOS","NVG"}
 			{{"hgun_Pistol_heavy_01_green_F","11Rnd_45ACP_Mag",2}},   //{{"Arma 1","Carre",QTD MUNI},{"ARMA 2","Carre",QTD MUNI}}
 			{{"FirstAidKit",1},{"NVGoggles_OPFOR",1},{"muzzle_snds_acp",1},{"optic_MRD_black",1},{"ItemGPS",1}}    //{{"ITEM 1",QTD},{"ITEM 2",QTD}}

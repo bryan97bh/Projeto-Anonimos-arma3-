@@ -1,5 +1,5 @@
 // ******************************************************************************************
-// * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
+// * This project is licensed under the GNU Affero GPL v3. Copyright ï¿½ 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Name: outpostSoulRapid.sqf
 //	@file Author: soulkobk, Staynex
@@ -79,6 +79,6 @@
     ["Land_BagFence_End_F",[3,0.875,2.78],135],
     ["Land_BagFence_End_F",[10.875,2.25,0],90],
     ["Land_BagFence_End_F",[0.625,3.375,3.375],135],
-    ["O_CargoNet_01_ammo_F", [2.625,2.875,0],45, { [_this, ["US", "OTHER"] call BIS_fnc_selectRandom] call fn_refillbox }],
-    ["O_CargoNet_01_ammo_F", [2.5,2.75,2.78],135, { [_this, ["US", "OTHER"] call BIS_fnc_selectRandom] call fn_refillbox }]
+    ["CargoNet_01_box_F", [2.625,2.875,0],45, { [_this, ["US", "OTHER"] call BIS_fnc_selectRandom] call fn_refillbox }],
+    ["Box_FIA_Support_F", [2.5,2.75,2.78],135, { [_this, ["US", "OTHER"] call BIS_fnc_selectRandom] call fn_refillbox }]
 ]

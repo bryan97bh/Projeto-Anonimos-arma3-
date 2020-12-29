@@ -175,7 +175,7 @@ _successExec =
 {
 	// Mission completed
 
-	_box1 = createVehicle ["O_CargoNet_01_ammo_F", _lastPos, [], 2, "None"];
+	_box1 = createVehicle ["B_supplyCrate_F", _lastPos, [], 2, "None"];
 	_box1 setDir random 360;
 	[_box1, ["US", "OTHER"] call BIS_fnc_selectRandom] call fn_refillbox;
 

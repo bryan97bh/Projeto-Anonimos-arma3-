@@ -181,16 +181,16 @@ A3W_sideMissionDelay = 1*60;       // Time in seconds between Side Missions
 A3W_sideMissionTimeout = 2*60;    // Time in seconds that a Side Mission will run for, unless completed
 
 A3W_moneyMissionDelay = 1*60;     // Time in seconds between Money Missions
-A3W_moneyMissionTimeout = 2*60;   // Time in seconds that a Money Mission will run for, unless completed
+A3W_moneyMissionTimeout = 60*60;   // Time in seconds that a Money Mission will run for, unless completed
 
 A3W_principalMissionsDelay = 1*60;      // Time in seconds between Main Missions
-A3W_principalMissionsTimeout = 2*60;    // Time in seconds that a Main Mission will run for, unless completed
+A3W_principalMissionsTimeout = 60*60;    // Time in seconds that a Main Mission will run for, unless completed
 
 A3W_hostileairMissionDelay = 1*60;      // Time in seconds between Main Missions
 A3W_hostileairMissionTimeout = 2*60;    // Time in seconds that a Main Mission will run for, unless completed
 
 A3W_aquaticMissionDelay = 1*60;      // Time in seconds between Main Missions
-A3W_aquaticMissionTimeout = 2*60;    // Time in seconds that a Main Mission will run for, unless completed
+A3W_aquaticMissionTimeout = 5*60;    // Time in seconds that a Main Mission will run for, unless completed
 //###############################################################################################################################//
 A3W_hackedMissionDlSize = 165072;	// File size in Kilobytles (~1Mbps dl Rate)
 A3W_hackedMissionPercentage = 0.05; // Percentage to come out of bankaccounts

@@ -157,11 +157,10 @@ vehicleAddition4 =
 
 vehicleAddition5 =
 [
-	[
-		["V_SmershVest_01_F", "V_SmershVest_01_radio_F"],
-		["V_Pocketed_black_F", "V_Pocketed_coyote_F", "V_Pocketed_olive_F"],
-		["V_DeckCrew_blue_F", "V_DeckCrew_green_F", "V_DeckCrew_yellow_F", "V_DeckCrew_red_F", "V_DeckCrew_brown_F", "V_DeckCrew_violet_F", "V_DeckCrew_white_F"]
-	],
+	
+	["V_SmershVest_01_F", "V_SmershVest_01_radio_F"],
+	["V_Pocketed_black_F", "V_Pocketed_coyote_F", "V_Pocketed_olive_F"],
+	["V_DeckCrew_blue_F", "V_DeckCrew_green_F", "V_DeckCrew_yellow_F", "V_DeckCrew_red_F", "V_DeckCrew_brown_F", "V_DeckCrew_violet_F", "V_DeckCrew_white_F"],
 	["V_BandollierB_blk", "V_BandollierB_cbr", "V_BandollierB_rgr", "V_BandollierB_khk", "V_BandollierB_oli", "V_BandollierB_ghex_F"],
 	["V_HarnessOGL_brn", "V_HarnessOGL_gry", "V_HarnessOGL_ghex_F"],
 	["V_Chestrig_khk", "V_Chestrig_rgr", "V_Chestrig_blk", "V_Chestrig_oli"],
@@ -174,10 +173,9 @@ vehicleAddition5 =
 
 vehicleAddition6 =
 [
-	[ 
-		["optic_aco_smg", "optic_ACO_grn_smg"],
-	    ["optic_Holosight_smg", "optic_Holosight_smg_blk_F"]
-	], 
+	
+	["optic_aco_smg", "optic_ACO_grn_smg"],
+	["optic_Holosight_smg", "optic_Holosight_smg_blk_F"],
     ["optic_MRCO", "optic_KHS_old"],
 	["optic_Aco", "optic_ACO_grn"],
 	["acc_pointer_IR", "acc_flashlight"],
@@ -186,10 +184,9 @@ vehicleAddition6 =
 
 vehicleAddition7 =
 [
-	[
-		["B_Messenger_Black_F", "B_Messenger_Coyote_F", "B_Messenger_Gray_F", "B_Messenger_Olive_F", "B_Messenger_IDAP_F"],
-	    ["B_LegStrapBag_black_F", "B_LegStrapBag_coyote_F", "B_LegStrapBag_olive_F"]
-	],	
+	
+	["B_Messenger_Black_F", "B_Messenger_Coyote_F", "B_Messenger_Gray_F", "B_Messenger_Olive_F", "B_Messenger_IDAP_F"],
+	["B_LegStrapBag_black_F", "B_LegStrapBag_coyote_F", "B_LegStrapBag_olive_F"],	
 	["B_AssaultPack_blk", "B_AssaultPack_rgr", "B_AssaultPack_mcamo", "B_AssaultPack_ocamo"],
 	["B_AssaultPack_dgtl", "B_AssaultPack_khk", "B_AssaultPack_cbr", "B_AssaultPack_sgg",  "B_AssaultPack_tna_F","B_AssaultPack_Kerry"],
 	["B_FieldPack_blk", "B_FieldPack_cbr", "B_FieldPack_khk", "B_FieldPack_oucamo", "B_FieldPack_ocamo", "B_FieldPack_ghex_F"]

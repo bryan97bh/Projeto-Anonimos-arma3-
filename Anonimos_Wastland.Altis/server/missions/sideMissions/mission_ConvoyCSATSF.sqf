@@ -61,7 +61,7 @@ _setupObjects =
 		_vehicle addEventhandler ["HandleDamage", {if (_this select 1 in ["wheel_1_1_steering","wheel_1_2_steering","wheel_2_1_steering","wheel_2_2_steering"]) then {0*(_this select 2)}}];
 
 		[_vehicle, _aiGroup] spawn checkMissionVehicleLock;
-		//[_vehicle, "client\images\vehicleTextures\hippie.paa"] call applyVehicleTexture;
+		[_vehicle, "client\images\vehicleTextures\woodtiger.paa"] call applyVehicleTexture;
 
 		_vehicle
 	};

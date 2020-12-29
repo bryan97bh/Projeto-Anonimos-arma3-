@@ -20,14 +20,14 @@ _setupVars =
 _setupObjects =
 {
 	private ["_starts", "_startDirs", "_waypoints"];
-	call compile preprocessFileLineNumbers format ["mapConfig\convoys\%1.sqf", _missionLocation];
+	call compile preprocessFileLineNumbers format ["mapConfig\convoys\LandConvoy_1.sqf", _missionLocation];
 
 	// pick the vehicles for the convoy
 	_convoyVeh =
 	[
-		["I_G_Offroad_01_armed_F", "B_Truck_01_covered_F", "I_G_Offroad_01_AT_F"],
-		["I_C_Offroad_02_LMG_F", "O_Truck_03_covered_F", "I_C_Offroad_02_AT_F"],
-		["I_G_Offroad_01_armed_F", "I_Truck_02_covered_F", "I_G_Offroad_01_armed_F"]
+		["I_G_Offroad_01_armed_F", "I_G_Offroad_01_AT_F", "B_Truck_01_covered_F"],
+		["I_C_Offroad_02_LMG_F", "I_C_Offroad_02_AT_F", "O_Truck_03_covered_F"],
+		["I_G_Offroad_01_armed_F", "I_G_Offroad_01_armed_F", "I_Truck_02_covered_F"]
 	] call BIS_fnc_selectRandom;
 
 	_veh1 = _convoyVeh select 0;

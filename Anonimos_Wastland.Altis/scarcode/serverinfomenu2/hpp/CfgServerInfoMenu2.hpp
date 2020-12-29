@@ -51,15 +51,6 @@ class CfgServerInfoMenu2
          "-AQUI VAI UMAS DICAS PARA VOCÊ QUE ESTA INICIANDO EM NOSSO SERVIDOR DE ARMA 3! -> <t color='#0091CD'><a href='https://drive.google.com/file/d/1V7dw9oWksL0AQ0RKzJ0pwJj0tBPcY_Ou/view'>LINK</a></t><br /><br />",
          "-Tutorial Construção de Base -> <t color='#0091CD'><a href='https://drive.google.com/file/d/1AmNGuoKjeLAcY24f5MPSQEz3lpgkOkXO/view'>LINK</a></t><br /><br />", 
          "------------------------------------------------------------------------------------------------------------<br />",   
-			"MODS DO SERVER<br />",
-         "SEGUE ALGUMAS DICAS DE MODS QUE VC PODE USAR EM NOSSO SERVIDOR<br />",
-			"JSRS SOUNDMOD -> <t color='#0091CD'><a href='https://steamcommunity.com/sharedfiles/filedetails/?id=861133494'>BAIXAR</a></t><br /><br />",
-         "Blastcore Edited (standalone version) -> <t color='#0091CD'><a href='https://steamcommunity.com/sharedfiles/filedetails/?id=767380317'>BAIXAR</a></t><br /><br />",
-         "Enhanced Movement -> <t color='#0091CD'><a href='https://steamcommunity.com/sharedfiles/filedetails/?id=333310405'>BAIXAR</a></t><br /><br />",
-         "HMDs MOD -> <t color='#0091CD'><a href='https://steamcommunity.com/sharedfiles/filedetails/?id=312724602'>BAIXAR</a></t><br /><br />",
-         "task_force_radio -> <t color='#0091CD'><a href='https://steamcommunity.com/sharedfiles/filedetails/?id=620019431'>BAIXAR</a></t><br /><br />",
-         "Obs: task_force_radio exige mod CBA_A3 para funcionar<br />",
-         "CBA_A3 -> <t color='#0091CD'><a href='https://steamcommunity.com/sharedfiles/filedetails/?id=450814997'>BAIXAR</a></t><br /><br />",
 			"------------------------------------------------------------------------------------------------------------<br />",
 			"PRESSIONE ESC PARA SAIR"
          }; 

@@ -52,6 +52,9 @@ class CfgServerInfoMenu
          "------------------------------------------------------------------------------------------------------------<br />",
          "REGRAS DE LIVE <br />",
          "5.0 - PROIBIDO FAZER GHOST EM QUALQUER LIVE<br />",
+         "5.2 - Doações ao Servidor ou pagamentos de VIP, BASES e Uniformes personalizados não são passíveis de devolução em nenhuma circunstância<br />",
+         "5.3 - A partir de amanhã, dia 03/10/2020 - Está autorizado a criação de grupos mesmo sendo de clans diferentes, mesmo tendo Bases, desde que não seja o maior grupo do servidor em EFETIVO e não podem se utilizar de Bases dos aliados, cada um com a sua. Ex: Clan ALFA está com um grupo de 15 pessoas no servidor, então Clan BRAVO e Clan CHARLIE podem se juntar desde que não ultrapassem o número de integrantes do Clan ALFA. Observar que a regra do servidor é no máximo 15 pessoas por grupo, acima de tudo<br />",
+         "5.4 - Proibida a conexão de Drones inimigos de qualquer forma, maneira ou espécie. Com exceção para aquisição de posse do veículo ao se aproximar do mesmo fisicamente<br />",
          "------------------------------------------------------------------------------------------------------------<br />",
          "ATENÇÃO<br />",
          "6.1 — Qualquer ação que o Admin entenda que a conduta do player foi de má-fé, com o objetivo de prejudicar o servidor, time ou a própria administração da partida, o Admin tem o poder para aplicar punição proporcional à gravidade do anti-jogo criada<br />",
@@ -61,6 +64,7 @@ class CfgServerInfoMenu
          "------------------------------------------------------------------------------------------------------------<br />",
          "Lembre-se: NÃO nos importamos com as emoções de nossos usuários. <br />",
          "Não nos importamos se você teve um dia ruim, se seu trabalho é péssimo ou se o mundo inteiro está contra você, seja educado em nossos servidores - SEMPRE!<br />",
+         "Toda punição a partir de agora terá o tempo mínimo de 1 MÊS<br />",
          "------------------------------------------------------------------------------------------------------------<br />",   			
 			"PRESSIONE ESC PARA SAIR"
 			

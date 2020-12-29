@@ -113,7 +113,7 @@ _playerCustomUniforms =
 			"76561198328001833",  //Leo
 			"76561198339545528",  //Baby Beef
 			"76561198058108974",  //Dino Bração
-			"76561198440248452"   // Oliveira
+			"76561198440248452"   //Oliveira
 		],
 		[
 			["GUER","U_I_Wetsuit","addons\playerCustomUniforms\textures\diver_NKN.paa"]
@@ -131,6 +131,7 @@ _playerCustomUniforms =
 		[
 			"76561198993657162",  //bruno
 			"76561198930874562",  //Patrick
+			"76561198419299344",  //sombrio
 			"76561198316120503"   //Weverton
 		],
 		[
@@ -144,6 +145,7 @@ _playerCustomUniforms =
 			"76561198117587693", //[-SaS-] WecTy amigo jb 
 			"76561198119668279", //xBlackHalo amigo jb  
 			"76561198993657162", //bruno
+			"76561198321527812", //NAVARRO
 			"76561198073156695"  //guy fawkes
 		],  
 		[

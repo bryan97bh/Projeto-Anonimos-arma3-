@@ -159,17 +159,17 @@ class playerSettings {
 			idc = close_button;
 			text = "Fechar";
 			onButtonClick = "[] execVM 'client\systems\playerMenu\closePlayerMenu.sqf'";
-			x = 0.35;
-			y = 0.74;
+			x = 0.65;
+			y = 0.90;
 			w = 0.2625;
-			h = 0.08;
+			h = 0.033;
 		};
 
 		class GroupsButton : w_RscButton {
 			idc = groupButton;
 			text = "Grupos";
 			onButtonClick = "[] execVM 'client\systems\groups\loadGroupManagement.sqf'";
-			x = 0.65;
+			x = 0.35;
 			y = 0.74;
 			w = 0.2625;
 			h = 0.08;
@@ -179,18 +179,38 @@ class playerSettings {
 			idc = -1;
 			text = "Ver Distância";
 			onButtonClick = "call CHVD_fnc_openDialog";
-			x = 0.65;
+			x = 0.35;
 			y = 0.64;
 			w = 0.2625;
 			h = 0.08;
 		};
 
+		class btDistanceCustom : w_RscButton {
+			idc = -1;
+			text = "MODS";
+			onButtonClick = "createDialog'RscDisplayServerInfoMenu3'";
+			x = 0.65;
+			y = 0.44;
+			w = 0.2625;
+			h = 0.08;
+		};
+
+		class btEDistanceCustom : w_RscButton {
+			idc = -1;
+			text = "EM BREVE";
+			onButtonClick = "createDialog'RscDisplayServerInfoMenu4'";
+			x = 0.65;
+			y = 0.54;
+			w = 0.2625;
+			h = 0.08;
+		};
+		
 		class btnDistanceCustom : w_RscButton {
 			idc = -1;
 			text = "INFO DO SERVER";
 			onButtonClick = "createDialog'RscDisplayServerInfoMenu2'";
-			x = 0.35;
-			y = 0.64;
+			x = 0.65;
+			y = 0.34;
 			w = 0.2625;
 			h = 0.08;
 		};
@@ -200,7 +220,7 @@ class playerSettings {
 			text = "REGRAS";
 			onButtonClick = "createDialog'RscDisplayServerInfoMenu'";
 			x = 0.65;
-			y = 0.54;
+			y = 0.24;
 			w = 0.2625;
 			h = 0.08;
 		};

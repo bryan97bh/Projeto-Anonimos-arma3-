@@ -20,16 +20,16 @@ _setupObjects =
 	_missionPos = markerPos _missionLocation;
 	_randomBox = ["O_CargoNet_01_ammo_F","mission_Uniform","mission_HVSniper"] call BIS_fnc_selectRandom;
 	_randomBox2 = ["mission_USSpecial","B_supplyCrate_F","mission_HVLaunchers"] call BIS_fnc_selectRandom;
-	_box1 = createVehicle ["Box_East_Wps_F", _missionPos, [], 5, "None"];
+	_box1 = createVehicle ["O_CargoNet_01_ammo_F", _missionPos, [], 5, "None"];
 	[_box1, ["RU", "MILITIA"] call BIS_fnc_selectRandom] call fn_refillbox;
 
-	_box2 = createVehicle ["O_CargoNet_01_ammo_F", _missionPos, [], 5, "None"];
+	_box2 = createVehicle ["I_CargoNet_01_ammo_F", _missionPos, [], 5, "None"];
 	[_box2, ["RU", "MILITIA"] call BIS_fnc_selectRandom] call fn_refillbox;
 
-	_box3 = createVehicle ["Box_East_Wps_F", _missionPos, [], 5, "None"];
+	_box3 = createVehicle ["I_E_CargoNet_01_ammo_F", _missionPos, [], 5, "None"];
 	[_box3, ["RU", "MILITIA"] call BIS_fnc_selectRandom] call fn_refillbox;
 
-	_box4 = createVehicle ["B_supplyCrate_F", _missionPos, [], 5, "None"];
+	_box4 = createVehicle ["B_CargoNet_01_ammo_F", _missionPos, [], 5, "None"];
 	[_box4, ["RU", "MILITIA"] call BIS_fnc_selectRandom] call fn_refillbox;
 
 	{

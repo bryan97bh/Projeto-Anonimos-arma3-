@@ -14,15 +14,7 @@ _setupVars =
 	_vehicleClass =
 	[
         "C_Plane_Civil_01_racing_F",                                      //SUPER TUCANO
-        "C_Plane_Civil_01_racing_F",                                      //SUPER TUCANO
-        "C_Plane_Civil_01_racing_F",                                      //SUPER TUCANO
-        "C_Plane_Civil_01_racing_F",                                      //SUPER TUCANo
-        "C_Plane_Civil_01_racing_F",                                      //SUPER TUCANO
 
-        ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardCAS"],            //A-143 Buzzard CAS
-        //["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardAA"],             //A-143 Buzzard AA
-        ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardb1"],             //A-143 Buzzard b1
-        ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardb1"],             //A-143 Buzzard b2
         ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardCAS"],            //A-143 Buzzard CAS
         //["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardAA"],             //A-143 Buzzard AA
         ["I_Plane_Fighter_03_dynamicLoadout_F", "buzzardb1"],             //A-143 Buzzard b1

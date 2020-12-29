@@ -117,6 +117,8 @@ if (hasInterface || isServer) then
 	[] execVM "addons\HvT\HvD.sqf"; // High Value Drugrunner
 	[] execVM "scarCODE\ServerInfoMenu\sqf\initLocal.sqf"; // scarCODE ServerInfoMenu
 	[] execVM "scarCODE\ServerInfoMenu2\sqf\initLocal.sqf"; // scarCODE ServerInfoMenu
+	[] execVM "scarCODE\ServerInfoMenu3\sqf\initLocal.sqf"; // scarCODE ServerInfoMenu
+	[] execVM "scarCODE\ServerInfoMenu4\sqf\initLocal.sqf"; // scarCODE ServerInfoMenu
 	[] execVM "addons\playerCustomUniforms\playerCustomUniforms.sqf";
 };
 
