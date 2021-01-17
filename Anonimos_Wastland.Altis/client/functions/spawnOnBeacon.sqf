@@ -6,6 +6,7 @@
 //	@file Author: [404] Costlyy, [GoT] JoSchaap, MercyfulFate, AgentRev
 //	@file Created: 08/12/2012 18:30
 //	@file Args:
+call compile preprocessFileLineNumbers "client\functions\functions.sqf";
 
 private ["_data", "_beacon", "_pos", "_owner", "_preload", "_height", "_playerPos"];
 _data = _this select 0;
@@ -14,10 +15,9 @@ _pos = _data select 1;
 _owner = _data select 2;
 _preload = param [1, false, [false]];
 _height = (["A3W_spawnBeaconSpawnHeight", 0] call getPublicVar) max 0;
-_radius = (["A3W_spawnBeaconSpawnRadius", 0] call getPublicVar) max 0;
 
 _beacon setVariable ["spawnBeacon_lastUse", diag_tickTime];
-player setVariable ["spawnBeacon_lastUse", diag_tickTime];
+player setVariable ["spawnBeacon_lastUse", diag_tickTime]; // Spaawn beacon bug
 [player, _beacon] remoteExecCall ["A3W_fnc_updateSpawnTimestamp", 2];
 
 if (_height < 25) then
@@ -27,19 +27,7 @@ if (_height < 25) then
 }
 else
 {
-    //Added 07.10.2016 Staynex/Xerxio
-    //Spieler spawned auf einem zufälligem Punkt auf einer Kreisbahn (siehe _radius) um das Spawn Beacon.
-    //Lösung durch Satz des Pythagoras: _radius^2 = _xShift^2 + _yShift^2
-    //Notwendigkeit des zufälligen Vorzeichens, da mathematische Lösung nicht eindeutig ist und es zwei Schnittpunkte gibt.
-    _xShift = (round(random (2*_radius))) -_radius;
-    _yShift = sqrt((_radius*_radius)-(_xShift*_xShift));
-    
-    //Radnom 2 (Random 0 or 1 -> 50%)
-    if (floor(random 2) == 1) then
-    {
-        _yShift = - _yShift;
-    };
-	_playerPos = [(_pos select 0)+ _xShift, (_pos select 1) + _yShift, _height];
+	_playerPos = [_pos select 0, _pos select 1, _height];
 };
 
 if (_preload) then { waitUntil {preloadCamera _playerPos} };
@@ -48,8 +36,29 @@ waitUntil {!isNil "bis_fnc_init" && {bis_fnc_init}};
 
 player setPos _playerPos;
 
+//player addBackpack "B_Parachute";
 respawnDialogActive = false;
 closeDialog 0;
+
+_target = player;
+_loadout=[_target] call Getloadout;
+0=[_target] call Frontpack;
+
+Private _ItemsBack = backpackItems player;
+
+removeBackpack _target;
+sleep 0.5;
+_target addBackpack "B_Parachute";
+while {(getPos _target select 2) > 2} do {
+    sleep 1;
+};
+deletevehicle (_target getvariable "frontpack");
+_target setvariable ["frontpack",nil,true];
+0=[_target,_loadout] call Setloadout;
+
+{
+	player addItemToBackpack _X;
+} ForEach _ItemsBack;
 
 _owner spawn
 {

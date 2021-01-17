@@ -160,7 +160,7 @@ _successExec =
     
     
     //Spawn some drugs ;) As Staynex hates drugs :P
-	_drugpilerandomizer = [2,3,4];
+	_drugpilerandomizer = [5,10,15];
 	_drugpile = _drugpilerandomizer call BIS_fnc_SelectRandom;
 	
 	for "_i" from 1 to _drugpile do 
@@ -170,6 +170,12 @@ _successExec =
 	          ["energydrink", "Land_Can_V3_F"],
 	          ["energydrink", "Land_Can_V3_F"],
 	          ["energydrink", "Land_Can_V3_F"],
+			  ["energydrink", "Land_Can_V3_F"],
+			  ["energydrink", "Land_Can_V3_F"],
+			  ["energydrink", "Land_Can_V3_F"],
+			  ["energydrink", "Land_Can_V3_F"],
+			  ["energydrink", "Land_Can_V3_F"],
+			  ["energydrink", "Land_Can_V3_F"],
 	          ["energydrink", "Land_Can_V3_F"]
 	        ] call BIS_fnc_selectRandom;
 	  [_item, _lastPos] call _drop_item;

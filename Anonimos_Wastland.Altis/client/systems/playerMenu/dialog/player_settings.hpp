@@ -185,46 +185,76 @@ class playerSettings {
 			h = 0.08;
 		};
 
-		class btDistanceCustom : w_RscButton {
-			idc = -1;
-			text = "MODS";
-			onButtonClick = "createDialog'RscDisplayServerInfoMenu3'";
-			x = 0.65;
-			y = 0.44;
-			w = 0.2625;
-			h = 0.08;
-		};
-
-		class btEDistanceCustom : w_RscButton {
-			idc = -1;
-			text = "EM BREVE";
-			onButtonClick = "createDialog'RscDisplayServerInfoMenu4'";
-			x = 0.65;
-			y = 0.54;
-			w = 0.2625;
-			h = 0.08;
-		};
-		
-		class btnDistanceCustom : w_RscButton {
-			idc = -1;
-			text = "INFO DO SERVER";
-			onButtonClick = "createDialog'RscDisplayServerInfoMenu2'";
-			x = 0.65;
-			y = 0.34;
-			w = 0.2625;
-			h = 0.08;
-		};
-
 		class TOParmaInfoButton : w_RscButton {
 			idc = -1;
 			text = "REGRAS";
 			onButtonClick = "createDialog'RscDisplayServerInfoMenu'";
 			x = 0.65;
-			y = 0.24;
+			y = 0.20;
 			w = 0.2625;
-			h = 0.08;
+			h = 0.06;
 		};
 
+		class btnDistanceCustom : w_RscButton {
+			idc = -1;
+			text = "INFO DO SERVER";
+			onButtonClick = "createDialog'RscDisplayServerInfoMenu2'";
+			x = 0.65;
+			y = 0.27;
+			w = 0.2625;
+			h = 0.06;
+		};
+
+		class btDistanceCustom : w_RscButton {
+			idc = -1;
+			text = "MODS";
+			onButtonClick = "createDialog'RscDisplayServerInfoMenu3'";
+			x = 0.65;
+			y = 0.34;
+			w = 0.2625;
+			h = 0.06;
+		};
+
+		class btEDistanceCustom : w_RscButton {
+			idc = -1;
+			text = "INFO MISSÕES";
+			onButtonClick = "createDialog'RscDisplayServerInfoMenu4'";
+			x = 0.65;
+			y = 0.41;
+			w = 0.2625;
+			h = 0.06;
+		};
+
+		class btODistanceCustom : w_RscButton {
+			idc = -1;
+			text = "INFO VIP";
+			onButtonClick = "createDialog'RscDisplayServerInfoMenu5'";
+			x = 0.65;
+			y = 0.48;
+			w = 0.2625;
+			h = 0.06;
+		};
+
+		class btaDistanceCustom : w_RscButton {
+			idc = -1;
+			text = "FAQ";
+			onButtonClick = "createDialog'RscDisplayServerInfoMenu6'";
+			x = 0.65;
+			y = 0.55;
+			w = 0.2625;
+			h = 0.06;
+		};
+
+		class btBDistanceCustom : w_RscButton {
+			idc = -1;
+			text = "SIST GUINCHO HELI";
+			onButtonClick = "createDialog'RscDisplayServerInfoMenu7'";
+			x = 0.65;
+			y = 0.62;
+			w = 0.2625;
+			h = 0.06;
+		};
+		
 		class airdrop: w_RscButton {
 			idc = -1;
 			text = "Suporte Aéreo";

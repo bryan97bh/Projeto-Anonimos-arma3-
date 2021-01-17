@@ -98,6 +98,15 @@ briefing = 0; // if 0, skip Continue button
 #include "scarCODE\ServerInfoMenu4\hpp\CfgServerInfoMenu4.hpp"
 #include "scarCODE\ServerInfoMenu4\hpp\RscDisplayServerInfoMenu4.hpp"
 
+#include "scarCODE\ServerInfoMenu5\hpp\CfgServerInfoMenu5.hpp"
+#include "scarCODE\ServerInfoMenu5\hpp\RscDisplayServerInfoMenu5.hpp"
+
+#include "scarCODE\ServerInfoMenu6\hpp\CfgServerInfoMenu6.hpp"
+#include "scarCODE\ServerInfoMenu6\hpp\RscDisplayServerInfoMenu6.hpp"
+
+#include "scarCODE\ServerInfoMenu7\hpp\CfgServerInfoMenu7.hpp"
+#include "scarCODE\ServerInfoMenu7\hpp\RscDisplayServerInfoMenu7.hpp"
+
 class RscTitles
 {
 //	#include "addons\proving_ground\PG_rsctitles.hpp"

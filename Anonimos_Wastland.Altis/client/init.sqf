@@ -182,7 +182,7 @@ if (["A3W_survivalSystem"] call isConfigOn) then
 A3W_clientSetupComplete = compileFinal "true";
 
 [] spawn playerSpawn;
-[] spawn playerCustomUniform;
+//[] spawn playerCustomUniform;
 
 A3W_scriptThreads pushBack execVM "addons\fpsFix\vehicleManager.sqf";
 A3W_scriptThreads pushBack execVM "addons\Lootspawner\LSclientScan.sqf";

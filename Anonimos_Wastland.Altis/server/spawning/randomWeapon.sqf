@@ -47,8 +47,8 @@ _additionArray = _additionArray - [_additionsix];
 _additionseven = vehicleAddition6 call fn_selectRandomNested;
 _additionArray = _additionArray - [_additionseven];
 
-_additioneithg = vehicleAddition7 call fn_selectRandomNested;
-_additionArray = _additionArray - [_additioneithg];
+//_additioneithg = vehicleAddition7 call fn_selectRandomNested;
+//_additionArray = _additionArray - [_additioneithg];
 
 _additionnine = vehicleAddition8 call fn_selectRandomNested;
 _additionArray = _additionArray - [_additionnine];
@@ -91,7 +91,7 @@ switch (["A3W_vehicleLoot", 1] call getPublicVar) do
 		_car addItemCargoGlobal [_additionfive, 1];
 		_car addItemCargoGlobal [_additionsix, 1];
 		_car addItemCargoGlobal [_additionseven, 1];
-		_car addBackpackCargoGlobal [_additioneithg, 1];
+		//_car addBackpackCargoGlobal [_additioneithg, 1];
 		_car addItemCargoGlobal [_additionnine, 1]
 		//if (_nightTime) then { _car addItemCargoGlobal ["acc_flashlight", "acc_pointer_IR"]};
 	};

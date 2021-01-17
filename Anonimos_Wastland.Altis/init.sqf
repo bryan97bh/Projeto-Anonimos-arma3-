@@ -119,6 +119,9 @@ if (hasInterface || isServer) then
 	[] execVM "scarCODE\ServerInfoMenu2\sqf\initLocal.sqf"; // scarCODE ServerInfoMenu
 	[] execVM "scarCODE\ServerInfoMenu3\sqf\initLocal.sqf"; // scarCODE ServerInfoMenu
 	[] execVM "scarCODE\ServerInfoMenu4\sqf\initLocal.sqf"; // scarCODE ServerInfoMenu
+	[] execVM "scarCODE\ServerInfoMenu5\sqf\initLocal.sqf"; // scarCODE ServerInfoMenu
+	[] execVM "scarCODE\ServerInfoMenu6\sqf\initLocal.sqf"; // scarCODE ServerInfoMenu
+	[] execVM "scarCODE\ServerInfoMenu7\sqf\initLocal.sqf"; // scarCODE ServerInfoMenu
 	[] execVM "addons\playerCustomUniforms\playerCustomUniforms.sqf";
 };
 
@@ -134,3 +137,4 @@ if (hasInterface || isServer) then
 	{deleteMarker _x}
 	} forEach allMapMarkers"
 ];
+//_null = [] execVM "BeaconBug.sqf";

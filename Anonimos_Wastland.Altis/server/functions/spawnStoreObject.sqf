@@ -312,6 +312,22 @@ if (_key != "" && _player isKindOf "Man" && {_isGenStore || _isGunStore || _isVe
 					_object addMagazineCargoGlobal ["20Rnd_556x45_UW_mag", 4];
 					_object addMagazineCargoGlobal ["30Rnd_556x45_Stanag", 2];
 				};	
+
+				// Give diving gear to RHIB, Speedboat, and SDV - Default in A3W but in AJ Switch-Case Statement implemented
+				case ({_object isKindOf _x} count ["C_Plane_Civil_01_F","C_Plane_Civil_01_racing_F","I_Plane_Fighter_03_dynamicLoadout_F","I_Plane_Fighter_04_F","B_Plane_Fighter_01_F","O_Plane_Fighter_02_F","B_Plane_CAS_01_dynamicLoadout_F","O_Plane_CAS_02_dynamicLoadout_F"] > 0):
+				{
+					_object addBackpackCargoGlobal ["B_Parachute", 1];
+				};
+				// Give diving gear to RHIB, Speedboat, and SDV - Default in A3W but in AJ Switch-Case Statement implemented
+				case ({_object isKindOf _x} count ["B_Heli_Light_01_F","O_Heli_Light_02_unarmed_F","I_Heli_light_03_unarmed_F","I_Heli_Transport_02_F","O_Heli_Transport_04_covered_F","O_Heli_Transport_04_bench_F","B_Heli_Transport_03_unarmed_F","B_Heli_Transport_03_F","I_Heli_light_03_dynamicLoadout_F","B_Heli_Transport_01_F","O_Heli_Attack_02_dynamicLoadout_F","O_Heli_Light_02_dynamicLoadout_F","O_Heli_Light_02_dynamicLoadout_F","C_Heli_Light_01_civil_F"] > 0):
+				{
+					_object addBackpackCargoGlobal ["B_Parachute", 3];
+				};
+				// Give diving gear to RHIB, Speedboat, and SDV - Default in A3W but in AJ Switch-Case Statement implemented
+				case ({_object isKindOf _x} count ["B_T_VTOL_01_infantry_F","O_T_VTOL_02_infantry_dynamicLoadout_F","O_T_VTOL_02_vehicle_dynamicLoadout_F"] > 0):
+				{
+					_object addBackpackCargoGlobal ["B_Parachute", 6];
+				};
 			};
 
 			if (!_skipSave) then

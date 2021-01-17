@@ -80,41 +80,99 @@ A3W_planeSpawnOdds = 0.25; // 0.0 to 1.0
 vehicleWeapons =
 [
 	[
-		"hgun_PDW2000_F",
-	    "SMG_01_F",
-	    "SMG_02_F",
-	    "SMG_05_F",
-	    "arifle_AKS_F",
-	    ["SMG_03C_TR_black", "SMG_03C_TR_camo", "SMG_03C_TR_khaki", "SMG_03C_TR_hex"]
+		"hgun_PDW2000_F",                                                              //SMG PDW2000
+	    "SMG_01_F",                                                                    //SMG Vermin Sub Metralhadora
+	    "SMG_02_F",                                                                    //SMG Sting Sub Metralhadora
+	    "SMG_05_F",                                                                    //SMG Protector Sub Metralhadora
+	    ["SMG_03C_TR_black", "SMG_03C_TR_camo", "SMG_03C_TR_khaki", "SMG_03C_TR_hex"], //SMG ADR-97 TR
+		"arifle_AKS_F"                                                                 //    AKS-74U
 	],
-	["arifle_CTAR_blk_F", "arifle_CTAR_ghex_F", "arifle_CTAR_hex_F"],
 	[
-		["arifle_SPAR_01_blk_F", "arifle_SPAR_01_khk_F", "arifle_SPAR_01_snd_F"],
-	    ["arifle_Mk20C_plain_F", "arifle_Mk20C_F"],
-	    "arifle_TRG20_F"
+		"hgun_PDW2000_F",                                                              //SMG PDW2000
+	    "SMG_01_F",                                                                    //SMG Vermin Sub Metralhadora
+	    "SMG_02_F",                                                                    //SMG Sting Sub Metralhadora
+	    "SMG_05_F",                                                                    //SMG Protector Sub Metralhadora
+	    ["SMG_03C_TR_black", "SMG_03C_TR_camo", "SMG_03C_TR_khaki", "SMG_03C_TR_hex"], //SMG ADR-97 TR
+		"arifle_AKS_F"                                                                 //    AKS-74U
+	],
+	[
+		"hgun_PDW2000_F",                                                              //SMG PDW2000
+	    "SMG_01_F",                                                                    //SMG Vermin Sub Metralhadora
+	    "SMG_02_F",                                                                    //SMG Sting Sub Metralhadora
+	    "SMG_05_F",                                                                    //SMG Protector Sub Metralhadora
+	    ["SMG_03C_TR_black", "SMG_03C_TR_camo", "SMG_03C_TR_khaki", "SMG_03C_TR_hex"], //SMG ADR-97 TR
+		"arifle_AKS_F"                                                                 //    AKS-74U
+	],
+	[
+		"hgun_PDW2000_F",                                                              //SMG PDW2000
+	    "SMG_01_F",                                                                    //SMG Vermin Sub Metralhadora
+	    "SMG_02_F",                                                                    //SMG Sting Sub Metralhadora
+	    "SMG_05_F",                                                                    //SMG Protector Sub Metralhadora
+	    ["SMG_03C_TR_black", "SMG_03C_TR_camo", "SMG_03C_TR_khaki", "SMG_03C_TR_hex"], //SMG ADR-97 TR
+		"arifle_AKS_F"                                                                 //    AKS-74U
+	],
+	[
+		"hgun_PDW2000_F",                                                              //SMG PDW2000
+	    "SMG_01_F",                                                                    //SMG Vermin Sub Metralhadora
+	    "SMG_02_F",                                                                    //SMG Sting Sub Metralhadora
+	    "SMG_05_F",                                                                    //SMG Protector Sub Metralhadora
+	    ["SMG_03C_TR_black", "SMG_03C_TR_camo", "SMG_03C_TR_khaki", "SMG_03C_TR_hex"], //SMG ADR-97 TR
+		"arifle_AKS_F"                                                                 //    AKS-74U
+	],
+	//---------------------------------------------------------------------------------------------------------------------
+	"hgun_PDW2000_F",                                                              //SMG PDW2000
+	"SMG_01_F",                                                                    //SMG Vermin Sub Metralhadora
+	"SMG_02_F",                                                                    //SMG Sting Sub Metralhadora
+	"SMG_05_F", 
+	["SMG_03C_TR_black", "SMG_03C_TR_camo", "SMG_03C_TR_khaki", "SMG_03C_TR_hex"],
+	"arifle_AKS_F",
+	//---------------------------------------------------------------------------------------------------------------------
+	"hgun_PDW2000_F",                                                              //SMG PDW2000
+	"SMG_01_F",                                                                    //SMG Vermin Sub Metralhadora
+	"SMG_02_F",                                                                    //SMG Sting Sub Metralhadora
+	"SMG_05_F", 
+	["SMG_03C_TR_black", "SMG_03C_TR_camo", "SMG_03C_TR_khaki", "SMG_03C_TR_hex"],
+	"arifle_AKS_F",
+	//---------------------------------------------------------------------------------------------------------------------
+	"hgun_PDW2000_F",                                                              //SMG PDW2000
+	"SMG_01_F",                                                                    //SMG Vermin Sub Metralhadora
+	"SMG_02_F",                                                                    //SMG Sting Sub Metralhadora
+	"SMG_05_F", 
+	["SMG_03C_TR_black", "SMG_03C_TR_camo", "SMG_03C_TR_khaki", "SMG_03C_TR_hex"],
+	"arifle_AKS_F",
+	//---------------------------------------------------------------------------------------------------------------------
+	["sgun_HunterShotgun_01_F", "sgun_HunterShotgun_01_sawedoff_F"],
+	["sgun_HunterShotgun_01_F", "sgun_HunterShotgun_01_sawedoff_F"],
+	["sgun_HunterShotgun_01_F", "sgun_HunterShotgun_01_sawedoff_F"],
+	["sgun_HunterShotgun_01_F", "sgun_HunterShotgun_01_sawedoff_F"],
+	//---------------------------------------------------------------------------------------------------------------------
+	["arifle_CTAR_blk_F", "arifle_CTAR_ghex_F", "arifle_CTAR_hex_F"],                  //Fuzil CAR-95
+	[
+		["arifle_SPAR_01_blk_F", "arifle_SPAR_01_khk_F", "arifle_SPAR_01_snd_F"],     //SPAR-16
+	    ["arifle_Mk20C_plain_F", "arifle_Mk20C_F"],                                   //Carabina Mk20
+	    "arifle_TRG20_F"                                                              // TGR-21
 	],	
 	[
 		"arifle_Katiba_C_F",
 	    ["arifle_MXC_Black_F", "arifle_MXC_khk_F", "arifle_MXC_F"],
-		["arifle_MSBS65_F", "arifle_MSBS65_black_F", "arifle_MSBS65_camo_F", "arifle_MSBS65_sand_F"]
+		["arifle_MSBS65_F", "arifle_MSBS65_black_F", "arifle_MSBS65_camo_F", "arifle_MSBS65_sand_F"]  
 	],
-	["arifle_AKM_F", "srifle_DMR_01_F", "srifle_DMR_06_hunter_F"],
-	["sgun_HunterShotgun_01_F", "sgun_HunterShotgun_01_sawedoff_F"]
+	["arifle_AKM_F", "srifle_DMR_01_F", "srifle_DMR_06_hunter_F"]
 ];
 
 vehicleAddition =
 [
-	["ToolKit", "ItemGPS", "Binocular"],
-	["FirstAidKit", "Medikit"],
+	["FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "ToolKit", "ItemGPS", "Binocular"],
+	["FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "Medikit"],
 	["B_IR_Grenade", "O_IR_Grenade", "I_IR_Grenade"],
 	["SmokeShellGreen", "SmokeShellOrange", "SmokeShellRed", "SmokeShellBlue", "SmokeShellPurple", "SmokeShell"]
 ];
 
 vehicleAddition2 =
 [
-	["NVGoggles", "NVGoggles_OPFOR", "NVGoggles_INDEP", "NVGoggles_INDEP", "NVGoggles_tna_F"],
 	["Chemlight_blue", "Chemlight_green", "Chemlight_yellow", "Chemlight_red"],
-    ["O_NVGoggles_ghex_F", "O_NVGoggles_hex_F", "O_NVGoggles_urb_F", "O_NVGoggles_grn_F"]
+	["B_IR_Grenade", "B_IR_Grenade", "NVGoggles", "NVGoggles_OPFOR", "NVGoggles_INDEP", "NVGoggles_INDEP", "NVGoggles_tna_F"],
+    ["B_IR_Grenade", "B_IR_Grenade", "O_NVGoggles_ghex_F", "O_NVGoggles_hex_F", "O_NVGoggles_urb_F", "O_NVGoggles_grn_F"]
 ];
 
 vehicleAddition3 =
@@ -157,40 +215,37 @@ vehicleAddition4 =
 
 vehicleAddition5 =
 [
-	
-	["V_SmershVest_01_F", "V_SmershVest_01_radio_F"],
-	["V_Pocketed_black_F", "V_Pocketed_coyote_F", "V_Pocketed_olive_F"],
-	["V_DeckCrew_blue_F", "V_DeckCrew_green_F", "V_DeckCrew_yellow_F", "V_DeckCrew_red_F", "V_DeckCrew_brown_F", "V_DeckCrew_violet_F", "V_DeckCrew_white_F"],
-	["V_BandollierB_blk", "V_BandollierB_cbr", "V_BandollierB_rgr", "V_BandollierB_khk", "V_BandollierB_oli", "V_BandollierB_ghex_F"],
-	["V_HarnessOGL_brn", "V_HarnessOGL_gry", "V_HarnessOGL_ghex_F"],
-	["V_Chestrig_khk", "V_Chestrig_rgr", "V_Chestrig_blk", "V_Chestrig_oli"],
-	["V_TacChestrig_cbr_F", "V_TacChestrig_grn_F", "V_TacChestrig_oli_F"],
-	["V_HarnessO_brn", "V_HarnessO_gry", "V_HarnessO_ghex_F"],
-	["V_TacVest_blk", "V_TacVest_brn", "V_TacVest_camo", "V_TacVest_khk", "V_TacVest_oli"],
-	"V_Press_F",
-	["V_TacVest_blk_POLICE", "V_TacVest_gen_F"]
+	["FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "V_SmershVest_01_F", "V_SmershVest_01_radio_F"],
+	["FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "V_Pocketed_black_F", "V_Pocketed_coyote_F", "V_Pocketed_olive_F"],
+	["FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "V_DeckCrew_blue_F", "V_DeckCrew_green_F", "V_DeckCrew_yellow_F", "V_DeckCrew_red_F", "V_DeckCrew_brown_F", "V_DeckCrew_violet_F", "V_DeckCrew_white_F"],
+	["FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "V_BandollierB_blk", "V_BandollierB_cbr", "V_BandollierB_rgr", "V_BandollierB_khk", "V_BandollierB_oli", "V_BandollierB_ghex_F"],
+	["FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "V_HarnessOGL_brn", "V_HarnessOGL_gry", "V_HarnessOGL_ghex_F"],
+	["FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "V_Chestrig_khk", "V_Chestrig_rgr", "V_Chestrig_blk", "V_Chestrig_oli"],
+	["FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "V_TacChestrig_cbr_F", "V_TacChestrig_grn_F", "V_TacChestrig_oli_F"],
+	["FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "V_HarnessO_brn", "V_HarnessO_gry", "V_HarnessO_ghex_F"],
+	["FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit", "V_TacVest_blk", "V_TacVest_brn", "V_TacVest_camo", "V_TacVest_khk", "V_TacVest_oli"],
+	["FirstAidKit", "FirstAidKit", "V_Press_F"],
+	["FirstAidKit", "FirstAidKit", "FirstAidKit", "FirstAidKit","V_TacVest_blk_POLICE", "V_TacVest_gen_F"]
 ];
 
 vehicleAddition6 =
 [
 	
-	["optic_aco_smg", "optic_ACO_grn_smg"],
-	["optic_Holosight_smg", "optic_Holosight_smg_blk_F"],
-    ["optic_MRCO", "optic_KHS_old"],
-	["optic_Aco", "optic_ACO_grn"],
-	["acc_pointer_IR", "acc_flashlight"],
-	["optic_Holosight", "optic_Holosight_blk_F", "optic_Holosight_khk_F", "optic_Holosight_arid_F", "optic_Holosight_lush_F"]
+	["acc_pointer_IR", "acc_flashlight", "optic_aco_smg", "optic_ACO_grn_smg"],
+	["acc_pointer_IR", "acc_flashlight", "optic_Holosight_smg", "optic_Holosight_smg_blk_F"],
+	["acc_pointer_IR", "acc_flashlight", "optic_Aco", "optic_ACO_grn"],
+	["acc_pointer_IR", "acc_flashlight", "optic_Holosight", "optic_Holosight_blk_F", "optic_Holosight_khk_F", "optic_Holosight_arid_F", "optic_Holosight_lush_F"],
+	["acc_pointer_IR", "acc_flashlight", "optic_MRCO"/*, "optic_KHS_old"*/],
+	["acc_pointer_IR", "acc_flashlight"]
 ];
 
-vehicleAddition7 =
+/*vehicleAddition7 =
 [
-	
-	["B_Messenger_Black_F", "B_Messenger_Coyote_F", "B_Messenger_Gray_F", "B_Messenger_Olive_F", "B_Messenger_IDAP_F"],
-	["B_LegStrapBag_black_F", "B_LegStrapBag_coyote_F", "B_LegStrapBag_olive_F"],	
-	["B_AssaultPack_blk", "B_AssaultPack_rgr", "B_AssaultPack_mcamo", "B_AssaultPack_ocamo"],
-	["B_AssaultPack_dgtl", "B_AssaultPack_khk", "B_AssaultPack_cbr", "B_AssaultPack_sgg",  "B_AssaultPack_tna_F","B_AssaultPack_Kerry"],
-	["B_FieldPack_blk", "B_FieldPack_cbr", "B_FieldPack_khk", "B_FieldPack_oucamo", "B_FieldPack_ocamo", "B_FieldPack_ghex_F"]
-];
+	["B_LegStrapBag_black_F", "B_LegStrapBag_coyote_F", "B_LegStrapBag_olive_F", "B_LegStrapBag_black_F", "B_LegStrapBag_coyote_F", "B_LegStrapBag_olive_F"],	
+	["B_LegStrapBag_black_F", "B_LegStrapBag_coyote_F", "B_LegStrapBag_olive_F", "B_AssaultPack_blk", "B_AssaultPack_rgr", "B_AssaultPack_mcamo", "B_AssaultPack_ocamo"],
+	["B_LegStrapBag_black_F", "B_LegStrapBag_coyote_F", "B_LegStrapBag_olive_F", "B_AssaultPack_dgtl", "B_AssaultPack_khk", "B_AssaultPack_cbr", "B_AssaultPack_sgg",  "B_AssaultPack_tna_F","B_AssaultPack_Kerry"],
+	["B_LegStrapBag_black_F", "B_LegStrapBag_coyote_F", "B_LegStrapBag_olive_F", "B_FieldPack_blk", "B_FieldPack_cbr", "B_FieldPack_khk", "B_FieldPack_oucamo", "B_FieldPack_ocamo", "B_FieldPack_ghex_F"]
+];*/
 
 vehicleAddition8 =
 [

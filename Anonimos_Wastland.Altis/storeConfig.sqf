@@ -1070,7 +1070,7 @@ vestArray = compileFinal str
 backpackArray = compileFinal str
 [
 	["VARIADOS", "", 0, ""],
-	["Paraquedas", "B_Parachute", 50, "backpack"],
+	["Paraquedas", "B_Parachute", 750, "backpack"],
 	["Equipamento Respiratório Autônomo", "B_SCBA_01_F", 25, "backpack", "noDLC"],
 	["Respirador Avançado", "B_CombinationUnitRespirator_01_F", 50, "backpack", "noDLC"],    
 	["======================================================", "", 0, ""], 
@@ -1564,7 +1564,7 @@ tanksArray = compileFinal str
 
     ["VEÍCULO ANTIAÉREO", "", 0, ""],
 	["IFV-6a Cheetah AA | Lança Míssil Anti-Aéreo", "B_APC_Tracked_01_AA_F", 50000, "vehicle"],
-	["ZSU-39 Tigris AA | Lança Míssil Anti-Aéreo", "O_APC_Tracked_02_AA_F", 50000, "vehicle"],
+	["ZSU-39 Tigris AA | Lança Míssil Anti-Aéreo", "O_APC_Tracked_02_AA_F", 60000, "vehicle", "HIDDEN"],
 	["======================================================", "", 0, ""],
 
 	["Rhino MGS", "", 0, ""],
@@ -1688,7 +1688,7 @@ planesArray = compileFinal str
 	["V-44 X Blackfish", "", 0, ""],
     ["Transporta Infantaria", "B_T_VTOL_01_infantry_F", 12000, "vehicle"],
 	["Transporta Veículo", "B_T_VTOL_01_vehicle_F", 12000, "vehicle"],
-	["Armado", "B_T_VTOL_01_armed_F", 250000, "vehicle"],
+	["Armado", "B_T_VTOL_01_armed_F", 170000, "vehicle"],
 	["======================================================", "", 0, ""],
 
     ["Y-32 Xian", "", 0, ""],
@@ -1729,7 +1729,7 @@ boatsArray = compileFinal str
 DronesArray = compileFinal str
 [
 	["Quadricóptero Reconhecimento", "", 0, ""],
-	["Independente", "I_UAV_01_F", 3000, "vehicle"],
+	["Independente", "I_UAV_01_F", 5000, "vehicle"],
 	["======================================================", "", 0, ""],
     
 	["Hexacóptero de Carga", "", 0, ""],

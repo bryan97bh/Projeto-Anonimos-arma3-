@@ -46,7 +46,7 @@ _text = "
 <br />
 <t align='left'><img size='1.8' shadow = 0 image='addons\infopage\windows.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'>  Nome dos Jogadores</t><br />
 <t align='left'><img size='1.8' shadow = 0 image='addons\infopage\end.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'>  Inserir/Remover Abafador</t><br />
-<t align='left'><img size='1.8' shadow = 0 image='addons\infopage\v.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'>  Abrir/Cortar Paraquedas</t><br />
+<t align='left'><img size='1.8' shadow = 0 image='addons\infopage\v.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'>  Abrir/Cortar Paraquedas</t><br /> 
 <t align='left'><img size='1.8' shadow = 0 image='addons\infopage\del.paa'/></t><t align='left'><t size='1'><t shadow= 1 shadowColor='#000000'>  Ejeção de Emergência</t><br />
 <br />
 <br />

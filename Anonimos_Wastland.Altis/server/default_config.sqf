@@ -46,7 +46,7 @@ A3W_firstPersonCamNotDriver = 1;   // Lock all vehicle seating positions besides
 A3W_donatorEnabled = 1;			   // Enable/Disable Donator Features
 A3W_customUniformEnabled = 1;	   // Enable/Disable Custom Uniforms
 A3W_tkAutoSwitchEnabled = 0;	   // Enable/Disable Switch for team killers
-A3W_maxLockonDistance = 1000; 	   // Max Lockon Distance with Missle
+A3W_maxLockonDistance = 2000; 	   // Max Lockon Distance with Missle
 APOC_coolDownTimer = 300;		   // APOC Air Drop Cool Down Time
 BoS_coolDownTimer = 600;           // Baselocker hacking timer
 Safe_coolDownTimer = 600;          // Safe hacking timer
@@ -99,9 +99,11 @@ A3W_warchestSaving = 1;            // Save warchest objects deployed by players 
 A3W_warchestMoneySaving = 1;       // Save warchest team money between server restarts (0 = no, 1 = yes)
 A3W_spawnBeaconSaving = 1;         // Save spawn beacons between server restarts (0 = no, 1 = yes)
 A3W_objectLifetime = 5*24;         // Maximum lifetime in hours for saved objects (baseparts, crates, etc. except vehicles) across server restarts (0 = no time limit)
+
 A3W_vehicleLifetime = 0;           // Maximum lifetime in hours for saved vehicles across server restarts, regardless of usage (0 = no time limit)
 A3W_vehicleMaxUnusedTime = 24*24;   // Maximum parking time in hours after which unused saved vehicles will be marked for deletion (0 = no time limit)
 A3W_serverSavingInterval = 7*60;   // Interval in seconds between automatic vehicle & object saves; should be kept at 1 min for profileNamespace and iniDB, while for extdb it can be relaxed to 3-5 mins
+
 A3W_mineSaving = 1;                // Save player-placed proximity mines between server restarts (0 = no, 1 = yes) - doesn't save dispensed/cluster mines
 A3W_mineLifetime = 2*24;           // Maximum lifetime in hours for saved mines across server restarts (0 = no time limit)
 A3W_privateStorage = 1;            // Enable persistent private storage locations across the map (0 = no, 1 = yes)
@@ -144,7 +146,7 @@ A3W_hcObjSavingID = 1;             // ID of the headless client in charge of obj
 // Server spawn settings
 A3W_serverSpawning = 1;            // Vehicle, object, and loot spawning (0 = no, 1 = yes)
 A3W_vehicleSpawning = 1;           // If serverSpawning = 1, spawn vehicles in towns (0 = no, 1 = yes)
-A3W_vehicleQuantity = 250;         // Approximate number of land vehicles to be spawned in towns
+A3W_vehicleQuantity = 500;         // Approximate number of land vehicles to be spawned in towns
 A3W_boatSpawning = 1;              // If serverSpawning = 1, spawn boats at marked areas near coasts (0 = no, 1 = yes)
 A3W_heliSpawning = 1;              // If serverSpawning = 1, spawn helicopters in some towns and airfields (0 = no, 1 = yes)
 A3W_planeSpawning = 0;             // If serverSpawning = 1, spawn planes at some airfields (0 = no, 1 = yes)

@@ -10,9 +10,9 @@ MainMissions =
 [
     ["mission_LightArmVeh2", 1.1],     //VIATURA DE COMBATE @
 	["mission_LightArmVeh", 1],        //VEÍCULO LEVE DE COMBATE @
-	["mission_APC", 0.7],              //VEÍCULO APC @
+	["mission_APC", 0.8],              //VEÍCULO APC @
 	["mission_MBT", 0.3],              //CAVALARIA BLINDADA
-	["mission_CivHeli", 1.2],          //HELICÓPTERO DE SUPORTE
+	["mission_CivHeli", 1.0],          //HELICÓPTERO DE SUPORTE
 	["mission_ArmedHeli", 1],          //HELICÓPTERO GUARNECIDO 
 	["mission_ArmedHeli2", 0.4],       //HELICÓPTERO DE ATAQUE GUARNECIDO 
 	["mission_Abandoneddrone", 0.5],   //drone ABANDONADO @
@@ -20,9 +20,9 @@ MainMissions =
 //-------------------_v2--------------------------------------
 	["mission_LightArmVeh2_v2", 1.0],     //VIATURA DE COMBATE @
 	["mission_LightArmVeh_v2", 0.9],      //VEÍCULO LEVE DE COMBATE @
-	["mission_APC_v2", 0.6],              //VEÍCULO APC @
+	["mission_APC_v2", 0.7],              //VEÍCULO APC @
 	["mission_MBT_v2", 0.2],              //CAVALARIA BLINDADA
-	["mission_CivHeli_v2", 1.1],          //HELICÓPTERO DE SUPORTE
+	["mission_CivHeli_v2", 0.9],          //HELICÓPTERO DE SUPORTE
 	["mission_ArmedHeli_v2", 0.9],        //HELICÓPTERO GUARNECIDO 
 	["mission_ArmedHeli2_v2", 0.3],       //HELICÓPTERO DE ATAQUE GUARNECIDO 
 	["mission_Abandoneddrone_v2", 0.4],   //drone ABANDONADO @
@@ -32,8 +32,8 @@ MainMissions =
 SideMissions =
 [ 
 	["mission_GeoCache", 0.9],         //analise geografica
-    ["mission_ConvoyCSATSF", 1.2],     //PATRULHA DE RECONHECIMENTO
-    ["mission_DrugsRunners", 1.1],     //TRAFICANTES
+    ["mission_ConvoyCSATSF", 1.1],     //PATRULHA DE RECONHECIMENTO
+    ["mission_DrugsRunners", 1],     //TRAFICANTES
     ["mission_Smugglers", 1],          //CONTRABANDO DE ARMAS
 	["mission_AirWreck", 0.9],         //HELICÓPTERO ABATIDO
 	["mission_WepCache", 0.5],         //ACAMPAMENTO MILITAR
@@ -43,7 +43,7 @@ SideMissions =
 MoneyMissions =
 [
 	["mission_MoneyShipment", 0.7],    //ESCOLTA DE DINHEIRO
-    ["mission_MoneyShipment2", 0.5],   //ESCOLTA DE DINHEIRO
+    ["mission_MoneyShipment2", 0.6],   //ESCOLTA DE DINHEIRO
     ["mission_HostageRescue", 0.9],    //RESGATE AO REFÉM
     ["mission_Roadblock", 1.1],        //BLOQUEIO NA ESTRADA
 	["mission_HackLaptop", 0.2]	       //Hackers

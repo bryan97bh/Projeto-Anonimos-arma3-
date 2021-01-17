@@ -25,7 +25,7 @@ MF_ITEMS_ENERGY_DRINK = "energydrink";
 //[MF_ITEMS_COOKED_MEAT, "Raw Meat", {50 call mf_items_survival_eat}, "Land_BakedBeans_F", "", 5];
 [MF_ITEMS_CANNED_FOOD, "Lata de Comida", {50 call mf_items_survival_eat}, "Land_BakedBeans_F","client\icons\cannedfood.paa", 6] call mf_inventory_create;
 [MF_ITEMS_WATER, "Garrafa d`agua", {50 call mf_items_survival_drink}, "Land_BottlePlastic_V2_F","client\icons\waterbottle.paa", 6] call mf_inventory_create;
-[MF_ITEMS_ENERGY_DRINK, "Bebida Energética", _energy_drink, "Land_Can_V3_F","client\icons\energydrink.paa", 3] call mf_inventory_create;
+[MF_ITEMS_ENERGY_DRINK, "Bebida Energética", _energy_drink, "Land_Can_V3_F","client\icons\energydrink.paa", 10] call mf_inventory_create;
 
 private ["_label", "_code", "_condition"];
 

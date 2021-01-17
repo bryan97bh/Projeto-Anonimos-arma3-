@@ -10,7 +10,7 @@
 [
 
 
-	[format ["<t color='#FF00FF'>Abrir paraquedas de emergência (%1)</t>", (actionKeysNamesArray "GetOver") param [0,"<'Step over' keybind>"]], A3W_fnc_openParachute, [], 250, true, true, "", "vehicle player == player && (getPos player) select 2 > 2.5"],
+	//[format ["<t color='#FF00FF'>Abrir paraquedas de emergência (%1)</t>", (actionKeysNamesArray "GetOver") param [0,"<'Step over' keybind>"]], A3W_fnc_openParachute, [], 250, true, true, "", "vehicle player == player && (getPos player) select 2 > 2.5"],
 
     ["<img image='\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\transport_ca.paa'/> <t color='#FFFFFF'>Cancelar Ação</t>", { doCancelAction = true }, [], 200, false, false, "", "mutexScriptInProgress"],
 

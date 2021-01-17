@@ -14,8 +14,6 @@
 #define TOWN_SPAWN_COOLDOWN (["A3W_townSpawnCooldown", 5*60] call getPublicVar)
 #define SPAWN_BEACON_COOLDOWN (["A3W_spawnBeaconCooldown", 5*60] call getPublicVar)
 #define BEACON_CHECK_RADIUS 250
-#define SPAWN_TOWN_COOLDOWN (["A3W_townSpawnCooldown", 5*60] call getPublicVar)
-#define UNCONSCIOUS(UNIT) (UNIT getVariable ["FAR_isUnconscious", 0] == 1)
 
 disableSerialization;
 waitUntil {!isNil "bis_fnc_init" && {bis_fnc_init}};
@@ -33,7 +31,7 @@ _spawnButton = _display displayCtrl respawn_Spawn_Button;
 _spawnButton ctrlEnable false;
 ctrlSetFocus _randomButton;
 
-_spawnButton ctrlSetText "Carregando...";
+_spawnButton ctrlSetText "Loading...";
 
 _locType = _display displayCtrl respawn_Locations_Type;
 _locList = _display displayCtrl respawn_Locations_List;
@@ -41,16 +39,15 @@ _locMap = _display displayCtrl respawn_Locations_Map;
 
 _townSpawnCooldown = TOWN_SPAWN_COOLDOWN;
 _spawnBeaconCooldown = SPAWN_BEACON_COOLDOWN;
-_townSpawnCooldown = SPAWN_TOWN_COOLDOWN;
 
 _side = switch (playerSide) do
 {
 	case BLUFOR: { "BLUFOR" };
 	case OPFOR:  { "OPFOR" };
-	default      { "Independente" };
+	default      { "Independent" };
 };
 
-_respawnText ctrlSetStructuredText parseText (format ["Bem-vindo ao Anônimos Wasteland Brasil<br/>Você é %1. Escolha como nascer ou aleatório.", _side]);
+_respawnText ctrlSetStructuredText parseText (format ["Welcome to A3Wasteland<br/>You are on %1. Please select a spawn point.", _side]);
 respawnDialogActive = true;
 
 //buttonSetAction [respawn_Random_Button, format ["%1 [%2,0] execVM 'client\functions\spawnAction.sqf'", _disableAllButtons, respawn_Random_Button]];
@@ -217,7 +214,7 @@ _selLocChanged =
 			{
 				_isValid = true;
 				_location call _getPlayersInfo;
-				_lastUse = player getVariable "spawnBeacon_lastUse";
+				_lastUse = _location getVariable "spawnBeacon_lastUse";
 
 				if (!isNil "_lastUse") then
 				{
@@ -245,49 +242,28 @@ _selLocChanged =
 			{
 				_isValid = true;
 				_location call _getPlayersInfo;
-				
-				_text = "";
-				
-				{
-				if (_x select 0 == _location) exitWith
-				{
-					_text = (_x select 2);
-				};
-				} forEach (call cityList);
+				_lastSpawn = player getVariable (_location + "_lastSpawn");
+				_cooldown = false;
 
-				_lastUseTown = player getVariable _text;
-
-				if (!isNil "_lastUseTown") then
+				if (!isNil "_lastSpawn") then
 				{
-					_townSpawnCooldown = SPAWN_TOWN_COOLDOWN;
-					_remaining = _townSpawnCooldown - (diag_tickTime - _lastUseTown);
-					
+					_townSpawnCooldown = TOWN_SPAWN_COOLDOWN;
+					_remaining = _townSpawnCooldown - (diag_tickTime - _lastSpawn);
+
 					if (_townSpawnCooldown > 0 && _remaining > 0) then
 					{
 						_textStr = _textStr + format ["[<t color='#ffff00'>%1</t>] ", _remaining call fn_formatTimer];
-					}
-					else
-					{
-						if (_enemyPlayers > 0) then
-						{
-							_textStr = _textStr + "[<t color='#ff0000'>Bloqueado por inimigos</t>] ";
-						}
-						else
-						{
-							_spawnBtnEnabled = true;
-						};
+						_cooldown = true;
 					};
+				};
+
+				if (_enemyPlayers > _friendlyPlayers) then
+				{
+					_textStr = _textStr + "[<t color='#ff0000'>Blocked by enemy</t>] ";
 				}
 				else
 				{
-					if (_enemyPlayers > 0) then
-					{
-						_textStr = _textStr + "[<t color='#ff0000'>Bloqueado por inimigos</t>] ";
-					}
-					else
-					{
-						_spawnBtnEnabled = true;
-					};
+					_spawnBtnEnabled = !_cooldown;
 				};
 			};
 		};
@@ -299,19 +275,19 @@ _selLocChanged =
 			if (_friendlyPlayers > 0) then
 			{
 				if (_extraTextStr != "") then { _extraTextStr = _extraTextStr + ", " };
-				_extraTextStr = _extraTextStr + format ["<t color='#00ff00'>%1 Jogadores aliados(s)</t>", _friendlyPlayers];
+				_extraTextStr = _extraTextStr + format ["<t color='#00ff00'>%1 friendly player(s)</t>", _friendlyPlayers];
 			};
 
 			if (_enemyPlayers > 0) then
 			{
 				if (_extraTextStr != "") then { _extraTextStr = _extraTextStr + ", " };
-				_extraTextStr = _extraTextStr + format ["<t color='#ff0000'>%1 jogador(es) inimigo(s)</t>", _enemyPlayers];
+				_extraTextStr = _extraTextStr + format ["<t color='#ff0000'>%1 enemy player(s)</t>", _enemyPlayers];
 			};
 
 			if (_enemyNPCs > 0) then
 			{
 				if (_extraTextStr != "") then { _extraTextStr = _extraTextStr + ", " };
-				_extraTextStr = _extraTextStr + format ["<t color='#ff0000'>%1 inimigo(s) boot(s) ou drone(s)</t>", _enemyNPCs];
+				_extraTextStr = _extraTextStr + format ["<t color='#ff0000'>%1 enemy AI(s)</t>", _enemyNPCs];
 			};
 
 			_textStr = _textStr + _extraTextStr;
@@ -389,8 +365,8 @@ _locMap ctrlAddEventHandler ["Draw",
 	};
 }];
 
-_locType lbAdd "Cidades";
-_locType lbAdd "Spawn Beacons";
+_locType lbAdd "Towns";
+_locType lbAdd "Beacons";
 _locType lbSetCurSel 0;
 
 _locType ctrlAddEventHandler ["LBSelChanged",
@@ -406,7 +382,7 @@ _locType ctrlAddEventHandler ["LBSelChanged",
 	_locList lbSetCurSel -1;
 
 	_spawnButton = _display displayCtrl respawn_Spawn_Button;
-	_spawnButton ctrlSetText "Carregando...";
+	_spawnButton ctrlSetText "Loading...";
 
 	uiNamespace setVariable ["RespawnSelectionDialog_updateLocs", true];
 }];
@@ -430,7 +406,7 @@ _typeAutoSel = false;
 	while {!isNull _display} do
 	{
 		_timeText = [serverTime/60/60] call BIS_fnc_timeToString;
-		_missionUptimeText ctrlSetText format ["Tempo Online: %1", _timeText];
+		_missionUptimeText ctrlSetText format ["Mission uptime: %1", _timeText];
 		[_locList, lbCurSel _locList] call _selLocChanged;
 		uiSleep 0.9;
 	};
@@ -517,7 +493,7 @@ while {!isNull _display} do
 
 		if (_isBeacon) then
 		{
-			_lastUse = player getVariable "spawnBeacon_lastUse";
+			_lastUse = _location getVariable "spawnBeacon_lastUse";
 
 			if (!isNil "_lastUse") then
 			{
@@ -546,8 +522,7 @@ while {!isNull _display} do
 				};
 			};
 
-			//_enabled = (!_cooldown && _enemyPlayers <= _friendlyPlayers);
-			_enabled = (!_cooldown && _enemyPlayers == 0);
+			_enabled = (!_cooldown && _enemyPlayers <= _friendlyPlayers);
 		};
 
 		if (isNil "_picture") then
@@ -590,7 +565,7 @@ while {!isNull _display} do
 			};
 		};
 
-		_spawnButton ctrlSetText "Nascer";
+		_spawnButton ctrlSetText "Spawn";
 	};
 
 	_oldLocArray = _newLocArray;
