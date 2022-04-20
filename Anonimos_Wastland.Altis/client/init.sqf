@@ -263,3 +263,5 @@ if (["A3W_fastMovementLog"] call isConfigOn) then
 	};
 
 };
+
+player setVariable ["group_name", "0", true];

@@ -247,7 +247,7 @@ player createDiaryRecord ["credits",
 <br/>	* xx-LSD-xx (Armaholic)
 <br/>	* Zenophon (BIS Forums)
 <br/>	* Batista (Resistência Armada)
-<br/>	* Bryan (CMTBR)
+<br/>	* Bryan97bh
 <br/>	* RobérioJr
 <br/><font size='16'>Muito obrigado a todos os envolvidos pela ajuda e inspiração!</font>
 "

@@ -18,6 +18,8 @@
 #define groupManagementAcceptButton 55518
 #define groupManagementDeclineButton 55519
 #define groupManagementInviteText 55520
+#define groupManagementNameButton 55521
+#define groupManagementNameInput_IDC 55522
 
 disableSerialization;
 
@@ -39,6 +41,8 @@ _groupLeaveButton = _dialog displayCtrl groupManagementLeaveButton;
 _groupAcceptInvite = _dialog displayCtrl groupManagementAcceptButton;
 _groupDeclineInvite = _dialog displayCtrl groupManagementDeclineButton;
 _groupInviteText = _dialog displayCtrl groupManagementInviteText;
+_groupName = _dialog displayCtrl groupManagementNameButton;
+_groupNameInput = _dialog displayCtrl groupManagementNameInput_IDC;
 
 _groupInvite ctrlShow false;
 _groupKick ctrlShow false;
@@ -46,10 +50,14 @@ _groupDisband ctrlShow false;
 _groupLeaveButton ctrlShow false;
 _groupDeclineInvite ctrlShow false;
 _groupAcceptInvite ctrlShow false;
+_groupName ctrlShow false;
+_groupNameInput ctrlShow false;
 _hasInvite = false;
 while{groupManagmentActive} do
 {
 	_groupPromote ctrlShow (player == leader player);
+	_groupName ctrlShow (player == leader player);
+    _groupNameInput ctrlShow (player == leader player);
 
 	//Check if player has invite.
 	{ if (_x select 1 == getPlayerUID player) exitWith { _hasInvite = true } } forEach currentInvites;

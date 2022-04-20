@@ -5,7 +5,7 @@
 #include "gui_defines.hpp"
 
 #define FAR_Max_Distance 2.5
-#define FAR_Revive_Duration 10 //seconds
+#define FAR_Revive_Duration 60 //seconds
 
 ////////////////////////////////////////////////
 // Player Actions
@@ -294,7 +294,7 @@ FAR_Slay_Target =
     
     //AJ Edit 26.09.2017 to increase the time to do the slay action
     player playMove "AinvPknlMstpSlayWlnrDnon_medicOther";
-    uiSleep 6;
+    uiSleep 3;
     waitUntil {animationstate player != "AinvPknlMstpSlayWlnrDnon_medicOther"};
 
 	if ([_target] call FAR_Check_Slay) then

@@ -177,6 +177,8 @@ _playerSideNum = switch (playerSide) do
 	{
 		_showItem = false;
 	};
+	
+	_showItem = !("HIDDEN" in (_x select [3,999]));
 
 	if (_showItem) then
 	{

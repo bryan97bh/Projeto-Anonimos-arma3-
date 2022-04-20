@@ -5,7 +5,7 @@
 //	@file Author: JoSchaap, AgentRev
 
 if (!isServer) exitwith {};
-#include "aquaticMissionDefines.sqf"
+#include "principalMissionsDefines.sqf"
 
 private ["_box1", "_box2", "_box3", "_box4", "_boxPos"];
 
@@ -64,4 +64,4 @@ _successExec =
 	_successHintMessage = "Suprimentos afundados foram recolhidos.";
 };
 
-_this call aquaticMissionsProcessor;
+_this call principalMissionProcessor;

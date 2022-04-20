@@ -624,6 +624,7 @@ headArray = compileFinal str
 	["(Coiote)", "H_Watchcap_cbr", 25, "hat"],
 	["(Cáqui)", "H_Watchcap_khk", 25, "hat"],
 	["(Verde)", "H_Watchcap_camo", 25, "hat"],
+	["======================================================", "", 0, ""],
 
     ["Shemag", "", 0, ""],
     ["(Oliva)", "H_Shemag_olive", 25, "hat"],
@@ -899,6 +900,7 @@ uniformArray = compileFinal str
 	["(Floresta)", "U_B_CBRN_Suit_01_Wdl_F", 300, "uni"],
 	["(AAF)", "U_I_CBRN_Suit_01_AAF_F", 300, "uni"],
 	["(LDF)", "U_I_E_CBRN_Suit_01_EAF_F", 300, "uni"],
+	["(Blue)", "U_C_CBRN_Suit_01_Blue_F", 300, "uni"],
 	["======================================================", "", 0, ""],
 
     ["VARIADOS", "", 0, ""],
@@ -914,7 +916,7 @@ uniformArray = compileFinal str
 	["Guerrilha Apparel", "U_BG_Guerrilla_6_1", 100, "uni"],
 	["Uniforme de Guerrilha", "U_BG_leader", 100, "uni"],
 	["Uniforme Furtivo CTRG", "U_B_CTRG_Soldier_F", 200, "uni"],
-	["======================================================", "", 0, ""],
+	
 
 	["EXCLUSIVO INDEPENDENTE", "", 0, ""],
     ["Traje Paramilitar", "", 0, ""],
@@ -938,10 +940,55 @@ uniformArray = compileFinal str
 	["Roupa Guerrilha (Plainador, Escuro)", "U_IG_Guerilla2_1", 100, "uni"],
 	["Roupa Guerrilha (Xadres)", "U_IG_Guerilla2_2", 100, "uni"],
 	["Roupa Guerrilha (Plainador, Leve)", "U_IG_Guerilla2_3", 100, "uni"],
-	["Guerilla Smocks", "U_IG_Guerilla3_1", 100, "uni"],
-    ["Guerilla Smocks 2", "U_IG_Guerilla3_2", 100, "uni"],
-	["Guerilla Apparel", "U_IG_Guerrilla_6_1", 100, "uni"],
-	["Uniforme de guerrilha", "U_IG_leader", 100, "uni"]
+	["======================================================", "", 0, ""],
+	
+	["NOVAS", "", 0, ""],
+	["Granit-B Suit", "U_O_R_Gorka_01_F", 200, "uni"],
+	["Granit-B Suit (Weathered)", "U_O_R_Gorka_01_brown_F", 200, "uni"],
+	["Granit-T Suit", "U_O_R_Gorka_01_camo_F", 200, "uni"],
+	["Granit-N Suit", "U_O_R_Gorka_01_black_F", 200, "uni"],
+	["------------------------------------------------------------------------", "", 0, ""],
+	["Survival Fatigues (NATO)", "U_B_survival_uniform", 200, "uni"],
+	["Recon Fatigues (MTP)", "U_B_CombatUniform_mcam_vest", 250, "uni"],
+	["Recon Fatigues (Tropic)", "U_B_T_Soldier_SL_F", 2500, "uni", "noDLC"],
+	["Recon Fatigues (Woodland)", "U_B_CombatUniform_vest_mcam_wdl_f", 2500, "uni", "noDLC"],
+	["Combat Fatigues (Tropic)", "U_B_T_Soldier_F", 2500, "uni", "noDLC"],
+	["Combat Fatigues (Tee)", "U_B_CombatUniform_mcam_tshirt", 2500, "uni"],
+	["Combat Fatigues (Gangsta)", "U_I_G_resistanceLeader_F", 2500, "uni"],
+	["------------------------------------------------------------------------", "", 0, ""],
+	["CTRG Combat Uniform", "U_B_CTRG_1", 2500, "uni"],
+	["CTRG Combat Uniform (Tee)", "U_B_CTRG_2", 2500, "uni"],
+	["CTRG Combat Uniform (Rolled-up)", "U_B_CTRG_3", 2500, "uni"],
+	["Fatigues (Hex)", "U_O_CombatUniform_ocamo", 5000, "uni"],
+	["Fatigues (Urban)", "U_O_CombatUniform_oucamo", 5000, "uni"],
+	["Fatigues (G Hex)", "U_O_T_Soldier_F", 5000, "uni", "noDLC"],
+    ["------------------------------------------------------------------------", "", 0, ""],
+	["Worker Coveralls", "U_C_WorkerCoveralls", 25, "uni"], // can only be worn by civilian units
+	["T-Shirt (Blue)", "U_C_Poor_1", 25, "uni"],
+	["Polo (Red/white)", "U_C_Poloshirt_redwhite", 25, "uni"],
+	["Polo (Salmon)", "U_C_Poloshirt_salmon", 25, "uni"],
+	["Polo (Tri-color)", "U_C_Poloshirt_tricolour", 25, "uni"],
+	["Polo (Navy)", "U_C_Poloshirt_blue", 25, "uni"],
+	["Polo (Burgundy)", "U_C_Poloshirt_burgundy", 25, "uni"],
+	["Polo (Blue/green)", "U_C_Poloshirt_stripped", 25, "uni"],
+	["Polo (Competitor)", "U_Competitor", 2500, "uni"],
+	["Polo (Rangemaster)", "U_Rangemaster", 2500, "uni"],
+	["------------------------------------------------------------------------", "", 0, ""],
+	["Racing Suit (Black)", "U_C_Driver_1_black", 25, "uni"], // can only be worn by civilian units
+	["Racing Suit (Blue)", "U_C_Driver_1_blue", 25, "uni"],
+	["Racing Suit (Green)", "U_C_Driver_1_green", 25, "uni"],
+	["Racing Suit (Yellow)", "U_C_Driver_1_yellow", 25, "uni"],
+	["Racing Suit (Orange)", "U_C_Driver_1_orange", 25, "uni"],
+	["Racing Suit (Red)", "U_C_Driver_1_red", 25, "uni"],
+	["Racing Suit (White)", "U_C_Driver_1_white", 25, "uni"],
+	["Racing Suit (Fuel)", "U_C_Driver_1", 25, "uni"],
+	["Racing Suit (Bluking)", "U_C_Driver_2", 25, "uni"],
+	["Racing Suit (Redstone)", "U_C_Driver_3", 25, "uni"],
+	["Racing Suit (Vrana)", "U_C_Driver_4", 25, "uni"],
+	["------------------------------------------------------------------------", "", 0, ""],
+	["Tron Light Suit (Blue)", "U_B_Protagonist_VR", 5000, "uni"],
+	["Tron Light Suit (Red)", "U_O_Protagonist_VR", 5000, "uni"],
+	["Tron Light Suit (Green)", "U_I_Protagonist_VR", 5000, "uni"]
 ];
 
 vestArray = compileFinal str
@@ -1406,6 +1453,7 @@ genObjectsArray = compileFinal str
 	["0000000", "Land_FireEscape_01_short_F", 1000, "object", "HIDDEN"],
 	["0000000", "Land_ServiceHangar_01_R_F", 30000, "object", "HIDDEN"],
 	["0000000", "Land_CobblestoneSquare_01_32m_F", 5000, "object", "HIDDEN"],
+	["0000000", "Land_QuayConcrete_01_20m_wall_F", 10000, "object", "HIDDEN"],
 	["Military Wall (Big)", "Land_Mil_WallBig_4m_F", 600, "object", "HIDDEN"]			// Fall over after a few minutes - removed
 	//["Container de Carga 2m", "Land_Cargo20_military_green_F", 1000, "object"],  
 	//["Tambor de Metal", "Land_MetalBarrel_F", 100, "object"],    //removido
@@ -1814,7 +1862,7 @@ colorsArray = compileFinal str
 	[ // Main colors
 		"All", // "All" must always be first in colorsArray
 		[
-			["Black", _color + "(0.01,0.01,0.01,1)"], // #(argb,8,8,3)color(0.1,0.1,0.1,0.1)
+			/*["Black", _color + "(0.01,0.01,0.01,1)"], // #(argb,8,8,3)color(0.1,0.1,0.1,0.1)
 			["Gray", _color + "(0.15,0.151,0.152,1)"], // #(argb,8,8,3)color(0.5,0.51,0.512,0.3)
 			["White", _color + "(0.75,0.75,0.75,1)"], // #(argb,8,8,3)color(1,1,1,0.5)
 			["Dark Blue", _color + "(0,0.05,0.15,1)"], // #(argb,8,8,3)color(0,0.3,0.6,0.05)
@@ -1825,7 +1873,7 @@ colorsArray = compileFinal str
 			["Orange", _color + "(0.4,0.09,0,1)"], // #(argb,8,8,3)color(1,0.5,0,0.4)
 			["Red", _color + "(0.45,0.005,0,1)"], // #(argb,8,8,3)color(1,0.1,0,0.3)
 			["Pink", _color + "(0.5,0.03,0.3,1)"], // #(argb,8,8,3)color(1,0.06,0.6,0.5)
-			["Purple", _color + "(0.1,0,0.3,1)"], // #(argb,8,8,3)color(0.8,0,1,0.1)
+			["Purple", _color + "(0.1,0,0.3,1)"], // #(argb,8,8,3)color(0.8,0,1,0.1)*/
 			["NATO Tan", _texDir + "nato.paa"], // #(argb,8,8,3)color(0.584,0.565,0.515,0.3)
 			["CSAT Brown", _texDir + "csat.paa"], // #(argb,8,8,3)color(0.624,0.512,0.368,0.3)
 			["AAF Green", _texDir + "aaf.paa"], // #(argb,8,8,3)color(0.546,0.59,0.363,0.2)
@@ -2161,8 +2209,8 @@ customPlayerItems = compileFinal str
 	["LSD", "lsd", localize "STR_WL_ShopDescriptions_LSD", "client\icons\lsd.paa", 1500, 1000],
 	["Cannabis", "marijuana", localize "STR_WL_ShopDescriptions_Marijuana", "client\icons\marijuana.paa", 2500, 1500],
 	["Cocaina", "cocaine", localize "STR_WL_ShopDescriptions_Cocaine", "client\icons\cocaine.paa", 2500, 2000],
-	["Heroina", "heroin", localize "STR_WL_ShopDescriptions_Heroin", "client\icons\heroin.paa", 3000, 2500],
-	["======================================================", "", 0, ""],
+	["Heroina", "heroin", localize "STR_WL_ShopDescriptions_Heroin", "client\icons\heroin.paa", 3000, 2500]
+	/*["======================================================", "", 0, ""],
 
 	["RADIOS", "", 0, ""],
 	["AN/PRC-148 JEM", "tf_anprc148jem_3", 50, "item"],
@@ -2180,7 +2228,7 @@ customPlayerItems = compileFinal str
     ["MR3000 RHS", "tf_mr3000_rhs", 50, "backpack"],
     ["MR3000 Multicam", "tf_mr3000_multicam", 50, "backpack"],
     ["RT-1523G - SAGE", "tf_rt1523g_sage", 50, "backpack"],
-    ["RT-1523G - SAGE", "tf_rt1523g_bwmod", 50, "backpack"]
+    ["RT-1523G - SAGE", "tf_rt1523g_bwmod", 50, "backpack"]*/
 ];
 
 call compile preprocessFileLineNumbers "mapConfig\storeOwners.sqf";

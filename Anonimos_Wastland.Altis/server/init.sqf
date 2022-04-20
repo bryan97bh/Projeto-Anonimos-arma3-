@@ -596,3 +596,16 @@ publicVariable "A3W_AllowClientToEnterGame";
 //AJ Edit END /staynex
 //No code below this point - because of the sleep 
 //otherwise the spawndelay-function has to be rewritten in seperarte thread /wiking
+_null = [] execVM "server\RespawnAi\RespawnAI1.sqf";
+_null = [] execVM "server\RespawnAi\RespawnAI2.sqf";
+_null = [] execVM "server\RespawnAi\RespawnAI3.sqf";
+_null = [] execVM "server\RespawnAi\RespawnAI4.sqf";
+_null = [] execVM "server\RespawnAi\RespawnAI5.sqf";
+_null = [] execVM "server\RespawnAi\RespawnAI6.sqf";
+_null = [] execVM "server\RespawnAi\RespawnAI7.sqf";
+_null = [] execVM "server\RespawnAi\RespawnAI8.sqf";
+_null = [] execVM "server\RespawnAi\RespawnAI9.sqf";
+_null = [] execVM "server\RespawnAi\RespawnAI10.sqf";
+/*_null = [] execVM "server\RespawnAi\RespawnAILZ.sqf";
+_null = [] execVM "server\RespawnAi\RespawnAIr1.sqf";
+_null = [] execVM "server\RespawnAi\RespawnAIr2.sqf";*/

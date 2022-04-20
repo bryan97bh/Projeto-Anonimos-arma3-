@@ -443,7 +443,7 @@ while {UNCONSCIOUS(_unit) && diag_tickTime < _bleedOut} do
 
 if (alive _unit && !UNCONSCIOUS(_unit)) then // Player got revived
 {
-	_unit setDamage 0;
+	_unit setDamage 0.8;
 
 	// outside scheduler
 	_resetUnit = [_unit,

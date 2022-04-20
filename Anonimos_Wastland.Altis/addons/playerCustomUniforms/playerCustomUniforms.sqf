@@ -34,24 +34,34 @@ _playerCustomUniforms =
 	],
 	[ // [GEIB]
 		[
-			//"76561198328745152",  //Mano2
 			"76561197973807596"  //Kryptus 
-			/*"76561199027651724",  //MenorPet 
-			"76561198416892378",  //Snipernambucano 
-			"76561198396851044",  //Prof.Silva
-			"76561198118710990",  //Lucas 
-			"76561198285532898",  //CapiBoy 
-			"76561198811166180",  //Felipe Andreola
-			"76561198137948469",  //Jeferson 
-			"76561198089933704",  //Markezini 
-		    "76561198377304999",  //Daniel 
-			"76561198988502730",  //Chuck Mawhinney
-			"76561198200918322",  //Gabriel 
-			"76561198795837766",  //TulioMSC 
-			"76561198397121225"   //CobraCriada*/ 
 		],
 		[
 			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\15ra.paa"]
+		]
+	],
+	[ // [unico]
+		[
+			"76561198424242638"  //BaDooLsKy
+		],
+		[
+			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\9.paa"]
+		]
+	],
+	[ // [unico]
+		[
+			"76561198068150321"  //BONA
+		],
+		[
+			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\2.paa"]
+		]
+	],
+	[ // [unico]
+		[
+			"76561198060065964"  //frança
+		],
+		[
+			["GUER","U_I_CombatUniform_shortsleeve","addons\playerCustomUniforms\textures\FRAN.jpg"]
 		]
 	],
 	[ // skin server an 

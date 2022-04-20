@@ -8,7 +8,7 @@
 //	@file Args:
 
 if (!isServer) exitwith {};
-#include "aquaticMissionDefines.sqf";
+#include "moneyMissionDefines.sqf";
 
 private ["_cashObjects", "_cash", "_cashPos", "_vehicleClass", "_vehicle", "_wreck", "_wreck2"];
 
@@ -29,7 +29,7 @@ _setupObjects =
 
 	_cashObjects = [];
 
-	for "_i" from 1 to 10 do
+	for "_i" from 1 to 20 do
 	{
 		_cash = createVehicle ["Land_Money_F", _missionPos, [], 0, "None"];
 		_cash setVariable ["owner", "mission", true];
@@ -79,7 +79,7 @@ _successExec =
 
 	// Give the rewards
 	{
-		_x setVariable ["cmoney", 5000, true];
+		_x setVariable ["cmoney", 2500, true];
 		_x setVariable ["owner", "world", true];
 		_x setVariable ["persistent", false, true];
 	} forEach _cashObjects;
@@ -89,4 +89,4 @@ _successExec =
 	_successHintMessage = "A guarnição do tesouro foi eliminada. Agora é só recolher o dinheiro.";
 };
 
-_this call aquaticMissionsProcessor;
+_this call moneyMissionProcessor;

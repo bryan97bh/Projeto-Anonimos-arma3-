@@ -50,8 +50,11 @@
 
 	//[format ["<img image='\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\supplydrop_ca.paa' color='%1'/> <t color='%1'>[</t>Suporte Aéreo<t color='%1'>]</t>", "#FF0000"],"addons\APOC_Airdrop_Assistance\APOC_cli_menu.sqf",[], -450, false, false],
 
-    [format ["<img image='client\icons\playerMenu.paa' color='%1'/> <t color='%1'>[</t>Menu do Jogador<t color='%1'>]</t>", "#FF8000"], "client\systems\playerMenu\init.sqf", [], -500, false]
+    [format ["<img image='client\icons\playerMenu.paa' color='%1'/> <t color='%1'>[</t>Menu do Jogador<t color='%1'>]</t>", "#FF8000"], "client\systems\playerMenu\init.sqf", [], -500, false],
+
+    ["<img image='client\icons\cancel.paa'/> Pegar Uniforme", "client\actions\TakeGear.sqf", [], 1.1, false, false, "", "!isNull cursorTarget && !alive cursorTarget && {cursorTarget isKindOf 'Man' && player distance cursorTarget <= (sizeOf typeOf cursorTarget / 3) max 3}"]
 ];
+
 
 if (["A3W_vehicleLocking"] call isConfigOn) then
 {

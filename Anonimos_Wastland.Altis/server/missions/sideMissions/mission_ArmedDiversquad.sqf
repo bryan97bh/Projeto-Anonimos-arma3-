@@ -6,7 +6,7 @@
 //	@file Author: JoSchaap, AgentRev
 
 if (!isServer) exitwith {};
-#include "aquaticMissionDefines.sqf";
+#include "sideMissionDefines.sqf";
 
 private ["_box1", "_box2", "_boxPos", "_vehicleClass", "_vehicle", "_randomBox", "_randomBox2"];
 
@@ -80,4 +80,4 @@ _successExec =
 	_successHintMessage = "As caixas foram capturadas, missão completa!";
 };
 
-_this call aquaticMissionsProcessor;
+_this call sideMissionProcessor;

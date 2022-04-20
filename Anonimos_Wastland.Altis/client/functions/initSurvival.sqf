@@ -57,6 +57,7 @@ mf_survival_handle1 = [] spawn
 				if (_health > 1) then {hint parseText DEHYDRATION};
 				player setDamage _health;
 			};
+		};     
 	};
 };
 

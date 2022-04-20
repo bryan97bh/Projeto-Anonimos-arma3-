@@ -195,7 +195,12 @@ _code =
 
 				_teamName = if (_isGroup) then
 				{
-					format ["%1's group (%2)", name leader _team, count units (leader _team)]
+					//format ["%1's group (%2)", name leader _team, count units (leader _team)]
+					if ((leader _team getVariable ["group_name", 0]) != "0") then {
+                        format ["%1 - %2", leader _team getVariable ["group_name", 0], name leader _team]
+                    } else {
+                        format ["%1's group", name leader _team]
+                    };
 				}
 				else
 				{

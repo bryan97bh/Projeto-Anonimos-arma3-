@@ -12,7 +12,7 @@ MainMissions =
 	["mission_LightArmVeh", 1],        //VEÍCULO LEVE DE COMBATE @
 	["mission_APC", 0.8],              //VEÍCULO APC @
 	["mission_MBT", 0.3],              //CAVALARIA BLINDADA
-	["mission_CivHeli", 1.0],          //HELICÓPTERO DE SUPORTE
+	//["mission_CivHeli", 1.0],          //HELICÓPTERO DE SUPORTE
 	["mission_ArmedHeli", 1],          //HELICÓPTERO GUARNECIDO 
 	["mission_ArmedHeli2", 0.4],       //HELICÓPTERO DE ATAQUE GUARNECIDO 
 	["mission_Abandoneddrone", 0.5],   //drone ABANDONADO @
@@ -22,7 +22,7 @@ MainMissions =
 	["mission_LightArmVeh_v2", 0.9],      //VEÍCULO LEVE DE COMBATE @
 	["mission_APC_v2", 0.7],              //VEÍCULO APC @
 	["mission_MBT_v2", 0.2],              //CAVALARIA BLINDADA
-	["mission_CivHeli_v2", 0.9],          //HELICÓPTERO DE SUPORTE
+	//["mission_CivHeli_v2", 0.9],          //HELICÓPTERO DE SUPORTE
 	["mission_ArmedHeli_v2", 0.9],        //HELICÓPTERO GUARNECIDO 
 	["mission_ArmedHeli2_v2", 0.3],       //HELICÓPTERO DE ATAQUE GUARNECIDO 
 	["mission_Abandoneddrone_v2", 0.4],   //drone ABANDONADO @
@@ -33,11 +33,12 @@ SideMissions =
 [ 
 	["mission_GeoCache", 0.9],         //analise geografica
     ["mission_ConvoyCSATSF", 1.1],     //PATRULHA DE RECONHECIMENTO
-    ["mission_DrugsRunners", 1],     //TRAFICANTES
+    ["mission_DrugsRunners", 1],       //TRAFICANTES
     ["mission_Smugglers", 1],          //CONTRABANDO DE ARMAS
 	["mission_AirWreck", 0.9],         //HELICÓPTERO ABATIDO
 	["mission_WepCache", 0.5],         //ACAMPAMENTO MILITAR
-	["mission_Truck", 1.1]             //CAMINHÃO DE SUPRIMENTO
+	["mission_Truck", 1.1],            //CAMINHÃO DE SUPRIMENTO
+	["mission_ArmedDiversquad", 0.6]   //EXPEDIÇÃO GRUMEC
 ];
 
 MoneyMissions =
@@ -46,7 +47,8 @@ MoneyMissions =
     ["mission_MoneyShipment2", 0.6],   //ESCOLTA DE DINHEIRO
     ["mission_HostageRescue", 0.9],    //RESGATE AO REFÉM
     ["mission_Roadblock", 1.1],        //BLOQUEIO NA ESTRADA
-	["mission_HackLaptop", 0.2]	       //Hackers
+	["mission_HackLaptop", 0.2],	   //Hackers
+	["mission_SunkenTreasure", 0.5]    //BAU DO TESOURO
 	//["mission_Satellite_Uplink", 0.4]  //SAT
 ];
 
@@ -59,7 +61,8 @@ PrincipalMissions =
 	["mission_MiniConvoy", 1],         //ESCOLTA ARMADA
 	["mission_Outpost", 1.5],          //POSTO AVANÇADO
 	["mission_Convoy", 1],             //COMBOIO SUSPEITO 
-	["mission_PATRULHADEALTIS", 0.5]   //PATRULHADEALTIS
+	["mission_PATRULHADEALTIS", 0.5],  //PATRULHADEALTIS
+	["mission_SunkenSupplies", 0.5]    //SUPRIMENTOS AFUNDADO
 ];
 
 hostileairMissions =
@@ -75,11 +78,14 @@ hostileairMissions =
 
 aquaticMissions =
 [
-	["mission_ArmedDiversquad", 1],   //EXPEDIÇÃO GRUMEC
-	["mission_Coastal_Convoy", 1.1],  //PATRULHA COSTEIRA
-	["mission_Jaws", 1.2],            //TESOURO SUBMERSO
-	["mission_SunkenSupplies", 0.5],  //SUPRIMENTOS AFUNDADO
-	["mission_SunkenTreasure", 0.5]   //BAU DO TESOURO
+	["mission_Coastal_Convoy", 1.1],   //PATRULHA COSTEIRA
+	["mission_Jaws", 0.7],             //TESOURO SUBMERSO
+	["mission_MiniConvoy", 1],         //ESCOLTA ARMADA
+	["mission_GeoCache", 0.9],         //analise geografica
+    ["mission_ConvoyCSATSF", 1.1],     //PATRULHA DE RECONHECIMENTO
+	["mission_Terror", 0.7],           //GRUPO TERRORISTA
+	["mission_Outpost", 1.5],          //POSTO AVANÇADO
+	["mission_Truck", 1.1]             //CAMINHÃO DE SUPRIMENTO
 ];
 
 MissionSpawnMarkers = (allMapMarkers select {["Mission_", _x] call fn_startsWith}) apply {[_x, false]};
